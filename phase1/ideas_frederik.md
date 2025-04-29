@@ -1,0 +1,56 @@
+#### Ankikarten Sanity Check
+- Is an Anki deck up to date with the lecture and suitable for exam studying?
+- Compare provided Anki deck with lecture script/slides
+- Find and flag possible discrepancies
+	- e.g. wrong info, info not found in resources, chapters from resources not covered by Anki cards
+- Give overall quality score
+- User can review flagged parts and decide whether Anki deck is usable and what needs to be updated/adjusted
+
+#### Interactive Uni-FAQ
+- Use RAG to answer questions based on university resources
+- Biggest benefit: pooling information from different university divisions/areas
+	- Typical problem is segmentation of affairs at university
+		- It's hard to know what exists and where to find information/resources you need
+	- LLM answers as tool for discovering what services/info exists and where to find what
+- Especially interesting for new students, but also practical applications in everyday studies
+- Problem: some topics need to be correct for legal and administrative reasons
+	- Providing sources/links for fact checking is essential for most questions
+- Resources to aggregate and pull information from:
+	- List of departments/services/groups/offices/clubs with descriptions
+		- Where do I find information on X? Who is responsible for X?
+		- Is there a service/group/office dealing with X?
+	- Module catalog and course catalog
+		- What are lectures in the field of X?
+		- I need 3 ECTS in study area X. What are options I have?
+		- Are courses X and Y compatible?
+		- What was the distribution of grades last semester?
+	- Examination regulations
+		- Can I take course X in the general studies of my major?
+	- Campus map
+		- Where is the lecture hall X located?
+		- What are the opening hours of X?
+	- Mensa
+		- What are the vegetarian meal options on Tuesday?
+		- Will there be served pasta next week?
+	- HSP
+		- When is the course on X? Do I need special equipment?
+	- Unikino
+		- What are the special sneaks this semester?
+	- User generated content
+		- Forums, Discord servers
+- Obviously can't implement everything
+- Make system modular and expandable
+	- e.g. pick two info sources and focus on how to decide from where to pull info for a question and how to add additional information and topics later
+		- Advanced RAG with topic modelling
+	- Preparing for long term vision of whole university chatbot as part of the project
+- Evaluate topic modelling advantages
+	- Compare RAG after topic modelling with RAG using single unsorted document collection
+	- Are the generated answer better, when the RAG is performed on topic specific documents compared to a unified document corpus?
+
+#### Lecture Translator Pop Quiz
+- Make watching lecture recordings more engaging
+- Use lecture transcription to generate quiz questions that pop up at appropriate times
+- Accept natural language answer for question
+- Check answer against transcript
+	- Check answer for correctness and provide corrections or supplement information
+	- Always provide link to parts of transcript used to generate question and check the answer
