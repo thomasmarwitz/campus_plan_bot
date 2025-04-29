@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14">
+  <diagram name="Page-1" id="Hw95rVbk9G1hVWeAcZin">
+    <mxGraphModel dx="728" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="350" pageHeight="630" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-1" value="" style="verticalLabelPosition=bottom;aspect=fixed;html=1;shape=mxgraph.salesforce.bots;" vertex="1" parent="1">
+          <mxGeometry x="163.94" y="100" width="42.11" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-2" value="Uni FAQ Bot&lt;br&gt;(General purpose)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="125" y="140" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-3" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="100" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="129.68" as="sourcePoint" />
+            <mxPoint x="140" y="129.68" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-6" value="Chat / Speak" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PWwIWB0uUrowAAiZs3LC-5">
+          <mxGeometry x="0.4086" y="-1" relative="1" as="geometry">
+            <mxPoint x="-12" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-7" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.map;" vertex="1" parent="1">
+          <mxGeometry x="304.5" y="142" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-8" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#0080F0;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.book_journal;" vertex="1" parent="1">
+          <mxGeometry x="304.5" y="192.25" width="31" height="39.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-9" value="Campusplan" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="344.5" y="142" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-10" value="Module catalog" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="344.5" y="197" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-12" value="" style="shape=mxgraph.signs.food.fast_food;html=1;pointerEvents=1;fillColor=#0080F0;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="305" y="242" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-13" value="Mensa&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="359.5" y="251" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-14" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/school-172/512/lecture_presentation_teaching_training_education-128.png;imageBackground=default;" vertex="1" parent="1">
+          <mxGeometry x="300" y="302" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-15" value="Lecture creation&lt;br&gt;(from dialog)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="339.5" y="302" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-16" value="&lt;b&gt;Topics&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350.5" y="100" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-18" value="&lt;b&gt;1. Topic identification&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="210" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-19" value="&lt;b&gt;2. Tool use&amp;nbsp;(per topic)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-23" value="&lt;div&gt;- RAG&lt;/div&gt;&lt;div&gt;- Google Maps link creation&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- Slide creation&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="270" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-24" value="&lt;b&gt;Tools&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="589.5" y="100" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-25" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.data;" vertex="1" parent="1">
+          <mxGeometry x="549.5" y="142.9" width="24" height="29.099999999999998" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-26" value="RAG" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="589.5" y="142" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-28" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-4/24/map-marker-128.png" vertex="1" parent="1">
+          <mxGeometry x="541.5" y="197" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-29" value="Link creation" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="581.5" y="201.75" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-30" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.gear;" vertex="1" parent="1">
+          <mxGeometry x="545.5" y="262" width="31" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-31" value="Slide creation" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="576.5" y="263" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PWwIWB0uUrowAAiZs3LC-32" value="&lt;b&gt;3. Synthesize answer&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="45" y="330" width="140" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
