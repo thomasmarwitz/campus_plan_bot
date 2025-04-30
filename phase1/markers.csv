@@ -1,0 +1,822 @@
+id,title,category,aliasList,positionList,url
+1,Egon-Eiermann-Hörsaal (20.40),lecturehall,[],"['49.01097', '8.41095']",
+2,Sport-Hörsaal (40.40),lecturehall,[],"['49.01580', '8.41636']",
+3,Hochspannungstechnik-Hörsaal (30.35),lecturehall,[],"['49.01197', '8.41272']",
+4,Johann-Gottfried-Tulla-Hörsaal (11.40),lecturehall,[],"['49.01023', '8.41187']",
+5,Hörsaal am Fasanengarten (50.35),lecturehall,[],"['49.01472', '8.42042']",
+6,Otto-Lehmann-Hörsaal (30.22),lecturehall,[],"['49.01242', '8.41073']",
+7,Friedrich-Engesser-Hörsaal (10.81),lecturehall,[],"['49.01014', '8.41554']",
+9,Kleiner Hörsaal Elektrotechnik (11.10),lecturehall,[],"['49.01065', '8.41281']",
+10,Lichttechnik-Hörsaal (30.34),lecturehall,[],"['49.01212', '8.41304']",
+11,Großer Hörsaal Bauingenieure (10.50),lecturehall,[],"['49.00962', '8.41700']",
+12,Carl-Benz-Hörsaal (10.21),lecturehall,[],"['49.00946', '8.41343']",
+13,Franz-Grashof-Hörsaal (10.91),lecturehall,[],"['49.00994', '8.41329']",
+14,Architektur-Hörsaal 9 (20.40),lecturehall,[],"['49.01097', '8.41095']",
+15,Engelbert-Arnold-Hörsaal (11.10),lecturehall,[],"['49.01064', '8.41281']",
+16,Ferdinand-Redtenbacher-Hörsaal (10.91),lecturehall,[],"['49.00992', '8.41283']",
+17,Nachrichtentechnik-Hörsaal (30.10),lecturehall,[],"['49.01271', '8.40944']",
+19,Messtechnik-Hörsaal (30.33),lecturehall,[],"['49.01231', '8.41322']",
+20,Christian-Gerthsen-Hörsaal (30.21),lecturehall,[],"['49.01243', '8.41157']",
+21,Gottlieb-Daimler-Hörsaal (10.21),lecturehall,[],"['49.00946', '8.41343']",
+22,Audimax (30.95),lecturehall,[],"['49.01271', '8.41573']",
+24,Wolfgang-Gaede-Hörsaal (30.22),lecturehall,[],"['49.01256', '8.41039']",
+25,Physik-Hörsaal Nr. 3 (30.22),lecturehall,[],"['49.01242', '8.41071']",
+26,Heinrich-Hertz-Hörsaal (10.11),lecturehall,[],"['49.00948', '8.41292']",
+28,Chemie-Hörsaal I (30.41),lecturehall,[],"['49.01260', '8.41385']",
+29,Rudolf-Criegee-Hörsaal (30.41),lecturehall,[],"['49.01260', '8.41385']",
+30,Rudolf-Plank-Hörsaal (40.32),lecturehall,[],"['49.01457', '8.41734']",
+31,10.21,building,[],"['49.00945', '8.41346']",
+32,10.23,building,[],"['49.00937', '8.41428']",
+33,40.27,building,[],"['49.01437', '8.41573']",
+34,30.43,building,[],"['49.01237', '8.41451']",
+35,40.18,building,[],"['49.01550', '8.41484']",
+36,40.19,building,[],"['49.01448', '8.41445']",
+37,20.54,building,[],"['49.01195', '8.40923']",
+38,20.52,building,[],"['49.01224', '8.40929']",
+39,20.53,building,[],"['49.01217', '8.40900']",
+40,20.50,building,[],"['49.01240', '8.40874']",
+41,20.51,building,[],"['49.01230', '8.40904']",
+42,40.11,building,[],"['49.01400', '8.41489']",
+43,40.12,building,[],"['49.01436', '8.41486']",
+44,40.13,building,[],"['49.01471', '8.41518']",
+45,40.14,building,[],"['49.01478', '8.41453']",
+46,30.12,building,[],"['49.01312', '8.40918']",
+47,30.11,building,[],"['49.01310', '8.40976']",
+48,30.10,building,[],"['49.01288', '8.40949']",
+49,08.03,building,[],"['49.00761', '8.40435']",
+50,30.96,building,[],"['49.01300', '8.41598']",
+51,30.95,building,[],"['49.01268', '8.41569']",
+52,30.93,building,[],"['49.01273', '8.41333']",
+53,30.29,building,[],"['49.01192', '8.41168']",
+54,30.91,building,[],"['49.01328', '8.41374']",
+55,30.90,building,[],"['49.01328', '8.41426']",
+56,40.21,building,[],"['49.01407', '8.41570']",
+57,11.40,building,[],"['49.01017', '8.41184']",
+58,10.95,building,[],"['49.01006', '8.41419']",
+59,10.94,building,[],"['49.01029', '8.41380']",
+60,01.52,building,[],"['49.01307', '8.40839']",
+61,01.51,building,[],"['49.01320', '8.40771']",
+62,10.50,building,[],"['49.00951', '8.41695']",
+63,06.46,building,[],"['49.02042', '8.36752']",
+64,30.80,building,[],"['49.01327', '8.41485']",
+65,30.81,building,[],"['49.01109', '8.41467']",
+66,30.82,building,[],"['49.01112', '8.41530']",
+67,50.38,building,[],"['49.01491', '8.42104']",
+68,40.23,building,[],"['49.01416', '8.41626']",
+69,50.10,building,[],"['49.01286', '8.41928']",
+70,50.12,building,[],"['49.01289', '8.41956']",
+71,40.22,building,[],"['49.01405', '8.41610']",
+72,40.16,building,[],"['49.01530', '8.41501']",
+73,20.12,building,[],"['49.01257', '8.40664']",
+74,10.40,building,[],"['49.00924', '8.41664']",
+76,30.79,building,[],"['49.01330', '8.41711']",
+77,05.20,building,[],"['49.00900', '8.40958']",
+78,30.70,building,[],"['49.01300', '8.41709']",
+79,40.15,building,[],"['49.01508', '8.41500']",
+80,10.62,building,[],"['49.01055', '8.41748']",
+81,40.17,building,[],"['49.01546', '8.41451']",
+82,30.46,building,[],"['49.01168', '8.41384']",
+83,50.24,building,[],"['49.01009', '8.41938']",
+84,40.24,building,[],"['49.01428', '8.41624']",
+85,02.95,building,[],"['49.01066', '8.40254']",
+86,40.26,building,[],"['49.01450', '8.41598']",
+87,20.14,building,[],"['49.01196', '8.40750']",
+88,40.43,building,[],"['49.01653', '8.41585']",
+89,40.41,building,[],"['49.01795', '8.41420']",
+90,40.40,building,[],"['49.01579', '8.41638']",
+91,30.60,building,[],"['49.01233', '8.41669']",
+92,30.61,building,[],"['49.01229', '8.41729']",
+93,10.70,building,[],"['49.00986', '8.41629']",
+94,50.33,building,[],"['49.01459', '8.42128']",
+95,50.32,building,[],"['49.01395', '8.42157']",
+96,50.31,building,[],"['49.01413', '8.42077']",
+97,50.36,building,[],"['49.01493', '8.41964']",
+98,50.35,building,[],"['49.01469', '8.42042']",
+99,50.34,building,[],"['49.01389', '8.41951']",
+100,06.31,building,[],"['49.02243', '8.36692']",
+101,06.32,building,[],"['49.02208', '8.36703']",
+102,06.33,building,[],"['49.02144', '8.36683']",
+103,06.34,building,[],"['49.02103', '8.36681']",
+104,06.35,building,[],"['49.02179', '8.36620']",
+105,06.36,building,[],"['49.02109', '8.36599']",
+106,06.38,building,[],"['49.02180', '8.36824']",
+107,11.10,building,[],"['49.01078', '8.41282']",
+108,11.11,building,[],"['49.01105', '8.41261']",
+109,07.07,building,[],"['49.01313', '8.42424']",
+111,10.64,building,[],"['49.00993', '8.41741']",
+112,20.13,building,[],"['49.01227', '8.40707']",
+113,20.11,building,[],"['49.01296', '8.40643']",
+114,10.61,building,[],"['49.01016', '8.41743']",
+115,07.08,building,[],"['49.01367', '8.42420']",
+116,10.63,building,[],"['49.01048', '8.41707']",
+117,40.29,building,[],"['49.01468', '8.41574']",
+118,50.25,building,[],"['49.00995', '8.41917']",
+119,50.20,building,[],"['49.01025', '8.41890']",
+120,50.21,building,[],"['49.01087', '8.41900']",
+121,50.22,building,[],"['49.01082', '8.41959']",
+122,50.23,building,[],"['49.01007', '8.41969']",
+123,30.51,building,[],"['49.01099', '8.41697']",
+124,30.50,building,[],"['49.01134', '8.41642']",
+125,05.01,building,[],"['49.00904', '8.40535']",
+126,70.26,building,[],"['49.02274', '8.43366']",
+127,20.21,building,[],"['49.01210', '8.40808']",
+128,20.20,building,[],"['49.01251', '8.40796']",
+129,11.23,building,[],"['49.01074', '8.41339']",
+130,11.22,building,[],"['49.01059', '8.41404']",
+131,11.21,building,[],"['49.01079', '8.41405']",
+132,11.20,building,[],"['49.01103', '8.41217']",
+133,06.45,building,[],"['49.02033', '8.36771']",
+134,30.45,building,[],"['49.01169', '8.41382']",
+135,06.47,building,[],"['49.02025', '8.36731']",
+136,07.30,building,[],"['49.01414', '8.42578']",
+137,06.41,building,[],"['49.02129', '8.36819']",
+138,06.40,building,[],"['49.02165', '8.36765']",
+139,30.42,building,[],"['49.01296', '8.41423']",
+140,06.42,building,[],"['49.02056', '8.36729']",
+141,10.11,building,[],"['49.00933', '8.41223']",
+142,40.28,building,[],"['49.01509', '8.41592']",
+143,10.12,building,[],"['49.00960', '8.41179']",
+144,40.32,building,[],"['49.01453', '8.41733']",
+145,40.31,building,[],"['49.01405', '8.41722']",
+146,20.30,building,[],"['49.01114', '8.40930']",
+147,30.31,building,[],"['49.01242', '8.41319']",
+148,40.33,building,[],"['49.01495', '8.41716']",
+149,30.33,building,[],"['49.01226', '8.41320']",
+150,30.32,building,[],"['49.01239', '8.41271']",
+151,30.35,building,[],"['49.01198', '8.41267']",
+152,30.34,building,[],"['49.01171', '8.41303']",
+153,30.36,building,[],"['49.01193', '8.41234']",
+154,07.21,building,[],"['49.01272', '8.42534']",
+155,70.13,building,[],"['49.02333', '8.43157']",
+156,50.40,building,[],"['49.01547', '8.42037']",
+157,50.41,building,[],"['49.01569', '8.41946']",
+158,70.12,building,[],"['49.02429', '8.43218']",
+159,01.96,building,[],"['49.00890', '8.41130']",
+160,01.94,building,[],"['49.00814', '8.40898']",
+161,01.93,building,[],"['49.00843', '8.40875']",
+162,01.92,building,[],"['49.00845', '8.40891']",
+164,10.91,building,[],"['49.00990', '8.41322']",
+165,10.93,building,[],"['49.01033', '8.41342']",
+166,10.92,building,[],"['49.01033', '8.41301']",
+167,01.13,building,[],"['49.01192', '8.41690']",
+168,01.12,building,[],"['49.01153', '8.41739']",
+169,10.96,building,[],"['49.00983', '8.41417']",
+170,10.86,building,[],"['49.01011', '8.41636']",
+171,70.22,building,[],"['49.02390', '8.43246']",
+172,70.16,building,[],"['49.02186', '8.43111']",
+173,10.34,building,[],"['49.00921', '8.41600']",
+174,10.33,building,[],"['49.00937', '8.41602']",
+175,10.32,building,[],"['49.00923', '8.41502']",
+176,10.31,building,[],"['49.00920', '8.41372']",
+177,10.30,building,[],"['49.00958', '8.41548']",
+178,70.14,building,[],"['49.02393', '8.43245']",
+179,30.22,building,[],"['49.01257', '8.41068']",
+180,30.23,building,[],"['49.01293', '8.41110']",
+181,06.60,building,[],"['49.02355', '8.36775']",
+182,20.44,building,[],"['49.01111', '8.41109']",
+183,30.24,building,[],"['49.01318', '8.41076']",
+184,30.25,building,[],"['49.01288', '8.41168']",
+185,40.04,building,[],"['49.01519', '8.41450']",
+186,40.02,building,[],"['49.01429', '8.41519']",
+187,30.44,building,[],"['49.01187', '8.41442']",
+188,07.31,building,[],"['49.01420', '8.42627']",
+189,10.82,building,[],"['49.01022', '8.41555']",
+190,10.83,building,[],"['49.01065', '8.41518']",
+191,70.11,building,[],"['49.02379', '8.43115']",
+192,10.81,building,[],"['49.01027', '8.41561']",
+193,11.30,building,"['adolf-würth-gebäude', 'senatssaal']","['49.01027', '8.41252']",
+194,10.87,building,[],"['49.01009', '8.41686']",
+195,10.84,building,[],"['49.01068', '8.41578']",
+196,10.85,building,[],"['49.01065', '8.41646']",
+197,40.25,building,[],"['49.01451', '8.41627']",
+198,10.88,building,[],"['49.01031', '8.41638']",
+199,10.89,building,[],"['49.01037', '8.41656']",
+200,30.21,building,[],"['49.01239', '8.41158']",
+201,30.41,building,[],"['49.01234', '8.41383']",
+202,101,building,[],"['49.09095', '8.42673']",
+203,103,building,[],"['49.09184', '8.42696']",
+204,121,building,[],"['49.09200', '8.42816']",
+205,122,building,[],"['49.09211', '8.42778']",
+206,123,building,[],"['49.09233', '8.42800']",
+207,124,building,[],"['49.09248', '8.42721']",
+208,126,building,[],"['49.09272', '8.42677']",
+209,131,building,[],"['49.09232', '8.42664']",
+210,141,building,[],"['49.09297', '8.42784']",
+211,142,building,[],"['49.09339', '8.42757']",
+212,144,building,[],"['49.09368', '8.42773']",
+213,151,building,[],"['49.09457', '8.42548']",
+214,152,building,[],"['49.09402', '8.42629']",
+215,210,building,[],"['49.09148', '8.42960']",
+216,211,building,[],"['49.09105', '8.42943']",
+217,212,building,[],"['49.09096', '8.42980']",
+218,213,building,[],"['49.09082', '8.43092']",
+219,220,building,[],"['49.09221', '8.43097']",
+220,221,building,[],"['49.09200', '8.42897']",
+221,222,building,[],"['49.09180', '8.42934']",
+222,223,building,[],"['49.09191', '8.42966']",
+223,224,building,[],"['49.09169', '8.43002']",
+224,225,building,[],"['49.09194', '8.43033']",
+225,226,building,[],"['49.09161', '8.43049']",
+226,227,building,[],"['49.09178', '8.43090']",
+227,228,building,[],"['49.09146', '8.43139']",
+228,230,building,[],"['49.09285', '8.43058']",
+229,231,building,[],"['49.09154', '8.43301']",
+230,232,building,[],"['49.09112', '8.43287']",
+231,234,building,[],"['49.09112', '8.43473']",
+232,235,building,[],"['49.09317', '8.43264']",
+233,237,building,[],"['49.09295', '8.43260']",
+234,238,building,[],"['49.09338', '8.43117']",
+235,239,building,[],"['49.09322', '8.43152']",
+236,240,building,[],"['49.09341', '8.43050']",
+237,241,building,[],"['49.09275', '8.43012']",
+238,242,building,[],"['49.09253', '8.43087']",
+239,243,building,[],"['49.09249', '8.43135']",
+240,244,building,[],"['49.09280', '8.43137']",
+241,245,building,[],"['49.09279', '8.43224']",
+242,246,building,[],"['49.09200', '8.43170']",
+243,247,building,[],"['49.09296', '8.43104']",
+244,248,building,[],"['49.09287', '8.43164']",
+245,249,building,[],"['49.09280', '8.43132']",
+246,250,building,[],"['49.09217', '8.43178']",
+247,251,building,[],"['49.09245', '8.43313']",
+248,252,building,[],"['49.09193', '8.43407']",
+249,253,building,[],"['49.09156', '8.43476']",
+250,254,building,[],"['49.09161', '8.43514']",
+251,255,building,[],"['49.09219', '8.43513']",
+252,256,building,[],"['49.09200', '8.43320']",
+253,257,building,[],"['49.09235', '8.43350']",
+254,258,building,[],"['49.09205', '8.43578']",
+255,259,building,[],"['49.09200', '8.43505']",
+256,260,building,[],"['49.09241', '8.43435']",
+257,261,building,[],"['49.09258', '8.43343']",
+258,272,building,[],"['49.09271', '8.43541']",
+259,273,building,[],"['49.09266', '8.43471']",
+260,274,building,[],"['49.09261', '8.43509']",
+261,276,building,[],"['49.09287', '8.43409']",
+262,277,building,[],"['49.09252', '8.43572']",
+263,278,building,[],"['49.09248', '8.43603']",
+264,300,building,[],"['49.09425', '8.42918']",
+265,301,building,[],"['49.09452', '8.42965']",
+266,302,building,[],"['49.09467', '8.42911']",
+267,303,building,[],"['49.09467', '8.42857']",
+268,304,building,[],"['49.09482', '8.42743']",
+269,305,building,[],"['49.09500', '8.42795']",
+270,306,building,[],"['49.09501', '8.42721']",
+271,307,building,[],"['49.09435', '8.42883']",
+272,308,building,[],"['49.09468', '8.42935']",
+273,309,building,[],"['49.09411', '8.42910']",
+274,310,building,[],"['49.09466', '8.42887']",
+275,311,building,[],"['49.09517', '8.42633']",
+276,312,building,[],"['49.09467', '8.42700']",
+277,313,building,[],"['49.09436', '8.42755']",
+278,314,building,[],"['49.09479', '8.42934']",
+279,315,building,[],"['49.09585', '8.42655']",
+280,316,building,[],"['49.09475', '8.42656']",
+281,317,building,[],"['49.09445', '8.42718']",
+282,318,building,[],"['49.09481', '8.42923']",
+283,320,building,[],"['49.09562', '8.42907']",
+284,321,building,[],"['49.09514', '8.42984']",
+285,322,building,[],"['49.09541', '8.42940']",
+286,324,building,[],"['49.09593', '8.42827']",
+287,326,building,[],"['49.09538', '8.42897']",
+288,327,building,[],"['49.09576', '8.42928']",
+289,328,building,[],"['49.09511', '8.42943']",
+290,329,building,[],"['49.09598', '8.42891']",
+291,330,building,[],"['49.09630', '8.42593']",
+292,332,building,[],"['49.09616', '8.42633']",
+293,333,building,[],"['49.09600', '8.42612']",
+294,341,building,[],"['49.09673', '8.43008']",
+295,343,building,[],"['49.09657', '8.42936']",
+296,345,building,[],"['49.09624', '8.42980']",
+297,348,building,[],"['49.09675', '8.42863']",
+298,349,building,[],"['49.09694', '8.42919']",
+299,351,building,[],"['49.09730', '8.42677']",
+300,352,building,[],"['49.09704', '8.42750']",
+301,353,building,[],"['49.09673', '8.42636']",
+302,400,building,[],"['49.09290', '8.43620']",
+303,401,building,[],"['49.09415', '8.43074']",
+304,402,building,[],"['49.09439', '8.43120']",
+305,403,building,[],"['49.09412', '8.43185']",
+306,404,building,[],"['49.09377', '8.43215']",
+307,405,building,[],"['49.09352', '8.43211']",
+308,406,building,[],"['49.09403', '8.43307']",
+309,407,building,[],"['49.09374', '8.43178']",
+310,408,building,[],"['49.09394', '8.43248']",
+311,409,building,[],"['49.09408', '8.43340']",
+312,410,building,[],"['49.09364', '8.43377']",
+313,411,building,[],"['49.09412', '8.43251']",
+314,412,building,[],"['49.09288', '8.43591']",
+315,413,building,[],"['49.09306', '8.43534']",
+316,414,building,[],"['49.09348', '8.43479']",
+317,415,building,[],"['49.09339', '8.43537']",
+318,416,building,[],"['49.09327', '8.43397']",
+319,417,building,[],"['49.09350', '8.43441']",
+320,418,building,[],"['49.09388', '8.43420']",
+321,419,building,[],"['49.09378', '8.43489']",
+322,420,building,[],"['49.09359', '8.43577']",
+323,421,building,[],"['49.09502', '8.43111']",
+324,422,building,[],"['49.09490', '8.43163']",
+325,423,building,[],"['49.09498', '8.43216']",
+326,424,building,[],"['49.09477', '8.43271']",
+327,425,building,[],"['49.09482', '8.43335']",
+328,426,building,[],"['49.09517', '8.43325']",
+329,427,building,[],"['49.09493', '8.43261']",
+330,428,building,[],"['49.09528', '8.43230']",
+331,429,building,[],"['49.09533', '8.43181']",
+332,430,building,[],"['49.09375', '8.43128']",
+333,432,building,[],"['49.09434', '8.43436']",
+334,433,building,[],"['49.09462', '8.43414']",
+335,434,building,[],"['49.09520', '8.43298']",
+336,435,building,[],"['49.09391', '8.43650']",
+337,436,building,[],"['49.09485', '8.43473']",
+338,438,building,[],"['49.09457', '8.43518']",
+339,439,building,[],"['49.09409', '8.43590']",
+340,441,building,[],"['49.09590', '8.43195']",
+341,442,building,[],"['49.09589', '8.43237']",
+342,443,building,[],"['49.09505', '8.43385']",
+343,444,building,[],"['49.09421', '8.43485']",
+344,445,building,[],"['49.09575', '8.43372']",
+345,446,building,[],"['49.09434', '8.43605']",
+346,447,building,[],"['49.09502', '8.43385']",
+347,448,building,[],"['49.09452', '8.43666']",
+348,450,building,[],"['49.09521', '8.43489']",
+349,451,building,[],"['49.09554', '8.43457']",
+350,452,building,[],"['49.09534', '8.43568']",
+351,453,building,[],"['49.09533', '8.43658']",
+352,454,building,[],"['49.09511', '8.43628']",
+353,456,building,[],"['49.09536', '8.43621']",
+354,458,building,[],"['49.09517', '8.43674']",
+355,459,building,[],"['49.09500', '8.43640']",
+356,460,building,[],"['49.09582', '8.43599']",
+357,461,building,[],"['49.09568', '8.43643']",
+358,462,building,[],"['49.09582', '8.43635']",
+359,464,building,[],"['49.09553', '8.43643']",
+360,500,building,[],"['49.09820', '8.42690']",
+361,510,building,[],"['49.09796', '8.42789']",
+362,511,building,[],"['49.09769', '8.42716']",
+363,512,building,[],"['49.09858', '8.42767']",
+364,513,building,[],"['49.09889', '8.42735']",
+365,514,building,[],"['49.09904', '8.42685']",
+366,515,building,[],"['49.09864', '8.42673']",
+367,516,building,[],"['49.09874', '8.42807']",
+368,517,building,[],"['49.09833', '8.42662']",
+369,518,building,[],"['49.09792', '8.42698']",
+370,519,building,[],"['49.09772', '8.42894']",
+371,521,building,[],"['49.09839', '8.43092']",
+372,522,building,[],"['49.09873', '8.43113']",
+373,523,building,[],"['49.09885', '8.43061']",
+374,526,building,[],"['49.09779', '8.43037']",
+375,527,building,[],"['49.09864', '8.43008']",
+376,528,building,[],"['49.09837', '8.42898']",
+377,532,building,[],"['49.09899', '8.42796']",
+378,535,building,[],"['49.09947', '8.42821']",
+379,536,building,[],"['49.09970', '8.42721']",
+380,541,building,[],"['49.09932', '8.43138']",
+381,542,building,[],"['49.09936', '8.43100']",
+382,544,building,[],"['49.09986', '8.43156']",
+383,545,building,[],"['49.09978', '8.43055']",
+384,546,building,[],"['49.10014', '8.43101']",
+385,547,building,[],"['49.10026', '8.43040']",
+386,548,building,[],"['49.10065', '8.43067']",
+387,549,building,[],"['49.09959', '8.43003']",
+388,551,building,[],"['49.09972', '8.42927']",
+389,553,building,[],"['49.10038', '8.42969']",
+390,556,building,[],"['49.10088', '8.43074']",
+391,559,building,[],"['49.10104', '8.42978']",
+392,560,building,[],"['49.10098', '8.43025']",
+393,561,building,[],"['49.10005', '8.42877']",
+394,562,building,[],"['49.10081', '8.42957']",
+395,563,building,[],"['49.10012', '8.42834']",
+396,570,building,[],"['49.10042', '8.42868']",
+397,571,building,[],"['49.10083', '8.42881']",
+398,572,building,[],"['49.10052', '8.42835']",
+399,573,building,[],"['49.10057', '8.42793']",
+400,574,building,[],"['49.10087', '8.42806']",
+401,575,building,[],"['49.10114', '8.42769']",
+402,576,building,[],"['49.10021', '8.42934']",
+403,577,building,[],"['49.10063', '8.42949']",
+404,580,building,[],"['49.09953', '8.43034']",
+405,581,building,[],"['49.09942', '8.43029']",
+406,601,building,[],"['49.09684', '8.43233']",
+407,602,building,[],"['49.09674', '8.43296']",
+408,603,building,[],"['49.09685', '8.43333']",
+409,604,building,[],"['49.09653', '8.43412']",
+410,605,building,[],"['49.09716', '8.43201']",
+411,606,building,[],"['49.09729', '8.43239']",
+412,607,building,[],"['49.09718', '8.43305']",
+413,608,building,[],"['49.09702', '8.43454']",
+414,611,building,[],"['49.09838', '8.43287']",
+415,614,building,[],"['49.09870', '8.43206']",
+416,615,building,[],"['49.09859', '8.43319']",
+417,618,building,[],"['49.09805', '8.43475']",
+418,620,building,[],"['49.09706', '8.43674']",
+419,622,building,[],"['49.09685', '8.43675']",
+420,629,building,[],"['49.09719', '8.43553']",
+421,630,building,[],"['49.09691', '8.43555']",
+422,631,building,[],"['49.09646', '8.43629']",
+423,633,building,[],"['49.09678', '8.43503']",
+424,640,building,[],"['49.09787', '8.43300']",
+425,648,building,[],"['49.10083', '8.43467']",
+426,650,building,[],"['49.09833', '8.43515']",
+427,660,building,[],"['49.09899', '8.43461']",
+428,663,building,[],"['49.09892', '8.43519']",
+429,670,building,[],"['49.09945', '8.43485']",
+430,679,building,[],"['49.10070', '8.43372']",
+431,681,building,[],"['49.10050', '8.43398']",
+432,682,building,[],"['49.10022', '8.43385']",
+433,686,building,[],"['49.10120', '8.43414']",
+434,688,building,[],"['49.10080', '8.43652']",
+435,689,building,[],"['49.10069', '8.43632']",
+436,690,building,[],"['49.10011', '8.43600']",
+437,691,building,[],"['49.10021', '8.43523']",
+438,692,building,[],"['49.09967', '8.43563']",
+439,693,building,[],"['49.10050', '8.43593']",
+440,695,building,[],"['49.09993', '8.43350']",
+441,696,building,[],"['49.09970', '8.43405']",
+442,701,building,[],"['49.10091', '8.43171']",
+443,702,building,[],"['49.10141', '8.43149']",
+444,704,building,[],"['49.10151', '8.43181']",
+445,705,building,[],"['49.10149', '8.43237']",
+446,706,building,[],"['49.10156', '8.43203']",
+447,707,building,[],"['49.10174', '8.43143']",
+448,708,building,[],"['49.10097', '8.43265']",
+449,712,building,[],"['49.10182', '8.42906']",
+450,713,building,[],"['49.10128', '8.43000']",
+451,714,building,[],"['49.10151', '8.42858']",
+452,715,building,[],"['49.10211', '8.42885']",
+453,716,building,[],"['49.10223', '8.42905']",
+454,717,building,[],"['49.10170', '8.43084']",
+455,718,building,[],"['49.10253', '8.42817']",
+456,719,building,[],"['49.10121', '8.43084']",
+457,721,building,[],"['49.10281', '8.43261']",
+458,723,building,[],"['49.10269', '8.43175']",
+459,724,building,[],"['49.10293', '8.43197']",
+460,725,building,[],"['49.10298', '8.43322']",
+461,726,building,[],"['49.10227', '8.43219']",
+462,727,building,[],"['49.10222', '8.43292']",
+463,729,building,[],"['49.10265', '8.43313']",
+464,730,building,[],"['49.10253', '8.43335']",
+465,732,building,[],"['49.10215', '8.43241']",
+466,733,building,[],"['49.10325', '8.43217']",
+467,736,building,[],"['49.10199', '8.43207']",
+468,739,building,[],"['49.10336', '8.43076']",
+469,740,building,[],"['49.10241', '8.43079']",
+470,741,building,[],"['49.10343', '8.42945']",
+471,742,building,[],"['49.10333', '8.42982']",
+472,744,building,[],"['49.10307', '8.42952']",
+473,745,building,[],"['49.10317', '8.42991']",
+474,752,building,[],"['49.10402', '8.42868']",
+475,754,building,[],"['49.10291', '8.42841']",
+476,755,building,[],"['49.10281', '8.42889']",
+477,757,building,[],"['49.10365', '8.42979']",
+478,758,building,[],"['49.10286', '8.42983']",
+479,760,building,[],"['49.10358', '8.42899']",
+480,768,building,[],"['49.10355', '8.42996']",
+481,769,building,[],"['49.10337', '8.43009']",
+482,801,building,[],"['49.10251', '8.43543']",
+483,802,building,[],"['49.10227', '8.43649']",
+484,803,building,[],"['49.10288', '8.43598']",
+485,804,building,[],"['49.10289', '8.43672']",
+486,805,building,[],"['49.10335', '8.43573']",
+487,806,building,[],"['49.10340', '8.43683']",
+488,807,building,[],"['49.10416', '8.43618']",
+489,808,building,[],"['49.10307', '8.43500']",
+490,809,building,[],"['49.10394', '8.43490']",
+491,901,building,[],"['49.10423', '8.43250']",
+492,902,building,[],"['49.10427', '8.43210']",
+493,903,building,[],"['49.10443', '8.43258']",
+494,904,building,[],"['49.10456', '8.43254']",
+495,905,building,[],"['49.10475', '8.43260']",
+496,907,building,[],"['49.10483', '8.43132']",
+497,908,building,[],"['49.10494', '8.43104']",
+498,910,building,[],"['49.10520', '8.43311']",
+499,911,building,[],"['49.10482', '8.43337']",
+500,912,building,[],"['49.10470', '8.43335']",
+501,913,building,[],"['49.10452', '8.43357']",
+502,914,building,[],"['49.10442', '8.43315']",
+503,915,building,[],"['49.10407', '8.43320']",
+504,916,building,[],"['49.10402', '8.43287']",
+505,917,building,[],"['49.10381', '8.43260']",
+506,918,building,[],"['49.10373', '8.43298']",
+507,920,building,[],"['49.10424', '8.43141']",
+508,935,building,[],"['49.10416', '8.42909']",
+509,937,building,[],"['49.10299', '8.43101']",
+510,9607,building,[],"['49.09860', '8.42964']",
+511,9608,building,[],"['49.09908', '8.42986']",
+512,9611,building,[],"['49.09727', '8.43456']",
+513,9612,building,[],"['49.09726', '8.43480']",
+514,9627,building,[],"['49.09516', '8.43268']",
+515,9637,building,[],"['49.09913', '8.42732']",
+516,9642,building,[],"['49.09641', '8.42843']",
+517,9644,building,[],"['49.09613', '8.42701']",
+518,9645,building,[],"['49.09925', '8.42758']",
+519,9652,building,[],"['49.09540', '8.43536']",
+520,9653,building,[],"['49.09515', '8.43509']",
+521,9657,building,[],"['49.09972', '8.42981']",
+522,9670,building,[],"['49.10268', '8.42953']",
+523,B524,building,[],"['49.09899', '8.42903']",
+524,223/1,building,[],"['49.09210', '8.42962']",
+525,919 A,building,[],"['49.10362', '8.43258']",
+526,B568,building,[],"['49.10068', '8.42836']",
+527,260/1,building,[],"['49.09245', '8.43414']",
+528,B934,building,[],"['49.10375', '8.43120']",
+529,B569,building,[],"['49.10062', '8.42849']",
+530,B254,building,[],"['49.09188', '8.43565']",
+531,B404,building,[],"['49.09404', '8.43218']",
+532,B402,building,[],"['49.09410', '8.43129']",
+533,9633 B,building,[],"['49.09333', '8.43613']",
+534,441/1,building,[],"['49.09644', '8.43172']",
+535,B131,building,[],"['49.09184', '8.42620']",
+536,919 B,building,[],"['49.10356', '8.43302']",
+537,B621,building,[],"['49.09701', '8.43633']",
+538,9633 A,building,[],"['49.09320', '8.43592']",
+539,B523,building,[],"['49.09903', '8.43074']",
+540,B252,building,[],"['49.09181', '8.43317']",
+541,406/2,building,[],"['49.09409', '8.43305']",
+542,401 A,building,[],"['49.09430', '8.43075']",
+543,"Technische Thermodynamik und Kältetechnik, Institut für",institute,[],"['49.01453', '8.41733']",
+544,"Nanotechnologie (INT), Institut für",institute,[],"['49.09786', '8.43289']",http://www.int.kit.edu
+545,"Prozessrechentechnik, Automation und Robotik (IPR), Institut für",institute,[],"['49.01389', '8.41951']",http://rob.ipr.kit.edu
+546,"Kunst- und Baugeschichte (IKB), Institut",institute,[],"['49.01111', '8.41109']",http://www.arch.kit.edu/institute/ikb.php
+548,"Bodenmechanik und Felsmechanik (IBF) , Institut für",institute,[],"['49.01407', '8.41570']",http://ibf.webarchiv.kit.edu
+549,"Physikalische Chemie, Institut für",institute,[],"['49.01206', '8.41444']",http://www.ipc.kit.edu
+550,Deutsch-Französisches Institut für Umweltforschung (DFIU),institute,[],"['49.02144', '8.36683']",http://www.dfiu.kit.edu
+551,"Produktionstechnik (wbk), Institut für",institute,[],"['49.01493', '8.41964']",http://www.wbk.kit.edu
+552,"Regelungs- und Steuerungssysteme, Institut für",institute,[],"['49.01103', '8.41217']",http://www.irs.kit.edu/
+554,"Thermische Strömungsmaschinen, Institut für",institute,[],"['49.01253', '8.41661']",http://www.its.kit.edu
+555,"Funktionelle Grenzflächen (IFG), Institut für",institute,[],"['49.09637', '8.42575']",http://www.ifg.kit.edu
+556,"Experimentelle Teilchenphysik (ETP), Institut für",institute,[],"['49.01293', '8.41110']",http://www.etp.kit.edu/index.php
+557,Institut für Biologische und Chemische Systeme (IBCS),institute,[],"['49.09496', '8.42757']",http://www.itg.kit.edu/
+558,Engler-Bunte-Institut Bereich Verbrennungstechnik (EBI-VBT),institute,[],"['49.01400', '8.41489']",http://www.vbt.uni-karlsruhe.de
+559,"Technische Thermodynamik, Institut für",institute,[],"['49.00990', '8.41322']",http://www.itt.kit.edu
+560,"Biomedizinische Technik, Institut für",institute,[],"['49.01226', '8.41320']",http://www.ibt.kit.edu
+561,"Fahrzeugsystemtechnik, Institut für",institute,[],"['49.02189', '8.42923']",http://www.fast.kit.edu
+562,"Mikrostrukturtechnik (IMT), Institut für",institute,[],"['49.09449', '8.42954']",http://www.imt.kit.edu
+563,Geophysikalisches Institut (GPI),institute,[],"['49.02109', '8.36599']",http://www.gpi.kit.edu
+565,"Programmstrukturen und Datenorganisation (IPD), Institut für",institute,[],"['49.01389', '8.41951']",http://www.informatik.kit.edu/257.php
+567,"Angewandte Informatik und Formale Beschreibungsverfahren (AIFB), Institut für",institute,[],"['49.00894', '8.40949']",http://www.aifb.kit.edu/web/Hauptseite
+568,"Analysis, Institut für",institute,[],"['49.01125', '8.40903']",http://www.math.kit.edu/iana
+569,"Wasser und Umwelt (IWU), Institut für",institute,[],"['49.01065', '8.41518']",https://www.iwu.kit.edu/
+571,"Photonik und Quantenelektronik (IPQ), Institut für",institute,[],"['49.01288', '8.40949']",http://www.ipq.kit.edu
+572,"Bio- und Lebensmitteltechnik, Institut für",institute,[],"['49.01415', '8.42662']",http://lvt.blt.kit.edu
+574,"Mechanische Verfahrenstechnik und Mechanik (MVM), Institut für",institute,[],"['49.01413', '8.42077']",http://www.mvm.kit.edu
+576,"Baustatik, Institut für",institute,[],"['49.00951', '8.41695']",http://www.ibs.kit.edu
+577,"Anthropomatik und Robotik, Institut für",institute,[],"['49.01389', '8.41951']",http://www.informatik.kit.edu/1323.php
+578,Geodätisches Institut (GIK),institute,[],"['49.01111', '8.41109']",http://www.gik.kit.edu
+579,"Hochfrequenztechnik und Elektronik (IHE), Institut für",institute,[],"['49.01288', '8.40949']",http://www.ihe.kit.edu/
+580,"Entwerfen, Kunst und Theorie (EKUT), Institut",institute,[],"['49.01111', '8.41109']",http://www.arch.kit.edu/institute/ekut.php
+581,"Technikzukünfte - Philosophie, Institut für",institute,[],"['49.00948', '8.39325']",http://www.philosophie.kit.edu/
+582,Karlsruhe Service Research Institute (KSRI),institute,[],"['49.00914', '8.40940']",http://www.ksri.kit.edu/
+583,"Sport und Sportwissenschaft, Institut für",institute,[],"['49.01579', '8.41638']",http://www.sport.kit.edu/
+584,"Theoretische Elektrotechnik und Systemoptimierung (ITE), Institut für",institute,[],"['49.01226', '8.41320']",http://www.ite.kit.edu/
+585,"Angewandte Physik, Institut für (AP)",institute,[],"['49.01293', '8.41110']",http://www.aph.kit.edu
+586,"Technik der Informationsverarbeitung (ITIV), Institut für",institute,[],"['49.01288', '8.40949']",http://www.itiv.kit.edu/
+587,"Strömungsmechanik (ISTM), Institut für",institute,[],"['49.00937', '8.41428']",http://www.istm.kit.edu
+588,"Technische Physik, Institut für",institute,[],"['49.09373', '8.43394']",http://www.itep.kit.edu
+589,"Regionalwissenschaft (IfR) , Institut für",institute,[],"['49.00951', '8.41695']",http://www.ifr.kit.edu/
+590,"Mikroverfahrenstechnik (IMVT) , Institut für",institute,[],"['49.09714', '8.43186']",http://www.imvt.kit.edu
+591,"Straßen- und Eisenbahnwesen, Institut für",institute,[],"['49.01027', '8.41561']",http://www.ise.kit.edu/
+592,"Technologie und Management im Baubetrieb (TMB) , Institut für",institute,[],"['49.01413', '8.42077']",http://www.tmb.kit.edu
+593,"Biologische Grenzflächen (IBG), Institut für",institute,[],"['49.09685', '8.43205']",http://www.ibg.kit.edu
+594,Joseph Gottlieb Kölreuter Institut für Pflanzenwissenschaften (JKIP),institute,[],"['49.01246', '8.41443']",https://www.jkip.kit.edu/
+595,"Bio- und Lebensmitteltechnik, Bereich IV: Molekulare Aufarbeitung von Bioprodukten , Institut für",institute,[],"['49.01547', '8.42037']",http://mab.blt.kit.edu
+596,"Theoretische Informatik (ITI), Institut für",institute,[],"['49.01389', '8.41951']",https://www.iti.kit.edu/
+597,"Thermische Verfahrenstechnik, Institut für",institute,[],"['49.00990', '8.41322']",http://www.tvt.kit.edu/
+598,"Customer Insights, Institute for ",institute,[],"['49.00514', '8.41155']",https://www.cin.kit.edu/
+599,"Algebra und Geometrie, Institut für",institute,[],"['49.01104', '8.40909']",http://www.math.kit.edu/iag
+600,"Entwerfen von Stadt und Landschaft (IESL), Institut",institute,[],"['49.00951', '8.41695']",http://www.arch.kit.edu/institute/iesl.php
+601,"Finanzwirtschaft, Banken und Versicherungen (FBV), Institut für",institute,[],"['49.01298', '8.37536']",http://www.fbv.kit.edu/
+604,Lichttechnisches Institut (LTI),institute,[],"['49.01171', '8.41303']",http://www.lti.kit.edu
+605,"Berufspädagogik und Allgemeine Pädagogik (IBAP), Institut für",institute,[],"['49.02129', '8.36819']",http://www.ibap.kit.edu
+606,"Engler-Bunte-Institut, Bereich I, Chemische Energieträger - Brennstofftechnologie (EBI-CEB)",institute,[],"['49.01400', '8.41489']",http://ceb.ebi.kit.edu
+607,"Angewandte Biowissenschaften (IAB), Institut für",institute,[],"['49.01569', '8.41946']",http://www.iab.kit.edu/
+609,"Technikzukünfte - Geschichte, Institut für",institute,[],"['49.00948', '8.39327']",http://www.geschichte.kit.edu/
+610,"Astroteilchenphysik (IAP), Institut für",institute,[],"['49.09435', '8.43073']",http://www.iap.kit.edu
+611,Telecooperation Office (TecO),institute,[],"['49.01304', '8.42419']",
+612,"Automation und Angewandte Informatik (IAI), Institut für",institute,[],"['49.09589', '8.43363']",https://www.iai.kit.edu/index.php
+613,"Informationsmanagement im Ingenieurwesen (IMI) , Institut für",institute,[],"['49.01242', '8.40811']",https://www.imi.kit.edu/
+614,"Thermische Energietechnik und Sicherheit (ITES), Institut für",institute,[],"['49.09354', '8.43506']",http://www.iket.kit.edu
+615,Interfakultatives Institut für Anwendungen der Informatik,institute,[],"['49.01293', '8.41110']",http://www.iiai.kit.edu/
+616,"Nachrichtentechnik , Institut für",institute,[],"['49.02041', '8.36768']",https://www.cel.kit.edu
+617,"Hochleistungsimpuls- und Mikrowellentechnik (IHM), Institut für",institute,[],"['49.09505', '8.43078']",http://www.ihm.kit.edu
+618,Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM),institute,['zak'],"['49.01141', '8.41870']",https://www.forum.kit.edu/index.php
+619,"Versuchsanstalt für Stahl, Holz und Steine",institute,[],"['49.00986', '8.41629']",http://stahl.vaka.kit.edu
+620,"Telematik (ITM), Institut für",institute,[],"['49.01213', '8.40812']",https://telematics.tm.kit.edu
+621,"Technische Chemie (ITC), Institut für",institute,[],"['49.09414', '8.43161']",http://www.itc.kit.edu
+622,"Katalyseforschung und -Technologie (IKFT), Institut für",institute,[],"['49.10259', '8.43291']",http://www.ikft.kit.edu/
+623,"Volkswirtschaftslehre, Institut für",institute,[],"['49.00897', '8.41109']",http://www.econ.kit.edu/
+625,"Mess- und Regelungstechnik MRT, Institut für",institute,[],"['49.01453', '8.41733']",http://www.mrt.kit.edu/
+626,"Industrielle Informationstechnik, Institut für",institute,[],"['49.02179', '8.36620']",http://www.iiit.kit.edu
+628,"Geographie und Geoökologie, Institut für",institute,[],"['49.00951', '8.41695']",http://www.ifgg.kit.edu/
+629,Physikalisches Institut (PI),institute,[],"['49.01293', '8.41110']",http://www.phi.kit.edu
+630,"Angewandte Geowissenschaften, Institut für",institute,[],"['49.01547', '8.42037']",http://www.agw.kit.edu
+632,"Engler-Bunte-Institut, Bereich Wasserchemie",institute,[],"['49.01400', '8.41489']",https://wasserchemie.ebi.kit.edu
+633,"Mikro- und Nanoelektronische Systeme (IMS), Institut für",institute,[],"['49.02129', '8.36819']",http://www.ims.kit.edu
+637,"Angewandte und Numerische Mathematik, Institut für",institute,[],"['49.01104', '8.40903']",http://www.math.kit.edu/ianm
+638,"Mechanik, Institut für",institute,[],"['49.00958', '8.41548']",http://www.ifm.kit.edu
+639,Zentrum für Angewandte Rechtswissenschaft (ZAR),institute,[],"['49.01386', '8.42415']",http://www.zar.kit.edu/
+640,"Massivbau und Baustofftechnologie, Institut für",institute,[],"['49.01413', '8.42077']",http://www.imb.kit.edu
+641,"Neutronenphysik und Reaktortechnik, Institut für",institute,[],"['49.09846', '8.43076']",http://www.inr.kit.edu
+642,"Organische Chemie, Institut für",institute,[],"['49.01296', '8.41423']",http://www.ioc.kit.edu/
+643,"Angewandte Thermofluidik (IATF), Institut für",institute,[],"['49.01386', '8.42415']",https://www.iatf.kit.edu/
+644,"Nukleare Entsorgung (INE), Institut für",institute,[],"['49.10143', '8.42875']",http://www.ine.kit.edu
+645,"Theoretische Teilchenphysik (TTP), Institut für",institute,[],"['49.01293', '8.41110']",http://www.ttp.kit.edu/
+646,"Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut für",institute,[],"['49.01389', '8.41951']",http://crypto.iti.kit.edu/?id=iti-crypto&L=0
+647,Institut für Arbeitswissenschaft und Betriebsorganisation (ifab),institute,[],"['49.01468', '8.41574']",http://www.ifab.kit.edu/
+648,"Theoretische Physik (TP), Institut für",institute,[],"['49.01293', '8.42907']",https://www.itp.kit.edu/index.de.shtml
+649,"Festkörperphysik, Institut für",institute,[],"['49.09462', '8.43306']",http://www.ifp.kit.edu/
+650,Zoologisches Institut,institute,[],"['49.01237', '8.41451']",http://www.zoo.kit.edu
+651,"Chemische Verfahrenstechnik (CVT), Institut für",institute,[],"['49.01187', '8.41442']",
+652,"Stochastik, Institut für",institute,[],"['49.01105', '8.40903']",http://www.math.kit.edu/stoch/de
+653,"Prozessdatenverarbeitung und Elektronik (IPE), Institut für",institute,[],"['49.09237', '8.43075']",http://www.ipe.kit.edu/
+654,"Photogrammetrie und Fernerkundung (IPF), Institut für",institute,[],"['49.01111', '8.41109']",http://www.ipf.kit.edu/
+655,"Elektroenergiesysteme und Hochspannungstechnik , Institut für",institute,[],"['49.01193', '8.41234']",http://www.ieh.kit.edu/
+656,"Industriebetriebslehre und Industrielle Produktion (IIP), Institut für",institute,[],"['49.02144', '8.36683']",http://www.iip.kit.edu
+657,"Produktentwicklung (IPEK), Institut für",institute,[],"['49.00937', '8.41428']",http://www.ipek.kit.edu
+658,"Technische Chemie und Polymerchemie, Institut für",institute,[],"['49.01079', '8.41405']",http://www.itcp.kit.ed
+659,"Anorganische Chemie, Institut für",institute,[],"['49.01140', '8.41380']",http://www.aoc.kit.edu
+661,"Theoretische Festkörperphysik, Institut für",institute,[],"['49.01293', '8.41110']",http://www.tfp.kit.edu/
+663,"Entwerfen und Bautechnik, Institut",institute,[],"['49.01111', '8.41109']",http://www.arch.kit.edu/institute/ieb.php
+664,"Entrepreneurship, Technologie-Management und Innovation (EnTechnon), Institut für",institute,[],"['49.00906', '8.41030']",https://www.entechnon.kit.edu
+666,"Technische Informatik (ITEC), Institut für",institute,[],"['49.01389', '8.41951']",http://www.informatik.kit.edu/260.php
+667,Elektrotechnisches Institut (ETI),institute,[],"['49.01078', '8.41282']",http://www.eti.kit.edu
+668,"Photonenforschung und Synchrotronstrahlung (IPS), Institut für",institute,[],"['49.09599', '8.42888']",http://www.ips.kit.edu/index.php
+670,"Technische Mechanik, Institut für",institute,[],"['49.00937', '8.41428']",http://www.itm.kit.edu
+671,"Verkehrswesen (IfV), Institut für",institute,[],"['49.00958', '8.41548']",https://www.ifv.kit.edu/
+672,"Technikfolgenabschätzung und Systemanalyse (ITAS), Institut für",institute,[],"['49.01119', '8.39534']",http://www.itas.kit.edu
+673,"Fördertechnik und Logistiksysteme, Institut für",institute,[],"['49.01491', '8.42104']",http://www.ifl.kit.edu/
+674,"Kolbenmaschinen, Institut für",institute,[],"['49.02186', '8.43111']",http://www.ifkm.kit.edu/
+675,KITA nanos (Campus Nord),facility,[],"['49.09088', '8.43081']",
+676,Pressestelle (STS),facility,[],"['49.01023', '8.41180']",https://www.kit.edu/kit/presseinformationen.php
+677,Studienkolleg für ausländische Studierende (STK),facility,[],"['49.01031', '8.41878']",http://www.stk.kit.edu
+678,Forschungsförderung (FOR) CS,facility,['for_cs'],"['49.00906', '8.41030']",http://www.for.kit.edu/
+683,Forschungsförderung (FOR) CN,facility,['for_cn'],"['49.09304', '8.42786']",http://www.for.kit.edu/
+685,Gastdozentenhaus,facility,[],"['49.01306', '8.40840']",http://www.gdh.kit.edu/
+688,AKK (Studierendenzentrum),facility,[],"['49.01112', '8.41487']",
+690,Medizinische Dienste (MED) CN,facility,[],"['49.09243', '8.42706']",http://www.med.kit.edu/
+691,Karlsruhe House of Young Scientists (KHYS),facility,[],"['49.01307', '8.41603']",http://www.khys.kit.edu
+692,Finanzmanagement (FIMA),facility,[],"['49.00941', '8.41206']",http://www.fima.kit.edu
+693,KIT-Archiv,facility,[],"['49.00942', '8.41278']",http://www.archiv.kit.edu
+694,Kantine (Campus Nord),facility,[],"['49.09319', '8.42913']",http://www.aserv.kit.edu/casino.php
+695,Personalentwicklung und Berufliche Ausbildung (PEBA),facility,[],"['49.01304', '8.42419']",http://www.peba.kit.edu
+696,Werkfeuerwehr,facility,[],"['49.09592', '8.42674']",http://www.aserv.kit.edu/56.php
+697,"KIT-Shuttle (Haltestelle Campus Nord, Südtor)",facility,['shuttle-cn-sued'],"['49.09132', '8.42808']",
+698,Rechtsangelegenheiten (RECHT),facility,[],"['49.09304', '8.42786']",http://www.recht.kit.edu
+699,Medizinische Dienste (MED) CS,facility,[],"['49.01191', '8.40927']",https://www.med.kit.edu/
+700,KIT-Shuttle (Haltestelle Campus Ost),facility,['shuttle-co'],"['49.02099', '8.43105']",
+701,Bibliothek (Campus Nord),facility,[],"['49.09464', '8.42830']",http://www.bibliothek.kit.edu
+703,Fortbildungszentrum für Technik und Umwelt (FTU),facility,[],"['49.09137', '8.42730']",http://www.fortbildung.kit.edu/
+704,Studierendenservice,facility,[],"['49.00976', '8.41180']",http://www.sle.kit.edu
+705,Personalservice (PSE) CN,facility,[],"['49.09304', '8.42786']",http://www.pse.kit.edu
+707,"Einkauf, Verkauf und Materialwirtschaft (EVM)",facility,[],"['49.09347', '8.42796']",http://www.evm.kit.edu
+711,Personalservice (PSE) CS,facility,[],"['49.00943', '8.41154']",http://www.pse.kit.edu
+712,Bibliothek (Campus Süd),facility,[],"['49.01101', '8.41642']",http://www.bibliothek.kit.edu/cms/
+715,House of Competence (HOC),facility,[],"['49.00636', '8.41065']",http://www.hoc.kit.edu/
+716,Studierendenwerk,facility,[],"['49.01188', '8.41756']",
+717,"Scientific Computing Center (SCC), CS",facility,"['rechenzentrum', 'rz', 'scc']","['49.01253', '8.40793']",https://www.scc.kit.edu
+718,Internationales (INTL),facility,[],"['49.01031', '8.41889']",http://www.intl.kit.edu/intl/
+720,International Students Office (INTL),facility,[],"['49.01031', '8.41889']",http://www.intl.kit.edu/istudent/
+721,International Scholars & Welcome Office (Campus Nord),facility,[],"['49.09309', '8.42787']",http://www.intl.kit.edu/iforscher/
+723,Facility Management (FM),facility,[],"['49.00943', '8.41195']",http://www.fm.kit.edu/
+724,International Scholars & Welcome Office (Campus Süd),facility,[],"['49.00994', '8.41921']",http://www.intl.kit.edu/iforscher/
+725,Mensa,facility,[],"['49.01196', '8.41684']",http://www.studentenwerk-karlsruhe.de/de/essen/
+727,Sicherheit und Umwelt (SUM),facility,[],"['49.09417', '8.43605']",http://www.sum.kit.edu/
+728,Studienzentrum für Sehgeschädigte (SZS),facility,[],"['49.01194', '8.41019']",https://www.szs.kit.edu
+729,Laboratorium für Elektronenmikroskopie (LEM),facility,[],"['49.01254', '8.41049']",https://www.lem.kit.edu
+730,KIT-Shuttle (Haltestelle Campus Süd),facility,['shuttle-cs'],"['49.01017', '8.41823']",
+734,Lernzentrum am Fasanenschlösschen (Geb. 30.28),facility,[],"['49.01267', '8.41226']",
+736,Meteorologie und Klimaforschung - Atmosphärische Aerosolforschung (IMK-AAF) ,institute,[],"['49.09546', '8.42938']",
+739,Meteorologie und Klimaforschung - Atmosphärische Spurenstoffe und Fernerkundung (IMK-ASF),institute,[],"['49.09394', '8.43644']",http://www.imk-asf.kit.edu/
+741,Meteorologie und Klimaforschung  - Troposphäre (IMK-TRO),institute,[],"['49.01295', '8.41103']",http://www.imk-tro.kit.edu/
+743,Schwerbehindertenvertretung (SBV) Campus Süd,facility,[],"['49.01025', '8.41179']",http://www.sbv.kit.edu/
+745,Zentrum für Mediales Lernen (ZML),facility,[],"['49.00751', '8.40425']",http://www.zml.kit.edu/
+747,Materialprüfungsanstalt (MPA),facility,[],"['49.01392', '8.42155']",http://www.mpa.kit.edu/
+748,"Scientific Computing Center (SCC), CN",facility,"['iwr', 'hik']","['49.09577', '8.43297']",http://www.scc.kit.edu/
+749,Sprachenzentrum (Geb. 50.20),facility,[],"['49.01035', '8.41879']",https://www.spz.kit.edu/
+750,MINT-Kolleg,facility,[],"['49.01126', '8.40903']",https://www.mint-kolleg.kit.edu/
+755,AStA,facility,[],"['49.01215', '8.41597']",http://www.asta-kit.de/
+756,Fachschaft Architektur,institute,[],"['49.01096', '8.41084']",http://www.fsarchkit.de/wordpress/
+757,Fachschaft Bauingenieurwesen,institute,[],"['49.01025', '8.41548']",http://www.fs-bau.kit.edu/
+758,Fachschaft Chemie und Biowissenschaften,institute,[],"['49.01266', '8.41389']",https://www.fschembio-kit.de/
+759,Fachschaft Elektro- und Informationstechnik,institute,[],"['49.01070', '8.41277']",https://fachschaft.etec.uni-karlsruhe.de/
+760,Fachschaft Geistes- und Sozialwissenschaften,institute,[],"['49.01351', '8.41345']",http://www.geistsoz.de/
+761,Fachschaft Geodäsie und Geoinformatik,institute,[],"['49.01096', '8.41084']",http://www.fachschaft-gug.de/
+762,Fachschaft Geowissenschaften,institute,[],"['49.00970', '8.41693']",http://fs-geo.bio-geo.uni-karlsruhe.de/
+763,Fachschaft Informatik,institute,[],"['49.01386', '8.41949']",http://www.fsmi.uni-karlsruhe.de/
+764,Fachschaft Kunstgeschichte,institute,[],"['49.01096', '8.41084']",http://kg.ikb.kit.edu/68.php
+765,Fachschaft Maschinenbau/Chemieingenieurwesen,institute,[],"['49.00954', '8.41430']",http://www.fs-fmc.kit.edu/
+766,Fachschaft Mathematik und Informatik,institute,[],"['49.01386', '8.41949']",http://www.fsmi.uni-karlsruhe.de/
+767,Fachschaft Physik,institute,[],"['49.01240', '8.41089']",http://fachschaft.physik.kit.edu/drupal/
+768,Fachschaft Sport,institute,[],"['49.01565', '8.41632']",http://www.sport.kit.edu/fachschaft/
+769,Fachschaft WiWi,institute,[],"['49.00918', '8.40966']",http://www.fachschaft.org/
+771,"Germanistik: Literatur, Sprache, Medien (GER), Institut für",institute,[],"['49.01322', '8.41354']",https://www.geistsoz.kit.edu/germanistik/
+772,Zentrale Studienberatung (ZSB),facility,[],"['49.01038', '8.41248']",http://www.sle.kit.edu/vorstudium/zib.php
+773,"Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP), Institut für",institute,[],"['49.10080', '8.43394']",http://www.iam.kit.edu/awp/
+774,"Angewandte Materialien - Werkstoff- und Grenzflächenmechanik (IAM-MMI), Institut für",institute,[],"['49.09970', '8.43420']",http://www.iam.kit.edu/wbm/
+775,"Angewandte Materialien - Werkstoffkunde (IAM-WK) Gebäude 10.91, Institut für",institute,[],"['49.00999', '8.41346']",http://www.iam.kit.edu/wk/
+776,"Angewandte Materialien - Werkstoffkunde (IAM-WK) Gebäude 10.96, Institut für",institute,[],"['49.00986', '8.41411']",
+777,"Angewandte Materialien – Keramische Werkstoffe und Technologien (IAM-KWT), Institut für",institute,[],"['49.01244', '8.42549']",http://www.iam.kit.edu/km/
+778,"Angewandte Materialien – Computational Materials Science (IAM-CMS) , Institut für",institute,[],"['49.00999', '8.41346']",http://www.iam.kit.edu/cms/
+779,"Angewandte Materialien - Energiespeichersysteme (IAM-ESS) , Institut für",institute,[],"['49.09652', '8.43166']",http://www.iam.kit.edu/ess/
+781,449,building,[],"['49.09577', '8.43297']",
+782,01.87,building,[],"['49.00510', '8.41154']",
+784,Oberer Hörsaal Maschinenbau (10.91),lecturehall,[],"['49.00992', '8.41285']",
+785,30.28,building,[],"['49.01296', '8.41222']",
+786,01.85,building,[],"['49.00887', '8.41043']",
+787,Karlsruhe Decision & Design Laboratory (KD²Lab),facility,[],"['49.00887', '8.41043']",https://www.kd2lab.kit.edu/
+788,3300,building,[],"['49.01121', '8.39536']",
+789,01.86,building,[],"['49.00631', '8.41061']",
+790,"Bereich I – Biologie, Chemie und Verfahrenstechnik (Campus Süd)",facility,[],"['49.00947', '8.41175']",http://www.kit.edu/b1/index.php
+791,"Bereich I - Biologie, Chemie und Verfahrenstechnik (Campus Nord)",facility,[],"['49.09451', '8.43404']",http://www.kit.edu/b1/index.php
+792,"Bereich II - Informatik, Wirtschaft und Gesellschaft (CS)",facility,[],"['49.00949', '8.41163']",http://www.kit.edu/b2/index.php
+793,"Bereich II - Informatik, Wirtschaft und Gesellschaft (CN)",facility,[],"['49.09483', '8.43473']",http://www.kit.edu/b2/index.php
+794,Bereich III - Maschinenbau und Elektrotechnik (CS),facility,[],"['49.00949', '8.41163']",http://www.kit.edu/b3/index.php
+795,Bereich III - Maschinenbau und Elektrotechnik (CN),facility,[],"['49.09461', '8.43408']",http://www.kit.edu/b3/index.php
+796,Bereich IV - Natürliche und gebaute Umwelt (CS),facility,[],"['49.00948', '8.41162']",http://www.kit.edu/b4/index.php
+797,Bereich IV - Natürliche und gebaute Umwelt (CN),facility,[],"['49.09387', '8.43643']",http://www.kit.edu/b4/index.php
+798,Bereich V - Physik und Mathematik (CS),facility,[],"['49.00948', '8.41162']",http://www.kit.edu/b5/index.php
+799,Bereich V - Physik und Mathematik (CN),facility,[],"['49.09484', '8.43468']",http://www.kit.edu/b5/index.php
+800,440,building,[],"['49.09308', '8.43615']",
+804,9675,building,['containergebäude'],"['49.09428', '8.43507']",
+805,KIT-Zentrum für Klima und Umwelt,facility,[],"['49.09428', '8.43509']",http://www.klima-umwelt.kit.edu/index.php
+806,KIT-Zentrum Energie,facility,[],"['49.09429', '8.43509']",http://www.energie.kit.edu/index.php
+807,Projektträger Karlsruhe (PTKA),facility,[],"['49.09429', '8.43509']",http://www.ptka.kit.edu/
+808,01.80,building,[],"['49.00987', '8.41098']",
+809,20.40,building,[],"['49.01126', '8.41137']",
+810,30.48,building,[],"['49.01317', '8.41478']",
+811,30.49,building,[],"['49.01351', '8.41538']",
+812,"Theorie der Kondensierten Materie, Institut für",institute,[],"['49.01307', '8.41076']",https://www.tkm.kit.edu/
+813,Fachbibliothek WIWI,facility,[],"['49.01303', '8.37530']",https://www.wiwi.kit.edu/bib.php
+814,"Professur für Industrieökonomik, Institut für Volkswirtschaftslehre (ECON)",institute,[],"['49.01302', '8.37533']",http://io.econ.kit.edu/
+815,"Professur für Finanzwissenschaft und Public Management, Institut für Volkswirtschaftslehre (ECON)",institute,[],"['49.01301', '8.37530']",http://fiwi.econ.kit.edu/index.php
+816,"Professur für Makroökonomik, Institut für Volkswirtschaftslehre (ECON)",institute,[],"['49.01302', '8.37529']",http://macro.econ.kit.edu/
+817,"Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON",institute,[],"['49.00891', '8.41131']",http://netze.econ.kit.edu/
+818,"Professur für Ökonometrie, Institut für Volkswirtschaftslehre (ECON)",institute,[],"['49.01303', '8.37528']",http://statistik.econ.kit.edu/
+819,"Professur für Politische Ökonomie, Institut für Volkswirtschaftslehre (ECON)",institute,[],"['49.00895', '8.41037']",http://polit.econ.kit.edu/deutsch/index.php
+820,"Professur für Wirtschaftspolitik, Institut für Volkswirtschaftslehre (ECON)",institute,[],"['49.00494', '8.41088']",http://wipo.econ.kit.edu/
+822,"Ökonomie und Ökologie des Wohnungsbaus (OEW), Fachgebiet Immobilienwirtschaft",institute,[],"['49.01237', '8.40929']",http://www.oew.kit.edu/
+824,"Wirtschaftswissenschaften, KIT-Fakultät für",facility,[],"['49.00915', '8.40934']",http://www.wiwi.kit.edu/fakultaet.php
+825,"Soziologie, Medien- und Kulturwissenschaften (ISMK), Institut für ",institute,[],"['49.01025', '8.41176']",http://geistsoz.kit.edu/ismk/
+828,"Institut für Operations Research (IOR), Bereich Diskrete Optimierung und Logistik",institute,[],"['49.00914', '8.40928']",http://dol.ior.kit.edu/
+829,"Institut für Operations Research (IOR), Bereich Kontinuierliche Optimierung",institute,[],"['49.01300', '8.37529']",http://kop.ior.kit.edu/
+830,"Institut für Operations Research (IOR), Bereich Stochastische Modellierung und Optimierung",institute,[],"['49.01305', '8.37524']",http://smo.ior.kit.edu/
+831,"Institut für Operations Research (IOR), Bereich Analytics and Statistics",institute,[],"['49.00493', '8.41080']",http://as.ior.kit.edu/index.php
+832,09.20,building,[],"['49.00944', '8.39324']",
+833,09.21,building,[],"['49.01305', '8.37527']",
+834,9651,building,[],"['49.09502', '8.43545']",
+835,Schwerbehindertenvertretung (SBV) Campus Nord,facility,[],"['49.09361', '8.42831']",http://www.sbv.kit.edu/
+837,"Technikzukünfte, Institut für ",institute,[],"['49.00952', '8.39331']",http://www.itz.kit.edu/index.php
+838,"Angewandte Betriebswirtschaftslehre und Unternehmensführung (IBU), Institut für",institute,[],"['49.00905', '8.40956']",http://www.ibu.kit.edu/index.php
+839,"Maschinenbau, KIT-Fakultät für",facility,[],"['49.00987', '8.41365']",http://www.mach.kit.edu/index.php
+840,70.03,building,[],"['49.02215', '8.43354']",
+841,145,building,[],"['49.09323', '8.42917']",
+842,40.50,building,[],"['49.01418', '8.41438']",
+843,40.51,building,[],"['49.01414', '8.41491']",
+844,Evaluationsstelle (STS-QM),facility,[],"['49.00967', '8.41144']",https://www.sek.kit.edu/215.php
+845,40.44,building,[],"['49.01615', '8.41488']",
+846,Hochschulsport,facility,[],"['49.01605', '8.41686']",http://www.sport.kit.edu/Hochschulsport.php
+847,Versuchsanstalt des Joseph Gottlieb Kölreuter Instituts für Pflanzenwissenschaften,facility,[],"['49.01325', '8.41928']",https://www.jkip.kit.edu/garten/index.php
+849,01.90,building,[],"['49.00965', '8.41101']",
+850,01.99,building,[],"['49.00966', '8.40757']",
+851,09.22,building,[],"['48.99330', '8.34448']",
+852,09.23,building,[],"['49.00519', '8.39072']",
+853,70.04,building,[],"['49.02272', '8.43344']",
+854,Mitfahrbank (Campus Süd): Bibliothek,facility,['mitfahrbank-cs-bib'],"['49.01086', '8.41658']",
+855,Mitfahrbank (Campus Süd): Schranke zur Westeinfahrt,facility,['mitfahrbank-cs-west'],"['49.01166', '8.40886']",
+856,Mitfahrbank (Campus Nord): Südtor,facility,['mitfahrbank-cn'],"['49.09126', '8.42776']",
+857,Stab und Strategie (STS),facility,[],"['49.01029', '8.41182']",https://www.sts.kit.edu/
+858,Technik-Haus,facility,[],"['49.09260', '8.43165']",https://www.tec.kit.edu/index.php
+859,70.01,building,[],"['49.02105', '8.43177']",
+862,Archiv für Architektur und Ingenieurbau (saai),institute,[],"['49.00927', '8.41509']",https://www.saai.kit.edu/index.php
+863,"Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  für",institute,[],"['49.01602', '8.42067']",https://www.iam.kit.edu/et/index.php
+864,"Beschleunigerphysik und Technologie (IBPT) - Direktor/Verwaltung, Institut für",institute,[],"['49.09613', '8.42886']",https://www.ibpt.kit.edu/index.php
+865,"Beschleunigerphysik und Technologie (IBPT) - Büros, Institut für",institute,[],"['49.09638', '8.42966']",https://www.ibpt.kit.edu/index.php
+866,5252,building,[],"['49.09171', '8.43308']",
+867,1600,building,[],"['49.11186', '8.43739']",
+870,229,building,[],"['49.09148', '8.43178']",
+871,01.95,building,[],"['49.00903', '8.41213']",
+872,10.22 - LAZ,building,[],"['49.00941', '8.41389']",
+873,50.28 - InformatiKOM II,building,[],"['49.01057', '8.41924']",
+874,50.19 - InformatiKOM I,building,[],"['49.01137', '8.41882']",
+875,Kleiner Hörsaal Bauingenieure (10.50),lecturehall,[],"['49.00972', '8.41689']",
+876,Chemie-Hörsaal II (30.41),lecturehall,[],"['49.01241', '8.41389']",
+877,Chemie-Hörsaal III (30.41),lecturehall,[],"['49.01241', '8.41384']",
+878,Mittlerer Hörsaal Maschinenbau (10.91),lecturehall,[],"['49.00996', '8.41291']",
+879,Physik-Hörsaal Nr. 4 (30.22),lecturehall,[],"['49.01245', '8.41066']",
+880,Fritz-Haller-Hörsaal (20.40),lecturehall,[],"['49.01104', '8.41090']",
+881,Neuer Hörsaal Architektur (20.40),lecturehall,[],"['49.01098', '8.41091']",
+882,Neuer Hörsaal Chemie (30.46),lecturehall,[],"['49.01183', '8.41388']",
+883,Engler-Bunte-Hörsaal (40.50),lecturehall,[],"['49.01401', '8.41431']",
+884,Bauingenieure-Hörsaal (50.31),lecturehall,[],"['49.01414', '8.42099']",
+885,Hörsaal 101 (10.50),lecturehall,[],"['49.00968', '8.41689']",
+886,Hörsaal 102 (10.50),lecturehall,[],"['49.00969', '8.41687']",
+887,508,building,[],"['49.09876', '8.43137']",
+888,665,building,[],"['49.10050', '8.43674']",
+889,666,building,[],"['49.10046', '8.43690']",
+890,667,building,[],"['49.10044', '8.43707']",
+891,668,building,[],"['49.10026', '8.43675']",
+892,669,building,[],"['49.10022', '8.43704']",
+893,Energy Lab,building,['elab'],"['49.09934', '8.43641']",https://www.elab.kit.edu
+894,Institut für Wirtschaftsinformatik (WIN),institute,[],"['49.00896', '8.40931']",https://www.win.kit.edu/index.php
+895,KinderUniversum,facility,[],"['49.01016', '8.41964']",
+896,214,building,[],"['49.09085', '8.43021']",

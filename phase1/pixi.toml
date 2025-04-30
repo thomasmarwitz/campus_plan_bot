@@ -1,0 +1,13 @@
+[workspace]
+authors = ["thomasmarwitz <thomasmarwitz3@gmail.com>"]
+channels = ["conda-forge"]
+name = "phase1"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+jupyter = ">=1.1.1,<2"
+pandas = ">=2.2.3,<3"
+geopy = ">=2.4.1,<3"
