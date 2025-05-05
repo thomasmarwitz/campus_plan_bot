@@ -544,6 +544,7 @@ id,title,category,aliasList,positionList,url
 551,"Produktionstechnik (wbk), Institut für",institute,[],"['49.01493', '8.41964']",http://www.wbk.kit.edu
 552,"Regelungs- und Steuerungssysteme, Institut für",institute,[],"['49.01103', '8.41217']",http://www.irs.kit.edu/
 554,"Thermische Strömungsmaschinen, Institut für",institute,[],"['49.01253', '8.41661']",http://www.its.kit.edu
+554,"Thermische Strömungsmaschinen, Institut für",institute,[],"['49.00990', '8.41322']",http://www.its.kit.edu
 555,"Funktionelle Grenzflächen (IFG), Institut für",institute,[],"['49.09637', '8.42575']",http://www.ifg.kit.edu
 556,"Experimentelle Teilchenphysik (ETP), Institut für",institute,[],"['49.01293', '8.41110']",http://www.etp.kit.edu/index.php
 557,Institut für Biologische und Chemische Systeme (IBCS),institute,[],"['49.09496', '8.42757']",http://www.itg.kit.edu/
@@ -566,6 +567,7 @@ id,title,category,aliasList,positionList,url
 579,"Hochfrequenztechnik und Elektronik (IHE), Institut für",institute,[],"['49.01288', '8.40949']",http://www.ihe.kit.edu/
 580,"Entwerfen, Kunst und Theorie (EKUT), Institut",institute,[],"['49.01111', '8.41109']",http://www.arch.kit.edu/institute/ekut.php
 581,"Technikzukünfte - Philosophie, Institut für",institute,[],"['49.00948', '8.39325']",http://www.philosophie.kit.edu/
+581,"Technikzukünfte - Philosophie, Institut für",institute,[],"['49.01257', '8.40664']",http://www.philosophie.kit.edu/
 582,Karlsruhe Service Research Institute (KSRI),institute,[],"['49.00914', '8.40940']",http://www.ksri.kit.edu/
 583,"Sport und Sportwissenschaft, Institut für",institute,[],"['49.01579', '8.41638']",http://www.sport.kit.edu/
 584,"Theoretische Elektrotechnik und Systemoptimierung (ITE), Institut für",institute,[],"['49.01226', '8.41320']",http://www.ite.kit.edu/
@@ -690,10 +692,12 @@ id,title,category,aliasList,positionList,url
 741,Meteorologie und Klimaforschung  - Troposphäre (IMK-TRO),institute,[],"['49.01295', '8.41103']",http://www.imk-tro.kit.edu/
 743,Schwerbehindertenvertretung (SBV) Campus Süd,facility,[],"['49.01025', '8.41179']",http://www.sbv.kit.edu/
 745,Zentrum für Mediales Lernen (ZML),facility,[],"['49.00751', '8.40425']",http://www.zml.kit.edu/
+745,Zentrum für Mediales Lernen (ZML),facility,[],"['49.01136', '8.41887']",http://www.zml.kit.edu/
 747,Materialprüfungsanstalt (MPA),facility,[],"['49.01392', '8.42155']",http://www.mpa.kit.edu/
 748,"Scientific Computing Center (SCC), CN",facility,"['iwr', 'hik']","['49.09577', '8.43297']",http://www.scc.kit.edu/
 749,Sprachenzentrum (Geb. 50.20),facility,[],"['49.01035', '8.41879']",https://www.spz.kit.edu/
 750,MINT-Kolleg,facility,[],"['49.01126', '8.40903']",https://www.mint-kolleg.kit.edu/
+750,MINT-Kolleg,facility,[],"['49.01035', '8.41879']",https://www.mint-kolleg.kit.edu/
 755,AStA,facility,[],"['49.01215', '8.41597']",http://www.asta-kit.de/
 756,Fachschaft Architektur,institute,[],"['49.01096', '8.41084']",http://www.fsarchkit.de/wordpress/
 757,Fachschaft Bauingenieurwesen,institute,[],"['49.01025', '8.41548']",http://www.fs-bau.kit.edu/
@@ -709,6 +713,7 @@ id,title,category,aliasList,positionList,url
 767,Fachschaft Physik,institute,[],"['49.01240', '8.41089']",http://fachschaft.physik.kit.edu/drupal/
 768,Fachschaft Sport,institute,[],"['49.01565', '8.41632']",http://www.sport.kit.edu/fachschaft/
 769,Fachschaft WiWi,institute,[],"['49.00918', '8.40966']",http://www.fachschaft.org/
+769,Fachschaft WiWi,institute,[],"['49.01265', '8.40663']",http://www.fachschaft.org/
 771,"Germanistik: Literatur, Sprache, Medien (GER), Institut für",institute,[],"['49.01322', '8.41354']",https://www.geistsoz.kit.edu/germanistik/
 772,Zentrale Studienberatung (ZSB),facility,[],"['49.01038', '8.41248']",http://www.sle.kit.edu/vorstudium/zib.php
 773,"Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP), Institut für",institute,[],"['49.10080', '8.43394']",http://www.iam.kit.edu/awp/
@@ -771,6 +776,8 @@ id,title,category,aliasList,positionList,url
 840,70.03,building,[],"['49.02215', '8.43354']",
 841,145,building,[],"['49.09323', '8.42917']",
 842,40.50,building,[],"['49.01418', '8.41438']",
+842,40.50,building,[],"['49.01418', '8.41438']",
+843,40.51,building,[],"['49.01414', '8.41491']",
 843,40.51,building,[],"['49.01414', '8.41491']",
 844,Evaluationsstelle (STS-QM),facility,[],"['49.00967', '8.41144']",https://www.sek.kit.edu/215.php
 845,40.44,building,[],"['49.01615', '8.41488']",
