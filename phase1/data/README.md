@@ -2,7 +2,7 @@
 
 ## Data fetching
 
-The data was fetched from [this website](https://www.kit.edu/campusplan/)'s sources, specificalls, the `data_de.js` file. The initial data only contains names, a category (building, lecture hall, etc.) and a location (latitude and longitude).
+The data was fetched from [this website](https://www.kit.edu/campusplan/)'s sources, specifically, the `data_de.js` file. The initial data only contains names, a category (building, lecture hall, etc.) and a location (latitude and longitude).
 
 ## Data enrichment
 
