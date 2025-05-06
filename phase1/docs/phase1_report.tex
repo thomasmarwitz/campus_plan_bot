@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+
+\title{LLM Practical: Report Phase 1}
+\author{Frederik, Thomas}
+\date{14 May 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\section{Task Specification}
+
+
+\subsection{Retrieve static information (RAG)}
+  \begin{itemize}
+      \item Where is building 50.34?
+      \item In which building is the Gottlieb-Daimler-Hörsaal?
+      \item When is the Mensa opened?
+      \item What kind of building is 20.21?
+      \item What is the address of InformatiKOM 1?
+      \item Give me the telephone number of the Max Rubner Institute!
+      \item Is the Egon Eiermann Hörsaal accessible with a wheelchair?
+  \end{itemize}
+
+
+\subsection{Other tool usage}
+
+\subsubsection{Create link for navigation}
+  \begin{itemize}
+  \item Return clickable link for navigation with Google Maps, etc.
+  \end{itemize}
+
+\subsubsection{Show on campus plan}
+  \begin{itemize}
+  \item Return link to campus plan with specific building selected
+  \end{itemize}
+
+\subsubsection{Navigate to website}
+  \begin{itemize}
+  \item Open the website associated with a location
+  \end{itemize}
+
+\subsubsection{Contact institute}
+Returns a clickable URL based on the retrieved contact information that opens the default program on the user's computer. Currently, the data set contains phone numbers for several buildings and institutes. In the future additional contact methods like e-mail addresses could be collected and added to the data set.
+  \begin{itemize}
+  \item I want to call the main library.
+  \end{itemize}
+
+\subsection{Use current time}
+  \begin{itemize}
+  \item Is the Mensa open right now?
+    \item Warn when closed
+      \begin{itemize}
+      \item e.g. when asking for direction to a building that is currently closed
+      \end{itemize}
+  \end{itemize}
+
+\subsection{Additional}
+\begin{itemize}
+    \item ASR input
+    \item TTS output
+    \item Multilingual in/output
+    \item Current location
+        \begin{itemize}
+        \item Which lecture hall is closest to me?
+        \item How far is it to the library?
+        \end{itemize}
+    \item List all contact points regarding computer science / architecture / ...
+\end{itemize}
+
+\section{Test Set}
+
+Use string templates to build questions + answer pairs. Use an LLM to vary phrasing, introduce noise (e.g. simulating ASR errors).
+
+- Single / Multi Turn / 
+- Misinformation robustness
+    - Provide information conflicting ground truth
+    - Ask for non-existing information
+    - Ask for non-supported capabilities
+    - Point out (non-existing) errors
+    - Distraction (provide lots of unnecessary information)
+
+\section{Evaluation}
+\subsection{Metrics}
+As a free text system, we cannot use F1 score or similar metrics.
+- success rate
+- F-Score for RAG component
+
+\subsection{Analysis}
+Error categories:
+- task identified incorrectly
+- incorrect information / hallucination
+- bad response time / timeout
+- 
+
+
+\href{https://ai.pydantic.dev/evals/#evaluation-with-llmjudge}{LLM as judge}
+
+\end{document}
