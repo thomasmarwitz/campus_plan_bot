@@ -3,7 +3,7 @@
 \usepackage{hyperref}
 
 \title{LLM Practical: Report Phase 1}
-\author{Frederik, Thomas}
+\author{Frederik Schittny, Thomas Marwitz}
 \date{14 May 2025}
 
 \begin{document}
@@ -13,9 +13,10 @@
 \section{Introduction}
 
 \section{Task Specification}
+The system will be able to perform several different tasks. Although all of these tasks will be based on the retrieval of information from the assembled database, the system's capabilities will not be limited to simple question answering.
 
-
-\subsection{Retrieve static information (RAG)}
+\subsection{Retrieve Static Information (RAG)} \label{sec:stat_info}
+Static information retrieval will be based on retrieval augmented generation (RAG) and focus on conveniently serving static information to the user from the database, based on natural language (textual) input and output. Some example prompts could include:
   \begin{itemize}
       \item Where is building 50.34?
       \item In which building is the Gottlieb-Daimler-Hörsaal?
@@ -26,78 +27,97 @@
       \item Is the Egon Eiermann Hörsaal accessible with a wheelchair?
   \end{itemize}
 
+\subsection{Use of Contextual Information}
+While the information collected in the database is static, it is highly advantageous for the system to have access to current and contextual information about the user. This can make interaction with the system more natural and intuitive. Since some of this information is difficult to collect and process, some use cases have been assigned a low priority (compare~\ref{sec:curr_loc}).
 
-\subsection{Other tool usage}
+\subsubsection{Current Time}
+One of the most basic contextual information to provide is the current time of day. This can allow the system to answer prompts about opening hours like
+\begin{itemize}
+    \item Is the Mensa opened right now?
+    \item How long is the library opened today?
+\end{itemize}
+with a more natural and direct answer rather than simply returning the fixed opening hours.
 
-\subsubsection{Create link for navigation}
+\subsection{Tool Usage}
+Based on the information retrieved with RAG, the system will be able to use (and possibly combine) different tools that increase user convenience.
+
+\subsubsection{Create Link for Navigation} \label{sec:create_nav_link}
+As one of the most important user goals will be navigating to specified buildings (an option that is lacking in the current campus plan), the system will be able to generate clickable navigation links. These links directly start a route to the described destination in a (potentially selectable) navigation app (e.g. Google Maps, Apple Maps, OpenStretMap). Prompts to trigger this tool usage might look like this:
   \begin{itemize}
-  \item Return clickable link for navigation with Google Maps, etc.
+    \item I want to go to the central library.
+    \item Please show me how to get to the Carl-Benz-Hörsaal.
   \end{itemize}
+
+\subsubsection{Navigate to Website}
+With this tool the system is able to take the user directly to the website associated with a building or institution, based on a prompt like
+  \begin{itemize}
+    \item Open the website of the Forschungszentrum Umwelt.
+  \end{itemize}
+This feature is dependent on the technical ability to proactively open a website on the users device. If this capability is not given due to the system's design and setup, this feature would simply return a clickable URL, making it identical to the functionality described in \ref{sec:stat_info}.
+
+\subsubsection{Contact Institute}
+Returns a clickable URL based on the retrieved contact information that opens the default program on the user's computer. Currently, the data set contains phone numbers for several buildings and institutes. In the future, additional contact methods, such as email addresses, could be collected and added to the data set. Prompts for this functionality could include:
+  \begin{itemize}
+    \item I want to call the main library.
+    \item How do I reach out to the administration of building 20.21?
+  \end{itemize}
+
+\subsection{Additional Capabilities}
+These features have been assigned a low priority in the development process. This is either because they do not provide essential functionality or because their implementation is expected to be especially challenging.
 
 \subsubsection{Show on campus plan}
-  \begin{itemize}
-  \item Return link to campus plan with specific building selected
-  \end{itemize}
+Returns a link directly showing the position of a specified building on the existing campus plan.
 
-\subsubsection{Navigate to website}
-  \begin{itemize}
-  \item Open the website associated with a location
-  \end{itemize}
+\subsubsection{Current Location} \label{sec:curr_loc}
+Takes into account the users current location to directly answer questions about distance or routes to locations instead of relying on external services as described in \ref{sec:create_nav_link}.
 
-\subsubsection{Contact institute}
-Returns a clickable URL based on the retrieved contact information that opens the default program on the user's computer. Currently, the data set contains phone numbers for several buildings and institutes. In the future additional contact methods like e-mail addresses could be collected and added to the data set.
-  \begin{itemize}
-  \item I want to call the main library.
-  \end{itemize}
+\subsubsection{ASR Input}
+The system will be designed to handle textual input only. A good ASR algorithm with high enough accuracy can therefor be added at the beginning of the processing pipeline later on, in order to allow for speech inputs. Especially important for this is the correct identification and representation of unusual proper names like "Gebäude 50.34" or "Engler-Bunte-Institut".
 
-\subsection{Use current time}
-  \begin{itemize}
-  \item Is the Mensa open right now?
-    \item Warn when closed
-      \begin{itemize}
-      \item e.g. when asking for direction to a building that is currently closed
-      \end{itemize}
-  \end{itemize}
+\subsubsection{TTS Output}
+The system will be designed to handle textual output only. Adding a high quality TTS algorithm at the end of the processing pipeline, would enable the system to output it's answer as spoken language. As with ASR inputs, the correct pronunciation of unusual proper names would have to be ensured.
 
-\subsection{Additional}
-\begin{itemize}
-    \item ASR input
-    \item TTS output
-    \item Multilingual in/output
-    \item Current location
-        \begin{itemize}
-        \item Which lecture hall is closest to me?
-        \item How far is it to the library?
-        \end{itemize}
-    \item List all contact points regarding computer science / architecture / ...
-\end{itemize}
+\subsubsection{Multilingual In/Output}
+Does the system perform better with English or German as the main internal language (due to German proper and street names). Other languages can be translated during input and output.
+
+\subsubsection{Consideration of User Role}
+Answers based on whether the user is a student, employee, guest, etc.
+
 
 \section{Test Set}
+The overall test set will consist of pairs of system prompts and exemplary answers. We will explore the option of building test prompts with the help of an LLM. We will first create prompts from fixed string templates using the collected information. In order to diversify the test set, these prompts will then be rephrased by an LLM, while preserving the contained information. Additionally the LLM can introduce noise to the prompts like unnecessary user information or simulated ASR errors.\\
 
-Use string templates to build questions + answer pairs. Use an LLM to vary phrasing, introduce noise (e.g. simulating ASR errors).
+The test set will be divided into three categories of prompts for evaluation.
 
-- Single / Multi Turn / 
-- Misinformation robustness
-    - Provide information conflicting ground truth
-    - Ask for non-existing information
-    - Ask for non-supported capabilities
-    - Point out (non-existing) errors
-    - Distraction (provide lots of unnecessary information)
+\subsection{Single Turn}
+
+\subsection{Multi Turn}
+
+\subsection{Misinformation Robustness}
+\begin{itemize}
+    \item Provide information conflicting ground truth
+    \item Ask for non-existing information
+    \item Ask for non-supported capabilities
+    \item Point out (non-existing) errors
+    \item Distraction (provide lots of unnecessary information) 
+\end{itemize}
+
 
 \section{Evaluation}
+
 \subsection{Metrics}
-As a free text system, we cannot use F1 score or similar metrics.
-- success rate
-- F-Score for RAG component
+Since the system never answers with a sequence of predefined tokens but always outputs a natural language text, the evaluation will be based on individual answer scoring rather than predefined scores like F-Measure.\\
+
+We will explore the option of using an LLM as a judge to score the test answers based on the provided reference answer. One potential candidate is the \href{https://ai.pydantic.dev/evals/#evaluation-with-llmjudge}{Pydantic evaluation framework}. This evaluation will be a simple qualitative success rating, giving the answers a binary pass/fail score.\\
+
+Since the RAG component will output a list of information that was identified as useful for the given prompt, this individual part of the system can be evaluated using a quantitative rating like the F-Measure.
 
 \subsection{Analysis}
-Error categories:
-- task identified incorrectly
-- incorrect information / hallucination
-- bad response time / timeout
-- 
-
-
-\href{https://ai.pydantic.dev/evals/#evaluation-with-llmjudge}{LLM as judge}
+In order to make the system's evaluation actionable and improve the system in meaningful ways, a categorization of errors made during testing will be helpful. Potential error categories include:
+\begin{itemize}
+    \item task identified incorrectly / wrong tool used
+    \item incorrect information / hallucination
+    \item bad response time / timeout
+\end{itemize}
 
 \end{document}
