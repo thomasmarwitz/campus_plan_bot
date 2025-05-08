@@ -19,11 +19,10 @@ The system will be able to perform several different tasks. Although all of thes
 Static information retrieval will be based on retrieval augmented generation (RAG) and focus on conveniently serving static information to the user from the database, based on natural language (textual) input and output. Some example prompts could include:
   \begin{itemize}
       \item Where is building 50.34?
-      \item In which building is the Gottlieb-Daimler-Hörsaal?
-      \item When is the Mensa opened?
-      \item What kind of building is 20.21?
       \item What is the address of InformatiKOM 1?
-      \item Give me the telephone number of the Max Rubner Institute!
+      \item In which building is the Gottlieb-Daimler-Hörsaal?
+      \item What kind of building is 20.21?
+      \item When is the Mensa opened?
       \item Is the Egon Eiermann Hörsaal accessible with a wheelchair?
   \end{itemize}
 
@@ -55,12 +54,13 @@ With this tool the system is able to take the user directly to the website assoc
   \end{itemize}
 This feature is dependent on the technical ability to proactively open a website on the users device. If this capability is not given due to the system's design and setup, this feature would simply return a clickable URL, making it identical to the functionality described in \ref{sec:stat_info}.
 
-\subsubsection{Contact Institute}
-Returns a clickable URL based on the retrieved contact information that opens the default program on the user's computer. Currently, the data set contains phone numbers for several buildings and institutes. In the future, additional contact methods, such as email addresses, could be collected and added to the data set. Prompts for this functionality could include:
-  \begin{itemize}
-    \item I want to call the main library.
-    \item How do I reach out to the administration of building 20.21?
-  \end{itemize}
+\section{Input and Output Processing}
+
+\subsubsection{ASR Input}
+The system will be designed to handle textual input only. A good ASR algorithm with high enough accuracy can therefor be added at the beginning of the processing pipeline later on, in order to allow for speech inputs. Especially important for this is the correct identification and representation of unusual proper names like "Gebäude 50.34" or "Engler-Bunte-Institut".
+
+\subsubsection{TTS Output}
+The system will be designed to handle textual output only. Adding a high quality TTS algorithm at the end of the processing pipeline, would enable the system to output it's answer as spoken language. As with ASR inputs, the correct pronunciation of unusual proper names would have to be ensured.
 
 \subsection{Additional Capabilities}
 These features have been assigned a low priority in the development process. This is either because they do not provide essential functionality or because their implementation is expected to be especially challenging.
@@ -68,14 +68,15 @@ These features have been assigned a low priority in the development process. Thi
 \subsubsection{Show on campus plan}
 Returns a link directly showing the position of a specified building on the existing campus plan.
 
+\subsubsection{Contact Institute}
+Returns a clickable URL based on the retrieved contact information that opens the default program on the user's computer. Currently, the data set contains very few unique phone numbers. In the future, additional phone number and other contact methods, such as email addresses, could be collected and added to the data set. Prompts for this functionality could include:
+  \begin{itemize}
+    \item I want to call the main library.
+    \item How do I reach out to the administration of building 20.21?
+  \end{itemize}
+
 \subsubsection{Current Location} \label{sec:curr_loc}
 Takes into account the users current location to directly answer questions about distance or routes to locations instead of relying on external services as described in \ref{sec:create_nav_link}.
-
-\subsubsection{ASR Input}
-The system will be designed to handle textual input only. A good ASR algorithm with high enough accuracy can therefor be added at the beginning of the processing pipeline later on, in order to allow for speech inputs. Especially important for this is the correct identification and representation of unusual proper names like "Gebäude 50.34" or "Engler-Bunte-Institut".
-
-\subsubsection{TTS Output}
-The system will be designed to handle textual output only. Adding a high quality TTS algorithm at the end of the processing pipeline, would enable the system to output it's answer as spoken language. As with ASR inputs, the correct pronunciation of unusual proper names would have to be ensured.
 
 \subsubsection{Multilingual In/Output}
 Does the system perform better with English or German as the main internal language (due to German proper and street names). Other languages can be translated during input and output.
@@ -94,6 +95,7 @@ The test set will be divided into three categories of prompts for evaluation.
 \subsection{Multi Turn}
 
 \subsection{Misinformation Robustness}
+Will only be used for qualitative and exploratory evaluation. No time will be spend generating and preparing test prompts. Use "on the fly" prompts to exhibit this behaviour instead.
 \begin{itemize}
     \item Provide information conflicting ground truth
     \item Ask for non-existing information
