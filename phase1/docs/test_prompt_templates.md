@@ -33,13 +33,15 @@ The test prompts and expected answers are written in German because the system h
 **Answer cases:**
 - Das Gebäude ist ein Y.
 	- Default
+- Ich habe leider keine Informationen dazu, um was für ein Gebäude es sich handelt.
+	- If Y is not defined
 - Zu diesem Gebäude habe ich leider keine Informationen.
 	- If X is not in the database
 
 **Variables:**
 - X: building ID
 - Y: rev_type
-**Prompt:** Was bfindet sich in Gebäude ist X?
+**Prompt:** Was befindet sich in Gebäude X?
 **Answer cases:**
 - In dem Gbäude befindet sich Y.
 	- Default
