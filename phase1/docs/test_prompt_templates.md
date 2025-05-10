@@ -19,19 +19,11 @@ The test prompts and expected answers are written in German because the system h
 - Y: address
 **Prompt:** Wo ist Gebäude X?
 **Answer cases:**
-- Das Gebäude X hat die Adresse Y.
+- Das Gebäude hat die Adresse Y.
 	- Default
+- Ich kenne die Adresse von diesem Gebäude leider nicht.
+	- If Y is not defined
 - Zu diesem Gebäude habe ich leider keine Informationen.
-	- If X is not in the database
-
-**Variables:**
-- X: lecture hall name
-- Y: building ID
-**Prompt:** In welchem Gebäude befindet sich der X?
-**Answer cases:**
-- Der X befindet sich in Gebäude Y.
-	- Default
-- Diesen Hörsaal konnte ich leider nicht finden.
 	- If X is not in the database
 
 **Variables:**
@@ -39,8 +31,20 @@ The test prompts and expected answers are written in German because the system h
 - Y: category
 **Prompt:** Was für ein Gebäude ist X?
 **Answer cases:**
-- Das Gebäude X ist ein Y.
+- Das Gebäude ist ein Y.
 	- Default
+- Zu diesem Gebäude habe ich leider keine Informationen.
+	- If X is not in the database
+
+**Variables:**
+- X: building ID
+- Y: rev_type
+**Prompt:** Was bfindet sich in Gebäude ist X?
+**Answer cases:**
+- In dem Gbäude befindet sich Y.
+	- Default
+- Ich habe keine Informationen dazu, was sich in dem Gebäude befindet.
+	- If Y is not defined
 - Zu diesem Gebäude habe ich leider keine Informationen.
 	- If X is not in the database
 
@@ -49,7 +53,7 @@ The test prompts and expected answers are written in German because the system h
 - Y: opening hours
 **Prompt:** Was sind die Öffnungszeiten von Gebäude X?
 **Answer cases:**
-- Das Gebäude X hat an Y geöffnet.
+- Das Gebäude hat an Y geöffnet.
 	- Default
 - Für dieses Gebäude kenne ich leider keine Öffnungszeiten.
 	- If Y is not defined
@@ -62,9 +66,9 @@ The test prompts and expected answers are written in German because the system h
 - Z: wheelchair description
 **Prompt:** Ist Gebäude X rollstuhlgerecht?
 **Answer cases:**
-- Ja, das Gebäude X ist rollstuhlgerecht. Es gibt Z.
+- Ja, das Gebäude ist rollstuhlgerecht. Es gibt Z.
 	- If Y is yes. (Z only if there is a description)
-- Das Gebäude X ist teilweise rollstuhlgerecht.
+- Das Gebäude ist teilweise rollstuhlgerecht.
 	- If Y is limited
 - Nein, das Gebäude ist nicht rollstuhlgerecht.
 	- If Y is no
@@ -143,15 +147,13 @@ The test prompts and expected answers are written in German because the system h
 
 ### Some notes
 - More templates are imaginable, but in order to keep complexity manageable we stick to the most important types of prompts for now
-- It is possible to fill the template variables with a python script, but in order to receive a grammatically correct German sentence, some things (like article, propositions) will have to be manually adjusted
+- It is possible to fill the template variables with a python script, but in order to receive a grammatically correct German sentence, some things (like articles, propositions) will have to be adjusted
 - Rephrasing prompts generated from templates should be tested on a few manually created examples first
-	- If it does not work well, the manual adjustment described above can be also used to rephrase the generated prompts manually
+	- If it does not work well, the adjustment described above can be also used to rephrase the generated prompts manually
 - The given answers are only exemplary and do not have to be rephrased since the system will not be evaluated on specific formulations. Important for evaluation are only the specified information and the correct answer case
+	- The exemplary answers do currently not repeat the given information X. However in the evalution it can be assured the system "read back" the information it received, if that is the desired behaviour
 
 ### Open questions
-- Do we want the system to "read back" the information given to it by the user?
-	- e.g. should it repeat the building name or ID when providing an answer
-	- This might be important for evaluating system responses
 - Are there any (edge) cases of formulations missing for the single turn prompts?
 	- e.g. some unusual way that people might address a building or phrase a question
 		- Commands instead of questions

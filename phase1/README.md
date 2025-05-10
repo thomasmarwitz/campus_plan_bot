@@ -17,5 +17,5 @@ Two page report at the end of the phase
 ## Meeting 30.04.2025
 
 - [x] Discuss and refine topic
-- [ ] Evaluation metrics
+- [x] Evaluation metrics
 - [ ] Test set creation process
