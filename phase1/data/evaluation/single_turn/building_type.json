@@ -4,7 +4,7 @@
         "prompts": [
             {
                 "input_data": "Egon-Eiermann-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Egon-Eiermann-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -15,7 +15,7 @@
         "prompts": [
             {
                 "input_data": "Sport-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Sport-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -26,7 +26,7 @@
         "prompts": [
             {
                 "input_data": "Hochspannungstechnik-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Hochspannungstechnik-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -37,7 +37,7 @@
         "prompts": [
             {
                 "input_data": "Johann-Gottfried-Tulla-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Johann-Gottfried-Tulla-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -48,7 +48,7 @@
         "prompts": [
             {
                 "input_data": "H\u00f6rsaal am Fasanengarten",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude H\u00f6rsaal am Fasanengarten?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -70,7 +70,7 @@
         "prompts": [
             {
                 "input_data": "Friedrich-Engesser-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Friedrich-Engesser-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -81,7 +81,7 @@
         "prompts": [
             {
                 "input_data": "Kleiner H\u00f6rsaal Elektrotechnik",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Kleiner H\u00f6rsaal Elektrotechnik?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -92,7 +92,7 @@
         "prompts": [
             {
                 "input_data": "Lichttechnik-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Lichttechnik-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -114,7 +114,7 @@
         "prompts": [
             {
                 "input_data": "Carl-Benz-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Carl-Benz-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -125,7 +125,7 @@
         "prompts": [
             {
                 "input_data": "Franz-Grashof-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Franz-Grashof-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -136,7 +136,7 @@
         "prompts": [
             {
                 "input_data": "Architektur-H\u00f6rsaal 9",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Architektur-H\u00f6rsaal 9?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -147,7 +147,7 @@
         "prompts": [
             {
                 "input_data": "Engelbert-Arnold-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Engelbert-Arnold-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -158,7 +158,7 @@
         "prompts": [
             {
                 "input_data": "Ferdinand-Redtenbacher-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Ferdinand-Redtenbacher-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -169,7 +169,7 @@
         "prompts": [
             {
                 "input_data": "Nachrichtentechnik-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Nachrichtentechnik-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -202,7 +202,7 @@
         "prompts": [
             {
                 "input_data": "Gottlieb-Daimler-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Gottlieb-Daimler-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -213,7 +213,7 @@
         "prompts": [
             {
                 "input_data": "Audimax",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Audimax?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -224,7 +224,7 @@
         "prompts": [
             {
                 "input_data": "Wolfgang-Gaede-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Wolfgang-Gaede-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -246,7 +246,7 @@
         "prompts": [
             {
                 "input_data": "Heinrich-Hertz-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Heinrich-Hertz-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -257,7 +257,7 @@
         "prompts": [
             {
                 "input_data": "Chemie-H\u00f6rsaal I",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Chemie-H\u00f6rsaal I?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -268,7 +268,7 @@
         "prompts": [
             {
                 "input_data": "Rudolf-Criegee-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Rudolf-Criegee-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -279,7 +279,7 @@
         "prompts": [
             {
                 "input_data": "Rudolf-Plank-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Rudolf-Plank-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -290,7 +290,7 @@
         "prompts": [
             {
                 "input_data": "10.21",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.21?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -301,7 +301,7 @@
         "prompts": [
             {
                 "input_data": "10.23",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.23?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -312,7 +312,7 @@
         "prompts": [
             {
                 "input_data": "40.27",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.27?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -323,7 +323,7 @@
         "prompts": [
             {
                 "input_data": "30.43",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.43?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -334,7 +334,7 @@
         "prompts": [
             {
                 "input_data": "40.18",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.18?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -345,7 +345,7 @@
         "prompts": [
             {
                 "input_data": "40.19",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.19?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -367,7 +367,7 @@
         "prompts": [
             {
                 "input_data": "20.52",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 20.52?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -378,7 +378,7 @@
         "prompts": [
             {
                 "input_data": "20.53",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 20.53?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -389,7 +389,7 @@
         "prompts": [
             {
                 "input_data": "20.50",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 20.50?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -411,7 +411,7 @@
         "prompts": [
             {
                 "input_data": "40.11",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.11?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -422,7 +422,7 @@
         "prompts": [
             {
                 "input_data": "40.12",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.12?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -433,7 +433,7 @@
         "prompts": [
             {
                 "input_data": "40.13",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.13?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -444,7 +444,7 @@
         "prompts": [
             {
                 "input_data": "40.14",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.14?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -455,7 +455,7 @@
         "prompts": [
             {
                 "input_data": "30.12",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.12?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -477,7 +477,7 @@
         "prompts": [
             {
                 "input_data": "30.10",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.10?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -499,7 +499,7 @@
         "prompts": [
             {
                 "input_data": "30.96",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.96?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -510,7 +510,7 @@
         "prompts": [
             {
                 "input_data": "30.95",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.95?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -521,7 +521,7 @@
         "prompts": [
             {
                 "input_data": "30.93",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.93?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -532,7 +532,7 @@
         "prompts": [
             {
                 "input_data": "30.29",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.29?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -543,7 +543,7 @@
         "prompts": [
             {
                 "input_data": "30.91",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.91?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -554,7 +554,7 @@
         "prompts": [
             {
                 "input_data": "30.90",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.90?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -565,7 +565,7 @@
         "prompts": [
             {
                 "input_data": "40.21",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.21?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -576,7 +576,7 @@
         "prompts": [
             {
                 "input_data": "11.40",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 11.40?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -587,7 +587,7 @@
         "prompts": [
             {
                 "input_data": "10.95",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.95?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -598,7 +598,7 @@
         "prompts": [
             {
                 "input_data": "10.94",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.94?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -609,7 +609,7 @@
         "prompts": [
             {
                 "input_data": "01.52",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 01.52?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -631,7 +631,7 @@
         "prompts": [
             {
                 "input_data": "10.50",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.50?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -642,7 +642,7 @@
         "prompts": [
             {
                 "input_data": "06.46",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.46?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -697,7 +697,7 @@
         "prompts": [
             {
                 "input_data": "40.23",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.23?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -708,7 +708,7 @@
         "prompts": [
             {
                 "input_data": "50.10",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.10?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -719,7 +719,7 @@
         "prompts": [
             {
                 "input_data": "50.12",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.12?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -730,7 +730,7 @@
         "prompts": [
             {
                 "input_data": "40.22",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.22?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -741,7 +741,7 @@
         "prompts": [
             {
                 "input_data": "40.16",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.16?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -752,7 +752,7 @@
         "prompts": [
             {
                 "input_data": "20.12",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 20.12?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -763,7 +763,7 @@
         "prompts": [
             {
                 "input_data": "10.40",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.40?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -774,7 +774,7 @@
         "prompts": [
             {
                 "input_data": "30.79",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.79?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -796,7 +796,7 @@
         "prompts": [
             {
                 "input_data": "30.70",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.70?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -807,7 +807,7 @@
         "prompts": [
             {
                 "input_data": "40.15",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.15?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -829,7 +829,7 @@
         "prompts": [
             {
                 "input_data": "40.17",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.17?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -840,7 +840,7 @@
         "prompts": [
             {
                 "input_data": "30.46",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.46?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -862,7 +862,7 @@
         "prompts": [
             {
                 "input_data": "40.24",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.24?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -873,7 +873,7 @@
         "prompts": [
             {
                 "input_data": "02.95",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 02.95?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -884,7 +884,7 @@
         "prompts": [
             {
                 "input_data": "40.26",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.26?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -895,7 +895,7 @@
         "prompts": [
             {
                 "input_data": "20.14",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 20.14?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -928,7 +928,7 @@
         "prompts": [
             {
                 "input_data": "40.40",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.40?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -939,7 +939,7 @@
         "prompts": [
             {
                 "input_data": "30.60",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.60?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -950,7 +950,7 @@
         "prompts": [
             {
                 "input_data": "30.61",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.61?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -972,7 +972,7 @@
         "prompts": [
             {
                 "input_data": "50.33",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.33?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -983,7 +983,7 @@
         "prompts": [
             {
                 "input_data": "50.32",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.32?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -994,7 +994,7 @@
         "prompts": [
             {
                 "input_data": "50.31",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.31?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1005,7 +1005,7 @@
         "prompts": [
             {
                 "input_data": "50.36",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.36?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1016,7 +1016,7 @@
         "prompts": [
             {
                 "input_data": "50.35",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.35?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1027,7 +1027,7 @@
         "prompts": [
             {
                 "input_data": "50.34",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.34?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1049,7 +1049,7 @@
         "prompts": [
             {
                 "input_data": "06.32",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.32?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1060,7 +1060,7 @@
         "prompts": [
             {
                 "input_data": "06.33",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.33?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1071,7 +1071,7 @@
         "prompts": [
             {
                 "input_data": "06.34",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.34?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1082,7 +1082,7 @@
         "prompts": [
             {
                 "input_data": "06.35",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.35?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1093,7 +1093,7 @@
         "prompts": [
             {
                 "input_data": "06.36",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.36?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1104,7 +1104,7 @@
         "prompts": [
             {
                 "input_data": "06.38",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.38?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1115,7 +1115,7 @@
         "prompts": [
             {
                 "input_data": "11.10",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 11.10?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1148,7 +1148,7 @@
         "prompts": [
             {
                 "input_data": "10.64",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.64?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1159,7 +1159,7 @@
         "prompts": [
             {
                 "input_data": "20.13",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 20.13?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1170,7 +1170,7 @@
         "prompts": [
             {
                 "input_data": "20.11",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 20.11?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1181,7 +1181,7 @@
         "prompts": [
             {
                 "input_data": "10.61",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.61?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1203,7 +1203,7 @@
         "prompts": [
             {
                 "input_data": "10.63",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.63?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1214,7 +1214,7 @@
         "prompts": [
             {
                 "input_data": "40.29",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.29?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1236,7 +1236,7 @@
         "prompts": [
             {
                 "input_data": "50.20",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.20?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1247,7 +1247,7 @@
         "prompts": [
             {
                 "input_data": "50.21",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.21?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1302,7 +1302,7 @@
         "prompts": [
             {
                 "input_data": "05.01",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 05.01?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1313,7 +1313,7 @@
         "prompts": [
             {
                 "input_data": "70.26",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 70.26?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1324,7 +1324,7 @@
         "prompts": [
             {
                 "input_data": "20.21",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 20.21?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1335,7 +1335,7 @@
         "prompts": [
             {
                 "input_data": "20.20",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 20.20?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1346,7 +1346,7 @@
         "prompts": [
             {
                 "input_data": "11.23",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 11.23?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1357,7 +1357,7 @@
         "prompts": [
             {
                 "input_data": "11.22",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 11.22?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1368,7 +1368,7 @@
         "prompts": [
             {
                 "input_data": "11.21",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 11.21?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1379,7 +1379,7 @@
         "prompts": [
             {
                 "input_data": "11.20",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 11.20?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1390,7 +1390,7 @@
         "prompts": [
             {
                 "input_data": "06.45",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.45?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1401,7 +1401,7 @@
         "prompts": [
             {
                 "input_data": "30.45",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.45?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1412,7 +1412,7 @@
         "prompts": [
             {
                 "input_data": "06.47",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.47?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1434,7 +1434,7 @@
         "prompts": [
             {
                 "input_data": "06.41",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.41?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1445,7 +1445,7 @@
         "prompts": [
             {
                 "input_data": "06.40",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.40?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1456,7 +1456,7 @@
         "prompts": [
             {
                 "input_data": "30.42",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.42?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1467,7 +1467,7 @@
         "prompts": [
             {
                 "input_data": "06.42",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.42?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1478,7 +1478,7 @@
         "prompts": [
             {
                 "input_data": "10.11",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.11?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1489,7 +1489,7 @@
         "prompts": [
             {
                 "input_data": "40.28",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.28?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1500,7 +1500,7 @@
         "prompts": [
             {
                 "input_data": "10.12",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.12?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1511,7 +1511,7 @@
         "prompts": [
             {
                 "input_data": "40.32",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.32?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1522,7 +1522,7 @@
         "prompts": [
             {
                 "input_data": "40.31",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.31?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1533,7 +1533,7 @@
         "prompts": [
             {
                 "input_data": "20.30",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 20.30?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1555,7 +1555,7 @@
         "prompts": [
             {
                 "input_data": "40.33",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.33?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1577,7 +1577,7 @@
         "prompts": [
             {
                 "input_data": "30.32",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.32?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1588,7 +1588,7 @@
         "prompts": [
             {
                 "input_data": "30.35",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.35?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1599,7 +1599,7 @@
         "prompts": [
             {
                 "input_data": "30.34",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.34?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1610,7 +1610,7 @@
         "prompts": [
             {
                 "input_data": "30.36",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.36?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1643,7 +1643,7 @@
         "prompts": [
             {
                 "input_data": "50.40",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.40?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1654,7 +1654,7 @@
         "prompts": [
             {
                 "input_data": "50.41",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.41?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1665,7 +1665,7 @@
         "prompts": [
             {
                 "input_data": "70.12",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 70.12?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1720,7 +1720,7 @@
         "prompts": [
             {
                 "input_data": "10.91",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.91?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1731,7 +1731,7 @@
         "prompts": [
             {
                 "input_data": "10.93",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.93?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1742,7 +1742,7 @@
         "prompts": [
             {
                 "input_data": "10.92",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.92?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1775,7 +1775,7 @@
         "prompts": [
             {
                 "input_data": "10.96",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.96?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1786,7 +1786,7 @@
         "prompts": [
             {
                 "input_data": "10.86",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.86?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1808,7 +1808,7 @@
         "prompts": [
             {
                 "input_data": "70.16",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 70.16?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1819,7 +1819,7 @@
         "prompts": [
             {
                 "input_data": "10.34",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.34?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1830,7 +1830,7 @@
         "prompts": [
             {
                 "input_data": "10.33",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.33?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1841,7 +1841,7 @@
         "prompts": [
             {
                 "input_data": "10.32",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.32?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1852,7 +1852,7 @@
         "prompts": [
             {
                 "input_data": "10.31",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.31?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1863,7 +1863,7 @@
         "prompts": [
             {
                 "input_data": "10.30",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.30?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1896,7 +1896,7 @@
         "prompts": [
             {
                 "input_data": "30.23",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.23?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1907,7 +1907,7 @@
         "prompts": [
             {
                 "input_data": "06.60",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 06.60?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1929,7 +1929,7 @@
         "prompts": [
             {
                 "input_data": "30.24",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.24?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1940,7 +1940,7 @@
         "prompts": [
             {
                 "input_data": "30.25",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.25?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1951,7 +1951,7 @@
         "prompts": [
             {
                 "input_data": "40.04",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.04?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1962,7 +1962,7 @@
         "prompts": [
             {
                 "input_data": "40.02",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.02?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1973,7 +1973,7 @@
         "prompts": [
             {
                 "input_data": "30.44",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.44?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -1995,7 +1995,7 @@
         "prompts": [
             {
                 "input_data": "10.82",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.82?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2017,7 +2017,7 @@
         "prompts": [
             {
                 "input_data": "70.11",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 70.11?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2028,7 +2028,7 @@
         "prompts": [
             {
                 "input_data": "10.81",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.81?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2039,7 +2039,7 @@
         "prompts": [
             {
                 "input_data": "11.30",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 11.30?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2050,7 +2050,7 @@
         "prompts": [
             {
                 "input_data": "10.87",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.87?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2061,7 +2061,7 @@
         "prompts": [
             {
                 "input_data": "10.84",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.84?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2072,7 +2072,7 @@
         "prompts": [
             {
                 "input_data": "10.85",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.85?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2083,7 +2083,7 @@
         "prompts": [
             {
                 "input_data": "40.25",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.25?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2094,7 +2094,7 @@
         "prompts": [
             {
                 "input_data": "10.88",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.88?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2105,7 +2105,7 @@
         "prompts": [
             {
                 "input_data": "10.89",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.89?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2127,7 +2127,7 @@
         "prompts": [
             {
                 "input_data": "30.41",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.41?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2160,7 +2160,7 @@
         "prompts": [
             {
                 "input_data": "121",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 121?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2292,7 +2292,7 @@
         "prompts": [
             {
                 "input_data": "211",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 211?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2303,7 +2303,7 @@
         "prompts": [
             {
                 "input_data": "212",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 212?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2336,7 +2336,7 @@
         "prompts": [
             {
                 "input_data": "221",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 221?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2457,7 +2457,7 @@
         "prompts": [
             {
                 "input_data": "234",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 234?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -2523,7 +2523,7 @@
         "prompts": [
             {
                 "input_data": "241",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 241?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3029,7 +3029,7 @@
         "prompts": [
             {
                 "input_data": "320",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 320?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3040,7 +3040,7 @@
         "prompts": [
             {
                 "input_data": "321",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 321?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3051,7 +3051,7 @@
         "prompts": [
             {
                 "input_data": "322",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 322?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3073,7 +3073,7 @@
         "prompts": [
             {
                 "input_data": "326",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 326?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3084,7 +3084,7 @@
         "prompts": [
             {
                 "input_data": "327",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 327?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3095,7 +3095,7 @@
         "prompts": [
             {
                 "input_data": "328",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 328?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3106,7 +3106,7 @@
         "prompts": [
             {
                 "input_data": "329",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 329?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3161,7 +3161,7 @@
         "prompts": [
             {
                 "input_data": "343",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 343?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3172,7 +3172,7 @@
         "prompts": [
             {
                 "input_data": "345",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 345?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3249,7 +3249,7 @@
         "prompts": [
             {
                 "input_data": "401",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 401?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3271,7 +3271,7 @@
         "prompts": [
             {
                 "input_data": "403",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 403?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3326,7 +3326,7 @@
         "prompts": [
             {
                 "input_data": "408",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 408?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3359,7 +3359,7 @@
         "prompts": [
             {
                 "input_data": "411",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 411?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3480,7 +3480,7 @@
         "prompts": [
             {
                 "input_data": "422",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 422?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3491,7 +3491,7 @@
         "prompts": [
             {
                 "input_data": "423",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 423?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3502,7 +3502,7 @@
         "prompts": [
             {
                 "input_data": "424",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 424?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3524,7 +3524,7 @@
         "prompts": [
             {
                 "input_data": "426",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 426?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3535,7 +3535,7 @@
         "prompts": [
             {
                 "input_data": "427",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 427?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3546,7 +3546,7 @@
         "prompts": [
             {
                 "input_data": "428",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 428?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3557,7 +3557,7 @@
         "prompts": [
             {
                 "input_data": "429",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 429?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3601,7 +3601,7 @@
         "prompts": [
             {
                 "input_data": "434",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 434?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3656,7 +3656,7 @@
         "prompts": [
             {
                 "input_data": "441",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 441?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3667,7 +3667,7 @@
         "prompts": [
             {
                 "input_data": "442",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 442?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3700,7 +3700,7 @@
         "prompts": [
             {
                 "input_data": "445",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 445?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3777,7 +3777,7 @@
         "prompts": [
             {
                 "input_data": "453",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 453?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3788,7 +3788,7 @@
         "prompts": [
             {
                 "input_data": "454",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 454?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3799,7 +3799,7 @@
         "prompts": [
             {
                 "input_data": "456",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 456?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3810,7 +3810,7 @@
         "prompts": [
             {
                 "input_data": "458",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 458?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -3865,7 +3865,7 @@
         "prompts": [
             {
                 "input_data": "464",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 464?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4327,7 +4327,7 @@
         "prompts": [
             {
                 "input_data": "575",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 575?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4679,7 +4679,7 @@
         "prompts": [
             {
                 "input_data": "686",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 686?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4789,7 +4789,7 @@
         "prompts": [
             {
                 "input_data": "702",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 702?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4800,7 +4800,7 @@
         "prompts": [
             {
                 "input_data": "704",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 704?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4811,7 +4811,7 @@
         "prompts": [
             {
                 "input_data": "705",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 705?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4822,7 +4822,7 @@
         "prompts": [
             {
                 "input_data": "706",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 706?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4833,7 +4833,7 @@
         "prompts": [
             {
                 "input_data": "707",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 707?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4855,7 +4855,7 @@
         "prompts": [
             {
                 "input_data": "712",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 712?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4866,7 +4866,7 @@
         "prompts": [
             {
                 "input_data": "713",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 713?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4877,7 +4877,7 @@
         "prompts": [
             {
                 "input_data": "714",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 714?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4888,7 +4888,7 @@
         "prompts": [
             {
                 "input_data": "715",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 715?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4899,7 +4899,7 @@
         "prompts": [
             {
                 "input_data": "716",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 716?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4910,7 +4910,7 @@
         "prompts": [
             {
                 "input_data": "717",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 717?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4921,7 +4921,7 @@
         "prompts": [
             {
                 "input_data": "718",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 718?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4932,7 +4932,7 @@
         "prompts": [
             {
                 "input_data": "719",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 719?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4943,7 +4943,7 @@
         "prompts": [
             {
                 "input_data": "721",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 721?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4954,7 +4954,7 @@
         "prompts": [
             {
                 "input_data": "723",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 723?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4965,7 +4965,7 @@
         "prompts": [
             {
                 "input_data": "724",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 724?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4976,7 +4976,7 @@
         "prompts": [
             {
                 "input_data": "725",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 725?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4987,7 +4987,7 @@
         "prompts": [
             {
                 "input_data": "726",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 726?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -4998,7 +4998,7 @@
         "prompts": [
             {
                 "input_data": "727",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 727?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5009,7 +5009,7 @@
         "prompts": [
             {
                 "input_data": "729",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 729?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5020,7 +5020,7 @@
         "prompts": [
             {
                 "input_data": "730",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 730?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5031,7 +5031,7 @@
         "prompts": [
             {
                 "input_data": "732",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 732?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5042,7 +5042,7 @@
         "prompts": [
             {
                 "input_data": "733",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 733?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5053,7 +5053,7 @@
         "prompts": [
             {
                 "input_data": "736",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 736?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5064,7 +5064,7 @@
         "prompts": [
             {
                 "input_data": "739",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 739?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5075,7 +5075,7 @@
         "prompts": [
             {
                 "input_data": "740",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 740?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5086,7 +5086,7 @@
         "prompts": [
             {
                 "input_data": "741",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 741?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5097,7 +5097,7 @@
         "prompts": [
             {
                 "input_data": "742",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 742?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5108,7 +5108,7 @@
         "prompts": [
             {
                 "input_data": "744",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 744?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5119,7 +5119,7 @@
         "prompts": [
             {
                 "input_data": "745",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 745?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5130,7 +5130,7 @@
         "prompts": [
             {
                 "input_data": "752",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 752?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5141,7 +5141,7 @@
         "prompts": [
             {
                 "input_data": "754",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 754?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5152,7 +5152,7 @@
         "prompts": [
             {
                 "input_data": "755",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 755?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5163,7 +5163,7 @@
         "prompts": [
             {
                 "input_data": "757",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 757?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5174,7 +5174,7 @@
         "prompts": [
             {
                 "input_data": "758",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 758?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5185,7 +5185,7 @@
         "prompts": [
             {
                 "input_data": "760",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 760?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5196,7 +5196,7 @@
         "prompts": [
             {
                 "input_data": "768",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 768?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5207,7 +5207,7 @@
         "prompts": [
             {
                 "input_data": "769",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 769?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5218,7 +5218,7 @@
         "prompts": [
             {
                 "input_data": "801",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 801?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5229,7 +5229,7 @@
         "prompts": [
             {
                 "input_data": "802",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 802?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5240,7 +5240,7 @@
         "prompts": [
             {
                 "input_data": "803",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 803?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5251,7 +5251,7 @@
         "prompts": [
             {
                 "input_data": "804",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 804?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5262,7 +5262,7 @@
         "prompts": [
             {
                 "input_data": "805",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 805?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5273,7 +5273,7 @@
         "prompts": [
             {
                 "input_data": "806",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 806?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5284,7 +5284,7 @@
         "prompts": [
             {
                 "input_data": "807",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 807?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5317,7 +5317,7 @@
         "prompts": [
             {
                 "input_data": "901",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 901?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5328,7 +5328,7 @@
         "prompts": [
             {
                 "input_data": "902",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 902?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5339,7 +5339,7 @@
         "prompts": [
             {
                 "input_data": "903",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 903?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5350,7 +5350,7 @@
         "prompts": [
             {
                 "input_data": "904",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 904?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5361,7 +5361,7 @@
         "prompts": [
             {
                 "input_data": "905",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 905?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5372,7 +5372,7 @@
         "prompts": [
             {
                 "input_data": "907",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 907?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5383,7 +5383,7 @@
         "prompts": [
             {
                 "input_data": "908",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 908?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5394,7 +5394,7 @@
         "prompts": [
             {
                 "input_data": "910",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 910?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5405,7 +5405,7 @@
         "prompts": [
             {
                 "input_data": "911",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 911?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5416,7 +5416,7 @@
         "prompts": [
             {
                 "input_data": "912",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 912?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5427,7 +5427,7 @@
         "prompts": [
             {
                 "input_data": "913",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 913?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5438,7 +5438,7 @@
         "prompts": [
             {
                 "input_data": "914",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 914?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5449,7 +5449,7 @@
         "prompts": [
             {
                 "input_data": "915",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 915?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5460,7 +5460,7 @@
         "prompts": [
             {
                 "input_data": "916",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 916?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5471,7 +5471,7 @@
         "prompts": [
             {
                 "input_data": "917",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 917?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5482,7 +5482,7 @@
         "prompts": [
             {
                 "input_data": "918",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 918?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5493,7 +5493,7 @@
         "prompts": [
             {
                 "input_data": "920",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 920?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5504,7 +5504,7 @@
         "prompts": [
             {
                 "input_data": "935",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 935?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5515,7 +5515,7 @@
         "prompts": [
             {
                 "input_data": "937",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 937?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5570,7 +5570,7 @@
         "prompts": [
             {
                 "input_data": "9627",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 9627?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5658,7 +5658,7 @@
         "prompts": [
             {
                 "input_data": "9670",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 9670?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5691,7 +5691,7 @@
         "prompts": [
             {
                 "input_data": "919 A",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 919 A?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5724,7 +5724,7 @@
         "prompts": [
             {
                 "input_data": "B934",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude B934?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5757,7 +5757,7 @@
         "prompts": [
             {
                 "input_data": "B404",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude B404?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5768,7 +5768,7 @@
         "prompts": [
             {
                 "input_data": "B402",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude B402?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5845,7 +5845,7 @@
         "prompts": [
             {
                 "input_data": "B523",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude B523?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5878,7 +5878,7 @@
         "prompts": [
             {
                 "input_data": "401 A",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 401 A?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5889,7 +5889,7 @@
         "prompts": [
             {
                 "input_data": "Technische Thermodynamik und K\u00e4ltetechnik, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Technische Thermodynamik und K\u00e4ltetechnik, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5900,7 +5900,7 @@
         "prompts": [
             {
                 "input_data": "Nanotechnologie (INT), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Nanotechnologie (INT), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5911,7 +5911,7 @@
         "prompts": [
             {
                 "input_data": "Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5933,7 +5933,7 @@
         "prompts": [
             {
                 "input_data": "Bodenmechanik und Felsmechanik (IBF) , Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Bodenmechanik und Felsmechanik (IBF) , Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5944,7 +5944,7 @@
         "prompts": [
             {
                 "input_data": "Physikalische Chemie, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Physikalische Chemie, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5955,7 +5955,7 @@
         "prompts": [
             {
                 "input_data": "Deutsch-Franz\u00f6sisches Institut f\u00fcr Umweltforschung (DFIU)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Deutsch-Franz\u00f6sisches Institut f\u00fcr Umweltforschung (DFIU)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5966,7 +5966,7 @@
         "prompts": [
             {
                 "input_data": "Produktionstechnik (wbk), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Produktionstechnik (wbk), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5977,7 +5977,7 @@
         "prompts": [
             {
                 "input_data": "Regelungs- und Steuerungssysteme, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Regelungs- und Steuerungssysteme, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5988,7 +5988,7 @@
         "prompts": [
             {
                 "input_data": "Thermische Str\u00f6mungsmaschinen, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Thermische Str\u00f6mungsmaschinen, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -5999,7 +5999,7 @@
         "prompts": [
             {
                 "input_data": "Thermische Str\u00f6mungsmaschinen, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Thermische Str\u00f6mungsmaschinen, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6021,7 +6021,7 @@
         "prompts": [
             {
                 "input_data": "Experimentelle Teilchenphysik (ETP), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Experimentelle Teilchenphysik (ETP), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6043,7 +6043,7 @@
         "prompts": [
             {
                 "input_data": "Engler-Bunte-Institut Bereich Verbrennungstechnik (EBI-VBT)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Engler-Bunte-Institut Bereich Verbrennungstechnik (EBI-VBT)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6054,7 +6054,7 @@
         "prompts": [
             {
                 "input_data": "Technische Thermodynamik, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Technische Thermodynamik, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6076,7 +6076,7 @@
         "prompts": [
             {
                 "input_data": "Fahrzeugsystemtechnik, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fahrzeugsystemtechnik, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6098,7 +6098,7 @@
         "prompts": [
             {
                 "input_data": "Geophysikalisches Institut (GPI)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Geophysikalisches Institut (GPI)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6109,7 +6109,7 @@
         "prompts": [
             {
                 "input_data": "Programmstrukturen und Datenorganisation (IPD), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Programmstrukturen und Datenorganisation (IPD), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6131,7 +6131,7 @@
         "prompts": [
             {
                 "input_data": "Analysis, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Analysis, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6153,7 +6153,7 @@
         "prompts": [
             {
                 "input_data": "Photonik und Quantenelektronik (IPQ), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Photonik und Quantenelektronik (IPQ), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6175,7 +6175,7 @@
         "prompts": [
             {
                 "input_data": "Mechanische Verfahrenstechnik und Mechanik (MVM), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Mechanische Verfahrenstechnik und Mechanik (MVM), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6186,7 +6186,7 @@
         "prompts": [
             {
                 "input_data": "Baustatik, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Baustatik, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6197,7 +6197,7 @@
         "prompts": [
             {
                 "input_data": "Anthropomatik und Robotik, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Anthropomatik und Robotik, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6208,7 +6208,7 @@
         "prompts": [
             {
                 "input_data": "Geod\u00e4tisches Institut (GIK)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Geod\u00e4tisches Institut (GIK)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6219,7 +6219,7 @@
         "prompts": [
             {
                 "input_data": "Hochfrequenztechnik und Elektronik (IHE), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Hochfrequenztechnik und Elektronik (IHE), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6230,7 +6230,7 @@
         "prompts": [
             {
                 "input_data": "Entwerfen, Kunst und Theorie (EKUT), Institut",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Entwerfen, Kunst und Theorie (EKUT), Institut?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6241,7 +6241,7 @@
         "prompts": [
             {
                 "input_data": "Technikzuk\u00fcnfte - Philosophie, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Technikzuk\u00fcnfte - Philosophie, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6252,7 +6252,7 @@
         "prompts": [
             {
                 "input_data": "Technikzuk\u00fcnfte - Philosophie, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Technikzuk\u00fcnfte - Philosophie, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6263,7 +6263,7 @@
         "prompts": [
             {
                 "input_data": "Karlsruhe Service Research Institute (KSRI)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Karlsruhe Service Research Institute (KSRI)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6274,7 +6274,7 @@
         "prompts": [
             {
                 "input_data": "Sport und Sportwissenschaft, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Sport und Sportwissenschaft, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6296,7 +6296,7 @@
         "prompts": [
             {
                 "input_data": "Angewandte Physik, Institut f\u00fcr (AP)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Angewandte Physik, Institut f\u00fcr (AP)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6307,7 +6307,7 @@
         "prompts": [
             {
                 "input_data": "Technik der Informationsverarbeitung (ITIV), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Technik der Informationsverarbeitung (ITIV), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6318,7 +6318,7 @@
         "prompts": [
             {
                 "input_data": "Str\u00f6mungsmechanik (ISTM), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Str\u00f6mungsmechanik (ISTM), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6340,7 +6340,7 @@
         "prompts": [
             {
                 "input_data": "Regionalwissenschaft (IfR) , Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Regionalwissenschaft (IfR) , Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6362,7 +6362,7 @@
         "prompts": [
             {
                 "input_data": "Stra\u00dfen- und Eisenbahnwesen, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Stra\u00dfen- und Eisenbahnwesen, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6373,7 +6373,7 @@
         "prompts": [
             {
                 "input_data": "Technologie und Management im Baubetrieb (TMB) , Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Technologie und Management im Baubetrieb (TMB) , Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6395,7 +6395,7 @@
         "prompts": [
             {
                 "input_data": "Joseph Gottlieb K\u00f6lreuter Institut f\u00fcr Pflanzenwissenschaften (JKIP)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Joseph Gottlieb K\u00f6lreuter Institut f\u00fcr Pflanzenwissenschaften (JKIP)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6406,7 +6406,7 @@
         "prompts": [
             {
                 "input_data": "Bio- und Lebensmitteltechnik, Bereich IV: Molekulare Aufarbeitung von Bioprodukten , Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Bio- und Lebensmitteltechnik, Bereich IV: Molekulare Aufarbeitung von Bioprodukten , Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6417,7 +6417,7 @@
         "prompts": [
             {
                 "input_data": "Theoretische Informatik (ITI), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Theoretische Informatik (ITI), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6428,7 +6428,7 @@
         "prompts": [
             {
                 "input_data": "Thermische Verfahrenstechnik, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Thermische Verfahrenstechnik, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6461,7 +6461,7 @@
         "prompts": [
             {
                 "input_data": "Entwerfen von Stadt und Landschaft (IESL), Institut",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Entwerfen von Stadt und Landschaft (IESL), Institut?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6472,7 +6472,7 @@
         "prompts": [
             {
                 "input_data": "Finanzwirtschaft, Banken und Versicherungen (FBV), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Finanzwirtschaft, Banken und Versicherungen (FBV), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6483,7 +6483,7 @@
         "prompts": [
             {
                 "input_data": "Lichttechnisches Institut (LTI)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Lichttechnisches Institut (LTI)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6494,7 +6494,7 @@
         "prompts": [
             {
                 "input_data": "Berufsp\u00e4dagogik und Allgemeine P\u00e4dagogik (IBAP), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Berufsp\u00e4dagogik und Allgemeine P\u00e4dagogik (IBAP), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6505,7 +6505,7 @@
         "prompts": [
             {
                 "input_data": "Engler-Bunte-Institut, Bereich I, Chemische Energietr\u00e4ger - Brennstofftechnologie (EBI-CEB)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Engler-Bunte-Institut, Bereich I, Chemische Energietr\u00e4ger - Brennstofftechnologie (EBI-CEB)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6516,7 +6516,7 @@
         "prompts": [
             {
                 "input_data": "Angewandte Biowissenschaften (IAB), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Angewandte Biowissenschaften (IAB), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6538,7 +6538,7 @@
         "prompts": [
             {
                 "input_data": "Astroteilchenphysik (IAP), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Astroteilchenphysik (IAP), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6549,7 +6549,7 @@
         "prompts": [
             {
                 "input_data": "Telecooperation Office (TecO)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Telecooperation Office (TecO)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6571,7 +6571,7 @@
         "prompts": [
             {
                 "input_data": "Informationsmanagement im Ingenieurwesen (IMI) , Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Informationsmanagement im Ingenieurwesen (IMI) , Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6593,7 +6593,7 @@
         "prompts": [
             {
                 "input_data": "Interfakultatives Institut f\u00fcr Anwendungen der Informatik",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Interfakultatives Institut f\u00fcr Anwendungen der Informatik?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6604,7 +6604,7 @@
         "prompts": [
             {
                 "input_data": "Nachrichtentechnik , Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Nachrichtentechnik , Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6626,7 +6626,7 @@
         "prompts": [
             {
                 "input_data": "Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6648,7 +6648,7 @@
         "prompts": [
             {
                 "input_data": "Telematik (ITM), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Telematik (ITM), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6659,7 +6659,7 @@
         "prompts": [
             {
                 "input_data": "Technische Chemie (ITC), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Technische Chemie (ITC), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6670,7 +6670,7 @@
         "prompts": [
             {
                 "input_data": "Katalyseforschung und -Technologie (IKFT), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Katalyseforschung und -Technologie (IKFT), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6692,7 +6692,7 @@
         "prompts": [
             {
                 "input_data": "Mess- und Regelungstechnik MRT, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Mess- und Regelungstechnik MRT, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6703,7 +6703,7 @@
         "prompts": [
             {
                 "input_data": "Industrielle Informationstechnik, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Industrielle Informationstechnik, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6714,7 +6714,7 @@
         "prompts": [
             {
                 "input_data": "Geographie und Geo\u00f6kologie, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Geographie und Geo\u00f6kologie, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6725,7 +6725,7 @@
         "prompts": [
             {
                 "input_data": "Physikalisches Institut (PI)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Physikalisches Institut (PI)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6736,7 +6736,7 @@
         "prompts": [
             {
                 "input_data": "Angewandte Geowissenschaften, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Angewandte Geowissenschaften, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6747,7 +6747,7 @@
         "prompts": [
             {
                 "input_data": "Engler-Bunte-Institut, Bereich Wasserchemie",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Engler-Bunte-Institut, Bereich Wasserchemie?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6758,7 +6758,7 @@
         "prompts": [
             {
                 "input_data": "Mikro- und Nanoelektronische Systeme (IMS), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Mikro- und Nanoelektronische Systeme (IMS), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6780,7 +6780,7 @@
         "prompts": [
             {
                 "input_data": "Mechanik, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Mechanik, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6791,7 +6791,7 @@
         "prompts": [
             {
                 "input_data": "Zentrum f\u00fcr Angewandte Rechtswissenschaft (ZAR)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Zentrum f\u00fcr Angewandte Rechtswissenschaft (ZAR)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6802,7 +6802,7 @@
         "prompts": [
             {
                 "input_data": "Massivbau und Baustofftechnologie, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Massivbau und Baustofftechnologie, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6824,7 +6824,7 @@
         "prompts": [
             {
                 "input_data": "Organische Chemie, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Organische Chemie, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6835,7 +6835,7 @@
         "prompts": [
             {
                 "input_data": "Angewandte Thermofluidik (IATF), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Angewandte Thermofluidik (IATF), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6846,7 +6846,7 @@
         "prompts": [
             {
                 "input_data": "Nukleare Entsorgung (INE), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Nukleare Entsorgung (INE), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6857,7 +6857,7 @@
         "prompts": [
             {
                 "input_data": "Theoretische Teilchenphysik (TTP), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Theoretische Teilchenphysik (TTP), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6868,7 +6868,7 @@
         "prompts": [
             {
                 "input_data": "Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6879,7 +6879,7 @@
         "prompts": [
             {
                 "input_data": "Institut f\u00fcr Arbeitswissenschaft und Betriebsorganisation (ifab)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Institut f\u00fcr Arbeitswissenschaft und Betriebsorganisation (ifab)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6901,7 +6901,7 @@
         "prompts": [
             {
                 "input_data": "Festk\u00f6rperphysik, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Festk\u00f6rperphysik, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6912,7 +6912,7 @@
         "prompts": [
             {
                 "input_data": "Zoologisches Institut",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Zoologisches Institut?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6923,7 +6923,7 @@
         "prompts": [
             {
                 "input_data": "Chemische Verfahrenstechnik (CVT), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Chemische Verfahrenstechnik (CVT), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6956,7 +6956,7 @@
         "prompts": [
             {
                 "input_data": "Photogrammetrie und Fernerkundung (IPF), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Photogrammetrie und Fernerkundung (IPF), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6967,7 +6967,7 @@
         "prompts": [
             {
                 "input_data": "Elektroenergiesysteme und Hochspannungstechnik , Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Elektroenergiesysteme und Hochspannungstechnik , Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6978,7 +6978,7 @@
         "prompts": [
             {
                 "input_data": "Industriebetriebslehre und Industrielle Produktion (IIP), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Industriebetriebslehre und Industrielle Produktion (IIP), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -6989,7 +6989,7 @@
         "prompts": [
             {
                 "input_data": "Produktentwicklung (IPEK), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Produktentwicklung (IPEK), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7000,7 +7000,7 @@
         "prompts": [
             {
                 "input_data": "Technische Chemie und Polymerchemie, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Technische Chemie und Polymerchemie, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7011,7 +7011,7 @@
         "prompts": [
             {
                 "input_data": "Anorganische Chemie, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Anorganische Chemie, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7022,7 +7022,7 @@
         "prompts": [
             {
                 "input_data": "Theoretische Festk\u00f6rperphysik, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Theoretische Festk\u00f6rperphysik, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7033,7 +7033,7 @@
         "prompts": [
             {
                 "input_data": "Entwerfen und Bautechnik, Institut",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Entwerfen und Bautechnik, Institut?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7055,7 +7055,7 @@
         "prompts": [
             {
                 "input_data": "Technische Informatik (ITEC), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Technische Informatik (ITEC), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7066,7 +7066,7 @@
         "prompts": [
             {
                 "input_data": "Elektrotechnisches Institut (ETI)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Elektrotechnisches Institut (ETI)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7077,7 +7077,7 @@
         "prompts": [
             {
                 "input_data": "Photonenforschung und Synchrotronstrahlung (IPS), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Photonenforschung und Synchrotronstrahlung (IPS), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7088,7 +7088,7 @@
         "prompts": [
             {
                 "input_data": "Technische Mechanik, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Technische Mechanik, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7099,7 +7099,7 @@
         "prompts": [
             {
                 "input_data": "Verkehrswesen (IfV), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Verkehrswesen (IfV), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7132,7 +7132,7 @@
         "prompts": [
             {
                 "input_data": "Kolbenmaschinen, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Kolbenmaschinen, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7154,7 +7154,7 @@
         "prompts": [
             {
                 "input_data": "Pressestelle (STS)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Pressestelle (STS)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7165,7 +7165,7 @@
         "prompts": [
             {
                 "input_data": "Studienkolleg f\u00fcr ausl\u00e4ndische Studierende (STK)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Studienkolleg f\u00fcr ausl\u00e4ndische Studierende (STK)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7198,7 +7198,7 @@
         "prompts": [
             {
                 "input_data": "Gastdozentenhaus",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Gastdozentenhaus?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7242,7 +7242,7 @@
         "prompts": [
             {
                 "input_data": "Finanzmanagement (FIMA)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Finanzmanagement (FIMA)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7253,7 +7253,7 @@
         "prompts": [
             {
                 "input_data": "KIT-Archiv",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude KIT-Archiv?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7275,7 +7275,7 @@
         "prompts": [
             {
                 "input_data": "Personalentwicklung und Berufliche Ausbildung (PEBA)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Personalentwicklung und Berufliche Ausbildung (PEBA)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7297,7 +7297,7 @@
         "prompts": [
             {
                 "input_data": "KIT-Shuttle (Haltestelle Campus Nord, S\u00fcdtor)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude KIT-Shuttle (Haltestelle Campus Nord, S\u00fcdtor)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7319,7 +7319,7 @@
         "prompts": [
             {
                 "input_data": "Medizinische Dienste (MED) CS",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Medizinische Dienste (MED) CS?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7363,7 +7363,7 @@
         "prompts": [
             {
                 "input_data": "Studierendenservice",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Studierendenservice?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7396,7 +7396,7 @@
         "prompts": [
             {
                 "input_data": "Personalservice (PSE) CS",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Personalservice (PSE) CS?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7429,7 +7429,7 @@
         "prompts": [
             {
                 "input_data": "Studierendenwerk",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Studierendenwerk?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7440,7 +7440,7 @@
         "prompts": [
             {
                 "input_data": "Scientific Computing Center (SCC), CS",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Scientific Computing Center (SCC), CS?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7451,7 +7451,7 @@
         "prompts": [
             {
                 "input_data": "Internationales (INTL)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Internationales (INTL)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7462,7 +7462,7 @@
         "prompts": [
             {
                 "input_data": "International Students Office (INTL)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude International Students Office (INTL)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7484,7 +7484,7 @@
         "prompts": [
             {
                 "input_data": "Facility Management (FM)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Facility Management (FM)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7495,7 +7495,7 @@
         "prompts": [
             {
                 "input_data": "International Scholars & Welcome Office (Campus S\u00fcd)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude International Scholars & Welcome Office (Campus S\u00fcd)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7528,7 +7528,7 @@
         "prompts": [
             {
                 "input_data": "Studienzentrum f\u00fcr Sehgesch\u00e4digte (SZS)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Studienzentrum f\u00fcr Sehgesch\u00e4digte (SZS)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7539,7 +7539,7 @@
         "prompts": [
             {
                 "input_data": "Laboratorium f\u00fcr Elektronenmikroskopie (LEM)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Laboratorium f\u00fcr Elektronenmikroskopie (LEM)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7550,7 +7550,7 @@
         "prompts": [
             {
                 "input_data": "KIT-Shuttle (Haltestelle Campus S\u00fcd)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude KIT-Shuttle (Haltestelle Campus S\u00fcd)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7561,7 +7561,7 @@
         "prompts": [
             {
                 "input_data": "Lernzentrum am Fasanenschl\u00f6sschen (Geb. 30.28)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Lernzentrum am Fasanenschl\u00f6sschen (Geb. 30.28)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7572,7 +7572,7 @@
         "prompts": [
             {
                 "input_data": "Meteorologie und Klimaforschung - Atmosph\u00e4rische Aerosolforschung (IMK-AAF) ",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Meteorologie und Klimaforschung - Atmosph\u00e4rische Aerosolforschung (IMK-AAF) ?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7594,7 +7594,7 @@
         "prompts": [
             {
                 "input_data": "Meteorologie und Klimaforschung  - Troposph\u00e4re (IMK-TRO)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Meteorologie und Klimaforschung  - Troposph\u00e4re (IMK-TRO)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7605,7 +7605,7 @@
         "prompts": [
             {
                 "input_data": "Schwerbehindertenvertretung (SBV) Campus S\u00fcd",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Schwerbehindertenvertretung (SBV) Campus S\u00fcd?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7616,7 +7616,7 @@
         "prompts": [
             {
                 "input_data": "Zentrum f\u00fcr Mediales Lernen (ZML)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Zentrum f\u00fcr Mediales Lernen (ZML)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7627,7 +7627,7 @@
         "prompts": [
             {
                 "input_data": "Zentrum f\u00fcr Mediales Lernen (ZML)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Zentrum f\u00fcr Mediales Lernen (ZML)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7638,7 +7638,7 @@
         "prompts": [
             {
                 "input_data": "Materialpr\u00fcfungsanstalt (MPA)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Materialpr\u00fcfungsanstalt (MPA)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7649,7 +7649,7 @@
         "prompts": [
             {
                 "input_data": "Scientific Computing Center (SCC), CN",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Scientific Computing Center (SCC), CN?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7660,7 +7660,7 @@
         "prompts": [
             {
                 "input_data": "Sprachenzentrum (Geb. 50.20)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Sprachenzentrum (Geb. 50.20)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7671,7 +7671,7 @@
         "prompts": [
             {
                 "input_data": "MINT-Kolleg",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude MINT-Kolleg?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7682,7 +7682,7 @@
         "prompts": [
             {
                 "input_data": "MINT-Kolleg",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude MINT-Kolleg?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7693,7 +7693,7 @@
         "prompts": [
             {
                 "input_data": "AStA",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude AStA?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7704,7 +7704,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft Architektur",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft Architektur?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7715,7 +7715,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft Bauingenieurwesen",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft Bauingenieurwesen?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7726,7 +7726,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft Chemie und Biowissenschaften",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft Chemie und Biowissenschaften?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7737,7 +7737,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft Elektro- und Informationstechnik",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft Elektro- und Informationstechnik?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7759,7 +7759,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft Geod\u00e4sie und Geoinformatik",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft Geod\u00e4sie und Geoinformatik?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7770,7 +7770,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft Geowissenschaften",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft Geowissenschaften?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7781,7 +7781,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft Informatik",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft Informatik?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7792,7 +7792,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft Kunstgeschichte",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft Kunstgeschichte?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7803,7 +7803,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft Maschinenbau/Chemieingenieurwesen",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft Maschinenbau/Chemieingenieurwesen?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7814,7 +7814,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft Mathematik und Informatik",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft Mathematik und Informatik?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7825,7 +7825,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft Physik",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft Physik?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7836,7 +7836,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft Sport",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft Sport?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7847,7 +7847,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft WiWi",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft WiWi?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7858,7 +7858,7 @@
         "prompts": [
             {
                 "input_data": "Fachschaft WiWi",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fachschaft WiWi?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7869,7 +7869,7 @@
         "prompts": [
             {
                 "input_data": "Germanistik: Literatur, Sprache, Medien (GER), Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Germanistik: Literatur, Sprache, Medien (GER), Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7880,7 +7880,7 @@
         "prompts": [
             {
                 "input_data": "Zentrale Studienberatung (ZSB)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Zentrale Studienberatung (ZSB)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7913,7 +7913,7 @@
         "prompts": [
             {
                 "input_data": "Angewandte Materialien -\u00a0Werkstoffkunde (IAM-WK)\u00a0Geb\u00e4ude 10.91, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Angewandte Materialien -\u00a0Werkstoffkunde (IAM-WK)\u00a0Geb\u00e4ude 10.91, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7924,7 +7924,7 @@
         "prompts": [
             {
                 "input_data": "Angewandte Materialien -\u00a0Werkstoffkunde (IAM-WK)\u00a0Geb\u00e4ude 10.96, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Angewandte Materialien -\u00a0Werkstoffkunde (IAM-WK)\u00a0Geb\u00e4ude 10.96, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7946,7 +7946,7 @@
         "prompts": [
             {
                 "input_data": "Angewandte Materialien \u2013 Computational Materials Science (IAM-CMS)\u00a0, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Angewandte Materialien \u2013 Computational Materials Science (IAM-CMS)\u00a0, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7968,7 +7968,7 @@
         "prompts": [
             {
                 "input_data": "449",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 449?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -7979,7 +7979,7 @@
         "prompts": [
             {
                 "input_data": "01.87",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 01.87?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8001,7 +8001,7 @@
         "prompts": [
             {
                 "input_data": "30.28",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.28?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8012,7 +8012,7 @@
         "prompts": [
             {
                 "input_data": "01.85",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 01.85?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8023,7 +8023,7 @@
         "prompts": [
             {
                 "input_data": "Karlsruhe Decision & Design Laboratory (KD\u00b2Lab)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Karlsruhe Decision & Design Laboratory (KD\u00b2Lab)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8056,7 +8056,7 @@
         "prompts": [
             {
                 "input_data": "Bereich I \u2013 Biologie, Chemie und Verfahrenstechnik (Campus S\u00fcd)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Bereich I \u2013 Biologie, Chemie und Verfahrenstechnik (Campus S\u00fcd)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8078,7 +8078,7 @@
         "prompts": [
             {
                 "input_data": "Bereich II - Informatik, Wirtschaft und Gesellschaft (CS)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Bereich II - Informatik, Wirtschaft und Gesellschaft (CS)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8100,7 +8100,7 @@
         "prompts": [
             {
                 "input_data": "Bereich III - Maschinenbau und Elektrotechnik (CS)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Bereich III - Maschinenbau und Elektrotechnik (CS)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8122,7 +8122,7 @@
         "prompts": [
             {
                 "input_data": "Bereich IV - Nat\u00fcrliche und gebaute Umwelt (CS)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Bereich IV - Nat\u00fcrliche und gebaute Umwelt (CS)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8144,7 +8144,7 @@
         "prompts": [
             {
                 "input_data": "Bereich V - Physik und Mathematik (CS)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Bereich V - Physik und Mathematik (CS)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8232,7 +8232,7 @@
         "prompts": [
             {
                 "input_data": "20.40",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 20.40?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8243,7 +8243,7 @@
         "prompts": [
             {
                 "input_data": "30.48",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 30.48?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8265,7 +8265,7 @@
         "prompts": [
             {
                 "input_data": "Theorie der Kondensierten Materie, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Theorie der Kondensierten Materie, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8287,7 +8287,7 @@
         "prompts": [
             {
                 "input_data": "Professur f\u00fcr Industrie\u00f6konomik, Institut f\u00fcr Volkswirtschaftslehre (ECON)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Professur f\u00fcr Industrie\u00f6konomik, Institut f\u00fcr Volkswirtschaftslehre (ECON)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8298,7 +8298,7 @@
         "prompts": [
             {
                 "input_data": "Professur f\u00fcr Finanzwissenschaft und Public Management, Institut f\u00fcr Volkswirtschaftslehre (ECON)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Professur f\u00fcr Finanzwissenschaft und Public Management, Institut f\u00fcr Volkswirtschaftslehre (ECON)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8342,7 +8342,7 @@
         "prompts": [
             {
                 "input_data": "Professur f\u00fcr Politische \u00d6konomie, Institut f\u00fcr Volkswirtschaftslehre (ECON)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Professur f\u00fcr Politische \u00d6konomie, Institut f\u00fcr Volkswirtschaftslehre (ECON)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8353,7 +8353,7 @@
         "prompts": [
             {
                 "input_data": "Professur f\u00fcr Wirtschaftspolitik, Institut f\u00fcr Volkswirtschaftslehre (ECON)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Professur f\u00fcr Wirtschaftspolitik, Institut f\u00fcr Volkswirtschaftslehre (ECON)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8375,7 +8375,7 @@
         "prompts": [
             {
                 "input_data": "Wirtschaftswissenschaften, KIT-Fakult\u00e4t f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Wirtschaftswissenschaften, KIT-Fakult\u00e4t f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8386,7 +8386,7 @@
         "prompts": [
             {
                 "input_data": "Soziologie, Medien- und Kulturwissenschaften (ISMK), Institut f\u00fcr ",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Soziologie, Medien- und Kulturwissenschaften (ISMK), Institut f\u00fcr ?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8397,7 +8397,7 @@
         "prompts": [
             {
                 "input_data": "Institut f\u00fcr Operations Research (IOR), Bereich Diskrete Optimierung und Logistik",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Institut f\u00fcr Operations Research (IOR), Bereich Diskrete Optimierung und Logistik?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8408,7 +8408,7 @@
         "prompts": [
             {
                 "input_data": "Institut f\u00fcr Operations Research (IOR), Bereich Kontinuierliche Optimierung",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Institut f\u00fcr Operations Research (IOR), Bereich Kontinuierliche Optimierung?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8507,7 +8507,7 @@
         "prompts": [
             {
                 "input_data": "Maschinenbau, KIT-Fakult\u00e4t f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Maschinenbau, KIT-Fakult\u00e4t f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8540,7 +8540,7 @@
         "prompts": [
             {
                 "input_data": "40.50",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.50?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8551,7 +8551,7 @@
         "prompts": [
             {
                 "input_data": "40.50",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.50?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8595,7 +8595,7 @@
         "prompts": [
             {
                 "input_data": "40.44",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 40.44?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8606,7 +8606,7 @@
         "prompts": [
             {
                 "input_data": "Hochschulsport",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Hochschulsport?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8617,7 +8617,7 @@
         "prompts": [
             {
                 "input_data": "Versuchsanstalt des Joseph Gottlieb K\u00f6lreuter Instituts f\u00fcr Pflanzenwissenschaften",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Versuchsanstalt des Joseph Gottlieb K\u00f6lreuter Instituts f\u00fcr Pflanzenwissenschaften?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8628,7 +8628,7 @@
         "prompts": [
             {
                 "input_data": "01.90",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 01.90?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8639,7 +8639,7 @@
         "prompts": [
             {
                 "input_data": "01.99",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 01.99?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8661,7 +8661,7 @@
         "prompts": [
             {
                 "input_data": "09.23",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 09.23?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8672,7 +8672,7 @@
         "prompts": [
             {
                 "input_data": "70.04",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 70.04?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8683,7 +8683,7 @@
         "prompts": [
             {
                 "input_data": "Mitfahrbank (Campus S\u00fcd): Bibliothek",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Mitfahrbank (Campus S\u00fcd): Bibliothek?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8705,7 +8705,7 @@
         "prompts": [
             {
                 "input_data": "Mitfahrbank (Campus Nord): S\u00fcdtor",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Mitfahrbank (Campus Nord): S\u00fcdtor?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8716,7 +8716,7 @@
         "prompts": [
             {
                 "input_data": "Stab und Strategie (STS)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Stab und Strategie (STS)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8749,7 +8749,7 @@
         "prompts": [
             {
                 "input_data": "Archiv f\u00fcr Architektur und Ingenieurbau (saai)",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Archiv f\u00fcr Architektur und Ingenieurbau (saai)?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8760,7 +8760,7 @@
         "prompts": [
             {
                 "input_data": "Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8771,7 +8771,7 @@
         "prompts": [
             {
                 "input_data": "Beschleunigerphysik und Technologie (IBPT) - Direktor/Verwaltung, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Beschleunigerphysik und Technologie (IBPT) - Direktor/Verwaltung, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8782,7 +8782,7 @@
         "prompts": [
             {
                 "input_data": "Beschleunigerphysik und Technologie (IBPT) - B\u00fcros, Institut f\u00fcr",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Beschleunigerphysik und Technologie (IBPT) - B\u00fcros, Institut f\u00fcr?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8804,7 +8804,7 @@
         "prompts": [
             {
                 "input_data": "1600",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 1600?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8837,7 +8837,7 @@
         "prompts": [
             {
                 "input_data": "10.22 - LAZ",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 10.22 - LAZ?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8848,7 +8848,7 @@
         "prompts": [
             {
                 "input_data": "50.28 - InformatiKOM II",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.28 - InformatiKOM II?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8859,7 +8859,7 @@
         "prompts": [
             {
                 "input_data": "50.19 - InformatiKOM I",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 50.19 - InformatiKOM I?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8870,7 +8870,7 @@
         "prompts": [
             {
                 "input_data": "Kleiner H\u00f6rsaal Bauingenieure",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Kleiner H\u00f6rsaal Bauingenieure?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8881,7 +8881,7 @@
         "prompts": [
             {
                 "input_data": "Chemie-H\u00f6rsaal II",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Chemie-H\u00f6rsaal II?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8892,7 +8892,7 @@
         "prompts": [
             {
                 "input_data": "Chemie-H\u00f6rsaal III",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Chemie-H\u00f6rsaal III?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8903,7 +8903,7 @@
         "prompts": [
             {
                 "input_data": "Mittlerer H\u00f6rsaal Maschinenbau",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Mittlerer H\u00f6rsaal Maschinenbau?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8925,7 +8925,7 @@
         "prompts": [
             {
                 "input_data": "Fritz-Haller-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Fritz-Haller-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8936,7 +8936,7 @@
         "prompts": [
             {
                 "input_data": "Neuer H\u00f6rsaal Architektur",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Neuer H\u00f6rsaal Architektur?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8947,7 +8947,7 @@
         "prompts": [
             {
                 "input_data": "Neuer H\u00f6rsaal Chemie",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Neuer H\u00f6rsaal Chemie?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8958,7 +8958,7 @@
         "prompts": [
             {
                 "input_data": "Engler-Bunte-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Engler-Bunte-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8969,7 +8969,7 @@
         "prompts": [
             {
                 "input_data": "Bauingenieure-H\u00f6rsaal",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Bauingenieure-H\u00f6rsaal?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8980,7 +8980,7 @@
         "prompts": [
             {
                 "input_data": "H\u00f6rsaal 101",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude H\u00f6rsaal 101?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -8991,7 +8991,7 @@
         "prompts": [
             {
                 "input_data": "H\u00f6rsaal 102",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude H\u00f6rsaal 102?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -9013,7 +9013,7 @@
         "prompts": [
             {
                 "input_data": "665",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 665?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -9024,7 +9024,7 @@
         "prompts": [
             {
                 "input_data": "666",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 666?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -9035,7 +9035,7 @@
         "prompts": [
             {
                 "input_data": "667",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 667?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -9046,7 +9046,7 @@
         "prompts": [
             {
                 "input_data": "668",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 668?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -9057,7 +9057,7 @@
         "prompts": [
             {
                 "input_data": "669",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude 669?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
@@ -9068,7 +9068,7 @@
         "prompts": [
             {
                 "input_data": "Energy Lab",
-                "response_data": NaN,
+                "response_data": null,
                 "prompt": "Was befindet sich in Geb\u00e4ude Energy Lab?",
                 "response": "Ich habe keine Informationen dazu, was sich in dem Geb\u00e4ude befindet."
             }
