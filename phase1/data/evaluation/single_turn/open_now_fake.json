@@ -1,0 +1,442 @@
+[
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Einstein-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Einstein-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Curie-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Curie-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Newton-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Newton-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Hawking-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Hawking-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Galileo-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Galileo-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Darwin-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Darwin-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Tesla-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Tesla-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Feynman-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Feynman-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Planck-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Planck-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bohr-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Bohr-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Faraday-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Faraday-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Mendel-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Mendel-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Hubble-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Hubble-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Turing-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Turing-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Rutherford-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Rutherford-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Archimedes-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Archimedes-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Sanger-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Sanger-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "von Neumann-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude von Neumann-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Franklin-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Franklin-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "60.03",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 60.03 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "60.20",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 60.20 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "60.41",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 60.41 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "60.19",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 60.19 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "60.12",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 60.12 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.61",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 20.61 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.65",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 20.65 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.91",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 20.91 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.14",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 10.14 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.74",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 10.74 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.28",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 10.28 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.35",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 10.35 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.09",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 30.09 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.26",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 30.26 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.52",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 30.52 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.20",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 40.20 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.35",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 40.35 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.61",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 40.61 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.09",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 50.09 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.78",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 50.78 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "70.02",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 70.02 grade ge\u00f6ffnet?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen."
+            }
+        ]
+    }
+]

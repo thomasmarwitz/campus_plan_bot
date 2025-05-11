@@ -116,7 +116,7 @@ The test prompts and expected answers are written in German because the system h
 **Answer cases:**
 - Das Gebäude ist grade geöffnet.
 	- If current time is within Y
-- Das Gebäude öffnet um Y. / Das Gebäude öffnet in Y Minuten.
+- Das Gebäude öffnet in Y Minuten. / Das Gebäude ist noch Y Minuten geschlossen.
 	- If current time is not within Y
 - Für dieses Gebäude kenne ich leider keine Öffnungszeiten.
 	- If Y is not defined
@@ -144,6 +144,8 @@ The test prompts and expected answers are written in German because the system h
 **Answer cases:**
 - Ich habe die Webseite für dich in deinem Browser geöffnet.
 	- Default (programmatically opens Y)
+- Zu diesem Gebäude kenne ich leider keine Webseite.
+	- If Y is not defined
 - Zu diesem Gebäude habe ich leider keine Informationen.
 	- If X is not in the database
 
