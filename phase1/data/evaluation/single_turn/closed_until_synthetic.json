@@ -1,0 +1,1202 @@
+[
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "ZEISS Makerspace @ KIT",
+                "response_data": "Mo,Fr 14:30-18:30, ('Tu', '05:19')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude ZEISS Makerspace @ KIT?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 9 Stunden und 11 Minuten.",
+                "reformulated_prompt": "Zu welcher Zeit ist der ZEISS Makerspace @ KIT zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-H\u00f6rsaal Nr. 4",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Mo', '07:08')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Physik-H\u00f6rsaal Nr. 4?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 1 Stunden und 52 Minuten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Physik-H\u00f6rsaals Nr. 4?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Parkgarage Kaiserstra\u00dfe (KIT)",
+                "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\", ('Fr', '03:02')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Parkgarage Kaiserstra\u00dfe (KIT)?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 2 Stunden und 58 Minuten.",
+                "reformulated_prompt": "Ab wann kann man die Parkgarage Kaiserstra\u00dfe am KIT nutzen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Botanischer Garten des KIT",
+                "response_data": "Apr-Sep Mo-Fr 08:00-16:00; Apr-Sep Su,PH 10:00-16:00; Oct-Mar Mo-Fr 08:00-15:00; Oct-Mar Su,PH 10:00-14:00, ('Th', '09:32')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Botanischer Garten des KIT?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat der Botanische Garten des KIT?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.34",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '22:07')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 50.34?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Was sind die Zugangszeiten f\u00fcr Geb\u00e4ude 50.34?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.11",
+                "response_data": "Mo-Fr 06:45-18:20, ('Mo', '23:46')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 10.11?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 6 Stunden und 59 Minuten.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 10.11 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('We', '13:40')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Zeiten hat der Informatikbau ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fairteiler am KIT",
+                "response_data": "24/7, ('Fr', '11:58')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fairteiler am KIT?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Fairteilers am KIT?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Mensa",
+                "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off, ('Th', '12:57')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Mensa?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Ab wann hat die Mensa auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '19:40')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten gelten f\u00fcr den Informatikbau?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "234",
+                "response_data": "Mo-Th 07:00-12:00, 13:00-16:00;Fr 07:00-12:00,13:00-15:00;Sa,Su,PH off, ('We', '10:07')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 234?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Um wie viel Uhr \u00f6ffnet Geb\u00e4ude 234?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Internet Caf\u00e9 Aso",
+                "response_data": "Mo-Fr 09:00-22:00; Sa 10:00-22:00, ('Sa', '05:20')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Internet Caf\u00e9 Aso?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 4 Stunden und 40 Minuten.",
+                "reformulated_prompt": "Was sind die Gesch\u00e4ftszeiten des Internet Caf\u00e9 Aso?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bibliothek (Campus Nord)",
+                "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('Th', '12:19')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Bibliothek (Campus Nord)?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 0 Stunden und 41 Minuten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat die Bibliothek am Campus Nord?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Geistes- und Sozialwissenschaften",
+                "response_data": "Mo-Th 13:00-14:00, ('Su', '05:14')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fachschaft Geistes- und Sozialwissenschaften?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 7 Stunden und 46 Minuten.",
+                "reformulated_prompt": "Wann kann man die Fachschaft Geistes- und Sozialwissenschaften aufsuchen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Sa', '14:44')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Ab wann ist der Informatikbau zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Zentrum f\u00fcr Mediales Lernen (ZML)",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('Su', '20:41')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Zentrum f\u00fcr Mediales Lernen (ZML)?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Zeiten ist das Zentrum f\u00fcr Mediales Lernen (ZML) ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Fr', '01:35')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 5 Stunden und 25 Minuten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat der Informatikbau?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Forschungszentrum Umwelt",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('We', '03:48')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Forschungszentrum Umwelt?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 3 Stunden und 12 Minuten.",
+                "reformulated_prompt": "Was sind die Zugangszeiten zum Forschungszentrum Umwelt?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('Th', '11:19')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann \u00f6ffnet das Institut f\u00fcr Angewandte Materialien - Elektrochemische Technologien?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft GeistSoz",
+                "response_data": "Mo-Th 13:00-14:00, ('Su', '11:41')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fachschaft GeistSoz?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 1 Stunden und 19 Minuten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten der Fachschaft GeistSoz?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Programmstrukturen und Datenorganisation (IPD), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Su', '10:24')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Programmstrukturen und Datenorganisation (IPD), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 20 Stunden und 36 Minuten.",
+                "reformulated_prompt": "Wann ist das Institut f\u00fcr Programmstrukturen und Datenorganisation zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '02:45')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 4 Stunden und 15 Minuten.",
+                "reformulated_prompt": "Ab wann ist das Institut f\u00fcr Theoretische Informatik, AG Kryptographie und Sicherheit ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Informatik und Formale Beschreibungsverfahren (AIFB), Institut f\u00fcr",
+                "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\", ('Su', '05:59')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Angewandte Informatik und Formale Beschreibungsverfahren (AIFB), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 0 Stunden und 1 Minuten.",
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet das Institut f\u00fcr Angewandte Informatik und Formale Beschreibungsverfahren?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "InformatiKOM 1",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('Su', '22:17')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude InformatiKOM 1?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 10 Stunden und 43 Minuten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten von InformatiKOM 1?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "05.20",
+                "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\", ('Mo', '02:48')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 05.20?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 3 Stunden und 12 Minuten.",
+                "reformulated_prompt": "Ab welcher Uhrzeit ist Geb\u00e4ude 05.20 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "310",
+                "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('We', '10:00')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 310?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Um welche Uhrzeit macht Geb\u00e4ude 310 auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Parkgarage Kaiserstra\u00dfe (KIT)",
+                "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\", ('We', '00:11')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Parkgarage Kaiserstra\u00dfe (KIT)?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet die Parkgarage in der Kaiserstra\u00dfe am KIT?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('Sa', '14:57')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 1 Tagen, 16 Stunden und 3 Minuten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Instituts f\u00fcr Angewandte Materialien - Elektrochemische Technologien?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Fr', '08:03')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Ab wann ist das Institut f\u00fcr Prozessrechentechnik, Automation und Robotik zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Mathematik und Informatik",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Su', '09:32')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fachschaft Mathematik und Informatik?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 21 Stunden und 28 Minuten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat die Fachschaft Mathematik und Informatik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.54",
+                "response_data": "Mo-Fr 7:30-9:30, 12:00-14:00, 18:00-21:00; Sa,Su,PH off, ('Mo', '09:00')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 20.54?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Ab welcher Uhrzeit ist Geb\u00e4ude 20.54 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Mensa am Adenauerring",
+                "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off, ('Sa', '07:00')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Mensa am Adenauerring?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 4 Stunden und 0 Minuten.",
+                "reformulated_prompt": "Wann beginnt der Betrieb in der Mensa am Adenauerring?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-H\u00f6rsaal Nr. 3",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Mo', '18:22')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Physik-H\u00f6rsaal Nr. 3?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchem Zeitpunkt \u00f6ffnet der Physik-H\u00f6rsaal Nr. 3?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "214",
+                "response_data": "Mo,Fr 14:30-18:30, ('Su', '23:18')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 214?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 15 Stunden und 12 Minuten.",
+                "reformulated_prompt": "Ab wann kann man Geb\u00e4ude 214 betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Geowissenschaften, Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('Tu', '02:11')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Angewandte Geowissenschaften, Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 4 Stunden und 49 Minuten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Instituts f\u00fcr Angewandte Geowissenschaften?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.13",
+                "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off, ('We', '17:28')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 01.13?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 17 Stunden und 32 Minuten.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 01.13 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Theoretische Informatik (ITI), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '23:58')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Theoretische Informatik (ITI), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 7 Stunden und 2 Minuten.",
+                "reformulated_prompt": "Ab welcher Zeit \u00f6ffnet das Institut f\u00fcr Theoretische Informatik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.11",
+                "response_data": "Mo-Fr 06:45-18:20, ('We', '15:01')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 10.11?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welcher Uhrzeit macht Geb\u00e4ude 10.11 auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.22",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Tu', '17:38')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 30.22?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Ab wann ist Geb\u00e4ude 30.22 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.90",
+                "response_data": "Mo-Fr 09:00-22:00; Sa 10:00-22:00, ('Su', '16:13')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 01.90?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 16 Stunden und 47 Minuten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat Geb\u00e4ude 01.90?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Mensa am Adenauerring",
+                "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off, ('Mo', '14:00')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Mensa am Adenauerring?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Ab welcher Zeit kann man die Mensa am Adenauerring besuchen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "intro Caf\u00e9",
+                "response_data": "Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00, ('Mo', '01:30')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude intro Caf\u00e9?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 8 Stunden und 30 Minuten.",
+                "reformulated_prompt": "Wann beginnt der Service im intro Caf\u00e9?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Versuchsanstalt des Joseph Gottlieb K\u00f6lreuter Instituts f\u00fcr Pflanzenwissenschaften",
+                "response_data": "Apr-Sep Mo-Fr 08:00-16:00; Apr-Sep Su,PH 10:00-16:00; Oct-Mar Mo-Fr 08:00-15:00; Oct-Mar Su,PH 10:00-14:00, ('Fr', '12:45')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Versuchsanstalt des Joseph Gottlieb K\u00f6lreuter Instituts f\u00fcr Pflanzenwissenschaften?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet die Versuchsanstalt des Joseph Gottlieb K\u00f6lreuter Instituts f\u00fcr Pflanzenwissenschaften?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technische Informatik (ITEC), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '23:11')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Technische Informatik (ITEC), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 7 Stunden und 49 Minuten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Instituts f\u00fcr Technische Informatik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Geistes- und Sozialwissenschaften",
+                "response_data": "Mo-Th 13:00-14:00, ('Mo', '13:11')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fachschaft Geistes- und Sozialwissenschaften?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Ab wann ist die Fachschaft Geistes- und Sozialwissenschaften erreichbar?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "145",
+                "response_data": "Mo-Fr 07:00-18:00, ('Fr', '08:55')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 145?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Um welche Zeit \u00f6ffnet Geb\u00e4ude 145?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Medizinische Dienste Campus S\u00fcd",
+                "response_data": "Mo-Fr 7:30-9:30, 12:00-14:00, 18:00-21:00; Sa,Su,PH off, ('Mo', '08:31')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Medizinische Dienste Campus S\u00fcd?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welcher Zeit beginnt der Dienst der Medizinischen Dienste Campus S\u00fcd?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Anthropomatik und Robotik, Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '16:25')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Anthropomatik und Robotik, Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Ab wann ist das Institut f\u00fcr Anthropomatik und Robotik ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Forschungszentrum Umwelt",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('Tu', '23:01')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Forschungszentrum Umwelt?",
+                "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 7 Stunden und 59 Minuten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat das Forschungszentrum Umwelt?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technische Informatik (ITEC), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('We', '12:58')",
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Technische Informatik (ITEC), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+                "reformulated_prompt": "Ab welcher Uhrzeit ist das Institut f\u00fcr Technische Informatik zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "532",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 532?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welcher Uhrzeit macht Geb\u00e4ude 532 auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "513",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 513?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab wann ist Geb\u00e4ude 513 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Tech.Thermodyn.u.K\u00e4ltetechn./ Mess-u.Regelungstechn., Institutsgeb.",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Tech.Thermodyn.u.K\u00e4ltetechn./ Mess-u.Regelungstechn., Institutsgeb.?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat das Geb\u00e4ude Tech.Thermodyn.u.K\u00e4ltetechn./ Mess-u.Regelungstechn., Institutsgeb.?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "304",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 304?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab welcher Zeit ist Geb\u00e4ude 304 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Stab und Strategie (STS)",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Stab und Strategie (STS)?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten vom Stab und Strategie (STS) Geb\u00e4ude?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.80",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 01.80?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Um wie viel Uhr \u00f6ffnet Geb\u00e4ude 01.80?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bauingenieure - Gro\u00dfer H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Bauingenieure - Gro\u00dfer H\u00f6rsaal?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchem Zeitpunkt \u00f6ffnet der Bauingenieure - Gro\u00dfer H\u00f6rsaal?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "240",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 240?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab wann kann man Geb\u00e4ude 240 betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Theoretische Festk\u00f6rperphysik, Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Theoretische Festk\u00f6rperphysik, Institut f\u00fcr?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeit hat das Institut f\u00fcr Theoretische Festk\u00f6rperphysik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Astroteilchenphysik (IAP), Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Astroteilchenphysik (IAP), Institut f\u00fcr?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Instituts f\u00fcr Astroteilchenphysik (IAP)?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Gastdozentenhaus Heinrich Hertz",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Gastdozentenhaus Heinrich Hertz?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab welcher Uhrzeit ist das Gastdozentenhaus Heinrich Hertz ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technische Chemie und Polymerchemie, Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Technische Chemie und Polymerchemie, Institut f\u00fcr?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann beginnt die \u00d6ffnungszeit des Instituts f\u00fcr Technische Chemie und Polymerchemie?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "666",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 666?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Um wie viel Uhr macht Geb\u00e4ude 666 auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "241",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 241?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab welchem Zeitpunkt ist Geb\u00e4ude 241 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Engler-Bunte-Institut (EBI)",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Engler-Bunte-Institut (EBI)?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet das Engler-Bunte-Institut (EBI)?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institutsgeb\u00e4ude MVM",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Institutsgeb\u00e4ude MVM?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was ist die \u00d6ffnungszeit des Institutsgeb\u00e4udes MVM?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Lichttechnisches Institut (LTI)",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Lichttechnisches Institut (LTI)?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab wann ist das Lichttechnische Institut (LTI) ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "B254",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude B254?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat Geb\u00e4ude B254?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "545",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 545?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet Geb\u00e4ude 545?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "615",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 615?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab welchem Zeitpunkt ist Geb\u00e4ude 615 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "546",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 546?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann beginnt die \u00d6ffnungszeit von Geb\u00e4ude 546?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Studienkolleg f\u00fcr ausl\u00e4ndische Studierende (STK)",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Studienkolleg f\u00fcr ausl\u00e4ndische Studierende (STK)?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab welcher Uhrzeit \u00f6ffnet das Studienkolleg f\u00fcr ausl\u00e4ndische Studierende (STK)?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Professur f\u00fcr Finanzwissenschaft und Public Management, Institut f\u00fcr Volkswirtschaftslehre (ECON)",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Professur f\u00fcr Finanzwissenschaft und Public Management, Institut f\u00fcr Volkswirtschaftslehre (ECON)?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten der Professur f\u00fcr Finanzwissenschaft und Public Management, Institut f\u00fcr Volkswirtschaftslehre (ECON)?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet das Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.31",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 50.31?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab wann ist Geb\u00e4ude 50.31 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Chemie-Turm III",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Chemie-Turm III?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welcher Uhrzeit macht Chemie-Turm III auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Kunstgeschichte",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fachschaft Kunstgeschichte?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten der Fachschaft Kunstgeschichte?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "B523",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude B523?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab wann ist B523 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institutsgeb\u00e4ude Boden- und Felsmechanik",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Institutsgeb\u00e4ude Boden- und Felsmechanik?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Institutsgeb\u00e4udes Boden- und Felsmechanik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.50",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 10.50?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Um wie viel Uhr \u00f6ffnet Geb\u00e4ude 10.50?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Geographie und Geo\u00f6kologie, Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Geographie und Geo\u00f6kologie, Institut f\u00fcr?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann beginnt die \u00d6ffnungszeit des Instituts f\u00fcr Geographie und Geo\u00f6kologie?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.23",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 50.23?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab welcher Zeit ist Geb\u00e4ude 50.23 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Zentrum f\u00fcr Angewandte Rechtswissenschaft (ZAR)",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Zentrum f\u00fcr Angewandte Rechtswissenschaft (ZAR)?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Zeiten hat das Zentrum f\u00fcr Angewandte Rechtswissenschaft auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "425",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 425?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab wann kann man Geb\u00e4ude 425 betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.44",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 20.44?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat Geb\u00e4ude 20.44?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Projekttr\u00e4ger Karlsruhe (PTKA)",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Projekttr\u00e4ger Karlsruhe (PTKA)?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann beginnt der Zugang zum Projekttr\u00e4ger Karlsruhe?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "688",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 688?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 688?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.32",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 10.32?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab welcher Uhrzeit ist Geb\u00e4ude 10.32 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "H\u00f6rsaal am Fasanengarten",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude H\u00f6rsaal am Fasanengarten?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann beginnt die \u00d6ffnungszeit des H\u00f6rsaals am Fasanengarten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "603",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 603?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet Geb\u00e4ude 603?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Max Rubner-Institut",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Max Rubner-Institut?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Max Rubner-Instituts?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "413",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 413?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab wann ist Geb\u00e4ude 413 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Professur f\u00fcr Netzwerk\u00f6konomie, Institut f\u00fcr Volkswirtschaftslehre (ECON",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Professur f\u00fcr Netzwerk\u00f6konomie, Institut f\u00fcr Volkswirtschaftslehre (ECON?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann \u00f6ffnen die R\u00e4ume der Professur f\u00fcr Netzwerk\u00f6konomie?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Chemie-Turm I",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Chemie-Turm I?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welcher Zeit macht Chemie-Turm I auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Evaluationsstelle (STS-QM)",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Evaluationsstelle (STS-QM)?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab wann ist die Evaluationsstelle ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Gastdozentenhaus",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Gastdozentenhaus?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Gastdozentenhauses?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Photonenforschung und Synchrotronstrahlung (IPS), Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Photonenforschung und Synchrotronstrahlung (IPS), Institut f\u00fcr?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann beginnt der Zugang zum Institut f\u00fcr Photonenforschung?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "247",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 247?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ab welcher Zeit kann man Geb\u00e4ude 247 betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "11.40",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude 11.40?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Zeiten \u00f6ffnet Geb\u00e4ude 11.40?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Westhochschule",
+                "response_data": null,
+                "prompt": "Wann \u00f6ffnet Geb\u00e4ude Westhochschule?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten der Westhochschule?"
+            }
+        ]
+    }
+]

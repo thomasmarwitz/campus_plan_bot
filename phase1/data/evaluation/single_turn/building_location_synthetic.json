@@ -1,0 +1,1187 @@
+[
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "523",
+                "response_data": "Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 523?",
+                "response": "Das Geb\u00e4ude hat die Adresse Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir den Standort von Geb\u00e4ude 523 nennen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "239",
+                "response_data": "Eggensteiner Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 239?",
+                "response": "Das Geb\u00e4ude hat die Adresse Eggensteiner Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir den Standort von Geb\u00e4ude 239 nennen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "wbk Institut f\u00fcr Produktionstechnik",
+                "response_data": "wbk Institut f\u00fcr Produktionstechnik, 5, Gotthard-Franz-Stra\u00dfe, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude wbk Institut f\u00fcr Produktionstechnik?",
+                "response": "Das Geb\u00e4ude hat die Adresse wbk Institut f\u00fcr Produktionstechnik, 5, Gotthard-Franz-Stra\u00dfe, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wo befindet sich das Geb\u00e4ude des wbk Instituts f\u00fcr Produktionstechnik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.33",
+                "response_data": "MTI-H\u00f6rsaal, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 30.33?",
+                "response": "Das Geb\u00e4ude hat die Adresse MTI-H\u00f6rsaal, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wo ist Geb\u00e4ude 30.33 zu finden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Wirtschaftswissenschaften, KIT-Fakult\u00e4t f\u00fcr",
+                "response_data": "Kollegiengeb\u00e4ude am Kronenplatz, 89-93, Kaiserstra\u00dfe, Innenstadt-Ost S\u00fcdwestlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76133, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Wirtschaftswissenschaften, KIT-Fakult\u00e4t f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat die Adresse Kollegiengeb\u00e4ude am Kronenplatz, 89-93, Kaiserstra\u00dfe, Innenstadt-Ost S\u00fcdwestlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76133, Deutschland.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir den Standort des Geb\u00e4udes der Wirtschaftswissenschaften, KIT-Fakult\u00e4t f\u00fcr, mitteilen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technik der Informationsverarbeitung (ITIV), Institut f\u00fcr",
+                "response_data": "5, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Technik der Informationsverarbeitung (ITIV), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat die Adresse 5, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wo ist das Geb\u00e4ude des Instituts f\u00fcr Technik der Informationsverarbeitung (ITIV) gelegen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institutsgeb\u00e4ude Nachrichtentechnik",
+                "response_data": "Institutsgeb\u00e4ude Nachrichtentechnik, 5, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Institutsgeb\u00e4ude Nachrichtentechnik?",
+                "response": "Das Geb\u00e4ude hat die Adresse Institutsgeb\u00e4ude Nachrichtentechnik, 5, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wo befindet sich das Institutsgeb\u00e4ude Nachrichtentechnik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Volkswirtschaftslehre, Institut f\u00fcr",
+                "response_data": "25, Waldhornstra\u00dfe, Innenstadt-Ost S\u00fcdwestlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Volkswirtschaftslehre, Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat die Adresse 25, Waldhornstra\u00dfe, Innenstadt-Ost S\u00fcdwestlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir den Standort des Instituts f\u00fcr Volkswirtschaftslehre nennen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.90",
+                "response_data": "30.90, 8, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 30.90?",
+                "response": "Das Geb\u00e4ude hat die Adresse 30.90, 8, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wo ist Geb\u00e4ude 30.90 zu finden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "245",
+                "response_data": "Neureuter Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 245?",
+                "response": "Das Geb\u00e4ude hat die Adresse Neureuter Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir den Standort von Geb\u00e4ude 245 nennen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "614",
+                "response_data": "Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 614?",
+                "response": "Das Geb\u00e4ude hat die Adresse Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "06.38",
+                "response_data": "Westhochschule, 16, Hertzstra\u00dfe, Binsenschlauch, Nordweststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76187, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 06.38?",
+                "response": "Das Geb\u00e4ude hat die Adresse Westhochschule, 16, Hertzstra\u00dfe, Binsenschlauch, Nordweststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76187, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Verwaltungsgeb\u00e4ude",
+                "response_data": "Verwaltungsgeb\u00e4ude, 12, Kaiserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Verwaltungsgeb\u00e4ude?",
+                "response": "Das Geb\u00e4ude hat die Adresse Verwaltungsgeb\u00e4ude, 12, Kaiserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "ZEISS Makerspace @ KIT",
+                "response_data": "ZEISS Makerspace @ KIT, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude ZEISS Makerspace @ KIT?",
+                "response": "Das Geb\u00e4ude hat die Adresse ZEISS Makerspace @ KIT, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "252",
+                "response_data": "Friedrichstaler Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 252?",
+                "response": "Das Geb\u00e4ude hat die Adresse Friedrichstaler Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Informatikbau, 5, Am Fasanengarten, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude hat die Adresse Informatikbau, 5, Am Fasanengarten, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Wirtschaftswissenschaftliche Fakult\u00e4tsbibliothek",
+                "response_data": "Wirtschaftswissenschaftliche Fakult\u00e4tsbibliothek, 17, Bl\u00fccherstra\u00dfe, Weststadt Mittlerer Teil, Weststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76185, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Wirtschaftswissenschaftliche Fakult\u00e4tsbibliothek?",
+                "response": "Das Geb\u00e4ude hat die Adresse Wirtschaftswissenschaftliche Fakult\u00e4tsbibliothek, 17, Bl\u00fccherstra\u00dfe, Weststadt Mittlerer Teil, Weststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76185, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "312",
+                "response_data": "Linkenheimer Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 312?",
+                "response": "Das Geb\u00e4ude hat die Adresse Linkenheimer Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "131",
+                "response_data": "Ambulanz, Bruchsaler Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 131?",
+                "response": "Das Geb\u00e4ude hat die Adresse Ambulanz, Bruchsaler Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Engler-Bunte-Institut (EBI)",
+                "response_data": "Engler-Bunte-Institut (EBI), 1a, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Engler-Bunte-Institut (EBI)?",
+                "response": "Das Geb\u00e4ude hat die Adresse Engler-Bunte-Institut (EBI), 1a, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Baustatik, Institut f\u00fcr",
+                "response_data": "Bauingenieurshochhaus, 1, Reinhard-Baumeister-Platz, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Baustatik, Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat die Adresse Bauingenieurshochhaus, 1, Reinhard-Baumeister-Platz, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "919 B",
+                "response_data": "Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 919 B?",
+                "response": "Das Geb\u00e4ude hat die Adresse Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.22",
+                "response_data": "Kolleg am Ring, 6, Adenauerring, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 50.22?",
+                "response": "Das Geb\u00e4ude hat die Adresse Kolleg am Ring, 6, Adenauerring, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "691",
+                "response_data": "Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 691?",
+                "response": "Das Geb\u00e4ude hat die Adresse Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Bauingenieurwesen",
+                "response_data": "Altes Bauingenieurgeb\u00e4ude, 1, Otto-Ammann-Platz, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Fachschaft Bauingenieurwesen?",
+                "response": "Das Geb\u00e4ude hat die Adresse Altes Bauingenieurgeb\u00e4ude, 1, Otto-Ammann-Platz, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland."
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.99",
+                "response_data": "Institut f\u00fcr Telematik - Lehrstuhl Prof. Zitterbart, 40, Kaiserstra\u00dfe, Innenstadt-Ost S\u00fcdwestlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76133, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 01.99?",
+                "response": "Das Geb\u00e4ude hat die Adresse Institut f\u00fcr Telematik - Lehrstuhl Prof. Zitterbart, 40, Kaiserstra\u00dfe, Innenstadt-Ost S\u00fcdwestlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76133, Deutschland.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir den Weg zu Geb\u00e4ude 01.99 zeigen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.25",
+                "response_data": "Institutsgeb\u00e4ude Boden- und Felsmechanik, 14, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 40.25?",
+                "response": "Das Geb\u00e4ude hat die Adresse Institutsgeb\u00e4ude Boden- und Felsmechanik, 14, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "In welchem Bereich finde ich Geb\u00e4ude 40.25?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "International Students Office (INTL)",
+                "response_data": "Ehemalige Kinderklinik, 2, Adenauerring, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude International Students Office (INTL)?",
+                "response": "Das Geb\u00e4ude hat die Adresse Ehemalige Kinderklinik, 2, Adenauerring, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wie komme ich zum International Students Office?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.12",
+                "response_data": "Studierendenservice, 13, Englerstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 10.12?",
+                "response": "Das Geb\u00e4ude hat die Adresse Studierendenservice, 13, Englerstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir sagen, wo sich Geb\u00e4ude 10.12 befindet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Funktionelle Grenzfl\u00e4chen (IFG), Institut f\u00fcr",
+                "response_data": "Weingartener Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Funktionelle Grenzfl\u00e4chen (IFG), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat die Adresse Weingartener Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+                "reformulated_prompt": "Wie gelange ich zum Institut f\u00fcr Funktionelle Grenzfl\u00e4chen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Engler-Bunte-Institut (EBI)",
+                "response_data": "Engler-Bunte-Institut (EBI), 1a, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Engler-Bunte-Institut (EBI)?",
+                "response": "Das Geb\u00e4ude hat die Adresse Engler-Bunte-Institut (EBI), 1a, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "In welchem Teil des Campus ist das Engler-Bunte-Institut?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institutsgeb\u00e4ude Nachrichtentechnik",
+                "response_data": "Institutsgeb\u00e4ude Nachrichtentechnik, 5, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Institutsgeb\u00e4ude Nachrichtentechnik?",
+                "response": "Das Geb\u00e4ude hat die Adresse Institutsgeb\u00e4ude Nachrichtentechnik, 5, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wo befindet sich das Institutsgeb\u00e4ude f\u00fcr Nachrichtentechnik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.34",
+                "response_data": "10.34, 4, Kaiserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 10.34?",
+                "response": "Das Geb\u00e4ude hat die Adresse 10.34, 4, Kaiserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "An welcher Stelle ist Geb\u00e4ude 10.34 zu finden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr",
+                "response_data": "Informatikbau, 5, Am Fasanengarten, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat die Adresse Informatikbau, 5, Am Fasanengarten, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wie komme ich zum Institut f\u00fcr Theoretische Informatik, Arbeitsgruppe Kryptographie?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.95",
+                "response_data": "10.95, 12, Engelbert-Arnold-Stra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 10.95?",
+                "response": "Das Geb\u00e4ude hat die Adresse 10.95, 12, Engelbert-Arnold-Stra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "An welchem Standort ist Geb\u00e4ude 10.95?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Geistes- und Sozialwissenschaften",
+                "response_data": "Fachschaft GeistSoz, 7, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Fachschaft Geistes- und Sozialwissenschaften?",
+                "response": "Das Geb\u00e4ude hat die Adresse Fachschaft GeistSoz, 7, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wo hat die Fachschaft Geistes- und Sozialwissenschaften ihren Sitz?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft WiWi",
+                "response_data": "20.12, 12, Schlossbezirk, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Fachschaft WiWi?",
+                "response": "Das Geb\u00e4ude hat die Adresse 20.12, 12, Schlossbezirk, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wo finde ich die WiWi Fachschaft?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Ambulanz",
+                "response_data": "Ambulanz, Bruchsaler Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Ambulanz?",
+                "response": "Das Geb\u00e4ude hat die Adresse Ambulanz, Bruchsaler Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+                "reformulated_prompt": "Wo befindet sich die Ambulanz?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.16",
+                "response_data": "40.16, 11, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 40.16?",
+                "response": "Das Geb\u00e4ude hat die Adresse 40.16, 11, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "In welcher Richtung liegt Geb\u00e4ude 40.16?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "06.41",
+                "response_data": "16, Hertzstra\u00dfe, Binsenschlauch, Nordweststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76187, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 06.41?",
+                "response": "Das Geb\u00e4ude hat die Adresse 16, Hertzstra\u00dfe, Binsenschlauch, Nordweststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76187, Deutschland.",
+                "reformulated_prompt": "Wie komme ich zu Geb\u00e4ude 06.41?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "313",
+                "response_data": "Eggensteiner Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 313?",
+                "response": "Das Geb\u00e4ude hat die Adresse Eggensteiner Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+                "reformulated_prompt": "Wo kann ich Geb\u00e4ude 313 finden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Englervilla",
+                "response_data": "Englervilla, 1, Wilhelm-Jordan-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Englervilla?",
+                "response": "Das Geb\u00e4ude hat die Adresse Englervilla, 1, Wilhelm-Jordan-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir den Standort der Englervilla nennen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Chemie-Turm II",
+                "response_data": "Chemie-Turm II, 2, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Chemie-Turm II?",
+                "response": "Das Geb\u00e4ude hat die Adresse Chemie-Turm II, 2, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wo steht der Chemie-Turm II?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Ernst Gaber",
+                "response_data": "Ernst Gaber, 7, Otto-Ammann-Platz, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Ernst Gaber?",
+                "response": "Das Geb\u00e4ude hat die Adresse Ernst Gaber, 7, Otto-Ammann-Platz, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wie finde ich das Ernst Gaber Geb\u00e4ude?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institutsgeb\u00e4ude Lichttechnik",
+                "response_data": "Institutsgeb\u00e4ude Lichttechnik, 13, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Institutsgeb\u00e4ude Lichttechnik?",
+                "response": "Das Geb\u00e4ude hat die Adresse Institutsgeb\u00e4ude Lichttechnik, 13, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wo ist das Institut f\u00fcr Lichttechnik untergebracht?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "274",
+                "response_data": "Neureuter Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 274?",
+                "response": "Das Geb\u00e4ude hat die Adresse Neureuter Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+                "reformulated_prompt": "An welcher Stelle befindet sich Geb\u00e4ude 274?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "B252",
+                "response_data": "Friedrichstaler Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude B252?",
+                "response": "Das Geb\u00e4ude hat die Adresse Friedrichstaler Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+                "reformulated_prompt": "Wo kann ich B252 lokalisieren?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Altes Maschinenbaugeb\u00e4ude",
+                "response_data": "Altes Maschinenbaugeb\u00e4ude, 4, Engelbert-Arnold-Stra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Altes Maschinenbaugeb\u00e4ude?",
+                "response": "Das Geb\u00e4ude hat die Adresse Altes Maschinenbaugeb\u00e4ude, 4, Engelbert-Arnold-Stra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wo finde ich das Alte Maschinenbaugeb\u00e4ude?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "70.26",
+                "response_data": "B\u00fcrogeb\u00e4ude 70.04, 2, Rintheimer Querallee, Alt-Rintheim, Rintheim, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude 70.26?",
+                "response": "Das Geb\u00e4ude hat die Adresse B\u00fcrogeb\u00e4ude 70.04, 2, Rintheimer Querallee, Alt-Rintheim, Rintheim, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "In welchem Bereich ist Geb\u00e4ude 70.26?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Verm\u00f6gen und Bau Baden-W\u00fcrttemberg - Amt Karlsruhe",
+                "response_data": "Verm\u00f6gen und Bau Baden-W\u00fcrttemberg - Amt Karlsruhe, 1, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+                "prompt": "Wo ist Geb\u00e4ude Verm\u00f6gen und Bau Baden-W\u00fcrttemberg - Amt Karlsruhe?",
+                "response": "Das Geb\u00e4ude hat die Adresse Verm\u00f6gen und Bau Baden-W\u00fcrttemberg - Amt Karlsruhe, 1, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+                "reformulated_prompt": "Wo hat das Amt f\u00fcr Verm\u00f6gen und Bau Baden-W\u00fcrttemberg seinen Sitz in Karlsruhe?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "B523",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude B523?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir den Weg zu B523 zeigen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "912",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 912?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "In welchem Bereich finde ich Geb\u00e4ude 912?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "755",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 755?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wie komme ich zum Geb\u00e4ude 755?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "719",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 719?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir sagen, wo sich Geb\u00e4ude 719 befindet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "918",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 918?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "An welcher Stelle ist Geb\u00e4ude 918 zu finden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "915",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 915?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "In welcher Richtung liegt Geb\u00e4ude 915?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "736",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 736?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wo genau befindet sich Geb\u00e4ude 736?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "666",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 666?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir den Standort von Geb\u00e4ude 666 nennen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "908",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 908?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wie gelange ich zu Geb\u00e4ude 908?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "729",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 729?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "An welchem Ort ist Geb\u00e4ude 729?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Katalyseforschung und -Technologie (IKFT), Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude Katalyseforschung und -Technologie (IKFT), Institut f\u00fcr?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wo finde ich das Institut f\u00fcr Katalyseforschung und -Technologie?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "804",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 804?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "In welchem Teil des Campus ist Geb\u00e4ude 804?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "740",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 740?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir den Weg zu Geb\u00e4ude 740 beschreiben?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "713",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 713?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wo kann ich Geb\u00e4ude 713 lokalisieren?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "739",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 739?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "An welcher Position befindet sich Geb\u00e4ude 739?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "907",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 907?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wie finde ich den Weg zu Geb\u00e4ude 907?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "704",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 704?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "In welchem Bereich steht Geb\u00e4ude 704?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "575",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 575?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wo genau ist Geb\u00e4ude 575 zu finden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "712",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 712?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir die Position von Geb\u00e4ude 712 mitteilen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "B934",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude B934?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wo steht das Geb\u00e4ude B934?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "718",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 718?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "An welcher Stelle des Gel\u00e4ndes ist Geb\u00e4ude 718?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "705",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 705?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wie komme ich am besten zu Geb\u00e4ude 705?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "901",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 901?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wo muss ich hin, um Geb\u00e4ude 901 zu finden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "904",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 904?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir sagen, wo Geb\u00e4ude 904 liegt?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "667",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 667?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "An welchem Standort befindet sich Geb\u00e4ude 667?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "669",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 669?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir den Weg zu Geb\u00e4ude 669 zeigen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "920",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 920?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "In welchem Bereich finde ich Geb\u00e4ude 920?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "9670",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 9670?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wie komme ich zu Geb\u00e4ude 9670?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "686",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 686?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir sagen, wo sich Geb\u00e4ude 686 befindet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "668",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 668?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "An welcher Stelle ist Geb\u00e4ude 668?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "937",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 937?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "In welcher Richtung liegt Geb\u00e4ude 937?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "806",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 806?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wo genau steht Geb\u00e4ude 806?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "741",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 741?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "An welchem Standort ist Geb\u00e4ude 741?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "721",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 721?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wie finde ich Geb\u00e4ude 721?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "726",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 726?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "In welchem Teil des Gel\u00e4ndes ist Geb\u00e4ude 726?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "910",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 910?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "An welcher Position befindet sich Geb\u00e4ude 910?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "913",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 913?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wo kann ich Geb\u00e4ude 913 finden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "803",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 803?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wie gelange ich zu Geb\u00e4ude 803?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "730",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 730?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "An welcher Ecke steht Geb\u00e4ude 730?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "725",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 725?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wo muss ich hin f\u00fcr Geb\u00e4ude 725?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "716",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 716?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "K\u00f6nnen Sie die Location von Geb\u00e4ude 716 nennen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "902",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 902?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "In welchem Sektor ist Geb\u00e4ude 902?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "935",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 935?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wo erreiche ich Geb\u00e4ude 935?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "665",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 665?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "An welchem Platz ist Geb\u00e4ude 665?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "702",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 702?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Welchen Weg nehme ich zu Geb\u00e4ude 702?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "757",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 757?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wo steht Geb\u00e4ude 757?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "706",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 706?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "An welcher Stelle befindet sich Geb\u00e4ude 706?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "911",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 911?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wie komme ich am besten zu Geb\u00e4ude 911?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Energy Lab",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude Energy Lab?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "Wo finde ich das Energy Lab Geb\u00e4ude?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "801",
+                "response_data": null,
+                "prompt": "Wo ist Geb\u00e4ude 801?",
+                "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+                "reformulated_prompt": "K\u00f6nnen Sie mir den Standort von Geb\u00e4ude 801 mitteilen?"
+            }
+        ]
+    }
+]

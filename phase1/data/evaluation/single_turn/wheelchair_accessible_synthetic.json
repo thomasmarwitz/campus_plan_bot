@@ -1,0 +1,1202 @@
+[
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "210",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude 210 rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Gibt es Rollstuhlzugang im Geb\u00e4ude 210?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Englervilla",
+                "response_data": "no, nan",
+                "prompt": "Ist Geb\u00e4ude Englervilla rollstuhlgerecht?",
+                "response": "Nein, das Geb\u00e4ude ist nicht rollstuhlgerecht.",
+                "reformulated_prompt": "Verf\u00fcgt die Englervilla \u00fcber Rollstuhlzug\u00e4nglichkeit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Photogrammetrie und Fernerkundung (IPF), Institut f\u00fcr",
+                "response_data": "yes, Rollstuhlrampe auf der R\u00fcckseite des Geb\u00e4udes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG n\u00e4he Rampe",
+                "prompt": "Ist Geb\u00e4ude Photogrammetrie und Fernerkundung (IPF), Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht. Es gibt Rollstuhlrampe auf der R\u00fcckseite des Geb\u00e4udes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG n\u00e4he Rampe.",
+                "reformulated_prompt": "Hat das Institut f\u00fcr Photogrammetrie und Fernerkundung einen barrierefreien Zugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Laborhalle Institut f\u00fcr Thermische Verfahrenstechnik",
+                "response_data": "limited, nan",
+                "prompt": "Ist Geb\u00e4ude Laborhalle Institut f\u00fcr Thermische Verfahrenstechnik rollstuhlgerecht?",
+                "response": "Das Geb\u00e4ude ist teilweise rollstuhlgerecht.",
+                "reformulated_prompt": "Kann man die Laborhalle des Instituts f\u00fcr Thermische Verfahrenstechnik mit Rollstuhl erreichen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Hochschulsport",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Hochschulsport rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist das Hochschulsportgeb\u00e4ude barrierefrei zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Englervilla",
+                "response_data": "no, nan",
+                "prompt": "Ist Geb\u00e4ude Englervilla rollstuhlgerecht?",
+                "response": "Nein, das Geb\u00e4ude ist nicht rollstuhlgerecht.",
+                "reformulated_prompt": "Hat die Englervilla Rollstuhlzug\u00e4nge?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Regionalwissenschaft (IfR) , Institut f\u00fcr",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Regionalwissenschaft (IfR) , Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Bietet das Institut f\u00fcr Regionalwissenschaft Barrierefreiheit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.31",
+                "response_data": "yes, Aufzug vorhanden",
+                "prompt": "Ist Geb\u00e4ude 50.31 rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht. Es gibt Aufzug vorhanden.",
+                "reformulated_prompt": "Verf\u00fcgt Geb\u00e4ude 50.31 \u00fcber Rollstuhlzug\u00e4nge?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-Hochhaus",
+                "response_data": "limited, nan",
+                "prompt": "Ist Geb\u00e4ude Physik-Hochhaus rollstuhlgerecht?",
+                "response": "Das Geb\u00e4ude ist teilweise rollstuhlgerecht.",
+                "reformulated_prompt": "Ist das Physik-Hochhaus mit Rollstuhl erreichbar?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Elektrotechnisches Institut",
+                "response_data": "no, nan",
+                "prompt": "Ist Geb\u00e4ude Elektrotechnisches Institut rollstuhlgerecht?",
+                "response": "Nein, das Geb\u00e4ude ist nicht rollstuhlgerecht.",
+                "reformulated_prompt": "Kann man das Elektrotechnische Institut mit Rollstuhl betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Elektrotechnisches Institut",
+                "response_data": "no, nan",
+                "prompt": "Ist Geb\u00e4ude Elektrotechnisches Institut rollstuhlgerecht?",
+                "response": "Nein, das Geb\u00e4ude ist nicht rollstuhlgerecht.",
+                "reformulated_prompt": "Gibt es barrierefreie Zug\u00e4nge zum Elektrotechnischen Institut?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Architektur",
+                "response_data": "yes, Rollstuhlrampe auf der R\u00fcckseite des Geb\u00e4udes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG n\u00e4he Rampe",
+                "prompt": "Ist Geb\u00e4ude Fachschaft Architektur rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht. Es gibt Rollstuhlrampe auf der R\u00fcckseite des Geb\u00e4udes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG n\u00e4he Rampe.",
+                "reformulated_prompt": "Hat die Fachschaft Architektur einen Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-Hochhaus",
+                "response_data": "limited, nan",
+                "prompt": "Ist Geb\u00e4ude Physik-Hochhaus rollstuhlgerecht?",
+                "response": "Das Geb\u00e4ude ist teilweise rollstuhlgerecht.",
+                "reformulated_prompt": "Verf\u00fcgt das Physik-Hochhaus \u00fcber Barrierefreiheit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Nanos!",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Nanos! rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist Nanos! f\u00fcr Rollstuhlfahrer zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Architektur",
+                "response_data": "yes, Rollstuhlrampe auf der R\u00fcckseite des Geb\u00e4udes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG n\u00e4he Rampe",
+                "prompt": "Ist Geb\u00e4ude Architektur rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht. Es gibt Rollstuhlrampe auf der R\u00fcckseite des Geb\u00e4udes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG n\u00e4he Rampe.",
+                "reformulated_prompt": "Kann man das Architekturgeb\u00e4ude mit Rollstuhl betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Nanos!",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Nanos! rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Besitzt Nanos! einen barrierefreien Zugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.81",
+                "response_data": "no, nan",
+                "prompt": "Ist Geb\u00e4ude 30.81 rollstuhlgerecht?",
+                "response": "Nein, das Geb\u00e4ude ist nicht rollstuhlgerecht.",
+                "reformulated_prompt": "Hat Geb\u00e4ude 30.81 Rollstuhlzug\u00e4nge?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Sport und Sportwissenschaft, Institut f\u00fcr",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Sport und Sportwissenschaft, Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist das Institut f\u00fcr Sport und Sportwissenschaft barrierefrei?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.14",
+                "response_data": "limited, nan",
+                "prompt": "Ist Geb\u00e4ude 20.14 rollstuhlgerecht?",
+                "response": "Das Geb\u00e4ude ist teilweise rollstuhlgerecht.",
+                "reformulated_prompt": "Verf\u00fcgt Geb\u00e4ude 20.14 \u00fcber Rollstuhlzug\u00e4nglichkeit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Programmstrukturen und Datenorganisation (IPD), Institut f\u00fcr",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Programmstrukturen und Datenorganisation (IPD), Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist das Institut f\u00fcr Programmstrukturen und Datenorganisation rollstuhlgerecht ausgestattet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-Hochhaus",
+                "response_data": "limited, nan",
+                "prompt": "Ist Geb\u00e4ude Physik-Hochhaus rollstuhlgerecht?",
+                "response": "Das Geb\u00e4ude ist teilweise rollstuhlgerecht.",
+                "reformulated_prompt": "Kann man mit Rollstuhl ins Physik-Hochhaus gelangen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Anthropomatik und Robotik, Institut f\u00fcr",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Anthropomatik und Robotik, Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist das Institut f\u00fcr Anthropomatik und Robotik barrierefrei zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.94",
+                "response_data": "limited, nan",
+                "prompt": "Ist Geb\u00e4ude 10.94 rollstuhlgerecht?",
+                "response": "Das Geb\u00e4ude ist teilweise rollstuhlgerecht.",
+                "reformulated_prompt": "Verf\u00fcgt Geb\u00e4ude 10.94 \u00fcber Barrierefreiheit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.31",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude 10.31 rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Hat Geb\u00e4ude 10.31 einen Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Baustatik, Institut f\u00fcr",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Baustatik, Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist das Institut f\u00fcr Baustatik mit Rollstuhl erreichbar?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Otto-Lehmann-H\u00f6rsaal",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Otto-Lehmann-H\u00f6rsaal rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Kann man den Otto-Lehmann-H\u00f6rsaal mit einem Rollstuhl erreichen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude Maschinenbau II",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Kollegiengeb\u00e4ude Maschinenbau II rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Hat das Kollegiengeb\u00e4ude Maschinenbau II Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "KITA nanos (Campus Nord)",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude KITA nanos (Campus Nord) rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist die KITA nanos am Campus Nord barrierefrei?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technische Informatik (ITEC), Institut f\u00fcr",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Technische Informatik (ITEC), Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Verf\u00fcgt das Institut f\u00fcr Technische Informatik \u00fcber Rollstuhlzug\u00e4nglichkeit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.23",
+                "response_data": "limited, nan",
+                "prompt": "Ist Geb\u00e4ude 30.23 rollstuhlgerecht?",
+                "response": "Das Geb\u00e4ude ist teilweise rollstuhlgerecht.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 30.23 f\u00fcr Rollstuhlfahrer zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Sport",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Fachschaft Sport rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Hat die Fachschaft Sport einen barrierefreien Zugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude Maschinenbau II",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Kollegiengeb\u00e4ude Maschinenbau II rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist das Kollegiengeb\u00e4ude Maschinenbau II mit Rollstuhl erreichbar?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Elektrotechnisches Institut",
+                "response_data": "no, nan",
+                "prompt": "Ist Geb\u00e4ude Elektrotechnisches Institut rollstuhlgerecht?",
+                "response": "Nein, das Geb\u00e4ude ist nicht rollstuhlgerecht.",
+                "reformulated_prompt": "Gibt es beim Elektrotechnischen Institut Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Cafeteria",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Cafeteria rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist die Cafeteria barrierefrei ausgestattet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "101",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude 101 rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Kann man Geb\u00e4ude 101 mit Rollstuhl betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Hauptabteilung V - Geb\u00e4ude und Technik",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Hauptabteilung V - Geb\u00e4ude und Technik rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist die Hauptabteilung V - Geb\u00e4ude und Technik rollstuhlzug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "H\u00f6rsaalgeb\u00e4ude am Forum - Audimax",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude H\u00f6rsaalgeb\u00e4ude am Forum - Audimax rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Kann das H\u00f6rsaalgeb\u00e4ude am Forum - Audimax mit Rollstuhl besucht werden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Gottlieb-Daimler-H\u00f6rsaal",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Gottlieb-Daimler-H\u00f6rsaal rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist der Gottlieb-Daimler-H\u00f6rsaal barrierefrei erreichbar?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Architektur",
+                "response_data": "yes, Rollstuhlrampe auf der R\u00fcckseite des Geb\u00e4udes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG n\u00e4he Rampe",
+                "prompt": "Ist Geb\u00e4ude Architektur rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht. Es gibt Rollstuhlrampe auf der R\u00fcckseite des Geb\u00e4udes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG n\u00e4he Rampe.",
+                "reformulated_prompt": "Hat das Architekturgeb\u00e4ude Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Elektrotechnisches Institut",
+                "response_data": "no, nan",
+                "prompt": "Ist Geb\u00e4ude Elektrotechnisches Institut rollstuhlgerecht?",
+                "response": "Nein, das Geb\u00e4ude ist nicht rollstuhlgerecht.",
+                "reformulated_prompt": "Ist das Elektrotechnische Institut barrierefrei?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.13",
+                "response_data": "limited, nan",
+                "prompt": "Ist Geb\u00e4ude 20.13 rollstuhlgerecht?",
+                "response": "Das Geb\u00e4ude ist teilweise rollstuhlgerecht.",
+                "reformulated_prompt": "Kann Geb\u00e4ude 20.13 mit Rollstuhl befahren werden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "intro Caf\u00e9",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude intro Caf\u00e9 rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Bietet das intro Caf\u00e9 Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Thermische Verfahrenstechnik, Institut f\u00fcr",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Thermische Verfahrenstechnik, Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist das Institut f\u00fcr Thermische Verfahrenstechnik rollstuhlgeeignet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bauingenieurshochhaus",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Bauingenieurshochhaus rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Gibt es im Bauingenieurshochhaus Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.51",
+                "response_data": "yes, Fahrstuhl vorhanden",
+                "prompt": "Ist Geb\u00e4ude 30.51 rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht. Es gibt Fahrstuhl vorhanden.",
+                "reformulated_prompt": "Ist Geb\u00e4ude 30.51 barrierefrei zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Entwerfen, Kunst und Theorie (EKUT), Institut",
+                "response_data": "yes, Rollstuhlrampe auf der R\u00fcckseite des Geb\u00e4udes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG n\u00e4he Rampe",
+                "prompt": "Ist Geb\u00e4ude Entwerfen, Kunst und Theorie (EKUT), Institut rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht. Es gibt Rollstuhlrampe auf der R\u00fcckseite des Geb\u00e4udes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG n\u00e4he Rampe.",
+                "reformulated_prompt": "Kann man das Institut f\u00fcr Entwerfen, Kunst und Theorie mit Rollstuhl erreichen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technische Thermodynamik, Institut f\u00fcr",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Technische Thermodynamik, Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Hat das Institut f\u00fcr Technische Thermodynamik Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.11",
+                "response_data": "limited, nan",
+                "prompt": "Ist Geb\u00e4ude 20.11 rollstuhlgerecht?",
+                "response": "Das Geb\u00e4ude ist teilweise rollstuhlgerecht.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 20.11 f\u00fcr Rollstuhlfahrer geeignet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Informatik",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Fachschaft Informatik rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Kann die Fachschaft Informatik mit Rollstuhl erreicht werden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Sport-H\u00f6rsaal",
+                "response_data": "yes, nan",
+                "prompt": "Ist Geb\u00e4ude Sport-H\u00f6rsaal rollstuhlgerecht?",
+                "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+                "reformulated_prompt": "Ist der Sport-H\u00f6rsaal mit Rollstuhl zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technische Thermodynamik und K\u00e4ltetechnik, Institut f\u00fcr",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Technische Thermodynamik und K\u00e4ltetechnik, Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Kann man das Institut f\u00fcr Technische Thermodynamik und K\u00e4ltetechnik mit einem Rollstuhl erreichen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "InformatiKOM 1",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude InformatiKOM 1 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Hat das InformatiKOM 1 Geb\u00e4ude Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "320",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 320 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Gibt es barrierefreien Zugang zu Geb\u00e4ude 320?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "341",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 341 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 341 barrierefrei zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "211",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 211 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Verf\u00fcgt Geb\u00e4ude 211 \u00fcber Rollstuhlzug\u00e4nglichkeit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "439",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 439 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Kann man Geb\u00e4ude 439 mit einem Rollstuhl befahren?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Altes Maschinenbaugeb\u00e4ude",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Altes Maschinenbaugeb\u00e4ude rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Gibt es im Alten Maschinenbaugeb\u00e4ude Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bereich I - Biologie, Chemie und Verfahrenstechnik (Campus Nord)",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Bereich I - Biologie, Chemie und Verfahrenstechnik (Campus Nord) rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Hat der Bereich I - Biologie, Chemie und Verfahrenstechnik (Campus Nord) barrierefreie Zug\u00e4nge?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "571",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 571 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 571 f\u00fcr Rollstuhlfahrer zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Westhochschule",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Westhochschule rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Verf\u00fcgt die Westhochschule \u00fcber behindertengerechte Zug\u00e4nge?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Projekttr\u00e4ger Karlsruhe (PTKA)",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Projekttr\u00e4ger Karlsruhe (PTKA) rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Kann der Projekttr\u00e4ger Karlsruhe (PTKA) mit Rollstuhl erreicht werden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "VDE Bezirksverein Mittelbaden e.V.",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude VDE Bezirksverein Mittelbaden e.V. rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Hat der VDE Bezirksverein Mittelbaden e.V. barrierefreie Zugangsm\u00f6glichkeiten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Organische Chemie, Institut f\u00fcr",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Organische Chemie, Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist das Institut f\u00fcr Organische Chemie mit Rollstuhl erreichbar?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.36",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 30.36 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Gibt es f\u00fcr Geb\u00e4ude 30.36 einen Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.95",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 01.95 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 01.95 barrierefrei?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Verm\u00f6gen und Bau Baden-W\u00fcrttemberg - Amt Karlsruhe",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Verm\u00f6gen und Bau Baden-W\u00fcrttemberg - Amt Karlsruhe rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Kann man das Verm\u00f6gen und Bau Baden-W\u00fcrttemberg - Amt Karlsruhe mit Rollstuhl betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Altes Maschinenbaugeb\u00e4ude",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Altes Maschinenbaugeb\u00e4ude rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Existiert im Alten Maschinenbaugeb\u00e4ude ein barrierefreier Zugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Center f\u00fcr Innovation & Entrepreneurship",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Center f\u00fcr Innovation & Entrepreneurship rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Hat das Center f\u00fcr Innovation & Entrepreneurship Rollstuhlzug\u00e4nge?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Chemie-Turm II",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Chemie-Turm II rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist der Chemie-Turm II f\u00fcr Rollstuhlfahrer zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "682",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 682 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Verf\u00fcgt Geb\u00e4ude 682 \u00fcber Barrierefreiheit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Theoretische Elektrotechnik und Systemoptimierung (ITE), Institut f\u00fcr",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Theoretische Elektrotechnik und Systemoptimierung (ITE), Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Kann man das Institut f\u00fcr Theoretische Elektrotechnik und Systemoptimierung mit Rollstuhl erreichen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "5252",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 5252 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Hat Geb\u00e4ude 5252 behindertengerechte Zug\u00e4nge?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.63",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 10.63 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 10.63 rollstuhlgeeignet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.51",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 40.51 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Verf\u00fcgt das Geb\u00e4ude 40.51 \u00fcber Rollstuhlzug\u00e4nglichkeit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Richard-Willst\u00e4tter-Allee",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Richard-Willst\u00e4tter-Allee rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist die Richard-Willst\u00e4tter-Allee mit Rollstuhl befahrbar?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technische Thermodynamik und K\u00e4ltetechnik, Versuchshalle",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Technische Thermodynamik und K\u00e4ltetechnik, Versuchshalle rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Kann man das Geb\u00e4ude der Technischen Thermodynamik mit einem Rollstuhl erreichen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "553",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 553 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Hat das Geb\u00e4ude 553 Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.28",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 30.28 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 30.28 barrierefrei zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "615",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 615 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Verf\u00fcgt Geb\u00e4ude 615 \u00fcber Rollstuhlzug\u00e4nglichkeit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bauingenieure, Pr\u00fcfhalle",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Bauingenieure, Pr\u00fcfhalle rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "K\u00f6nnen Rollstuhlfahrer die Pr\u00fcfhalle der Bauingenieure erreichen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "278",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 278 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Gibt es im Geb\u00e4ude 278 Barrierefreiheit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM)",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM) rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Hat das Forum Wissenschaft und Gesellschaft Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Neutronenphysik und Reaktortechnik, Institut f\u00fcr",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Neutronenphysik und Reaktortechnik, Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist das Institut f\u00fcr Neutronenphysik barrierefrei?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "716",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 716 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Gibt es in Geb\u00e4ude 716 Rollstuhlzug\u00e4nglichkeit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Photonenforschung und Synchrotronstrahlung (IPS), Institut f\u00fcr",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Photonenforschung und Synchrotronstrahlung (IPS), Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Kann man das Institut f\u00fcr Photonenforschung mit Rollstuhl betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fairteiler am KIT",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Fairteiler am KIT rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist der Fairteiler am KIT f\u00fcr Rollstuhlfahrer zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Mensa am Adenauerring",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Mensa am Adenauerring rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Bietet die Mensa am Adenauerring Barrierefreiheit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "544",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 544 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Hat Geb\u00e4ude 544 einen Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "914",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 914 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 914 f\u00fcr Rollst\u00fchle zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "704",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 704 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Verf\u00fcgt Geb\u00e4ude 704 \u00fcber Barrierefreiheit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.24",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 50.24 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Kann man Geb\u00e4ude 50.24 mit Rollstuhl erreichen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Soziologie, Medien- und Kulturwissenschaften (ISMK), Institut f\u00fcr ",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Soziologie, Medien- und Kulturwissenschaften (ISMK), Institut f\u00fcr  rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist das ISMK-Institut barrierefrei?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "GODZILLA Test-Facility Beryllide-Production",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude GODZILLA Test-Facility Beryllide-Production rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Verf\u00fcgt die GODZILLA Testanlage \u00fcber Rollstuhlzug\u00e4nglichkeit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "441",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 441 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist Geb\u00e4ude 441 mit Rollstuhl erreichbar?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Photonik und Quantenelektronik (IPQ), Institut f\u00fcr",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Photonik und Quantenelektronik (IPQ), Institut f\u00fcr rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Hat das Institut f\u00fcr Photonik Rollstuhlzugang?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.79",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 30.79 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 30.79 barrierefrei ausgestattet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "GODZILLA Test-Facility Beryllide-Production",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude GODZILLA Test-Facility Beryllide-Production rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Kann man die GODZILLA Testanlage mit Rollstuhl betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist das IAM-ET Institut rollstuhlgerecht ausgebaut?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "06.47",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 06.47 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Verf\u00fcgt Geb\u00e4ude 06.47 \u00fcber Barrierefreiheit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.86",
+                "response_data": "nan, nan",
+                "prompt": "Ist Geb\u00e4ude 10.86 rollstuhlgerecht?",
+                "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 10.86 f\u00fcr Rollstuhlfahrer zug\u00e4nglich?"
+            }
+        ]
+    }
+]
