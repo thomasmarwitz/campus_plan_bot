@@ -1,0 +1,1202 @@
+[
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Informatik",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Sa', '12:52')",
+                "prompt": "Ist Geb\u00e4ude Fachschaft Informatik grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Hat die Fachschaft Informatik momentan auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "InformatiKOM 1",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('We', '22:37')",
+                "prompt": "Ist Geb\u00e4ude InformatiKOM 1 grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Kann man gerade ins InformatiKOM 1?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-H\u00f6rsaal Nr. 3",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Su', '15:53')",
+                "prompt": "Ist Geb\u00e4ude Physik-H\u00f6rsaal Nr. 3 grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist der Physik-H\u00f6rsaal 3 derzeit zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.90",
+                "response_data": "Mo-Fr 09:00-22:00; Sa 10:00-22:00, ('Fr', '15:08')",
+                "prompt": "Ist Geb\u00e4ude 01.90 grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Steht Geb\u00e4ude 01.90 momentan offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft GeistSoz",
+                "response_data": "Mo-Th 13:00-14:00, ('Tu', '13:05')",
+                "prompt": "Ist Geb\u00e4ude Fachschaft GeistSoz grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Kann man aktuell in die Fachschaft GeistSoz?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachbibliothek Physik",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Sa', '13:50')",
+                "prompt": "Ist Geb\u00e4ude Fachbibliothek Physik grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist die Physik-Bibliothek jetzt offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "123",
+                "response_data": "Mo-Fr 07:00-18:00, ('Tu', '05:41')",
+                "prompt": "Ist Geb\u00e4ude 123 grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 123 im Moment zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "303",
+                "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('Th', '00:59')",
+                "prompt": "Ist Geb\u00e4ude 303 grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Kann man gerade in Geb\u00e4ude 303 rein?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Ambulanz",
+                "response_data": "24/7, ('We', '21:58')",
+                "prompt": "Ist Geb\u00e4ude Ambulanz grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Ist die Ambulanz derzeit ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Botanischer Garten des KIT",
+                "response_data": "Apr-Sep Mo-Fr 08:00-16:00; Apr-Sep Su,PH 10:00-16:00; Oct-Mar Mo-Fr 08:00-15:00; Oct-Mar Su,PH 10:00-14:00, ('Su', '10:41')",
+                "prompt": "Ist Geb\u00e4ude Botanischer Garten des KIT grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Kann man den KIT Botanischen Garten momentan besuchen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.40",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('We', '21:22')",
+                "prompt": "Ist Geb\u00e4ude 50.40 grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Hat Geb\u00e4ude 50.40 aktuell ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Internet Caf\u00e9 Aso",
+                "response_data": "Mo-Fr 09:00-22:00; Sa 10:00-22:00, ('Mo', '07:44')",
+                "prompt": "Ist Geb\u00e4ude Internet Caf\u00e9 Aso grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist das Internet Caf\u00e9 Aso jetzt auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Otto-Lehmann-H\u00f6rsaal",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('We', '08:00')",
+                "prompt": "Ist Geb\u00e4ude Otto-Lehmann-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Kann man momentan in den Otto-Lehmann-H\u00f6rsaal?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-H\u00f6rsaal Nr. 4",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Th', '03:43')",
+                "prompt": "Ist Geb\u00e4ude Physik-H\u00f6rsaal Nr. 4 grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist der Physik-H\u00f6rsaal 4 gerade zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Zentrum f\u00fcr Mediales Lernen (ZML)",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('Tu', '22:54')",
+                "prompt": "Ist Geb\u00e4ude Zentrum f\u00fcr Mediales Lernen (ZML) grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Hat das ZML derzeit offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '23:16')",
+                "prompt": "Ist Geb\u00e4ude Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist das Institut f\u00fcr Theoretische Informatik, AG Kryptographie und Sicherheit momentan ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('We', '02:35')",
+                "prompt": "Ist Geb\u00e4ude Informatikbau grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Kann man gerade in den Informatikbau?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Su', '02:16')",
+                "prompt": "Ist Geb\u00e4ude Informatikbau grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Hat der Informatikbau aktuell auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Fr', '09:37')",
+                "prompt": "Ist Geb\u00e4ude Informatikbau grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Ist der Informatikbau derzeit zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kantine (Campus Nord)",
+                "response_data": "Mo-Fr 07:00-18:00, ('Mo', '03:29')",
+                "prompt": "Ist Geb\u00e4ude Kantine (Campus Nord) grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist die Kantine am Campus Nord momentan ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '22:31')",
+                "prompt": "Ist Geb\u00e4ude Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist das Institut f\u00fcr Prozessrechentechnik, Automation und Robotik zurzeit auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.40",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('We', '12:59')",
+                "prompt": "Ist Geb\u00e4ude 50.40 grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 50.40 momentan offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "310",
+                "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('Tu', '14:19')",
+                "prompt": "Ist Geb\u00e4ude 310 grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Kann man derzeit in Geb\u00e4ude 310?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "145",
+                "response_data": "Mo-Fr 07:00-18:00, ('Fr', '17:10')",
+                "prompt": "Ist Geb\u00e4ude 145 grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Ist Geb\u00e4ude 145 aktuell zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.11",
+                "response_data": "Mo-Fr 06:45-18:20, ('Fr', '18:48')",
+                "prompt": "Ist Geb\u00e4ude 10.11 grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Hat Geb\u00e4ude 10.11 gerade ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.13",
+                "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off, ('Fr', '14:00')",
+                "prompt": "Ist Geb\u00e4ude 01.13 grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Hat Geb\u00e4ude 01.13 aktuell ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "05.01",
+                "response_data": "Mo-Th 11:30-01:00, Fr,Sa 11:30-03:00, ('Fr', '10:32')",
+                "prompt": "Ist Geb\u00e4ude 05.01 grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Kann man momentan in Geb\u00e4ude 05.01 rein?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Mensa am Adenauerring",
+                "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off, ('We', '14:18')",
+                "prompt": "Ist Geb\u00e4ude Mensa am Adenauerring grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Ist die Mensa am Adenauerring jetzt auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Zentrum f\u00fcr Mediales Lernen (ZML)",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('Th', '18:07')",
+                "prompt": "Ist Geb\u00e4ude Zentrum f\u00fcr Mediales Lernen (ZML) grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Hat das ZML derzeit ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Ambulanz",
+                "response_data": "24/7, ('Th', '16:05')",
+                "prompt": "Ist Geb\u00e4ude Ambulanz grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Hat die Ambulanz im Moment auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Programmstrukturen und Datenorganisation (IPD), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Su', '00:49')",
+                "prompt": "Ist Geb\u00e4ude Programmstrukturen und Datenorganisation (IPD), Institut f\u00fcr grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist das Institut f\u00fcr Programmstrukturen und Datenorganisation momentan zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Ambulanz",
+                "response_data": "24/7, ('Fr', '02:46')",
+                "prompt": "Ist Geb\u00e4ude Ambulanz grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Ist die Ambulanz momentan zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Parkgarage Kaiserstra\u00dfe (KIT)",
+                "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\", ('Su', '02:26')",
+                "prompt": "Ist Geb\u00e4ude Parkgarage Kaiserstra\u00dfe (KIT) grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Kann man gerade in die Parkgarage Kaiserstra\u00dfe?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "310",
+                "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('We', '00:17')",
+                "prompt": "Ist Geb\u00e4ude 310 grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist Geb\u00e4ude 310 derzeit offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "KIT-Bibliothek Nord",
+                "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('Th', '14:19')",
+                "prompt": "Ist Geb\u00e4ude KIT-Bibliothek Nord grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Hat die KIT-Bibliothek Nord aktuell ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "KIT-Bibliothek Nord",
+                "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('Sa', '22:21')",
+                "prompt": "Ist Geb\u00e4ude KIT-Bibliothek Nord grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist die KIT-Bibliothek Nord momentan zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "05.20",
+                "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\", ('Fr', '10:39')",
+                "prompt": "Ist Geb\u00e4ude 05.20 grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Kann man gerade in Geb\u00e4ude 05.20 rein?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Forschungszentrum Umwelt",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('Tu', '03:19')",
+                "prompt": "Ist Geb\u00e4ude Forschungszentrum Umwelt grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist das Forschungszentrum Umwelt aktuell offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institut f\u00fcr Wirtschaftsinformatik (WIN)",
+                "response_data": "Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00, ('Tu', '13:45')",
+                "prompt": "Ist Geb\u00e4ude Institut f\u00fcr Wirtschaftsinformatik (WIN) grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Hat das WIN-Institut momentan auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Versuchsanstalt des Joseph Gottlieb K\u00f6lreuter Instituts f\u00fcr Pflanzenwissenschaften",
+                "response_data": "Apr-Sep Mo-Fr 08:00-16:00; Apr-Sep Su,PH 10:00-16:00; Oct-Mar Mo-Fr 08:00-15:00; Oct-Mar Su,PH 10:00-14:00, ('Fr', '16:03')",
+                "prompt": "Ist Geb\u00e4ude Versuchsanstalt des Joseph Gottlieb K\u00f6lreuter Instituts f\u00fcr Pflanzenwissenschaften grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist die Versuchsanstalt des K\u00f6lreuter Instituts derzeit ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.34",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '23:24')",
+                "prompt": "Ist Geb\u00e4ude 50.34 grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Kann man jetzt ins Geb\u00e4ude 50.34?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "222",
+                "response_data": "24/7, ('Su', '22:44')",
+                "prompt": "Ist Geb\u00e4ude 222 grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 222 momentan offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "KIT-Bibliothek",
+                "response_data": "24/7, ('We', '03:14')",
+                "prompt": "Ist Geb\u00e4ude KIT-Bibliothek grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Hat die KIT-Bibliothek gerade auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bibliothek (Campus Nord)",
+                "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('Mo', '09:59')",
+                "prompt": "Ist Geb\u00e4ude Bibliothek (Campus Nord) grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Ist die CN-Bibliothek aktuell ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.54",
+                "response_data": "Mo-Fr 7:30-9:30, 12:00-14:00, 18:00-21:00; Sa,Su,PH off, ('Mo', '13:14')",
+                "prompt": "Ist Geb\u00e4ude 20.54 grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Ist Geb\u00e4ude 20.54 im Moment zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Informatik und Formale Beschreibungsverfahren (AIFB), Institut f\u00fcr",
+                "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\", ('Sa', '05:09')",
+                "prompt": "Ist Geb\u00e4ude Angewandte Informatik und Formale Beschreibungsverfahren (AIFB), Institut f\u00fcr grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Hat das AIFB-Institut derzeit auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Mathematik und Informatik",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Sa', '12:14')",
+                "prompt": "Ist Geb\u00e4ude Fachschaft Mathematik und Informatik grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Ist die Fachschaft Mathe/Info gerade offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "intro Caf\u00e9",
+                "response_data": "Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00, ('We', '07:54')",
+                "prompt": "Ist Geb\u00e4ude intro Caf\u00e9 grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Kann man momentan ins intro Caf\u00e9?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Botanischer Garten des KIT",
+                "response_data": "Apr-Sep Mo-Fr 08:00-16:00; Apr-Sep Su,PH 10:00-16:00; Oct-Mar Mo-Fr 08:00-15:00; Oct-Mar Su,PH 10:00-14:00, ('Th', '06:32')",
+                "prompt": "Ist Geb\u00e4ude Botanischer Garten des KIT grade ge\u00f6ffnet?",
+                "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Ist der Botanische Garten jetzt ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Theoretische Informatik (ITI), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '14:55')",
+                "prompt": "Ist Geb\u00e4ude Theoretische Informatik (ITI), Institut f\u00fcr grade ge\u00f6ffnet?",
+                "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+                "reformulated_prompt": "Hat das Institut f\u00fcr Theoretische Informatik aktuell auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "RoofKIT",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude RoofKIT grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Hat RoofKIT derzeit ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Chemie-Turm II",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Chemie-Turm II grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man momentan in den Chemie-Turm II?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "413",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 413 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 413 momentan zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Neutronenphysik und Reaktortechnik, Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Neutronenphysik und Reaktortechnik, Institut f\u00fcr grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man aktuell ins Institut f\u00fcr Neutronenphysik und Reaktortechnik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "416",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 416 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Hat Geb\u00e4ude 416 zurzeit auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist das Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Wasserwirtschaft und Kulturtechnik momentan zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "wbk Institut f\u00fcr Produktionstechnik",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude wbk Institut f\u00fcr Produktionstechnik grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Hat das wbk Institut f\u00fcr Produktionstechnik jetzt ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.34",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 30.34 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 30.34 im Moment offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.19",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 40.19 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man gerade ins Geb\u00e4ude 40.19?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "9627",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 9627 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist 9627 derzeit ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "573",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 573 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Hat Geb\u00e4ude 573 momentan auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Egon-Eiermann-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Egon-Eiermann-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man aktuell in den Egon-Eiermann-H\u00f6rsaal?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-Flachbau",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Physik-Flachbau grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist der Physik-Flachbau im Moment zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Lernzentrum am Fasanenschl\u00f6sschen",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Lernzentrum am Fasanenschl\u00f6sschen grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Hat das Lernzentrum am Fasanenschl\u00f6sschen derzeit ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "223",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 223 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist 223 gerade offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institut f\u00fcr Industrielle Informationstechnik (IIIT)",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Institut f\u00fcr Industrielle Informationstechnik (IIIT) grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man momentan ins Institut f\u00fcr Industrielle Informationstechnik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Verm\u00f6gen und Bau Baden-W\u00fcrttemberg - Amt Karlsruhe",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Verm\u00f6gen und Bau Baden-W\u00fcrttemberg - Amt Karlsruhe grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist Verm\u00f6gen und Bau Baden-W\u00fcrttemberg - Amt Karlsruhe aktuell ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.29",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 40.29 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Hat 40.29 gerade auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bereich IV - Nat\u00fcrliche und gebaute Umwelt (CS)",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Bereich IV - Nat\u00fcrliche und gebaute Umwelt (CS) grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist der Bereich IV - Nat\u00fcrliche und gebaute Umwelt (CS) zurzeit zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude am Ehrenhof",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Kollegiengeb\u00e4ude am Ehrenhof grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man derzeit ins Kollegiengeb\u00e4ude am Ehrenhof?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Customer Insights, Institute for ",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Customer Insights, Institute for  grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist das Institute for Customer Insights momentan offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude am Zirkel",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Kollegiengeb\u00e4ude am Zirkel grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Hat das Kollegiengeb\u00e4ude am Zirkel gerade ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Verwaltungsgeb\u00e4ude",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Verwaltungsgeb\u00e4ude grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist das Verwaltungsgeb\u00e4ude im Moment zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "404",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 404 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man aktuell in Geb\u00e4ude 404?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.70",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 10.70 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist 10.70 derzeit offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Werkfeuerwehr",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Werkfeuerwehr grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Hat die Werkfeuerwehr momentan auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Karlsruhe House of Young Scientists (KHYS)",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Karlsruhe House of Young Scientists (KHYS) grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man gerade ins KHYS rein?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "429",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 429 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude mit der Nummer 429 derzeit zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "244",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 244 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man momentan in Geb\u00e4ude 244 rein?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.50",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 10.50 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 10.50 aktuell zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Ehemalige Kinderklinik",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Ehemalige Kinderklinik grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man die ehemalige Kinderklinik gerade betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "06.42",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 06.42 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 06.42 im Moment offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.13",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 20.13 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Hat Geb\u00e4ude 20.13 derzeit ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude Bauingenieurwesen III",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Kollegiengeb\u00e4ude Bauingenieurwesen III grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist das Kollegiengeb\u00e4ude Bauingenieurwesen III momentan zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "223/1",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 223/1 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man aktuell in Geb\u00e4ude 223/1 rein?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "9652",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 9652 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist Geb\u00e4ude 9652 momentan offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Lichttechnik-H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Lichttechnik-H\u00f6rsaal grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Hat der Lichttechnik-H\u00f6rsaal jetzt auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.23",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 10.23 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist das Geb\u00e4ude 10.23 derzeit ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Entwerfen von Stadt und Landschaft (IESL), Institut",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Entwerfen von Stadt und Landschaft (IESL), Institut grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man momentan ins IESL-Institut?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Kunstgeschichte",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Fachschaft Kunstgeschichte grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist die Fachschaft Kunstgeschichte gerade besetzt?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "KIT-Shuttle (Haltestelle Campus Nord, S\u00fcdtor)",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude KIT-Shuttle (Haltestelle Campus Nord, S\u00fcdtor) grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist die KIT-Shuttle Haltestelle am S\u00fcdtor des Campus Nord aktuell in Betrieb?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "544",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 544 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist Geb\u00e4ude 544 im Moment zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.44",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 30.44 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man gerade ins Geb\u00e4ude 30.44?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Baustatik, Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Baustatik, Institut f\u00fcr grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist das Institut f\u00fcr Baustatik momentan ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Laboratorium f\u00fcr Elektronenmikroskopie (LEM)",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Laboratorium f\u00fcr Elektronenmikroskopie (LEM) grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Hat das LEM derzeit auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Servicepl\u00e4tze 10-18",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Servicepl\u00e4tze 10-18 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Sind die Servicepl\u00e4tze 10-18 gerade nutzbar?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "400",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 400 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist Geb\u00e4ude 400 momentan zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.22",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude 50.22 grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Hat das Geb\u00e4ude 50.22 gerade offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude Bauingenieurwesen III",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Kollegiengeb\u00e4ude Bauingenieurwesen III grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Kann man momentan ins Kollegiengeb\u00e4ude Bauingenieurwesen III?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Nanos!",
+                "response_data": null,
+                "prompt": "Ist Geb\u00e4ude Nanos! grade ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Ist Nanos! aktuell ge\u00f6ffnet?"
+            }
+        ]
+    }
+]

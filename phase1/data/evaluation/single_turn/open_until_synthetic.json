@@ -1,0 +1,1202 @@
+[
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('Fr', '09:14')",
+                "prompt": "Wie lange ist Geb\u00e4ude Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 8 Stunden und 46 Minuten.",
+                "reformulated_prompt": "Bis wann kann ich das IAM-ET Geb\u00e4ude noch betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bibliothek (Campus Nord)",
+                "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('Fr', '14:06')",
+                "prompt": "Wie lange ist Geb\u00e4ude Bibliothek (Campus Nord) noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 0 Stunden und 54 Minuten.",
+                "reformulated_prompt": "Wann schlie\u00dft die Bibliothek am Campus Nord?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Botanischer Garten des KIT",
+                "response_data": "Apr-Sep Mo-Fr 08:00-16:00; Apr-Sep Su,PH 10:00-16:00; Oct-Mar Mo-Fr 08:00-15:00; Oct-Mar Su,PH 10:00-14:00, ('Su', '02:59')",
+                "prompt": "Wie lange ist Geb\u00e4ude Botanischer Garten des KIT noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten vom Botanischen Garten des KIT heute?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '10:27')",
+                "prompt": "Wie lange ist Geb\u00e4ude Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 12 Stunden und 3 Minuten.",
+                "reformulated_prompt": "Wann macht das Institut f\u00fcr Theoretische Informatik, AG Kryptographie und Sicherheit zu?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.90",
+                "response_data": "Mo-Fr 09:00-22:00; Sa 10:00-22:00, ('Th', '17:50')",
+                "prompt": "Wie lange ist Geb\u00e4ude 01.90 noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 4 Stunden und 10 Minuten.",
+                "reformulated_prompt": "Bis zu welcher Uhrzeit ist Geb\u00e4ude 01.90 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Geistes- und Sozialwissenschaften",
+                "response_data": "Mo-Th 13:00-14:00, ('Sa', '13:10')",
+                "prompt": "Wie lange ist Geb\u00e4ude Fachschaft Geistes- und Sozialwissenschaften noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Wann schlie\u00dft heute die Fachschaft GeiSo?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '23:12')",
+                "prompt": "Wie lange ist Geb\u00e4ude Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Zu welcher Zeit schlie\u00dft das IPR-Geb\u00e4ude?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Anthropomatik und Robotik, Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Th', '23:06')",
+                "prompt": "Wie lange ist Geb\u00e4ude Anthropomatik und Robotik, Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Bis wann hat das Institut f\u00fcr Anthropomatik und Robotik heute ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachbibliothek Physik",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Tu', '06:30')",
+                "prompt": "Wie lange ist Geb\u00e4ude Fachbibliothek Physik noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Wann schlie\u00dft die Physik-Bibliothek?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Informatik",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '02:19')",
+                "prompt": "Wie lange ist Geb\u00e4ude Fachschaft Informatik noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Wann macht die Fachschaft Info zu?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institut f\u00fcr Wirtschaftsinformatik (WIN)",
+                "response_data": "Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00, ('Sa', '11:12')",
+                "prompt": "Wie lange ist Geb\u00e4ude Institut f\u00fcr Wirtschaftsinformatik (WIN) noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 6 Stunden und 48 Minuten.",
+                "reformulated_prompt": "Bis wie viel Uhr ist das WIN-Institut heute ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "InformatiKOM 1",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('Th', '18:35')",
+                "prompt": "Wie lange ist Geb\u00e4ude InformatiKOM 1 noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 0 Stunden und 25 Minuten.",
+                "reformulated_prompt": "Wann schlie\u00dft das InformatiKOM 1?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Otto-Lehmann-H\u00f6rsaal",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Th', '19:04')",
+                "prompt": "Wie lange ist Geb\u00e4ude Otto-Lehmann-H\u00f6rsaal noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Bis wann ist der Otto-Lehmann-H\u00f6rsaal zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Internet Caf\u00e9 Aso",
+                "response_data": "Mo-Fr 09:00-22:00; Sa 10:00-22:00, ('Tu', '14:54')",
+                "prompt": "Wie lange ist Geb\u00e4ude Internet Caf\u00e9 Aso noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 7 Stunden und 6 Minuten.",
+                "reformulated_prompt": "Wann macht das Internet Caf\u00e9 Aso zu?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '01:29')",
+                "prompt": "Wie lange ist Geb\u00e4ude Informatikbau noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Wie sp\u00e4t schlie\u00dft der Informatikbau?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kantine (Campus Nord)",
+                "response_data": "Mo-Fr 07:00-18:00, ('Tu', '11:48')",
+                "prompt": "Wie lange ist Geb\u00e4ude Kantine (Campus Nord) noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 6 Stunden und 12 Minuten.",
+                "reformulated_prompt": "Was sind die heutigen \u00d6ffnungszeiten der Nordmensa?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "310",
+                "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('Fr', '12:19')",
+                "prompt": "Wie lange ist Geb\u00e4ude 310 noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Bis wann ist Geb\u00e4ude 310 heute ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "InformatiKOM 1",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('Fr', '15:23')",
+                "prompt": "Wie lange ist Geb\u00e4ude InformatiKOM 1 noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 3 Stunden und 37 Minuten.",
+                "reformulated_prompt": "Wann schlie\u00dft das InformatiKOM 1 seine T\u00fcren?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kantine (Campus Nord)",
+                "response_data": "Mo-Fr 07:00-18:00, ('Su', '15:59')",
+                "prompt": "Wie lange ist Geb\u00e4ude Kantine (Campus Nord) noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Zu welcher Uhrzeit macht die Kantine am Campus Nord zu?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Professur f\u00fcr Wirtschaftspolitik, Institut f\u00fcr Volkswirtschaftslehre (ECON)",
+                "response_data": "Mo-Th 08:30-16:00; Fr 08:30-15:00; Sa,Su,PH off, ('Tu', '12:45')",
+                "prompt": "Wie lange ist Geb\u00e4ude Professur f\u00fcr Wirtschaftspolitik, Institut f\u00fcr Volkswirtschaftslehre (ECON) noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 3 Stunden und 15 Minuten.",
+                "reformulated_prompt": "Wann schlie\u00dft die Professur f\u00fcr Wirtschaftspolitik des ECON?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "KIT-Bibliothek Nord",
+                "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('Su', '13:35')",
+                "prompt": "Wie lange ist Geb\u00e4ude KIT-Bibliothek Nord noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Bis wie viel Uhr kann ich die KIT-Bibliothek Nord nutzen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Internet Caf\u00e9 Aso",
+                "response_data": "Mo-Fr 09:00-22:00; Sa 10:00-22:00, ('Mo', '05:28')",
+                "prompt": "Wie lange ist Geb\u00e4ude Internet Caf\u00e9 Aso noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Wann ist Schluss im Internet Caf\u00e9 Aso?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Geowissenschaften, Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('We', '17:37')",
+                "prompt": "Wie lange ist Geb\u00e4ude Angewandte Geowissenschaften, Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 0 Stunden und 23 Minuten.",
+                "reformulated_prompt": "Bis wann ist das Institut f\u00fcr Angewandte Geowissenschaften heute ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "214",
+                "response_data": "Mo,Fr 14:30-18:30, ('Mo', '14:43')",
+                "prompt": "Wie lange ist Geb\u00e4ude 214 noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 3 Stunden und 47 Minuten.",
+                "reformulated_prompt": "Wann wird Geb\u00e4ude 214 geschlossen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bio- und Lebensmitteltechnik, Bereich IV: Molekulare Aufarbeitung von Bioprodukten , Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('We', '05:31')",
+                "prompt": "Wie lange ist Geb\u00e4ude Bio- und Lebensmitteltechnik, Bereich IV: Molekulare Aufarbeitung von Bioprodukten , Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Zu welcher Zeit schlie\u00dft der Bereich IV des Instituts f\u00fcr Bio- und Lebensmitteltechnik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Mathematik und Informatik",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Th', '23:26')",
+                "prompt": "Wie lange ist Geb\u00e4ude Fachschaft Mathematik und Informatik noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Bis wann kann ich die Fachschaft Mathematik und Informatik noch besuchen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.51",
+                "response_data": "24/7, ('We', '23:03')",
+                "prompt": "Wie lange ist Geb\u00e4ude 30.51 noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 0 Stunden und 56 Minuten.",
+                "reformulated_prompt": "Wann schlie\u00dft heute das Geb\u00e4ude 30.51?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technische Informatik (ITEC), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '04:15')",
+                "prompt": "Wie lange ist Geb\u00e4ude Technische Informatik (ITEC), Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Zu welcher Uhrzeit macht das ITEC-Geb\u00e4ude zu?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "05.01",
+                "response_data": "Mo-Th 11:30-01:00, Fr,Sa 11:30-03:00, ('Tu', '00:08')",
+                "prompt": "Wie lange ist Geb\u00e4ude 05.01 noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Was sind die heutigen \u00d6ffnungszeiten von Geb\u00e4ude 05.01?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Mensa am Adenauerring",
+                "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off, ('Tu', '17:28')",
+                "prompt": "Wie lange ist Geb\u00e4ude Mensa am Adenauerring noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Bis zu welcher Zeit hat die Mensa am Adenauerring heute auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Forschungszentrum Umwelt",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('Th', '03:24')",
+                "prompt": "Wie lange ist Geb\u00e4ude Forschungszentrum Umwelt noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Wann schlie\u00dft das Forschungszentrum Umwelt seine T\u00fcren?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technische Informatik (ITEC), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Fr', '07:06')",
+                "prompt": "Wie lange ist Geb\u00e4ude Technische Informatik (ITEC), Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 15 Stunden und 24 Minuten.",
+                "reformulated_prompt": "Bis wann ist das Institut f\u00fcr Technische Informatik heute zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.12",
+                "response_data": "Mo-Fr 07:30-17:30, ('Th', '10:46')",
+                "prompt": "Wie lange ist Geb\u00e4ude 01.12 noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 6 Stunden und 44 Minuten.",
+                "reformulated_prompt": "Wann endet der Zugang zu Geb\u00e4ude 01.12 heute?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachbibliothek Physik",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('We', '00:18')",
+                "prompt": "Wie lange ist Geb\u00e4ude Fachbibliothek Physik noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Wie sp\u00e4t macht die Physik-Bibliothek zu?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.11",
+                "response_data": "Mo-Fr 06:45-18:20, ('Mo', '17:10')",
+                "prompt": "Wie lange ist Geb\u00e4ude 10.11 noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 1 Stunden und 10 Minuten.",
+                "reformulated_prompt": "Was ist die Schlie\u00dfzeit von Geb\u00e4ude 10.11?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Programmstrukturen und Datenorganisation (IPD), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '22:45')",
+                "prompt": "Wie lange ist Geb\u00e4ude Programmstrukturen und Datenorganisation (IPD), Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Wann muss ich sp\u00e4testens das IPD verlassen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM)",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('Su', '13:42')",
+                "prompt": "Wie lange ist Geb\u00e4ude Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM) noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 8 Stunden und 18 Minuten.",
+                "reformulated_prompt": "Bis wann hat das Studium Generale Forum heute ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Forschungszentrum Umwelt",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('We', '17:18')",
+                "prompt": "Wie lange ist Geb\u00e4ude Forschungszentrum Umwelt noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 0 Stunden und 42 Minuten.",
+                "reformulated_prompt": "Wann schlie\u00dft heute das Umweltforschungszentrum?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Sa', '03:13')",
+                "prompt": "Wie lange ist Geb\u00e4ude Informatikbau noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Zu welcher Zeit schlie\u00dft der Informatikbau?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Forschungszentrum Umwelt",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('Th', '05:02')",
+                "prompt": "Wie lange ist Geb\u00e4ude Forschungszentrum Umwelt noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Bis wie viel Uhr kann ich ins Forschungszentrum Umwelt?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.54",
+                "response_data": "Mo-Fr 7:30-9:30, 12:00-14:00, 18:00-21:00; Sa,Su,PH off, ('We', '08:11')",
+                "prompt": "Wie lange ist Geb\u00e4ude 20.54 noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 1 Stunden und 19 Minuten.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 20.54 nicht mehr zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Mathematik und Informatik",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '13:58')",
+                "prompt": "Wie lange ist Geb\u00e4ude Fachschaft Mathematik und Informatik noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 8 Stunden und 32 Minuten.",
+                "reformulated_prompt": "Bis wann ist die Mathe-Info Fachschaft noch da?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('We', '11:55')",
+                "prompt": "Wie lange ist Geb\u00e4ude Informatikbau noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 10 Stunden und 35 Minuten.",
+                "reformulated_prompt": "Wann macht der Informatikbau heute zu?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Zentrum f\u00fcr Mediales Lernen (ZML)",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('Mo', '16:18')",
+                "prompt": "Wie lange ist Geb\u00e4ude Zentrum f\u00fcr Mediales Lernen (ZML) noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 2 Stunden und 42 Minuten.",
+                "reformulated_prompt": "Bis zu welcher Zeit ist das ZML noch ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institut f\u00fcr Wirtschaftsinformatik (WIN)",
+                "response_data": "Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00, ('Th', '21:06')",
+                "prompt": "Wie lange ist Geb\u00e4ude Institut f\u00fcr Wirtschaftsinformatik (WIN) noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Wann schlie\u00dft das Wirtschaftsinformatik-Institut heute?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.22",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Su', '23:49')",
+                "prompt": "Wie lange ist Geb\u00e4ude 30.22 noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Wie lange kann ich noch in Geb\u00e4ude 30.22 bleiben?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft GeistSoz",
+                "response_data": "Mo-Th 13:00-14:00, ('Sa', '10:08')",
+                "prompt": "Wie lange ist Geb\u00e4ude Fachschaft GeistSoz noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+                "reformulated_prompt": "Wann macht die GeistSoz Fachschaft zu?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "210",
+                "response_data": "24/7, ('Fr', '10:22')",
+                "prompt": "Wie lange ist Geb\u00e4ude 210 noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 13 Stunden und 37 Minuten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 210?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Botanischer Garten des KIT",
+                "response_data": "Apr-Sep Mo-Fr 08:00-16:00; Apr-Sep Su,PH 10:00-16:00; Oct-Mar Mo-Fr 08:00-15:00; Oct-Mar Su,PH 10:00-14:00, ('Th', '15:00')",
+                "prompt": "Wie lange ist Geb\u00e4ude Botanischer Garten des KIT noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 1 Stunden und 0 Minuten.",
+                "reformulated_prompt": "Bis wann kann ich den Botanischen Garten besuchen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft GeistSoz",
+                "response_data": "Mo-Th 13:00-14:00, ('We', '13:35')",
+                "prompt": "Wie lange ist Geb\u00e4ude Fachschaft GeistSoz noch ge\u00f6ffnet?",
+                "response": "Das Geb\u00e4ude schlie\u00dft in 0 Stunden und 25 Minuten.",
+                "reformulated_prompt": "Zu welcher Zeit schlie\u00dft die Fachschaft GeistSoz?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "403",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 403 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis wann hat Geb\u00e4ude 403 heute auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "H\u00f6rsaalgeb\u00e4ude am Forum - Audimax",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude H\u00f6rsaalgeb\u00e4ude am Forum - Audimax noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann schlie\u00dft das H\u00f6rsaalgeb\u00e4ude am Forum - Audimax?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Altes Maschinenbaugeb\u00e4ude",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Altes Maschinenbaugeb\u00e4ude noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was sind die heutigen \u00d6ffnungszeiten des Alten Maschinenbaugeb\u00e4udes?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "International Scholars & Welcome Office (Campus S\u00fcd)",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude International Scholars & Welcome Office (Campus S\u00fcd) noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann macht das International Scholars & Welcome Office (Campus S\u00fcd) zu?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude Maschinenbau II",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Kollegiengeb\u00e4ude Maschinenbau II noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis zu welcher Uhrzeit ist das Kollegiengeb\u00e4ude Maschinenbau II zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Deutsch-Franz\u00f6sisches Institut f\u00fcr Umweltforschung (DFIU)",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Deutsch-Franz\u00f6sisches Institut f\u00fcr Umweltforschung (DFIU) noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann endet der Zugang zum Deutsch-Franz\u00f6sischen Institut f\u00fcr Umweltforschung?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "247",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 247 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was ist die Schlie\u00dfzeit von Geb\u00e4ude 247?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technologie und Management im Baubetrieb (TMB) , Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Technologie und Management im Baubetrieb (TMB) , Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welcher Zeit schlie\u00dft das Institut f\u00fcr Technologie und Management im Baubetrieb?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Studierendenservice",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Studierendenservice noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist heute Schluss beim Studierendenservice?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.13",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 40.13 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis wann kann man Geb\u00e4ude 40.13 betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Mechanik, Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Mechanik, Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann schlie\u00dft das Institut f\u00fcr Mechanik seine T\u00fcren?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "343",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 343 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 343 nicht mehr zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "06.38",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 06.38 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis zu welchem Zeitpunkt ist Geb\u00e4ude 06.38 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "614",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 614 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann endet der Zugang zu Geb\u00e4ude 614?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fortbildungszentrum f\u00fcr Technik und Umwelt",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Fortbildungszentrum f\u00fcr Technik und Umwelt noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was ist die Schlie\u00dfzeit des Fortbildungszentrums f\u00fcr Technik und Umwelt?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude am Ehrenhof",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Kollegiengeb\u00e4ude am Ehrenhof noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis wann hat das Kollegiengeb\u00e4ude am Ehrenhof auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Sport und Sportwissenschaft, Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Sport und Sportwissenschaft, Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welcher Zeit schlie\u00dft das Institut f\u00fcr Sport und Sportwissenschaft?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Theoretische Physik (TP), Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Theoretische Physik (TP), Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann macht das Institut f\u00fcr Theoretische Physik zu?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "460",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 460 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 460?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "512",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 512 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis wann ist Geb\u00e4ude 512 heute ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.87",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 10.87 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann schlie\u00dft Geb\u00e4ude 10.87?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "257",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 257 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis zu welcher Uhrzeit kann man Geb\u00e4ude 257 betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "09.21",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 09.21 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 09.21 nicht mehr zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physikalische Chemie, Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Physikalische Chemie, Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was ist die Schlie\u00dfzeit des Instituts f\u00fcr Physikalische Chemie?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.20",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 50.20 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis wann hat Geb\u00e4ude 50.20 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "152",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 152 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis wann hat Geb\u00e4ude 152 heute auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "224",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 224 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann schlie\u00dft heute Geb\u00e4ude 224?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Ehemalige Kinderklinik",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Ehemalige Kinderklinik noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten der Ehemaligen Kinderklinik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Verwaltungsgeb\u00e4ude",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Verwaltungsgeb\u00e4ude noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann macht das Verwaltungsgeb\u00e4ude zu?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude Mathematik",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Kollegiengeb\u00e4ude Mathematik noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welcher Uhrzeit schlie\u00dft das Kollegiengeb\u00e4ude Mathematik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Versuchsanstalt f\u00fcr Stahl, Holz und Steine",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Versuchsanstalt f\u00fcr Stahl, Holz und Steine noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis zu welchem Zeitpunkt ist die Versuchsanstalt f\u00fcr Stahl, Holz und Steine zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "11.20",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 11.20 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann endet der Zugang zu Geb\u00e4ude 11.20?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Altes Bauingenieurgeb\u00e4ude",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Altes Bauingenieurgeb\u00e4ude noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis wann ist das Alte Bauingenieurgeb\u00e4ude zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "739",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 739 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann schlie\u00dft Geb\u00e4ude 739 seine T\u00fcren?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "730",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 730 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis zu welcher Zeit kann man Geb\u00e4ude 730 betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "903",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 903 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 903 nicht mehr zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bio- und Lebensmitteltechnik, Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Bio- und Lebensmitteltechnik, Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis wann hat das Institut f\u00fcr Bio- und Lebensmitteltechnik ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "410",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 410 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welcher Zeit schlie\u00dft Geb\u00e4ude 410?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "916",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 916 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann endet der Zugang zu Geb\u00e4ude 916?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "605",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 605 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis wann ist Geb\u00e4ude 605 heute ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude am Ehrenhof",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Kollegiengeb\u00e4ude am Ehrenhof noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Was ist die Schlie\u00dfzeit des Kollegiengeb\u00e4udes am Ehrenhof?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "526",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 526 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann macht Geb\u00e4ude 526 zu?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Altes Maschinenbaugeb\u00e4ude",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Altes Maschinenbaugeb\u00e4ude noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis zu welcher Uhrzeit ist das Alte Maschinenbaugeb\u00e4ude offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.50",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 20.50 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann schlie\u00dft Geb\u00e4ude 20.50 heute?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Str\u00f6mungsmechanik (ISTM), Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Str\u00f6mungsmechanik (ISTM), Institut f\u00fcr noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis wann hat das Institut f\u00fcr Str\u00f6mungsmechanik ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Z\u00e4hringerhaus",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Z\u00e4hringerhaus noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchem Zeitpunkt schlie\u00dft das Z\u00e4hringerhaus?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.96",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 01.96 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 01.96 nicht mehr zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fritz Haller",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Fritz Haller noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis wann kann man das Fritz-Haller-Geb\u00e4ude betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.50",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude 30.50 noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann endet die \u00d6ffnungszeit von Geb\u00e4ude 30.50?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Zoologisches Institut",
+                "response_data": null,
+                "prompt": "Wie lange ist Geb\u00e4ude Zoologisches Institut noch ge\u00f6ffnet?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Bis zu welcher Zeit ist das Zoologische Institut ge\u00f6ffnet?"
+            }
+        ]
+    }
+]

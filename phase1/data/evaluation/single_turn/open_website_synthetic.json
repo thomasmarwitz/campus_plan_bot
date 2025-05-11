@@ -1,0 +1,1202 @@
+[
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik",
+                "response_data": "https://www.iwu.kit.edu/",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Zeige mir die Homepage des Instituts f\u00fcr Wasser und Gew\u00e4sserentwicklung - Wasserwirtschaft und Kulturtechnik"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Altes Maschinenbaugeb\u00e4ude",
+                "response_data": "http://www.mach.kit.edu/index.php",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Altes Maschinenbaugeb\u00e4ude?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Nenne die URL des Alten Maschinenbaugeb\u00e4udes"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Materialien \u2013 Keramische Werkstoffe und Technologien (IAM-KWT), Institut f\u00fcr",
+                "response_data": "http://www.iam.kit.edu/km/",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Angewandte Materialien \u2013 Keramische Werkstoffe und Technologien (IAM-KWT), Institut f\u00fcr.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Navigate to the website of Applied Materials - Ceramic Materials and Technologies Institute"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude am Zirkel",
+                "response_data": "https://www.imi.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Kollegiengeb\u00e4ude am Zirkel?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie lautet der Weblink zum Kollegiengeb\u00e4ude am Zirkel?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technik der Informationsverarbeitung (ITIV), Institut f\u00fcr",
+                "response_data": "http://www.itiv.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Technik der Informationsverarbeitung (ITIV), Institut f\u00fcr?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Gib mir die Internetadresse des Instituts f\u00fcr Technik der Informationsverarbeitung"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Sport und Sportwissenschaft, Institut f\u00fcr",
+                "response_data": "http://www.sport.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Sport und Sportwissenschaft, Institut f\u00fcr?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Zeige die Webadresse des Instituts f\u00fcr Sport und Sportwissenschaft"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachbibliothek WIWI",
+                "response_data": "https://www.wiwi.kit.edu/bib.php",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Fachbibliothek WIWI?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Link zur WIWI Fachbibliothek gesucht"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik",
+                "response_data": "https://www.iwu.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Internetpr\u00e4senz des IWG - Bereich Wasserwirtschaft und Kulturtechnik"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technische Physik, Institut f\u00fcr",
+                "response_data": "http://www.itep.kit.edu",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Technische Physik, Institut f\u00fcr.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Navigiere zur Webseite des Instituts f\u00fcr Technische Physik"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Mechanische Verfahrenstechnik und Mechanik (MVM), Institut f\u00fcr",
+                "response_data": "http://www.mvm.kit.edu",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Mechanische Verfahrenstechnik und Mechanik (MVM), Institut f\u00fcr.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Rufe die Homepage des Instituts f\u00fcr Mechanische Verfahrenstechnik und Mechanik auf"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "KIT-Bibliothek Nord",
+                "response_data": "http://www.bibliothek.kit.edu",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude KIT-Bibliothek Nord?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "URL der KIT-Bibliothek Nord anzeigen"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Thermische Energietechnik und Sicherheit (ITES), Institut f\u00fcr",
+                "response_data": "http://www.iket.kit.edu",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Thermische Energietechnik und Sicherheit (ITES), Institut f\u00fcr?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Zeige den Webauftritt des ITES"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-Hochhaus",
+                "response_data": "http://www.imk-tro.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Physik-Hochhaus?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Homepage des Physik-Hochhauses anzeigen"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Forschungszentrum Umwelt",
+                "response_data": "http://mab.blt.kit.edu",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Forschungszentrum Umwelt?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Internetadresse des Forschungszentrums Umwelt gesucht"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Berufsp\u00e4dagogik und Allgemeine P\u00e4dagogik (IBAP), Institut f\u00fcr",
+                "response_data": "http://www.ibap.kit.edu",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Berufsp\u00e4dagogik und Allgemeine P\u00e4dagogik (IBAP), Institut f\u00fcr.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Besuche die Website des Instituts f\u00fcr Berufsp\u00e4dagogik und Allgemeine P\u00e4dagogik"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Engler-Bunte-Institut, Bereich Wasserchemie",
+                "response_data": "https://wasserchemie.ebi.kit.edu",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Engler-Bunte-Institut, Bereich Wasserchemie.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Rufe die Seite des Engler-Bunte-Instituts, Bereich Wasserchemie auf"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Facility Management (FM)",
+                "response_data": "http://www.fm.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Facility Management (FM)?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Homepage des Facility Management anzeigen"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Studierendenservice",
+                "response_data": "http://www.sle.kit.edu",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Studierendenservice?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Webadresse des Studierendenservice gesucht"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Altes Maschinenbaugeb\u00e4ude",
+                "response_data": "http://www.iam.kit.edu/wk/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Altes Maschinenbaugeb\u00e4ude?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Internetpr\u00e4senz des Alten Maschinenbaugeb\u00e4udes"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Energy Lab",
+                "response_data": "https://www.elab.kit.edu",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Energy Lab.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Navigate to the Energy Lab website"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude am Kronenplatz",
+                "response_data": "http://www.wiwi.kit.edu/fakultaet.php",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Kollegiengeb\u00e4ude am Kronenplatz.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Zeige die Website des Kollegiengeb\u00e4udes am Kronenplatz"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "F\u00f6rdertechnik und Logistiksysteme, Institut f\u00fcr",
+                "response_data": "http://www.ifl.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude F\u00f6rdertechnik und Logistiksysteme, Institut f\u00fcr?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "URL des Instituts f\u00fcr F\u00f6rdertechnik und Logistiksysteme"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Zentrum f\u00fcr Angewandte Rechtswissenschaft (ZAR)",
+                "response_data": "http://www.zar.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Zentrum f\u00fcr Angewandte Rechtswissenschaft (ZAR)?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Webadresse des ZAR anzeigen"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude am Zirkel",
+                "response_data": "https://www.imi.kit.edu/",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Kollegiengeb\u00e4ude am Zirkel.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Besuche die Homepage des Kollegiengeb\u00e4udes am Zirkel"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Verwaltungsgeb\u00e4ude",
+                "response_data": "http://www.kit.edu/b1/index.php",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Verwaltungsgeb\u00e4ude?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Link zum Verwaltungsgeb\u00e4ude gesucht"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Postbeamtenkrankenkasse",
+                "response_data": "http://wipo.econ.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Postbeamtenkrankenkasse?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Zeige mir die Homepage des Postbeamtenkrankenkasse-Geb\u00e4udes"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "House of Competence (HOC)",
+                "response_data": "http://www.hoc.kit.edu/",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude House of Competence (HOC).",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Navigate to the HOC building's website"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Elektroenergiesysteme und Hochspannungstechnik , Institut f\u00fcr",
+                "response_data": "http://www.ieh.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Elektroenergiesysteme und Hochspannungstechnik , Institut f\u00fcr?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie lautet die URL des Instituts f\u00fcr Elektroenergiesysteme und Hochspannungstechnik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Prozessdatenverarbeitung und Elektronik (IPE), Institut f\u00fcr",
+                "response_data": "http://www.ipe.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Prozessdatenverarbeitung und Elektronik (IPE), Institut f\u00fcr?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Finde die Webadresse des IPE-Instituts"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP), Institut f\u00fcr",
+                "response_data": "http://www.iam.kit.edu/awp/",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP), Institut f\u00fcr.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Navigiere zur Website des IAM-AWP Instituts"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Mathematik und Informatik",
+                "response_data": "http://www.fsmi.uni-karlsruhe.de/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Fachschaft Mathematik und Informatik?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Wo finde ich die Webseite der Fachschaft Mathe/Informatik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude am Zirkel",
+                "response_data": "https://www.scc.kit.edu",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Kollegiengeb\u00e4ude am Zirkel?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie komme ich auf die Website des Zirkel-Kollegiengeb\u00e4udes?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Neutronenphysik und Reaktortechnik, Institut f\u00fcr",
+                "response_data": "http://www.inr.kit.edu",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Neutronenphysik und Reaktortechnik, Institut f\u00fcr.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Gehe zur Webseite des Instituts f\u00fcr Neutronenphysik und Reaktortechnik"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Verwaltungsgeb\u00e4ude",
+                "response_data": "http://www.kit.edu/b1/index.php",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Verwaltungsgeb\u00e4ude.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Zeige die Homepage des Verwaltungsgeb\u00e4udes"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft WiWi",
+                "response_data": "http://www.fachschaft.org/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Fachschaft WiWi?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Suche die Website der Wirtschaftswissenschaften Fachschaft"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-Hochhaus",
+                "response_data": "http://www.tfp.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Physik-Hochhaus?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie erreiche ich die Webseite des Physik-Hochhauses?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Photonenforschung und Synchrotronstrahlung (IPS), Institut f\u00fcr",
+                "response_data": "http://www.ips.kit.edu/index.php",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Photonenforschung und Synchrotronstrahlung (IPS), Institut f\u00fcr.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Besuche die Website des IPS-Instituts"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Technische Informatik (ITEC), Institut f\u00fcr",
+                "response_data": "http://www.informatik.kit.edu/260.php",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Technische Informatik (ITEC), Institut f\u00fcr?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Wo ist die Homepage des ITEC zu finden?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Architektur",
+                "response_data": "http://kg.ikb.kit.edu/68.php",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Architektur?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie lautet die Webadresse der Architektur-Fakult\u00e4t?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Elektrotechnisches Institut (ETI)",
+                "response_data": "http://www.eti.kit.edu",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Elektrotechnisches Institut (ETI)?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Zeige mir die Website des ETI"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institutsgeb\u00e4ude Lichttechnik",
+                "response_data": "http://www.lti.kit.edu",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Institutsgeb\u00e4ude Lichttechnik?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Finde die Homepage des Lichttechnik-Institutsgeb\u00e4udes"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-Hochhaus",
+                "response_data": "http://www.etp.kit.edu/index.php",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Physik-Hochhaus.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Besuche die Webseite des Physik-Hochhauses"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "http://www.informatik.kit.edu/1323.php",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Informatikbau?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie komme ich zur Website des Informatikgeb\u00e4udes?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM)",
+                "response_data": "https://www.forum.kit.edu/index.php",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM).",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Navigiere zum Studium Generale Forum"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Hochschulsport",
+                "response_data": "http://www.sport.kit.edu/Hochschulsport.php",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Hochschulsport.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Zeige die Webseite des Hochschulsports"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Katalyseforschung und -Technologie (IKFT), Institut f\u00fcr",
+                "response_data": "http://www.ikft.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Katalyseforschung und -Technologie (IKFT), Institut f\u00fcr?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Wo finde ich die Homepage des IKFT?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Sprachenzentrum (Geb. 50.20)",
+                "response_data": "https://www.spz.kit.edu/",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Sprachenzentrum (Geb. 50.20)?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie erreiche ich das Sprachenzentrum online?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude Maschinenbau II",
+                "response_data": "http://www.ipek.kit.edu",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Kollegiengeb\u00e4ude Maschinenbau II?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Suche die Website des Maschinenbau II Kollegiengeb\u00e4udes"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Elektrotechnisches Institut",
+                "response_data": "http://www.eti.kit.edu",
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Elektrotechnisches Institut.",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Gehe zur ETI-Website"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bereich III - Maschinenbau und Elektrotechnik (CS)",
+                "response_data": "http://www.kit.edu/b3/index.php",
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Bereich III - Maschinenbau und Elektrotechnik (CS)?",
+                "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+                "reformulated_prompt": "Finde die Homepage des Bereichs III - Maschinenbau und Elektrotechnik"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "260/1",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 260/1.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Zeige mir die Homepage des Geb\u00e4udes 260/1"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Schwarzer Kater",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Schwarzer Kater.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Rufe die Website des Schwarzen Katers auf"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "05.20",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 05.20?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Wie lautet die URL von Geb\u00e4ude 05.20?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bauingenieure - Gro\u00dfer H\u00f6rsaal",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Bauingenieure - Gro\u00dfer H\u00f6rsaal?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Nenne mir die Internetadresse des Bauingenieure - Gro\u00dfer H\u00f6rsaals"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "9651",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 9651?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Gib mir den Weblink von Geb\u00e4ude 9651"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "06.32",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 06.32?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Wie ist die Internetadresse von Geb\u00e4ude 06.32?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "224",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 224?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Welche URL hat Geb\u00e4ude 224?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "415",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 415.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Navigiere zur Website von Geb\u00e4ude 415"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Westhochschule",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Westhochschule.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Gehe zur Internetpr\u00e4senz der Westhochschule"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "464",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 464?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Welche Webadresse hat Geb\u00e4ude 464?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.95",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 10.95?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Wie lautet der Weblink zu Geb\u00e4ude 10.95?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Windkanalhalle",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Windkanalhalle?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Nenne die Homepage der Windkanalhalle"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "901",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 901.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Zeige die Webpr\u00e4senz von Geb\u00e4ude 901"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "AKK (Studierendenzentrum)",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude AKK (Studierendenzentrum).",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Gehe zur Homepage des AKK (Studierendenzentrum)"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "693",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 693?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Welche Website geh\u00f6rt zu Geb\u00e4ude 693?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Cafeteria",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Cafeteria.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Lade die Homepage der Cafeteria"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "20.50",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 20.50.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Rufe die Internetseite von Geb\u00e4ude 20.50 auf"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "227",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 227?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Wie ist die Webadresse von Geb\u00e4ude 227?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "806",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 806.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Navigiere zur Internetseite von Geb\u00e4ude 806"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "70.03",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 70.03.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Rufe die Homepage von Geb\u00e4ude 70.03 auf"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "535",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 535?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Welche URL ist dem Geb\u00e4ude 535 zugeordnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.79",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 30.79.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Zeige die Webseite von Geb\u00e4ude 30.79 an"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "629",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 629?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Wie lautet die Internetadresse von Geb\u00e4ude 629?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "719",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 719?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Welche Homepage geh\u00f6rt zu Geb\u00e4ude 719?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.87",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 10.87.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Rufe die Webpr\u00e4senz von Geb\u00e4ude 10.87 auf"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "690",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 690?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Zeige mir die Homepage vom Haus 690"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "913",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 913.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Rufe die Website von Geb\u00e4ude 913 auf"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Lernzentrum am Fasanenschl\u00f6sschen",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Lernzentrum am Fasanenschl\u00f6sschen.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Navigiere zur Webpr\u00e4senz des Lernzentrums am Fasanenschl\u00f6sschen"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "563",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 563.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Zeige die Internetseite von Haus 563"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Engler-Bunte-Institut (EBI) / MINT-Kolleg KIT",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Engler-Bunte-Institut (EBI) / MINT-Kolleg KIT?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Wie lautet die URL des Engler-Bunte-Instituts und MINT-Kollegs?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "131",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 131.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Navigiere zur Homepage von Geb\u00e4ude 131"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "221",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 221?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Nenne mir die Webadresse von Haus 221"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Winkelwohnblock E4",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Winkelwohnblock E4?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Wo finde ich die Website des Winkelwohnblocks E4?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "532",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 532.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Gehe zur Internetpr\u00e4senz von Geb\u00e4ude 532"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "544",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 544.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Rufe die Homepage von Haus 544 auf"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "9633 B",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 9633 B?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Wie ist die Webadresse von Geb\u00e4ude 9633 B?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "713",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 713.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Besuche die Website von Haus 713"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "415",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 415?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Nenne die URL von Geb\u00e4ude 415"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "322",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 322?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Welche Internetadresse hat Haus 322?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "343",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 343?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Gib mir den Weblink von Geb\u00e4ude 343"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.21",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 40.21.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Besuche die Internetseite von Haus 40.21"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "532",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 532?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Welche Homepage hat das Geb\u00e4ude 532?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "220",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 220.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Gehe zur Website von Haus 220"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.49",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 30.49.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Zeige die Webpr\u00e4senz von Geb\u00e4ude 30.49"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "544",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 544?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Wie lautet die Internetadresse von Haus 544?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Westhochschule",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude Westhochschule?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Nenne mir den Webauftritt der Westhochschule"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.64",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 10.64?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Welche URL geh\u00f6rt zu Geb\u00e4ude 10.64?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.14",
+                "response_data": null,
+                "prompt": "Was ist die Webseite von Geb\u00e4ude 40.14?",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Wie ist die Webadresse von Haus 40.14?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "412",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 412.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Rufe die Homepage von Geb\u00e4ude 412 auf"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "238",
+                "response_data": null,
+                "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 238.",
+                "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+                "reformulated_prompt": "Zeige die Website von Haus 238"
+            }
+        ]
+    }
+]

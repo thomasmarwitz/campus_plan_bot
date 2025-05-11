@@ -1,0 +1,1202 @@
+[
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Ambulanz",
+                "response_data": "24/7",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Ambulanz?",
+                "response": "Das Geb\u00e4ude hat an 24/7 ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Zeiten hat die Ambulanz ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bio- und Lebensmitteltechnik, Bereich IV: Molekulare Aufarbeitung von Bioprodukten , Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Bio- und Lebensmitteltechnik, Bereich IV: Molekulare Aufarbeitung von Bioprodukten , Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-18:00; Sa,Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann ist das Institut f\u00fcr Bio- und Lebensmitteltechnik, Bereich IV: Molekulare Aufarbeitung von Bioprodukten zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "123",
+                "response_data": "Mo-Fr 07:00-18:00",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 123?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-18:00 ge\u00f6ffnet.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten gelten f\u00fcr Geb\u00e4ude 123?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "ZEISS Makerspace @ KIT",
+                "response_data": "Mo,Fr 14:30-18:30",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude ZEISS Makerspace @ KIT?",
+                "response": "Das Geb\u00e4ude hat an Mo,Fr 14:30-18:30 ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann kann man den ZEISS Makerspace @ KIT besuchen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "InformatiKOM 1",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude InformatiKOM 1?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Uhrzeiten ist das InformatiKOM 1 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Forschungszentrum Umwelt",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Forschungszentrum Umwelt?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-18:00; Sa,Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie sind die \u00d6ffnungszeiten des Forschungszentrums Umwelt?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachbibliothek Physik",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Fachbibliothek Physik?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 09:00-19:00; Sa 09:00-12:30 ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann hat die Physik-Fachbibliothek auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie sind die Zugangszeiten zum Informatikbau?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Forschungszentrum Umwelt",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Forschungszentrum Umwelt?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-18:00; Sa,Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann ist das Forschungszentrum Umwelt ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Geistes- und Sozialwissenschaften",
+                "response_data": "Mo-Th 13:00-14:00",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Fachschaft Geistes- und Sozialwissenschaften?",
+                "response": "Das Geb\u00e4ude hat an Mo-Th 13:00-14:00 ge\u00f6ffnet.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat die Fachschaft Geistes- und Sozialwissenschaften?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Mensa am Adenauerring",
+                "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Mensa am Adenauerring?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Zeiten ist die Mensa am Adenauerring ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.13",
+                "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 01.13?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 01.13 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.40",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 50.40?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-18:00; Sa,Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat Geb\u00e4ude 50.40?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.12",
+                "response_data": "Mo-Fr 07:30-17:30",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 01.12?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:30-17:30 ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann hat Geb\u00e4ude 01.12 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "01.90",
+                "response_data": "Mo-Fr 09:00-22:00; Sa 10:00-22:00",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 01.90?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 09:00-22:00; Sa 10:00-22:00 ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Zeiten ist Geb\u00e4ude 01.90 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Mensa am Adenauerring",
+                "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Mensa am Adenauerring?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann kann man in der Mensa am Adenauerring essen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Zentrum f\u00fcr Mediales Lernen (ZML)",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Zentrum f\u00fcr Mediales Lernen (ZML)?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card ge\u00f6ffnet.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat das Zentrum f\u00fcr Mediales Lernen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "InformatiKOM 1",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude InformatiKOM 1?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann ist das InformatiKOM 1 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "KIT-Bibliothek Nord",
+                "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; ",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude KIT-Bibliothek Nord?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 09:00-12:00, 13:00-15:00;  ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Zeiten kann man die KIT-Bibliothek Nord nutzen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-18:00; Sa,Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann ist das Institut f\u00fcr Angewandte Materialien - Elektrochemische Technologien ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Informatik und Formale Beschreibungsverfahren (AIFB), Institut f\u00fcr",
+                "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\"",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Angewandte Informatik und Formale Beschreibungsverfahren (AIFB), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat an Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\" ge\u00f6ffnet.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat das Institut f\u00fcr Angewandte Informatik und Formale Beschreibungsverfahren?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Forschungszentrum Umwelt",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Forschungszentrum Umwelt?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-18:00; Sa,Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann ist das Forschungszentrum Umwelt zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM)",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM)?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card ge\u00f6ffnet.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat das Studium Generale Forum?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "KIT-Bibliothek",
+                "response_data": "24/7",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude KIT-Bibliothek?",
+                "response": "Das Geb\u00e4ude hat an 24/7 ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Zeiten ist die KIT-Bibliothek ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann hat der Informatikbau auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "234",
+                "response_data": "Mo-Th 07:00-12:00, 13:00-16:00;Fr 07:00-12:00,13:00-15:00;Sa,Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 234?",
+                "response": "Das Geb\u00e4ude hat an Mo-Th 07:00-12:00, 13:00-16:00;Fr 07:00-12:00,13:00-15:00;Sa,Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 234 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Zeiten kann man in den Informatikbau?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann hat der Informatikbau auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Hauptgeb\u00e4ude",
+                "response_data": "Mo-Fr 06:45-18:20",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Hauptgeb\u00e4ude?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 06:45-18:20 ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie sind die Zugangszeiten zum Hauptgeb\u00e4ude?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "InformatiKOM 1",
+                "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude InformatiKOM 1?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann ist InformatiKOM 1 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institut f\u00fcr Wirtschaftsinformatik (WIN)",
+                "response_data": "Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Institut f\u00fcr Wirtschaftsinformatik (WIN)?",
+                "response": "Das Geb\u00e4ude hat an Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00 ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Uhrzeiten ist das WIN-Institut ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft GeistSoz",
+                "response_data": "Mo-Th 13:00-14:00",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Fachschaft GeistSoz?",
+                "response": "Das Geb\u00e4ude hat an Mo-Th 13:00-14:00 ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie sind die Besuchszeiten der Fachschaft GeistSoz?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten gelten f\u00fcr den Informatikbau?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Mensa",
+                "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Mensa?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann kann ich die Mensa besuchen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-H\u00f6rsaal Nr. 3",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Physik-H\u00f6rsaal Nr. 3?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 09:00-19:00; Sa 09:00-12:30 ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Zeiten ist der Physik-H\u00f6rsaal Nr. 3 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Cafeteria",
+                "response_data": "Mo-Fr 07:30-17:30",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Cafeteria?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:30-17:30 ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann hat die Cafeteria ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "145",
+                "response_data": "Mo-Fr 07:00-18:00",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 145?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-18:00 ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie sind die Zugangszeiten von Geb\u00e4ude 145?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Anthropomatik und Robotik, Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Anthropomatik und Robotik, Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann ist das Institut f\u00fcr Anthropomatik und Robotik offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat der Informatikbau?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.22",
+                "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 30.22?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 09:00-19:00; Sa 09:00-12:30 ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 30.22 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Zeiten kann man das IPR betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Angewandte Geowissenschaften, Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Angewandte Geowissenschaften, Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-18:00; Sa,Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wie sind die Zugangszeiten zum Institut f\u00fcr Angewandte Geowissenschaften?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Medizinische Dienste (MED) CN",
+                "response_data": "24/7",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Medizinische Dienste (MED) CN?",
+                "response": "Das Geb\u00e4ude hat an 24/7 ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann sind die Medizinischen Dienste CN ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Zeiten ist der Informatikbau offen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Schwarzer Kater",
+                "response_data": "Mo-Th 11:30-01:00, Fr,Sa 11:30-03:00",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Schwarzer Kater?",
+                "response": "Das Geb\u00e4ude hat an Mo-Th 11:30-01:00, Fr,Sa 11:30-03:00 ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann hat der Schwarze Kater auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.11",
+                "response_data": "Mo-Fr 06:45-18:20",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 10.11?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 06:45-18:20 ge\u00f6ffnet.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat Geb\u00e4ude 10.11?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Informatikbau",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Informatikbau?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann kann man in den Informatikbau?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Botanischer Garten des KIT",
+                "response_data": "Apr-Sep Mo-Fr 08:00-16:00; Apr-Sep Su,PH 10:00-16:00; Oct-Mar Mo-Fr 08:00-15:00; Oct-Mar Su,PH 10:00-14:00",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Botanischer Garten des KIT?",
+                "response": "Das Geb\u00e4ude hat an Apr-Sep Mo-Fr 08:00-16:00; Apr-Sep Su,PH 10:00-16:00; Oct-Mar Mo-Fr 08:00-15:00; Oct-Mar Su,PH 10:00-14:00 ge\u00f6ffnet.",
+                "reformulated_prompt": "Zu welchen Zeiten ist der Botanische Garten des KIT ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "124",
+                "response_data": "24/7",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 124?",
+                "response": "Das Geb\u00e4ude hat an 24/7 ge\u00f6ffnet.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten gelten f\u00fcr Geb\u00e4ude 124?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Theoretische Informatik (ITI), Institut f\u00fcr",
+                "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off",
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Theoretische Informatik (ITI), Institut f\u00fcr?",
+                "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off ge\u00f6ffnet.",
+                "reformulated_prompt": "Wann ist das Institut f\u00fcr Theoretische Informatik zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "GODZILLA Test-Facility Beryllide-Production",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude GODZILLA Test-Facility Beryllide-Production?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist GODZILLA Test-Facility Beryllide-Production ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "574",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 574?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Zeiten hat Geb\u00e4ude 574 auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Sparda Sportpark",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Sparda Sportpark?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten gelten f\u00fcr den Sparda Sportpark?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.24",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 40.24?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann kann man Geb\u00e4ude 40.24 betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "608",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 608?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "An welchen Zeiten ist Geb\u00e4ude 608 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Funktionelle Grenzfl\u00e4chen (IFG), Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Funktionelle Grenzfl\u00e4chen (IFG), Institut f\u00fcr?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann hat das Institut f\u00fcr Funktionelle Grenzfl\u00e4chen ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Altes Maschinenbaugeb\u00e4ude",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Altes Maschinenbaugeb\u00e4ude?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wie sind die Zugangzeiten zum Alten Maschinenbaugeb\u00e4ude?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "449",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 449?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Uhrzeiten ist Geb\u00e4ude 449 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "663",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 663?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann hat Geb\u00e4ude 663 auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Architektur",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Architektur?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat das Architekturgeb\u00e4ude?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude am Ehrenhof",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Kollegiengeb\u00e4ude am Ehrenhof?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "In welchen Zeitr\u00e4umen ist das Kollegiengeb\u00e4ude am Ehrenhof zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-Hochhaus",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Physik-Hochhaus?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist das Physik-Hochhaus ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "308",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 308?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten gelten f\u00fcr Geb\u00e4ude 308?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Engler-Bunte-Institut (EBI) / MINT-Kolleg KIT",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Engler-Bunte-Institut (EBI) / MINT-Kolleg KIT?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Zeiten kann man das Engler-Bunte-Institut besuchen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Soziologie, Medien- und Kulturwissenschaften (ISMK), Institut f\u00fcr ",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Soziologie, Medien- und Kulturwissenschaften (ISMK), Institut f\u00fcr ?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist das Institut f\u00fcr Soziologie, Medien- und Kulturwissenschaften ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "549",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 549?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat Geb\u00e4ude 549?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "745",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 745?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 745 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Karlsruher Beryllium Handling Facility",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Karlsruher Beryllium Handling Facility?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "In welchen Zeitr\u00e4umen ist die Karlsruher Beryllium Handling Facility ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bauingenieurshochhaus",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Bauingenieurshochhaus?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann hat das Bauingenieurshochhaus auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Winkelwohnblock NZ1",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Winkelwohnblock NZ1?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Zeiten ist der Winkelwohnblock NZ1 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Kollegiengeb\u00e4ude am Kronenplatz",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Kollegiengeb\u00e4ude am Kronenplatz?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat das Kollegiengeb\u00e4ude am Kronenplatz?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institutsgeb\u00e4ude Boden- und Felsmechanik",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Institutsgeb\u00e4ude Boden- und Felsmechanik?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann kann man das Institutsgeb\u00e4ude f\u00fcr Boden- und Felsmechanik betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Thermische Energietechnik und Sicherheit (ITES), Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Thermische Energietechnik und Sicherheit (ITES), Institut f\u00fcr?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten gelten f\u00fcr das Institut f\u00fcr Thermische Energietechnik und Sicherheit?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "50.25",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 50.25?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 50.25 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-Werkstattgeb\u00e4ude",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Physik-Werkstattgeb\u00e4ude?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Zeiten hat das Physik-Werkstattgeb\u00e4ude auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institutsgeb\u00e4ude Nachrichtentechnik",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Institutsgeb\u00e4ude Nachrichtentechnik?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann \u00f6ffnet und schlie\u00dft das Institutsgeb\u00e4ude Nachrichtentechnik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "410",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 410?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Zeiten ist Geb\u00e4ude 410 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "70.16",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 70.16?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann kann man Geb\u00e4ude 70.16 betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "212",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 212?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat das Geb\u00e4ude 212?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Fachschaft Geod\u00e4sie und Geoinformatik",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Fachschaft Geod\u00e4sie und Geoinformatik?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wie sind die Besuchszeiten der Fachschaft Geod\u00e4sie und Geoinformatik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "227",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 227?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Uhrzeiten ist Geb\u00e4ude 227 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Hagsfelder Allee",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Hagsfelder Allee?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann hat das Geb\u00e4ude Hagsfelder Allee auf?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Physik-Hochhaus",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Physik-Hochhaus?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten gelten f\u00fcr das Physik-Hochhaus?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Bereich I \u2013 Biologie, Chemie und Verfahrenstechnik (Campus S\u00fcd)",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Bereich I \u2013 Biologie, Chemie und Verfahrenstechnik (Campus S\u00fcd)?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "In welchen Zeitr\u00e4umen ist der Bereich I \u2013 Biologie, Chemie und Verfahrenstechnik zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "570",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 570?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 570 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Studienkolleg f\u00fcr ausl\u00e4ndische Studierende (STK)",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Studienkolleg f\u00fcr ausl\u00e4ndische Studierende (STK)?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Zeiten kann man das Studienkolleg f\u00fcr ausl\u00e4ndische Studierende besuchen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "451",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 451?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten gelten f\u00fcr Geb\u00e4ude 451?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "512",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 512?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 512 zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.14",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 40.14?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Zeiten kann man Geb\u00e4ude 40.14 betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Baustatik, Institut f\u00fcr",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Baustatik, Institut f\u00fcr?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann \u00f6ffnet und schlie\u00dft das Institut f\u00fcr Baustatik?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "317",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 317?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche Besuchszeiten hat Geb\u00e4ude 317?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "40.50",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 40.50?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "In welchen Zeitr\u00e4umen ist Geb\u00e4ude 40.50 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Ehemalige Kinderklinik",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Ehemalige Kinderklinik?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann kann man die ehemalige Kinderklinik besuchen?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.12",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 10.12?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Uhrzeiten ist Geb\u00e4ude 10.12 ge\u00f6ffnet?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Institut f\u00fcr Technische Chemie und Polymerchemie",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Institut f\u00fcr Technische Chemie und Polymerchemie?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat das Institut f\u00fcr Technische Chemie und Polymerchemie?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "Deutsch-Franz\u00f6sisches Institut f\u00fcr Umweltforschung (DFIU)",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Deutsch-Franz\u00f6sisches Institut f\u00fcr Umweltforschung (DFIU)?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann ist das Deutsch-Franz\u00f6sische Institut f\u00fcr Umweltforschung zug\u00e4nglich?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "30.36",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 30.36?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "In welchen Zeitr\u00e4umen kann man Geb\u00e4ude 30.36 betreten?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "518",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 518?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Welche Besuchszeiten gelten f\u00fcr Geb\u00e4ude 518?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "10.34",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 10.34?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Wann \u00f6ffnet und schlie\u00dft Geb\u00e4ude 10.34?"
+            }
+        ]
+    },
+    {
+        "num_turns": 1,
+        "prompts": [
+            {
+                "input_data": "70.12",
+                "response_data": null,
+                "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 70.12?",
+                "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+                "reformulated_prompt": "Zu welchen Zeiten ist Geb\u00e4ude 70.12 ge\u00f6ffnet?"
+            }
+        ]
+    }
+]
