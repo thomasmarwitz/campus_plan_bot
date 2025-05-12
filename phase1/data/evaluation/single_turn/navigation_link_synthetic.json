@@ -7,7 +7,7 @@
                 "response_data": "['49.02041', '8.36768']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude Westhochschule?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.02041,8.36768.",
-                "reformulated_prompt": "Wo finde ich die Westhochschule?"
+                "reformulated_prompt": "Zeige den Weg zur Westhochschule"
             }
         ]
     },
@@ -19,7 +19,7 @@
                 "response_data": "['49.02041', '8.36768']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Westhochschule.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.02041,8.36768.",
-                "reformulated_prompt": "Zeige mir den Weg zum Geb\u00e4ude Westhochschule."
+                "reformulated_prompt": "Navigation zum Geb\u00e4ude Westhochschule"
             }
         ]
     },
@@ -31,7 +31,7 @@
                 "response_data": "['49.09322', '8.43152']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude 239.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09322,8.43152.",
-                "reformulated_prompt": "Navigation zum Geb\u00e4ude 239 starten."
+                "reformulated_prompt": "Wegbeschreibung zu Geb\u00e4ude 239"
             }
         ]
     },
@@ -43,7 +43,7 @@
                 "response_data": "['49.01330', '8.41711']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 30.79?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01330,8.41711.",
-                "reformulated_prompt": "Den Weg zu Geb\u00e4ude 30.79 anzeigen."
+                "reformulated_prompt": "Route zum Geb\u00e4ude 30.79"
             }
         ]
     },
@@ -55,7 +55,7 @@
                 "response_data": "['49.09833', '8.43515']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 650?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09833,8.43515.",
-                "reformulated_prompt": "Wegbeschreibung zum Geb\u00e4ude 650 ben\u00f6tigt."
+                "reformulated_prompt": "Den Weg zu Geb\u00e4ude 650 anzeigen"
             }
         ]
     },
@@ -67,7 +67,7 @@
                 "response_data": "['49.00995', '8.41917']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Dr. Franz Lust.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.00995,8.41917.",
-                "reformulated_prompt": "Navigiere mich zum Dr. Franz Lust Geb\u00e4ude."
+                "reformulated_prompt": "Zeige die Route zum Dr. Franz Lust Geb\u00e4ude"
             }
         ]
     },
@@ -79,7 +79,7 @@
                 "response_data": "['49.01471', '8.41518']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 40.13?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01471,8.41518.",
-                "reformulated_prompt": "Wegbeschreibung zu Geb\u00e4ude 40.13 anzeigen."
+                "reformulated_prompt": "Wegbeschreibung zum Geb\u00e4ude 40.13"
             }
         ]
     },
@@ -91,7 +91,7 @@
                 "response_data": "['49.01226', '8.41320']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude Biomedizinische Technik, Institut f\u00fcr?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01226,8.41320.",
-                "reformulated_prompt": "Route zum Institut f\u00fcr Biomedizinische Technik gesucht."
+                "reformulated_prompt": "Route zum Institut f\u00fcr Biomedizinische Technik"
             }
         ]
     },
@@ -103,7 +103,7 @@
                 "response_data": "['49.01293', '8.41110']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude Theoretische Festk\u00f6rperphysik, Institut f\u00fcr?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01293,8.41110.",
-                "reformulated_prompt": "Standort des Instituts f\u00fcr Theoretische Festk\u00f6rperphysik zeigen."
+                "reformulated_prompt": "Navigation zum Institut f\u00fcr Theoretische Festk\u00f6rperphysik"
             }
         ]
     },
@@ -115,7 +115,7 @@
                 "response_data": "['49.01226', '8.41320']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Biomedizinische Technik, Institut f\u00fcr.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01226,8.41320.",
-                "reformulated_prompt": "Navigiere zum Institut f\u00fcr Biomedizinische Technik."
+                "reformulated_prompt": "Route zum Institut f\u00fcr Biomedizinische Technik zeigen"
             }
         ]
     },
@@ -127,7 +127,7 @@
                 "response_data": "['49.01055', '8.41748']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 10.62?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01055,8.41748.",
-                "reformulated_prompt": "Wo befindet sich Geb\u00e4ude 10.62?"
+                "reformulated_prompt": "Den Weg zu Geb\u00e4ude 10.62 anzeigen"
             }
         ]
     },
@@ -139,7 +139,7 @@
                 "response_data": "['49.10307', '8.43500']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 808?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.10307,8.43500.",
-                "reformulated_prompt": "Route zu Geb\u00e4ude 808 anzeigen."
+                "reformulated_prompt": "Wegbeschreibung zu Geb\u00e4ude 808"
             }
         ]
     },
@@ -151,7 +151,7 @@
                 "response_data": "['49.01305', '8.37527']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude 09.21.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01305,8.37527.",
-                "reformulated_prompt": "Navigation zu Geb\u00e4ude 09.21 beginnen."
+                "reformulated_prompt": "Navigation zu Geb\u00e4ude 09.21"
             }
         ]
     },
@@ -163,7 +163,7 @@
                 "response_data": "['49.01569', '8.41946']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Angewandte Biowissenschaften (IAB), Institut f\u00fcr.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01569,8.41946.",
-                "reformulated_prompt": "Zeige den Weg zum Institut f\u00fcr Angewandte Biowissenschaften."
+                "reformulated_prompt": "Route zum Institut f\u00fcr Angewandte Biowissenschaften"
             }
         ]
     },
@@ -175,7 +175,7 @@
                 "response_data": "['49.09701', '8.43633']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude B621?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09701,8.43633.",
-                "reformulated_prompt": "Standort von Geb\u00e4ude B621 anzeigen."
+                "reformulated_prompt": "Zeige den Weg zum Geb\u00e4ude B621"
             }
         ]
     },
@@ -187,7 +187,7 @@
                 "response_data": "['49.01064', '8.41281']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Elektrotechnisches Institut.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01064,8.41281.",
-                "reformulated_prompt": "Route zum Elektrotechnischen Institut berechnen."
+                "reformulated_prompt": "Navigation zum Elektrotechnischen Institut"
             }
         ]
     },
@@ -199,7 +199,7 @@
                 "response_data": "['49.10050', '8.43593']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 693?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.10050,8.43593.",
-                "reformulated_prompt": "Wegbeschreibung zu Geb\u00e4ude 693 ben\u00f6tigt."
+                "reformulated_prompt": "Route zu Geb\u00e4ude 693 anzeigen"
             }
         ]
     },
@@ -211,7 +211,7 @@
                 "response_data": "['49.01227', '8.40707']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude 20.13.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01227,8.40707.",
-                "reformulated_prompt": "Zeige mir den Weg zu Geb\u00e4ude 20.13."
+                "reformulated_prompt": "Wegbeschreibung zu Geb\u00e4ude 20.13"
             }
         ]
     },
@@ -223,7 +223,7 @@
                 "response_data": "['49.10443', '8.43258']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 903?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.10443,8.43258.",
-                "reformulated_prompt": "Wo ist Geb\u00e4ude 903 zu finden?"
+                "reformulated_prompt": "Den Weg zu Geb\u00e4ude 903 zeigen"
             }
         ]
     },
@@ -235,7 +235,7 @@
                 "response_data": "['49.00958', '8.41548']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Mechanik, Institut f\u00fcr.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.00958,8.41548.",
-                "reformulated_prompt": "Navigation zum Institut f\u00fcr Mechanik starten."
+                "reformulated_prompt": "Navigation zum Institut f\u00fcr Mechanik"
             }
         ]
     },
@@ -247,7 +247,7 @@
                 "response_data": "['49.09876', '8.43137']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude 508.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09876,8.43137.",
-                "reformulated_prompt": "Den Weg zu Geb\u00e4ude 508 anzeigen."
+                "reformulated_prompt": "Route zu Geb\u00e4ude 508 anzeigen"
             }
         ]
     },
@@ -259,7 +259,7 @@
                 "response_data": "['49.00751', '8.40425']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude InformatiKOM 1?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.00751,8.40425.",
-                "reformulated_prompt": "Standort des InformatiKOM 1 gesucht."
+                "reformulated_prompt": "Wegbeschreibung zum InformatiKOM 1"
             }
         ]
     },
@@ -271,7 +271,7 @@
                 "response_data": "['49.10494', '8.43104']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude 908.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.10494,8.43104.",
-                "reformulated_prompt": "Route zu Geb\u00e4ude 908 berechnen."
+                "reformulated_prompt": "Den Weg zu Geb\u00e4ude 908 zeigen"
             }
         ]
     },
@@ -283,7 +283,7 @@
                 "response_data": "['49.02165', '8.36765']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude 06.40.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.02165,8.36765.",
-                "reformulated_prompt": "Wegbeschreibung zu Geb\u00e4ude 06.40 anzeigen."
+                "reformulated_prompt": "Navigation zu Geb\u00e4ude 06.40"
             }
         ]
     },
@@ -295,7 +295,7 @@
                 "response_data": "['49.01195', '8.40923']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 20.54?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01195,8.40923.",
-                "reformulated_prompt": "Wo kann ich Geb\u00e4ude 20.54 finden?"
+                "reformulated_prompt": "Route zum Geb\u00e4ude 20.54"
             }
         ]
     },
@@ -307,7 +307,7 @@
                 "response_data": "['49.09691', '8.43555']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 630?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09691,8.43555.",
-                "reformulated_prompt": "Zeige mir den Weg zum Geb\u00e4ude 630"
+                "reformulated_prompt": "Zeig mir den Weg zum Geb\u00e4ude 630"
             }
         ]
     },
@@ -319,7 +319,7 @@
                 "response_data": "['49.09095', '8.42673']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude 101.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09095,8.42673.",
-                "reformulated_prompt": "Navigiere mich zu Geb\u00e4ude 101"
+                "reformulated_prompt": "Den Weg zu Geb\u00e4ude 101 bitte"
             }
         ]
     },
@@ -331,7 +331,7 @@
                 "response_data": "['49.01233', '8.41669']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 30.60?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01233,8.41669.",
-                "reformulated_prompt": "In welche Richtung muss ich gehen f\u00fcr Geb\u00e4ude 30.60"
+                "reformulated_prompt": "Route zu Geb\u00e4ude 30.60 gesucht"
             }
         ]
     },
@@ -343,7 +343,7 @@
                 "response_data": "['49.01304', '8.42419']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude Telecooperation Office (TecO)?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01304,8.42419.",
-                "reformulated_prompt": "Den Weg zum TecO bitte"
+                "reformulated_prompt": "Navigation zum Telecooperation Office ben\u00f6tigt"
             }
         ]
     },
@@ -355,7 +355,7 @@
                 "response_data": "['49.09860', '8.42964']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude 9607.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09860,8.42964.",
-                "reformulated_prompt": "Ich suche Geb\u00e4ude 9607"
+                "reformulated_prompt": "Wegbeschreibung zu Geb\u00e4ude 9607 erw\u00fcnscht"
             }
         ]
     },
@@ -367,7 +367,7 @@
                 "response_data": "['49.01213', '8.40812']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude Kollegiengeb\u00e4ude am Zirkel?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01213,8.40812.",
-                "reformulated_prompt": "Wo finde ich das Kollegiengeb\u00e4ude am Zirkel"
+                "reformulated_prompt": "Ich suche den Weg zum Kollegiengeb\u00e4ude am Zirkel"
             }
         ]
     },
@@ -379,7 +379,7 @@
                 "response_data": "['49.01027', '8.41561']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude Altes Bauingenieurgeb\u00e4ude?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01027,8.41561.",
-                "reformulated_prompt": "K\u00f6nnen Sie mir den Weg zum Alten Bauingenieurgeb\u00e4ude zeigen"
+                "reformulated_prompt": "Wegf\u00fchrung zum Alten Bauingenieurgeb\u00e4ude erbeten"
             }
         ]
     },
@@ -391,7 +391,7 @@
                 "response_data": "['49.01023', '8.41180']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Kollegiengeb\u00e4ude am Ehrenhof.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01023,8.41180.",
-                "reformulated_prompt": "Den Standort vom Kollegiengeb\u00e4ude am Ehrenhof bitte"
+                "reformulated_prompt": "Bitte zum Kollegiengeb\u00e4ude am Ehrenhof lotsen"
             }
         ]
     },
@@ -403,7 +403,7 @@
                 "response_data": "['49.01386', '8.41949']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Informatikbau.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01386,8.41949.",
-                "reformulated_prompt": "Route zum Informatikbau gesucht"
+                "reformulated_prompt": "Richtung zum Informatikbau weisen"
             }
         ]
     },
@@ -415,7 +415,7 @@
                 "response_data": "['49.02144', '8.36683']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude Deutsch-Franz\u00f6sisches Institut f\u00fcr Umweltforschung (DFIU)?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.02144,8.36683.",
-                "reformulated_prompt": "Wegbeschreibung zum DFIU ben\u00f6tigt"
+                "reformulated_prompt": "Den Weg zum Deutsch-Franz\u00f6sisches Institut f\u00fcr Umweltforschung zeigen"
             }
         ]
     },
@@ -427,7 +427,7 @@
                 "response_data": "['49.09412', '8.43185']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 403?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09412,8.43185.",
-                "reformulated_prompt": "In welche Richtung liegt Geb\u00e4ude 403"
+                "reformulated_prompt": "Route zum Geb\u00e4ude 403 anzeigen"
             }
         ]
     },
@@ -439,7 +439,7 @@
                 "response_data": "['49.01231', '8.41322']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude MTI-H\u00f6rsaal.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01231,8.41322.",
-                "reformulated_prompt": "Wo befindet sich der MTI-H\u00f6rsaal"
+                "reformulated_prompt": "Zum MTI-H\u00f6rsaal navigieren"
             }
         ]
     },
@@ -451,7 +451,7 @@
                 "response_data": "['49.09718', '8.43305']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 607?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09718,8.43305.",
-                "reformulated_prompt": "Den Weg zu Geb\u00e4ude 607 bitte"
+                "reformulated_prompt": "Wegbeschreibung zu Geb\u00e4ude 607 ben\u00f6tigt"
             }
         ]
     },
@@ -463,7 +463,7 @@
                 "response_data": "['49.00914', '8.40940']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude Kollegiengeb\u00e4ude am Kronenplatz?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.00914,8.40940.",
-                "reformulated_prompt": "Wie erreiche ich das Kollegiengeb\u00e4ude am Kronenplatz"
+                "reformulated_prompt": "Route zum Kollegiengeb\u00e4ude am Kronenplatz anzeigen"
             }
         ]
     },
@@ -475,7 +475,7 @@
                 "response_data": "['49.01260', '8.41385']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Rudolf-Criegee-H\u00f6rsaal.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01260,8.41385.",
-                "reformulated_prompt": "Wegbeschreibung zum Rudolf-Criegee-H\u00f6rsaal"
+                "reformulated_prompt": "Navigation zum Rudolf-Criegee-H\u00f6rsaal gew\u00fcnscht"
             }
         ]
     },
@@ -487,7 +487,7 @@
                 "response_data": "['49.09466', '8.42887']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude 310.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09466,8.42887.",
-                "reformulated_prompt": "Route zu Geb\u00e4ude 310 gesucht"
+                "reformulated_prompt": "Zeigen Sie mir den Weg zu Geb\u00e4ude 310"
             }
         ]
     },
@@ -499,7 +499,7 @@
                 "response_data": "['49.00986', '8.41629']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude Ernst Gaber?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.00986,8.41629.",
-                "reformulated_prompt": "Wo ist das Ernst Gaber Geb\u00e4ude"
+                "reformulated_prompt": "Wegbeschreibung zum Ernst Gaber Geb\u00e4ude"
             }
         ]
     },
@@ -511,7 +511,7 @@
                 "response_data": "['49.01303', '8.37530']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Wirtschaftswissenschaftliche Fakult\u00e4tsbibliothek.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01303,8.37530.",
-                "reformulated_prompt": "Den Weg zur Wirtschaftswissenschaftlichen Fakult\u00e4tsbibliothek bitte"
+                "reformulated_prompt": "Route zur Wirtschaftswissenschaftlichen Fakult\u00e4tsbibliothek"
             }
         ]
     },
@@ -523,7 +523,7 @@
                 "response_data": "['49.10098', '8.43025']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 560?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.10098,8.43025.",
-                "reformulated_prompt": "Wegbeschreibung zu Geb\u00e4ude 560"
+                "reformulated_prompt": "Den Weg zu Geb\u00e4ude 560 weisen"
             }
         ]
     },
@@ -535,7 +535,7 @@
                 "response_data": "['49.01234', '8.41383']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude 30.41.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01234,8.41383.",
-                "reformulated_prompt": "Navigation zu Geb\u00e4ude 30.41"
+                "reformulated_prompt": "Navigation zu Geb\u00e4ude 30.41 erbeten"
             }
         ]
     },
@@ -547,7 +547,7 @@
                 "response_data": "['49.01495', '8.41716']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Mess- u. Regelungstechnik, Maschinenlaboratorium.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01495,8.41716.",
-                "reformulated_prompt": "Standort vom Maschinenlaboratorium f\u00fcr Mess- und Regelungstechnik"
+                "reformulated_prompt": "Wegbeschreibung zum Mess- und Regelungstechnik Maschinenlaboratorium"
             }
         ]
     },
@@ -559,7 +559,7 @@
                 "response_data": "['49.01305', '8.37527']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude 09.21?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01305,8.37527.",
-                "reformulated_prompt": "Wo finde ich Geb\u00e4ude 09.21"
+                "reformulated_prompt": "Route zum Geb\u00e4ude 09.21 aufzeigen"
             }
         ]
     },
@@ -571,7 +571,7 @@
                 "response_data": "['49.01405', '8.41722']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Technische Thermodynamik und K\u00e4ltetechnik, Versuchshalle.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01405,8.41722.",
-                "reformulated_prompt": "Standort der Versuchshalle f\u00fcr Technische Thermodynamik und K\u00e4ltetechnik"
+                "reformulated_prompt": "Weg zur Versuchshalle der Technischen Thermodynamik zeigen"
             }
         ]
     },
@@ -583,7 +583,7 @@
                 "response_data": "['49.01351', '8.41345']",
                 "prompt": "Wie komme ich zu Geb\u00e4ude Fachschaft GeistSoz?",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01351,8.41345.",
-                "reformulated_prompt": "Wo ist die Fachschaft GeistSoz zu finden"
+                "reformulated_prompt": "Navigation zur Fachschaft GeistSoz erbeten"
             }
         ]
     },
@@ -595,7 +595,7 @@
                 "response_data": "['49.01206', '8.41444']",
                 "prompt": "F\u00fchre mich zu Geb\u00e4ude Chemie-Turm II.",
                 "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01206,8.41444.",
-                "reformulated_prompt": "Navigation zum Chemie-Turm II"
+                "reformulated_prompt": "Wegbeschreibung zum Chemie-Turm II ben\u00f6tigt"
             }
         ]
     }

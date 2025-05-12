@@ -7,7 +7,7 @@
                 "response_data": "Mo,Fr 14:30-18:30, ('Tu', '05:19')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude ZEISS Makerspace @ KIT?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 9 Stunden und 11 Minuten.",
-                "reformulated_prompt": "Zu welcher Zeit ist der ZEISS Makerspace @ KIT zug\u00e4nglich?"
+                "reformulated_prompt": "Ab wann ist der ZEISS Makerspace @ KIT wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -19,7 +19,7 @@
                 "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Mo', '07:08')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Physik-H\u00f6rsaal Nr. 4?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 1 Stunden und 52 Minuten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Physik-H\u00f6rsaals Nr. 4?"
+                "reformulated_prompt": "Wann macht der Physik-H\u00f6rsaal Nr. 4 wieder auf?"
             }
         ]
     },
@@ -31,7 +31,7 @@
                 "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\", ('Fr', '03:02')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Parkgarage Kaiserstra\u00dfe (KIT)?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 2 Stunden und 58 Minuten.",
-                "reformulated_prompt": "Ab wann kann man die Parkgarage Kaiserstra\u00dfe am KIT nutzen?"
+                "reformulated_prompt": "Zu welchem Zeitpunkt \u00f6ffnet die Parkgarage Kaiserstra\u00dfe wieder?"
             }
         ]
     },
@@ -43,7 +43,7 @@
                 "response_data": "Apr-Sep Mo-Fr 08:00-16:00; Apr-Sep Su,PH 10:00-16:00; Oct-Mar Mo-Fr 08:00-15:00; Oct-Mar Su,PH 10:00-14:00, ('Th', '09:32')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Botanischer Garten des KIT?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat der Botanische Garten des KIT?"
+                "reformulated_prompt": "Ab welcher Uhrzeit kann man den Botanischen Garten des KIT besuchen?"
             }
         ]
     },
@@ -55,7 +55,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '22:07')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 50.34?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Was sind die Zugangszeiten f\u00fcr Geb\u00e4ude 50.34?"
+                "reformulated_prompt": "Wann ist das Geb\u00e4ude 50.34 wieder betretbar?"
             }
         ]
     },
@@ -67,7 +67,7 @@
                 "response_data": "Mo-Fr 06:45-18:20, ('Mo', '23:46')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 10.11?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 6 Stunden und 59 Minuten.",
-                "reformulated_prompt": "Wann ist Geb\u00e4ude 10.11 ge\u00f6ffnet?"
+                "reformulated_prompt": "Ab wann hat das Geb\u00e4ude 10.11 wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -79,7 +79,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('We', '13:40')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Informatikbau?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Zu welchen Zeiten hat der Informatikbau ge\u00f6ffnet?"
+                "reformulated_prompt": "Wann sind die T\u00fcren des Informatikbaus wieder offen?"
             }
         ]
     },
@@ -91,7 +91,7 @@
                 "response_data": "24/7, ('Fr', '11:58')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fairteiler am KIT?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Fairteilers am KIT?"
+                "reformulated_prompt": "Ab welchem Zeitpunkt ist der Fairteiler am KIT wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -103,7 +103,7 @@
                 "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off, ('Th', '12:57')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Mensa?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Ab wann hat die Mensa auf?"
+                "reformulated_prompt": "Wann beginnt der Betrieb der Mensa wieder?"
             }
         ]
     },
@@ -115,7 +115,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '19:40')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Informatikbau?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Welche \u00d6ffnungszeiten gelten f\u00fcr den Informatikbau?"
+                "reformulated_prompt": "Ab wann kann man wieder in den Informatikbau?"
             }
         ]
     },
@@ -127,7 +127,7 @@
                 "response_data": "Mo-Th 07:00-12:00, 13:00-16:00;Fr 07:00-12:00,13:00-15:00;Sa,Su,PH off, ('We', '10:07')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 234?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Um wie viel Uhr \u00f6ffnet Geb\u00e4ude 234?"
+                "reformulated_prompt": "Wann wird das Geb\u00e4ude 234 wieder aufgeschlossen?"
             }
         ]
     },
@@ -139,7 +139,7 @@
                 "response_data": "Mo-Fr 09:00-22:00; Sa 10:00-22:00, ('Sa', '05:20')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Internet Caf\u00e9 Aso?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 4 Stunden und 40 Minuten.",
-                "reformulated_prompt": "Was sind die Gesch\u00e4ftszeiten des Internet Caf\u00e9 Aso?"
+                "reformulated_prompt": "Ab wann empf\u00e4ngt das Internet Caf\u00e9 Aso wieder Besucher?"
             }
         ]
     },
@@ -151,7 +151,7 @@
                 "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('Th', '12:19')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Bibliothek (Campus Nord)?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 0 Stunden und 41 Minuten.",
-                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat die Bibliothek am Campus Nord?"
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet die Bibliothek am Campus Nord wieder?"
             }
         ]
     },
@@ -163,7 +163,7 @@
                 "response_data": "Mo-Th 13:00-14:00, ('Su', '05:14')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fachschaft Geistes- und Sozialwissenschaften?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 7 Stunden und 46 Minuten.",
-                "reformulated_prompt": "Wann kann man die Fachschaft Geistes- und Sozialwissenschaften aufsuchen?"
+                "reformulated_prompt": "Wann ist die Fachschaft Geistes- und Sozialwissenschaften wieder erreichbar?"
             }
         ]
     },
@@ -175,7 +175,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Sa', '14:44')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Informatikbau?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Ab wann ist der Informatikbau zug\u00e4nglich?"
+                "reformulated_prompt": "Ab welcher Zeit ist der Informatikbau wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -187,7 +187,7 @@
                 "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('Su', '20:41')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Zentrum f\u00fcr Mediales Lernen (ZML)?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Zu welchen Zeiten ist das Zentrum f\u00fcr Mediales Lernen (ZML) ge\u00f6ffnet?"
+                "reformulated_prompt": "Wann nimmt das Zentrum f\u00fcr Mediales Lernen (ZML) wieder seinen Betrieb auf?"
             }
         ]
     },
@@ -199,7 +199,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Fr', '01:35')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Informatikbau?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 5 Stunden und 25 Minuten.",
-                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat der Informatikbau?"
+                "reformulated_prompt": "Zu welchem Zeitpunkt \u00f6ffnet der Informatikbau seine Pforten?"
             }
         ]
     },
@@ -211,7 +211,7 @@
                 "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('We', '03:48')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Forschungszentrum Umwelt?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 3 Stunden und 12 Minuten.",
-                "reformulated_prompt": "Was sind die Zugangszeiten zum Forschungszentrum Umwelt?"
+                "reformulated_prompt": "Ab wann ist das Forschungszentrum Umwelt wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -223,7 +223,7 @@
                 "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('Th', '11:19')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Wann \u00f6ffnet das Institut f\u00fcr Angewandte Materialien - Elektrochemische Technologien?"
+                "reformulated_prompt": "Wann \u00f6ffnet das IAM-ET Institut wieder seine T\u00fcren?"
             }
         ]
     },
@@ -235,7 +235,7 @@
                 "response_data": "Mo-Th 13:00-14:00, ('Su', '11:41')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fachschaft GeistSoz?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 1 Stunden und 19 Minuten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten der Fachschaft GeistSoz?"
+                "reformulated_prompt": "Ab welcher Zeit ist die Fachschaft GeistSoz wieder besetzt?"
             }
         ]
     },
@@ -247,7 +247,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Su', '10:24')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Programmstrukturen und Datenorganisation (IPD), Institut f\u00fcr?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 20 Stunden und 36 Minuten.",
-                "reformulated_prompt": "Wann ist das Institut f\u00fcr Programmstrukturen und Datenorganisation zug\u00e4nglich?"
+                "reformulated_prompt": "Wann ist das IPD Institut wieder erreichbar?"
             }
         ]
     },
@@ -259,7 +259,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '02:45')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 4 Stunden und 15 Minuten.",
-                "reformulated_prompt": "Ab wann ist das Institut f\u00fcr Theoretische Informatik, AG Kryptographie und Sicherheit ge\u00f6ffnet?"
+                "reformulated_prompt": "Ab wann kann man wieder ins Institut f\u00fcr Theoretische Informatik (IKS)?"
             }
         ]
     },
@@ -271,7 +271,7 @@
                 "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\", ('Su', '05:59')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Angewandte Informatik und Formale Beschreibungsverfahren (AIFB), Institut f\u00fcr?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 0 Stunden und 1 Minuten.",
-                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet das Institut f\u00fcr Angewandte Informatik und Formale Beschreibungsverfahren?"
+                "reformulated_prompt": "Zu welchem Zeitpunkt \u00f6ffnet das AIFB Institut wieder?"
             }
         ]
     },
@@ -283,7 +283,7 @@
                 "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('Su', '22:17')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude InformatiKOM 1?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 10 Stunden und 43 Minuten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten von InformatiKOM 1?"
+                "reformulated_prompt": "Wann macht das InformatiKOM 1 wieder auf?"
             }
         ]
     },
@@ -295,7 +295,7 @@
                 "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\", ('Mo', '02:48')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 05.20?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 3 Stunden und 12 Minuten.",
-                "reformulated_prompt": "Ab welcher Uhrzeit ist Geb\u00e4ude 05.20 ge\u00f6ffnet?"
+                "reformulated_prompt": "Ab wann ist das Geb\u00e4ude 05.20 wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -307,7 +307,7 @@
                 "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('We', '10:00')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 310?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Um welche Uhrzeit macht Geb\u00e4ude 310 auf?"
+                "reformulated_prompt": "Ab wann ist Geb\u00e4ude 310 wieder offen?"
             }
         ]
     },
@@ -319,7 +319,7 @@
                 "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\", ('We', '00:11')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Parkgarage Kaiserstra\u00dfe (KIT)?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet die Parkgarage in der Kaiserstra\u00dfe am KIT?"
+                "reformulated_prompt": "Wann macht die Parkgarage Kaiserstra\u00dfe (KIT) wieder auf?"
             }
         ]
     },
@@ -331,7 +331,7 @@
                 "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('Sa', '14:57')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 1 Tagen, 16 Stunden und 3 Minuten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Instituts f\u00fcr Angewandte Materialien - Elektrochemische Technologien?"
+                "reformulated_prompt": "Ab welchem Zeitpunkt ist das Institut f\u00fcr Angewandte Materialien - Elektrochemische Technologien (IAM-ET) zug\u00e4nglich?"
             }
         ]
     },
@@ -343,7 +343,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Fr', '08:03')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Ab wann ist das Institut f\u00fcr Prozessrechentechnik, Automation und Robotik zug\u00e4nglich?"
+                "reformulated_prompt": "Ab wann kann man wieder ins Institut f\u00fcr Prozessrechentechnik, Automation und Robotik (IPR)?"
             }
         ]
     },
@@ -355,7 +355,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Su', '09:32')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fachschaft Mathematik und Informatik?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 21 Stunden und 28 Minuten.",
-                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat die Fachschaft Mathematik und Informatik?"
+                "reformulated_prompt": "Wann ist die Fachschaft Mathematik und Informatik wieder betretbar?"
             }
         ]
     },
@@ -367,7 +367,7 @@
                 "response_data": "Mo-Fr 7:30-9:30, 12:00-14:00, 18:00-21:00; Sa,Su,PH off, ('Mo', '09:00')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 20.54?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Ab welcher Uhrzeit ist Geb\u00e4ude 20.54 ge\u00f6ffnet?"
+                "reformulated_prompt": "Ab welcher Uhrzeit ist Geb\u00e4ude 20.54 wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -379,7 +379,7 @@
                 "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off, ('Sa', '07:00')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Mensa am Adenauerring?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 4 Stunden und 0 Minuten.",
-                "reformulated_prompt": "Wann beginnt der Betrieb in der Mensa am Adenauerring?"
+                "reformulated_prompt": "Wann macht die Mensa am Adenauerring wieder auf?"
             }
         ]
     },
@@ -391,7 +391,7 @@
                 "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Mo', '18:22')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Physik-H\u00f6rsaal Nr. 3?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Zu welchem Zeitpunkt \u00f6ffnet der Physik-H\u00f6rsaal Nr. 3?"
+                "reformulated_prompt": "Ab wann ist der Physik-H\u00f6rsaal Nr. 3 wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -403,7 +403,7 @@
                 "response_data": "Mo,Fr 14:30-18:30, ('Su', '23:18')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 214?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 15 Stunden und 12 Minuten.",
-                "reformulated_prompt": "Ab wann kann man Geb\u00e4ude 214 betreten?"
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 214 wieder offen?"
             }
         ]
     },
@@ -415,7 +415,7 @@
                 "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('Tu', '02:11')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Angewandte Geowissenschaften, Institut f\u00fcr?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 4 Stunden und 49 Minuten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Instituts f\u00fcr Angewandte Geowissenschaften?"
+                "reformulated_prompt": "Ab wann hat das Institut f\u00fcr Angewandte Geowissenschaften wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -427,7 +427,7 @@
                 "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off, ('We', '17:28')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 01.13?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 17 Stunden und 32 Minuten.",
-                "reformulated_prompt": "Wann ist Geb\u00e4ude 01.13 zug\u00e4nglich?"
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 01.13 wieder betretbar?"
             }
         ]
     },
@@ -439,7 +439,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '23:58')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Theoretische Informatik (ITI), Institut f\u00fcr?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 7 Stunden und 2 Minuten.",
-                "reformulated_prompt": "Ab welcher Zeit \u00f6ffnet das Institut f\u00fcr Theoretische Informatik?"
+                "reformulated_prompt": "Ab welchem Zeitpunkt \u00f6ffnet das Institut f\u00fcr Theoretische Informatik (ITI) wieder?"
             }
         ]
     },
@@ -451,7 +451,7 @@
                 "response_data": "Mo-Fr 06:45-18:20, ('We', '15:01')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 10.11?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Zu welcher Uhrzeit macht Geb\u00e4ude 10.11 auf?"
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 10.11 wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -463,7 +463,7 @@
                 "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Tu', '17:38')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 30.22?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Ab wann ist Geb\u00e4ude 30.22 ge\u00f6ffnet?"
+                "reformulated_prompt": "Ab wann kann man wieder ins Geb\u00e4ude 30.22?"
             }
         ]
     },
@@ -475,7 +475,7 @@
                 "response_data": "Mo-Fr 09:00-22:00; Sa 10:00-22:00, ('Su', '16:13')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 01.90?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 16 Stunden und 47 Minuten.",
-                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat Geb\u00e4ude 01.90?"
+                "reformulated_prompt": "Wann wird Geb\u00e4ude 01.90 wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -487,7 +487,7 @@
                 "response_data": "Mo-Fr 11:00-14:00, 14:00-14:30 open \"Sp\u00e4tausgabe an Linie 1\"; Sa,Su,PH off, ('Mo', '14:00')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Mensa am Adenauerring?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Ab welcher Zeit kann man die Mensa am Adenauerring besuchen?"
+                "reformulated_prompt": "Ab welcher Zeit \u00f6ffnet die Mensa am Adenauerring wieder ihre T\u00fcren?"
             }
         ]
     },
@@ -499,7 +499,7 @@
                 "response_data": "Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00, ('Mo', '01:30')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude intro Caf\u00e9?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 8 Stunden und 30 Minuten.",
-                "reformulated_prompt": "Wann beginnt der Service im intro Caf\u00e9?"
+                "reformulated_prompt": "Wann startet das intro Caf\u00e9 wieder seinen Betrieb?"
             }
         ]
     },
@@ -511,7 +511,7 @@
                 "response_data": "Apr-Sep Mo-Fr 08:00-16:00; Apr-Sep Su,PH 10:00-16:00; Oct-Mar Mo-Fr 08:00-15:00; Oct-Mar Su,PH 10:00-14:00, ('Fr', '12:45')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Versuchsanstalt des Joseph Gottlieb K\u00f6lreuter Instituts f\u00fcr Pflanzenwissenschaften?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet die Versuchsanstalt des Joseph Gottlieb K\u00f6lreuter Instituts f\u00fcr Pflanzenwissenschaften?"
+                "reformulated_prompt": "Ab wann ist die Versuchsanstalt des Joseph Gottlieb K\u00f6lreuter Instituts f\u00fcr Pflanzenwissenschaften wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -523,7 +523,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '23:11')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Technische Informatik (ITEC), Institut f\u00fcr?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 7 Stunden und 49 Minuten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Instituts f\u00fcr Technische Informatik?"
+                "reformulated_prompt": "Wann macht das Institut f\u00fcr Technische Informatik (ITEC) wieder auf?"
             }
         ]
     },
@@ -535,7 +535,7 @@
                 "response_data": "Mo-Th 13:00-14:00, ('Mo', '13:11')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fachschaft Geistes- und Sozialwissenschaften?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Ab wann ist die Fachschaft Geistes- und Sozialwissenschaften erreichbar?"
+                "reformulated_prompt": "Ab welchem Zeitpunkt ist die Fachschaft Geistes- und Sozialwissenschaften wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -547,7 +547,7 @@
                 "response_data": "Mo-Fr 07:00-18:00, ('Fr', '08:55')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 145?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Um welche Zeit \u00f6ffnet Geb\u00e4ude 145?"
+                "reformulated_prompt": "Wann wird Geb\u00e4ude 145 wieder aufgeschlossen?"
             }
         ]
     },
@@ -559,7 +559,7 @@
                 "response_data": "Mo-Fr 7:30-9:30, 12:00-14:00, 18:00-21:00; Sa,Su,PH off, ('Mo', '08:31')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Medizinische Dienste Campus S\u00fcd?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Zu welcher Zeit beginnt der Dienst der Medizinischen Dienste Campus S\u00fcd?"
+                "reformulated_prompt": "Ab wann sind die Medizinischen Dienste Campus S\u00fcd wieder verf\u00fcgbar?"
             }
         ]
     },
@@ -571,7 +571,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '16:25')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Anthropomatik und Robotik, Institut f\u00fcr?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Ab wann ist das Institut f\u00fcr Anthropomatik und Robotik ge\u00f6ffnet?"
+                "reformulated_prompt": "Wann \u00f6ffnet das Institut f\u00fcr Anthropomatik und Robotik wieder seine Pforten?"
             }
         ]
     },
@@ -583,7 +583,7 @@
                 "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('Tu', '23:01')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Forschungszentrum Umwelt?",
                 "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 7 Stunden und 59 Minuten.",
-                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat das Forschungszentrum Umwelt?"
+                "reformulated_prompt": "Ab welcher Zeit ist das Forschungszentrum Umwelt wieder betretbar?"
             }
         ]
     },
@@ -595,7 +595,7 @@
                 "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('We', '12:58')",
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Technische Informatik (ITEC), Institut f\u00fcr?",
                 "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
-                "reformulated_prompt": "Ab welcher Uhrzeit ist das Institut f\u00fcr Technische Informatik zug\u00e4nglich?"
+                "reformulated_prompt": "Wann ist das Institut f\u00fcr Technische Informatik (ITEC) wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -607,7 +607,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 532?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Zu welcher Uhrzeit macht Geb\u00e4ude 532 auf?"
+                "reformulated_prompt": "Ab wann ist Geb\u00e4ude 532 wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -619,7 +619,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 513?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab wann ist Geb\u00e4ude 513 zug\u00e4nglich?"
+                "reformulated_prompt": "Wann macht Geb\u00e4ude 513 auf?"
             }
         ]
     },
@@ -631,7 +631,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Tech.Thermodyn.u.K\u00e4ltetechn./ Mess-u.Regelungstechn., Institutsgeb.?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat das Geb\u00e4ude Tech.Thermodyn.u.K\u00e4ltetechn./ Mess-u.Regelungstechn., Institutsgeb.?"
+                "reformulated_prompt": "Ab welchem Zeitpunkt ist das Geb\u00e4ude Tech.Thermodyn.u.K\u00e4ltetechn./ Mess-u.Regelungstechn., Institutsgeb. wieder offen?"
             }
         ]
     },
@@ -643,7 +643,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 304?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab welcher Zeit ist Geb\u00e4ude 304 ge\u00f6ffnet?"
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet Geb\u00e4ude 304 wieder?"
             }
         ]
     },
@@ -655,7 +655,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Stab und Strategie (STS)?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten vom Stab und Strategie (STS) Geb\u00e4ude?"
+                "reformulated_prompt": "Ab wann kann man das Geb\u00e4ude Stab und Strategie (STS) wieder betreten?"
             }
         ]
     },
@@ -667,7 +667,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 01.80?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Um wie viel Uhr \u00f6ffnet Geb\u00e4ude 01.80?"
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 01.80 wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -679,7 +679,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Bauingenieure - Gro\u00dfer H\u00f6rsaal?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Zu welchem Zeitpunkt \u00f6ffnet der Bauingenieure - Gro\u00dfer H\u00f6rsaal?"
+                "reformulated_prompt": "Ab welcher Uhrzeit ist der Bauingenieure - Gro\u00dfer H\u00f6rsaal wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -691,7 +691,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 240?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab wann kann man Geb\u00e4ude 240 betreten?"
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 240 wieder auf?"
             }
         ]
     },
@@ -703,7 +703,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Theoretische Festk\u00f6rperphysik, Institut f\u00fcr?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Welche \u00d6ffnungszeit hat das Institut f\u00fcr Theoretische Festk\u00f6rperphysik?"
+                "reformulated_prompt": "Ab wann hat das Institut f\u00fcr Theoretische Festk\u00f6rperphysik wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -715,7 +715,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Astroteilchenphysik (IAP), Institut f\u00fcr?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Instituts f\u00fcr Astroteilchenphysik (IAP)?"
+                "reformulated_prompt": "Zu welchem Zeitpunkt \u00f6ffnet das Institut f\u00fcr Astroteilchenphysik (IAP) wieder?"
             }
         ]
     },
@@ -727,7 +727,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Gastdozentenhaus Heinrich Hertz?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab welcher Uhrzeit ist das Gastdozentenhaus Heinrich Hertz ge\u00f6ffnet?"
+                "reformulated_prompt": "Wann macht das Gastdozentenhaus Heinrich Hertz wieder auf?"
             }
         ]
     },
@@ -739,7 +739,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Technische Chemie und Polymerchemie, Institut f\u00fcr?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Wann beginnt die \u00d6ffnungszeit des Instituts f\u00fcr Technische Chemie und Polymerchemie?"
+                "reformulated_prompt": "Ab wann ist das Institut f\u00fcr Technische Chemie und Polymerchemie wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -751,7 +751,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 666?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Um wie viel Uhr macht Geb\u00e4ude 666 auf?"
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 666 wieder offen?"
             }
         ]
     },
@@ -763,7 +763,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 241?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab welchem Zeitpunkt ist Geb\u00e4ude 241 zug\u00e4nglich?"
+                "reformulated_prompt": "Ab welcher Zeit \u00f6ffnet Geb\u00e4ude 241 wieder?"
             }
         ]
     },
@@ -775,7 +775,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Engler-Bunte-Institut (EBI)?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet das Engler-Bunte-Institut (EBI)?"
+                "reformulated_prompt": "Wann ist das Engler-Bunte-Institut (EBI) wieder betretbar?"
             }
         ]
     },
@@ -787,7 +787,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Institutsgeb\u00e4ude MVM?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Was ist die \u00d6ffnungszeit des Institutsgeb\u00e4udes MVM?"
+                "reformulated_prompt": "Ab wann kann man das Institutsgeb\u00e4ude MVM wieder besuchen?"
             }
         ]
     },
@@ -799,7 +799,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Lichttechnisches Institut (LTI)?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab wann ist das Lichttechnische Institut (LTI) ge\u00f6ffnet?"
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet das Lichttechnische Institut (LTI) wieder?"
             }
         ]
     },
@@ -811,7 +811,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude B254?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat Geb\u00e4ude B254?"
+                "reformulated_prompt": "Wann ist Geb\u00e4ude B254 wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -823,7 +823,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 545?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet Geb\u00e4ude 545?"
+                "reformulated_prompt": "Ab welchem Zeitpunkt \u00f6ffnet Geb\u00e4ude 545 wieder?"
             }
         ]
     },
@@ -835,7 +835,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 615?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab welchem Zeitpunkt ist Geb\u00e4ude 615 zug\u00e4nglich?"
+                "reformulated_prompt": "Wann macht Geb\u00e4ude 615 wieder auf?"
             }
         ]
     },
@@ -847,7 +847,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 546?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Wann beginnt die \u00d6ffnungszeit von Geb\u00e4ude 546?"
+                "reformulated_prompt": "Ab wann ist Geb\u00e4ude 546 wieder offen?"
             }
         ]
     },
@@ -859,7 +859,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Studienkolleg f\u00fcr ausl\u00e4ndische Studierende (STK)?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab welcher Uhrzeit \u00f6ffnet das Studienkolleg f\u00fcr ausl\u00e4ndische Studierende (STK)?"
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet das Studienkolleg f\u00fcr ausl\u00e4ndische Studierende (STK) wieder?"
             }
         ]
     },
@@ -871,7 +871,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Professur f\u00fcr Finanzwissenschaft und Public Management, Institut f\u00fcr Volkswirtschaftslehre (ECON)?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten der Professur f\u00fcr Finanzwissenschaft und Public Management, Institut f\u00fcr Volkswirtschaftslehre (ECON)?"
+                "reformulated_prompt": "Ab wann ist die Professur f\u00fcr Finanzwissenschaft und Public Management, Institut f\u00fcr Volkswirtschaftslehre (ECON) wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -883,7 +883,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet das Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik?"
+                "reformulated_prompt": "Wann \u00f6ffnet das Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik wieder seine T\u00fcren?"
             }
         ]
     },
@@ -895,7 +895,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 50.31?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab wann ist Geb\u00e4ude 50.31 ge\u00f6ffnet?"
+                "reformulated_prompt": "Ab welchem Zeitpunkt ist Geb\u00e4ude 50.31 wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -907,7 +907,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Chemie-Turm III?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Zu welcher Uhrzeit macht Chemie-Turm III auf?"
+                "reformulated_prompt": "Ab wann ist Chemie-Turm III zug\u00e4nglich?"
             }
         ]
     },
@@ -919,7 +919,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fachschaft Kunstgeschichte?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten der Fachschaft Kunstgeschichte?"
+                "reformulated_prompt": "Zu welcher Zeit macht die Fachschaft Kunstgeschichte auf?"
             }
         ]
     },
@@ -931,7 +931,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude B523?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab wann ist B523 zug\u00e4nglich?"
+                "reformulated_prompt": "Ab welchem Zeitpunkt ist B523 wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -943,7 +943,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Institutsgeb\u00e4ude Boden- und Felsmechanik?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Institutsgeb\u00e4udes Boden- und Felsmechanik?"
+                "reformulated_prompt": "Wann macht das Institutsgeb\u00e4ude Boden- und Felsmechanik auf?"
             }
         ]
     },
@@ -955,7 +955,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 10.50?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Um wie viel Uhr \u00f6ffnet Geb\u00e4ude 10.50?"
+                "reformulated_prompt": "Ab wann ist das Geb\u00e4ude 10.50 wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -967,7 +967,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Geographie und Geo\u00f6kologie, Institut f\u00fcr?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Wann beginnt die \u00d6ffnungszeit des Instituts f\u00fcr Geographie und Geo\u00f6kologie?"
+                "reformulated_prompt": "Wann macht das Institut f\u00fcr Geographie und Geo\u00f6kologie wieder auf?"
             }
         ]
     },
@@ -979,7 +979,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 50.23?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab welcher Zeit ist Geb\u00e4ude 50.23 ge\u00f6ffnet?"
+                "reformulated_prompt": "Ab welcher Uhrzeit ist 50.23 ge\u00f6ffnet?"
             }
         ]
     },
@@ -991,7 +991,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Zentrum f\u00fcr Angewandte Rechtswissenschaft (ZAR)?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Zu welchen Zeiten hat das Zentrum f\u00fcr Angewandte Rechtswissenschaft auf?"
+                "reformulated_prompt": "Wann beginnt der Betrieb im Zentrum f\u00fcr Angewandte Rechtswissenschaft?"
             }
         ]
     },
@@ -1003,7 +1003,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 425?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab wann kann man Geb\u00e4ude 425 betreten?"
+                "reformulated_prompt": "Ab welchem Zeitpunkt ist Geb\u00e4ude 425 wieder offen?"
             }
         ]
     },
@@ -1015,7 +1015,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 20.44?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Welche \u00d6ffnungszeiten hat Geb\u00e4ude 20.44?"
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet Geb\u00e4ude 20.44?"
             }
         ]
     },
@@ -1027,7 +1027,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Projekttr\u00e4ger Karlsruhe (PTKA)?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Wann beginnt der Zugang zum Projekttr\u00e4ger Karlsruhe?"
+                "reformulated_prompt": "Ab wann kann man den Projekttr\u00e4ger Karlsruhe betreten?"
             }
         ]
     },
@@ -1039,7 +1039,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 688?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 688?"
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 688 wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -1051,7 +1051,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 10.32?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab welcher Uhrzeit ist Geb\u00e4ude 10.32 ge\u00f6ffnet?"
+                "reformulated_prompt": "Ab welchem Zeitpunkt ist 10.32 ge\u00f6ffnet?"
             }
         ]
     },
@@ -1063,7 +1063,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude H\u00f6rsaal am Fasanengarten?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Wann beginnt die \u00d6ffnungszeit des H\u00f6rsaals am Fasanengarten?"
+                "reformulated_prompt": "Wann beginnt der Zugang zum H\u00f6rsaal am Fasanengarten?"
             }
         ]
     },
@@ -1075,7 +1075,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 603?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet Geb\u00e4ude 603?"
+                "reformulated_prompt": "Ab wann ist Geb\u00e4ude 603 wieder betretbar?"
             }
         ]
     },
@@ -1087,7 +1087,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Max Rubner-Institut?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Max Rubner-Instituts?"
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet das Max Rubner-Institut?"
             }
         ]
     },
@@ -1099,7 +1099,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 413?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab wann ist Geb\u00e4ude 413 zug\u00e4nglich?"
+                "reformulated_prompt": "Wann ist Geb\u00e4ude 413 wieder zug\u00e4nglich?"
             }
         ]
     },
@@ -1111,7 +1111,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Professur f\u00fcr Netzwerk\u00f6konomie, Institut f\u00fcr Volkswirtschaftslehre (ECON?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Wann \u00f6ffnen die R\u00e4ume der Professur f\u00fcr Netzwerk\u00f6konomie?"
+                "reformulated_prompt": "Ab welchem Zeitpunkt \u00f6ffnet die Professur f\u00fcr Netzwerk\u00f6konomie?"
             }
         ]
     },
@@ -1123,7 +1123,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Chemie-Turm I?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Zu welcher Zeit macht Chemie-Turm I auf?"
+                "reformulated_prompt": "Wann macht Chemie-Turm I auf?"
             }
         ]
     },
@@ -1135,7 +1135,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Evaluationsstelle (STS-QM)?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab wann ist die Evaluationsstelle ge\u00f6ffnet?"
+                "reformulated_prompt": "Ab wann ist die Evaluationsstelle wieder ge\u00f6ffnet?"
             }
         ]
     },
@@ -1147,7 +1147,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Gastdozentenhaus?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten des Gastdozentenhauses?"
+                "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet das Gastdozentenhaus?"
             }
         ]
     },
@@ -1159,7 +1159,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Photonenforschung und Synchrotronstrahlung (IPS), Institut f\u00fcr?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Wann beginnt der Zugang zum Institut f\u00fcr Photonenforschung?"
+                "reformulated_prompt": "Wann beginnt der Betrieb im Institut f\u00fcr Photonenforschung?"
             }
         ]
     },
@@ -1171,7 +1171,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 247?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Ab welcher Zeit kann man Geb\u00e4ude 247 betreten?"
+                "reformulated_prompt": "Ab welchem Zeitpunkt ist Geb\u00e4ude 247 zug\u00e4nglich?"
             }
         ]
     },
@@ -1183,7 +1183,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude 11.40?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Zu welchen Zeiten \u00f6ffnet Geb\u00e4ude 11.40?"
+                "reformulated_prompt": "Wann macht Geb\u00e4ude 11.40 auf?"
             }
         ]
     },
@@ -1195,7 +1195,7 @@
                 "response_data": null,
                 "prompt": "Wann \u00f6ffnet Geb\u00e4ude Westhochschule?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
-                "reformulated_prompt": "Was sind die \u00d6ffnungszeiten der Westhochschule?"
+                "reformulated_prompt": "Ab wann ist die Westhochschule wieder offen?"
             }
         ]
     }
