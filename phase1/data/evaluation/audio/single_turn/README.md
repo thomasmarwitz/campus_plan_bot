@@ -1,0 +1,1 @@
+The audio files in this directory reference a prompt of a single turn. The files are organized as `{prompt_type}-{index}.m4a` and reference the files in `data/evaluation/single_turn/{prompt_type}.json` for the prompt type and index.
