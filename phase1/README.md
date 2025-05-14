@@ -18,4 +18,4 @@ Two page report at the end of the phase
 
 - [x] Discuss and refine topic
 - [x] Evaluation metrics
-- [ ] Test set creation process
+- [x] Test set creation process
