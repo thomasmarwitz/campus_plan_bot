@@ -5,8 +5,8 @@ requires = ["setuptools", "setuptools-scm", "wheel"]
 version_scheme = "post-release"
 
 [project]
-name = "metalearners"
-description = "MetaLearners for CATE estimation"
+name = "campus_plan_bot"
+description = "Chatbot for the KIT campus plan"
 dynamic = ["version"]
 authors = [
   {name = "thomas", email = "thomas.marwitz@student.kit.edu"},
@@ -56,7 +56,7 @@ select = [
 ]
 
 [tool.pytest.ini_options]
-addopts = "--import-mode=importlib --cov=metalearners --cov-report term-missing --color=yes"
+addopts = "--import-mode=importlib --cov=campus_plan_bot --cov-report term-missing --color=yes"
 testpaths = [
   "tests",
 ]
