@@ -25,6 +25,7 @@ pytest = ">=6"
 pytest-cov = "*"
 [feature.dev.tasks]
 coverage = "pytest tests --cov=campus_plan_bot --cov-report=xml --cov-report term-missing --color=yes"
+test = "pytest"
 
 [feature.lint.dependencies]
 pre-commit = "*"
