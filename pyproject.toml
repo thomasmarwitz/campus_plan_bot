@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm", "wheel"]
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+
+[project]
+name = "metalearners"
+description = "MetaLearners for CATE estimation"
+dynamic = ["version"]
+authors = [
+  {name = "thomas", email = "thomas.marwitz@student.kit.edu"},
+  {name = "frederik", email = "frederik.schittny@student.kit.edu"},
+]
+classifiers = [
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[project.urls]
+repository = "https://github.com/thomasmarwitz/dialogue_practical"
+
+[tool.setuptools.packages.find]
+include = ["campus_plan_bot"]
+namespaces = false
+
+[project.scripts]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+ignore = [
+  "N803",  # https://docs.astral.sh/ruff/rules/invalid-argument-name
+  "N806",  # https://docs.astral.sh/ruff/rules/non-lowercase-variable-in-function
+  "E501",  # https://docs.astral.sh/ruff/faq/#is-the-ruff-linter-compatible-with-black
+]
+select = [
+  # pyflakes
+  "F",
+  # pycodestyle
+  "E", "W",
+  # isort
+  "I",
+  # pep8-naming
+  "N",
+  # pyupgrade
+  "UP",
+]
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib --cov=metalearners --cov-report term-missing --color=yes"
+testpaths = [
+  "tests",
+]
