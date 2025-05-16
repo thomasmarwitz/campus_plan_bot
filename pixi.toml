@@ -30,6 +30,7 @@ test = "pytest"
 [feature.lint.dependencies]
 pre-commit = "*"
 black = "*"
+mypy = "*"
 ruff = "*"
 prettier = "*"
 taplo = "*"
