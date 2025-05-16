@@ -19,6 +19,7 @@ setuptools-scm = "*"
 setuptools = ">=61"
 
 [feature.dev.dependencies]
+mypy = "*"
 optuna = "*"
 pytest = ">=6"
 pytest-cov = "*"
