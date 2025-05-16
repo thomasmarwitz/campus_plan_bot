@@ -166,4 +166,3 @@ The test prompts and expected answers are written in German because the system h
 		- e.g. Und was ist die Adresse? Ist es grade geöffnet?
 	- Also consider non-standard multi turn question flow
 		- e.g. correction of information by the user or asking questions in unusual order
-

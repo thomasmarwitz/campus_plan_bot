@@ -93,4 +93,3 @@
 - [ ] Können Sie mir den Standort von Gebäude 10.86 mitteilen?
 - [ ] Was ist der beste Weg zum Gebäude?
 - [ ] Existiert eine Webpräsenz dafür?
-
