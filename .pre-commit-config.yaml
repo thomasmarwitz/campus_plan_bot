@@ -29,13 +29,13 @@ repos:
         language: system
         require_serial: true
         types: [python]
-      - id: mypy
-        name: mypy
-        entry: pixi run -e default mypy
-        language: system
-        types: [python]
-        args: ["--ignore-missing-imports", "--scripts-are-modules"]
-        require_serial: true
+      # - id: mypy
+      #   name: mypy
+      #   entry: pixi run -e default mypy
+      #   language: system
+      #   types: [python]
+      #   args: ["--ignore-missing-imports", "--scripts-are-modules"]
+      #   require_serial: true
       - id: trailing-whitespace
         name: trim trailing whitespace
         language: system

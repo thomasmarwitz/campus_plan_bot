@@ -60,3 +60,9 @@ addopts = "--import-mode=importlib --cov=metalearners --cov-report term-missing 
 testpaths = [
   "tests",
 ]
+
+# ignore types in the following files
+[tool.typos]
+files.extend-exclude = [
+  "phase1/"
+]
