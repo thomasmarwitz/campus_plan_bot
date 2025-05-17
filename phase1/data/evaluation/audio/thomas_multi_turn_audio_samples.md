@@ -87,4 +87,3 @@
 - [ ] Ist diese Einrichtung derzeit geöffnet?
 - [ ] Ist der Zugang barrierefrei und für Rollstuhlfahrer geeignet?
 - [ ] An welcher Adresse befindet sich diese Einrichtung?
-

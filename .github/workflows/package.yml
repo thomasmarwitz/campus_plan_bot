@@ -1,0 +1,44 @@
+name: Package
+on:
+  push:
+  release:
+    types:
+      - published
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+      - name: Set up pixi
+        uses: prefix-dev/setup-pixi@v0.8.1
+      - name: Build
+        run: |
+          pixi run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artifact
+          path: dist/*
+
+  # We currently have no intentions to publish to PyPI
+  # upload_pypi:
+  #   name: Upload to PyPI
+  #   needs: [build]
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     id-token: write
+  #     contents: write
+  #   environment: pypi
+  #   if: github.event_name == 'release' && github.event.action == 'published'
+  #   steps:
+  #     - uses: actions/download-artifact@v4
+  #       with:
+  #         name: artifact
+  #         path: dist
+  #     - uses: pypa/gh-action-pypi-publish@v1.9.0

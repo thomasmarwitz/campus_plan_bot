@@ -1,0 +1,64 @@
+[workspace]
+authors = ["thomasmarwitz <thomasmarwitz3@gmail.com>"]
+channels = ["conda-forge"]
+name = "phase2"
+platforms = ["osx-arm64", "osx-64", "linux-64"]
+version = "0.1.0"
+
+[tasks]
+postinstall = "pip install --no-build-isolation --no-deps --disable-pip-version-check -e ."
+
+
+[dependencies]
+python = ">=3.12.7,<3.14"
+
+
+[host-dependencies]
+pip = "*"
+setuptools-scm = "*"
+setuptools = ">=61"
+
+[feature.dev.dependencies]
+mypy = "*"
+optuna = "*"
+pytest = ">=6"
+pytest-cov = "*"
+[feature.dev.tasks]
+coverage = "pytest tests --cov=campus_plan_bot --cov-report=xml --cov-report term-missing --color=yes"
+test = "pytest"
+
+[feature.lint.dependencies]
+pre-commit = "*"
+black = "*"
+mypy = "*"
+ruff = "*"
+prettier = "*"
+taplo = "*"
+typos = "*"
+docformatter = "*"
+pre-commit-hooks = "*"
+types-setuptools = "*"
+
+[feature.lint.tasks]
+pre-commit-install = "pre-commit install"
+pre-commit-run = "pre-commit run -a"
+
+[feature.build.dependencies]
+python-build = "*"
+
+[feature.build.tasks]
+build = "python -m build"
+
+[feature.py312.dependencies]
+python = "3.12.*"
+[feature.py313.dependencies]
+python = "3.13.*"
+
+[environments]
+default = ["dev"]
+py312 = ["py312", "dev"]
+py313 = ["py313", "dev"]
+
+lint = { features = ["lint"], no-default-feature = true }
+
+build = ["build"]

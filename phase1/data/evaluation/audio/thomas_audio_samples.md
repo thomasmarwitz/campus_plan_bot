@@ -101,4 +101,3 @@
 - [ ] (31) Ist die Ambulanz momentan zugänglich?
 - [ ] (22) Kann man derzeit in Gebäude 310?
 - [ ] (39) Ist die Versuchsanstalt des Kölreuter Instituts derzeit geöffnet?
-

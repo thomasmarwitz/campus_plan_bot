@@ -101,4 +101,3 @@
 - [ ] (36) Kann man gerade in Gebäude 05.20 rein?
 - [ ] (53) Kann man aktuell ins Institut für Neutronenphysik und Reaktortechnik?
 - [ ] (21) Ist das Gebäude 50.40 momentan offen?
-
