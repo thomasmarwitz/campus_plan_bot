@@ -61,7 +61,7 @@ def get_transcription_whisper(
 
 
 def main():
-    recorder = AudioRecorder(output_filename="out.wav")
+    recorder = AudioRecorder(filename="out.wav")
     recorder.record_audio()
     print("Transcribing audio...")
     english_transcription = get_transcription_whisper(
