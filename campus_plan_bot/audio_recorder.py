@@ -1,73 +1,75 @@
-import threading
-import wave
-
 import pyaudio
+import wave
+import threading
 from pynput import keyboard
 
-
 class AudioRecorder:
-    def __init__(self, output_filename: str):
-        self.format = pyaudio.paInt16  # Audio format
-        self.channels = 1  # Number of audio channels (mono needed for whisper)
-        self.rate = 44100  # Sample rate (oversampling compared to whisper input)
-        self.chunk = 1024  # Buffer size
-        self.output_filename = output_filename
-        self.audio = pyaudio.PyAudio()
+    def __init__(self, filename='out.wav', channels=1, rate=44100, chunk=1024):
+        self.filename = filename
+        self.channels = channels
+        self.rate = rate
+        self.chunk = chunk
         self.frames = [bytes]
-        self.is_recording = False
+        self.p = pyaudio.PyAudio()
+        self.recording = False
+        self.recording_thread = None
         self.listener = None
 
-    def record_audio(self):
-        self.is_recording = False
-        self.frames.clear()  # Clear any previous frames
+    def record(self):
+        """Start recording audio in a background thread."""
+        self.frames = []
 
-        # Start the keyboard listener
-        self.listener = keyboard.Listener(on_press=self.on_press)
-        self.listener.start()
-        print("Press the spacebar to start recording.")
+        
+        self.recording = True
+        stream = self.p.open(format=pyaudio.paInt16,
+                                   channels=self.channels,
+                                   rate=self.rate,
+                                   input=True,
+                                   frames_per_buffer=self.chunk)
+        print("Recording started...", end='')
 
-        # Wait for the listener to stop
-        self.listener.join()
-
-        self.audio.terminate()
-        return
-
-    def on_press(self, key):
-        if key == keyboard.Key.space and not self.is_recording:
-            self.is_recording = True
-            print("Recording ... press the spacebar again to stop.")
-            self.start_recording_thread()
-        elif key == keyboard.Key.space and self.is_recording:
-            self.is_recording = False
-            print("Stopped recording.")
-            self.stop_recording()
-            self.listener.stop()  # Stop the listener
-
-    def start_recording_thread(self):
-        recording_thread = threading.Thread(target=self.start_recording)
-        recording_thread.start()
-
-    def start_recording(self):
-        stream = self.audio.open(
-            format=self.format,
-            channels=self.channels,
-            rate=self.rate,
-            input=True,
-            frames_per_buffer=self.chunk,
-        )
-
-        while self.is_recording:
+        while self.recording:
             data = stream.read(self.chunk)
             self.frames.append(data)
 
         stream.stop_stream()
         stream.close()
+        self.p.terminate()
 
-    def stop_recording(self):
+    def end_recording(self):
+        """Stop recording audio and save to file."""
+        print("Recording stopped.")
+        self.recording = False
+
         # Save the recorded data as a .wav file
-        with wave.open(self.output_filename, "wb") as wf:
+        with wave.open(self.filename, 'wb') as wf:
             wf.setnchannels(self.channels)
-            wf.setsampwidth(self.audio.get_sample_size(self.format))
+            wf.setsampwidth(self.p.get_sample_size(pyaudio.paInt16))
             wf.setframerate(self.rate)
-            wf.writeframes(b"".join(self.frames))
-        self.frames.clear()  # Clear frames for the next recording
+            wf.writeframes(b''.join(self.frames))
+        self.frames.clear()
+
+    def start(self):
+        self.recording_thread = threading.Thread(target=self.record)
+        self.recording_thread.start()
+    
+    def stop(self):
+        self.end_recording()
+        self.recording_thread.join()
+
+    def on_press(self, key):
+        if key == keyboard.Key.space and not self.recording:
+            self.start()
+
+    def on_release(self, key):
+        if key == keyboard.Key.space:
+            self.stop()
+            return False
+
+    def record_audio(self):
+        self.listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release, suppress=True)
+        self.listener.start()
+        print("Press and hold the spacebar to record your input.")
+
+        # Wait for the listener to stop
+        self.listener.join()
