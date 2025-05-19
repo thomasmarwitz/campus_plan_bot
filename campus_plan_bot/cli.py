@@ -15,7 +15,6 @@ def chat():
             click.echo("Goodbye!")
             break
 
-        # Placeholder chatbot logic
         response = bot.query(user_input)
         click.echo(f"Bot: {response}")
 
