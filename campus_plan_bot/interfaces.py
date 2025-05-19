@@ -298,3 +298,11 @@ class OutputGenerator(Protocol):
             System message
         """
         ...
+
+
+class TextBot(Protocol):
+    """Protocol for the main bot interface."""
+
+    def query(self, query: str) -> str:
+        """Process a user query and return a response."""
+        ...
