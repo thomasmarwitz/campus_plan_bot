@@ -6,8 +6,9 @@ specification.
 """
 
 from collections.abc import Sequence
+from dataclasses import dataclass
 from datetime import datetime
-from enum import StrEnum
+from enum import Enum
 from typing import (
     Any,
     Protocol,
@@ -16,12 +17,13 @@ from typing import (
 
 
 # --- Common Types ---
-class Role(StrEnum):
+class Role(str, Enum):
     """Enum for user roles in the conversation."""
 
     USER = "user"
     ASSISTANT = "assistant"
     SYSTEM = "system"
+    CODE = "ipython"
 
 
 class MessageProtocol(Protocol):
@@ -40,12 +42,16 @@ class ConversationProtocol(Protocol):
     messages: Sequence[MessageProtocol]
 
 
-class RetrievedDocument(TypedDict):
+@dataclass
+class RetrievedDocument:
     """Represents a document retrieved from the database."""
 
     id: str
     content: str
     relevance_score: float
+
+    def __str__(self) -> str:
+        return f"Document ID: {self.id}, Relevance Score: {self.relevance_score}, Content: {self.content}"
 
 
 # --- Input Processing Protocols ---
@@ -115,10 +121,10 @@ class Database(Protocol):
 class RAGComponent(Protocol):
     """Protocol for the RAG (Retrieval-Augmented Generation) component."""
 
-    # Other things needed?
-    similarity_measure: SimilarityCalculator
-    embedding_generator: EmbeddingGenerator
-    database: Database
+    # ATM, don't require the rag component to have those attributes
+    # similarity_measure: SimilarityCalculator
+    # embedding_generator: EmbeddingGenerator
+    # database: Database
 
     def retrieve_context(self, query: str, limit: int = 5) -> list[RetrievedDocument]:
         """Retrieve relevant context based on a query string."""

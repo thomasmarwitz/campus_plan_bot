@@ -1,4 +1,5 @@
 from huggingface_hub import InferenceClient
+from loguru import logger
 
 from campus_plan_bot.interfaces import LLMClient, LLMRequestConfig
 
@@ -19,6 +20,9 @@ class InstituteClient(LLMClient):
                 temperature=0.3,
             )
         )
+        logger.debug(
+            f"InstituteClient initialized with default request config: {self.request_config}"
+        )
 
     def query(self, prompt: str) -> str:
         return self.generate(prompt, self.request_config)
@@ -28,4 +32,5 @@ class InstituteClient(LLMClient):
             prompt=prompt,
             temperature=config["temperature"],
             max_new_tokens=config["max_new_tokens"],
+            # return_full_text=True,
         )
