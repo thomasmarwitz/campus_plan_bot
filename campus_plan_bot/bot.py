@@ -125,7 +125,7 @@ class RAG(RAGComponent):
 
         # 1. check whether building number of type 50.34 (1-2 numbers).(1-2 numbers) do exactly match
         PATTERN = r"(\d{1,2}\.\d{1,2})"
-        mo = re.match(PATTERN, query)
+        mo = re.search(PATTERN, query)
         if mo:
             building_number = mo.group(0)
             logger.debug(f"Building number found: {building_number}")
@@ -147,7 +147,6 @@ class RAG(RAGComponent):
         if len(documents) < limit:
             top_k = limit - len(documents)
 
-            logger.debug("No building number found, using cosine similarity.")
             query_embedding = self.model.encode(query, convert_to_tensor=True)
             cos_scores = (
                 cos_sim(query_embedding, self.embeddings)[0].cpu().numpy()
@@ -162,7 +161,7 @@ class RAG(RAGComponent):
                         relevance_score=round(float(score), 3),
                     )
                 )
-            logger.debug(f"Found {len(documents)} documents using cosine similarity.")
+            logger.debug(f"Found {top_k} documents using cosine similarity.")
 
         logger.debug(
             "Retrieved "
