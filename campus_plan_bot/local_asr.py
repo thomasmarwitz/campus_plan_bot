@@ -22,7 +22,6 @@ whisper_model = WhisperForConditionalGeneration.from_pretrained(whisper_model_na
     device
 )
 
-
 def load_audio(audio_path):
     """Load the audio file & convert to 16,000 sampling rate."""
     # load our wav file
@@ -49,9 +48,13 @@ def get_transcription_whisper(
     forced_decoder_ids = processor.get_decoder_prompt_ids(
         language=language, task="transcribe"
     )
+
+    # NOTE: this attention mask is experimental to silence warning - check that giving all ones does not mess up model prediction
+    attention_mask = torch.ones(input_features.shape, dtype=torch.long)
+
     # generate the transcription
     predicted_ids = model.generate(
-        input_features, forced_decoder_ids=forced_decoder_ids
+        input_features, attention_mask=attention_mask, forced_decoder_ids=forced_decoder_ids
     )
     # decode the predicted ids
     transcription = processor.batch_decode(
@@ -64,14 +67,14 @@ def main():
     recorder = AudioRecorder(filename="out.wav")
     recorder.record_audio()
     print("Transcribing audio...")
-    english_transcription = get_transcription_whisper(
+    transcription = get_transcription_whisper(
         "out.wav",
         whisper_model,
         whisper_processor,
         language="german",
         skip_special_tokens=True,
     )
-    print("German transcription:", english_transcription)
+    print("German transcription:", transcription)
 
 
 if __name__ == "__main__":

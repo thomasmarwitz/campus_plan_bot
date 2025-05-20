@@ -29,7 +29,7 @@ class AudioRecorder:
             input=True,
             frames_per_buffer=self.chunk,
         )
-        print("Recording started...", end="")
+        print("Recording started...", end="", flush=True)
 
         while self.recording:
             data = stream.read(self.chunk)
@@ -78,3 +78,7 @@ class AudioRecorder:
 
         # Wait for the listener to stop
         self.listener.join()
+
+if __name__ == "__main__":
+    recorder = AudioRecorder(filename="out.wav")
+    recorder.record_audio()
