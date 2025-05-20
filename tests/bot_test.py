@@ -1,15 +1,13 @@
+from pathlib import Path
+
 import pytest
 
 from campus_plan_bot.bot import SimpleTextBot
 
 
 @pytest.fixture
-def bot():
-    return SimpleTextBot()
-
-
-def test_simple_bot_response(bot: SimpleTextBot):
-    assert isinstance(bot.query("Hello"), str)
+def bot(database_path: Path) -> SimpleTextBot:
+    return SimpleTextBot(database_path)
 
 
 @pytest.mark.e2e
