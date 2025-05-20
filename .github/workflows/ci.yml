@@ -39,7 +39,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest]
-        env: ["py39"]
+        env: ["py311"]
     steps:
       - name: Checkout branch
         uses: actions/checkout@v4

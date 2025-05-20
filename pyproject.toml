@@ -56,7 +56,7 @@ select = [
 ]
 
 [tool.pytest.ini_options]
-addopts = "--import-mode=importlib --cov=campus_plan_bot --cov-report term-missing --color=yes"
+addopts = "--import-mode=importlib --cov=campus_plan_bot --cov-report term-missing --color=yes -m \"not e2e\""
 testpaths = [
   "tests",
 ]

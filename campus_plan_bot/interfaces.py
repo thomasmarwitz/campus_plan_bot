@@ -8,7 +8,7 @@ specification.
 from collections.abc import Sequence
 from dataclasses import dataclass
 from datetime import datetime
-from enum import Enum
+from enum import StrEnum
 from typing import (
     Any,
     Protocol,
@@ -17,7 +17,7 @@ from typing import (
 
 
 # --- Common Types ---
-class Role(str, Enum):
+class Role(StrEnum):
     """Enum for user roles in the conversation."""
 
     USER = "user"
