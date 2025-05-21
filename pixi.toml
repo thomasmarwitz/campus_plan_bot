@@ -15,6 +15,10 @@ torchaudio = ">=2.5.1,<3"
 pynput = ">=1.8.1,<2"
 transformers = ">=4.51.3,<5"
 portaudio = ">=19.7.0,<20"
+click = ">=8.1.8,<9"
+huggingface_hub = ">=0.31.2,<0.32"
+loguru = ">=0.7.3,<0.8"
+sentence-transformers = ">=4.1.0,<5"
 
 
 [host-dependencies]
@@ -55,9 +59,12 @@ build = "python -m build"
 
 [feature.py39.dependencies]
 python = "3.9.*"
+[feature.py311.dependencies]
+python = "3.11.*"
 
 [environments]
 default = ["dev"]
+py311 = ["py311", "dev"]
 py39 = ["py39", "dev"]
 
 lint = { features = ["lint"], no-default-feature = true }

@@ -22,6 +22,7 @@ whisper_model = WhisperForConditionalGeneration.from_pretrained(whisper_model_na
     device
 )
 
+
 def load_audio(audio_path):
     """Load the audio file & convert to 16,000 sampling rate."""
     # load our wav file
@@ -54,7 +55,9 @@ def get_transcription_whisper(
 
     # generate the transcription
     predicted_ids = model.generate(
-        input_features, attention_mask=attention_mask, forced_decoder_ids=forced_decoder_ids
+        input_features,
+        attention_mask=attention_mask,
+        forced_decoder_ids=forced_decoder_ids,
     )
     # decode the predicted ids
     transcription = processor.batch_decode(

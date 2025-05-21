@@ -79,6 +79,7 @@ class AudioRecorder:
         # Wait for the listener to stop
         self.listener.join()
 
+
 if __name__ == "__main__":
     recorder = AudioRecorder(filename="out.wav")
     recorder.record_audio()

@@ -8,6 +8,21 @@ This installs `campus_plan_bot` as an editable Python project to enable imports 
 pixi run postinstall
 ```
 
+## Testing
+
+### `e2e` tests
+
+End to end tests are not executed in the CI to avoid putting to much pressure on the LLM endpoint.
+If you want to run those tests locally, you should execute the following:
+
+```bash
+pixi run pytest -m "e2e"
+```
+
+> [!WARNING]
+> This is subject to change. A more robust test setup should be adapted at some point.
+> Otherwise, the risk of simply forgetting to run those tests is high.
+
 ## Pre-commit
 
 We use [pre-commit](https://pre-commit.com/) to add hooks to our repo, they will run on every commit. Installation via:
