@@ -1,4 +1,4 @@
-id,title,category,positionList,url,rev_type,rev_name,rev_display_name,det_opening_hours,det_wheelchair,det_wheelchair:description
+id,gebäudenummer,kategorie,koordinaten,webseite,funktion,name,adresse,oeffnungszeiten,rollstuhlgerechtigkeit,rollstuhlbeschreibung
 1,Egon-Eiermann-Hörsaal,Hörsaal,"['49.01097', '8.41095']",,,Architektur,"Architektur, 7, Englerstraße, Innenstadt-Ost Nordöstlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-Württemberg, 76131, Deutschland",,yes,Rollstuhlrampe auf der Rückseite des Gebäudes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG nähe Rampe
 2,Sport-Hörsaal,Hörsaal,"['49.01580', '8.41636']",,,,"40.40, 15, Engler-Bunte-Ring, Innenstadt-Ost Nordöstlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-Württemberg, 76131, Deutschland",,yes,
 3,Hochspannungstechnik-Hörsaal,Hörsaal,"['49.01197', '8.41272']",,,Hochspannungstechnik,"Hochspannungstechnik, 11b, Engesserstraße, Innenstadt-Ost Nordöstlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-Württemberg, 76131, Deutschland",,,
