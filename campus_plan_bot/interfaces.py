@@ -26,6 +26,14 @@ class Role(StrEnum):
     CODE = "ipython"
 
 
+class InputMethods(StrEnum):
+    """Enum for input types."""
+
+    ASR = "asr"
+    LOCAL_ASR = "local_asr"
+    TEXT = "text"
+
+
 class MessageProtocol(Protocol):
     """Protocol for a message from the user."""
 
