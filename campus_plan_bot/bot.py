@@ -118,7 +118,7 @@ class RAG(RAGComponent):
     @classmethod
     def from_df(cls, df: pd.DataFrame) -> "RAG":
         """Create a RAG instance from a DataFrame."""
-        embedding_data = df["title"].tolist()
+        embedding_data = df["identifikator"].tolist()
         return cls(embedding_data, df)
 
     def retrieve_context(self, query: str, limit: int = 5) -> list[RetrievedDocument]:
@@ -159,7 +159,7 @@ class RAG(RAGComponent):
             for score, index in zip(cos_scores[top_k_indices], top_k_indices):
                 documents.append(
                     RetrievedDocument(
-                        id=self.database.loc[index]["title"],
+                        id=self.database.loc[index]["identifikator"],
                         content=str(self.database.iloc[index].to_dict()),
                         relevance_score=round(float(score), 3),
                     )
