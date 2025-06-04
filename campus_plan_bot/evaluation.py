@@ -154,7 +154,7 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
         include_output=True,
         include_expected_output=True,
     )
-    with open("report.md", "w") as f:
+    with open("report.txt", "w") as f:
         table = report.console_table(
             include_input=True,
             include_output=True,
