@@ -66,3 +66,4 @@ testpaths = [
 files.extend-exclude = [
   "phase1/"
 ]
+default.extend-ignore-re = ["controll"]

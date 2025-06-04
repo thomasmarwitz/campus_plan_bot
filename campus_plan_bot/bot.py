@@ -1,3 +1,4 @@
+import os
 import re
 from collections.abc import Sequence
 from datetime import datetime
@@ -98,6 +99,8 @@ class RAG(RAGComponent):
     MODEL = "all-MiniLM-L6-v2"
 
     def __init__(self, embedding_data: list, database: pd.DataFrame):
+        os.environ["TOKENIZERS_PARALLELISM"] = "true"
+
         self.embedding_data = embedding_data
         self.database = database
         logger.debug(f"Loading {self.MODEL} model...")

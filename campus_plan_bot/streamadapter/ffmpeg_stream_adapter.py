@@ -2,7 +2,7 @@ import subprocess
 import time
 from typing import Any, Optional, cast
 
-from streamadapter.inputStreamAdapter import BaseAdapter
+from streamadapter.input_stream_adapter import BaseAdapter
 
 
 class FfmpegStream(BaseAdapter):
@@ -45,7 +45,7 @@ class FfmpegStream(BaseAdapter):
                 # be less verbose (but still show stats)
                 "-hide_banner",
                 "-loglevel",
-                "warning",  # "-stats",
+                "error",  # "-stats",
             ]
             if len(self.pre_opt) > 0:
                 args += self.pre_opt
@@ -66,6 +66,8 @@ class FfmpegStream(BaseAdapter):
                 "0:a",
                 "-ac",
                 "1",
+                "-channel_layout",
+                "mono",
                 # adjust volume
                 "-filter:a",
                 f"volume={self.volume}",

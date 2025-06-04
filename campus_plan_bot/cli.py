@@ -7,6 +7,7 @@ from loguru import logger
 from campus_plan_bot.bot import SimpleTextBot
 from campus_plan_bot.interfaces import InputMethods, UserInputSource
 from campus_plan_bot.local_asr import LocalASR
+from campus_plan_bot.remote_asr import RemoteASR
 from campus_plan_bot.text_input import TextInput
 
 database_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
@@ -21,7 +22,7 @@ database_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
 )
 @click.option(
     "--input",
-    default=InputMethods.TEXT,
+    default="asr",
     help="Define the method to receive user input",
     type=click.Choice([input.value for input in InputMethods]),
 )
@@ -60,10 +61,8 @@ def get_input_method(input_choice: str) -> UserInputSource:
             click.echo("Press 'q' to quit.")
             return LocalASR()
         case InputMethods.ASR.value:
-            click.secho(
-                "\nASR input is not supported yet. Defaulting to text input", fg="red"
-            )
-            return TextInput()
+            click.echo("Press 'q' to quit.")
+            return RemoteASR()
         case _:
             click.secho(
                 f"\nUnknown input method: {input_choice}. Defaulting to text input",
