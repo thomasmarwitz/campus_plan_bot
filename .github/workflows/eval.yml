@@ -1,6 +1,7 @@
 name: Evaluation
 on:
   workflow_dispatch:
+  push:
 
 # Automatically stop old builds on the same branch/PR
 concurrency:
