@@ -1,14 +1,13 @@
 import json
-from typing import Callable, Protocol
 from pathlib import Path
 
+from bert_score import score
+from loguru import logger
 from pydantic import BaseModel
+from pydantic_evals import Case, Dataset
+from pydantic_evals.evaluators import Evaluator, EvaluatorContext
 
 from campus_plan_bot.bot import SimpleTextBot
-from loguru import logger
-from campus_plan_bot.interfaces import TextBot
-
-from bert_score import score
 
 
 class Turn(BaseModel):
@@ -32,30 +31,24 @@ class TestDataSet:
         data = json.loads(self.database_path.read_text())
         return [TestCase.model_validate(test_case) for test_case in data]
 
-
-class EvalFunc(Protocol):
-    def __call__(self, response: str, expected_response: str) -> float: ...
-
-
-class Evaluator:
-
-    def __init__(
-        self,
-        test_data_set: TestDataSet,
-        bot_factory: Callable[[], TextBot],
-        eval_func: EvalFunc,
-    ):
-        self.test_data_set = test_data_set
-        self.bot_factory = bot_factory
-        self.eval_func = eval_func
-
-    def evaluate(self):
-        for test_case in self.test_data_set.test_cases:
-            bot = self.bot_factory()
-            for turn in test_case.prompts:
-                response = bot.query(turn.prompt)
-                score = self.eval_func(response, turn)
-                print(f"Score: {score}")
+    def to_cases(self) -> list[Case]:
+        """Convert test cases to pydantic-evals Cases, keeping multi-turn
+        conversations as single cases."""
+        cases = []
+        for test_idx, test_case in enumerate(self.test_cases):
+            case = Case(
+                name=f"test_case_{test_idx+1}",
+                inputs=[turn.prompt for turn in test_case.prompts],
+                expected_output=[turn.response for turn in test_case.prompts],
+                metadata={
+                    "test_case_index": test_idx,
+                    "input_data": [turn.input_data for turn in test_case.prompts],
+                    "response_data": [turn.response_data for turn in test_case.prompts],
+                    "num_turns": test_case.num_turns,
+                },
+            )
+            cases.append(case)
+        return cases
 
 
 test_data_path = (
@@ -64,34 +57,71 @@ test_data_path = (
 data_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
 
 
-def eval_func(response: str, turn: Turn) -> float:
-    logger.debug(f"Question: {turn.prompt}")
-    logger.debug(f"Response: {response}")
-    logger.debug(f"Expected response: {turn.response}")
-    return 1.0 if response.lower() == turn.response.lower() else 0.0
-
-
-class EvalBertScore(EvalFunc):
+class BertScoreEvaluator(Evaluator[list[str], list[str]]):
+    """Evaluator that uses BertScore for comparing responses in multi-turn
+    conversations."""
 
     def __init__(self):
-        # do one example score to load the model
-        logger.debug("Loading BertScore model...")
-        P, R, F = score(["Ich bin ein Test"], ["Ich bin ein Test"], lang="de")
-        logger.debug(f"BertScore metrics for example are P: {P}, R: {R}, F: {F}")
+        """Initialize with path to data needed for bot creation."""
+        # Load BertScore model once during initialization
+        logger.debug(
+            f"Loading Bertscore model for {self.__class__.__name__} evaluator..."
+        )
+        score(["Ich bin ein Test"], ["Ich bin ein Test"], lang="de")
+        logger.debug("Bertscore model loaded successfully")
 
-    def __call__(self, response: str, turn: Turn) -> float:
-        logger.info(f"Question: {turn.prompt}")
-        logger.info(f"Response: {response}")
-        logger.info(f"Expected response: {turn.response}")
+    def evaluate(self, ctx: EvaluatorContext[list[str], list[str]]) -> float:
+        """Evaluate a multi-turn conversation using BertScore.
 
-        P, R, F = score([response], [turn.response], lang="de")
-        logger.info(f"P: {P}, R: {R}, F: {F}")
-        return F.item()
+        Creates a fresh bot instance for each case and evaluates each
+        turn's response. Returns the average BertScore F1 score across
+        all turns.
+        """
+        assert isinstance(ctx.output, list) and isinstance(
+            ctx.expected_output, list
+        ), "Output and expected output must be lists"
+
+        assert len(ctx.output) == len(
+            ctx.expected_output
+        ), "Output and expected output must have the same length"
+
+        return self.score(ctx.output, ctx.expected_output)
+
+    def score(self, output: list[str], expected_output: list[str]) -> float: ...  # type: ignore[empty-body]
+
+
+class FScore(BertScoreEvaluator):
+    def score(self, output: list[str], expected_output: list[str]) -> float:
+        _, _, F = score(output, expected_output, lang="de")
+        return F.mean()
+
+
+class Precision(BertScoreEvaluator):
+    def score(self, output: list[str], expected_output: list[str]) -> float:
+        P, _, _ = score(output, expected_output, lang="de")
+        return P.mean()
+
+
+class Recall(BertScoreEvaluator):
+    def score(self, output: list[str], expected_output: list[str]) -> float:
+        _, R, _ = score(output, expected_output, lang="de")
+        return R.mean()
+
+
+def evaluate_bot(test_data_path: Path, data_path: Path) -> None:
+    """Run evaluation using pydantic-evals framework."""
+    test_data = TestDataSet(test_data_path, limit=2)
+    cases = test_data.to_cases()
+
+    async def bot_runner(prompts: list[str]) -> list[str]:
+        bot = SimpleTextBot(data_path)
+        return [bot.query(prompt) for prompt in prompts]
+
+    dataset = Dataset(cases=cases, evaluators=[FScore(), Precision(), Recall()])
+
+    report = dataset.evaluate_sync(bot_runner)
+    report.print(include_input=True, include_output=True, include_expected_output=True)
 
 
 if __name__ == "__main__":
-    test_data_set = TestDataSet(test_data_path, limit=1)
-    evaluator = Evaluator(
-        test_data_set, lambda: SimpleTextBot(data_path), EvalBertScore()
-    )
-    # evaluator.evaluate()
+    evaluate_bot(test_data_path, data_path)
