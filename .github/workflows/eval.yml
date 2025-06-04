@@ -28,6 +28,9 @@ jobs:
         uses: prefix-dev/setup-pixi@v0.8.8
         with:
           environments: ${{ matrix.env }}
+      - name: Postinstall
+        run: |
+          pixi run -e ${{ matrix.env }} postinstall
       - name: Run evaluation
         # outputs to report.md
         run: |
