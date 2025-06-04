@@ -1,11 +1,14 @@
 import json
+from io import StringIO
 from pathlib import Path
 
+import click
 from bert_score import score
 from loguru import logger
 from pydantic import BaseModel
 from pydantic_evals import Case, Dataset
 from pydantic_evals.evaluators import Evaluator, EvaluatorContext
+from rich.console import Console
 
 from campus_plan_bot.bot import SimpleTextBot
 
@@ -37,7 +40,7 @@ class TestDataSet:
         cases = []
         for test_idx, test_case in enumerate(self.test_cases):
             case = Case(
-                name=f"test_case_{test_idx+1}",
+                name=f"{self.database_path.stem}_{test_idx+1}",
                 inputs=[turn.prompt for turn in test_case.prompts],
                 expected_output=[turn.response for turn in test_case.prompts],
                 metadata={
@@ -45,15 +48,14 @@ class TestDataSet:
                     "input_data": [turn.input_data for turn in test_case.prompts],
                     "response_data": [turn.response_data for turn in test_case.prompts],
                     "num_turns": test_case.num_turns,
+                    "type": self.database_path.stem,
                 },
             )
             cases.append(case)
         return cases
 
 
-test_data_path = (
-    Path("phase1") / "data" / "evaluation" / "single_turn" / "building_category.json"
-)
+single_turn_test_data = Path("phase1") / "data" / "evaluation" / "single_turn"
 data_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
 
 
@@ -108,10 +110,37 @@ class Recall(BertScoreEvaluator):
         return R.mean()
 
 
-def evaluate_bot(test_data_path: Path, data_path: Path) -> None:
+@click.command()
+@click.option(
+    "--test-data",
+    "test_data_path",
+    type=click.Path(exists=True, path_type=Path),
+    help="Path to test data directory",
+    default=single_turn_test_data,
+)
+@click.option(
+    "--data",
+    "data_path",
+    type=click.Path(exists=True, path_type=Path),
+    default=data_path,
+    help="Path to bot data directory",
+)
+@click.option(
+    "--limit",
+    type=int,
+    default=1,
+    help="Limit number of test cases (default: 1)",
+)
+def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
     """Run evaluation using pydantic-evals framework."""
-    test_data = TestDataSet(test_data_path, limit=2)
-    cases = test_data.to_cases()
+
+    cases = [
+        case
+        for file in test_data_path.glob("*synthetic.json")
+        for case in TestDataSet(file, limit=limit).to_cases()
+    ]
+
+    logger.info(f"Evaluating {len(cases)} cases")
 
     async def bot_runner(prompts: list[str]) -> list[str]:
         bot = SimpleTextBot(data_path)
@@ -120,8 +149,21 @@ def evaluate_bot(test_data_path: Path, data_path: Path) -> None:
     dataset = Dataset(cases=cases, evaluators=[FScore(), Precision(), Recall()])
 
     report = dataset.evaluate_sync(bot_runner)
-    report.print(include_input=True, include_output=True, include_expected_output=True)
+    report.print(
+        include_input=True,
+        include_output=True,
+        include_expected_output=True,
+    )
+    with open("report.md", "w") as f:
+        table = report.console_table(
+            include_input=True,
+            include_output=True,
+            include_expected_output=True,
+        )
+        io_file = StringIO()
+        Console(file=io_file).print(table)
+        f.write(io_file.getvalue())
 
 
 if __name__ == "__main__":
-    evaluate_bot(test_data_path, data_path)
+    evaluate_bot()
