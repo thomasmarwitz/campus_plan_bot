@@ -1,9 +1,9 @@
 import click
 import torch
 import torchaudio
-from audio_recorder import AudioRecorder
 from transformers import WhisperForConditionalGeneration, WhisperProcessor
 
+from campus_plan_bot.audio_recorder import AudioRecorder
 from campus_plan_bot.interfaces import AutomaticSpeechRecognition
 
 

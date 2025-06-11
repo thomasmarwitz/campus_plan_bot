@@ -8,6 +8,7 @@ from campus_plan_bot.bot import SimpleTextBot
 from campus_plan_bot.interfaces import InputMethods, UserInputSource
 from campus_plan_bot.local_asr import LocalASR
 from campus_plan_bot.remote_asr import RemoteASR
+from campus_plan_bot.settings import Settings
 from campus_plan_bot.text_input import TextInput
 
 database_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
@@ -26,10 +27,18 @@ database_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
     help="Define the method to receive user input",
     type=click.Choice([input.value for input in InputMethods]),
 )
-def chat(log_level: str, input: str):
+@click.option(
+    "--token",
+    help="Update the input token used for authentication with remote servers",
+    type=str,
+)
+def chat(log_level: str, input: str, token: str):
     """Simple CLI chatbot interface."""
     logger.remove()
     logger.add(sys.stderr, level=log_level.upper())
+
+    if token is not None:
+        Settings().update_setting("token", token)
 
     bot = SimpleTextBot(database_path)
 

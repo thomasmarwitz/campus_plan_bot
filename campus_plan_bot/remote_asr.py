@@ -8,10 +8,12 @@ from threading import Thread
 
 import click
 import requests
-from audio_recorder import AudioRecorder
+from loguru import logger
 from sseclient import SSEClient
 
+from campus_plan_bot.audio_recorder import AudioRecorder
 from campus_plan_bot.interfaces import AutomaticSpeechRecognition
+from campus_plan_bot.settings import Settings
 
 
 class RemoteASR(AutomaticSpeechRecognition):
@@ -27,10 +29,12 @@ class RemoteASR(AutomaticSpeechRecognition):
         )
         input = args.ffmpeg_input
         if input is None:
-            print("The ffmpeg backend requires an url/file via the '-f' parameter")
+            logger.warning(
+                "The ffmpeg backend requires an url/file via the '-f' parameter"
+            )
             exit(1)
         elif not os.path.isfile(input) and not input.startswith("rtsp"):
-            print("File", input, "does not exist")
+            logger.warning("File", input, "does not exist")
             exit(1)
 
         stream_adapter.set_input(input)
@@ -46,7 +50,7 @@ class RemoteASR(AutomaticSpeechRecognition):
             cookies={"_forward_auth": token},
         )
         if info.status_code != 200:
-            print("ERROR in starting session")
+            logger.error("ERROR in starting session")
             sys.exit(1)
 
     SAMPLE_RATE = 16000  # 16 kHz
@@ -85,12 +89,11 @@ class RemoteASR(AutomaticSpeechRecognition):
                     cookies={"_forward_auth": token},
                 )
             except requests.exceptions.ConnectionError:
-                print("Sending audio failed, retrying...")
+                logger.warning("Sending audio failed, retrying...")
                 continue
             break
         if res.status_code != 200:
-            print(res.status_code, res.text)
-            print("ERROR in sending audio")
+            logger.error(f"ERROR in sending audio. Status code: {res.status_code}")
             sys.exit(1)
 
         return e
@@ -103,8 +106,9 @@ class RemoteASR(AutomaticSpeechRecognition):
             cookies={"_forward_auth": token},
         )
         if res.status_code != 200:
-            print(res.status_code, res.text)
-            print("ERROR in sending END message")
+            logger.error(
+                f"ERROR in sending END message. Status code: {res.status_code}"
+            )
             sys.exit(1)
 
     def send_session(self, url, sessionID, streamID, audio_source, timeout, api, token):
@@ -142,7 +146,7 @@ class RemoteASR(AutomaticSpeechRecognition):
             try:
                 data = json.loads(msg.data)
             except json.decoder.JSONDecodeError:
-                print(
+                logger.warning(
                     "WARNING: json.decoder.JSONDecodeError (this may happen when running tts system but no video generation)"
                 )
                 continue
@@ -231,14 +235,19 @@ class RemoteASR(AutomaticSpeechRecognition):
         )
         if res.status_code != 200:
             if res.status_code == 401:
-                print(
-                    "You are not authorized. Either authenticate with --url https://$username:$password@$server or with --token $token where you get the token from "
-                    + args.url
-                    + "/gettoken"
+                logger.error(
+                    "You are not authorised for ASR. To use the remote ASR option update to a valid token by using the --token argument"
                 )
             else:
-                print(res.status_code, res.text)
-                print("ERROR in requesting default graph for ASR")
+                logger.error(
+                    f"ERROR in requesting default graph for ASR. Status code: {res.status_code}"
+                )
+            sys.exit(1)
+
+        if "Log in to dex" in res.text:
+            logger.error(
+                "You are not authorised for ASR. To use the remote ASR option update to a valid token by using the --token argument"
+            )
             sys.exit(1)
         sessionID, streamID = res.text.split()
 
@@ -294,7 +303,7 @@ class RemoteASR(AutomaticSpeechRecognition):
 
         args = argparse.Namespace(
             url="https://lt2srv-backup.iar.kit.edu",
-            token="L3RAIM2vbTiTrGtIzt4Z5c2JFCZLCkboHOOAuPsba48=|1749644383|uolrr@student.kit.edu",
+            token=Settings().load_settings("token"),
             input="ffmpeg",
             print=-1,
             output_file=None,
