@@ -7,10 +7,19 @@ from bert_score import score
 from loguru import logger
 from pydantic import BaseModel
 from pydantic_evals import Case, Dataset
-from pydantic_evals.evaluators import Evaluator, EvaluatorContext
+from pydantic_evals.evaluators import Evaluator, EvaluatorContext, LLMJudge
 from rich.console import Console
 
 from campus_plan_bot.bot import SimpleTextBot
+from campus_plan_bot.clients.institute_client import model as institute_model
+
+LLM_JUDGE = LLMJudge(
+    rubric="Output should match expected output in meaning. It is mandatory the information is conveyed instead of listing excuses. The chatbot has access to the underlying data if the expected output also contains information. Output should be concise and to the point.",
+    model=institute_model,
+    include_input=True,
+    include_expected_output=True,
+    score={"evaluation_name": "LLM_Judge", "include_reason": True},
+)
 
 
 class Turn(BaseModel):
@@ -138,7 +147,7 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
         case
         for file in test_data_path.glob("*synthetic.json")
         for case in TestDataSet(file, limit=limit).to_cases()
-    ]
+    ][:1]
 
     logger.info(f"Evaluating {len(cases)} cases")
 
@@ -146,13 +155,17 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
         bot = SimpleTextBot(data_path)
         return [bot.query(prompt) for prompt in prompts]
 
-    dataset = Dataset(cases=cases, evaluators=[FScore(), Precision(), Recall()])
+    dataset = Dataset(
+        cases=cases, evaluators=[FScore(), Precision(), Recall(), LLM_JUDGE]
+    )
 
     report = dataset.evaluate_sync(bot_runner)
     report.print(
         include_input=True,
         include_output=True,
         include_expected_output=True,
+        include_metadata=True,
+        # Not working:label_configs={"LLM_Judge": {"value_formatter": lambda x: x["reason"]}},
     )
     with open("report.txt", "w") as f:
         table = report.console_table(
