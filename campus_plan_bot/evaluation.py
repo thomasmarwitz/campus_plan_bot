@@ -1,5 +1,4 @@
 import json
-from io import StringIO
 from pathlib import Path
 
 import click
@@ -8,10 +7,10 @@ from loguru import logger
 from pydantic import BaseModel
 from pydantic_evals import Case, Dataset
 from pydantic_evals.evaluators import Evaluator, EvaluatorContext, LLMJudge
-from rich.console import Console
 
 from campus_plan_bot.bot import RAG, SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
+from campus_plan_bot.reporting import report_to_df
 
 LLM_JUDGE = LLMJudge(
     rubric="Output should match expected output in meaning. It is mandatory the information is conveyed instead of listing excuses. The chatbot has access to the underlying data if the expected output also contains information. Reasoning should be concise and to the point. Format your output as a JSON object with valid quotation marks.",
@@ -29,6 +28,7 @@ class Turn(BaseModel):
     response_data: str | None
     prompt: str
     response: str
+    reformulated_prompt: str | None = None
 
 
 class TestCase(BaseModel):
@@ -151,7 +151,7 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
         case
         for file in test_data_path.glob("*synthetic.json")
         for case in TestDataSet(file, limit=limit).to_cases()
-    ]
+    ][:1]
 
     logger.info(f"Evaluating {len(cases)} cases")
 
@@ -166,22 +166,8 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
     )
 
     report = dataset.evaluate_sync(bot_runner)
-    report.print(
-        include_input=True,
-        include_output=True,
-        include_expected_output=True,
-        include_metadata=False,
-        # Not working:label_configs={"LLM_Judge": {"value_formatter": lambda x: x["reason"]}},
-    )
-    with open("report.txt", "w") as f:
-        table = report.console_table(
-            include_input=True,
-            include_output=True,
-            include_expected_output=True,
-        )
-        io_file = StringIO()
-        Console(file=io_file).print(table, width=2000)
-        f.write(io_file.getvalue())
+    df = report_to_df(report)
+    df.to_csv("evaluation_results.csv", index=False)
 
 
 if __name__ == "__main__":

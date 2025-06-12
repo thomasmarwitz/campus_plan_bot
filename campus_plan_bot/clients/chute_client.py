@@ -215,8 +215,6 @@ class ChuteModel(Model):
         message = choice.get("message", {})
         content: str = message.get("content")
 
-        print("content", content)
-
         if not content:
             raise UnexpectedModelBehavior("No content in Chute API response")
 
