@@ -50,7 +50,9 @@ def _messages_to_chute_format(
                     output_messages.append({"role": "system", "content": part.content})
                 elif part.part_kind == "user-prompt":
                     # Assuming text content for simplicity
-                    output_messages.append({"role": "user", "content": part.content})
+                    output_messages.append(
+                        {"role": "user", "content": str(part.content)}
+                    )
                 # TODO: Handle other part kinds like tool-return, retry-prompt
     return output_messages
 
@@ -117,7 +119,8 @@ class ChuteStreamedResponse(StreamedResponse):
                     else:
                         # Append to the existing text part
                         yield PartDeltaEvent(
-                            index=part_index - 1, delta=TextPartDelta(content_delta=content)
+                            index=part_index - 1,
+                            delta=TextPartDelta(content_delta=content),
                         )
 
             except json.JSONDecodeError:
@@ -135,9 +138,9 @@ class ChuteModel(Model):
         timeout: int = 120,
     ):
         self._model = model
-        self.api_token = api_token or os.getenv("CHUTES_KEY")
-        if not self.api_token:
-            raise ValueError("Chute API token is required.")
+        tok = api_token or os.getenv("CHUTES_KEY")
+        assert tok, "CHUTES_KEY is not set"
+        self.api_token = tok
         self.timeout = timeout
 
     @property
@@ -274,4 +277,4 @@ async def main():
 if __name__ == "__main__":
     # Ensure you have set the CHUTES_KEY environment variable
     # e.g., export CHUTES_KEY='your-api-key'
-    asyncio.run(main()) 
+    asyncio.run(main())
