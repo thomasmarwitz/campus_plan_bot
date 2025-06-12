@@ -10,7 +10,9 @@ from campus_plan_bot.interfaces import AutomaticSpeechRecognition
 class LocalASR(AutomaticSpeechRecognition):
     """Creating transcript from audio file with local whisper model."""
 
-    def __init__(self):
+    def __init__(self, file):
+
+        super().__init__(file)
 
         self.device = "cuda:0" if torch.cuda.is_available() else "cpu"
         """Several options for local whisper models with associated storage
@@ -79,6 +81,8 @@ class LocalASR(AutomaticSpeechRecognition):
     def transcribe(self, audio_path: str) -> str:
         """Create transcript for specified audio file."""
 
+        print("Transcribing ...")
+
         audio = self.load_audio(audio_path)
 
         transcript = self.whisper_transcription(
@@ -93,20 +97,25 @@ class LocalASR(AutomaticSpeechRecognition):
     def get_input(self) -> str:
         """Get audio input from the user and return the transcript."""
 
-        filename = "campus_plan_bot/out.wav"
-        recorder = AudioRecorder(filename)
-
-        interrupt = recorder.record_audio()
-        if interrupt:
-            return "exit"
+        if self.file_path is not None:
+            transcript = self.transcribe(self.file_path)
+            self.file_path = None
         else:
-            transcript = self.transcribe(filename).lstrip()
-            print("\033[A                                                  \033[A")
-            click.secho("You: ", fg="blue", nl=False)
-            click.echo(f"{transcript}")
-            return transcript
+            filename = "campus_plan_bot/out.wav"
+            recorder = AudioRecorder(filename)
+
+            interrupt = recorder.record_audio()
+            if interrupt:
+                return "exit"
+            else:
+                transcript = self.transcribe(filename).lstrip()
+
+        print("\033[A                                                  \033[A")
+        click.secho("You: ", fg="blue", nl=False)
+        click.echo(f"{transcript}")
+        return transcript
 
 
 if __name__ == "__main__":
-    asr = LocalASR()
+    asr = LocalASR(None)
     text = asr.get_input()

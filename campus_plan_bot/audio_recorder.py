@@ -47,7 +47,7 @@ class AudioRecorder:
 
     def end_recording(self):
         """Stop recording audio and save to file."""
-        print("Recording stopped. Transcribing...")
+        print("Recording stopped. ", end="")
         self.recording = False
 
         # Save the recorded data as a .wav file

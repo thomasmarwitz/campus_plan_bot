@@ -11,6 +11,7 @@ from datetime import datetime
 from enum import StrEnum
 from typing import (
     Any,
+    Optional,
     Protocol,
     TypedDict,
 )
@@ -79,6 +80,11 @@ class UserInputSource(Protocol):
 
 class AutomaticSpeechRecognition(UserInputSource, Protocol):
     """Protocol for automatic speech recognition component."""
+
+    file_path: Optional[str]
+
+    def __init__(self, file=None):
+        self.file_path = file
 
     # We'll probably need async / threads to handle the provided ASR API
     # but maybe the interface can still be synchronous

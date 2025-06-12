@@ -23,22 +23,34 @@ database_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
 )
 @click.option(
     "--input",
+    "-i",
     default="asr",
     help="Define the method to receive user input",
     type=click.Choice([input.value for input in InputMethods]),
 )
 @click.option(
     "--token",
+    "-t",
     help="Update the input token used for authentication with remote servers",
     type=str,
 )
-def chat(log_level: str, input: str, token: str):
+@click.option(
+    "--file",
+    "-f",
+    help="A file containing a voice recording used as ASR input",
+    type=str,
+)
+def chat(log_level: str, input: str, token: str, file: str):
     """Simple CLI chatbot interface."""
     logger.remove()
     logger.add(sys.stderr, level=log_level.upper())
 
     if token is not None:
         Settings().update_setting("token", token)
+
+    if file is not None and input == "text":
+        logger.warning("You need to use an ASR input option when providing file inputs")
+        exit(1)
 
     bot = SimpleTextBot(database_path)
 
@@ -47,7 +59,7 @@ def chat(log_level: str, input: str, token: str):
         nl=False,
     )
 
-    input_method = get_input_method(input)
+    input_method = get_input_method(input, file)
 
     while True:
         user_input: str = input_method.get_input()
@@ -61,17 +73,17 @@ def chat(log_level: str, input: str, token: str):
         click.echo(f"{response}")
 
 
-def get_input_method(input_choice: str) -> UserInputSource:
+def get_input_method(input_choice: str, file: str) -> UserInputSource:
     match input_choice:
         case InputMethods.TEXT.value:
             click.echo("Type 'exit' to quit.")
             return TextInput()
         case InputMethods.LOCAL_ASR.value:
             click.echo("Press 'q' to quit.")
-            return LocalASR()
+            return LocalASR(file)
         case InputMethods.ASR.value:
             click.echo("Press 'q' to quit.")
-            return RemoteASR()
+            return RemoteASR(file)
         case _:
             click.secho(
                 f"\nUnknown input method: {input_choice}. Defaulting to text input",
