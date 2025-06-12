@@ -242,6 +242,17 @@ class LLMClient(Protocol):
         """
         ...
 
+    def query(self, prompt: str) -> str:
+        """Query the LLM with default request config.
+
+        Args:
+            prompt: Prompt to query the LLM
+
+        Returns:
+                LLM response
+        """
+        ...
+
 
 # --- Response Parsing Protocols ---
 

@@ -17,7 +17,7 @@ from campus_plan_bot.interfaces import (
     RetrievedDocument,
     TextBot,
 )
-from campus_plan_bot.llm_client import InstituteClient
+from campus_plan_bot.llm_client import InstituteClient, LLMClient
 from campus_plan_bot.persistence_types import Conversation, Message, Role
 
 # Other instructions that are currently not implemented:
@@ -175,17 +175,32 @@ class RAG(RAGComponent):
 
 class SimpleTextBot(TextBot):
 
-    def __init__(self, database_p: Path):
+    def __init__(
+        self,
+        rag: RAG,
+        prompt_builder: LLama3PromptBuilder | None = None,
+        llm_client: LLMClient | None = None,
+    ):
         self.name = "Bot"
         self.conversation_history = Conversation.new()
-        self.llm_client = InstituteClient(
+        self.llm_client = llm_client or InstituteClient(
             default_request_config=LLMRequestConfig(
                 max_new_tokens=1024,
                 temperature=0.3,
             )
         )
-        self.prompt_builder = LLama3PromptBuilder()
-        self.rag = RAG.from_file(database_p)
+        self.prompt_builder = prompt_builder or LLama3PromptBuilder()
+        self.rag = rag
+
+    @classmethod
+    def from_file(
+        cls,
+        database_p: Path,
+        prompt_builder: LLama3PromptBuilder | None = None,
+        llm_client: LLMClient | None = None,
+    ) -> "SimpleTextBot":
+        # moved from init to separate method to allow to compute RAG only once and not for every bot instance
+        return cls(RAG.from_file(database_p), prompt_builder, llm_client)
 
     def query(self, query: str) -> str:
         user_query = Message.from_content(query, Role.USER)
@@ -207,3 +222,6 @@ class SimpleTextBot(TextBot):
             Message.from_content(response, Role.ASSISTANT)
         )
         return response.strip()
+
+    def reset(self) -> None:
+        self.conversation_history = Conversation.new()

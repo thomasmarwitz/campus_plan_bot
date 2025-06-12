@@ -52,7 +52,7 @@ def chat(log_level: str, input: str, token: str, file: str):
         logger.warning("You need to use an ASR input option when providing file inputs")
         exit(1)
 
-    bot = SimpleTextBot(database_path)
+    bot = SimpleTextBot.from_file(database_path)
 
     click.echo(
         "Welcome to the chat with CampusGuide, you can ask questions about buildings, opening hours, navigation. ",

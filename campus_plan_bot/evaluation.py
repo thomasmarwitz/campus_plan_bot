@@ -10,7 +10,7 @@ from pydantic_evals import Case, Dataset
 from pydantic_evals.evaluators import Evaluator, EvaluatorContext, LLMJudge
 from rich.console import Console
 
-from campus_plan_bot.bot import SimpleTextBot
+from campus_plan_bot.bot import RAG, SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
 
 LLM_JUDGE = LLMJudge(
@@ -145,6 +145,8 @@ class Recall(BertScoreEvaluator):
 def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
     """Run evaluation using pydantic-evals framework."""
 
+    rag = RAG.from_file(data_path)
+
     cases = [
         case
         for file in test_data_path.glob("*synthetic.json")
@@ -154,8 +156,10 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
     logger.info(f"Evaluating {len(cases)} cases")
 
     async def bot_runner(prompts: list[str]) -> list[str]:
-        bot = SimpleTextBot(data_path)
-        return [bot.query(prompt) for prompt in prompts]
+        bot = SimpleTextBot(rag)
+        return [
+            bot.query(prompt) for prompt in prompts
+        ]  # keep conversation history during multi-turn conversations
 
     dataset = Dataset(
         cases=cases, evaluators=[FScore(), Precision(), Recall(), LLM_JUDGE]
