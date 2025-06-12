@@ -11,11 +11,13 @@ from pydantic_evals.evaluators import Evaluator, EvaluatorContext, LLMJudge
 from rich.console import Console
 
 from campus_plan_bot.bot import SimpleTextBot
-from campus_plan_bot.clients.institute_client import model as institute_model
+from campus_plan_bot.clients.chute_client import ChuteModel
 
 LLM_JUDGE = LLMJudge(
-    rubric="Output should match expected output in meaning. It is mandatory the information is conveyed instead of listing excuses. The chatbot has access to the underlying data if the expected output also contains information. Output should be concise and to the point.",
-    model=institute_model,
+    rubric="Output should match expected output in meaning. It is mandatory the information is conveyed instead of listing excuses. The chatbot has access to the underlying data if the expected output also contains information. Reasoning should be concise and to the point. Format your output as a JSON object with valid quotation marks.",
+    model=ChuteModel(
+        model="chutesai/Mistral-Small-3.1-24B-Instruct-2503"
+    ),  # requires CHUTES_KEY to be set in environment variables
     include_input=True,
     include_expected_output=True,
     score={"evaluation_name": "LLM_Judge", "include_reason": True},
@@ -138,7 +140,7 @@ class Recall(BertScoreEvaluator):
     "--limit",
     type=int,
     default=1,
-    help="Limit number of test cases (default: 1)",
+    help="Limit number of test cases per category (default: 1)",
 )
 def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
     """Run evaluation using pydantic-evals framework."""
@@ -147,7 +149,7 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
         case
         for file in test_data_path.glob("*synthetic.json")
         for case in TestDataSet(file, limit=limit).to_cases()
-    ][:1]
+    ]
 
     logger.info(f"Evaluating {len(cases)} cases")
 
@@ -164,7 +166,7 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
         include_input=True,
         include_output=True,
         include_expected_output=True,
-        include_metadata=True,
+        include_metadata=False,
         # Not working:label_configs={"LLM_Judge": {"value_formatter": lambda x: x["reason"]}},
     )
     with open("report.txt", "w") as f:
@@ -174,7 +176,7 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
             include_expected_output=True,
         )
         io_file = StringIO()
-        Console(file=io_file).print(table)
+        Console(file=io_file).print(table, width=2000)
         f.write(io_file.getvalue())
 
 

@@ -213,12 +213,57 @@ class ChuteModel(Model):
         data = response.json()
         choice = data.get("choices", [{}])[0]
         message = choice.get("message", {})
-        content = message.get("content")
+        content: str = message.get("content")
 
-        if content:
-            return ModelResponse(parts=[TextPart(content=content)])
-        else:
+        print("content", content)
+
+        if not content:
             raise UnexpectedModelBehavior("No content in Chute API response")
+
+        response_text = content.strip()
+
+        # If there are output tools defined, use them
+        if model_request_parameters.output_tools:
+            # Create a tool call using the first output tool
+            tool = model_request_parameters.output_tools[0]
+
+            # remove ```json{actual json}```
+            response_text = (
+                response_text.removeprefix("```json").removesuffix("```").strip()
+            )
+
+            tool_call = ToolCallPart(
+                tool_name=tool.name,
+                args=response_text,
+                tool_call_id="response_1",  # Unique ID for the tool call
+            )
+            return ModelResponse(
+                parts=[tool_call],
+                model_name=self.model_name,
+                timestamp=datetime.now(),
+            )
+
+        # If no output tools, use function tools if available
+        if model_request_parameters.function_tools:
+            tool = model_request_parameters.function_tools[0]
+            tool_call = ToolCallPart(
+                tool_name=tool.name,
+                args=response_text,
+                tool_call_id="response_1",
+            )
+            return ModelResponse(
+                parts=[tool_call],
+                model_name=self.model_name,
+                timestamp=datetime.now(),
+            )
+
+        # If no tools defined, fall back to text response
+        text_part = TextPart(content=response_text)
+        return ModelResponse(
+            parts=[text_part],
+            model_name=self.model_name,
+            timestamp=datetime.now(),
+        )
 
     @asynccontextmanager
     async def request_stream(
@@ -254,7 +299,7 @@ async def main():
     """Simple test case for the ChuteModel."""
     print("--- Testing ChuteModel with run ---")
     try:
-        agent = Agent(ChuteModel())
+        agent = Agent(ChuteModel(model="chutesai/Mistral-Small-3.1-24B-Instruct-2503"))
         result = await agent.run("Tell me a 10-word story about a robot.")
         print("Async result:", result.output)
     except Exception as e:
