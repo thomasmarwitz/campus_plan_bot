@@ -20,7 +20,7 @@ class RemoteASR(AutomaticSpeechRecognition):
 
     def get_audio_input(self, args):
 
-        from streamadapter.ffmpeg_stream_adapter import FfmpegStream
+        from campus_plan_bot.streamadapter.ffmpeg_stream_adapter import FfmpegStream
 
         stream_adapter = FfmpegStream(
             volume=args.volume,

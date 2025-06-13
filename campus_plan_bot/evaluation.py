@@ -6,13 +6,19 @@ from bert_score import score
 from loguru import logger
 from pydantic import BaseModel
 from pydantic_evals import Case, Dataset
-from pydantic_evals.evaluators import Evaluator, EvaluatorContext, LLMJudge
+from pydantic_evals.evaluators import (
+    Evaluator,
+    EvaluatorContext,
+    EvaluationReason,
+    LLMJudge,
+)
+from pydantic_evals.evaluators.common import EvaluationReason
 
 from campus_plan_bot.bot import RAG, SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
 from campus_plan_bot.reporting import report_to_df
 
-LLM_JUDGE = LLMJudge(
+SINGLE_TURN_LLM_JUDGE = LLMJudge(
     rubric="Output should match expected output in meaning. It is mandatory the information is conveyed instead of listing excuses. The chatbot has access to the underlying data if the expected output also contains information. Reasoning should be concise and to the point. Format your output as a JSON object with valid quotation marks.",
     model=ChuteModel(
         model="chutesai/Mistral-Small-3.1-24B-Instruct-2503"
@@ -22,6 +28,70 @@ LLM_JUDGE = LLMJudge(
     score={"evaluation_name": "LLM_Judge", "include_reason": True},
 )
 
+MULTI_TURN_LLM_JUDGE_EVALUATOR = LLMJudge(
+    rubric="""This is an evaluation of a multi-turn conversation.
+The user input is the latest prompt in a conversation.
+The full conversation history up to the current turn is provided as part of the input.
+The output is the chatbot's latest response.
+The expected output is what a good response would be.
+
+Please evaluate if the chatbot's response is coherent and relevant given the full conversation context.
+Focus on the last answer within the total context.
+The output should match the expected output in meaning.
+It is mandatory that the information is conveyed instead of listing excuses.
+The chatbot has access to the underlying data if the expected output also contains information.
+Reasoning should be concise and to the point.
+Format your output as a JSON object with valid quotation marks.
+""",
+    model=ChuteModel(
+        model="chutesai/Mistral-Small-3.1-24B-Instruct-2503"
+    ),  # requires CHUTES_KEY to be set in environment variables
+    include_input=True,
+    include_expected_output=True,
+    score={"evaluation_name": "LLM_Judge_MultiTurn", "include_reason": True},
+    assertion=False,
+)
+
+class MultiTurnLLMJudge(Evaluator[list[str], list[str]]):
+    async def evaluate(self, ctx: EvaluatorContext[list[str], list[str]]) -> float:
+        scores = []
+        reasons = []
+        for i in range(len(ctx.inputs)):
+            # Construct conversation history for the current turn
+            history = ""
+            for j in range(i):
+                history += f"User: {ctx.inputs[j]}\n"
+                history += f"Bot: {ctx.output[j]}\n"
+            
+            # The 'input' for the judge is the history and the current prompt
+            turn_input = f"{history}User: {ctx.inputs[i]}"
+
+            turn_ctx = EvaluatorContext(
+                inputs=turn_input,
+                output=ctx.output[i],
+                expected_output=ctx.expected_output[i] if ctx.expected_output else None,
+                span_tree=ctx.span_tree,
+                duration=ctx.duration,
+                metadata=ctx.metadata,
+            )
+            
+            result = await MULTI_TURN_LLM_JUDGE_EVALUATOR.evaluate(turn_ctx)
+            # The result is a dict like {'LLM_Judge_MultiTurn': EvaluationReason(value=0.8, ...)}
+            # We extract the score value.
+            # also extract the reason
+            for key, value in result.items():
+                if key.endswith("MultiTurn"):
+                    if isinstance(value, EvaluationReason):
+                        scores.append(float(value.value))
+                        reasons.append(value.reason)
+                    else:
+                        scores.append(float(value))
+                        reasons.append(None)
+        output = {
+            "scores": scores,
+            "reasons": reasons,
+        }
+        return output
 
 class Turn(BaseModel):
     input_data: str
@@ -51,22 +121,17 @@ class TestDataSet:
         cases = []
         for test_idx, test_case in enumerate(self.test_cases):
             case = Case(
-                name=f"{self.database_path.stem}_{test_idx+1}",
+                name=f"{test_idx}",
                 inputs=[turn.prompt for turn in test_case.prompts],
                 expected_output=[turn.response for turn in test_case.prompts],
-                metadata={
-                    "test_case_index": test_idx,
-                    "input_data": [turn.input_data for turn in test_case.prompts],
-                    "response_data": [turn.response_data for turn in test_case.prompts],
-                    "num_turns": test_case.num_turns,
-                    "type": self.database_path.stem,
-                },
+                metadata={"num_turns": test_case.num_turns},
             )
             cases.append(case)
         return cases
 
 
 single_turn_test_data = Path("phase1") / "data" / "evaluation" / "single_turn"
+multi_turn_test_data = Path("phase1") / "data" / "evaluation" / "multi_turn" / "multi_turns.json"
 data_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
 
 
@@ -101,7 +166,6 @@ class BertScoreEvaluator(Evaluator[list[str], list[str]]):
         return self.score(ctx.output, ctx.expected_output)
 
     def score(self, output: list[str], expected_output: list[str]) -> float: ...  # type: ignore[empty-body]
-
 
 class FScore(BertScoreEvaluator):
     def score(self, output: list[str], expected_output: list[str]) -> float:
@@ -148,9 +212,9 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
     rag = RAG.from_file(data_path)
 
     cases = [
-        case
-        for file in test_data_path.glob("*synthetic.json")
-        for case in TestDataSet(file, limit=limit).to_cases()
+        case for case in TestDataSet(multi_turn_test_data, limit=limit).to_cases()
+    #    for file in test_data_path.glob("*synthetic.json")
+     #   for case in TestDataSet(file, limit=limit).to_cases()
     ][:1]
 
     logger.info(f"Evaluating {len(cases)} cases")
@@ -162,7 +226,7 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
         ]  # keep conversation history during multi-turn conversations
 
     dataset = Dataset(
-        cases=cases, evaluators=[FScore(), Precision(), Recall(), LLM_JUDGE]
+        cases=cases, evaluators=[FScore(), Precision(), Recall(), MultiTurnLLMJudge()]
     )
 
     report = dataset.evaluate_sync(bot_runner)

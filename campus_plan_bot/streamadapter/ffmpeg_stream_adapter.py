@@ -2,7 +2,7 @@ import subprocess
 import time
 from typing import Any, Optional, cast
 
-from streamadapter.input_stream_adapter import BaseAdapter
+from campus_plan_bot.streamadapter.input_stream_adapter import BaseAdapter
 
 
 class FfmpegStream(BaseAdapter):
