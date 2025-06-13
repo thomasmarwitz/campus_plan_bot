@@ -1,8 +1,9 @@
 import json
-import os
+import sys
 from pathlib import Path
 
 import click
+import pandas as pd
 from bert_score import score
 from loguru import logger
 from pydantic import BaseModel
@@ -19,9 +20,7 @@ from campus_plan_bot.clients.chute_client import ChuteModel
 from campus_plan_bot.reporting import report_to_df
 
 # Load BertScore model once
-logger.debug(
-    f"Loading Bertscore model"
-)
+logger.debug("Loading Bertscore model")
 score(["Ich bin ein Test"], ["Ich bin ein Test"], lang="de")
 logger.debug("Bertscore model loaded successfully")
 
@@ -29,7 +28,7 @@ SINGLE_TURN_LLM_JUDGE = LLMJudge(
     rubric="Output should match expected output in meaning. It is mandatory the information is conveyed instead of listing excuses. The chatbot has access to the underlying data if the expected output also contains information. Reasoning should be concise and to the point. Format your output as valid JSON object with valid quotation marks. /no_think",
     model=ChuteModel(
         model="Qwen/Qwen3-32B"
-        #"chutesai/Mistral-Small-3.1-24B-Instruct-2503"
+        # "chutesai/Mistral-Small-3.1-24B-Instruct-2503"
     ),  # requires CHUTES_KEY to be set in environment variables
     include_input=True,
     include_expected_output=True,
@@ -143,7 +142,9 @@ class TestDataSet:
         for test_idx, test_case in enumerate(self.test_cases):
             case = Case(
                 name=f"{test_idx}",
-                inputs=[turn.get_eval_prompt(use_asr_prompt) for turn in test_case.prompts],
+                inputs=[
+                    turn.get_eval_prompt(use_asr_prompt) for turn in test_case.prompts
+                ],
                 expected_output=[turn.response for turn in test_case.prompts],
                 metadata={"num_turns": test_case.num_turns},
             )
@@ -161,7 +162,6 @@ data_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
 class BertScoreEvaluator(Evaluator[list[str], list[str]]):
     """Evaluator that uses BertScore for comparing responses in multi-turn
     conversations."""
-
 
     def evaluate(self, ctx: EvaluatorContext[list[str], list[str]]) -> float:
         """Evaluate a multi-turn conversation using BertScore.
@@ -235,7 +235,9 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
 
     cases = [
         case
-        for case in TestDataSet(multi_turn_test_data, limit=limit).to_cases(use_asr_prompt=False)
+        for case in TestDataSet(multi_turn_test_data, limit=limit).to_cases(
+            use_asr_prompt=False
+        )
         #    for file in test_data_path.glob("*synthetic.json")
         #   for case in TestDataSet(file, limit=limit).to_cases()
     ][:1]
@@ -285,8 +287,18 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
     default=None,
     help="Limit number of test cases per file (default: 0 for all)",
 )
+@click.option(
+    "--chunk-size",
+    type=int,
+    default=None,
+    help="Number of cases per chunk. If not set, all cases are processed at once.",
+)
 def evaluate_single_synthetic(
-    test_data_path: Path, data_path: Path, output_path: Path, limit: int
+    test_data_path: Path,
+    data_path: Path,
+    output_path: Path,
+    limit: int | None,
+    chunk_size: int | None,
 ) -> None:
     """Run evaluation for single-turn synthetic test sets."""
     output_path.mkdir(parents=True, exist_ok=True)
@@ -294,8 +306,10 @@ def evaluate_single_synthetic(
     synthetic_files = list(test_data_path.glob("*synthetic.json"))
     logger.info(f"Found {len(synthetic_files)} synthetic test files to evaluate.")
 
-    for file in synthetic_files:
-        logger.info(f"Evaluating {file.name}...")
+    for file_idx, file in enumerate(synthetic_files):
+        logger.info(
+            f"Processing {file.name} ({file_idx+1} / {len(synthetic_files)}) ..."
+        )
         test_dataset = TestDataSet(file, limit=limit)
         cases = test_dataset.to_cases()
 
@@ -303,23 +317,89 @@ def evaluate_single_synthetic(
             logger.warning(f"No test cases found in {file.name}, skipping.")
             continue
 
-        logger.info(f"Evaluating {len(cases)} cases from {file.name}")
-
         async def bot_runner(prompts: list[str]) -> list[str]:
             bot = SimpleTextBot(rag)
             return [bot.query(prompt) for prompt in prompts]
 
-        pydantic_dataset = Dataset(
-            cases=cases,
-            evaluators=[FScore(), Precision(), Recall(), SINGLE_TURN_LLM_JUDGE],
-        )
+        if chunk_size and chunk_size > 0:
+            num_cases = len(cases)
+            num_chunks = (num_cases + chunk_size - 1) // chunk_size
+            logger.info(
+                f"Evaluating {num_cases} cases from {file.name} in {num_chunks} chunks of size {chunk_size}."
+            )
 
-        report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=2)
-        df = report_to_df(report)
-        output_filename = output_path / f"{file.stem}.csv"
-        df.to_csv(output_filename, index=False)
-        logger.info(f"Saved evaluation report to {output_filename}")
+            for i in range(num_chunks):
+                chunk_start = i * chunk_size
+                chunk_end = chunk_start + chunk_size
+                chunk_cases = cases[chunk_start:chunk_end]
+
+                output_filename = (
+                    output_path / f"{file.stem}_chunk_{i+1}_of_{num_chunks}.csv"
+                )
+                if output_filename.exists():
+                    logger.info(
+                        f"Chunk {i+1}/{num_chunks} for {file.name} already evaluated. Skipping."
+                    )
+                    continue
+
+                logger.info(
+                    f"Evaluating chunk {i+1}/{num_chunks} ({len(chunk_cases)} cases)..."
+                )
+
+                pydantic_dataset = Dataset(
+                    cases=chunk_cases,
+                    evaluators=[FScore(), Precision(), Recall(), SINGLE_TURN_LLM_JUDGE],
+                )
+
+                report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=2)
+                df = report_to_df(report)
+                df.to_csv(output_filename, index=False)
+                logger.info(
+                    f"Saved evaluation report for chunk {i+1}/{num_chunks} to {output_filename}"
+                )
+
+            # concatenate all chunks
+            all_chunks = sorted(
+                output_path.glob(f"{file.stem}_chunk_*.csv"),
+                key=lambda x: int(x.stem.split("_")[-3]),
+            )  # sort by chunk number
+            if len(all_chunks) > 1:
+                logger.info(
+                    f"Concatenating {len(all_chunks)} chunks for {file.name} ..."
+                )
+                df = pd.concat([pd.read_csv(chunk) for chunk in all_chunks])
+                df.to_csv(output_path / f"{file.stem}.csv", index=False)
+                logger.info(
+                    f"Saved concatenated evaluation report to {output_path / f"{file.stem}.csv"}"
+                )
+                for chunk in all_chunks:
+                    chunk.unlink()
+        else:
+            logger.info(
+                f"Evaluating {len(cases)} cases from {file.name} (no chunking)."
+            )
+            output_filename = output_path / f"{file.stem}.csv"
+            if output_filename.exists():
+                logger.warning(
+                    f"Output file {output_filename} already exists. Skipping evaluation for {file.name}."
+                )
+                continue
+
+            pydantic_dataset = Dataset(
+                cases=cases,
+                evaluators=[FScore(), Precision(), Recall(), SINGLE_TURN_LLM_JUDGE],
+            )
+
+            report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=2)
+            df = report_to_df(report)
+            df.to_csv(output_filename, index=False)
+            logger.info(f"Saved evaluation report to {output_filename}")
 
 
 if __name__ == "__main__":
+    # remove basic sink, add file sink with debug level
+    logger.remove()
+    logger.add(sys.stdout, level="INFO")
+    logger.add("evaluation.log", level="DEBUG")
+
     cli()
