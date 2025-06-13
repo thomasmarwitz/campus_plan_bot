@@ -1,3 +1,4 @@
+import os
 import re
 from collections.abc import Sequence
 from datetime import datetime
@@ -17,7 +18,7 @@ from campus_plan_bot.interfaces import (
     TextBot,
 )
 from campus_plan_bot.llm_client import InstituteClient
-from campus_plan_bot.types import Conversation, Message, Role
+from campus_plan_bot.persistence_types import Conversation, Message, Role
 
 # Other instructions that are currently not implemented:
 # -	Generating navigation links to buildings using external apps (Google Maps, Apple Maps, OSM).
@@ -98,6 +99,8 @@ class RAG(RAGComponent):
     MODEL = "all-MiniLM-L6-v2"
 
     def __init__(self, embedding_data: list, database: pd.DataFrame):
+        os.environ["TOKENIZERS_PARALLELISM"] = "true"
+
         self.embedding_data = embedding_data
         self.database = database
         logger.debug(f"Loading {self.MODEL} model...")

@@ -185,4 +185,5 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
-campus_plan_bot/out.wav
+***.wav
+campus_plan_bot/settings.ini

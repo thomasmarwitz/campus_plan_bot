@@ -19,6 +19,9 @@ click = ">=8.1.8,<9"
 huggingface_hub = ">=0.31.2,<0.32"
 loguru = ">=0.7.3,<0.8"
 sentence-transformers = ">=4.1.0,<5"
+sseclient = ">=0.0.27,<0.0.28"
+types-requests = ">=2.32.0.20250515,<3"
+ffmpeg = ">=7.1.1,<8"
 
 
 [host-dependencies]

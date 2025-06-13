@@ -11,6 +11,7 @@ from datetime import datetime
 from enum import StrEnum
 from typing import (
     Any,
+    Optional,
     Protocol,
     TypedDict,
 )
@@ -24,6 +25,14 @@ class Role(StrEnum):
     ASSISTANT = "assistant"
     SYSTEM = "system"
     CODE = "ipython"
+
+
+class InputMethods(StrEnum):
+    """Enum for input types."""
+
+    ASR = "asr"
+    LOCAL_ASR = "local_asr"
+    TEXT = "text"
 
 
 class MessageProtocol(Protocol):
@@ -57,16 +66,33 @@ class RetrievedDocument:
 # --- Input Processing Protocols ---
 
 
-class AudioSpeechRecognition(Protocol):
+class UserInputSource(Protocol):
+    """Protocol for receiving textual input from the user."""
+
+    def get_input(self) -> str:
+        """Get user input from one of the supported modalities.
+
+        Returns:
+            User input converted to text
+        """
+        ...
+
+
+class AutomaticSpeechRecognition(UserInputSource, Protocol):
     """Protocol for automatic speech recognition component."""
+
+    file_path: Optional[str]
+
+    def __init__(self, file=None):
+        self.file_path = file
 
     # We'll probably need async / threads to handle the provided ASR API
     # but maybe the interface can still be synchronous
-    def transcribe(self, audio_data: bytes) -> str:
+    def transcribe(self, audio_path: str) -> str:
         """Convert audio data to text.
 
         Args:
-            audio_data: Raw audio bytes to transcribe
+            audio_path: Path to audio file
 
         Returns:
             Transcribed text
