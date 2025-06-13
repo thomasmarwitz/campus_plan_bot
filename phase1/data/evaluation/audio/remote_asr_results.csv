@@ -8,11 +8,11 @@ building_location_synthetic-20,Wo hat die Fachschaft Geistes und Sozialwissensch
 building_location_synthetic-33,Wo steht Gebäude siebzig Punkt sechsundzwanzig?,single,,29.575793027877808
 building_location_synthetic-40,Wie ist die Lage von Gebäude neunhundertfünfzehn?,single,,30.244110822677612
 building_location_synthetic-41,Welcher Adresse hat das Gebäude 736?,single,,30.561945915222168
-building_location_synthetic-42,Wo befindet sich Gebäude 666?,single,,30.492413997650146
+building_location_synthetic-42,Wo befindet sich Gebäude 666?,single,,30.492413997650143
 building_location_synthetic-57,An welcher Adresse finde ich die Gebäude neunhundert eins?,single,,29.48618197441101
 building_location_synthetic-63,Können Sie die Lage von Gebäude 686 angeben?,single,,30.374464988708496
 building_location_synthetic-64,Wie oder was ist die Adresse von Gebäude 668?,single,,30.38780426979065
-building_location_synthetic-67,"Wo steht das Gebäude sieben, vier, eins?",single,,30.251699924468994
+building_location_synthetic-67,"Wo steht das Gebäude sieben, vier, eins?",single,,30.25169992446899
 building_location_synthetic-69,Können Sie mir den Standort von Gebäude 726 mitteilen?,single,,30.692676067352295
 building_location_synthetic-72,Das ist der Standort von Gebäude achthundert und drei.,single,,29.64062213897705
 building_location_synthetic-81,Wo genau ist Gebäude 706 lokalisiert?,single,,30.5568630695343
@@ -20,13 +20,13 @@ building_location_synthetic-82,An welchem Standort steht das Gebäude 911?,singl
 building_location_synthetic-83,Was ist die Adresse von Energy Labs?,single,,29.560322046279907
 closed_until_synthetic-06,Wann sind die Türen des Informatikbaus wieder offen?,single,,30.19029998779297
 closed_until_synthetic-30,Ab welcher Uhrzeit ist Gebäude 2054 wieder geöffnet?,single,,30.58621835708618
-closed_until_synthetic-37,Land ist Gebäude zehn Punkt elf wieder zugänglich.,single,,29.449301958084106
+closed_until_synthetic-37,Land ist Gebäude zehn Punkt elf wieder zugänglich.,single,,29.449301958084103
 closed_until_synthetic-41,Wann startet das IntroCafé wieder seinen Betrieb?,single,,30.316306114196777
 closed_until_synthetic-45,Wann wird Gebäude 1045 wieder aufgeschlossen? .Ich meinte 145.,single,,30.389964818954468
 closed_until_synthetic-47,Wann öffnet das Institut für Anthropomatik und Robotik wieder seine Pforten?,single,,30.405749082565308
 closed_until_synthetic-50,Ab wann ist Gebäude 532 wieder zugänglich?,single,,30.51326608657837
 closed_until_synthetic-52,"Ab welchem Zeitpunkt ist das Gebäude Technik, Thermodynamik und Kältetechnik, Mess und RegelungstechnikInstitutsgebäude wieder offen?",single,,37.82214283943176
-closed_until_synthetic-53,Zu welcher Zeit öffnet Gebäude 304 wieder?,single,,30.653856992721558
+closed_until_synthetic-53,Zu welcher Zeit öffnet Gebäude 304 wieder?,single,,30.65385699272156
 closed_until_synthetic-54,Ab wann kann man das Gebäude Stab und Strategie wieder betreten?,single,,30.377779960632324
 closed_until_synthetic-60,Wann macht das Gastdozentenhaus Heinrich Herz wieder auf?,single,,37.675588846206665
 closed_until_synthetic-70,Ab wann ist Gebäude 546 wieder offen?,single,,30.30930995941162
@@ -39,7 +39,7 @@ closed_until_synthetic-90,Zu welcher Zeit öffnet das MaxRubnerInstitut?,single,
 closed_until_synthetic-93,Wann macht Chemieturm I auf?,single,,30.20763874053955
 navigation_link_synthetic-02,Wegbeschreibung zu Gebäude zweihundertneunddreißig.,single,,30.433799028396606
 navigation_link_synthetic-04,Den Weg zu Gebäude 650 anzeigen.,single,,30.3452467918396
-navigation_link_synthetic-05,Ich zeige die Route zu Dr. Franz Lust Gebäude.,single,,30.284913778305054
+navigation_link_synthetic-05,Ich zeige die Route zu Dr. Franz Lust Gebäude.,single,,30.284913778305057
 navigation_link_synthetic-06,Wegbeschreibung zum Gebäude 40.13.,single,,30.288175106048584
 navigation_link_synthetic-08,Navigation zum Institut für Theoretische Festkörperphysik bitte.,single,,30.405520915985107
 navigation_link_synthetic-14,Zeige den Weg zum Gebäude B621.,single,,30.398062705993652
@@ -47,14 +47,16 @@ navigation_link_synthetic-15,"Navigation zum Elektrotechnischen Institut, bitte.
 navigation_link_synthetic-20,Route zu Gebäude fünf null acht anzeigen.,single,,30.265921115875244
 navigation_link_synthetic-21,Wegbeschreibung zum Informatikum I.,single,,30.75092911720276
 navigation_link_synthetic-22,Den Weg zu Gebäude neunhundertacht anzeigen.,single,,30.271666288375854
-navigation_link_synthetic-27,Die Route zu Gebäude Dreißigsechzig ist gesucht.,single,,30.243999004364014
+navigation_link_synthetic-27,Die Route zu Gebäude Dreißigsechzig ist gesucht.,single,,30.243999004364017
 navigation_link_synthetic-28,Navigation zum Telecooperation Office benötigt.,single,,29.448129892349243
 navigation_link_synthetic-29,Wegbeschreibung zu Gebäude neuntausendsechshundert und sieben erwünscht.,single,,30.413964986801147
-navigation_link_synthetic-30,Ich suche den Weg zum Kollegiengebäude am Zirkel.,single,,30.385968923568726
+navigation_link_synthetic-30,Ich suche den Weg zum Kollegiengebäude am Zirkel.,single,,30.38596892356873
 navigation_link_synthetic-36,"Zum MTIHörsaal navigieren, bitte.",single,,30.301289796829224
 navigation_link_synthetic-39,Navigation zum RudolfKriegeHörsaal gewünscht.,single,,30.38885807991028
 navigation_link_synthetic-42,Route zur Wirtschaftswissenschaftlichen Fakultätsbibliothek.,single,,30.46900701522827
 navigation_link_synthetic-47,Weg zur Versuchshalle der technischen Tabellynamik zeigen.,single,,30.63186502456665
 open_now_synthetic-04,War man aktuell in die Fachschaft Geistsoz?,single,,30.29982590675354
-open_now_synthetic-21,Ist das Gebäude 50.40 momentan offen?,single,,30.254239082336426
+open_now_synthetic-21,Ist das Gebäude 50.40 momentan offen?,single,,30.254239082336422
 open_now_synthetic-22,Kann man derzeit ins Gebäude dreihundert ziehen?,single,,30.34764790534973
+open_now_synthetic-31,Ist die Ambulanz momentan zugänglich?,single,,31.455595016479492
+open_now_synthetic-33,Ist das Gebäude dreihundertzehn derzeit offen?,single,,31.21965718269348
