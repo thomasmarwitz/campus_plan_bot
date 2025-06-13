@@ -6,6 +6,7 @@ from contextlib import asynccontextmanager
 from datetime import datetime
 from typing import Any
 
+import httpx
 from pydantic_ai import Agent
 from pydantic_ai.exceptions import UnexpectedModelBehavior
 from pydantic_ai.messages import (
@@ -136,12 +137,18 @@ class ChuteModel(Model):
         model: str = "Qwen/Qwen3-32B",
         api_token: str | None = None,
         timeout: int = 120,
+        strip_think: bool = True,
+        max_retries: int = 3,
+        backoff_factor: float = 0.5,
     ):
         self._model = model
         tok = api_token or os.getenv("CHUTES_KEY")
         assert tok, "CHUTES_KEY is not set"
         self.api_token = tok
         self.timeout = timeout
+        self.strip_think = strip_think
+        self.max_retries = max_retries
+        self.backoff_factor = backoff_factor
 
     @property
     def model_name(self) -> str:
@@ -203,13 +210,32 @@ class ChuteModel(Model):
         if model_settings and model_settings.get("temperature"):
             body["temperature"] = model_settings["temperature"]
 
-        response = await client.post(
-            CHUTE_API_URL,
-            headers=self._build_headers(),
-            json=body,
-            timeout=self.timeout,
-        )
-        response.raise_for_status()
+        last_exception = None
+        for attempt in range(self.max_retries + 1):
+            try:
+                response = await client.post(
+                    CHUTE_API_URL,
+                    headers=self._build_headers(),
+                    json=body,
+                    timeout=self.timeout,
+                )
+                response.raise_for_status()
+                break  # Success
+            except httpx.RequestError as e:
+                last_exception = e
+                if attempt < self.max_retries:
+                    wait_time = self.backoff_factor * (2**attempt)
+                    await asyncio.sleep(wait_time)
+                else:
+                    raise last_exception
+        else:
+            # This block is executed if the loop completes without a break,
+            # meaning all retries failed.
+            if last_exception:
+                raise last_exception
+            # This should not be reached if max_retries >= 0
+            raise RuntimeError("Request failed after all retries")
+
         data = response.json()
         choice = data.get("choices", [{}])[0]
         message = choice.get("message", {})
@@ -218,7 +244,7 @@ class ChuteModel(Model):
         if not content:
             raise UnexpectedModelBehavior("No content in Chute API response")
 
-        response_text = content.strip()
+        response_text = content.replace("<think>", "").replace("</think>", "").strip() if self.strip_think else content
 
         # If there are output tools defined, use them
         if model_request_parameters.output_tools:
@@ -282,23 +308,37 @@ class ChuteModel(Model):
         if model_settings and model_settings.get("temperature"):
             body["temperature"] = model_settings["temperature"]
 
-        async with client.stream(
-            "POST",
-            CHUTE_API_URL,
-            headers=self._build_headers(),
-            json=body,
-            timeout=self.timeout,
-        ) as response:
-            response.raise_for_status()
-            yield ChuteStreamedResponse(response.aiter_lines(), self.model_name)
+        last_exception = None
+        for attempt in range(self.max_retries + 1):
+            try:
+                async with client.stream(
+                    "POST",
+                    CHUTE_API_URL,
+                    headers=self._build_headers(),
+                    json=body,
+                    timeout=self.timeout,
+                ) as response:
+                    response.raise_for_status()
+                    yield ChuteStreamedResponse(response.aiter_lines(), self.model_name)
+                    return  # Exit after successful stream
+            except httpx.RequestError as e:
+                last_exception = e
+                if attempt < self.max_retries:
+                    wait_time = self.backoff_factor * (2**attempt)
+                    await asyncio.sleep(wait_time)
+                else:
+                    raise last_exception
+
+        if last_exception:
+            raise last_exception
 
 
 async def main():
     """Simple test case for the ChuteModel."""
     print("--- Testing ChuteModel with run ---")
     try:
-        agent = Agent(ChuteModel(model="chutesai/Mistral-Small-3.1-24B-Instruct-2503"))
-        result = await agent.run("Tell me a 10-word story about a robot.")
+        agent = Agent(ChuteModel(model="Qwen/Qwen3-32B"))
+        result = await agent.run("/no_think Tell me a 10-word story about a robot.")
         print("Async result:", result.output)
     except Exception as e:
         print(f"Error during async test: {e}")

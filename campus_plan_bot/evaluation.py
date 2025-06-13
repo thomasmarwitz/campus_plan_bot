@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 
 import click
@@ -17,10 +18,18 @@ from campus_plan_bot.bot import RAG, SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
 from campus_plan_bot.reporting import report_to_df
 
+# Load BertScore model once
+logger.debug(
+    f"Loading Bertscore model"
+)
+score(["Ich bin ein Test"], ["Ich bin ein Test"], lang="de")
+logger.debug("Bertscore model loaded successfully")
+
 SINGLE_TURN_LLM_JUDGE = LLMJudge(
-    rubric="Output should match expected output in meaning. It is mandatory the information is conveyed instead of listing excuses. The chatbot has access to the underlying data if the expected output also contains information. Reasoning should be concise and to the point. Format your output as a JSON object with valid quotation marks.",
+    rubric="Output should match expected output in meaning. It is mandatory the information is conveyed instead of listing excuses. The chatbot has access to the underlying data if the expected output also contains information. Reasoning should be concise and to the point. Format your output as valid JSON object with valid quotation marks. /no_think",
     model=ChuteModel(
-        model="chutesai/Mistral-Small-3.1-24B-Instruct-2503"
+        model="Qwen/Qwen3-32B"
+        #"chutesai/Mistral-Small-3.1-24B-Instruct-2503"
     ),  # requires CHUTES_KEY to be set in environment variables
     include_input=True,
     include_expected_output=True,
@@ -75,7 +84,6 @@ class MultiTurnLLMJudge(Evaluator[list[str], list[str]]):
                 inputs=turn_input,
                 output=ctx.output[i],
                 expected_output=ctx.expected_output[i] if ctx.expected_output else None,
-                _span_tree=ctx.span_tree,
                 duration=ctx.duration,
                 metadata=ctx.metadata,
             )
@@ -120,7 +128,7 @@ class TestCase(BaseModel):
 
 
 class TestDataSet:
-    def __init__(self, database_path: Path, limit: int = 10):
+    def __init__(self, database_path: Path, limit: int | None = None):
         self.database_path = database_path
         self.test_cases = self.load_data()[:limit]
 
@@ -128,14 +136,14 @@ class TestDataSet:
         data = json.loads(self.database_path.read_text())
         return [TestCase.model_validate(test_case) for test_case in data]
 
-    def to_cases(self) -> list[Case]:
+    def to_cases(self, use_asr_prompt: bool = False) -> list[Case]:
         """Convert test cases to pydantic-evals Cases, keeping multi-turn
         conversations as single cases."""
         cases = []
         for test_idx, test_case in enumerate(self.test_cases):
             case = Case(
                 name=f"{test_idx}",
-                inputs=[turn.get_eval_prompt() for turn in test_case.prompts],
+                inputs=[turn.get_eval_prompt(use_asr_prompt) for turn in test_case.prompts],
                 expected_output=[turn.response for turn in test_case.prompts],
                 metadata={"num_turns": test_case.num_turns},
             )
@@ -154,14 +162,6 @@ class BertScoreEvaluator(Evaluator[list[str], list[str]]):
     """Evaluator that uses BertScore for comparing responses in multi-turn
     conversations."""
 
-    def __init__(self):
-        """Initialize with path to data needed for bot creation."""
-        # Load BertScore model once during initialization
-        logger.debug(
-            f"Loading Bertscore model for {self.__class__.__name__} evaluator..."
-        )
-        score(["Ich bin ein Test"], ["Ich bin ein Test"], lang="de")
-        logger.debug("Bertscore model loaded successfully")
 
     def evaluate(self, ctx: EvaluatorContext[list[str], list[str]]) -> float:
         """Evaluate a multi-turn conversation using BertScore.
@@ -201,7 +201,13 @@ class Recall(BertScoreEvaluator):
         return R.mean()
 
 
-@click.command()
+@click.group()
+def cli() -> None:
+    """Evaluation framework for the campus plan bot."""
+    pass
+
+
+@cli.command()
 @click.option(
     "--test-data",
     "test_data_path",
@@ -229,7 +235,7 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
 
     cases = [
         case
-        for case in TestDataSet(multi_turn_test_data, limit=limit).to_cases()
+        for case in TestDataSet(multi_turn_test_data, limit=limit).to_cases(use_asr_prompt=False)
         #    for file in test_data_path.glob("*synthetic.json")
         #   for case in TestDataSet(file, limit=limit).to_cases()
     ][:1]
@@ -251,5 +257,69 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
     df.to_csv("evaluation_results.csv", index=False)
 
 
+@cli.command()
+@click.option(
+    "--test-data-dir",
+    "test_data_path",
+    type=click.Path(exists=True, path_type=Path),
+    help="Path to test data directory",
+    default=single_turn_test_data,
+)
+@click.option(
+    "--data",
+    "data_path",
+    type=click.Path(exists=True, path_type=Path),
+    default=data_path,
+    help="Path to bot data directory",
+)
+@click.option(
+    "--output-dir",
+    "output_path",
+    type=click.Path(path_type=Path),
+    default=Path("phase1/data/evaluation/results"),
+    help="Path to output directory for reports",
+)
+@click.option(
+    "--limit",
+    type=int,
+    default=None,
+    help="Limit number of test cases per file (default: 0 for all)",
+)
+def evaluate_single_synthetic(
+    test_data_path: Path, data_path: Path, output_path: Path, limit: int
+) -> None:
+    """Run evaluation for single-turn synthetic test sets."""
+    output_path.mkdir(parents=True, exist_ok=True)
+    rag = RAG.from_file(data_path)
+    synthetic_files = list(test_data_path.glob("*synthetic.json"))
+    logger.info(f"Found {len(synthetic_files)} synthetic test files to evaluate.")
+
+    for file in synthetic_files:
+        logger.info(f"Evaluating {file.name}...")
+        test_dataset = TestDataSet(file, limit=limit)
+        cases = test_dataset.to_cases()
+
+        if not cases:
+            logger.warning(f"No test cases found in {file.name}, skipping.")
+            continue
+
+        logger.info(f"Evaluating {len(cases)} cases from {file.name}")
+
+        async def bot_runner(prompts: list[str]) -> list[str]:
+            bot = SimpleTextBot(rag)
+            return [bot.query(prompt) for prompt in prompts]
+
+        pydantic_dataset = Dataset(
+            cases=cases,
+            evaluators=[FScore(), Precision(), Recall(), SINGLE_TURN_LLM_JUDGE],
+        )
+
+        report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=2)
+        df = report_to_df(report)
+        output_filename = output_path / f"{file.stem}.csv"
+        df.to_csv(output_filename, index=False)
+        logger.info(f"Saved evaluation report to {output_filename}")
+
+
 if __name__ == "__main__":
-    evaluate_bot()
+    cli()
