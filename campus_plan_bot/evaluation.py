@@ -7,12 +7,11 @@ from loguru import logger
 from pydantic import BaseModel
 from pydantic_evals import Case, Dataset
 from pydantic_evals.evaluators import (
+    EvaluationReason,
     Evaluator,
     EvaluatorContext,
-    EvaluationReason,
     LLMJudge,
 )
-from pydantic_evals.evaluators.common import EvaluationReason
 
 from campus_plan_bot.bot import RAG, SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
@@ -52,30 +51,36 @@ Format your output as a JSON object with valid quotation marks.
     assertion=False,
 )
 
+
 class MultiTurnLLMJudge(Evaluator[list[str], list[str]]):
-    async def evaluate(self, ctx: EvaluatorContext[list[str], list[str]]) -> float:
+    async def evaluate(
+        self, ctx: EvaluatorContext[list[str], list[str]]
+    ) -> EvaluationReason:
         scores = []
-        reasons = []
+        reasons: list[str] = []
         for i in range(len(ctx.inputs)):
             # Construct conversation history for the current turn
             history = ""
             for j in range(i):
                 history += f"User: {ctx.inputs[j]}\n"
                 history += f"Bot: {ctx.output[j]}\n"
-            
+
             # The 'input' for the judge is the history and the current prompt
             turn_input = f"{history}User: {ctx.inputs[i]}"
 
             turn_ctx = EvaluatorContext(
+                name=f"turn_{i}",
+                attributes={"turn_idx": i},
+                metric=ctx.metrics,
                 inputs=turn_input,
                 output=ctx.output[i],
                 expected_output=ctx.expected_output[i] if ctx.expected_output else None,
-                span_tree=ctx.span_tree,
+                _span_tree=ctx.span_tree,
                 duration=ctx.duration,
                 metadata=ctx.metadata,
             )
-            
-            result = await MULTI_TURN_LLM_JUDGE_EVALUATOR.evaluate(turn_ctx)
+
+            result: dict = await MULTI_TURN_LLM_JUDGE_EVALUATOR.evaluate(turn_ctx)
             # The result is a dict like {'LLM_Judge_MultiTurn': EvaluationReason(value=0.8, ...)}
             # We extract the score value.
             # also extract the reason
@@ -87,11 +92,12 @@ class MultiTurnLLMJudge(Evaluator[list[str], list[str]]):
                     else:
                         scores.append(float(value))
                         reasons.append(None)
-        output = {
-            "scores": scores,
-            "reasons": reasons,
-        }
+        output = EvaluationReason(
+            value=sum(scores) / len(scores),
+            reason="|".join(reasons),
+        )
         return output
+
 
 class Turn(BaseModel):
     input_data: str
@@ -99,6 +105,13 @@ class Turn(BaseModel):
     prompt: str
     response: str
     reformulated_prompt: str | None = None
+    asr_prompt: str | None = None
+
+    def get_eval_prompt(self, asr_prompt: bool = False) -> str:
+        # Logic: decide between normal or asr mode, normal mode will always use reformulated prompt if available.
+        return (
+            self.asr_prompt if asr_prompt else self.reformulated_prompt or self.prompt
+        )
 
 
 class TestCase(BaseModel):
@@ -122,7 +135,7 @@ class TestDataSet:
         for test_idx, test_case in enumerate(self.test_cases):
             case = Case(
                 name=f"{test_idx}",
-                inputs=[turn.prompt for turn in test_case.prompts],
+                inputs=[turn.get_eval_prompt() for turn in test_case.prompts],
                 expected_output=[turn.response for turn in test_case.prompts],
                 metadata={"num_turns": test_case.num_turns},
             )
@@ -131,7 +144,9 @@ class TestDataSet:
 
 
 single_turn_test_data = Path("phase1") / "data" / "evaluation" / "single_turn"
-multi_turn_test_data = Path("phase1") / "data" / "evaluation" / "multi_turn" / "multi_turns.json"
+multi_turn_test_data = (
+    Path("phase1") / "data" / "evaluation" / "multi_turn" / "multi_turns.json"
+)
 data_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
 
 
@@ -166,6 +181,7 @@ class BertScoreEvaluator(Evaluator[list[str], list[str]]):
         return self.score(ctx.output, ctx.expected_output)
 
     def score(self, output: list[str], expected_output: list[str]) -> float: ...  # type: ignore[empty-body]
+
 
 class FScore(BertScoreEvaluator):
     def score(self, output: list[str], expected_output: list[str]) -> float:
@@ -212,9 +228,10 @@ def evaluate_bot(test_data_path: Path, data_path: Path, limit: int = 1) -> None:
     rag = RAG.from_file(data_path)
 
     cases = [
-        case for case in TestDataSet(multi_turn_test_data, limit=limit).to_cases()
-    #    for file in test_data_path.glob("*synthetic.json")
-     #   for case in TestDataSet(file, limit=limit).to_cases()
+        case
+        for case in TestDataSet(multi_turn_test_data, limit=limit).to_cases()
+        #    for file in test_data_path.glob("*synthetic.json")
+        #   for case in TestDataSet(file, limit=limit).to_cases()
     ][:1]
 
     logger.info(f"Evaluating {len(cases)} cases")

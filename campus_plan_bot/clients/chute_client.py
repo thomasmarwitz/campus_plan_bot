@@ -30,7 +30,7 @@ from pydantic_ai.models import (
 
 from campus_plan_bot.bot import LLama3PromptBuilder
 from campus_plan_bot.interfaces import Role
-from campus_plan_bot.types import Conversation
+from campus_plan_bot.persistence_types import Conversation
 
 CHUTE_API_URL = "https://llm.chutes.ai/v1/chat/completions"
 

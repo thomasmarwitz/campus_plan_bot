@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import glob
+import json
 import os
 import subprocess
 import time
@@ -10,6 +11,7 @@ import click
 import pandas as pd
 from loguru import logger
 
+from campus_plan_bot.evaluation import TestCase
 from campus_plan_bot.local_asr import LocalASR
 from campus_plan_bot.remote_asr import RemoteASR
 
@@ -41,6 +43,152 @@ def convert_to_wav(input_file: str, output_file: str):
         logger.error(f"ffmpeg stdout: {e.stdout}")
         logger.error(f"ffmpeg stderr: {e.stderr}")
         raise
+
+
+@click.group()
+def cli():
+    """A CLI tool for transcribing audio files and porting them to test
+    cases."""
+    pass
+
+
+@cli.command()
+@click.option(
+    "--asr-type",
+    type=click.Choice(["local", "remote"]),
+    required=True,
+    help="Specify which ASR to use.",
+)
+@click.option(
+    "--output",
+    "output_path",
+    type=click.Path(dir_okay=False, writable=True),
+    required=True,
+    help="Path to save the output CSV file.",
+)
+@click.option(
+    "--skip-conversion",
+    is_flag=True,
+    help="Skip M4A to WAV conversion and use existing WAV files.",
+)
+def transcribe(asr_type: str, output_path: str, skip_conversion: bool):
+    """Transcribes all single-turn and multi-turn audio files using the
+    specified ASR, and saves the results to a CSV file."""
+    logger.remove()
+    logger.add(lambda msg: click.echo(msg, err=True), level="INFO")
+    logger.add("file_{time}.log", level="DEBUG")  # For detailed logs
+    run_transcription(asr_type, output_path, skip_conversion)
+
+
+@cli.command()
+@click.option(
+    "--input-csv",
+    type=click.Path(exists=True, dir_okay=False, path_type=Path),
+    required=True,
+    help="Path to the input transcription CSV file.",
+)
+@click.option(
+    "--output-json",
+    type=click.Path(dir_okay=False, writable=True, path_type=Path),
+    required=True,
+    help="Path for the output JSON test case file.",
+)
+@click.option(
+    "--single-turn-data-dir",
+    type=str,
+    default="phase1/data/evaluation/single_turn/",
+    help="Directory containing single-turn ground-truth JSON files.",
+)
+@click.option(
+    "--multi-turn-data-file",
+    type=str,
+    default="phase1/data/evaluation/multi_turn/multi_turns.json",
+    help="Path to the multi-turn ground-truth JSON file.",
+)
+def port(
+    input_csv: Path,
+    output_json: Path,
+    single_turn_data_dir: str,
+    multi_turn_data_file: str,
+):
+    """Ports a transcription CSV to a JSON test case file."""
+    logger.info(f"Porting data from {input_csv} to {output_json}...")
+    df = pd.read_csv(input_csv)
+    ported_test_cases = []
+
+    # --- Process Multi-turn cases ---
+    multi_turn_df = df[df["type"] == "multi"].copy()
+    if not multi_turn_df.empty:
+        logger.info("Processing multi-turn cases...")
+        with open(multi_turn_data_file) as f:
+            multi_turn_ground_truth = [
+                TestCase.model_validate(tc) for tc in json.load(f)
+            ]
+
+        multi_turn_df["case_idx"] = multi_turn_df["file_stem"].apply(
+            lambda x: int(x.split("-")[0])
+        )
+        multi_turn_df["turn_idx"] = multi_turn_df["file_stem"].apply(
+            lambda x: int(x.split("-")[1])
+        )
+
+        for case_idx, group in multi_turn_df.groupby("case_idx"):
+            if case_idx >= len(multi_turn_ground_truth):
+                raise IndexError(
+                    f"Case index {case_idx} is out of bounds for multi-turn ground truth."
+                )
+
+            test_case: TestCase = multi_turn_ground_truth[case_idx]
+            for _, row in group.iterrows():
+                turn_idx: int = int(row["turn_idx"])
+                if turn_idx >= len(test_case.prompts):
+                    raise IndexError(
+                        f"Turn index {turn_idx} is out of bounds for case {case_idx}."
+                    )
+
+                test_case.prompts[turn_idx].asr_prompt = row["transcription"]
+            ported_test_cases.append(test_case)
+
+    # --- Process Single-turn cases ---
+    single_turn_df = df[df["type"] == "single"].copy()
+    if not single_turn_df.empty:
+        logger.info("Processing single-turn cases...")
+        for _, row in single_turn_df.iterrows():
+            file_stem = row["file_stem"]
+            try:
+                base_name, index_str = file_stem.rsplit("-", 1)
+                case_idx = int(index_str)
+            except ValueError:
+                raise ValueError(
+                    f"Could not parse file_stem for single-turn case: {file_stem}"
+                )
+
+            ground_truth_file = Path(single_turn_data_dir) / f"{base_name}.json"
+            if not ground_truth_file.exists():
+                raise FileNotFoundError(
+                    f"Ground truth file not found for stem {base_name}: {ground_truth_file}"
+                )
+
+            with open(ground_truth_file) as f:
+                single_turn_ground_truth = [
+                    TestCase.model_validate(tc) for tc in json.load(f)
+                ]
+
+            if not 0 <= case_idx < len(single_turn_ground_truth):
+                raise IndexError(
+                    f"Case index {case_idx} is out of bounds for ground truth file {ground_truth_file}."
+                )
+
+            test_case = single_turn_ground_truth[case_idx]
+            test_case.prompts[0].asr_prompt = row["transcription"]
+            ported_test_cases.append(test_case)
+
+    # --- Save to JSON ---
+    with open(output_json, "w") as f:
+        json.dump([tc.model_dump() for tc in ported_test_cases], f, indent=2)
+    logger.info(
+        f"Successfully ported {len(ported_test_cases)} test cases to {output_json}."
+    )
 
 
 def run_transcription(asr_type: str, output_path: str, skip_conversion: bool):
@@ -90,7 +238,11 @@ def run_transcription(asr_type: str, output_path: str, skip_conversion: bool):
         return
 
     # --- 4. ASR Initialization ---
-    asr = LocalASR(None) if asr_type == "local" else RemoteASR(None)
+    asr = (
+        LocalASR(None, whisper_model_name="openai/whisper-medium")
+        if asr_type == "local"
+        else RemoteASR(None)
+    )
 
     # --- 5. Transcription Loop ---
     total_files = len(files_to_process)
@@ -148,34 +300,5 @@ def run_transcription(asr_type: str, output_path: str, skip_conversion: bool):
     logger.info("All files processed.")
 
 
-@click.command()
-@click.option(
-    "--asr-type",
-    type=click.Choice(["local", "remote"]),
-    required=True,
-    help="Specify which ASR to use.",
-)
-@click.option(
-    "--output",
-    "output_path",
-    type=click.Path(dir_okay=False, writable=True),
-    required=True,
-    help="Path to save the output CSV file.",
-)
-@click.option(
-    "--skip-conversion",
-    is_flag=True,
-    help="Skip M4A to WAV conversion and use existing WAV files.",
-)
-def main(asr_type: str, output_path: str, skip_conversion: bool):
-    """Transcribes all single-turn and multi-turn audio files using the
-    specified ASR, and saves the results to a CSV file."""
-    logger.remove()
-    logger.add(lambda msg: click.echo(msg, err=True), level="INFO")
-    logger.add("file_{time}.log", level="DEBUG")  # For detailed logs
-
-    run_transcription(asr_type, output_path, skip_conversion)
-
-
 if __name__ == "__main__":
-    main()
+    cli()
