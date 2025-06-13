@@ -2,7 +2,6 @@ import argparse
 import base64
 import json
 import os
-import sys
 import time
 from threading import Thread
 
@@ -32,10 +31,12 @@ class RemoteASR(AutomaticSpeechRecognition):
             logger.warning(
                 "The ffmpeg backend requires an url/file via the '-f' parameter"
             )
-            exit(1)
+            raise ValueError(
+                "The ffmpeg backend requires an url/file via the '-f' parameter"
+            )
         elif not os.path.isfile(input) and not input.startswith("rtsp"):
-            logger.warning("File", input, "does not exist")
-            exit(1)
+            logger.warning(f"File '{input}' does not exist")
+            raise FileNotFoundError(f"File '{input}' does not exist")
 
         stream_adapter.set_input(input)
 
@@ -50,8 +51,9 @@ class RemoteASR(AutomaticSpeechRecognition):
             cookies={"_forward_auth": token},
         )
         if info.status_code != 200:
-            logger.error("ERROR in starting session")
-            sys.exit(1)
+            msg = f"ERROR in starting session. Status code: {info.status_code}"
+            logger.error(msg)
+            raise ConnectionError(msg)
 
     SAMPLE_RATE = 16000  # 16 kHz
     CHANNELS = 1  # Mono
@@ -93,8 +95,9 @@ class RemoteASR(AutomaticSpeechRecognition):
                 continue
             break
         if res.status_code != 200:
-            logger.error(f"ERROR in sending audio. Status code: {res.status_code}")
-            sys.exit(1)
+            msg = f"ERROR in sending audio. Status code: {res.status_code}"
+            logger.error(msg)
+            raise ConnectionError(msg)
 
         return e
 
@@ -106,10 +109,9 @@ class RemoteASR(AutomaticSpeechRecognition):
             cookies={"_forward_auth": token},
         )
         if res.status_code != 200:
-            logger.error(
-                f"ERROR in sending END message. Status code: {res.status_code}"
-            )
-            sys.exit(1)
+            msg = f"ERROR in sending END message. Status code: {res.status_code}"
+            logger.error(msg)
+            raise ConnectionError(msg)
 
     def send_session(self, url, sessionID, streamID, audio_source, timeout, api, token):
         try:
@@ -235,20 +237,18 @@ class RemoteASR(AutomaticSpeechRecognition):
         )
         if res.status_code != 200:
             if res.status_code == 401:
-                logger.error(
-                    "You are not authorised for ASR. To use the remote ASR option update to a valid token by using the --token argument"
-                )
+                msg = "You are not authorised for ASR. To use the remote ASR option update to a valid token by using the --token argument"
+                logger.error(msg)
+                raise ConnectionError(msg)
             else:
-                logger.error(
-                    f"ERROR in requesting default graph for ASR. Status code: {res.status_code}"
-                )
-            sys.exit(1)
+                msg = f"ERROR in requesting default graph for ASR. Status code: {res.status_code}"
+                logger.error(msg)
+                raise ConnectionError(msg)
 
         if "Log in to dex" in res.text:
-            logger.error(
-                "You are not authorised for ASR. To use the remote ASR option update to a valid token by using the --token argument"
-            )
-            sys.exit(1)
+            msg = "You are not authorised for ASR. To use the remote ASR option update to a valid token by using the --token argument"
+            logger.error(msg)
+            raise ConnectionError(msg)
         sessionID, streamID = res.text.split()
 
         # print("SessionId ",sessionID,"StreamID ",streamID)
