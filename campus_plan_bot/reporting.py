@@ -71,7 +71,9 @@ def report_to_df(report: EvaluationReport) -> pd.DataFrame:
         scores = {k: v.value for k, v in case.scores.items()}
 
         case_data = {
-            "input": case.inputs,
+            "input": (
+                case.inputs.input if hasattr(case.inputs, "input") else case.inputs
+            ),
             "metadata": case.metadata,
             "attributes": case.attributes,
             "expected_output": case.expected_output,

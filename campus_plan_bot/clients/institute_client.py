@@ -184,17 +184,19 @@ class InstituteModel(Model):
         return prompt_builder.from_conversation_history(conv, system_prompt)
 
 
-# Example usage:
-model = InstituteModel(
-    model_url=INSTITUTE_URL, default_max_tokens=512, default_temperature=0.5
-)
+if __name__ == "__main__":
+    # Example usage:
+    model = InstituteModel(
+        model_url=INSTITUTE_URL, default_max_tokens=512, default_temperature=0.5
+    )
 
-# example usage with agent
-agent = Agent(
-    model=model,
-    system_prompt="You are a helpful assistant that uses emojis excessively.",
-)
+    # example usage with agent
+    agent = Agent(
+        model=model,
+        system_prompt="You are a helpful assistant that uses emojis excessively.",
+    )
 
-r = agent.run_sync(
-    "What is the capital of France?",
-)
+    r = agent.run_sync(
+        "What is the capital of France?",
+    )
+    print(r)
