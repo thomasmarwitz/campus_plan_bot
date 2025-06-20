@@ -1,0 +1,2896 @@
+[
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "40.16",
+        "response_data": "40.16, 11, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude 40.16?",
+        "response": "Das Geb\u00e4ude hat die Adresse 40.16, 11, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir die Adresse von Geb\u00e4ude 40.16 mitteilen?",
+        "asr_prompt": " K\u00f6nnen Sie mir die Adresse von Geb\u00e4ude 40.16 mitteilen?"
+      },
+      {
+        "input_data": "40.16",
+        "response_data": "['49.01530', '8.41501']",
+        "prompt": "Wie komme ich dahin?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01530,8.41501.",
+        "reformulated_prompt": "Welchen Weg muss ich zum Geb\u00e4ude nehmen?",
+        "asr_prompt": " Welchen Weg muss ich zu dem Geb\u00e4ude nehmen?"
+      },
+      {
+        "input_data": "40.16",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Hat das Geb\u00e4ude einen barrierefreien Zugang?",
+        "asr_prompt": " Hat das Geb\u00e4ude einen barrierefreien Zugang?"
+      },
+      {
+        "input_data": "40.16",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet es?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Um welche Uhrzeit wird das Geb\u00e4ude aufgeschlossen?",
+        "asr_prompt": " Um welcher Zeit wird das Geb\u00e4ude aufgeschlossen?"
+      }
+    ]
+  },
+  {
+    "num_turns": 3,
+    "prompts": [
+      {
+        "input_data": "Physikalische Chemie, Institut f\u00fcr",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude Physikalische Chemie, Institut f\u00fcr rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist das Geb\u00e4ude der Physikalischen Chemie barrierefrei?",
+        "asr_prompt": " Ist das Geb\u00e4ude der physikalischen Chemie barrierefrei?"
+      },
+      {
+        "input_data": "Physikalische Chemie, Institut f\u00fcr",
+        "response_data": "Chemie-Turm II, 2, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist das?",
+        "response": "Das Geb\u00e4ude hat die Adresse Chemie-Turm II, 2, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse befindet sich das Institut?",
+        "asr_prompt": " An welcher Adresse befindet sich das Institut?"
+      },
+      {
+        "input_data": "Physikalische Chemie, Institut f\u00fcr",
+        "response_data": "http://www.ipc.kit.edu",
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Hat das Institut eine eigene Webseite?",
+        "asr_prompt": " Hat das Institut auch eine eigene Webseite?"
+      }
+    ]
+  },
+  {
+    "num_turns": 2,
+    "prompts": [
+      {
+        "input_data": "Materialpr\u00fcfungsanstalt (MPA)",
+        "response_data": "http://www.mpa.kit.edu/",
+        "prompt": "Was ist die Webseite von Geb\u00e4ude Materialpr\u00fcfungsanstalt (MPA)?",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Wo finde ich die Homepage der MPA?",
+        "asr_prompt": " Wo finde ich die Homepage der MPa?"
+      },
+      {
+        "input_data": "Materialpr\u00fcfungsanstalt (MPA)",
+        "response_data": null,
+        "prompt": "Wie lange ist das noch offen?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Bis wann hat das noch ge\u00f6ffnet?",
+        "asr_prompt": " Bis wann hat das noch ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "10.63",
+        "response_data": "['49.01048', '8.41707']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude 10.63?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01048,8.41707.",
+        "reformulated_prompt": "Wie gelange ich zum Geb\u00e4ude mit Nummer 10.63?",
+        "asr_prompt": " Wie gelange ich zum Geb\u00e4ude mit der Nummer 10.63?"
+      },
+      {
+        "input_data": "10.63",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Gibt es dort auch einen barrierefreien Zugang?",
+        "asr_prompt": " Gibt es dort auch einen barrierefreien Zugang?"
+      },
+      {
+        "input_data": "10.63",
+        "response_data": "Windkanalhalle, 1, Ernst-Gaber-Stra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist das?",
+        "response": "Das Geb\u00e4ude hat die Adresse Windkanalhalle, 1, Ernst-Gaber-Stra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse befindet sich das Geb\u00e4ude?",
+        "asr_prompt": " An welcher Adresse befindet sich das Geb\u00e4ude?"
+      },
+      {
+        "input_data": "10.63",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet es?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Um welche Uhrzeit \u00f6ffnen die T\u00fcren dort regelm\u00e4\u00dfig?",
+        "asr_prompt": " Um welche Uhrzeit \u00f6ffnet die T\u00fcren dort regelm\u00e4\u00dfig?"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "692",
+        "response_data": "Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude 692?",
+        "response": "Das Geb\u00e4ude hat die Adresse Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "Gesucht ist der Standort von Geb\u00e4ude 692",
+        "asr_prompt": " Gesucht ist der Standort von Geb\u00e4ude 692."
+      },
+      {
+        "input_data": "692",
+        "response_data": null,
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Existiert dazu eine Internetpr\u00e4senz?",
+        "asr_prompt": " Existiert dazu eine Internetpr\u00e4sent?"
+      },
+      {
+        "input_data": "692",
+        "response_data": null,
+        "prompt": "Und hat es gerade offen?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Sind die \u00d6ffnungszeiten aktuell?",
+        "asr_prompt": " Wie sind die \u00d6ffnungszeiten aktuell?"
+      },
+      {
+        "input_data": "692",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist ein barrierefreier Zugang vorhanden?",
+        "asr_prompt": " Ist ein barrierefreier Zugang vorhanden?"
+      }
+    ]
+  },
+  {
+    "num_turns": 3,
+    "prompts": [
+      {
+        "input_data": "417",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude 417?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 417?",
+        "asr_prompt": " Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 417?"
+      },
+      {
+        "input_data": "417",
+        "response_data": "['49.09350', '8.43441']",
+        "prompt": "Wie komme ich dahin?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09350,8.43441.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir den Weg zum Geb\u00e4ude zeigen?",
+        "asr_prompt": " K\u00f6nnen Sie mir den Weg zum Geb\u00e4ude zeigen?"
+      },
+      {
+        "input_data": "417",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Hat das Geb\u00e4ude einen barrierefreien Zugang?",
+        "asr_prompt": " Hat das Geb\u00e4ude einen barrierefreien Zugang?"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "259",
+        "response_data": "['49.09200', '8.43505']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude 259?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09200,8.43505.",
+        "reformulated_prompt": "Wie gelange ich zu 2 5 9?",
+        "asr_prompt": " Wie gelange ich zu 259?"
+      },
+      {
+        "input_data": "259",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist der Zugang barrierefrei",
+        "asr_prompt": " Ist der Zugang barrierefrei?"
+      },
+      {
+        "input_data": "259",
+        "response_data": null,
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Hat das einen Internetauftritt",
+        "asr_prompt": " Hat das ein Internet auftritt?"
+      },
+      {
+        "input_data": "259",
+        "response_data": "Neureuter Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+        "prompt": "Wo ist das?",
+        "response": "Das Geb\u00e4ude hat die Adresse Neureuter Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse befindet sich das Geb\u00e4ude",
+        "asr_prompt": " Und dann welcher Adresse befindet sich das Geb\u00e4ude?"
+      }
+    ]
+  },
+  {
+    "num_turns": 3,
+    "prompts": [
+      {
+        "input_data": "70.16",
+        "response_data": "70.16, 2, Rintheimer Querallee, Alt-Rintheim, Rintheim, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude 70.16?",
+        "response": "Das Geb\u00e4ude hat die Adresse 70.16, 2, Rintheimer Querallee, Alt-Rintheim, Rintheim, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse finde ich das Geb\u00e4ude 70.16?",
+        "asr_prompt": " An welcher Adresse finde ich das Geb\u00e4ude 70.16?"
+      },
+      {
+        "input_data": "70.16",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann hat das ge\u00f6ffnet?",
+        "asr_prompt": " Wann hat das ge\u00f6ffnet?"
+      },
+      {
+        "input_data": "70.16",
+        "response_data": "['49.02186', '8.43111']",
+        "prompt": "Wie komme ich dahin?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.02186,8.43111.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir einen Navigationslink schicken?",
+        "asr_prompt": " K\u00f6nnen Sie mir dazu den Navigationslink schicken?"
+      }
+    ]
+  },
+  {
+    "num_turns": 2,
+    "prompts": [
+      {
+        "input_data": "B254",
+        "response_data": "Friedrichstaler Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude B254?",
+        "response": "Das Geb\u00e4ude hat die Adresse Friedrichstaler Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+        "reformulated_prompt": "Wo befindet sich B254?",
+        "asr_prompt": " Wo befindet sich B254?"
+      },
+      {
+        "input_data": "B254",
+        "response_data": null,
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Hat das einen Internetauftritt?",
+        "asr_prompt": " Hat das ein Internetauftritt?"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "690",
+        "response_data": "Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude 690?",
+        "response": "Das Geb\u00e4ude hat die Adresse Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "In welcher Stra\u00dfe finde ich das Geb\u00e4ude 690?",
+        "asr_prompt": " Welcher Stra\u00dfe finde ich das Geb\u00e4ude 690?"
+      },
+      {
+        "input_data": "690",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann hat das Haus ge\u00f6ffnet?",
+        "asr_prompt": " Wann hat das Haus ge\u00f6ffnet?"
+      },
+      {
+        "input_data": "690",
+        "response_data": null,
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Kann ich online Informationen dazu finden?",
+        "asr_prompt": " Kann ich auch online irgendwelche Informationen dazu finden?"
+      },
+      {
+        "input_data": "690",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Hat das Geb\u00e4ude einen barrierefreien Zugang?",
+        "asr_prompt": " hat das Geb\u00e4ude einen barrierefreien Zugang"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "01.85",
+        "response_data": "['49.00887', '8.41043']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude 01.85?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.00887,8.41043.",
+        "reformulated_prompt": "Kannst du mir den Weg zum Geb\u00e4ude 01.85 zeigen?",
+        "asr_prompt": " Kannst du mit dem Weg zu Geb\u00e4ude 01.85 zeigen?"
+      },
+      {
+        "input_data": "01.85",
+        "response_data": "3, Fritz-Erler-Stra\u00dfe, Innenstadt-Ost S\u00fcdwestlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76133, Deutschland",
+        "prompt": "Wo ist das?",
+        "response": "Das Geb\u00e4ude hat die Adresse 3, Fritz-Erler-Stra\u00dfe, Innenstadt-Ost S\u00fcdwestlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76133, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse befindet sich das Geb\u00e4ude?",
+        "asr_prompt": " An welcher Adresse befindet sich das Geb\u00e4ude?"
+      },
+      {
+        "input_data": "01.85",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Hat das Geb\u00e4ude einen barrierefreien Zugang?",
+        "asr_prompt": " Hat das Geb\u00e4ude einen barrierefreien Zugang?"
+      },
+      {
+        "input_data": "01.85",
+        "response_data": null,
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Existiert eine Webpr\u00e4senz f\u00fcr diesen Standort?",
+        "asr_prompt": " Existiert eine Webpresenz f\u00fcr diesen Standort."
+      }
+    ]
+  },
+  {
+    "num_turns": 3,
+    "prompts": [
+      {
+        "input_data": "10.86",
+        "response_data": "10.86, 5, Otto-Ammann-Platz, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude 10.86?",
+        "response": "Das Geb\u00e4ude hat die Adresse 10.86, 5, Otto-Ammann-Platz, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir den Standort von Geb\u00e4ude 10.86 mitteilen?",
+        "asr_prompt": " K\u00f6nnen Sie mir den Standort von Geb\u00e4ude 10.86 mitteilen?"
+      },
+      {
+        "input_data": "10.86",
+        "response_data": "['49.01011', '8.41636']",
+        "prompt": "Wie komme ich dahin?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01011,8.41636.",
+        "reformulated_prompt": "Was ist der beste Weg zum Geb\u00e4ude?",
+        "asr_prompt": " Was ist der beste Weg zum Geb\u00e4ude?"
+      },
+      {
+        "input_data": "10.86",
+        "response_data": null,
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Existiert eine Webpr\u00e4senz daf\u00fcr?",
+        "asr_prompt": " Existiert eine Webpresenz daf\u00fcr?"
+      }
+    ]
+  },
+  {
+    "num_turns": 3,
+    "prompts": [
+      {
+        "input_data": "International Scholars & Welcome Office (Campus Nord)",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude International Scholars & Welcome Office (Campus Nord) grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Hat das International Scholars & Welcome Office im Nordcampus gerade auf?",
+        "asr_prompt": " Hat das International Scholars and Welcome Office im Nordkampus gerade auf?"
+      },
+      {
+        "input_data": "International Scholars & Welcome Office (Campus Nord)",
+        "response_data": "Bruchsaler Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+        "prompt": "Wo ist das?",
+        "response": "Das Geb\u00e4ude hat die Adresse Bruchsaler Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+        "reformulated_prompt": "Kannst du mir die Adresse f\u00fcr diese Einrichtung geben?",
+        "asr_prompt": " Kannst du mir die Adresse f\u00fcr die Einrichtung geben?"
+      },
+      {
+        "input_data": "International Scholars & Welcome Office (Campus Nord)",
+        "response_data": "['49.09309', '8.42787']",
+        "prompt": "Wie komme ich dahin?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09309,8.42787.",
+        "reformulated_prompt": "Kannst du mir eine Route dorthin anzeigen?",
+        "asr_prompt": " Kannst du mir eine Rute dorthin anzeigen?"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "803",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 803?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann hat Geb\u00e4ude 803 ge\u00f6ffnet?",
+        "asr_prompt": " Man hat Geb\u00e4ude 803 ge\u00f6ffnet."
+      },
+      {
+        "input_data": "803",
+        "response_data": null,
+        "prompt": "Wo ist das?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "An welcher Adresse befindet sich dieses Bauwerk?",
+        "asr_prompt": " An welcher Adresse befindet sich dieses Bauwerk?"
+      },
+      {
+        "input_data": "803",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist der Zugang f\u00fcr Rollstuhlfahrer geeignet?",
+        "asr_prompt": " Ist der Zugang f\u00fcr Rollstuhlfahrer geeignet?"
+      },
+      {
+        "input_data": "803",
+        "response_data": "['49.10288', '8.43598']",
+        "prompt": "Wie komme ich dahin?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.10288,8.43598.",
+        "reformulated_prompt": "Welche Route f\u00fchrt zu diesem Standort?",
+        "asr_prompt": " Welche gute f\u00fchrt zu diesem Standort?"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "Berufsp\u00e4dagogik und Allgemeine P\u00e4dagogik (IBAP), Institut f\u00fcr",
+        "response_data": "['49.02129', '8.36819']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude Berufsp\u00e4dagogik und Allgemeine P\u00e4dagogik (IBAP), Institut f\u00fcr?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.02129,8.36819.",
+        "reformulated_prompt": "Wie finde ich den Weg zum IBAP?",
+        "asr_prompt": " Wie finde ich den Weg zum IBAP?"
+      },
+      {
+        "input_data": "Berufsp\u00e4dagogik und Allgemeine P\u00e4dagogik (IBAP), Institut f\u00fcr",
+        "response_data": "http://www.ibap.kit.edu",
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Kannst du mir die Webseite zeigen?",
+        "asr_prompt": " Kannst du mir die Webseite zeigen?"
+      },
+      {
+        "input_data": "Berufsp\u00e4dagogik und Allgemeine P\u00e4dagogik (IBAP), Institut f\u00fcr",
+        "response_data": "16, Hertzstra\u00dfe, Binsenschlauch, Nordweststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76187, Deutschland",
+        "prompt": "Wo ist das?",
+        "response": "Das Geb\u00e4ude hat die Adresse 16, Hertzstra\u00dfe, Binsenschlauch, Nordweststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76187, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse finde ich die Einrichtung?",
+        "asr_prompt": " An welcher Adresse finde ich diese Einrichtung?"
+      },
+      {
+        "input_data": "Berufsp\u00e4dagogik und Allgemeine P\u00e4dagogik (IBAP), Institut f\u00fcr",
+        "response_data": null,
+        "prompt": "Wie lange ist das noch offen?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Bis wann hat die Institution heute ge\u00f6ffnet?",
+        "asr_prompt": " Und bis wann hat die Institution heute ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 3,
+    "prompts": [
+      {
+        "input_data": "607",
+        "response_data": "['49.09718', '8.43305']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude 607?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09718,8.43305.",
+        "reformulated_prompt": "Was ist der schnellste Weg zum Geb\u00e4ude 607?",
+        "asr_prompt": " Was ist der schnellste Weg zum Geb\u00e4ude 607?"
+      },
+      {
+        "input_data": "607",
+        "response_data": null,
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Kann ich eine Webpr\u00e4senz finden?",
+        "asr_prompt": " Kann ich eine Webpr\u00e4senz finden?"
+      },
+      {
+        "input_data": "607",
+        "response_data": null,
+        "prompt": "Wie lange ist das noch offen?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Bis wann kann ich dort heute rein?",
+        "asr_prompt": " Bis wann kann ich heute dort noch rein?"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "70.11",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude 70.11 rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist der Zugang zu Geb\u00e4ude 70.11 barrierefrei?",
+        "asr_prompt": " Ist der Zugang zu Geb\u00e4ude 7011 barrierefrei?"
+      },
+      {
+        "input_data": "70.11",
+        "response_data": null,
+        "prompt": "Und hat es gerade offen?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Sind die T\u00fcren aktuell ge\u00f6ffnet?",
+        "asr_prompt": " Sind die T\u00fcren aktuell ge\u00f6ffnet?"
+      },
+      {
+        "input_data": "70.11",
+        "response_data": "['49.02379', '8.43115']",
+        "prompt": "Wie komme ich dahin?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.02379,8.43115.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir den Weg zum Veranstaltungsgeb\u00e4ude zeigen?",
+        "asr_prompt": " K\u00f6nnen Sie mir den Weg zu diesem Geb\u00e4ude zeigen?"
+      },
+      {
+        "input_data": "70.11",
+        "response_data": null,
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Existiert ein Online-Auftritt f\u00fcr diese Einrichtung?",
+        "asr_prompt": " Existiert f\u00fcr diese Einrichtung ein Onlineauftritt?"
+      }
+    ]
+  },
+  {
+    "num_turns": 2,
+    "prompts": [
+      {
+        "input_data": "633",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude 633 rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Verf\u00fcgt der Haupteingang des Geb\u00e4udes 633 \u00fcber eine barrierefreie Zugangsm\u00f6glichkeit?",
+        "asr_prompt": " verf\u00fcgt der Hauptengang des Geb\u00e4udes 633 \u00fcber eine barrierefreie Zugangsm\u00f6glichkeit?"
+      },
+      {
+        "input_data": "633",
+        "response_data": "Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist das?",
+        "response": "Das Geb\u00e4ude hat die Adresse Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse befindet sich der gesuchte Standort?",
+        "asr_prompt": " An welcher Adresse befindet sich der gesuchte Standort?"
+      }
+    ]
+  },
+  {
+    "num_turns": 3,
+    "prompts": [
+      {
+        "input_data": "40.02",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude 40.02 rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist das Geb\u00e4ude 40.02 barrierefrei zug\u00e4nglich?",
+        "asr_prompt": " Ist das Geb\u00e4ude 40.02 barrierefrei zug\u00e4nglich?"
+      },
+      {
+        "input_data": "40.02",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet es?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Welche \u00d6ffnungszeiten sind dort festgelegt?",
+        "asr_prompt": " Welche \u00d6ffnungszeiten sind dort festgelegt?"
+      },
+      {
+        "input_data": "40.02",
+        "response_data": null,
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Wo finde ich die zugeh\u00f6rige Webpr\u00e4senz?",
+        "asr_prompt": " Wo finde ich die zugeh\u00f6rige Beppe Pr\u00e4sens?"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "Mikroverfahrenstechnik (IMVT) , Institut f\u00fcr",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Mikroverfahrenstechnik (IMVT) , Institut f\u00fcr?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir sagen, wann das Institut f\u00fcr Mikroverfahrenstechnik (IMVT) ge\u00f6ffnet hat?",
+        "asr_prompt": " K\u00f6nnen Sie mir sagen, was das Institut f\u00fcr Mikroverfahrenstechnik ge\u00f6ffnet hat?"
+      },
+      {
+        "input_data": "Mikroverfahrenstechnik (IMVT) , Institut f\u00fcr",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist die Einrichtung barrierefrei zug\u00e4nglich?",
+        "asr_prompt": " Ist die Einrichtung barrierefrei zug\u00e4nglich?"
+      },
+      {
+        "input_data": "Mikroverfahrenstechnik (IMVT) , Institut f\u00fcr",
+        "response_data": "Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist das?",
+        "response": "Das Geb\u00e4ude hat die Adresse Campus Nord, Leopoldstra\u00dfe, Kirchfeld, Neureut, Karlsruhe, Dettenheim, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse befindet sich dieses Institut?",
+        "asr_prompt": " An welcher Adresse befindet sich dieses Institut?"
+      },
+      {
+        "input_data": "Mikroverfahrenstechnik (IMVT) , Institut f\u00fcr",
+        "response_data": "http://www.imvt.kit.edu",
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Existiert eine Homepage f\u00fcr diese Institution?",
+        "asr_prompt": " Existiert eine Homepage?"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "Sport und Sportwissenschaft, Institut f\u00fcr",
+        "response_data": "['49.01579', '8.41638']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude Sport und Sportwissenschaft, Institut f\u00fcr?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01579,8.41638.",
+        "reformulated_prompt": "Kannst du mir den Weg zum Institut f\u00fcr Sport und Sportwissenschaften zeigen?",
+        "asr_prompt": " Kannst du mir den Weg zum Institut f\u00fcr Sport und Sportwissenschaften zeigen?"
+      },
+      {
+        "input_data": "Sport und Sportwissenschaft, Institut f\u00fcr",
+        "response_data": null,
+        "prompt": "Und hat es gerade offen?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Ist diese Einrichtung derzeit ge\u00f6ffnet?",
+        "asr_prompt": " Ist die Einrichtung der Z-Ger\u00f6ffnung er\u00f6ffnet?"
+      },
+      {
+        "input_data": "Sport und Sportwissenschaft, Institut f\u00fcr",
+        "response_data": "yes, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+        "reformulated_prompt": "Ist der Zugang barrierefrei und f\u00fcr Rollstuhlfahrer geeignet?",
+        "asr_prompt": " ist der Zugang barrierefrei und f\u00fcr Rollstuhlfahrer geeignet."
+      },
+      {
+        "input_data": "Sport und Sportwissenschaft, Institut f\u00fcr",
+        "response_data": "40.40, 15, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist das?",
+        "response": "Das Geb\u00e4ude hat die Adresse 40.40, 15, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse befindet sich diese Einrichtung?",
+        "asr_prompt": " Gib mir die Adresse von Design richten."
+      }
+    ]
+  },
+  {
+    "num_turns": 2,
+    "prompts": [
+      {
+        "input_data": "145",
+        "response_data": "KIT Casino - Campus Nord, 1, Hermann-von-Helmholtz-Platz, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude 145?",
+        "response": "Das Geb\u00e4ude hat die Adresse KIT Casino - Campus Nord, 1, Hermann-von-Helmholtz-Platz, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir den Standort vom Geb\u00e4ude 145 mitteilen?",
+        "asr_prompt": " K\u00f6nnen Sie mir den Standort von Geb\u00e4ude 145 m teilen?"
+      },
+      {
+        "input_data": "145",
+        "response_data": "yes, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+        "reformulated_prompt": "Ist der Zugang dort barrierefrei f\u00fcr Rollst\u00fchle?",
+        "asr_prompt": " Ist der Zugang dort barrierefrei f\u00fcr Rollst\u00fchle?"
+      }
+    ]
+  },
+  {
+    "num_turns": 2,
+    "prompts": [
+      {
+        "input_data": "11.40",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude 11.40 rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Kann man 11 40 eigentlich mit einem Rollstuhl erreichen?",
+        "asr_prompt": " Kann man 11,40 eigentlich mit einem Rollstuhl erreichen?"
+      },
+      {
+        "input_data": "11.40",
+        "response_data": "['49.01017', '8.41184']",
+        "prompt": "Wie komme ich dahin?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01017,8.41184.",
+        "reformulated_prompt": "Welchen Weg muss ich nehmen, um dorthin zu gelangen?",
+        "asr_prompt": " Welchen Weg muss ich nehmen, um dorthin zu gelangen?"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "741",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude 741 grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Hat Geb\u00e4ude 741 im Moment ge\u00f6ffnet?",
+        "asr_prompt": " hat Geb\u00e4ude 741 momentan ge\u00f6ffnet."
+      },
+      {
+        "input_data": "741",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist der Zugang barrierefrei?",
+        "asr_prompt": " Ist der Zugangbarriere frei?"
+      },
+      {
+        "input_data": "741",
+        "response_data": null,
+        "prompt": "Wo ist das?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "An welcher Adresse befindet sich dieser Standort?",
+        "asr_prompt": " An welcher Adresse befindet sich dieser Standort?"
+      },
+      {
+        "input_data": "741",
+        "response_data": "['49.10343', '8.42945']",
+        "prompt": "Wie komme ich dahin?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.10343,8.42945.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir den Weg zu dieser Einrichtung zeigen?",
+        "asr_prompt": " K\u00f6nnen Sie mir den Weg zu dieser Einrichtung zeigen?"
+      }
+    ]
+  },
+  {
+    "num_turns": 2,
+    "prompts": [
+      {
+        "input_data": "329",
+        "response_data": "['49.09598', '8.42891']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude 329?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09598,8.42891.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir den Weg zu Geb\u00e4ude 329 zeigen?",
+        "asr_prompt": " K\u00f6nnen Sie mir den Weg zu Geb\u00e4ude 329 zeigen?"
+      },
+      {
+        "input_data": "329",
+        "response_data": null,
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Existiert eine Internetpr\u00e4senz f\u00fcr diese \u00d6rtlichkeit?",
+        "asr_prompt": " Existiert eine Internetpr\u00e4senz f\u00fcr diese \u00d6rtlichkeit?"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "10.84",
+        "response_data": "Theodor-Rehbock-Flussbaulaboratorium, 22, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude 10.84?",
+        "response": "Das Geb\u00e4ude hat die Adresse Theodor-Rehbock-Flussbaulaboratorium, 22, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "In welchem Bereich finde ich den Geb\u00e4udekomplex 10.84?",
+        "asr_prompt": " In welchen Bereich finde ich den Geb\u00e4udekomplex 10.84?"
+      },
+      {
+        "input_data": "10.84",
+        "response_data": null,
+        "prompt": "Gibt es eine Website davon?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Existiert ein Online-Auftritt zu dieser Einrichtung?",
+        "asr_prompt": " Existiert ein Online-Auftritt zu dieser Einrichtung?"
+      },
+      {
+        "input_data": "10.84",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Verf\u00fcgt der Standort \u00fcber barrierefreie Zug\u00e4nge?",
+        "asr_prompt": " Verf\u00fcgt der Standort \u00fcber vari\u00e4refreie Zug\u00e4nge?"
+      },
+      {
+        "input_data": "10.84",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann kann man die R\u00e4umlichkeiten betreten und nutzen?",
+        "asr_prompt": " Wann kann man die R\u00e4umlichkeiten betreten und nutzen?"
+      }
+    ]
+  },
+  {
+    "num_turns": 2,
+    "prompts": [
+      {
+        "input_data": "KIT-Shuttle (Haltestelle Campus Ost)",
+        "response_data": "['49.02099', '8.43105']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude KIT-Shuttle (Haltestelle Campus Ost)?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.02099,8.43105.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir den besten Weg zum KIT-Shuttle-Geb\u00e4ude am Campus Ost zeigen?",
+        "asr_prompt": " K\u00f6nnen Sie mir den besten Weg zum KIT-Shuttle am Campus Ost zeigen?"
+      },
+      {
+        "input_data": "KIT-Shuttle (Haltestelle Campus Ost)",
+        "response_data": "Alt-Rintheim, Rintheim, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist das?",
+        "response": "Das Geb\u00e4ude hat die Adresse Alt-Rintheim, Rintheim, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse befindet sich diese Haltestelle?",
+        "asr_prompt": " An welcher Adresse befindet sich diese Haltestelle?"
+      }
+    ]
+  },
+  {
+    "num_turns": 2,
+    "prompts": [
+      {
+        "input_data": "Technische Chemie und Polymerchemie, Institut f\u00fcr",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude Technische Chemie und Polymerchemie, Institut f\u00fcr rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist der Zugang zum Institut f\u00fcr Technische und Polymerchemie barrierefrei?",
+        "asr_prompt": " Ist der Zugang zum Institut f\u00fcr technische und poly\u00e4r chemie barrierefrei?"
+      },
+      {
+        "input_data": "Technische Chemie und Polymerchemie, Institut f\u00fcr",
+        "response_data": "Institut f\u00fcr Technische Chemie und Polymerchemie, 20, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist das?",
+        "response": "Das Geb\u00e4ude hat die Adresse Institut f\u00fcr Technische Chemie und Polymerchemie, 20, Engesserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse befindet sich diese Einrichtung?",
+        "asr_prompt": " An welcher Adresse befindet sich diese Einrichtung?"
+      }
+    ]
+  },
+  {
+    "num_turns": 3,
+    "prompts": [
+      {
+        "input_data": "30.43",
+        "response_data": "Chemie-Turm I, 4, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude 30.43?",
+        "response": "Das Geb\u00e4ude hat die Adresse Chemie-Turm I, 4, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir bitte die Adresse von Geb\u00e4ude 30.43 nennen?",
+        "asr_prompt": " K\u00f6nnen Sie mir bitte die Adresse von Geb\u00e4ude 3043 nennen?"
+      },
+      {
+        "input_data": "30.43",
+        "response_data": "['49.01237', '8.41451']",
+        "prompt": "Wie komme ich dahin?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01237,8.41451.",
+        "reformulated_prompt": "Was ist der schnellste Weg zu diesem Standort?",
+        "asr_prompt": " Was ist der schnellste Weg zu diesem Standort?"
+      },
+      {
+        "input_data": "30.43",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist der Zugang barrierefrei gestaltet?",
+        "asr_prompt": " Ist der Zugang barrierefrei gestaltet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 4,
+    "prompts": [
+      {
+        "input_data": "308",
+        "response_data": null,
+        "prompt": "Was ist die Webseite von Geb\u00e4ude 308?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir die URL f\u00fcr Geb\u00e4ude 308 nennen?",
+        "asr_prompt": " K\u00f6nnen Sie mir die URL f\u00fcr Geb\u00e4ude 308 nennen?"
+      },
+      {
+        "input_data": "308",
+        "response_data": "['49.09468', '8.42935']",
+        "prompt": "Wie komme ich dahin?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09468,8.42935.",
+        "reformulated_prompt": "Wie gelange ich zu diesem Standort?",
+        "asr_prompt": " Wie gelange ich zu diesem Standort?"
+      },
+      {
+        "input_data": "308",
+        "response_data": "nan, nan",
+        "prompt": "Ist das auch rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist der Zugang auch barrierefrei m\u00f6glich?",
+        "asr_prompt": " Ist der Zugang auch barrierefrei m\u00f6glich?"
+      },
+      {
+        "input_data": "308",
+        "response_data": "Karlsruher Allee, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+        "prompt": "Wo ist das?",
+        "response": "Das Geb\u00e4ude hat die Adresse Karlsruher Allee, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse befindet sich diese Einrichtung?",
+        "asr_prompt": " An welcher Adresse befindet sich diese Einrichtung?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "239",
+        "response_data": "Eggensteiner Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude 239?",
+        "response": "Das Geb\u00e4ude hat die Adresse Eggensteiner Stra\u00dfe, Leopoldshafen, Eggenstein-Leopoldshafen, Landkreis Karlsruhe, Baden-W\u00fcrttemberg, 76344, Deutschland.",
+        "reformulated_prompt": "An welcher Stelle befindet sich Geb\u00e4ude 239?",
+        "asr_prompt": " An welcher Stelle befindet sich Geb\u00e4ude 239?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "40.25",
+        "response_data": "Institutsgeb\u00e4ude Boden- und Felsmechanik, 14, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude 40.25?",
+        "response": "Das Geb\u00e4ude hat die Adresse Institutsgeb\u00e4ude Boden- und Felsmechanik, 14, Engler-Bunte-Ring, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "Wo steht Geb\u00e4ude 40.25?",
+        "asr_prompt": " Wo steht Geb\u00e4ude 40.25?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "International Students Office (INTL)",
+        "response_data": "Ehemalige Kinderklinik, 2, Adenauerring, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude International Students Office (INTL)?",
+        "response": "Das Geb\u00e4ude hat die Adresse Ehemalige Kinderklinik, 2, Adenauerring, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "An welcher Adresse finde ich das International Students Office (INTL)?",
+        "asr_prompt": " An welcher Adresse finde ich das Internationale Studium Office, INTL?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "10.34",
+        "response_data": "10.34, 4, Kaiserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude 10.34?",
+        "response": "Das Geb\u00e4ude hat die Adresse 10.34, 4, Kaiserstra\u00dfe, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "Was ist die Adresse von Geb\u00e4ude 10.34?",
+        "asr_prompt": " Was ist die Adresse von Geb\u00e4ude 10.34?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr",
+        "response_data": "Informatikbau, 5, Am Fasanengarten, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS), Institut f\u00fcr?",
+        "response": "Das Geb\u00e4ude hat die Adresse Informatikbau, 5, Am Fasanengarten, Oststadt Westlicher Teil, Oststadt, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "Wo befindet sich das Institut f\u00fcr Theoretische Informatik, Arbeitsgruppe Kryptographie und Sicherheit (IKS)?",
+        "asr_prompt": " Obel findet sich das Institut f\u00fcr Thermodynamische Informatik, die Arbeitsgruppe Kryptografie und Sicherheit."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Fachschaft Geistes- und Sozialwissenschaften",
+        "response_data": "Fachschaft GeistSoz, 7, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude Fachschaft Geistes- und Sozialwissenschaften?",
+        "response": "Das Geb\u00e4ude hat die Adresse Fachschaft GeistSoz, 7, Fritz-Haber-Weg, Innenstadt-Ost Nord\u00f6stlicher Teil, Innenstadt-Ost, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "Wo hat die Fachschaft Geistes- und Sozialwissenschaften ihren Sitz?",
+        "asr_prompt": " Wo hat die Fachschaft Geistes und Sozialwissenschaften ihren Sitz?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "70.26",
+        "response_data": "B\u00fcrogeb\u00e4ude 70.04, 2, Rintheimer Querallee, Alt-Rintheim, Rintheim, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland",
+        "prompt": "Wo ist Geb\u00e4ude 70.26?",
+        "response": "Das Geb\u00e4ude hat die Adresse B\u00fcrogeb\u00e4ude 70.04, 2, Rintheimer Querallee, Alt-Rintheim, Rintheim, Karlsruhe, Baden-W\u00fcrttemberg, 76131, Deutschland.",
+        "reformulated_prompt": "Wo steht Geb\u00e4ude 70.26?",
+        "asr_prompt": " Wo steht Geb\u00e4ude 70.26?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "915",
+        "response_data": null,
+        "prompt": "Wo ist Geb\u00e4ude 915?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "Wie ist die Lage von Geb\u00e4ude 915?",
+        "asr_prompt": " Wie ist die Lage von Geb\u00e4ude 915?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "736",
+        "response_data": null,
+        "prompt": "Wo ist Geb\u00e4ude 736?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "Welche Adresse hat Geb\u00e4ude 736?",
+        "asr_prompt": " Welcher Adresse hat das Geb\u00e4ude 736?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "666",
+        "response_data": null,
+        "prompt": "Wo ist Geb\u00e4ude 666?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "Wo befindet sich Geb\u00e4ude 666?",
+        "asr_prompt": " Wo befindet sich Geb\u00e4ude 666?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "901",
+        "response_data": null,
+        "prompt": "Wo ist Geb\u00e4ude 901?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "An welcher Adresse finde ich Geb\u00e4ude 901?",
+        "asr_prompt": " An welcher Adresse finde ich die Geb\u00e4ude 901?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "686",
+        "response_data": null,
+        "prompt": "Wo ist Geb\u00e4ude 686?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "K\u00f6nnen Sie die Lage von Geb\u00e4ude 686 angeben?",
+        "asr_prompt": " K\u00f6nnen Sie die Lage von Geburt 686 angeben?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "668",
+        "response_data": null,
+        "prompt": "Wo ist Geb\u00e4ude 668?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "Wie ist die Adresse von Geb\u00e4ude 668?",
+        "asr_prompt": " Wie oder was ist die Interesse von Geb\u00e4ude 668?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "741",
+        "response_data": null,
+        "prompt": "Wo ist Geb\u00e4ude 741?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "Wo steht Geb\u00e4ude 741?",
+        "asr_prompt": " Wo steht das Geb\u00e4ude 741?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "726",
+        "response_data": null,
+        "prompt": "Wo ist Geb\u00e4ude 726?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "K\u00f6nnen Sie mir den Standort von Geb\u00e4ude 726 mitteilen?",
+        "asr_prompt": " K\u00f6nnen Sie mir den Standort von Geb\u00e4ude 726 mitteilen?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "803",
+        "response_data": null,
+        "prompt": "Wo ist Geb\u00e4ude 803?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "Was ist der Standort von Geb\u00e4ude 803?",
+        "asr_prompt": " Was ist der Standort von Geb\u00e4ude 803?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "706",
+        "response_data": null,
+        "prompt": "Wo ist Geb\u00e4ude 706?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "Wo genau ist Geb\u00e4ude 706 lokalisiert?",
+        "asr_prompt": " Wo genau ist Geb\u00e4ude 706 lokalisiert?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "911",
+        "response_data": null,
+        "prompt": "Wo ist Geb\u00e4ude 911?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "An welchem Standort ist Geb\u00e4ude 911 zu finden?",
+        "asr_prompt": " An welchem Standort steht das Geb\u00e4ude 911?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Energy Lab",
+        "response_data": null,
+        "prompt": "Wo ist Geb\u00e4ude Energy Lab?",
+        "response": "Ich kenne die Adresse von diesem Geb\u00e4ude leider nicht.",
+        "reformulated_prompt": "Was ist die Adresse des Energy Labs?",
+        "asr_prompt": " Was ist die Adresse von Energy Labs?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Informatikbau",
+        "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('We', '13:40')",
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude Informatikbau?",
+        "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+        "reformulated_prompt": "Wann sind die T\u00fcren des Informatikbaus wieder offen?",
+        "asr_prompt": " Wann sind die T\u00fcren das Informatikbaus wieder offen?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "20.54",
+        "response_data": "Mo-Fr 7:30-9:30, 12:00-14:00, 18:00-21:00; Sa,Su,PH off, ('Mo', '09:00')",
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude 20.54?",
+        "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+        "reformulated_prompt": "Ab welcher Uhrzeit ist Geb\u00e4ude 20.54 wieder ge\u00f6ffnet?",
+        "asr_prompt": " Ab welcher Uhrzeit ist Geb\u00e4ude 20.54 Uhr wieder ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "10.11",
+        "response_data": "Mo-Fr 06:45-18:20, ('We', '15:01')",
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude 10.11?",
+        "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+        "reformulated_prompt": "Wann ist Geb\u00e4ude 10.11 wieder zug\u00e4nglich?",
+        "asr_prompt": " Dann ist Geb\u00e4ude 10.11 wieder zug\u00e4nglich."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "intro Caf\u00e9",
+        "response_data": "Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00, ('Mo', '01:30')",
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude intro Caf\u00e9?",
+        "response": "Das Geb\u00e4ude \u00f6ffnet in 0 Tagen, 8 Stunden und 30 Minuten.",
+        "reformulated_prompt": "Wann startet das intro Caf\u00e9 wieder seinen Betrieb?",
+        "asr_prompt": " Wann startet das Intro-Caf\u00e9 wieder seinen Betrieb?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "145",
+        "response_data": "Mo-Fr 07:00-18:00, ('Fr', '08:55')",
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude 145?",
+        "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+        "reformulated_prompt": "Wann wird Geb\u00e4ude 145 wieder aufgeschlossen?",
+        "asr_prompt": " Wann wird Geb\u00e4ude 1045 wieder aufgeschlossen? Ich meinte 145."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Anthropomatik und Robotik, Institut f\u00fcr",
+        "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '16:25')",
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude Anthropomatik und Robotik, Institut f\u00fcr?",
+        "response": "Das Geb\u00e4ude ist grade ge\u00f6ffnet.",
+        "reformulated_prompt": "Wann \u00f6ffnet das Institut f\u00fcr Anthropomatik und Robotik wieder seine Pforten?",
+        "asr_prompt": " Van \u00f6ffnet das Institut f\u00fcr Anthropomatik und Robotik wieder seine Pforten."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "532",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude 532?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Ab wann ist Geb\u00e4ude 532 wieder zug\u00e4nglich?",
+        "asr_prompt": " Abwanzt Geb\u00e4ude 532 wieder zug\u00e4nglich."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Tech.Thermodyn.u.K\u00e4ltetechn./ Mess-u.Regelungstechn., Institutsgeb.",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude Tech.Thermodyn.u.K\u00e4ltetechn./ Mess-u.Regelungstechn., Institutsgeb.?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Ab welchem Zeitpunkt ist das Geb\u00e4ude Tech.Thermodyn.u.K\u00e4ltetechn./ Mess-u.Regelungstechn., Institutsgeb. wieder offen?",
+        "asr_prompt": " Ab welchen Zeitpunkt ist das Geb\u00e4ude Technik, Thermodynamik und K\u00e4lte Technik, Mess- und Regelungstechnik Institutsgeb\u00e4ude wieder offen?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "304",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude 304?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet Geb\u00e4ude 304 wieder?",
+        "asr_prompt": " Zu welcher Zeit er\u00f6ffnet Geb\u00e4ude 304 wieder?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Stab und Strategie (STS)",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude Stab und Strategie (STS)?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Ab wann kann man das Geb\u00e4ude Stab und Strategie (STS) wieder betreten?",
+        "asr_prompt": " Ab wann kann man das Geb\u00e4ude Stab und Strategie wieder betreten?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Gastdozentenhaus Heinrich Hertz",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude Gastdozentenhaus Heinrich Hertz?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann macht das Gastdozentenhaus Heinrich Hertz wieder auf?",
+        "asr_prompt": " Wann macht das Gastotsh\u00e4ndenhaus? Wie hei\u00dft das nochmal? Heinrich Herz wieder auf."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "546",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude 546?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Ab wann ist Geb\u00e4ude 546 wieder offen?",
+        "asr_prompt": " Ab wann ist Geb\u00e4ude 546 wieder offen?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Fachschaft Kunstgeschichte",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude Fachschaft Kunstgeschichte?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Zu welcher Zeit macht die Fachschaft Kunstgeschichte auf?",
+        "asr_prompt": " Zu welcher Zeit macht die Fachschaft Kunstgeschichte auf?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Institutsgeb\u00e4ude Boden- und Felsmechanik",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude Institutsgeb\u00e4ude Boden- und Felsmechanik?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann macht das Institutsgeb\u00e4ude Boden- und Felsmechanik auf?",
+        "asr_prompt": " Wann macht das Institutsgeb\u00e4ude Boden- und Felsmechanik auf?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "10.50",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude 10.50?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Ab wann ist das Geb\u00e4ude 10.50 wieder zug\u00e4nglich?",
+        "asr_prompt": " Ab wann ist das Geb\u00e4ude 10,50 wieder zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "688",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude 688?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann ist Geb\u00e4ude 688 wieder zug\u00e4nglich?",
+        "asr_prompt": " Wann ist Geb\u00e4ude 688 wieder zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "10.32",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude 10.32?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Ab welchem Zeitpunkt ist 10.32 ge\u00f6ffnet?",
+        "asr_prompt": " Auf welchen Zeitpunkt ist 10.32 ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Max Rubner-Institut",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude Max Rubner-Institut?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Zu welcher Zeit \u00f6ffnet das Max Rubner-Institut?",
+        "asr_prompt": " Zu welcher Zeit \u00f6ffnet das Max-Rubner-Institut?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Chemie-Turm I",
+        "response_data": null,
+        "prompt": "Wann \u00f6ffnet Geb\u00e4ude Chemie-Turm I?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann macht Chemie-Turm I auf?",
+        "asr_prompt": " Wann macht Chemie-Turm 1 auf?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "239",
+        "response_data": "['49.09322', '8.43152']",
+        "prompt": "F\u00fchre mich zu Geb\u00e4ude 239.",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09322,8.43152.",
+        "reformulated_prompt": "Wegbeschreibung zu Geb\u00e4ude 239",
+        "asr_prompt": " Wegbeschreibung zu Geb\u00e4ude 239"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "650",
+        "response_data": "['49.09833', '8.43515']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude 650?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09833,8.43515.",
+        "reformulated_prompt": "Den Weg zu Geb\u00e4ude 650 anzeigen",
+        "asr_prompt": " Den Weg zu Geb\u00e4ude 650 anzeigen."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Dr. Franz Lust",
+        "response_data": "['49.00995', '8.41917']",
+        "prompt": "F\u00fchre mich zu Geb\u00e4ude Dr. Franz Lust.",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.00995,8.41917.",
+        "reformulated_prompt": "Zeige die Route zum Dr. Franz Lust Geb\u00e4ude",
+        "asr_prompt": " Zeige die Route zu Dr. Franz Lustgeb\u00e4ude."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "40.13",
+        "response_data": "['49.01471', '8.41518']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude 40.13?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01471,8.41518.",
+        "reformulated_prompt": "Wegbeschreibung zum Geb\u00e4ude 40.13",
+        "asr_prompt": " Wegbeschreibung zum Geb\u00e4ude 40.13"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Theoretische Festk\u00f6rperphysik, Institut f\u00fcr",
+        "response_data": "['49.01293', '8.41110']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude Theoretische Festk\u00f6rperphysik, Institut f\u00fcr?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01293,8.41110.",
+        "reformulated_prompt": "Navigation zum Institut f\u00fcr Theoretische Festk\u00f6rperphysik",
+        "asr_prompt": " Navigation zum Institut f\u00fcr theoretische Festgabberphysik bitte."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "B621",
+        "response_data": "['49.09701', '8.43633']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude B621?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09701,8.43633.",
+        "reformulated_prompt": "Zeige den Weg zum Geb\u00e4ude B621",
+        "asr_prompt": " Zeige den Weg zum Geb\u00e4ude B621."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Elektrotechnisches Institut",
+        "response_data": "['49.01064', '8.41281']",
+        "prompt": "F\u00fchre mich zu Geb\u00e4ude Elektrotechnisches Institut.",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01064,8.41281.",
+        "reformulated_prompt": "Navigation zum Elektrotechnischen Institut",
+        "asr_prompt": " Navigation zum Elektrotechnischen Institut, bitte."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "508",
+        "response_data": "['49.09876', '8.43137']",
+        "prompt": "F\u00fchre mich zu Geb\u00e4ude 508.",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09876,8.43137.",
+        "reformulated_prompt": "Route zu Geb\u00e4ude 508 anzeigen",
+        "asr_prompt": " Gute zu Geb\u00e4ude 508 anzeigen."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "InformatiKOM 1",
+        "response_data": "['49.00751', '8.40425']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude InformatiKOM 1?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.00751,8.40425.",
+        "reformulated_prompt": "Wegbeschreibung zum InformatiKOM 1",
+        "asr_prompt": " Wegbeschreibung zum Informatik.1"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "908",
+        "response_data": "['49.10494', '8.43104']",
+        "prompt": "F\u00fchre mich zu Geb\u00e4ude 908.",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.10494,8.43104.",
+        "reformulated_prompt": "Den Weg zu Geb\u00e4ude 908 zeigen",
+        "asr_prompt": " Den Weg zu Geb\u00e4ude 908 anzeigen."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "30.60",
+        "response_data": "['49.01233', '8.41669']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude 30.60?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01233,8.41669.",
+        "reformulated_prompt": "Route zu Geb\u00e4ude 30.60 gesucht",
+        "asr_prompt": " Die Route zu Geb\u00e4ude 3060 ist gesucht."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Telecooperation Office (TecO)",
+        "response_data": "['49.01304', '8.42419']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude Telecooperation Office (TecO)?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01304,8.42419.",
+        "reformulated_prompt": "Navigation zum Telecooperation Office ben\u00f6tigt",
+        "asr_prompt": " Navigation zum Telecooperation Office ben\u00f6tigt."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "9607",
+        "response_data": "['49.09860', '8.42964']",
+        "prompt": "F\u00fchre mich zu Geb\u00e4ude 9607.",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.09860,8.42964.",
+        "reformulated_prompt": "Wegbeschreibung zu Geb\u00e4ude 9607 erw\u00fcnscht",
+        "asr_prompt": " Wegbeschreibung zu Geb\u00e4ude 9607 erw\u00fcnscht"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Kollegiengeb\u00e4ude am Zirkel",
+        "response_data": "['49.01213', '8.40812']",
+        "prompt": "Wie komme ich zu Geb\u00e4ude Kollegiengeb\u00e4ude am Zirkel?",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01213,8.40812.",
+        "reformulated_prompt": "Ich suche den Weg zum Kollegiengeb\u00e4ude am Zirkel",
+        "asr_prompt": " Ich such den Weg zum Kollegiengeb\u00e4ude am Zirkel."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "MTI-H\u00f6rsaal",
+        "response_data": "['49.01231', '8.41322']",
+        "prompt": "F\u00fchre mich zu Geb\u00e4ude MTI-H\u00f6rsaal.",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01231,8.41322.",
+        "reformulated_prompt": "Zum MTI-H\u00f6rsaal navigieren",
+        "asr_prompt": " Zum MTI-H\u00f6rsaal navigieren bitte."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Rudolf-Criegee-H\u00f6rsaal",
+        "response_data": "['49.01260', '8.41385']",
+        "prompt": "F\u00fchre mich zu Geb\u00e4ude Rudolf-Criegee-H\u00f6rsaal.",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01260,8.41385.",
+        "reformulated_prompt": "Navigation zum Rudolf-Criegee-H\u00f6rsaal gew\u00fcnscht",
+        "asr_prompt": " Navigation zum Rudolf Kriege-H\u00f6rsaal gew\u00fcnscht."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Wirtschaftswissenschaftliche Fakult\u00e4tsbibliothek",
+        "response_data": "['49.01303', '8.37530']",
+        "prompt": "F\u00fchre mich zu Geb\u00e4ude Wirtschaftswissenschaftliche Fakult\u00e4tsbibliothek.",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01303,8.37530.",
+        "reformulated_prompt": "Route zur Wirtschaftswissenschaftlichen Fakult\u00e4tsbibliothek",
+        "asr_prompt": " Rute zur Wirtschaftswissenschaftlichen Fakultatsbibliothek"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Technische Thermodynamik und K\u00e4ltetechnik, Versuchshalle",
+        "response_data": "['49.01405', '8.41722']",
+        "prompt": "F\u00fchre mich zu Geb\u00e4ude Technische Thermodynamik und K\u00e4ltetechnik, Versuchshalle.",
+        "response": "Mit diesem Link kannst du dich zu dem Geb\u00e4ude f\u00fchren lassen: https://www.google.com/maps/dir/?api=1&destination=49.01405,8.41722.",
+        "reformulated_prompt": "Weg zur Versuchshalle der Technischen Thermodynamik zeigen",
+        "asr_prompt": " Weg zur Versuchshalle der technischen Tabelynamik zeigen."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Fachschaft GeistSoz",
+        "response_data": "Mo-Th 13:00-14:00, ('Tu', '13:05')",
+        "prompt": "Ist Geb\u00e4ude Fachschaft GeistSoz grade ge\u00f6ffnet?",
+        "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+        "reformulated_prompt": "Kann man aktuell in die Fachschaft GeistSoz?",
+        "asr_prompt": " Kann man aktuell in die Fachschaft Geist-Soots?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "50.40",
+        "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('We', '12:59')",
+        "prompt": "Ist Geb\u00e4ude 50.40 grade ge\u00f6ffnet?",
+        "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+        "reformulated_prompt": "Ist das Geb\u00e4ude 50.40 momentan offen?",
+        "asr_prompt": " ist das Geb\u00e4ude 50.40 momentan offen"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "310",
+        "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('Tu', '14:19')",
+        "prompt": "Ist Geb\u00e4ude 310 grade ge\u00f6ffnet?",
+        "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+        "reformulated_prompt": "Kann man derzeit in Geb\u00e4ude 310?",
+        "asr_prompt": " Kann man derzeit ins Geb\u00e4ude 300 ziehen."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Ambulanz",
+        "response_data": "24/7, ('Fr', '02:46')",
+        "prompt": "Ist Geb\u00e4ude Ambulanz grade ge\u00f6ffnet?",
+        "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+        "reformulated_prompt": "Ist die Ambulanz momentan zug\u00e4nglich?",
+        "asr_prompt": " Ist die Ambulanz momentan zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "310",
+        "response_data": "Mo-Fr 09:00-12:00, 13:00-15:00; , ('We', '00:17')",
+        "prompt": "Ist Geb\u00e4ude 310 grade ge\u00f6ffnet?",
+        "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+        "reformulated_prompt": "Ist Geb\u00e4ude 310 derzeit offen?",
+        "asr_prompt": " Ist das Geb\u00e4ude 310 derzeit offen?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "05.20",
+        "response_data": "Mo-Su,PH 00:00-24:00 open; Mo-Su,PH 02:00-06:00 closed \"nur Ausfahrt m\u00f6glich\", ('Fr', '10:39')",
+        "prompt": "Ist Geb\u00e4ude 05.20 grade ge\u00f6ffnet?",
+        "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+        "reformulated_prompt": "Kann man gerade in Geb\u00e4ude 05.20 rein?",
+        "asr_prompt": " Kann man gerade in Geb\u00e4ude 5.20 rein?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Versuchsanstalt des Joseph Gottlieb K\u00f6lreuter Instituts f\u00fcr Pflanzenwissenschaften",
+        "response_data": "Apr-Sep Mo-Fr 08:00-16:00; Apr-Sep Su,PH 10:00-16:00; Oct-Mar Mo-Fr 08:00-15:00; Oct-Mar Su,PH 10:00-14:00, ('Fr', '16:03')",
+        "prompt": "Ist Geb\u00e4ude Versuchsanstalt des Joseph Gottlieb K\u00f6lreuter Instituts f\u00fcr Pflanzenwissenschaften grade ge\u00f6ffnet?",
+        "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+        "reformulated_prompt": "Ist die Versuchsanstalt des K\u00f6lreuter Instituts derzeit ge\u00f6ffnet?",
+        "asr_prompt": " Ist die Versuchsanstalt des K\u00fchlreuter Instituts derzeit ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "50.34",
+        "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '23:24')",
+        "prompt": "Ist Geb\u00e4ude 50.34 grade ge\u00f6ffnet?",
+        "response": "Nein, das Geb\u00e4ude ist momentan geschlossen.",
+        "reformulated_prompt": "Kann man jetzt ins Geb\u00e4ude 50.34?",
+        "asr_prompt": " Kann man jetzt ins Geb\u00e4ude 50.34?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "KIT-Bibliothek",
+        "response_data": "24/7, ('We', '03:14')",
+        "prompt": "Ist Geb\u00e4ude KIT-Bibliothek grade ge\u00f6ffnet?",
+        "response": "Ja, das Geb\u00e4ude ist momentan ge\u00f6ffnet.",
+        "reformulated_prompt": "Hat die KIT-Bibliothek gerade auf?",
+        "asr_prompt": " Hat die KIT Bibliothek gerade auf."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "413",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude 413 grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Ist das Geb\u00e4ude 413 momentan zug\u00e4nglich?",
+        "asr_prompt": " Das ist das Geb\u00e4ude 413 momentan zug\u00e4nglich."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Neutronenphysik und Reaktortechnik, Institut f\u00fcr",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude Neutronenphysik und Reaktortechnik, Institut f\u00fcr grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Kann man aktuell ins Institut f\u00fcr Neutronenphysik und Reaktortechnik?",
+        "asr_prompt": " Kann man aktuell ins Institut f\u00fcr Neutronenphysik und Reaktor Technik?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "416",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude 416 grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Hat Geb\u00e4ude 416 zurzeit auf?",
+        "asr_prompt": " hat Geb\u00e4ude 416 zurzeit auf"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Bereich Wasserwirtschaft und Kulturtechnik grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Ist das Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung - Wasserwirtschaft und Kulturtechnik momentan zug\u00e4nglich?",
+        "asr_prompt": " Ist das Institut f\u00fcr Wasser und Gew\u00e4sserentwicklung Wasservirtschaft und Kulturtechnik momentan zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "40.19",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude 40.19 grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Kann man gerade ins Geb\u00e4ude 40.19?",
+        "asr_prompt": " Kann man gerade ins Geb\u00e4ude 40.19"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Lernzentrum am Fasanenschl\u00f6sschen",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude Lernzentrum am Fasanenschl\u00f6sschen grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Hat das Lernzentrum am Fasanenschl\u00f6sschen derzeit ge\u00f6ffnet?",
+        "asr_prompt": " Hat das Lernzentrum am Versahnschl\u00f6sschen derzeit ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "223",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude 223 grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Ist 223 gerade offen?",
+        "asr_prompt": " ist 223 grad offen"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "40.29",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude 40.29 grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Hat 40.29 gerade auf?",
+        "asr_prompt": " Hat 40.29 Grad auf."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Kollegiengeb\u00e4ude am Zirkel",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude Kollegiengeb\u00e4ude am Zirkel grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Hat das Kollegiengeb\u00e4ude am Zirkel gerade ge\u00f6ffnet?",
+        "asr_prompt": " Hat das Kollegin Geb\u00e4ude am Zirkel gerade ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "404",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude 404 grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Kann man aktuell in Geb\u00e4ude 404?",
+        "asr_prompt": " Kann man aktuell in Geb\u00e4ude 404 rein?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Entwerfen von Stadt und Landschaft (IESL), Institut",
+        "response_data": null,
+        "prompt": "Ist Geb\u00e4ude Entwerfen von Stadt und Landschaft (IESL), Institut grade ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Kann man momentan ins IESL-Institut?",
+        "asr_prompt": " Kann man momentan ins IESL-Institut?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "01.90",
+        "response_data": "Mo-Fr 09:00-22:00; Sa 10:00-22:00, ('Th', '17:50')",
+        "prompt": "Wie lange ist Geb\u00e4ude 01.90 noch ge\u00f6ffnet?",
+        "response": "Das Geb\u00e4ude schlie\u00dft in 4 Stunden und 10 Minuten.",
+        "reformulated_prompt": "Bis zu welcher Uhrzeit ist Geb\u00e4ude 01.90 zug\u00e4nglich?",
+        "asr_prompt": " Bis zu welcher Uhrzeit ist Geb\u00e4ude 01.90 zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr",
+        "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Mo', '23:12')",
+        "prompt": "Wie lange ist Geb\u00e4ude Prozessrechentechnik, Automation und Robotik (IPR), Institut f\u00fcr noch ge\u00f6ffnet?",
+        "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+        "reformulated_prompt": "Zu welcher Zeit schlie\u00dft das IPR-Geb\u00e4ude?",
+        "asr_prompt": " Zu welcher Zeit schlie\u00dft das IPR Geb\u00e4ude?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Fachbibliothek Physik",
+        "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('Tu', '06:30')",
+        "prompt": "Wie lange ist Geb\u00e4ude Fachbibliothek Physik noch ge\u00f6ffnet?",
+        "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+        "reformulated_prompt": "Wann schlie\u00dft die Physik-Bibliothek?",
+        "asr_prompt": " Manchmal schlie\u00dft die Physik Bibliothek."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "InformatiKOM 1",
+        "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('Th', '18:35')",
+        "prompt": "Wie lange ist Geb\u00e4ude InformatiKOM 1 noch ge\u00f6ffnet?",
+        "response": "Das Geb\u00e4ude schlie\u00dft in 0 Stunden und 25 Minuten.",
+        "reformulated_prompt": "Wann schlie\u00dft das InformatiKOM 1?",
+        "asr_prompt": " Wann schlie\u00dft das Informatik.1?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Informatikbau",
+        "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Tu', '01:29')",
+        "prompt": "Wie lange ist Geb\u00e4ude Informatikbau noch ge\u00f6ffnet?",
+        "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+        "reformulated_prompt": "Wie sp\u00e4t schlie\u00dft der Informatikbau?",
+        "asr_prompt": " Wie sp\u00e4t schlie\u00dft der Informatikbau?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Angewandte Geowissenschaften, Institut f\u00fcr",
+        "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('We', '17:37')",
+        "prompt": "Wie lange ist Geb\u00e4ude Angewandte Geowissenschaften, Institut f\u00fcr noch ge\u00f6ffnet?",
+        "response": "Das Geb\u00e4ude schlie\u00dft in 0 Stunden und 23 Minuten.",
+        "reformulated_prompt": "Bis wann ist das Institut f\u00fcr Angewandte Geowissenschaften heute ge\u00f6ffnet?",
+        "asr_prompt": " Bis wann ist das Institut f\u00fcr angewandte Geowissenschaften heute ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Bio- und Lebensmitteltechnik, Bereich IV: Molekulare Aufarbeitung von Bioprodukten , Institut f\u00fcr",
+        "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off, ('We', '05:31')",
+        "prompt": "Wie lange ist Geb\u00e4ude Bio- und Lebensmitteltechnik, Bereich IV: Molekulare Aufarbeitung von Bioprodukten , Institut f\u00fcr noch ge\u00f6ffnet?",
+        "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+        "reformulated_prompt": "Zu welcher Zeit schlie\u00dft der Bereich IV des Instituts f\u00fcr Bio- und Lebensmitteltechnik?",
+        "asr_prompt": " Zu welcher Zeit schlie\u00dft der Bereich 4 des Instituts f\u00fcr Bio- und Lebensmitteltechnik?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Fachbibliothek Physik",
+        "response_data": "Mo-Fr 09:00-19:00; Sa 09:00-12:30, ('We', '00:18')",
+        "prompt": "Wie lange ist Geb\u00e4ude Fachbibliothek Physik noch ge\u00f6ffnet?",
+        "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+        "reformulated_prompt": "Wie sp\u00e4t macht die Physik-Bibliothek zu?",
+        "asr_prompt": " Wie sp\u00e4t macht die Physikbibliothek zu?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM)",
+        "response_data": "Mo-Fr 09:00-19:00; Mo-Su 07:00-22:00 with KIT-Card, ('Su', '13:42')",
+        "prompt": "Wie lange ist Geb\u00e4ude Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM) noch ge\u00f6ffnet?",
+        "response": "Das Geb\u00e4ude schlie\u00dft in 8 Stunden und 18 Minuten.",
+        "reformulated_prompt": "Bis wann hat das Studium Generale Forum heute ge\u00f6ffnet?",
+        "asr_prompt": " Bis wann hat das Studium Generale Forum heute ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Informatikbau",
+        "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off, ('Sa', '03:13')",
+        "prompt": "Wie lange ist Geb\u00e4ude Informatikbau noch ge\u00f6ffnet?",
+        "response": "Das Geb\u00e4ude ist momentan geschlossen.",
+        "reformulated_prompt": "Zu welcher Zeit schlie\u00dft der Informatikbau?",
+        "asr_prompt": " Zu welcher Uhrzeit schlie\u00dft der Informatikbau?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "403",
+        "response_data": null,
+        "prompt": "Wie lange ist Geb\u00e4ude 403 noch ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Bis wann hat Geb\u00e4ude 403 heute auf?",
+        "asr_prompt": " Bis wann hat Geb\u00e4ude 403 heute auf?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Kollegiengeb\u00e4ude Maschinenbau II",
+        "response_data": null,
+        "prompt": "Wie lange ist Geb\u00e4ude Kollegiengeb\u00e4ude Maschinenbau II noch ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Bis zu welcher Uhrzeit ist das Kollegiengeb\u00e4ude Maschinenbau II zug\u00e4nglich?",
+        "asr_prompt": " Bis zu welcher Uhrzeit ist das Kollegiengeb\u00e4ude Maschinenbau 2 zu?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "152",
+        "response_data": null,
+        "prompt": "Wie lange ist Geb\u00e4ude 152 noch ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Bis wann hat Geb\u00e4ude 152 heute auf?",
+        "asr_prompt": " Das Bahn-Hat-Geb\u00e4ude 152 heute auf."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Versuchsanstalt f\u00fcr Stahl, Holz und Steine",
+        "response_data": null,
+        "prompt": "Wie lange ist Geb\u00e4ude Versuchsanstalt f\u00fcr Stahl, Holz und Steine noch ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Bis zu welchem Zeitpunkt ist die Versuchsanstalt f\u00fcr Stahl, Holz und Steine zug\u00e4nglich?",
+        "asr_prompt": " Bis zu welchem Zeitpunkt ist die Versuchsanstalt f\u00fcr Stahl, Holz und Steine zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Kollegiengeb\u00e4ude am Ehrenhof",
+        "response_data": null,
+        "prompt": "Wie lange ist Geb\u00e4ude Kollegiengeb\u00e4ude am Ehrenhof noch ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Was ist die Schlie\u00dfzeit des Kollegiengeb\u00e4udes am Ehrenhof?",
+        "asr_prompt": " Wann ist die Schlie\u00dfzeit des College, nennen, des kollegien Geb\u00e4udes am Ehrenhof?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Altes Maschinenbaugeb\u00e4ude",
+        "response_data": null,
+        "prompt": "Wie lange ist Geb\u00e4ude Altes Maschinenbaugeb\u00e4ude noch ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Bis zu welcher Uhrzeit ist das Alte Maschinenbaugeb\u00e4ude offen?",
+        "asr_prompt": " Bis zu welcher Uhrzeit ist das alte Maschinenbaugeb\u00e4ude offen?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Z\u00e4hringerhaus",
+        "response_data": null,
+        "prompt": "Wie lange ist Geb\u00e4ude Z\u00e4hringerhaus noch ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Zu welchem Zeitpunkt schlie\u00dft das Z\u00e4hringerhaus?",
+        "asr_prompt": " Zu welchem Zeitpunkt schlie\u00dft das Z\u00e4hringer aus?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "30.50",
+        "response_data": null,
+        "prompt": "Wie lange ist Geb\u00e4ude 30.50 noch ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann endet die \u00d6ffnungszeit von Geb\u00e4ude 30.50?",
+        "asr_prompt": " Wann endet die \u00d6ffnungszeit von Geb\u00e4ude 30.50?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Zoologisches Institut",
+        "response_data": null,
+        "prompt": "Wie lange ist Geb\u00e4ude Zoologisches Institut noch ge\u00f6ffnet?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Bis zu welcher Zeit ist das Zoologische Institut ge\u00f6ffnet?",
+        "asr_prompt": " Bis zu welcher Zeit ist das Zoologische Institut ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Technik der Informationsverarbeitung (ITIV), Institut f\u00fcr",
+        "response_data": "http://www.itiv.kit.edu/",
+        "prompt": "Was ist die Webseite von Geb\u00e4ude Technik der Informationsverarbeitung (ITIV), Institut f\u00fcr?",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Gib mir die Internetadresse des Instituts f\u00fcr Technik der Informationsverarbeitung",
+        "asr_prompt": " gibt mit die Internetadresse des Instituts f\u00fcr Technik der Informationsverarbeitung."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Sport und Sportwissenschaft, Institut f\u00fcr",
+        "response_data": "http://www.sport.kit.edu/",
+        "prompt": "Was ist die Webseite von Geb\u00e4ude Sport und Sportwissenschaft, Institut f\u00fcr?",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Zeige die Webadresse des Instituts f\u00fcr Sport und Sportwissenschaft",
+        "asr_prompt": " Zeigt die Webadresse des Instituts f\u00fcr Sport und Sportwissenschaften."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Technische Physik, Institut f\u00fcr",
+        "response_data": "http://www.itep.kit.edu",
+        "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Technische Physik, Institut f\u00fcr.",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Navigiere zur Webseite des Instituts f\u00fcr Technische Physik",
+        "asr_prompt": " Navigier zur Website des Instituts f\u00fcr Technische Physik."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Thermische Energietechnik und Sicherheit (ITES), Institut f\u00fcr",
+        "response_data": "http://www.iket.kit.edu",
+        "prompt": "Was ist die Webseite von Geb\u00e4ude Thermische Energietechnik und Sicherheit (ITES), Institut f\u00fcr?",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Zeige den Webauftritt des ITES",
+        "asr_prompt": " Zeig mir mal den Webauftritt des ETS."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Forschungszentrum Umwelt",
+        "response_data": "http://mab.blt.kit.edu",
+        "prompt": "Was ist die Webseite von Geb\u00e4ude Forschungszentrum Umwelt?",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Internetadresse des Forschungszentrums Umwelt gesucht",
+        "asr_prompt": " Internetadresse des Forschungszentrums Umwelt gesucht."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Studierendenservice",
+        "response_data": "http://www.sle.kit.edu",
+        "prompt": "Was ist die Webseite von Geb\u00e4ude Studierendenservice?",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Webadresse des Studierendenservice gesucht",
+        "asr_prompt": " Webadresse des Studierenden Services gesucht."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Elektroenergiesysteme und Hochspannungstechnik , Institut f\u00fcr",
+        "response_data": "http://www.ieh.kit.edu/",
+        "prompt": "Was ist die Webseite von Geb\u00e4ude Elektroenergiesysteme und Hochspannungstechnik , Institut f\u00fcr?",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Wie lautet die URL des Instituts f\u00fcr Elektroenergiesysteme und Hochspannungstechnik?",
+        "asr_prompt": " Wie lautet die URL des Instituts f\u00fcr Elektroenergiesysteme und Hochspannungstechnik?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM)",
+        "response_data": "https://www.forum.kit.edu/index.php",
+        "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude Studium Generale. Forum Wissenschaft und Gesellschaft (FORUM).",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Navigiere zum Studium Generale Forum",
+        "asr_prompt": " Navigiere zum Studium Generale Forum."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Sprachenzentrum (Geb. 50.20)",
+        "response_data": "https://www.spz.kit.edu/",
+        "prompt": "Was ist die Webseite von Geb\u00e4ude Sprachenzentrum (Geb. 50.20)?",
+        "response": "Ich habe die Webseite f\u00fcr dich in deinem Browser ge\u00f6ffnet.",
+        "reformulated_prompt": "Wie erreiche ich das Sprachenzentrum online?",
+        "asr_prompt": " Wie erreiche ich das Sprachenzentrum online?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "260/1",
+        "response_data": null,
+        "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 260/1.",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Zeige mir die Homepage des Geb\u00e4udes 260/1",
+        "asr_prompt": " Zeig mir die Homepage des Geb\u00e4udes 260-1."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "9651",
+        "response_data": null,
+        "prompt": "Was ist die Webseite von Geb\u00e4ude 9651?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Gib mir den Weblink von Geb\u00e4ude 9651",
+        "asr_prompt": " Gebt mir den Weblink von Geb\u00e4ude 9651."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "693",
+        "response_data": null,
+        "prompt": "Was ist die Webseite von Geb\u00e4ude 693?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Welche Website geh\u00f6rt zu Geb\u00e4ude 693?",
+        "asr_prompt": " Welche Website geh\u00f6rt zur Geb\u00e4ude 693?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "806",
+        "response_data": null,
+        "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 806.",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Navigiere zur Internetseite von Geb\u00e4ude 806",
+        "asr_prompt": " Navigiere zur Internetseite von Geb\u00e4ude 806."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "913",
+        "response_data": null,
+        "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 913.",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Rufe die Website von Geb\u00e4ude 913 auf",
+        "asr_prompt": " Ruf die Website von Geb\u00e4ude 913 auf."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Engler-Bunte-Institut (EBI) / MINT-Kolleg KIT",
+        "response_data": null,
+        "prompt": "Was ist die Webseite von Geb\u00e4ude Engler-Bunte-Institut (EBI) / MINT-Kolleg KIT?",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Wie lautet die URL des Engler-Bunte-Instituts und MINT-Kollegs?",
+        "asr_prompt": " Wie lautet die URL des Engler Bunte Instituts und Mint-Kollegs?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "131",
+        "response_data": null,
+        "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 131.",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Navigiere zur Homepage von Geb\u00e4ude 131",
+        "asr_prompt": " Navigiert zur Homepage von Geb\u00e4ude 131."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "30.49",
+        "response_data": null,
+        "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 30.49.",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Zeige die Webpr\u00e4senz von Geb\u00e4ude 30.49",
+        "asr_prompt": " Zeig mir die Weggepr\u00e4senz von Geb\u00e4ude 30 49."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "412",
+        "response_data": null,
+        "prompt": "\u00d6ffne die Webseite von Geb\u00e4ude 412.",
+        "response": "Zu diesem Geb\u00e4ude kenne ich leider keine Webseite.",
+        "reformulated_prompt": "Rufe die Homepage von Geb\u00e4ude 412 auf",
+        "asr_prompt": " Ruf die Homepage von Geb\u00e4ude 412 auf."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Forschungszentrum Umwelt",
+        "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off",
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Forschungszentrum Umwelt?",
+        "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-18:00; Sa,Su,PH off ge\u00f6ffnet.",
+        "reformulated_prompt": "Wie sind die \u00d6ffnungszeiten des Forschungszentrums Umwelt?",
+        "asr_prompt": " Wie sind die \u00d6ffnungszeiten des Forschungszentrums Umwelt?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "01.12",
+        "response_data": "Mo-Fr 07:30-17:30",
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 01.12?",
+        "response": "Das Geb\u00e4ude hat an Mo-Fr 07:30-17:30 ge\u00f6ffnet.",
+        "reformulated_prompt": "Wann hat Geb\u00e4ude 01.12 ge\u00f6ffnet?",
+        "asr_prompt": " Wann hat Geb\u00e4ude 01.12 ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "01.90",
+        "response_data": "Mo-Fr 09:00-22:00; Sa 10:00-22:00",
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 01.90?",
+        "response": "Das Geb\u00e4ude hat an Mo-Fr 09:00-22:00; Sa 10:00-22:00 ge\u00f6ffnet.",
+        "reformulated_prompt": "Zu welchen Zeiten ist Geb\u00e4ude 01.90 zug\u00e4nglich?",
+        "asr_prompt": " Zu welchen Zeiten ist Geb\u00e4ude 1.90 zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr",
+        "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off",
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  f\u00fcr?",
+        "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-18:00; Sa,Su,PH off ge\u00f6ffnet.",
+        "reformulated_prompt": "Wann ist das Institut f\u00fcr Angewandte Materialien - Elektrochemische Technologien ge\u00f6ffnet?",
+        "asr_prompt": " Wann ist das Institut f\u00fcr angewandte Materialien elektrochemisch Technologien ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Institut f\u00fcr Wirtschaftsinformatik (WIN)",
+        "response_data": "Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00",
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Institut f\u00fcr Wirtschaftsinformatik (WIN)?",
+        "response": "Das Geb\u00e4ude hat an Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00 ge\u00f6ffnet.",
+        "reformulated_prompt": "Zu welchen Uhrzeiten ist das WIN-Institut ge\u00f6ffnet?",
+        "asr_prompt": " Zu welchen Uhrzeit ist das WEN-Institut ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Angewandte Geowissenschaften, Institut f\u00fcr",
+        "response_data": "Mo-Fr 07:00-18:00; Sa,Su,PH off",
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Angewandte Geowissenschaften, Institut f\u00fcr?",
+        "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-18:00; Sa,Su,PH off ge\u00f6ffnet.",
+        "reformulated_prompt": "Wie sind die Zugangszeiten zum Institut f\u00fcr Angewandte Geowissenschaften?",
+        "asr_prompt": " Wie sind die Zugangszeiten zum Institut f\u00fcr angewandte Geowissenschaften?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Schwarzer Kater",
+        "response_data": "Mo-Th 11:30-01:00, Fr,Sa 11:30-03:00",
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Schwarzer Kater?",
+        "response": "Das Geb\u00e4ude hat an Mo-Th 11:30-01:00, Fr,Sa 11:30-03:00 ge\u00f6ffnet.",
+        "reformulated_prompt": "Wann hat der Schwarze Kater auf?",
+        "asr_prompt": " Wann hat der schwarze Kater auf?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Informatikbau",
+        "response_data": "Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off",
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Informatikbau?",
+        "response": "Das Geb\u00e4ude hat an Mo-Fr 07:00-22:30; Sa 07:00-15:00; Su,PH off ge\u00f6ffnet.",
+        "reformulated_prompt": "Wann kann man in den Informatikbau?",
+        "asr_prompt": " Wann kann man den Informatikbau?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "GODZILLA Test-Facility Beryllide-Production",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude GODZILLA Test-Facility Beryllide-Production?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann ist GODZILLA Test-Facility Beryllide-Production ge\u00f6ffnet?",
+        "asr_prompt": " Wann ist Godzilla Test Facility Berlid Production ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "40.24",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 40.24?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann kann man Geb\u00e4ude 40.24 betreten?",
+        "asr_prompt": " Wann kann man Geb\u00e4ude 40.24 betreten?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Funktionelle Grenzfl\u00e4chen (IFG), Institut f\u00fcr",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Funktionelle Grenzfl\u00e4chen (IFG), Institut f\u00fcr?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann hat das Institut f\u00fcr Funktionelle Grenzfl\u00e4chen ge\u00f6ffnet?",
+        "asr_prompt": " Wann hat das Institut f\u00fcr Funktionelle Grenzfl\u00e4chen ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "663",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 663?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann hat Geb\u00e4ude 663 auf?",
+        "asr_prompt": " Wann hat Geb\u00e4ude 663 auf?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Architektur",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Architektur?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Welche \u00d6ffnungszeiten hat das Architekturgeb\u00e4ude?",
+        "asr_prompt": " Welche Er\u00f6ffnungszeiten hat das Architekturgeb\u00e4ude?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Winkelwohnblock NZ1",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude Winkelwohnblock NZ1?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Zu welchen Zeiten ist der Winkelwohnblock NZ1 zug\u00e4nglich?",
+        "asr_prompt": " Zu welchen Zeiten ist der Winkel Wohnblock NZ1 zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "410",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 410?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Zu welchen Zeiten ist Geb\u00e4ude 410 zug\u00e4nglich?",
+        "asr_prompt": " Zu welchen Zeiten ist Geb\u00e4ude 14 zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "70.16",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 70.16?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann kann man Geb\u00e4ude 70.16 betreten?",
+        "asr_prompt": " Wann kann man Geb\u00e4ude 7016 betreten?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "227",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 227?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Zu welchen Uhrzeiten ist Geb\u00e4ude 227 ge\u00f6ffnet?",
+        "asr_prompt": " Zu welchen Uhrzeiten ist Geburt 2.27 ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "512",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 512?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Wann ist Geb\u00e4ude 512 zug\u00e4nglich?",
+        "asr_prompt": " Wann ist Geb\u00e4ude 512 zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "70.12",
+        "response_data": null,
+        "prompt": "Was sind die \u00d6ffnungszeiten von Geb\u00e4ude 70.12?",
+        "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
+        "reformulated_prompt": "Zu welchen Zeiten ist Geb\u00e4ude 70.12 ge\u00f6ffnet?",
+        "asr_prompt": " Zu welchen Zeiten ist Geb\u00e4ude 70.12 ge\u00f6ffnet?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "210",
+        "response_data": "yes, nan",
+        "prompt": "Ist Geb\u00e4ude 210 rollstuhlgerecht?",
+        "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+        "reformulated_prompt": "Gibt es Rollstuhlzugang im Geb\u00e4ude 210?",
+        "asr_prompt": " Gibt es R\u00e4ustuhlzugang im Geb\u00e4ude 210?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Hochschulsport",
+        "response_data": "yes, nan",
+        "prompt": "Ist Geb\u00e4ude Hochschulsport rollstuhlgerecht?",
+        "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+        "reformulated_prompt": "Ist das Hochschulsportgeb\u00e4ude barrierefrei zug\u00e4nglich?",
+        "asr_prompt": " Ist das Hochschulsportgeb\u00e4ude barrierefrei zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Regionalwissenschaft (IfR) , Institut f\u00fcr",
+        "response_data": "yes, nan",
+        "prompt": "Ist Geb\u00e4ude Regionalwissenschaft (IfR) , Institut f\u00fcr rollstuhlgerecht?",
+        "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+        "reformulated_prompt": "Bietet das Institut f\u00fcr Regionalwissenschaft Barrierefreiheit?",
+        "asr_prompt": " Bietet das Institut f\u00fcr Regionalwissenschaften Barrierefreiheit?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Physik-Hochhaus",
+        "response_data": "limited, nan",
+        "prompt": "Ist Geb\u00e4ude Physik-Hochhaus rollstuhlgerecht?",
+        "response": "Das Geb\u00e4ude ist teilweise rollstuhlgerecht.",
+        "reformulated_prompt": "Ist das Physik-Hochhaus mit Rollstuhl erreichbar?",
+        "asr_prompt": " Ist das Physikhochhaus mit Rollstuhl erreichbar?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Elektrotechnisches Institut",
+        "response_data": "no, nan",
+        "prompt": "Ist Geb\u00e4ude Elektrotechnisches Institut rollstuhlgerecht?",
+        "response": "Nein, das Geb\u00e4ude ist nicht rollstuhlgerecht.",
+        "reformulated_prompt": "Gibt es barrierefreie Zug\u00e4nge zum Elektrotechnischen Institut?",
+        "asr_prompt": " Gibt es barrierefreie Zug\u00e4nge zum Elektrotechnischen Institut?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Physik-Hochhaus",
+        "response_data": "limited, nan",
+        "prompt": "Ist Geb\u00e4ude Physik-Hochhaus rollstuhlgerecht?",
+        "response": "Das Geb\u00e4ude ist teilweise rollstuhlgerecht.",
+        "reformulated_prompt": "Verf\u00fcgt das Physik-Hochhaus \u00fcber Barrierefreiheit?",
+        "asr_prompt": " verf\u00fcgt das Physikhochhaus \u00fcber Barrierefreiheit."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "10.94",
+        "response_data": "limited, nan",
+        "prompt": "Ist Geb\u00e4ude 10.94 rollstuhlgerecht?",
+        "response": "Das Geb\u00e4ude ist teilweise rollstuhlgerecht.",
+        "reformulated_prompt": "Verf\u00fcgt Geb\u00e4ude 10.94 \u00fcber Barrierefreiheit?",
+        "asr_prompt": " verf\u00fcgt Geb\u00e4ude 10.94 \u00fcber Barrierefreiheit"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "10.31",
+        "response_data": "yes, nan",
+        "prompt": "Ist Geb\u00e4ude 10.31 rollstuhlgerecht?",
+        "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+        "reformulated_prompt": "Hat Geb\u00e4ude 10.31 einen Rollstuhlzugang?",
+        "asr_prompt": " hat Geb\u00e4ude 10.31 ein Rollstuhlz\u00fcge"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Kollegiengeb\u00e4ude Maschinenbau II",
+        "response_data": "yes, nan",
+        "prompt": "Ist Geb\u00e4ude Kollegiengeb\u00e4ude Maschinenbau II rollstuhlgerecht?",
+        "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+        "reformulated_prompt": "Hat das Kollegiengeb\u00e4ude Maschinenbau II Rollstuhlzugang?",
+        "asr_prompt": " Hat das Kollegengeb\u00e4udemaschinenbau 2 Rollstuhl zugang?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Technische Informatik (ITEC), Institut f\u00fcr",
+        "response_data": "yes, nan",
+        "prompt": "Ist Geb\u00e4ude Technische Informatik (ITEC), Institut f\u00fcr rollstuhlgerecht?",
+        "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+        "reformulated_prompt": "Verf\u00fcgt das Institut f\u00fcr Technische Informatik \u00fcber Rollstuhlzug\u00e4nglichkeit?",
+        "asr_prompt": " verf\u00fcgt das Institut f\u00fcr technische Informatik \u00fcber Rollstuhlzug\u00e4nglichkeit?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "101",
+        "response_data": "yes, nan",
+        "prompt": "Ist Geb\u00e4ude 101 rollstuhlgerecht?",
+        "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+        "reformulated_prompt": "Kann man Geb\u00e4ude 101 mit Rollstuhl betreten?",
+        "asr_prompt": " Kann man Geb\u00e4ude 101 mit Rollstuhl betreten?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Technische Thermodynamik, Institut f\u00fcr",
+        "response_data": "yes, nan",
+        "prompt": "Ist Geb\u00e4ude Technische Thermodynamik, Institut f\u00fcr rollstuhlgerecht?",
+        "response": "Ja, das Geb\u00e4ude ist rollstuhlgerecht.",
+        "reformulated_prompt": "Hat das Institut f\u00fcr Technische Thermodynamik Rollstuhlzugang?",
+        "asr_prompt": " Hat das Institut f\u00fcr technische Thermodynamik einen Rollstillzugang?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "InformatiKOM 1",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude InformatiKOM 1 rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Hat das InformatiKOM 1 Geb\u00e4ude Rollstuhlzugang?",
+        "asr_prompt": " hat das Informatik.1 Geb\u00e4ude einen Rollstuhlzugang."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "211",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude 211 rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Verf\u00fcgt Geb\u00e4ude 211 \u00fcber Rollstuhlzug\u00e4nglichkeit?",
+        "asr_prompt": " Versch\u00fctt Geb\u00e4ude 211 \u00fcber Rollstuhlzug\u00e4nglichkeit."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Bereich I - Biologie, Chemie und Verfahrenstechnik (Campus Nord)",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude Bereich I - Biologie, Chemie und Verfahrenstechnik (Campus Nord) rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Hat der Bereich I - Biologie, Chemie und Verfahrenstechnik (Campus Nord) barrierefreie Zug\u00e4nge?",
+        "asr_prompt": " Hat der Bereich 1 der Biologie, Chemie und Verfahrenstechnik am Campus Nord barrierefrei zug\u00e4nge?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Chemie-Turm II",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude Chemie-Turm II rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist der Chemie-Turm II f\u00fcr Rollstuhlfahrer zug\u00e4nglich?",
+        "asr_prompt": " Ist Technik Mietwoom 2 f\u00fcr Rollstuhlfahrer zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "30.28",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude 30.28 rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist das Geb\u00e4ude 30.28 barrierefrei zug\u00e4nglich?",
+        "asr_prompt": " Ist das Geb\u00e4ude 30, 28 barrierefrei zug\u00e4nglich?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "Soziologie, Medien- und Kulturwissenschaften (ISMK), Institut f\u00fcr ",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude Soziologie, Medien- und Kulturwissenschaften (ISMK), Institut f\u00fcr  rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist das ISMK-Institut barrierefrei?",
+        "asr_prompt": " Ist das ISMK-Institut barrierefrei?"
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "06.47",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude 06.47 rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Verf\u00fcgt Geb\u00e4ude 06.47 \u00fcber Barrierefreiheit?",
+        "asr_prompt": " Erf\u00fcgt Geb\u00e4ude 06.47 \u00fcber Barrierefreiheit."
+      }
+    ]
+  },
+  {
+    "num_turns": 1,
+    "prompts": [
+      {
+        "input_data": "10.86",
+        "response_data": "nan, nan",
+        "prompt": "Ist Geb\u00e4ude 10.86 rollstuhlgerecht?",
+        "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
+        "reformulated_prompt": "Ist das Geb\u00e4ude 10.86 f\u00fcr Rollstuhlfahrer zug\u00e4nglich?",
+        "asr_prompt": " Ist das Geb\u00e4ude 10.86 f\u00fcr Rollstuhlfahrer zug\u00e4nglich?"
+      }
+    ]
+  }
+]

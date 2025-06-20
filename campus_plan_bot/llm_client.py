@@ -25,7 +25,9 @@ class InstituteClient(LLMClient):
         )
 
     def query(self, prompt: str) -> str:
-        return self.generate(prompt, self.request_config)
+        answer = self.generate(prompt, self.request_config)
+        answer = answer.strip().removeprefix("assistant").strip()
+        return answer
 
     def generate(self, prompt: str, config: LLMRequestConfig) -> str:
         return self.client.text_generation(

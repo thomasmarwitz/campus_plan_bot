@@ -7,7 +7,7 @@ from campus_plan_bot.bot import SimpleTextBot
 
 @pytest.fixture
 def bot(database_path: Path) -> SimpleTextBot:
-    return SimpleTextBot(database_path)
+    return SimpleTextBot.from_file(database_path)
 
 
 @pytest.mark.e2e

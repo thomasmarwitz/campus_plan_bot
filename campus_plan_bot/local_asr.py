@@ -10,7 +10,7 @@ from campus_plan_bot.interfaces import AutomaticSpeechRecognition
 class LocalASR(AutomaticSpeechRecognition):
     """Creating transcript from audio file with local whisper model."""
 
-    def __init__(self, file):
+    def __init__(self, file, whisper_model_name="openai/whisper-base"):
 
         super().__init__(file)
 
@@ -23,7 +23,7 @@ class LocalASR(AutomaticSpeechRecognition):
         # whisper_model_name = "openai/whisper-small.en" # English-only, ~ 967 MB
         # whisper_model_name = "openai/whisper-medium.en" # English-only, ~ 3.06 GB
         # whisper_model_name = "openai/whisper-tiny" # multilingual, ~ 151 MB
-        whisper_model_name = "openai/whisper-base"  # multilingual, ~ 290 MB
+        # whisper_model_name = "openai/whisper-base"  # multilingual, ~ 290 MB
         # whisper_model_name = "openai/whisper-small" # multilingual, ~ 967 MB
         # whisper_model_name = "openai/whisper-medium" # multilingual, ~ 3.06 GB
         # whisper_model_name = "openai/whisper-large-v2" # multilingual, ~ 6.17 GB

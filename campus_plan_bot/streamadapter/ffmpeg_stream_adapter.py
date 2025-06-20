@@ -2,7 +2,7 @@ import subprocess
 import time
 from typing import Any, Optional, cast
 
-from streamadapter.input_stream_adapter import BaseAdapter
+from campus_plan_bot.streamadapter.input_stream_adapter import BaseAdapter
 
 
 class FfmpegStream(BaseAdapter):
@@ -37,7 +37,7 @@ class FfmpegStream(BaseAdapter):
             raise ValueError("self.url must be a valid string.")
         if self._process is None:
             self.start_time = time.time()
-            self.seconds_returned = 0
+            self.seconds_returned: float = 0
             self.chunk_size = 2 * 960 if self.speed != -1.0 else 167 * 2 * 960
 
             args: list[str] = [
