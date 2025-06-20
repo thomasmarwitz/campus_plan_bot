@@ -38,12 +38,12 @@ class Conversation(ConversationProtocol):
     messages: list[MessageProtocol]
 
     @classmethod
-    def new(cls) -> "Conversation":
+    def new(cls, messages: list[MessageProtocol] | None = None) -> "Conversation":
         """Start a new conversation."""
         id = str(uuid.uuid4())
         return Conversation(
             id=id,
-            messages=[],
+            messages=[] if messages is None else messages,
         )
 
     def add_message(self, message: MessageProtocol) -> None:

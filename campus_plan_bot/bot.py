@@ -223,5 +223,38 @@ class SimpleTextBot(TextBot):
         )
         return response.strip()
 
+    def query_stateless(
+        self, query: str, conversation_history: Conversation
+    ) -> tuple[str, Conversation]:
+        """Processes a query in a stateless manner.
+
+        Args:
+            query: The user's query.
+            conversation_history: The current conversation history.
+
+        Returns:
+            A tuple containing the response text and the updated conversation history.
+        """
+        user_query = Message.from_content(query, Role.USER)
+
+        documents = self.rag.retrieve_context(query, limit=5)
+
+        rag_message = Message.from_content(
+            "\n".join([str(doc) for doc in documents]), Role.CODE
+        )
+
+        updated_conversation = Conversation.new(list(conversation_history.messages))
+        updated_conversation.add_message(user_query)
+        updated_conversation.add_message(rag_message)
+
+        prompt = self.prompt_builder.from_conversation_history(updated_conversation)
+        response = self.llm_client.query(prompt)
+        response_text = response.strip()
+
+        updated_conversation.add_message(
+            Message.from_content(response_text, Role.ASSISTANT)
+        )
+        return response_text, updated_conversation
+
     def reset(self) -> None:
         self.conversation_history = Conversation.new()
