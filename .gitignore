@@ -185,7 +185,10 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# VSCode
+.vscode/
+
+# Local user files
 ***.wav
-campus_plan_bot/settings.ini
-.vscode/settings.json
 campus_plan_bot/settings/settings.ini
