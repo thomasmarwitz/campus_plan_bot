@@ -16,7 +16,7 @@ from pydantic_evals.evaluators import (
 
 from campus_plan_bot.bot import RAG, SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
-from campus_plan_bot.reporting import report_to_df
+from eval.reporting import report_to_df
 
 # Load BertScore model once
 logger.debug("Loading Bertscore model")

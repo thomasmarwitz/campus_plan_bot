@@ -187,3 +187,5 @@ cython_debug/
 .cursorindexingignore
 ***.wav
 campus_plan_bot/settings.ini
+.vscode/settings.json
+campus_plan_bot/settings/settings.ini

@@ -11,9 +11,9 @@ import click
 import pandas as pd
 from loguru import logger
 
-from campus_plan_bot.evaluation import TestCase
 from campus_plan_bot.input.local_asr import LocalASR
 from campus_plan_bot.input.remote_asr import RemoteASR
+from eval.evaluation import TestCase
 
 
 def convert_to_wav(input_file: str, output_file: str):

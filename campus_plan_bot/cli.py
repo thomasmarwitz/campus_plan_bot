@@ -9,7 +9,7 @@ from campus_plan_bot.input.local_asr import LocalASR
 from campus_plan_bot.input.remote_asr import RemoteASR
 from campus_plan_bot.input.text_input import TextInput
 from campus_plan_bot.interfaces.interfaces import InputMethods, UserInputSource
-from campus_plan_bot.settings import Settings
+from campus_plan_bot.settings.settings import Settings
 
 database_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
 

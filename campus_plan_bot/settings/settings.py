@@ -3,7 +3,7 @@ from pathlib import Path
 
 from loguru import logger
 
-settings_path = Path("campus_plan_bot") / "settings.ini"
+settings_path = Path("campus_plan_bot/settings") / "settings.ini"
 
 
 class Settings:

@@ -12,7 +12,7 @@ from sseclient import SSEClient
 
 from campus_plan_bot.input.audio_recorder import AudioRecorder
 from campus_plan_bot.interfaces.interfaces import AutomaticSpeechRecognition
-from campus_plan_bot.settings import Settings
+from campus_plan_bot.settings.settings import Settings
 
 
 class RemoteASR(AutomaticSpeechRecognition):
