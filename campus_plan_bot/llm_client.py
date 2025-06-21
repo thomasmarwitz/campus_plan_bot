@@ -1,7 +1,7 @@
 from huggingface_hub import InferenceClient
 from loguru import logger
 
-from campus_plan_bot.interfaces import LLMClient, LLMRequestConfig
+from campus_plan_bot.interfaces.interfaces import LLMClient, LLMRequestConfig
 
 INSTITUTE_URL = "http://hiaisc.isl.iar.kit.edu/llm_generate"
 

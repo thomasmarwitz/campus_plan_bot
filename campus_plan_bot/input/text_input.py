@@ -1,6 +1,6 @@
 import click
 
-from campus_plan_bot.interfaces import UserInputSource
+from campus_plan_bot.interfaces.interfaces import UserInputSource
 
 
 class TextInput(UserInputSource):

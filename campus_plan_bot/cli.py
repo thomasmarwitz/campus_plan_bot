@@ -5,11 +5,11 @@ import click
 from loguru import logger
 
 from campus_plan_bot.bot import SimpleTextBot
-from campus_plan_bot.interfaces import InputMethods, UserInputSource
-from campus_plan_bot.local_asr import LocalASR
-from campus_plan_bot.remote_asr import RemoteASR
+from campus_plan_bot.input.local_asr import LocalASR
+from campus_plan_bot.input.remote_asr import RemoteASR
+from campus_plan_bot.input.text_input import TextInput
+from campus_plan_bot.interfaces.interfaces import InputMethods, UserInputSource
 from campus_plan_bot.settings import Settings
-from campus_plan_bot.text_input import TextInput
 
 database_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
 

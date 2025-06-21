@@ -9,7 +9,11 @@ class AudioRecorder:
     """Create audio recording as file from device microphones."""
 
     def __init__(
-        self, filename="campus_plan_bot/out.wav", channels=1, rate=44100, chunk=1024
+        self,
+        filename="campus_plan_bot/input/out.wav",
+        channels=1,
+        rate=44100,
+        chunk=1024,
     ):
         self.filename = filename
         self.channels = channels
@@ -98,5 +102,5 @@ class AudioRecorder:
 
 
 if __name__ == "__main__":
-    recorder = AudioRecorder(filename="campus_plan_bot/out.wav")
+    recorder = AudioRecorder(filename="campus_plan_bot/input/out.wav")
     recorder.record_audio()

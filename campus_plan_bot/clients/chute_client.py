@@ -30,8 +30,8 @@ from pydantic_ai.models import (
 )
 
 from campus_plan_bot.bot import LLama3PromptBuilder
-from campus_plan_bot.interfaces import Role
-from campus_plan_bot.persistence_types import Conversation
+from campus_plan_bot.interfaces.interfaces import Role
+from campus_plan_bot.interfaces.persistence_types import Conversation
 
 CHUTE_API_URL = "https://llm.chutes.ai/v1/chat/completions"
 
@@ -244,7 +244,11 @@ class ChuteModel(Model):
         if not content:
             raise UnexpectedModelBehavior("No content in Chute API response")
 
-        response_text = content.replace("<think>", "").replace("</think>", "").strip() if self.strip_think else content
+        response_text = (
+            content.replace("<think>", "").replace("</think>", "").strip()
+            if self.strip_think
+            else content
+        )
 
         # If there are output tools defined, use them
         if model_request_parameters.output_tools:

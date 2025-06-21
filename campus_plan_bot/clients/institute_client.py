@@ -16,8 +16,8 @@ from pydantic_ai.models import (
 )
 
 from campus_plan_bot.bot import LLama3PromptBuilder
-from campus_plan_bot.interfaces import Role
-from campus_plan_bot.persistence_types import Conversation
+from campus_plan_bot.interfaces.interfaces import Role
+from campus_plan_bot.interfaces.persistence_types import Conversation
 
 logger = logging.getLogger(__name__)
 

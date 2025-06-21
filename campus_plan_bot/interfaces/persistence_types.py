@@ -2,7 +2,7 @@ import uuid
 from dataclasses import dataclass
 from datetime import datetime
 
-from campus_plan_bot.interfaces import (
+from campus_plan_bot.interfaces.interfaces import (
     ConversationProtocol,
     MessageProtocol,
     Role,
