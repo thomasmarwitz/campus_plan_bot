@@ -548,7 +548,7 @@ def generate_latex_summary_table(results_dir: Path, output_dir: Path):
 
 
 if __name__ == "__main__":
-    results_directory = Path("phase1/data/evaluation/results")
+    results_directory = Path("data/evaluation/results")
     output_directory = Path("docs/phase2/plots")
     plot_single_turn_performance_by_category(results_directory, output_directory)
     plot_overall_performance(results_directory, output_directory)

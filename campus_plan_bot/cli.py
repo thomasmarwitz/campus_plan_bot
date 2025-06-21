@@ -11,7 +11,7 @@ from campus_plan_bot.input.text_input import TextInput
 from campus_plan_bot.interfaces.interfaces import InputMethods, UserInputSource
 from campus_plan_bot.settings.settings import Settings
 
-database_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
+database_path = Path("data") / "campusplan_evaluation.csv"
 
 
 @click.command()

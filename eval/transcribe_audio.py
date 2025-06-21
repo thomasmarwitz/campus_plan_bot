@@ -96,13 +96,13 @@ def transcribe(asr_type: str, output_path: str, skip_conversion: bool):
 @click.option(
     "--single-turn-data-dir",
     type=str,
-    default="phase1/data/evaluation/single_turn/",
+    default="data/evaluation/single_turn/",
     help="Directory containing single-turn ground-truth JSON files.",
 )
 @click.option(
     "--multi-turn-data-file",
     type=str,
-    default="phase1/data/evaluation/multi_turn/multi_turns.json",
+    default="data/evaluation/multi_turn/multi_turns.json",
     help="Path to the multi-turn ground-truth JSON file.",
 )
 def port(
@@ -195,8 +195,8 @@ def run_transcription(asr_type: str, output_path: str, skip_conversion: bool):
     """Transcribe audio files using the specified ASR and save results."""
 
     # --- 1. File Discovery ---
-    single_turn_path = "phase1/data/evaluation/audio/single_turn/"
-    multi_turn_path = "phase1/data/evaluation/audio/multi_turn/"
+    single_turn_path = "data/evaluation/audio/single_turn/"
+    multi_turn_path = "data/evaluation/audio/multi_turn/"
 
     single_files_m4a = sorted(glob.glob(os.path.join(single_turn_path, "*.m4a")))
     single_files_m4a = [f for f in single_files_m4a if not Path(f).stem.endswith("_2")]

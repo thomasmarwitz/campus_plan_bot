@@ -64,7 +64,7 @@ testpaths = [
 # ignore types in the following files
 [tool.typos]
 files.extend-exclude = [
-  "phase1/",
+  "data/",
   "docs/"
 ]
 default.extend-ignore-re = ["controll", "ein"]

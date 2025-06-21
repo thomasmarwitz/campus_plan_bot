@@ -129,11 +129,9 @@ class TestDataSet:
         return cases
 
 
-single_turn_test_data = Path("phase1") / "data" / "evaluation" / "single_turn"
-multi_turn_test_data = (
-    Path("phase1") / "data" / "evaluation" / "multi_turn" / "multi_turns.json"
-)
-data_path = Path("phase1") / "data" / "campusplan_evaluation.csv"
+single_turn_test_data = Path("data") / "evaluation" / "single_turn"
+multi_turn_test_data = Path("data") / "evaluation" / "multi_turn" / "multi_turns.json"
+data_path = Path("data") / "campusplan_evaluation.csv"
 
 
 class BertScoreEvaluator(Evaluator[list[str], list[str]]):
@@ -203,7 +201,7 @@ def cli() -> None:
     "--output-dir",
     "output_path",
     type=click.Path(path_type=Path),
-    default=Path("phase1/data/evaluation/results"),
+    default=Path("data/evaluation/results"),
     help="Path to output directory for reports",
 )
 @click.option(
@@ -256,7 +254,7 @@ def evaluate_single_synthetic(
     "--output-dir",
     "output_path",
     type=click.Path(path_type=Path),
-    default=Path("phase1/data/evaluation/results"),
+    default=Path("data/evaluation/results"),
     help="Path to output directory for reports",
 )
 @click.option(

@@ -5,6 +5,6 @@ pixi run python -m eval.transcribe_audio transcribe --asr-type local --output lo
 
 ```
 pixi run python -i -m eval.transcribe_audio port \
-    --input-csv phase1/data/evaluation/audio/local_asr_results.csv \
-    --output-json phase1/data/evaluation/audio/local_asr_suite.json
+    --input-csv data/evaluation/audio/local_asr_results.csv \
+    --output-json data/evaluation/audio/local_asr_suite.json
 ```
