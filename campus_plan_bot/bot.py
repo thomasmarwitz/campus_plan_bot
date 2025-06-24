@@ -10,15 +10,15 @@ from loguru import logger
 from sentence_transformers import SentenceTransformer
 from sentence_transformers.util import cos_sim
 
-from campus_plan_bot.interfaces import (
+from campus_plan_bot.interfaces.interfaces import (
     LLMRequestConfig,
     MessageProtocol,
     RAGComponent,
     RetrievedDocument,
     TextBot,
 )
+from campus_plan_bot.interfaces.persistence_types import Conversation, Message, Role
 from campus_plan_bot.llm_client import InstituteClient, LLMClient
-from campus_plan_bot.persistence_types import Conversation, Message, Role
 
 # Other instructions that are currently not implemented:
 # -	Generating navigation links to buildings using external apps (Google Maps, Apple Maps, OSM).

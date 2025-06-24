@@ -1,12 +1,11 @@
 import json
-from typing import Callable, Protocol
 from pathlib import Path
+from typing import Callable, Protocol
 
 import pytest
-
 from pydantic import BaseModel
 
-from campus_plan_bot.interfaces import TextBot
+from campus_plan_bot.interfaces.interfaces import TextBot
 
 
 @pytest.fixture
@@ -61,8 +60,8 @@ class Evaluator:
                 print(f"Score: {score}")
 
 
-@pytest.fixture
-def evaluator(
-    test_data_set: TestDataSet, bot_factory: Callable[[], TextBot]
-) -> Evaluator:
-    return Evaluator(test_data_set, bot_factory)
+# @pytest.fixture
+# def evaluator(
+#     test_data_set: TestDataSet, bot_factory: Callable[[], TextBot]
+# ) -> Evaluator:
+#     return Evaluator(test_data_set, bot_factory)
