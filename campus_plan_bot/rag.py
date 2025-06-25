@@ -56,7 +56,7 @@ class RAG(RAGComponent):
             related_documents = [
                 RetrievedDocument(
                     id=title,
-                    content=str(self.database.iloc[index].to_dict()),
+                    data=self.database.iloc[index].to_dict(),
                     relevance_score=1.0,
                 )
                 for index, title in enumerate(self.embedding_data)
@@ -81,7 +81,8 @@ class RAG(RAGComponent):
                 documents.append(
                     RetrievedDocument(
                         id=self.database.loc[index]["identifikator"],
-                        content=str(self.database.iloc[index].to_dict()),
+                        # content=str(self.database.iloc[index].to_dict()),
+                        data=self.database.iloc[index].to_dict(),
                         relevance_score=round(float(score), 3),
                     )
                 )

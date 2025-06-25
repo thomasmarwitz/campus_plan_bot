@@ -56,11 +56,12 @@ class RetrievedDocument:
     """Represents a document retrieved from the database."""
 
     id: str
-    content: str
+    # content: str
+    data: dict
     relevance_score: float
 
     def __str__(self) -> str:
-        return f"Document ID: {self.id}, Relevance Score: {self.relevance_score}, Content: {self.content}"
+        return f"Document ID: {self.id}, Relevance Score: {self.relevance_score}, Content: {str(self.data)}"
 
 
 # --- Input Processing Protocols ---

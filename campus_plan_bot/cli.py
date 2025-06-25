@@ -5,6 +5,7 @@ import click
 from loguru import logger
 
 from campus_plan_bot.bot import SimpleTextBot
+from campus_plan_bot.data_picker import DataPicker
 from campus_plan_bot.input.local_asr import LocalASR
 from campus_plan_bot.input.remote_asr import RemoteASR
 from campus_plan_bot.input.text_input import TextInput
@@ -55,6 +56,7 @@ def chat(log_level: str, input: str, token: str, file: str):
 
     bot = SimpleTextBot()
     rag = RAG.from_file(database_path)
+    data_picker = DataPicker()
 
     click.echo(
         "Welcome to the chat with CampusGuide, you can ask questions about buildings, opening hours, navigation. ",
@@ -71,6 +73,9 @@ def chat(log_level: str, input: str, token: str, file: str):
             break
 
         documents = rag.retrieve_context(user_input, limit=5)
+
+        documents = data_picker.choose_fields(user_input, documents)
+
         response = bot.query(user_input, documents)
 
         click.secho(f"{bot.name}: ", fg="cyan", nl=False)
