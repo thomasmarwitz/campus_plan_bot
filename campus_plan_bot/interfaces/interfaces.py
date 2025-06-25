@@ -335,6 +335,6 @@ class OutputGenerator(Protocol):
 class TextBot(Protocol):
     """Protocol for the main bot interface."""
 
-    def query(self, query: str) -> str:
+    def query(self, query: str, docs: list[RetrievedDocument]) -> str:
         """Process a user query and return a response."""
         ...

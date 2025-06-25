@@ -14,8 +14,9 @@ from pydantic_evals.evaluators import (
     LLMJudge,
 )
 
-from campus_plan_bot.bot import RAG, SimpleTextBot
+from campus_plan_bot.bot import SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
+from campus_plan_bot.rag import RAG
 from eval.reporting import report_to_df
 
 # Load BertScore model once
@@ -295,11 +296,12 @@ def process_file(
     async def bot_runner(test_case_input: TestCaseInput) -> list[str]:
         if test_case_input.case_id not in bots:
             logger.debug(f"Creating bot for case {test_case_input.case_id}")
-            bots[test_case_input.case_id] = SimpleTextBot(rag)
+            bots[test_case_input.case_id] = SimpleTextBot()
 
         bot = bots[test_case_input.case_id]
+        docs = rag.retrieve_context(test_case_input.input, limit=5)
 
-        answer = bot.query(test_case_input.input)
+        answer = bot.query(test_case_input.input, docs)
 
         # delete bot reference if last turn
         if test_case_input.turn_idx == test_case_input.num_turns - 1:
