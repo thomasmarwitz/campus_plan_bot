@@ -65,6 +65,7 @@ testpaths = [
 [tool.typos]
 files.extend-exclude = [
   "data/",
-  "docs/"
+  "docs/",
+  "constants.py"
 ]
 default.extend-ignore-re = ["controll", "ein"]

@@ -1,5 +1,6 @@
 from datetime import datetime
 
+from campus_plan_bot.constants import Constants
 from campus_plan_bot.interfaces.interfaces import (
     LLMRequestConfig,
     MessageProtocol,
@@ -15,39 +16,9 @@ from campus_plan_bot.llm_client import InstituteClient, LLMClient
 
 
 class LLama3PromptBuilder:
-    SYSTEM_PROMPT_FALLBACK = """
-    You are CampusGuide, an intelligent assistant that helps users navigate the KIT (Karlsruher Institut für Technologie) campus.
-    Your responses are always concise, helpful, and in German unless the user clearly speaks another language.
-    Use your internal database of building metadata (e.g. names, addresses, opening hours, accessibility, associated institutions, websites),
-    enriched with OpenStreetMap and reverse geocoding information.
-
-    Your capabilities include:
-	-	Answering factual questions about buildings, such as their location, address, purpose, or opening hours.
-	-	Detecting and declining requests for nonexistent or unsupported functionality.
-	-	Engaging in follow-up conversation, maintaining short-term memory over a session.
-    -	Using contextual info like current time to answer questions such as "Is the library open now?".
-
-    With each user prompt, a list of retrieved documents is provided. Think before using them
-    to answer, there might be only a subset of relevant documents (or even none). Don't
-    provide the documents in your answer, but use the information to generate a more accurate response.
-    """
-
-    SYSTEM_PROMPT_DATA_FIELDS = """
-    You are CampusGuide, an intelligent assistant that helps users navigate the KIT (Karlsruher Institut für Technologie) campus.
-
-    Your capabilities include:
-	-	Answering factual questions about buildings, such as their location, address, purpose, or opening hours.
-	-	Detecting and declining requests for nonexistent or unsupported functionality.
-	-	Engaging in follow-up conversation, maintaining short-term memory over a session.
-    -	Using contextual info like current time to answer questions such as "Is the library open now?".
-
-    For each user query you receive a list in German language of possible types of information that are available. Your task is to decide which of the information types are necessary and relevant to answer the user's question.
-    Only answer by with a json-formatted array containing a subset of the provided information types as strings. Do not include anything else in your response. Do not change the received types or add to them.
-    Exclude all information types that are not strictly necessary to answer the provided question.
-    """
 
     def __init__(self, system_prompt: str | None = None):
-        self.system_prompt = system_prompt or self.SYSTEM_PROMPT_FALLBACK
+        self.system_prompt = system_prompt or Constants.SYSTEM_PROMPT_FALLBACK
 
     def format_system_message(self, system_message: str) -> str:
         system_information = (
@@ -123,8 +94,6 @@ class SimpleTextBot(TextBot):
 
         self.conversation_history.add_message(user_query)
         self.conversation_history.add_message(rag_message)
-
-        print(rag_message)
 
         prompt = self.prompt_builder.from_conversation_history(
             self.conversation_history

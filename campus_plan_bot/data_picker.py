@@ -3,6 +3,7 @@ import json
 from loguru import logger
 
 from campus_plan_bot.bot import LLama3PromptBuilder
+from campus_plan_bot.constants import Constants
 from campus_plan_bot.interfaces.interfaces import (
     LLMClient,
     LLMRequestConfig,
@@ -21,27 +22,33 @@ class DataPicker:
         llm_client: LLMClient | None = None,
     ):
         self.prompt_builder = prompt_builder or LLama3PromptBuilder(
-            LLama3PromptBuilder.SYSTEM_PROMPT_DATA_FIELDS
+            Constants.SYSTEM_PROMPT_DATA_FIELDS
         )
         self.llm_client = llm_client or InstituteClient(
             default_request_config=LLMRequestConfig(
-                max_new_tokens=1024,
-                temperature=0.3,
+                max_new_tokens=512,
+                temperature=0.01,
             )
         )
 
     def choose_fields(self, query: str, docs: list[RetrievedDocument]):
         """Let model choose from available fields and reduce retrieved
         documents accordingly."""
+        self.docs = docs
+
         fields = self.get_field_options(docs)
         response = self.query_model(query, fields)
 
-        key_list = json.loads(response)
-        logger.debug(f"Identified relevant fields: {key_list}")
+        # return unmodified documents if the model response is not as expected
+        try:
+            key_list = json.loads(response)
+            logger.debug(f"Identified relevant fields: {key_list}")
 
-        # remove all fields from retrieved docs that are not selected
-        for doc in docs:
-            doc.data = {key: doc.data[key] for key in key_list if key in doc.data}
+            # remove all fields from retrieved docs that are not selected
+            for doc in docs:
+                doc.data = {key: doc.data[key] for key in key_list if key in doc.data}
+        except Exception as e:
+            self.abort_selection(e)
 
         return docs
 
@@ -60,10 +67,12 @@ class DataPicker:
         # new conversation for each query since no history is needed
         conversation_history = Conversation.new()
 
-        user_query = Message.from_content(query, Role.USER)
+        user_query = Message.from_content(
+            f"{Constants.USER_QUERY_PRE} {query}", Role.USER
+        )
         conversation_history.add_message(user_query)
 
-        fields_str = f"Diese Informationstypen sind verfügbar: {fields}"
+        fields_str = f"{Constants.AVAILABLE_FIELDS_PRE} {fields}"
         field_query = Message.from_content(fields_str, Role.USER)
         conversation_history.add_message(field_query)
 
@@ -71,3 +80,10 @@ class DataPicker:
         response = self.llm_client.query(prompt)
 
         return response
+
+    def abort_selection(self, exception: Exception):
+        """Something went wrong so return the unmodified documents and continue
+        with the next processing step."""
+        logger.error(f"Decoding model-selected fields failed with error: {exception}.")
+        logger.error("Aborting field selection and continuing with next step.")
+        return self.docs
