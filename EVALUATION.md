@@ -32,7 +32,7 @@ mkdir -p data/evaluation/results/$EVAL_NAME
 To evaluate the single-turn synthetic datasets for each intent (e.g., `building_location`, `opening_hours`), run the `evaluate_single_synthetic` command. This command automatically finds all `*synthetic.json` files in the `data/evaluation/single_turn/` directory.
 
 ```bash
-python eval/evaluation.py evaluate_single_synthetic \
+python eval/evaluation.py evaluate-single-synthetic \
     --output-dir data/evaluation/results/$EVAL_NAME
 ```
 
@@ -49,10 +49,10 @@ This will generate CSV files for each synthetic test, including:
 
 ### 2. Multi-Turn Conversations
 
-To evaluate the multi-turn conversation dataset, use the `evaluate_file` command. The default test path is already set to the multi-turn dataset.
+To evaluate the multi-turn conversation dataset, use the `evaluate-file` command. The default test path is already set to the multi-turn dataset.
 
 ```bash
-python eval/evaluation.py evaluate_file \
+python eval/evaluation.py evaluate-file \
     --output-dir data/evaluation/results/$EVAL_NAME
 ```
 
@@ -60,7 +60,7 @@ This will generate `multi_turns.csv` in your output directory.
 
 ### 3. ASR Datasets
 
-You can also use the `evaluate_file` command to evaluate datasets with simulated Automatic Speech Recognition (ASR) errors. You must provide the path to the specific ASR test file.
+You can also use the `evaluate-file` command to evaluate datasets with simulated Automatic Speech Recognition (ASR) errors. You must provide the path to the specific ASR test file.
 
 Assuming the ASR test files are located at `data/evaluation/local_asr_suite/`:
 
