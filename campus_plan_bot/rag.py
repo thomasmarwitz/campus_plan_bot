@@ -35,12 +35,12 @@ class RAG(RAGComponent):
         pattern = r"(\d{1,2}\.\d{1,2})"
         for _, row in df.iterrows():
             metadata = row.to_dict()
-            mo = re.search(pattern, row["identifikator"])
+            mo = re.search(pattern, row["title"])
             if mo:
                 metadata["building_nr"] = mo.group(0)
 
             doc = Document(
-                text=row["identifikator"],
+                text=row["title"],
                 metadata=metadata,
             )
             documents.append(doc)
