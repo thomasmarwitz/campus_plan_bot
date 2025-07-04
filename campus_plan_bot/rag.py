@@ -1,34 +1,26 @@
-import os
 import re
-from collections.abc import Sequence
 from pathlib import Path
 
-import numpy as np
 import pandas as pd
 from loguru import logger
-from sentence_transformers import SentenceTransformer
-from sentence_transformers.util import cos_sim
 
 from campus_plan_bot.interfaces.interfaces import (
     RAGComponent,
     RetrievedDocument,
 )
+from llama_index.core import Document, Settings, VectorStoreIndex
+from llama_index.core.retrievers import VectorIndexRetriever
+from llama_index.core.vector_stores import MetadataFilter, MetadataFilters
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 
 class RAG(RAGComponent):
-
     MODEL = "all-MiniLM-L6-v2"
 
-    def __init__(self, embedding_data: list, database: pd.DataFrame):
-        os.environ["TOKENIZERS_PARALLELISM"] = "true"
-
-        self.embedding_data = embedding_data
+    def __init__(self, index: VectorStoreIndex, database: pd.DataFrame):
+        self.index = index
         self.database = database
-        logger.debug(f"Loading {self.MODEL} model...")
-        self.model = SentenceTransformer(self.MODEL)
-        logger.debug(f"Embedding {len(embedding_data)} documents...")
-        self.embeddings = self.model.encode(embedding_data, convert_to_tensor=True)
-        logger.debug("Embeddings loaded.")
+        logger.debug("LlamaIndex RAG initialized.")
 
     @classmethod
     def from_file(cls, file_path: Path) -> "RAG":
@@ -39,53 +31,85 @@ class RAG(RAGComponent):
     @classmethod
     def from_df(cls, df: pd.DataFrame) -> "RAG":
         """Create a RAG instance from a DataFrame."""
-        embedding_data = df["identifikator"].tolist()
-        return cls(embedding_data, df)
+        documents = []
+        pattern = r"(\d{1,2}\.\d{1,2})"
+        for _, row in df.iterrows():
+            metadata = row.to_dict()
+            mo = re.search(pattern, row["identifikator"])
+            if mo:
+                metadata["building_nr"] = mo.group(0)
+
+            doc = Document(
+                text=row["identifikator"],
+                metadata=metadata,
+            )
+            documents.append(doc)
+
+        Settings.embed_model = HuggingFaceEmbedding(model_name=cls.MODEL)
+        index = VectorStoreIndex.from_documents(
+            documents,
+        )
+        return cls(index, df)
 
     def retrieve_context(self, query: str, limit: int = 5) -> list[RetrievedDocument]:
         """Retrieve relevant context based on a query string."""
-        # 2 step approach
         documents: list[RetrievedDocument] = []
+        document_ids: set[str] = set()
 
         # 1. check whether building number of type 50.34 (1-2 numbers).(1-2 numbers) do exactly match
-        PATTERN = r"(\d{1,2}\.\d{1,2})"
-        mo = re.search(PATTERN, query)
+        pattern = r"(\d{1,2}\.\d{1,2})"
+        mo = re.search(pattern, query)
         if mo:
             building_number = mo.group(0)
             logger.debug(f"Building number found: {building_number}")
-            related_documents = [
-                RetrievedDocument(
-                    id=title,
-                    data=self.database.iloc[index].to_dict(),
-                    relevance_score=1.0,
+
+            retriever = VectorIndexRetriever(
+                index=self.index,
+                similarity_top_k=limit,
+                filters=MetadataFilters(
+                    filters=[
+                        MetadataFilter(
+                            key="building_nr",
+                            value=building_number,
+                        )
+                    ]
+                ),
+            )
+            nodes = retriever.retrieve(query)
+            for node in nodes:
+                documents.append(
+                    RetrievedDocument(
+                        id=node.get_content(),
+                        data=node.metadata,
+                        relevance_score=1.0,
+                    )
                 )
-                for index, title in enumerate(self.embedding_data)
-                if building_number in title
-            ][:limit]
-            documents.extend(related_documents)
+                document_ids.add(node.get_content())
             logger.debug(
-                f"Found {len(related_documents)} documents matching the building number."
+                f"Found {len(documents)} documents matching the building number."
             )
 
         # 2. if not, use cosine similarity to find the most relevant documents
         if len(documents) < limit:
             top_k = limit - len(documents)
 
-            query_embedding = self.model.encode(query, convert_to_tensor=True)
-            cos_scores = (
-                cos_sim(query_embedding, self.embeddings)[0].cpu().numpy()
-            )  # does this work if data already on cpu?
-            top_k_indices: Sequence[int] = np.argsort(-cos_scores)[:top_k]  # type: ignore[assignment]
+            retriever = VectorIndexRetriever(
+                index=self.index,
+                similarity_top_k=top_k,
+            )
+            nodes = retriever.retrieve(query)
 
-            for score, index in zip(cos_scores[top_k_indices], top_k_indices):
+            for node in nodes:
+                if node.get_content() in document_ids:
+                    continue
                 documents.append(
                     RetrievedDocument(
-                        id=self.database.loc[index]["identifikator"],
-                        # content=str(self.database.iloc[index].to_dict()),
-                        data=self.database.iloc[index].to_dict(),
-                        relevance_score=round(float(score), 3),
+                        id=node.get_content(),
+                        data=node.metadata,
+                        relevance_score=round(float(node.get_score()), 3),
                     )
                 )
+
             logger.debug(f"Found {top_k} documents using cosine similarity.")
 
         logger.debug(
