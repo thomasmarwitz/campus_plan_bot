@@ -16,6 +16,7 @@ from pydantic_evals.evaluators import (
 
 from campus_plan_bot.bot import SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
+from campus_plan_bot.data_picker import DataPicker
 from campus_plan_bot.rag import RAG
 from eval.reporting import report_to_df
 
@@ -300,6 +301,8 @@ def process_file(
 
         bot = bots[test_case_input.case_id]
         docs = rag.retrieve_context(test_case_input.input, limit=5)
+        data_picker = DataPicker()
+        docs = data_picker.choose_fields(test_case_input.input, docs)
 
         answer = bot.query(test_case_input.input, docs)
 

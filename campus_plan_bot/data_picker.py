@@ -1,4 +1,5 @@
 import json
+from copy import deepcopy
 
 from loguru import logger
 
@@ -34,7 +35,7 @@ class DataPicker:
     def choose_fields(self, query: str, docs: list[RetrievedDocument]):
         """Let model choose from available fields and reduce retrieved
         documents accordingly."""
-        self.docs = docs
+        original_docs = deepcopy(docs)
 
         fields = self.get_field_options(docs)
         response = self.query_model(query, fields)
@@ -48,7 +49,8 @@ class DataPicker:
             for doc in docs:
                 doc.data = {key: doc.data[key] for key in key_list if key in doc.data}
         except Exception as e:
-            self.abort_selection(e)
+            self.log_error(e)
+            return original_docs
 
         return docs
 
@@ -81,9 +83,8 @@ class DataPicker:
 
         return response
 
-    def abort_selection(self, exception: Exception):
+    def log_error(self, exception: Exception):
         """Something went wrong so return the unmodified documents and continue
         with the next processing step."""
         logger.error(f"Decoding model-selected fields failed with error: {exception}.")
         logger.error("Aborting field selection and continuing with next step.")
-        return self.docs
