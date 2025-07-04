@@ -12,14 +12,17 @@ from llama_index.core import Document, Settings, VectorStoreIndex
 from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.core.vector_stores import MetadataFilter, MetadataFilters
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from sentence_transformers import CrossEncoder
 
 
 class RAG(RAGComponent):
     MODEL = "all-MiniLM-L6-v2"
+    RERANKER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
     def __init__(self, index: VectorStoreIndex, database: pd.DataFrame):
         self.index = index
         self.database = database
+        self.reranker = CrossEncoder(self.RERANKER_MODEL)
         logger.debug("LlamaIndex RAG initialized.")
 
     @classmethod
@@ -92,25 +95,35 @@ class RAG(RAGComponent):
         # 2. if not, use cosine similarity to find the most relevant documents
         if len(documents) < limit:
             top_k = limit - len(documents)
-
             retriever = VectorIndexRetriever(
                 index=self.index,
-                similarity_top_k=top_k,
+                similarity_top_k=top_k * 3,  # retrieve more documents for reranking
             )
             nodes = retriever.retrieve(query)
 
-            for node in nodes:
-                if node.get_content() in document_ids:
-                    continue
-                documents.append(
-                    RetrievedDocument(
-                        id=node.get_content(),
-                        data=node.metadata,
-                        relevance_score=round(float(node.get_score()), 3),
-                    )
-                )
+            # Rerank the retrieved documents
+            if nodes:
+                pairs = [(query, node.get_content()) for node in nodes]
+                scores = self.reranker.predict(pairs)
 
-            logger.debug(f"Found {top_k} documents using cosine similarity.")
+                # Combine nodes with their new scores and sort
+                reranked_nodes = sorted(zip(nodes, scores), key=lambda x: x[1], reverse=True)
+
+                for node, score in reranked_nodes:
+                    if len(documents) >= limit:
+                        break
+                    if node.get_content() in document_ids:
+                        continue
+                    documents.append(
+                        RetrievedDocument(
+                            id=node.get_content(),
+                            data=node.metadata,
+                            relevance_score=round(float(score), 3),
+                        )
+                    )
+                    document_ids.add(node.get_content())
+
+            logger.debug(f"Found {top_k} documents using cosine similarity and reranking.")
 
         logger.debug(
             "Retrieved "
