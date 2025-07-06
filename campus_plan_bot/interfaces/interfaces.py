@@ -154,9 +154,7 @@ class RAGComponent(Protocol):
     # embedding_generator: EmbeddingGenerator
     # database: Database
 
-    def retrieve_context(
-        self, query: str, limit: int = 5
-    ) -> list[RetrievedDocument]:
+    def retrieve_context(self, query: str, limit: int = 5) -> list[RetrievedDocument]:
         """Retrieve relevant context based on a query string."""
         ...
 
@@ -257,6 +255,10 @@ class LLMClient(Protocol):
         """
         ...
 
+    async def query_async(self, prompt: str) -> str:
+        """Query the LLM with default request config asynchronously."""
+        ...
+
 
 # --- Response Parsing Protocols ---
 
@@ -339,6 +341,6 @@ class OutputGenerator(Protocol):
 class TextBot(Protocol):
     """Protocol for the main bot interface."""
 
-    def query(self, query: str, docs: list[RetrievedDocument]) -> str:
+    def query(self, query: str, docs: list[RetrievedDocument]):
         """Process a user query and return a response."""
         ...

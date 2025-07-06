@@ -70,7 +70,7 @@ class DataPicker:
         conversation_history = Conversation.new()
 
         user_query = Message.from_content(
-            f"{Constants.USER_QUERY_PRE} {query}", Role.USER
+            f"{Constants.USER_QUERY_PRE_FIELDS} {query}", Role.USER
         )
         conversation_history.add_message(user_query)
 
