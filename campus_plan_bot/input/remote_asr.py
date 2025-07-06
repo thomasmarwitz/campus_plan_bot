@@ -113,28 +113,46 @@ class RemoteASR(AutomaticSpeechRecognition):
             logger.error(msg)
             raise ConnectionError(msg)
 
-    def send_session(self, url, sessionID, streamID, audio_source, timeout, api, token):
+    def send_session(self, args, sessionID, streamID, audio_source):
         try:
             start_time = time.time()
-            self.send_start(url, sessionID, streamID, api, token)
+            self.send_start(args.url, sessionID, streamID, args.api, args.token)
+
+            start_time = time.monotonic()
+
+            t = Thread(
+                target=self.read_text,
+                args=(
+                    args.url,
+                    sessionID,
+                    args.print,
+                    args.output_file,
+                    start_time,
+                    args.api,
+                ),
+            )
+            t.daemon = True
+            t.start()
 
             last_end = 0
-            while timeout is None or time.time() - start_time < timeout:
+            while args.timeout is None or time.time() - start_time < args.timeout:
                 last_end = self.send_audio(
                     last_end,
                     audio_source,
-                    url,
+                    args.url,
                     sessionID,
                     streamID,
-                    api,
-                    token,
-                    raise_interrupt=timeout is None,
+                    args.api,
+                    args.token,
+                    raise_interrupt=args.timeout is None,
                 )
         except KeyboardInterrupt:
             pass
 
         time.sleep(1)
-        self.send_end(url, sessionID, streamID, api, token)
+        self.send_end(args.url, sessionID, streamID, args.api, args.token)
+
+        t.join()
 
     def read_text(self, url, sessionID, printing, output_file, start_time, api):
 
@@ -266,37 +284,12 @@ class RemoteASR(AutomaticSpeechRecognition):
     def run_session(self, args, audio_source):
         sessionID, streamID = self.set_graph(args)
 
-        start_time = time.monotonic()
-
-        t = Thread(
-            target=self.read_text,
-            args=(
-                args.url,
-                sessionID,
-                args.print,
-                args.output_file,
-                start_time,
-                args.api,
-            ),
-        )
-        t.daemon = True
-        t.start()
-
-        time.sleep(
-            1
-        )  # To make sure the SSEClient is running before sending the INFORMATION request
-
         self.send_session(
-            args.url,
+            args,
             sessionID,
             streamID,
             audio_source,
-            args.timeout,
-            args.api,
-            args.token,
         )
-
-        t.join()
 
     def transcribe(self, audio_path: str) -> str:
         """Create transcript for specified audio file."""
