@@ -24,7 +24,6 @@ Before running, create the directory:
 
 ```bash
 export EVAL_NAME="my-evaluation"
-mkdir -p data/evaluation/results/$EVAL_NAME
 ```
 
 ### 1. Single-Turn Synthetic Datasets
@@ -32,7 +31,7 @@ mkdir -p data/evaluation/results/$EVAL_NAME
 To evaluate the single-turn synthetic datasets for each intent (e.g., `building_location`, `opening_hours`), run the `evaluate_single_synthetic` command. This command automatically finds all `*synthetic.json` files in the `data/evaluation/single_turn/` directory.
 
 ```bash
-python eval/evaluation.py evaluate-single-synthetic \
+pixi run python eval/evaluation.py evaluate-single-synthetic \
     --output-dir data/evaluation/results/$EVAL_NAME
 ```
 

@@ -13,6 +13,7 @@ from pydantic_evals.evaluators import (
     EvaluatorContext,
     LLMJudge,
 )
+from campus_plan_bot.query_rewriter import QuestionRephraser
 from reporting import report_to_df
 
 from campus_plan_bot.bot import SimpleTextBot
@@ -301,7 +302,8 @@ def process_file(
             bots[test_case_input.case_id] = SimpleTextBot()
 
         bot = bots[test_case_input.case_id]
-        docs = rag.retrieve_context(test_case_input.input, limit=5)
+        rephrased_query = QuestionRephraser().rephrase(bot.conversation_history)
+        docs = rag.retrieve_context(rephrased_query, limit=5)
         data_picker = DataPicker()
         docs = data_picker.choose_fields(test_case_input.input, docs)
 

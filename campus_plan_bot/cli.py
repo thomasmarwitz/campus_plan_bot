@@ -75,10 +75,6 @@ def chat(log_level: str, input: str, token: str, file: str):
             click.echo("Goodbye!")
             break
 
-        bot.conversation_history.add_message(
-            Message.from_content(user_input, Role.USER)
-        )
-
         rephrased_query = rephraser.rephrase(bot.conversation_history)
         logger.info(f"Rephrased query: '{rephrased_query}'")
 
