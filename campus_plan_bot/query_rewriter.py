@@ -1,6 +1,6 @@
 from campus_plan_bot.bot import LLama3PromptBuilder
 from campus_plan_bot.interfaces.interfaces import LLMRequestConfig
-from campus_plan_bot.interfaces.persistence_types import Conversation, Role
+from campus_plan_bot.interfaces.persistence_types import Conversation, Message, Role
 from campus_plan_bot.llm_client import InstituteClient, LLMClient
 
 
@@ -48,7 +48,7 @@ Rephrased Query:"""
             )
         )
 
-    def rephrase(self, conversation: Conversation) -> str:
+    def rephrase(self, conversation: Conversation, query: str) -> str:
         """Rephrases the user query based on conversation history."""
         history_messages = [
             msg
@@ -56,20 +56,16 @@ Rephrased Query:"""
             if msg.role in (Role.USER, Role.ASSISTANT)
         ]
 
-        if not history_messages:
-            return ""
-
-        query_to_rephrase = history_messages[-1].content
 
         formatted_history = []
-        for message in history_messages[:-1]:
+        for message in history_messages:
             role = "User" if message.role == Role.USER else "Assistant"
             formatted_history.append(f"{role}: {message.content}")
 
         history_str = "\n".join(formatted_history)
 
         user_message = self.REPHRASING_PROMPT_TEMPLATE.format(
-            history=history_str, query=query_to_rephrase
+            history=history_str, query=query
         )
 
         prompt_builder = LLama3PromptBuilder(system_prompt=self.SYSTEM_PROMPT)

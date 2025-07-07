@@ -75,7 +75,7 @@ def chat(log_level: str, input: str, token: str, file: str):
             click.echo("Goodbye!")
             break
 
-        rephrased_query = rephraser.rephrase(bot.conversation_history)
+        rephrased_query = rephraser.rephrase(bot.conversation_history, query=user_input)
         logger.info(f"Rephrased query: '{rephrased_query}'")
 
         documents = rag.retrieve_context(rephrased_query, limit=5)
