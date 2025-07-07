@@ -153,7 +153,9 @@ class RAGComponent(Protocol):
     # embedding_generator: EmbeddingGenerator
     # database: Database
 
-    def retrieve_context(self, query: str, limit: int = 5) -> list[RetrievedDocument]:
+    def retrieve_context(
+        self, query: str, limit: int = 5, conversation_history: list[str] | None = None
+    ) -> list[RetrievedDocument]:
         """Retrieve relevant context based on a query string."""
         ...
 
