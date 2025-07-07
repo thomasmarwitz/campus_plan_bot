@@ -25,6 +25,7 @@ class Role(StrEnum):
     ASSISTANT = "assistant"
     SYSTEM = "system"
     CODE = "ipython"
+    RAG = "rag"
 
 
 class InputMethods(StrEnum):
@@ -154,7 +155,7 @@ class RAGComponent(Protocol):
     # database: Database
 
     def retrieve_context(
-        self, query: str, limit: int = 5, conversation_history: list[str] | None = None
+        self, query: str, limit: int = 5
     ) -> list[RetrievedDocument]:
         """Retrieve relevant context based on a query string."""
         ...

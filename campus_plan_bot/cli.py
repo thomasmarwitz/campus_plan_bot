@@ -10,7 +10,9 @@ from campus_plan_bot.input.local_asr import LocalASR
 from campus_plan_bot.input.remote_asr import RemoteASR
 from campus_plan_bot.input.text_input import TextInput
 from campus_plan_bot.interfaces.interfaces import InputMethods, UserInputSource
+from campus_plan_bot.interfaces.persistence_types import Message, Role
 from campus_plan_bot.rag import RAG
+from campus_plan_bot.query_rewriter import QuestionRephraser
 from campus_plan_bot.settings.settings import Settings
 
 database_path = Path("data") / "campusplan_evaluation.csv"
@@ -57,6 +59,7 @@ def chat(log_level: str, input: str, token: str, file: str):
     bot = SimpleTextBot()
     rag = RAG.from_file(database_path)
     data_picker = DataPicker()
+    rephraser = QuestionRephraser()
 
     click.echo(
         "Welcome to the chat with CampusGuide, you can ask questions about buildings, opening hours, navigation. ",
@@ -72,7 +75,14 @@ def chat(log_level: str, input: str, token: str, file: str):
             click.echo("Goodbye!")
             break
 
-        documents = rag.retrieve_context(user_input, limit=5)
+        bot.conversation_history.add_message(
+            Message.from_content(user_input, Role.USER)
+        )
+
+        rephrased_query = rephraser.rephrase(bot.conversation_history)
+        logger.info(f"Rephrased query: '{rephrased_query}'")
+
+        documents = rag.retrieve_context(rephrased_query, limit=5)
 
         documents = data_picker.choose_fields(user_input, documents)
 
