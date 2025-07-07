@@ -1,0 +1,12 @@
+Evaluation Category,Test Cases,Passing Tests baseline,Passing Tests #1-chosen-fields
+Single-Turn: Building Location,85,19,30
+Single-Turn: Closed Until,100,24,35
+Single-Turn: Navigation Link,50,0,0
+Single-Turn: Open Now,100,20,44
+Single-Turn: Open Until,100,21,35
+Single-Turn: Open Website,100,17,20
+Single-Turn: Opening Hours,100,53,62
+Single-Turn: Wheelchair Accessible,100,49,60
+Asr Whisper Base,248,79,109
+Asr Whisper Small,248,66,0
+Multi-Turn,597,185,225
