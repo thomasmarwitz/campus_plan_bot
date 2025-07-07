@@ -19,31 +19,37 @@ class RAG(RAGComponent):
     MODEL = "all-MiniLM-L6-v2"
     RERANKER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
-    def __init__(self, index: VectorStoreIndex, database: pd.DataFrame):
+    def __init__(
+        self,
+        index: VectorStoreIndex,
+        database: pd.DataFrame,
+        id_column_name: str = "title",
+    ):
         self.index = index
         self.database = database
+        self.id_column_name = id_column_name
         self.reranker = CrossEncoder(self.RERANKER_MODEL)
         logger.debug("LlamaIndex RAG initialized.")
 
     @classmethod
-    def from_file(cls, file_path: Path) -> "RAG":
+    def from_file(cls, file_path: Path, id_column_name: str = "title") -> "RAG":
         """Create a RAG instance from a file."""
         df = pd.read_csv(file_path)
-        return cls.from_df(df)
+        return cls.from_df(df, id_column_name)
 
     @classmethod
-    def from_df(cls, df: pd.DataFrame) -> "RAG":
+    def from_df(cls, df: pd.DataFrame, id_column_name: str = "title") -> "RAG":
         """Create a RAG instance from a DataFrame."""
         documents = []
         pattern = r"(\d{1,2}\.\d{1,2})"
         for _, row in df.iterrows():
             metadata = row.to_dict()
-            mo = re.search(pattern, row["title"])
+            mo = re.search(pattern, row[id_column_name])
             if mo:
                 metadata["building_nr"] = mo.group(0)
 
             doc = Document(
-                text=row["title"],
+                text=row[id_column_name],
                 metadata=metadata,
             )
             documents.append(doc)
@@ -52,7 +58,7 @@ class RAG(RAGComponent):
         index = VectorStoreIndex.from_documents(
             documents,
         )
-        return cls(index, df)
+        return cls(index, df, id_column_name)
 
     def retrieve_context(self, query: str, limit: int = 5) -> list[RetrievedDocument]:
         """Retrieve relevant context based on a query string."""
