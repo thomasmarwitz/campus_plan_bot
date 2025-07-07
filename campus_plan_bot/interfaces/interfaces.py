@@ -56,11 +56,12 @@ class RetrievedDocument:
     """Represents a document retrieved from the database."""
 
     id: str
-    content: str
+    # content: str
+    data: dict
     relevance_score: float
 
     def __str__(self) -> str:
-        return f"Document ID: {self.id}, Relevance Score: {self.relevance_score}, Content: {self.content}"
+        return f"Document ID: {self.id}, Relevance Score: {self.relevance_score}, Content: {str(self.data)}"
 
 
 # --- Input Processing Protocols ---
@@ -335,6 +336,6 @@ class OutputGenerator(Protocol):
 class TextBot(Protocol):
     """Protocol for the main bot interface."""
 
-    def query(self, query: str) -> str:
+    def query(self, query: str, docs: list[RetrievedDocument]) -> str:
         """Process a user query and return a response."""
         ...

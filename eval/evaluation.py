@@ -13,10 +13,12 @@ from pydantic_evals.evaluators import (
     EvaluatorContext,
     LLMJudge,
 )
+from reporting import report_to_df
 
-from campus_plan_bot.bot import RAG, SimpleTextBot
+from campus_plan_bot.bot import SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
-from eval.reporting import report_to_df
+from campus_plan_bot.data_picker import DataPicker
+from campus_plan_bot.rag import RAG
 
 # Load BertScore model once
 logger.debug("Loading Bertscore model")
@@ -24,7 +26,7 @@ score(["Ich bin ein Test"], ["Ich bin ein Test"], lang="de")
 logger.debug("Bertscore model loaded successfully")
 
 SINGLE_TURN_LLM_JUDGE = LLMJudge(
-    rubric="Output should match expected output in meaning. It is mandatory the information is conveyed instead of listing excuses. The chatbot has access to the underlying data if the expected output also contains information. Reasoning should be concise and to the point. Format your output as valid JSON object with valid quotation marks. /no_think",
+    rubric="Output should match expected output in meaning, however, phrasing or wording can differ if the same information is conveyed. It is mandatory the information is conveyed instead of listing excuses. The chatbot has access to the underlying data if the expected output also contains information. When evaluating addresses, it is okay if the response only includes the relevant address (street and house number) as we expect all users to be based in Karlsruhe, Germany. Reasoning should be concise and to the point. Format your output as valid JSON object with valid quotation marks. /no_think",
     model=ChuteModel(
         model="Qwen/Qwen3-32B"
         # "chutesai/Mistral-Small-3.1-24B-Instruct-2503"
@@ -39,15 +41,15 @@ MULTI_TURN_LLM_JUDGE = LLMJudge(
 The user input is the latest prompt in a conversation.
 The full conversation history up to the current turn is provided as part of the input.
 The output is the chatbot's latest response.
-The expected output is what a good response would be.
+The expected output contains the information that should be conveyed in the response.
 
 Please evaluate if the chatbot's response is coherent and relevant given the full conversation context.
 Focus on the last answer within the total context.
-The output should match the expected output in meaning.
+The output should match the expected output in meaning, however, phrasing or wording can differ if the same information is conveyed.
 It is mandatory that the information is conveyed instead of listing excuses.
-The chatbot has access to the underlying data if the expected output also contains information.
+The chatbot has access to the underlying data if the expected output also contains information. When evaluating addresses, it is okay if the response only includes the relevant address (street and house number) as we expect all users to be based in Karlsruhe, Germany.
 Reasoning should be concise and to the point.
-Format your output as a JSON object with valid quotation marks.
+Format your output as a JSON object with valid quotation marks. /no_think
 """,
     model=ChuteModel(
         model="Qwen/Qwen3-32B"
@@ -276,6 +278,7 @@ def evaluate_file(
     limit: int | None,
     chunk_size: int | None,
 ) -> None:
+    output_path.mkdir(parents=True, exist_ok=True)
     rag = RAG.from_file(data_path)
     process_file(test_path, rag, output_path, limit, chunk_size)
 
@@ -295,11 +298,14 @@ def process_file(
     async def bot_runner(test_case_input: TestCaseInput) -> list[str]:
         if test_case_input.case_id not in bots:
             logger.debug(f"Creating bot for case {test_case_input.case_id}")
-            bots[test_case_input.case_id] = SimpleTextBot(rag)
+            bots[test_case_input.case_id] = SimpleTextBot()
 
         bot = bots[test_case_input.case_id]
+        docs = rag.retrieve_context(test_case_input.input, limit=5)
+        data_picker = DataPicker()
+        docs = data_picker.choose_fields(test_case_input.input, docs)
 
-        answer = bot.query(test_case_input.input)
+        answer = bot.query(test_case_input.input, docs)
 
         # delete bot reference if last turn
         if test_case_input.turn_idx == test_case_input.num_turns - 1:
@@ -355,7 +361,7 @@ def process_file(
             df = pd.concat([pd.read_csv(chunk) for chunk in all_chunks])
             df.to_csv(output_path / f"{file.stem}.csv", index=False)
             logger.info(
-                f"Saved concatenated evaluation report to {output_path / f"{file.stem}.csv"}"
+                f"Saved concatenated evaluation report to {output_path / f'{file.stem}.csv'}"
             )
             for chunk in all_chunks:
                 chunk.unlink()

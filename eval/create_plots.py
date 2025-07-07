@@ -1,11 +1,293 @@
 import json
 from pathlib import Path
 
+import click
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import plotly.express as px
 import plotly.graph_objects as go
 from wordcloud import WordCloud
+
+
+def plot_overall_performance_comparison(results_map: dict[str, Path], output_dir: Path):
+    """Generates a grouped bar chart comparing overall LLM Judge scores across
+    multiple runs."""
+    output_dir.mkdir(exist_ok=True, parents=True)
+    comparison_data = []
+
+    for name, results_dir in results_map.items():
+        metrics = ["LLM_Judge"]
+        overall_data = {}
+
+        # 1. Aggregate all Single-Turn (Synthetic) results
+        synthetic_files = list(results_dir.glob("*_synthetic.csv"))
+        if synthetic_files:
+            all_synthetic_df = pd.concat(
+                [pd.read_csv(f) for f in synthetic_files], ignore_index=True
+            )
+            available_metrics = [m for m in metrics if m in all_synthetic_df.columns]
+            if available_metrics:
+                overall_data["Single-Turn (Synthetic)"] = all_synthetic_df[
+                    available_metrics
+                ].mean()
+
+        # 2. Process Multi-Turn results
+        multi_turn_file = results_dir / "multi_turns.csv"
+        if multi_turn_file.exists():
+            df = pd.read_csv(multi_turn_file)
+            available_metrics = [m for m in metrics if m in df.columns]
+            if available_metrics:
+                overall_data["Multi-Turn"] = df[available_metrics].mean()
+
+        # 3. Process ASR results
+        asr_files = list(results_dir.glob("local_asr_suite_*.csv"))
+        for file_path in asr_files:
+            if "small" in file_path.name:
+                continue
+            category_name = (
+                file_path.stem.replace("local_asr_suite_", "ASR ")
+                .replace("_", " ")
+                .title()
+            )
+            df = pd.read_csv(file_path)
+            available_metrics = [m for m in metrics if m in df.columns]
+            if available_metrics:
+                overall_data[category_name] = df[available_metrics].mean()
+
+        for category, data in overall_data.items():
+            comparison_data.append(
+                {
+                    "Run Name": name,
+                    "Evaluation Category": category,
+                    "LLM_Judge": data["LLM_Judge"],
+                }
+            )
+
+    if not comparison_data:
+        print("No data found for overall performance comparison plot.")
+        return
+
+    df = pd.DataFrame(comparison_data)
+
+    fig = px.bar(
+        df,
+        x="Evaluation Category",
+        y="LLM_Judge",
+        color="Run Name",
+        barmode="group",
+        title="Overall Chatbot Performance Comparison (LLM Judge)",
+        text_auto=".2f",
+    )
+    fig.update_layout(
+        yaxis_title="Average LLM Judge Score",
+        yaxis=dict(range=[0, 1]),
+        legend_title="Run",
+        font=dict(family="Courier New, monospace", size=14),
+    )
+
+    output_file = output_dir / "overall_performance_comparison.png"
+    fig.write_image(str(output_file), width=1600, height=900)
+    print(f"Comparison plot saved to {output_file}")
+
+
+def plot_single_turn_performance_comparison(
+    results_map: dict[str, Path], output_dir: Path
+):
+    """Generates a grouped bar chart comparing single-turn LLM Judge scores
+    across multiple runs."""
+    output_dir.mkdir(exist_ok=True, parents=True)
+    comparison_data = []
+
+    for name, results_dir in results_map.items():
+        synthetic_files = list(results_dir.glob("*_synthetic.csv"))
+        if not synthetic_files:
+            continue
+
+        for file_path in synthetic_files:
+            category_name = (
+                file_path.stem.replace("_synthetic", "").replace("_", " ").title()
+            )
+            df = pd.read_csv(file_path)
+            if "LLM_Judge" in df.columns:
+                score = df["LLM_Judge"].mean()
+                comparison_data.append(
+                    {"Run Name": name, "Category": category_name, "LLM_Judge": score}
+                )
+
+    if not comparison_data:
+        print("No data to plot for single-turn performance comparison.")
+        return
+
+    df = pd.DataFrame(comparison_data)
+
+    fig = px.bar(
+        df,
+        x="Category",
+        y="LLM_Judge",
+        color="Run Name",
+        barmode="group",
+        title="Single-Turn Chatbot Performance Comparison (LLM Judge)",
+        text_auto=".2f",
+    )
+    fig.update_layout(
+        xaxis_title="Category",
+        yaxis_title="Average LLM Judge Score",
+        yaxis=dict(range=[0, 1]),
+        legend_title="Run",
+        font=dict(family="Courier New, monospace", size=14),
+    )
+
+    output_file = output_dir / "single_turn_performance_comparison.png"
+    fig.write_image(str(output_file), width=1600, height=900)
+    print(f"Comparison plot saved to {output_file}")
+
+
+def generate_summary_csv(results_map: dict[str, Path], output_dir: Path):
+    """Generates a CSV file summarizing test cases and pass rates across
+    runs."""
+    output_dir.mkdir(exist_ok=True, parents=True)
+    summary_data = {}
+    categories_seen = set()
+
+    # Use the first run to establish categories and test case counts
+    first_run_dir = next(iter(results_map.values()))
+
+    # Single-turn categories
+    for file_path in sorted(first_run_dir.glob("*_synthetic.csv")):
+        category_name = f"Single-Turn: {file_path.stem.replace('_synthetic', '').replace('_', ' ').title()}"
+        df = pd.read_csv(file_path)
+        summary_data[category_name] = {"Test Cases": len(df)}
+        categories_seen.add(category_name)
+
+    # ASR categories
+    for file_path in sorted(first_run_dir.glob("local_asr_suite_*.csv")):
+        category_name = (
+            file_path.stem.replace("local_asr_suite_", "ASR ").replace("_", " ").title()
+        )
+        df = pd.read_csv(file_path)
+        summary_data[category_name] = {"Test Cases": len(df)}
+        categories_seen.add(category_name)
+
+    # Multi-turn category
+    multi_turn_file = first_run_dir / "multi_turns.csv"
+    if multi_turn_file.exists():
+        category_name = "Multi-Turn"
+        df = pd.read_csv(multi_turn_file)
+        summary_data[category_name] = {"Test Cases": len(df)}
+        categories_seen.add(category_name)
+
+    # Now, populate the passes for each run
+    for name, results_dir in results_map.items():
+        # Single-turn
+        for file_path in sorted(results_dir.glob("*_synthetic.csv")):
+            category_name = f"Single-Turn: {file_path.stem.replace('_synthetic', '').replace('_', ' ').title()}"
+            if category_name in categories_seen:
+                df = pd.read_csv(file_path)
+                passes = (
+                    int(df["assertions_passed_rate"].sum())
+                    if "assertions_passed_rate" in df.columns
+                    else 0
+                )
+                summary_data[category_name][f"Passing Tests {name}"] = passes
+        # ASR
+        for file_path in sorted(results_dir.glob("local_asr_suite_*.csv")):
+            category_name = (
+                file_path.stem.replace("local_asr_suite_", "ASR ")
+                .replace("_", " ")
+                .title()
+            )
+            if category_name in categories_seen:
+                df = pd.read_csv(file_path)
+                passes = (
+                    int(df["assertions_passed_rate"].sum())
+                    if "assertions_passed_rate" in df.columns
+                    else 0
+                )
+                summary_data[category_name][f"Passing Tests {name}"] = passes
+        # Multi-turn
+        multi_turn_file = results_dir / "multi_turns.csv"
+        if multi_turn_file.exists() and "Multi-Turn" in categories_seen:
+            df = pd.read_csv(multi_turn_file)
+            passes = (
+                int(df["assertions_passed_rate"].sum())
+                if "assertions_passed_rate" in df.columns
+                else 0
+            )
+            summary_data["Multi-Turn"][f"Passing Tests {name}"] = passes
+
+    if not summary_data:
+        print("No data found to generate summary CSV.")
+        return
+
+    # Create DataFrame and save
+    df_summary = pd.DataFrame.from_dict(summary_data, orient="index")
+    df_summary.index.name = "Evaluation Category"
+    df_summary.reset_index(inplace=True)
+
+    # Fill NaN for any missing pass data
+    for name in results_map.keys():
+        col_name = f"Passing Tests {name}"
+        if col_name not in df_summary.columns:
+            df_summary[col_name] = 0
+    df_summary.fillna(0, inplace=True)
+
+    # Ensure pass counts are integers
+    for col in df_summary.columns:
+        if col.startswith("Passing Tests"):
+            df_summary[col] = df_summary[col].astype(int)
+
+    output_file = output_dir / "evaluation_summary_comparison.csv"
+    df_summary.to_csv(output_file, index=False)
+    print(f"Summary CSV saved to {output_file}")
+
+
+def analyze_failure_reasons(
+    results_map: dict[str, Path], phrases_file: Path, output_dir: Path
+):
+    """Analyzes the occurrence of specific phrases in LLM Judge reasons."""
+    output_dir.mkdir(exist_ok=True, parents=True)
+
+    try:
+        with open(phrases_file) as f:
+            phrases = [line.strip() for line in f if line.strip()]
+    except FileNotFoundError:
+        print(f"Phrases file not found at {phrases_file}. Skipping analysis.")
+        return
+
+    if not phrases:
+        print("Phrases file is empty. Skipping analysis.")
+        return
+
+    comparison_data = {}
+
+    for name, results_dir in results_map.items():
+        all_files = list(results_dir.glob("*.csv"))
+        if not all_files:
+            continue
+
+        df = pd.concat([pd.read_csv(f) for f in all_files], ignore_index=True)
+
+        if "LLM_Judge_reason" not in df.columns:
+            continue
+
+        reasons = df["LLM_Judge_reason"].dropna().str.lower()
+        phrase_counts = {
+            phrase: reasons.str.contains(phrase, case=False).sum() for phrase in phrases
+        }
+        comparison_data[name] = phrase_counts
+
+    if not comparison_data:
+        print("No LLM Judge reasons found to analyze.")
+        return
+
+    df_comparison = pd.DataFrame.from_dict(comparison_data, orient="index")
+    df_comparison.index.name = "Run Name"
+    df_comparison.reset_index(inplace=True)
+
+    output_file = output_dir / "failure_reason_comparison.csv"
+    df_comparison.to_csv(output_file, index=False)
+    print(f"Failure reason comparison saved to {output_file}")
 
 
 def plot_single_turn_performance_by_category(results_dir: Path, output_dir: Path):
@@ -462,7 +744,7 @@ def generate_latex_summary_table(results_dir: Path, output_dir: Path):
         )
         df = pd.read_csv(file_path)
         passes = (
-            df["assertions_passed_rate"].sum()
+            int(df["assertions_passed_rate"].sum())
             if "assertions_passed_rate" in df.columns
             else "N/A"
         )
@@ -479,7 +761,7 @@ def generate_latex_summary_table(results_dir: Path, output_dir: Path):
         )
         df = pd.read_csv(file_path)
         passes = (
-            df["assertions_passed_rate"].sum()
+            int(df["assertions_passed_rate"].sum())
             if "assertions_passed_rate" in df.columns
             else "N/A"
         )
@@ -490,7 +772,7 @@ def generate_latex_summary_table(results_dir: Path, output_dir: Path):
     if multi_turn_file.exists():
         df = pd.read_csv(multi_turn_file)
         passes = (
-            df["assertions_passed_rate"].sum()
+            int(df["assertions_passed_rate"].sum())
             if "assertions_passed_rate" in df.columns
             else "N/A"
         )
@@ -547,13 +829,95 @@ def generate_latex_summary_table(results_dir: Path, output_dir: Path):
     print(f"LaTeX summary table saved to {output_file}")
 
 
+@click.group()
+def cli():
+    """A CLI tool for generating evaluation plots."""
+    pass
+
+
+@cli.command("single")
+@click.argument(
+    "results_dir",
+    type=click.Path(exists=True, file_okay=False, path_type=Path),
+    default="data/evaluation/results",
+)
+@click.argument(
+    "output_dir",
+    type=click.Path(file_okay=False, path_type=Path),
+    default="docs/phase2/plots",
+)
+def generate_single_run_reports(results_dir: Path, output_dir: Path):
+    """Generates all evaluation plots and LaTeX reports for a single run."""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    plot_single_turn_performance_by_category(results_dir, output_dir)
+    plot_overall_performance(results_dir, output_dir)
+    plot_multi_turn_performance_over_turns(results_dir, output_dir)
+    plot_metric_correlation_heatmap(results_dir, output_dir)
+    plot_failure_reason_wordcloud(results_dir, output_dir)
+    generate_latex_report_snippets(results_dir, output_dir)
+    generate_latex_summary_table(results_dir, output_dir)
+
+
+@cli.command("compare")
+@click.option(
+    "--input-dir",
+    "-i",
+    "results_dirs",
+    type=click.Path(exists=True, file_okay=False, path_type=Path),
+    multiple=True,
+    required=True,
+    help="Path to a results directory. Can be specified multiple times.",
+)
+@click.option(
+    "--name",
+    "-n",
+    "names",
+    type=str,
+    multiple=True,
+    required=True,
+    help="A name for each results directory, used for labeling. Can be specified multiple times.",
+)
+@click.option(
+    "--output-dir",
+    "-o",
+    type=click.Path(file_okay=False, path_type=Path),
+    default="docs/phase2/plots_comparison",
+    help="Directory where the generated comparison plots will be saved.",
+)
+@click.option(
+    "--phrases-file",
+    "-p",
+    type=click.Path(exists=True, dir_okay=False, path_type=Path),
+    help="Path to a .txt file containing phrases to count in LLM Judge reasons.",
+    default="eval/phrases.txt",
+)
+def compare_results(
+    results_dirs: tuple[Path, ...],
+    names: tuple[str, ...],
+    output_dir: Path,
+    phrases_file: Path | None,
+):
+    """Generates comparison plots and a CSV summary for multiple evaluation
+    runs."""
+    if len(results_dirs) != len(names):
+        raise click.UsageError(
+            "The number of --input-dir and --name arguments must be the same."
+        )
+
+    if not results_dirs:
+        print("No input directories provided. Exiting.")
+        return
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    results_map = dict(zip(names, results_dirs))
+
+    plot_overall_performance_comparison(results_map, output_dir)
+    plot_single_turn_performance_comparison(results_map, output_dir)
+    generate_summary_csv(results_map, output_dir)
+
+    if phrases_file:
+        analyze_failure_reasons(results_map, phrases_file, output_dir)
+
+
 if __name__ == "__main__":
-    results_directory = Path("data/evaluation/results")
-    output_directory = Path("docs/phase2/plots")
-    plot_single_turn_performance_by_category(results_directory, output_directory)
-    plot_overall_performance(results_directory, output_directory)
-    plot_multi_turn_performance_over_turns(results_directory, output_directory)
-    plot_metric_correlation_heatmap(results_directory, output_directory)
-    plot_failure_reason_wordcloud(results_directory, output_directory)
-    generate_latex_report_snippets(results_directory, output_directory)
-    generate_latex_summary_table(results_directory, output_directory)
+    cli()
