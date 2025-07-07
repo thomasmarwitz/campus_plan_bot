@@ -48,7 +48,6 @@ def evaluate_rag_multi_turn():
                 "failed": failed,
             })
 
-        raise Exception("Stop")
 
     results_df = pd.DataFrame(results)
     
@@ -60,7 +59,7 @@ def evaluate_rag_multi_turn():
     print(results_df.head())
 
     # compute: save all failed retrievals where num_turn = 1
-    failed_retrievals_num_turn_1 = results_df[results_df["num_turn"] == 1] & results_df["failed"] == 1
+    failed_retrievals_num_turn_1 = results_df[(results_df["num_turn"] == 1) & (results_df["failed"] == 1)]
     failed_retrievals_num_turn_1.to_csv(output_dir / "failed_retrievals_num_turn_1.csv", index=False)
 
 
