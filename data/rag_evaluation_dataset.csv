@@ -1,4 +1,5 @@
 query,expected_identifikator
+Kennst dud ie Cafeteria?,01.12
 Wo finde ich die Mensa am Adenauerring?,Mensa
 "Ich muss zum Hertz-Hörsaal, wo ist der?",Heinrich-Hertz-Hörsaal
 Zeig mir den Weg zur Uni-Bibliothek.,30.51
@@ -14,6 +15,6 @@ Zeig mir den Weg zu elf vierzig.,11.40
 Was ist in Gebäude 40.40?,40.40
 Informationen zum Gebäude 20 30.,20.30
 Wo finde ich null eins zwölf?,01.12
-Ich muss zu 30.96.,30.96
+Ich muss zu 303,303
 Wo ist das Gebäude fünfzig einundvierzig?,50.41
 Details zu Gebäude 10 91.,10.91
