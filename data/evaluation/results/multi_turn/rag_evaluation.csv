@@ -1,0 +1,598 @@
+id,query,position,num_turn,failed
+30.29,Können Sie mir die Adresse von Gebäude 30.29 sagen?,-1,1,1
+30.29,Welche Route führt mich zum Gebäude?,-1,2,1
+30.29,Gibt es dort auch barrierefreie Zugänge?,-1,3,1
+30.29,Bis wann hat das Gebäude geöffnet?,-1,4,1
+30.46,Gib mir eine Wegbeschreibung zu 30.46,-1,1,1
+30.46,Ist der Zugang barrierefrei?,-1,2,1
+30.46,Sind die Öffnungszeiten aktuell?,-1,3,1
+419,Zeige mir den Weg zum Haus 419,1,1,0
+419,Wann kann man dort rein,-1,2,1
+419,Finde ich auch Informationen im Internet dazu,-1,3,1
+40.16,Können Sie mir die Adresse von Gebäude 40.16 mitteilen?,-1,1,1
+40.16,Welchen Weg muss ich zum Gebäude nehmen?,-1,2,1
+40.16,Hat das Gebäude einen barrierefreien Zugang?,-1,3,1
+40.16,Um welche Uhrzeit wird das Gebäude aufgeschlossen?,-1,4,1
+430,Wo kann ich die Webseite des Gebäudes 430 finden?,1,1,0
+430,Bis wann hat dieses Gebäude heute geöffnet?,-1,2,1
+"Physikalische Chemie, Institut für",Ist das Gebäude der Physikalischen Chemie barrierefrei?,-1,1,1
+"Physikalische Chemie, Institut für",An welcher Adresse befindet sich das Institut?,-1,2,1
+"Physikalische Chemie, Institut für",Hat das Institut eine eigene Webseite?,-1,3,1
+152,Können Sie mir den schnellsten Weg zum Gebäude 152 anzeigen?,1,1,0
+152,An welcher Adresse befindet sich das Gebäude?,-1,2,1
+152,Existiert eine Internetpräsenz dafür?,-1,3,1
+152,Bis wann hat die Einrichtung heute geöffnet?,-1,4,1
+Materialprüfungsanstalt (MPA),Wo finde ich die Homepage der MPA?,-1,1,1
+Materialprüfungsanstalt (MPA),Bis wann hat das noch geöffnet?,-1,2,1
+666,Kannst du mir die Adresse von Geb. 666 nennen?,1,1,0
+666,Ist der Standort barrierefrei zugänglich für Rollstuhlfahrer?,-1,2,1
+"Germanistik: Literatur, Sprache, Medien (GER), Institut für",Ist das Germanistik-Institut barrierefrei zugänglich für Rollstuhlfahrer?,-1,1,1
+"Germanistik: Literatur, Sprache, Medien (GER), Institut für",Navigation zum GER-Gebäude anzeigen,-1,2,1
+239,Können Sie mir den Standort vom Gebäude 239 nennen?,1,1,0
+239,Sind die Öffnungszeiten aktuell noch gültig?,-1,2,1
+239,Existiert eine Webpräsenz dafür?,-1,3,1
+239,Was ist die beste Route zu diesem Standort?,-1,4,1
+Engler-Bunte-Hörsaal,Wo finde ich das Engler-Bunte-Gebäude mit dem Hörsaal?,-1,1,1
+Engler-Bunte-Hörsaal,Kannst du mir einen Link zur Homepage zeigen?,-1,2,1
+433,Gib mir die Adresse von Gebäude 433,1,1,0
+433,Sind die Türen aktuell aufgeschlossen?,-1,2,1
+459,Hat das Studentenwohnheim aktuell auf?,-1,1,1
+459,Kann ich mit einem Rollstuhl dort hinein?,-1,2,1
+40.11,Ist das Gebäude 40.11 barrierefrei und mit Rollstuhl zugänglich?,-1,1,1
+40.11,Was ist die Route dorthin?,-1,2,1
+40.11,Kann man online Informationen zum Gebäude finden?,-1,3,1
+40.11,Sind die Türen momentan geöffnet?,-1,4,1
+30.33,Wo finde ich das Gebäude 30.33?,-1,1,1
+30.33,Bis wann hat es heute geöffnet?,-1,2,1
+Heinrich-Hertz-Hörsaal,Hat der Heinrich-Hertz-Hörsaal derzeit auf?,-1,1,1
+Heinrich-Hertz-Hörsaal,Kannst du mir den Weg dorthin zeigen?,-1,2,1
+Meteorologie und Klimaforschung - Atmosphärische Aerosolforschung (IMK-AAF) ,Hat das IMK-AAF derzeit offen?,-1,1,1
+Meteorologie und Klimaforschung - Atmosphärische Aerosolforschung (IMK-AAF) ,Ist das Gebäude barrierefrei zugänglich?,-1,2,1
+Meteorologie und Klimaforschung - Atmosphärische Aerosolforschung (IMK-AAF) ,An welcher Adresse befindet sich das Institut?,-1,3,1
+257,Können Sie mir den Link zur Homepage von Gebäude 257 geben?,1,1,0
+257,Bis wann hat das Gebäude heute geöffnet?,-1,2,1
+257,"In welche Richtung muss ich gehen, um zum Standort zu gelangen?",-1,3,1
+01.51,Wie gelange ich zu 01.51?,-1,1,1
+01.51,Was ist die Adresse?,-1,2,1
+01.51,Ab wann hat das Gebäude geöffnet?,-1,3,1
+Mitfahrbank (Campus Nord): Südtor,Können Sie mir die Adresse der Mitfahrbank am Südtor des Campus Nord sagen?,-1,1,1
+Mitfahrbank (Campus Nord): Südtor,Ist sie derzeit geöffnet?,-1,2,1
+Mitfahrbank (Campus Nord): Südtor,Was ist der beste Weg dort hin?,-1,3,1
+808,Hat Geb. 808 aktuell offen?,1,1,0
+808,Zeig mir den Weg dorthin,-1,2,1
+"Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON",Können Sie mir den Weg zur Professur für Netzwerkökonomie am ECON weisen?,-1,1,1
+"Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON",Hat diese Einrichtung eine eigene Webpräsenz?,-1,2,1
+"Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON",Welche Adresse hat die Professur für Netzwerkökonomie?,-1,3,1
+"Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON",Verfügt der Standort über einen barrierefreien Zugang?,-1,4,1
+322,Welche URL hat das Gebäude 322?,1,1,0
+322,Können Sie mir den Weg dorthin zeigen?,-1,2,1
+322,Hat das Gebäude einen barrierefreien Zugang?,-1,3,1
+322,Ab welcher Uhrzeit ist es zugänglich?,-1,4,1
+"Festkörperphysik, Institut für",Verfügt das Institut für Festkörperphysik über einen barrierefreien Zugang?,-1,1,1
+"Festkörperphysik, Institut für",Wann hat es geöffnet?,-1,2,1
+"Festkörperphysik, Institut für",Wo finde ich den Online-Auftritt?,-1,3,1
+Archiv für Architektur und Ingenieurbau (saai),Hat das saai eine barrierefreie Ausstattung?,-1,1,1
+Archiv für Architektur und Ingenieurbau (saai),Wo finde ich eine Wegbeschreibung zu diesem Archiv?,-1,2,1
+249,Was ist der beste Weg zum Gebäude 249?,1,1,0
+249,Gibt es dort einen barrierefreien Zugang?,-1,2,1
+249,Ist es offen?,-1,3,1
+"Experimentelle Teilchenphysik (ETP), Institut für",Ist der ETP-Bau barrierefrei für Rollstuhlfahrer?,-1,1,1
+"Experimentelle Teilchenphysik (ETP), Institut für",Kann ich die Webseite des Gebäudes finden?,-1,2,1
+"Anorganische Chemie, Institut für",Um welche Uhrzeit öffnet das Institut für Anorganische Chemie?,-1,1,1
+"Anorganische Chemie, Institut für","Ich möchte dorthin gehen, kannst du mir den Weg zeigen?",-1,2,1
+"Anorganische Chemie, Institut für",Hat das Institut eine eigene Webseite?,-1,3,1
+Fritz-Haller-Hörsaal,Auf welchem Weg gelange ich zum Fritz-Haller-Hörsaal?,-1,1,1
+Fritz-Haller-Hörsaal,Kann ich online mehr Informationen dazu finden?,-1,2,1
+Fritz-Haller-Hörsaal,Ist der Zugang barrierefrei gestaltet?,-1,3,1
+Mitfahrbank (Campus Süd): Schranke zur Westeinfahrt,Können Sie mir eine Wegbeschreibung zur Mitfahrbank an der Schranke der Westeinfahrt (Campus Süd) geben?,-1,1,1
+Mitfahrbank (Campus Süd): Schranke zur Westeinfahrt,Wann hat die Mitfahrbank geöffnet?,-1,2,1
+Mitfahrbank (Campus Süd): Schranke zur Westeinfahrt,Kann man die Mitfahrbank auch mit einem Rollstuhl nutzen?,-1,3,1
+Mitfahrbank (Campus Süd): Schranke zur Westeinfahrt,Nenn mir die Adresse bitte!,-1,4,1
+10.63,Wie gelange ich zum Gebäude mit Nummer 10.63?,-1,1,1
+10.63,Gibt es dort auch einen barrierefreien Zugang?,-1,2,1
+10.63,An welcher Adresse befindet sich das Gebäude?,-1,3,1
+10.63,Um welche Uhrzeit öffnen die Türen dort regelmäßig?,-1,4,1
+"Kolbenmaschinen, Institut für",Ist das Institut für Kolbenmaschinen barrierefrei?,-1,1,1
+"Kolbenmaschinen, Institut für",Hat das Gebäude noch geöffnet?,-1,2,1
+"Kolbenmaschinen, Institut für",Was ist die Adresse vom Institut für Kolbenmaschinen?,-1,3,1
+9644,Unter welcher URL ist Gebäude 9644 zu finden?,-1,1,1
+9644,Ist der Standort barrierefrei zugänglich?,-1,2,1
+9644,Um welche Uhrzeit beginnen die Öffnungszeiten?,-1,3,1
+Schwerbehindertenvertretung (SBV) Campus Süd,Können Sie mir die Homepage des SBV-Büros am Südcampus nennen?,-1,1,1
+Schwerbehindertenvertretung (SBV) Campus Süd,Welche Route führt zum SBV-Gebäude?,-1,2,1
+Schwerbehindertenvertretung (SBV) Campus Süd,Bis wann hat die Einrichtung heute geöffnet?,-1,3,1
+Schwerbehindertenvertretung (SBV) Campus Süd,Verfügt das Gebäude über einen barrierefreien Zugang?,-1,4,1
+124,Hat 124 aktuell geöffnet?,1,1,0
+124,Kannst du mir die Adresse geben?,-1,2,1
+"Technikzukünfte - Philosophie, Institut für",Wie finde ich den Weg zum Institut für Technikzukünfte - Philosophie?,-1,1,1
+"Technikzukünfte - Philosophie, Institut für",An welcher Adresse befindet sich das Institut?,-1,2,1
+Technik-Haus,Kann man technik haus mit einem Rollstuhl erreichen?,-1,1,1
+Technik-Haus,Wann hat das Gebäude auf und zu?,-1,2,1
+Technik-Haus,An welcher Adresse steht das Technik-Haus?,-1,3,1
+10.31,Wann schließt das Gebäude 10.31 heute?,-1,1,1
+10.31,Was ist der schnellste Weg zum Gebäude?,-1,2,1
+10.31,Kann man das Gebäude auch mit einem Rollstuhl erreichen?,-1,3,1
+10.31,Existiert eine Webseite mit weiteren Informationen?,-1,4,1
+05.01,Wann hat Gebäude 05.01 geöffnet?,-1,1,1
+05.01,Ist der Zugang barrierefrei?,-1,2,1
+05.01,Was ist die beste Route dorthin?,-1,3,1
+05.01,Kann ich eine Webseite dazu finden?,-1,4,1
+Zentrale Studienberatung (ZSB),In welcher Straße befindet sich die Zentrale Studienberatung?,-1,1,1
+Zentrale Studienberatung (ZSB),Können Sie mir den Weg zur ZSB beschreiben?,-1,2,1
+Zentrale Studienberatung (ZSB),Kann ich mir das im Internet anschauen?,-1,3,1
+Zentrale Studienberatung (ZSB),Was sind die Öffnungszeiten der ZSB?,-1,4,1
+"Angewandte Betriebswirtschaftslehre und Unternehmensführung (IBU), Institut für",Wie erreiche ich online das Institut für Angewandte Betriebswirtschaftslehre und Unternehmensführung?,-1,1,1
+"Angewandte Betriebswirtschaftslehre und Unternehmensführung (IBU), Institut für",An welcher Adresse befindet sich das IBU Institut?,-1,2,1
+"Angewandte Betriebswirtschaftslehre und Unternehmensführung (IBU), Institut für",Hat das Institut einen barrierefreien Zugang für Rollstuhlfahrer?,-1,3,1
+10.50,"Ich brauche eine Route zum KIT, Gebäude 10.50.",-1,1,1
+10.50,Bis wann kann man dort noch rein?,-1,2,1
+11.10,Wann hat das Gebäude 11.10 geöffnet?,-1,1,1
+11.10,An welcher Adresse befindet sich dieses Gebäude?,-1,2,1
+Sicherheit und Umwelt (SUM),Wie finde ich die Homepage der SUM abteilung?,-1,1,1
+Sicherheit und Umwelt (SUM),Kann man das Gebäude mit dem Rollstuhl erreichen?,-1,2,1
+802,Können Sie mir den Weg zum Gebäude 802 beschreiben?,-1,1,1
+802,Ist der Zugang barrierefrei?,-1,2,1
+802,Existiert eine Internetseite dazu?,-1,3,1
+802,Sind die Öffnungszeiten jetzt aktuell?,-1,4,1
+309,Kannst du mir die Position von Gebäude 309 sagen?,1,1,0
+309,Gib mir eine Route zu diesem Ort,-1,2,1
+309,Ist der Zugang barrierefrei und mit Rollstuhl möglich?,-1,3,1
+429,Wo finde ich die Internetadresse des Gebäudes 429?,1,1,0
+429,Zeige mir den Weg zum Gebäude,-1,2,1
+Elektrotechnisches Institut (ETI),Welche URL hat das ETI im Internet?,-1,1,1
+Elektrotechnisches Institut (ETI),Kannst du mir eine Wegbeschreibung geben?,-1,2,1
+Elektrotechnisches Institut (ETI),An welcher Adresse befindet sich dieses Gebäude?,-1,3,1
+Chemie-Hörsaal I,Wo finde ich den Weg zum Chemie-Hörsaal I?,-1,1,1
+Chemie-Hörsaal I,Hat dieser Ort eine Webpräsenz?,-1,2,1
+Chemie-Hörsaal I,Was sind die aktuellen Öffnungszeiten?,-1,3,1
+Fachschaft WiWi,Wo finde ich die WiWi Fachschaft?,-1,1,1
+Fachschaft WiWi,Ist der Zugang barrierefrei?,-1,2,1
+Fachschaft WiWi,Was ist die beste Route dorthin?,-1,3,1
+Fachschaft WiWi,Haben die gerade geöffnet?,-1,4,1
+456,Können Sie mir die Adresse von Gebäude 456 nennen?,1,1,0
+456,Ist dieses Gebäude barrierefrei zugänglich?,-1,2,1
+456,Wann hat es geöffnet?,-1,3,1
+456,Bitte zeigen Sie mir den Weg dorthin.,-1,4,1
+Bauingenieure-Hörsaal,Gibt es eine Adresse im Internet für den Bauingenieure-Hörsaal?,-1,1,1
+Bauingenieure-Hörsaal,Zu welcher Uhrzeit beginnt der Betrieb in diesem Gebäude?,-1,2,1
+692,Gesucht ist der Standort von Gebäude 692,1,1,0
+692,Existiert dazu eine Internetpräsenz?,-1,2,1
+692,Sind die Öffnungszeiten aktuell?,-1,3,1
+692,Ist ein barrierefreier Zugang vorhanden?,-1,4,1
+516,Welche Website gehört zu Gebäude 516?,1,1,0
+516,Kannst du mir den Weg dorthin zeigen?,-1,2,1
+417,Was sind die Öffnungszeiten von Gebäude 417?,1,1,0
+417,Können Sie mir den Weg zum Gebäude zeigen?,-1,2,1
+417,Hat das Gebäude einen barrierefreien Zugang?,-1,3,1
+01.96,Wann hat Gebäude 01.96 geöffnet?,-1,1,1
+01.96,Können Sie mir eine Wegbeschreibung dorthin geben?,-1,2,1
+01.96,An welcher Adresse befindet sich dieses Gebäude?,-1,3,1
+"Technikzukünfte - Philosophie, Institut für",Können Sie mir den Standort des Instituts für Technikzukünfte - Philosophie nennen?,-1,1,1
+"Technikzukünfte - Philosophie, Institut für",Was ist der beste Weg dort hin?,-1,2,1
+"Technikzukünfte - Philosophie, Institut für",Ist es momentan geöffnet?,-1,3,1
+10.64,Was ist der Link zur Website von 10.64?,-1,1,1
+10.64,Gib mir die Navigationsanweisungen zum Gebäude,-1,2,1
+10.64,Nenne mir die Adresse des Standorts,-1,3,1
+259,Wie gelange ich zu 2 5 9?,-1,1,1
+259,Ist der Zugang barrierefrei,-1,2,1
+259,Hat das einen Internetauftritt,-1,3,1
+259,An welcher Adresse befindet sich das Gebäude,-1,4,1
+522,Wo finde ich die Internetseite vom Gebäude 522?,1,1,0
+522,Um welche Uhrzeit macht das Gebäude auf?,-1,2,1
+522,Was ist der beste Weg zum Gebäude 522?,1,3,0
+B524,Gibt mir den Weg zum Gebäude B524,-1,1,1
+B524,Nenne mir die Adresse des Gebäudes,-1,2,1
+B524,Hat B524 einen barrierefreien Zugang?,-1,3,1
+805,Zeige mir den Weg zum Gebäude 805,1,1,0
+805,An welcher Adresse befindet sich dieses Gebäude?,-1,2,1
+805,Hat das Gebäude eine eigene Internetseite?,-1,3,1
+70.16,An welcher Adresse finde ich das Gebäude 70.16?,-1,1,1
+70.16,Wann hat das geöffnet?,-1,2,1
+70.16,Können Sie mir einen Navigationslink schicken?,-1,3,1
+3300,Können Sie mir die Adresse des Gebäudes 3300 nennen?,-1,1,1
+3300,Zu welchen Zeiten hat das Gebäude geöffnet?,-1,2,1
+3300,Bitte zeigen Sie mir den Weg zum Gebäude 3300,-1,3,1
+"Prozessdatenverarbeitung und Elektronik (IPE), Institut für",Wie finde ich den Weg zum IPE?,-1,1,1
+"Prozessdatenverarbeitung und Elektronik (IPE), Institut für",Kann ich dessen Webseite besuchen?,-1,2,1
+"Prozessdatenverarbeitung und Elektronik (IPE), Institut für",Ist diese Einrichtung momentan geöffnet?,-1,3,1
+B254,Wo befindet sich B254?,-1,1,1
+B254,Hat das einen Internetauftritt?,-1,2,1
+07.21,Exisitiert eine Website von Gebäude 07.21?,-1,1,1
+07.21,Wie gelange ich zum genannten Gebäude?,-1,2,1
+07.21,An welcher Adresse befindet sich dieses Gebäude?,-1,3,1
+690,In welcher Straße finde ich das Gebäude 690?,1,1,0
+690,Wann hat das Haus geöffnet?,-1,2,1
+690,Kann ich online Informationen dazu finden?,-1,3,1
+690,Hat das Gebäude einen barrierefreien Zugang?,-1,4,1
+"Maschinenbau, KIT-Fakultät für",Können Sie mir den Weg zur Maschinenbaufakultät zeigen?,-1,1,1
+"Maschinenbau, KIT-Fakultät für",An welcher Adresse befindet sich die Maschinenbau-Fakultät?,-1,2,1
+"Maschinenbau, KIT-Fakultät für",Ist das Maschinenbau-Gebäude barrierefrei zugänglich?,-1,3,1
+"Maschinenbau, KIT-Fakultät für",Existiert eine Webpräsenz der Maschinenbau-Fakultät?,-1,4,1
+223/1,Ist das Gebäude 223/1 barrierefrei zugänglich?,-1,1,1
+223/1,Hat das Haus eine eigene Webseite?,-1,2,1
+223/1,An welcher Adresse befindet sich Gebäude 223/1?,-1,3,1
+223/1,Können Sie mir eine Wegbeschreibung zum Gebäude 223/1 geben?,-1,4,1
+01.85,Kannst du mir den Weg zum Gebäude 01.85 zeigen?,-1,1,1
+01.85,An welcher Adresse befindet sich das Gebäude?,-1,2,1
+01.85,Hat das Gebäude einen barrierefreien Zugang?,-1,3,1
+01.85,Existiert eine Webpräsenz für diesen Standort?,-1,4,1
+Fachschaft Sport,Um welche Uhrzeit schließt die Fachschaft Sport heute?,-1,1,1
+Fachschaft Sport,Kann ich die Fachschaft Sport im Internet finden?,-1,2,1
+Fachschaft Sport,An welcher Adresse befindet sich die Fachschaft Sport?,-1,3,1
+Fachschaft Sport,Was ist der schnellste Weg zur Fachschaft Sport?,-1,4,1
+406,Können Sie mir die Website vom Chemiegebäude 406 nennen?,1,1,0
+406,Wie gelange ich zu diesem Standort?,-1,2,1
+30.36,Ist das Gebäude auf dem Campus mit der Nummer 30.36 barrierefrei?,-1,1,1
+30.36,Was ist der beste Weg dorthin?,-1,2,1
+30.36,Sind die Türen momentan aufgeschlossen?,-1,3,1
+30.36,An welcher Adresse befindet sich dieses Gebäude?,-1,4,1
+Internationales (INTL),"Ich muss 'Internationales' regeln. Zeig mir den Weg dorthin, wo ich das kann.",-1,1,1
+Internationales (INTL),Kann ich die Webseite des INTL aufrufen?,-1,2,1
+Internationales (INTL),Ist das Internationale Gebäude barrierefrei?,-1,3,1
+Internationales (INTL),Sind die Öffnungszeiten des INTL aktuell?,-1,4,1
+"Entrepreneurship, Technologie-Management und Innovation (EnTechnon), Institut für",Welche URL hat die Website des EnTechnon-Instituts?,-1,1,1
+"Entrepreneurship, Technologie-Management und Innovation (EnTechnon), Institut für",Sind die Türen momentan aufgeschlossen?,-1,2,1
+"Entrepreneurship, Technologie-Management und Innovation (EnTechnon), Institut für",An welcher Adresse befindet sich das Institut?,-1,3,1
+"Entrepreneurship, Technologie-Management und Innovation (EnTechnon), Institut für",Können Sie mir den Navigationslink zum EnTechnon senden?,-1,4,1
+9651,Was ist die Adresse von Gebäude 9651?,-1,1,1
+9651,Existiert eine Webpräsenz?,-1,2,1
+9651,Können Sie mir den Weg dorthin zeigen?,-1,3,1
+807,Hat die Einrichtung momentan auf?,-1,1,1
+807,Gibt es dort auch einen barrierefreien Zugang?,-1,2,1
+804,Wo befindet sich das Gebäude 804?,1,1,0
+804,Ich brauche eine Wegbeschreibung,-1,2,1
+804,Hat das einen barrierefreien Zugang?,-1,3,1
+10.86,Können Sie mir den Standort von Gebäude 10.86 mitteilen?,-1,1,1
+10.86,Was ist der beste Weg zum Gebäude?,-1,2,1
+10.86,Existiert eine Webpräsenz dafür?,-1,3,1
+712,Navigiere mich bitte zum Gebäude 712,1,1,0
+712,Ist der Zugang barrierefrei?,-1,2,1
+712,An welcher Adresse befindet sich das Gebäude 712?,1,3,0
+712,Existiert dafür eine Internetseite?,-1,4,1
+Meteorologie und Klimaforschung  - Troposphäre (IMK-TRO),Verfügt das IMK-TRO über einen barrierefreien Zugang?,-1,1,1
+Meteorologie und Klimaforschung  - Troposphäre (IMK-TRO),An welcher Adresse finde ich dieses Institut?,-1,2,1
+Meteorologie und Klimaforschung  - Troposphäre (IMK-TRO),Können Sie mir eine Wegbeschreibung zum Gebäude geben?,-1,3,1
+10.95,Zeig mir den Link zur Website von 10.95,-1,1,1
+10.95,Nenne mir die Adresse des erwähnten Gebäudes,-1,2,1
+10.95,Gib mir eine Navigationsanleitung zum Standort,-1,3,1
+"Bereich II - Informatik, Wirtschaft und Gesellschaft (CN)","Zu welcher Uhrzeit öffnet der Gebäudekomplex Bereich II, in dem es um Informatik, Wirtschaft und Gesellschaft geht?",-1,1,1
+"Bereich II - Informatik, Wirtschaft und Gesellschaft (CN)",Was ist die beste Route zu diesem Standort?,-1,2,1
+"Bereich II - Informatik, Wirtschaft und Gesellschaft (CN)",Existiert eine offizielle Webpräsenz für diese Einrichtung?,-1,3,1
+"Bereich II - Informatik, Wirtschaft und Gesellschaft (CN)",Ist dieser Bereich barrierefrei mit dem Rollstuhl zugänglich?,-1,4,1
+757,Kannst du mir die Internetadresse des Gebäudes 757 nennen?,1,1,0
+757,Was ist der beste Weg zum genannten Gebäude?,-1,2,1
+757,Bis wann hat dieser Standort heute geöffnet?,-1,3,1
+240,Wie komme ich am besten zu 240,1,1,0
+240,In welcher Straße befindet sich dieses Bauwerk?,-1,2,1
+240,Ab welcher Uhrzeit ist der Standort zugänglich?,-1,3,1
+240,Kann ich nähere Informationen auf einer Internetseite finden?,-1,4,1
+640,Ist der Zugang zu Gebäude 640 barrierefrei?,1,1,0
+640,An welcher Adresse finde ich diese Location?,-1,2,1
+640,Können Sie mir eine Wegbeschreibung zum Standort geben?,-1,3,1
+246,Wo finde ich das Gebäude 246?,1,1,0
+246,Können Sie mir den Weg dorthin erklären?,-1,2,1
+246,Bis wann hat dieser Standort geöffnet?,-1,3,1
+717,Wann hat das Gebäude 717 geöffnet?,1,1,0
+717,An welcher Adresse befindet sich diese Einrichtung?,-1,2,1
+717,Können Sie mir eine Wegbeschreibung zum Standort geben?,-1,3,1
+717,Ist der Zugang barrierefrei gestaltet?,-1,4,1
+332,Was ist der schnellste Weg zum Gebäude 332?,1,1,0
+332,Bis wann kann ich das heute noch erreichen?,-1,2,1
+International Scholars & Welcome Office (Campus Nord),Hat das International Scholars & Welcome Office im Nordcampus gerade auf?,-1,1,1
+International Scholars & Welcome Office (Campus Nord),Kannst du mir die Adresse für diese Einrichtung geben?,-1,2,1
+International Scholars & Welcome Office (Campus Nord),Kannst du mir eine Route dorthin anzeigen?,-1,3,1
+"Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  für",Wo finde ich das Institut für Angewandte Materialien - Elektrochemische Technologien (IAM-ET)?,-1,1,1
+"Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  für",Um welche Uhrzeit kann man das Institut betreten?,-1,2,1
+306,Hat der Arkadengang einen barrierefreien Zugang?,-1,1,1
+306,Können Sie mir die Adresse geben?,-1,2,1
+803,Wann hat Gebäude 803 geöffnet?,-1,1,1
+803,An welcher Adresse befindet sich dieses Bauwerk?,-1,2,1
+803,Ist der Zugang für Rollstuhlfahrer geeignet?,-1,3,1
+803,Welche Route führt zu diesem Standort?,-1,4,1
+"Berufspädagogik und Allgemeine Pädagogik (IBAP), Institut für",Wie finde ich den Weg zum IBAP?,-1,1,1
+"Berufspädagogik und Allgemeine Pädagogik (IBAP), Institut für",Kannst du mir die Webseite zeigen?,-1,2,1
+"Berufspädagogik und Allgemeine Pädagogik (IBAP), Institut für",An welcher Adresse finde ich die Einrichtung?,-1,3,1
+"Berufspädagogik und Allgemeine Pädagogik (IBAP), Institut für",Bis wann hat die Institution heute geöffnet?,-1,4,1
+10.12,Hat 10.12 derzeit auf?,-1,1,1
+10.12,An welcher Adresse finde ich es?,-1,2,1
+518,Ist das 518 barrierefrei zugänglich?,1,1,0
+518,Können Sie mir den Weg dorthin beschreiben?,-1,2,1
+518,An welcher Adresse kann ich es finden?,-1,3,1
+10.83,Kann man den Komplex 10.83 barrierefrei erreichen?,-1,1,1
+10.83,"Welchen Weg muss ich einschlagen, um zu diesem Standort zu gelangen?",-1,2,1
+Geodätisches Institut (GIK),Können Sie mir die Internetseite des GIK zeigen?,-1,1,1
+Geodätisches Institut (GIK),Bis wann kann ich diesen Ort noch besuchen?,-1,2,1
+"Technikzukünfte - Geschichte, Institut für",Zu welcher Uhrzeit öffnet das Institut für Technikzukünfte - Geschichte?,-1,1,1
+"Technikzukünfte - Geschichte, Institut für",An welcher Adresse finde ich diese Einrichtung?,-1,2,1
+"Technikzukünfte - Geschichte, Institut für",Ist der Zugang zu diesem Institut barrierefrei?,-1,3,1
+Otto-Lehmann-Hörsaal,Können Sie mir den Standort des Otto-Lehmann-Hörsaals nennen?,-1,1,1
+Otto-Lehmann-Hörsaal,Ist dieser Veranstaltungsort barrierefrei mit einem Rollstuhl zugänglich?,-1,2,1
+686,Können Sie mir den Weg zum Gebäude 686 aufzeigen?,-1,1,1
+686,Können Sie mir die Adresse mitteilen?,-1,2,1
+326,Können Sie mir die Adresse des Gebäudes 326 nennen?,1,1,0
+326,Wann hat das Haus geöffnet?,-1,2,1
+229,Ist der Zugang zum Gebäude 229 barrierefrei?,1,1,0
+229,Was ist die beste Route zum genannten Ort?,-1,2,1
+229,An welcher Adresse befindet sich dieses Bauwerk?,-1,3,1
+229,Existiert eine Internetpräsenz für diese Einrichtung?,-1,4,1
+769,Welche URL hat Gebäude 769?,1,1,0
+769,Sind die Türen aktuell für Besucher zugänglich?,-1,2,1
+769,An welcher Adresse befindet sich dieser Bau?,-1,3,1
+"Massivbau und Baustofftechnologie, Institut für",Können Sie mir den Weg zum Institut für Massivbau und Baustofftechnologie beschreiben?,-1,1,1
+"Massivbau und Baustofftechnologie, Institut für",Ist der Zugang barrierefrei und mit Rollstuhl möglich?,-1,2,1
+"Massivbau und Baustofftechnologie, Institut für",Bis wann hat die Einrichtung heute geöffnet?,-1,3,1
+"Massivbau und Baustofftechnologie, Institut für",Können Sie mir die genaue Adresse nennen?,-1,4,1
+301,Kannst du mir die Adresse von Gebäude 301 nennen?,1,1,0
+301,Wann hat die Einrichtung geöffnet?,-1,2,1
+301,Kann ich online weitere Informationen finden?,-1,3,1
+464,Ist der Zugang zu Gebäude 464 barrierefrei?,1,1,0
+464,Existiert eine offizielle Internetpräsenz für diese Einrichtung?,-1,2,1
+464,An welcher Adresse befindet sich diese Lokalität?,-1,3,1
+464,Sind die Türen momentan geöffnet?,-1,4,1
+739,Welche Homepage hat Gebäude 739?,1,1,0
+739,Ist der Zugang barrierefrei?,-1,2,1
+739,An welcher Adresse befindet sich dieser Bau?,-1,3,1
+Interfakultatives Institut für Anwendungen der Informatik,Hat das IFI momentan auf?,-1,1,1
+Interfakultatives Institut für Anwendungen der Informatik,Ist der Zugang dort barrierefrei und mit einem Rollstuhl zu bewältigen?,-1,2,1
+Chemie-Hörsaal II,Wann hat das Chemie-Hörsaal II geöffnet?,-1,1,1
+Chemie-Hörsaal II,Kann ich die Internetpräsenz von diesem Lehrraum finden?,-1,2,1
+573,Kann ich mit einem Rollstuhl in Gebäude 573 eintreten und mich darin bewegen?,-1,1,1
+573,Existiert eine Webpräsenz zu diesem Standort?,-1,2,1
+573,Können Sie mir eine Route zum Zielort beschreiben?,-1,3,1
+573,An welcher Adresse befindet sich diese Einrichtung?,-1,4,1
+"Elektroenergiesysteme und Hochspannungstechnik , Institut für",Können Sie mir den Link zur Homepage des Instituts für Elektroenergiesysteme und Hochspannungstechnik nennen?,-1,1,1
+"Elektroenergiesysteme und Hochspannungstechnik , Institut für",Bis wann hat diese Einrichtung heute geöffnet?,-1,2,1
+421,Kann ich das Gebäude (421) mit dem Rollstuhl betreten?,1,1,0
+421,Kann ich dazu Informationen online finden?,-1,2,1
+11.30,"Sag mir, wo ist Gebäude 11.30!",-1,1,1
+11.30,Den schnellsten Weg zum Ziel bitte,-1,2,1
+11.30,Ist der Zugang auch für Rollstuhlfahrer möglich?,-1,3,1
+11.30,Kann ich online mehr Informationen finden?,-1,4,1
+Neuer Hörsaal Chemie,Können Sie mir den Weg zum Neuer Hörsaal Chemie zeigen?,-1,1,1
+Neuer Hörsaal Chemie,An welcher Adresse befindet sich das Gebäude?,-1,2,1
+06.45,Wie finde ich das Gebäude 06.45?,-1,1,1
+06.45,Hat diese Einrichtung eine eigene Internetpräsenz?,-1,2,1
+752,Kannst du mir den Standort von Gebäude 752 nennen?,-1,1,1
+752,Was ist der beste Weg zu diesem Ort?,-1,2,1
+752,Bis wann hat diese Einrichtung geöffnet?,-1,3,1
+752,Existiert eine Webpräsenz dafür?,-1,4,1
+428,Kannst du mir die URL von Gebäude 428 nennen?,1,1,0
+428,Um welche Uhrzeit öffnet das Gebäude?,-1,2,1
+428,Was ist der beste Weg zu diesem Standort?,-1,3,1
+Institut für Arbeitswissenschaft und Betriebsorganisation (ifab),Können Sie mir den Standort des ifab verraten?,-1,1,1
+Institut für Arbeitswissenschaft und Betriebsorganisation (ifab),Ist eine Homepage online verfügbar?,-1,2,1
+607,Was ist der schnellste Weg zum Gebäude 607?,1,1,0
+607,Kann ich eine Webpräsenz finden?,-1,2,1
+607,Bis wann kann ich dort heute rein?,-1,3,1
+Fachbibliothek WIWI,Wo finde ich die WIWI Fachbibliothek?,-1,1,1
+Fachbibliothek WIWI,Ist der Gebäudezugang barrierefrei und für Rollstuhlfahrer geeignet?,-1,2,1
+Fachbibliothek WIWI,Bis wann sind die Räumlichkeiten heute geöffnet?,-1,3,1
+Fachbibliothek WIWI,Können Sie mir den Weg zur Bibliothek beschreiben?,-1,4,1
+681,"681, ist das barrierefrei und für Rollstuhlfahrer geeignet?",-1,1,1
+681,Kann ich eine Webseite mit mehr Informationen dazu finden?,-1,2,1
+665,Ist der Zugang im Haus 665 behindertengerecht?,-1,1,1
+665,Können Sie mir den Standort nennen?,-1,2,1
+665,Existiert eine Webpräsenz hierzu?,-1,3,1
+665,Sind die Türen momentan geöffnet?,-1,4,1
+Medizinische Dienste (MED) CN,Wie finde ich den Weg zu den medizinischen Diensten CN?,-1,1,1
+Medizinische Dienste (MED) CN,Kann man die Location auch barrierefrei mit dem Rollstuhl erreichen?,-1,2,1
+70.11,Ist der Zugang zu Gebäude 70.11 barrierefrei?,-1,1,1
+70.11,Sind die Türen aktuell geöffnet?,-1,2,1
+70.11,Können Sie mir den Weg zum Veranstaltungsgebäude zeigen?,-1,3,1
+70.11,Existiert ein Online-Auftritt für diese Einrichtung?,-1,4,1
+"Customer Insights, Institute for ",Können Sie mir den Weg zum Customer Insights Institute zeigen?,-1,1,1
+"Customer Insights, Institute for ",Verraten Sie mir die Adresse dieser Einrichtung?,-1,2,1
+"Customer Insights, Institute for ",Können Sie mir die aktuellen Öffnungszeiten des Standorts mitteilen?,-1,3,1
+"Customer Insights, Institute for ",Ist der Zutritt zum Gebäude auch barrierefrei möglich?,-1,4,1
+510,Wo finde ich die Webadresse des Gebäudes 510?,1,1,0
+510,Ist der Zugang auch für Rollstuhlfahrer geeignet?,-1,2,1
+510,Zu welchen Zeiten ist der Zutritt möglich?,-1,3,1
+510,Welche Route führt zu diesem Standort?,-1,4,1
+50.21,"Hilfe, ich brauche eine Wegbeschreibung zu Gebäude 50.21!",-1,1,1
+50.21,Hat diese Einrichtung eine eigene Internetpräsenz?,-1,2,1
+50.34,Zeige mir bitte den Weg zu 50.34 :),-1,1,1
+50.34,Existiert ein Online-Auftritt für diese Einrichtung?,-1,2,1
+50.34,Wann hat das Gebäude geöffnet?,-1,3,1
+50.34,Ist der Zugang barrierefrei gestaltet?,-1,4,1
+01.94,Können Sie mir den Weg zu 01.94 zeigen?,-1,1,1
+01.94,Ist der Zugang barrierefrei möglich?,-1,2,1
+451,"Weißt du, wann kann ich 451 besuchen kann",1,1,0
+451,Kannst du mir den Weg dorthin beschreiben?,-1,2,1
+451,An welcher Adresse befindet sich diese Einrichtung?,-1,3,1
+451,Ist eine Webpräsenz für diese Institution verfügbar?,-1,4,1
+303,An welcher Adresse finde ich Gebäude 303?,1,1,0
+303,Wann hat das Gebäude geöffnet?,-1,2,1
+260/1,Wann hat das Gebäude 260/1 heute geöffnet?,-1,1,1
+260/1,Ist der Zugang barrierefrei?,-1,2,1
+260/1,Wie finde ich diese Location?,-1,3,1
+10.11,Ist der Zugang für Rollstuhlfahrer geeignet. Ich will nach 10.11,-1,1,1
+10.11,Was ist die Adresse dieses Standorts?,-1,2,1
+10.11,Können Sie mir den Weg zum besagten Gebäude zeigen?,-1,3,1
+724,Welche Öffnungszeiten hat das 724 Gebäude?,1,1,0
+724,Ist der Zugang barrierefrei möglich?,-1,2,1
+414,"Hey, kennst du die Öffnungszeiten des Gebäudes 414?",1,1,0
+414,Können Sie mir den Standort nennen?,-1,2,1
+414,Was ist die beste Route zu dieser Location?,-1,3,1
+414,Ist der Zugang barrierefrei gestaltet?,-1,4,1
+310,Um wieviel Uhr macht das Gebäude 310 auf?,1,1,0
+310,Kann ich online mehr Informationen dazu finden?,-1,2,1
+310,Was ist der beste Weg zu dieser Location?,-1,3,1
+633,Verfügt der Haupteingang des Gebäudes 633 über eine barrierefreie Zugangsmöglichkeit?,1,1,0
+633,An welcher Adresse befindet sich der gesuchte Standort?,-1,2,1
+40.02,Ist das Gebäude 40.02 barrierefrei zugänglich?,-1,1,1
+40.02,Welche Öffnungszeiten sind dort festgelegt?,-1,2,1
+40.02,Wo finde ich die zugehörige Webpräsenz?,-1,3,1
+"Finanzwirtschaft, Banken und Versicherungen (FBV), Institut für",Können Sie mir die Homepage des Instituts FBV nennen?,-1,1,1
+"Finanzwirtschaft, Banken und Versicherungen (FBV), Institut für",Bis wann hat diese Einrichtung heute geöffnet?,-1,2,1
+"Finanzwirtschaft, Banken und Versicherungen (FBV), Institut für",An welcher Adresse befindet sich diese Institution?,-1,3,1
+438,Wie viele Stunden kann ich heute noch im Gebäude mit der Nummer 438 verbleiben?,1,1,0
+438,Ist der Zugang barrierefrei und mit einem Rollstuhl zu erreichen?,-1,2,1
+"Informationsmanagement im Ingenieurwesen (IMI) , Institut für",Ist das IMI barrierefrei zugänglich für Rollstuhlfahrer?,-1,1,1
+"Informationsmanagement im Ingenieurwesen (IMI) , Institut für",Kann ich die Webpräsenz finden?,-1,2,1
+"Informationsmanagement im Ingenieurwesen (IMI) , Institut für",Wann kann man dort vorbeikommen?,-1,3,1
+"Informationsmanagement im Ingenieurwesen (IMI) , Institut für",Können Sie mir den Weg zur Einrichtung beschreiben?,-1,4,1
+"Mikroverfahrenstechnik (IMVT) , Institut für","Können Sie mir sagen, wann das Institut für Mikroverfahrenstechnik (IMVT) geöffnet hat?",-1,1,1
+"Mikroverfahrenstechnik (IMVT) , Institut für",Ist die Einrichtung barrierefrei zugänglich?,-1,2,1
+"Mikroverfahrenstechnik (IMVT) , Institut für",An welcher Adresse befindet sich dieses Institut?,-1,3,1
+"Mikroverfahrenstechnik (IMVT) , Institut für",Existiert eine Homepage für diese Institution?,-1,4,1
+07.08,Zu welcher Online-Adresse gehört das KIT-Gebäude 07.08?,-1,1,1
+07.08,Wie gelange ich zu dieser Location?,-1,2,1
+725,Ist das Gebäude mit der Nummer 725 barrierefrei zu erreichen?,1,1,0
+725,Kannst du mir den Weg dorthin beschreiben?,-1,2,1
+725,Bis wann hat dieser Standort heute geöffnet?,-1,3,1
+"Institut für Operations Research (IOR), Bereich Analytics and Statistics","Können Sie mir den Weg zum IOR-Institut, Abteilung Analytics and Statistics zeigen?",-1,1,1
+"Institut für Operations Research (IOR), Bereich Analytics and Statistics",An welcher Adresse befindet sich diese Einrichtung?,-1,2,1
+"Sport und Sportwissenschaft, Institut für",Kannst du mir den Weg zum Institut für Sport und Sportwissenschaften zeigen?,-1,1,1
+"Sport und Sportwissenschaft, Institut für",Ist diese Einrichtung derzeit geöffnet?,-1,2,1
+"Sport und Sportwissenschaft, Institut für",Ist der Zugang barrierefrei und für Rollstuhlfahrer geeignet?,-1,3,1
+"Sport und Sportwissenschaft, Institut für",An welcher Adresse befindet sich diese Einrichtung?,-1,4,1
+40.50,Bis wann kann ich heute noch in Gebäude 40.50 bleiben?,-1,1,1
+40.50,Gibt es eine Internetseite zu dieser Einrichtung?,-1,2,1
+40.50,An welcher Adresse befindet sich die Location?,-1,3,1
+"Wirtschaftswissenschaften, KIT-Fakultät für",Wo finde ich die wirtschaftliche Fakultät des KIT?,-1,1,1
+"Wirtschaftswissenschaften, KIT-Fakultät für",Kann ich irgendwo online mehr Informationen dazu finden?,-1,2,1
+"Wirtschaftswissenschaften, KIT-Fakultät für",Ist der Standort barrierefrei mit einem Rollstuhl erreichbar?,-1,3,1
+"Wirtschaftswissenschaften, KIT-Fakultät für",Welche Route führt am besten zu diesem Gebäude?,-1,4,1
+10.22 - LAZ,Hat die LAZ momentan auf?,-1,1,1
+10.22 - LAZ,Kannst du mir den Weg zeigen?,-1,2,1
+10.22 - LAZ,Ist eine Internetseite für die Einrichtung verfügbar?,-1,3,1
+541,Können Sie mir den Standort von Gebäude 541 nennen?,1,1,0
+541,Ist der Zugang barrierefrei und mit Rollstuhl möglich?,-1,2,1
+541,Was ist die beste Route zu diesem Standort?,-1,3,1
+541,Existiert eine offizielle Webpräsenz?,-1,4,1
+145,Können Sie mir den Standort vom Gebäude 145 mitteilen?,1,1,0
+145,Ist der Zugang dort barrierefrei für Rollstühle?,-1,2,1
+Physikalisches Institut (PI),Kann ich das Physikalische Institut barrierefrei erreichen?,-1,1,1
+Physikalisches Institut (PI),An welcher Adresse befindet sich diese Einrichtung?,-1,2,1
+Physikalisches Institut (PI),Welche Route führt zu diesem Universitätsgebäude?,-1,3,1
+11.40,Kann man 11 40 eigentlich mit einem Rollstuhl erreichen?,-1,1,1
+11.40,"Welchen Weg muss ich nehmen, um dorthin zu gelangen?",-1,2,1
+40.29,Können Sie mir den Weg zum Gebäude 40.29 beschreiben?,-1,1,1
+40.29,Wo finde ich die zugehörige Internetseite?,-1,2,1
+40.29,Ist der Zugang barrierefrei?,-1,3,1
+40.29,Sind die Öffnungszeiten aktuell?,-1,4,1
+349,Wo finde ich die Homepage von 349?,1,1,0
+349,Ist der Zugang auch barrierefrei?,-1,2,1
+248,Kann man das Gebäude 248 mit einem Rollstuhl erreichen?,1,1,0
+248,Existiert eine Internetpräsenz?,-1,2,1
+248,Bis wann hat der Standort heute noch auf?,-1,3,1
+248,Können Sie mir die Adresse nennen?,-1,4,1
+Joseph Gottlieb Kölreuter Institut für Pflanzenwissenschaften (JKIP),Können Sie mir die Website des JKIP nennen?,-1,1,1
+Joseph Gottlieb Kölreuter Institut für Pflanzenwissenschaften (JKIP),Welche Route führt am besten zu diesem Institut?,-1,2,1
+611,Wo finde ich die URL von 611??,1,1,0
+611,Ist der Zugang barrierefrei?,-1,2,1
+907,Können Sie mir den Standort von Gebäude 907 nennen?,-1,1,1
+907,Zu welchen Zeiten kann man das Gebäude betreten?,-1,2,1
+907,Ist der Zugang auch für Rollstuhlfahrer möglich?,-1,3,1
+907,Existiert eine Online-Präsenz für diese Einrichtung?,-1,4,1
+402,Wo finde ich die Website vom Verwaltungsgebäude 402?,1,1,0
+402,Wann hat der Standort geöffnet?,-1,2,1
+402,Gibt es hier barrierefreien Zugang?,-1,3,1
+402,Kannst du mir eine Wegbeschreibung zum Standort geben?,-1,4,1
+01.95,Kannst Du mir den Weg zu 01 Punkt 95 zeigen?,-1,1,1
+01.95,Ist der Zugang behindertengerecht gestaltet?,-1,2,1
+"Analysis, Institut für",Wie erreiche ich das Institut für Gebäude Analysis online?,-1,1,1
+"Analysis, Institut für",Wann ist der Besuch möglich?,-1,2,1
+"Analysis, Institut für",Gibt es dort einen barrierefreien Zugang?,-1,3,1
+741,Hat Gebäude 741 im Moment geöffnet?,1,1,0
+741,Ist der Zugang barrierefrei?,-1,2,1
+741,An welcher Adresse befindet sich dieser Standort?,-1,3,1
+741,Können Sie mir den Weg zu dieser Einrichtung zeigen?,-1,4,1
+"Bodenmechanik und Felsmechanik (IBF) , Institut für",Ist das Institut für Bodenmechanik und Felsmechanik barrierefrei zugänglich?,-1,1,1
+"Bodenmechanik und Felsmechanik (IBF) , Institut für",Können Sie mir den Weg zu dieser Einrichtung beschreiben?,-1,2,1
+352,Kannst du mir den Standort von Gebäude 352 nennen?,1,1,0
+352,Wie finde ich den Weg zu diesem Ort?,-1,2,1
+352,Ist der Zugang barrierefrei?,-1,3,1
+352,Existiert eine Webpräsenz dazu?,-1,4,1
+329,Können Sie mir den Weg zu Gebäude 329 zeigen?,1,1,0
+329,Existiert eine Internetpräsenz für diese Örtlichkeit?,-1,2,1
+10.84,In welchem Bereich finde ich den Gebäudekomplex 10.84?,-1,1,1
+10.84,Existiert ein Online-Auftritt zu dieser Einrichtung?,-1,2,1
+10.84,Verfügt der Standort über barrierefreie Zugänge?,-1,3,1
+10.84,Wann kann man die Räumlichkeiten betreten und nutzen?,-1,4,1
+30.31,Welche URL hat das dreißig Punkt einundreißig Gebäude?,-1,1,1
+30.31,Können Sie mir die Adresse des Standorts nennen?,-1,2,1
+30.31,Ist es aktuell zugänglich?,-1,3,1
+30.31,Bitte zeigen Sie mir den Weg zum Gebäude.,-1,4,1
+KIT-Shuttle (Haltestelle Campus Ost),Können Sie mir den besten Weg zum KIT-Shuttle-Gebäude am Campus Ost zeigen?,-1,1,1
+KIT-Shuttle (Haltestelle Campus Ost),An welcher Adresse befindet sich diese Haltestelle?,-1,2,1
+70.26,Ist der Zugang zu 70 26 barrierefrei gestaltet?,-1,1,1
+70.26,Wann schließt die Einrichtung heute?,-1,2,1
+70.26,Kann ich online weitere Informationen zu dieser Institution finden?,-1,3,1
+"Technische Chemie und Polymerchemie, Institut für",Ist der Zugang zum Institut für Technische und Polymerchemie barrierefrei?,-1,1,1
+"Technische Chemie und Polymerchemie, Institut für",An welcher Adresse befindet sich diese Einrichtung?,-1,2,1
+Fachschaft Geistes- und Sozialwissenschaften,Kannst du mir den Weg zur Fachschaft GeKo zeigen?,-1,1,1
+Fachschaft Geistes- und Sozialwissenschaften,Wann beginnen die Öffnungszeiten des Gebäudes?,-1,2,1
+Fachschaft Geistes- und Sozialwissenschaften,Ist die Location barrierefrei zugänglich?,-1,3,1
+30.95,Können Sie mir den Weg zu Einrichtung 30 Punkt 95 zeigen?,-1,1,1
+30.95,Ist der Zugang barrierefrei und für Rollstuhlfahrer geeignet?,-1,2,1
+30.95,An welcher Adresse befindet sich dieser Standort?,-1,3,1
+30.95,Existiert eine Webpräsenz für diese Einrichtung?,-1,4,1
+30.10,Ist das Gebäude 30.10 barrierefrei zugänglich?,-1,1,1
+30.10,Sind die Räumlichkeiten momentan zugänglich?,-1,2,1
+30.10,An welcher Adresse befindet sich dieses Objekt?,-1,3,1
+30.10,Kannst du mir den Weg zum Standort zeigen?,-1,4,1
+"Hochleistungsimpuls- und Mikrowellentechnik (IHM), Institut für",Bis wann kann ich das IHM-Institut heute besuchen?,-1,1,1
+"Hochleistungsimpuls- und Mikrowellentechnik (IHM), Institut für",Können Sie mir die Route dorthin zeigen?,-1,2,1
+10.85,Können Sie mir den Standort von Gebäude 10.85 nennen?,-1,1,1
+10.85,Ist der Zugang barrierefrei möglich?,-1,2,1
+10.85,Existiert eine Webpräsenz für diese Einrichtung?,-1,3,1
+B404,Ist der Zugang für Rollstühle bei B404 möglich?,-1,1,1
+B404,Hat das Ganze eine eigene Internetpräsenz?,-1,2,1
+10.92,"Ist 10,92 barrierefrei zugänglich?",-1,1,1
+10.92,Sind die Türen momentan aufgeschlossen?,-1,2,1
+10.92,Existiert eine Webpräsenz?,-1,3,1
+"Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP), Institut für",Ist das Institut IAM-AWP barrierefrei für Rollstuhlfahrer?,-1,1,1
+"Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP), Institut für",An welcher Adresse befindet sich diese Einrichtung?,-1,2,1
+"Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP), Institut für",Können Sie mir eine Wegbeschreibung zum genannten Institut geben?,-1,3,1
+Medizinische Dienste (MED) CS,Wie finde ich den Standort des Medizinische Dienste Gebäudes (MED) CS?,-1,1,1
+Medizinische Dienste (MED) CS,Existiert ein Online-Auftritt dieser Einrichtung?,-1,2,1
+06.47,Können Sie mir eine Wegbeschreibung zu Gebäude 06.47 geben?,-1,1,1
+06.47,Bitte nennen Sie mir die Adresse des genannten Standorts,-1,2,1
+30.43,Können Sie mir bitte die Adresse von Gebäude 30.43 nennen?,-1,1,1
+30.43,Was ist der schnellste Weg zu diesem Standort?,-1,2,1
+30.43,Ist der Zugang barrierefrei gestaltet?,-1,3,1
+30.91,Ist der Zugang von 30.91 am Campus barrierefrei?,-1,1,1
+30.91,Kann ich online mehr Informationen dazu finden?,-1,2,1
+30.91,Kannst du mir die Adresse des Gebäudes nennen?,-1,3,1
+Fachschaft Bauingenieurwesen,Wo kann ich die Homepage der Fachschaft Bauingenieurwesen finden?,-1,1,1
+Fachschaft Bauingenieurwesen,Wo befindet sich dieser Standort?,-1,2,1
+Fachschaft Bauingenieurwesen,Bis wann sind die aktuellen Öffnungszeiten?,-1,3,1
+103,Können Sie mir den Weg zum Gebäude 103 beschreiben?,1,1,0
+103,Ist der Zugang barrierefrei?,-1,2,1
+103,Existiert eine Online-Präsenz dazu?,-1,3,1
+Zentrum für Angewandte Rechtswissenschaft (ZAR),Können Sie mir den Link zur Homepage des Zentrum für Angewandte Rechtswissenschaft geben?,-1,1,1
+Zentrum für Angewandte Rechtswissenschaft (ZAR),Ich würde gerne den Weg zu dieser Einrichtung finden,-1,2,1
+404,Komme ichin das Gebäude 404 mit meinem Rollstuhl rein?,1,1,0
+404,Hat die Einrichtung eine eigene Webpräsenz?,-1,2,1
+559,Wo finde ich die Internetpräsenz des Gebäudes 559?,1,1,0
+559,An welcher Adresse befindet sich dieser Standort?,-1,2,1
+512,Können Sie mir den Standort von Gebäude 512 nennen?,1,1,0
+512,Ist der Zugang barrierefrei gestaltet?,-1,2,1
+512,Existiert eine digitale Präsenz für diesen Standort?,-1,3,1
+512,Was ist die beste Route zu diesem Gebäude?,-1,4,1
+KIT-Archiv,Wie finde ich den Weg zum KIT-Archiv?,-1,1,1
+KIT-Archiv,Wann kann man diese Einrichtung besuchen?,-1,2,1
+KIT-Archiv,Kann ich online weitere Informationen finden?,-1,3,1
+KIT-Archiv,An welcher Adresse befindet sich diese Institution?,-1,4,1
+Bibliothek (Campus Nord),In welchem Bereich auf Campus Nord befindet sich die Bibliothek?,-1,1,1
+Bibliothek (Campus Nord),Können Sie mir den Weg zu diesem Standort beschreiben?,-1,2,1
+Bibliothek (Campus Nord),Ist der Zugang barrierefrei und für Rollstuhlfahrer geeignet?,-1,3,1
+"Funktionelle Grenzflächen (IFG), Institut für",Ist das Institut für funk. Grenzfl. barrierefrei für Rollstuhlfahrer?,-1,1,1
+"Funktionelle Grenzflächen (IFG), Institut für",Kannst du mir den besten Weg dorthin zeigen?,-1,2,1
+10.70,Exisitiert eine Homepage von 10.70,-1,1,1
+10.70,An welcher Adresse ist dieser Standort zu finden?,-1,2,1
+"Photogrammetrie und Fernerkundung (IPF), Institut für",Können Sie mir den Weg zum Institut für Photogrammetrie und Fernerkundung (IPF) zeigen?,-1,1,1
+"Photogrammetrie und Fernerkundung (IPF), Institut für",Wo finde ich die Homepage dieser Einrichtung?,-1,2,1
+"Photogrammetrie und Fernerkundung (IPF), Institut für",Bis wann hat diese Institution heute geöffnet?,-1,3,1
+308,Können Sie mir die URL für Gebäude 308 nennen?,1,1,0
+308,Wie gelange ich zu diesem Standort?,-1,2,1
+308,Ist der Zugang auch barrierefrei möglich?,-1,3,1
+308,An welcher Adresse befindet sich diese Einrichtung?,-1,4,1
+11.21,Hat Gebäude 11.21 im Moment auf?,-1,1,1
+11.21,Ist der Zugang barrierefrei?,-1,2,1
+11.21,Was ist die beste Route zu diesem Standort?,-1,3,1
+11.21,Können Sie mir die Adresse nennen?,-1,4,1
+Rudolf-Criegee-Hörsaal,Können Sie mir den Standort des Rudolf-Criegee-Hörsaals nennen?,-1,1,1
+Rudolf-Criegee-Hörsaal,Welcher Weg führt zu diesem Vorlesungssaal?,-1,2,1
+Rudolf-Criegee-Hörsaal,Ist der Zugang auch barrierefrei?,-1,3,1

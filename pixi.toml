@@ -36,6 +36,7 @@ tqdm = ">=4.67.1,<5"
 numpy = ">=2.0.2,<3"
 anthropic = ">=0.54.0,<0.55"
 llama-index = ">=0.12.25,<0.13"
+rich = ">=14.0.0,<15"
 
 [host-dependencies]
 pip = "*"
@@ -90,4 +91,4 @@ build = ["build"]
 [pypi-dependencies]
 pyaudio = ">=0.2.14, <0.3"
 soundfile = ">=0.13.1, <0.14"
-llama-index-embeddings-huggingface = ">=0.2.0"
+llama-index-embeddings-huggingface = ">=0.5.0,<0.6"

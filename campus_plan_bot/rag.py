@@ -23,7 +23,7 @@ class RAG(RAGComponent):
         self,
         index: VectorStoreIndex,
         database: pd.DataFrame,
-        id_column_name: str = "title",
+        id_column_name: str = "identifikator",
     ):
         self.index = index
         self.database = database
@@ -32,24 +32,36 @@ class RAG(RAGComponent):
         logger.debug("LlamaIndex RAG initialized.")
 
     @classmethod
-    def from_file(cls, file_path: Path, id_column_name: str = "title") -> "RAG":
+    def from_file(cls, file_path: Path, id_column_name: str = "identifikator") -> "RAG":
         """Create a RAG instance from a file."""
         df = pd.read_csv(file_path)
         return cls.from_df(df, id_column_name)
 
     @classmethod
-    def from_df(cls, df: pd.DataFrame, id_column_name: str = "title") -> "RAG":
+    def from_df(cls, df: pd.DataFrame, id_column_name: str = "identifikator") -> "RAG":
         """Create a RAG instance from a DataFrame."""
         documents = []
-        pattern = r"(\d{1,2}\.\d{1,2})"
+        pattern = r"(\d{1,2}\.\d{1,2}|\d+)"
+        # Ensure 'name' column exists and fill NaN with empty strings
+        if "name" not in df.columns:
+            df["name"] = ""
+        else:
+            df["name"] = df["name"].fillna("")
+
         for _, row in df.iterrows():
             metadata = row.to_dict()
-            mo = re.search(pattern, row[id_column_name])
+            identifikator = str(row[id_column_name])
+            name = row["name"]
+
+            mo = re.search(pattern, identifikator)
             if mo:
                 metadata["building_nr"] = mo.group(0)
 
+            # Use name and identifikator for the document text if name is available
+            text_content = f"{name} ({identifikator})" if name else identifikator
+
             doc = Document(
-                text=row[id_column_name],
+                text=text_content,
                 metadata=metadata,
             )
             documents.append(doc)
@@ -66,7 +78,7 @@ class RAG(RAGComponent):
         document_ids: set[str] = set()
 
         # 1. check whether building number of type 50.34 (1-2 numbers).(1-2 numbers) do exactly match
-        pattern = r"(\d{1,2}\.\d{1,2})"
+        pattern = r"(\d{1,2}\.\d{1,2}|\d+)"
         mo = re.search(pattern, query)
         if mo:
             building_number = mo.group(0)
@@ -88,12 +100,12 @@ class RAG(RAGComponent):
             for node in nodes:
                 documents.append(
                     RetrievedDocument(
-                        id=node.get_content(),
+                        id=node.metadata[self.id_column_name],
                         data=node.metadata,
                         relevance_score=1.0,
                     )
                 )
-                document_ids.add(node.get_content())
+                document_ids.add(node.metadata[self.id_column_name])
             logger.debug(
                 f"Found {len(documents)} documents matching the building number."
             )
@@ -118,18 +130,19 @@ class RAG(RAGComponent):
                 for node, score in reranked_nodes:
                     if len(documents) >= limit:
                         break
-                    if node.get_content() in document_ids:
+                    doc_id = node.metadata[self.id_column_name]
+                    if doc_id in document_ids:
                         continue
                     documents.append(
                         RetrievedDocument(
-                            id=node.get_content(),
+                            id=doc_id,
                             data=node.metadata,
                             relevance_score=round(float(score), 3),
                         )
                     )
-                    document_ids.add(node.get_content())
+                    document_ids.add(doc_id)
 
-            logger.debug(f"Found {top_k} documents using cosine similarity and reranking.")
+            logger.debug(f"Found {len(documents)} documents using cosine similarity and reranking.")
 
         logger.debug(
             "Retrieved "
