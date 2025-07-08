@@ -1,0 +1,598 @@
+id,query,rephrased_query,position,num_turn,failed
+30.29,Wo ist Gebäude 30.29?,Wo befindet sich Gebäude 30.29?,1,1,0
+30.29,Wie komme ich dahin?,Wie komme ich zum Center für Innovation & Entrepreneurship?,1,2,0
+30.29,Ist das auch rollstuhlgerecht?,Ist das Center für Innovation & Entrepreneurship (30.29) rollstuhlgerecht?,1,3,0
+30.29,Wie lange ist das noch offen?,Wie lange ist das Center für Innovation & Entrepreneurship (30.29) noch offen?,1,4,0
+30.46,Wie komme ich zu Gebäude 30.46?,Welches Gebäude ist Gebäude 30.46?,1,1,0
+30.46,Ist das auch rollstuhlgerecht?,Ist der Chemie-Turm III rollstuhlgerecht?,1,2,0
+30.46,Und hat es gerade offen?,Ist Chemie-Turm III (30.46) gerade offen?,1,3,0
+419,Wie komme ich zu Gebäude 419?,Welches Gebäude ist Gebäude 419?,1,1,0
+419,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten von Gebäude 419?,1,2,0
+419,Gibt es eine Website davon?,Welche Website gibt es zu Gebäude 419?,1,3,0
+40.16,Wo ist Gebäude 40.16?,Wo befindet sich Gebäude 40.16?,1,1,0
+40.16,Wie komme ich dahin?,Wie komme ich zu Gebäude 40.16?,1,2,0
+40.16,Ist das auch rollstuhlgerecht?,Ist Gebäude 40.16 rollstuhlgerecht?,1,3,0
+40.16,Wann öffnet es?,Wann öffnet Gebäude 40.16?,1,4,0
+430,Was ist die Webseite von Gebäude 430?,Welche Webseite gehört zum Gebäude 430?,1,1,0
+430,Wie lange ist das noch offen?,Wie lange ist Gebäude 430 noch offen?,1,2,0
+"Physikalische Chemie, Institut für","Ist Gebäude Physikalische Chemie, Institut für rollstuhlgerecht?",Ist das Gebäude der Physikalischen Chemie rollstuhlgerecht?,-1,1,1
+"Physikalische Chemie, Institut für",Wo ist das?,Wo ist das Gebäude der Physikalischen Chemie?,5,2,0
+"Physikalische Chemie, Institut für",Gibt es eine Website davon?,Wo ist die Website von Chemie-Turm II?,2,3,0
+152,Wie komme ich zu Gebäude 152?,Wie komme ich zu Gebäude 152?,1,1,0
+152,Wo ist das?,Wo ist Gebäude 152?,1,2,0
+152,Gibt es eine Website davon?,Wo ist die Website von Gebäude 152?,1,3,0
+152,Wie lange ist das noch offen?,Wie lange ist Gebäude 152 noch offen?,1,4,0
+Materialprüfungsanstalt (MPA),Was ist die Webseite von Gebäude Materialprüfungsanstalt (MPA)?,Was ist die Webseite der Materialprüfungsanstalt (MPA)?,1,1,0
+Materialprüfungsanstalt (MPA),Wie lange ist das noch offen?,Wie lange ist die Prüfhalle der Materialprüfungsanstalt (MPA) noch offen?,1,2,0
+666,Wo ist Gebäude 666?,Welches Gebäude ist Gebäude 666?,1,1,0
+666,Ist das auch rollstuhlgerecht?,Is Gebäude 666 rollstuhlgerecht?,1,2,0
+"Germanistik: Literatur, Sprache, Medien (GER), Institut für","Ist Gebäude Germanistik: Literatur, Sprache, Medien (GER), Institut für rollstuhlgerecht?","Welche Einrichtungen sind im Gebäude Germanistik: Literatur, Sprache, Medien (GER)?",1,1,0
+"Germanistik: Literatur, Sprache, Medien (GER), Institut für",Wie komme ich dahin?,Wie komme ich zum Franz-Schnabel-Haus?,2,2,0
+239,Wo ist Gebäude 239?,Welches Gebäude ist Gebäude 239?,1,1,0
+239,Und hat es gerade offen?,Hat Gebäude 239 gerade geöffnet?,1,2,0
+239,Gibt es eine Website davon?,Gibt es eine Website für Gebäude 239?,1,3,0
+239,Wie komme ich dahin?,Wie komme ich zu Gebäude 239?,1,4,0
+Engler-Bunte-Hörsaal,Wo ist Gebäude Engler-Bunte-Hörsaal?,Wo ist der Engler-Bunte-Hörsaal?,-1,1,1
+Engler-Bunte-Hörsaal,Gibt es eine Website davon?,Gibt es eine Website für das Gebäude Engler-Bunte-Hörsaal?,-1,2,1
+433,Wo ist Gebäude 433?,Welches Gebäude ist Gebäude 433?,1,1,0
+433,Und hat es gerade offen?,Hat Gebäude 433 gerade geöffnet?,1,2,0
+459,Ist Gebäude 459 grade geöffnet?,Ist Gebäude 459 grade geöffnet?,1,1,0
+459,Ist das auch rollstuhlgerecht?,Ist das Karlsruher Beryllium Handling Facility rollstuhlgerecht?,1,2,0
+40.11,Ist Gebäude 40.11 rollstuhlgerecht?,What sind die Zugänglichkeitsmerkmale von Gebäude 40.11?,1,1,0
+40.11,Wie komme ich dahin?,Wie komme ich zum Engler-Bunte-Institut?,-1,2,1
+40.11,Gibt es eine Website davon?,Welche Website gibt es für das Engler-Bunte-Institut (40.11)?,1,3,0
+40.11,Und hat es gerade offen?,"""Hat das Engler-Bunte-Institut (EBI) (40.11) gerade geöffnet?""",1,4,0
+30.33,Wo ist Gebäude 30.33?,Wo befindet sich Gebäude 30.33?,2,1,0
+30.33,Wie lange ist das noch offen?,Wie lange ist der MTI-Hörsaal (30.33) noch offen?,2,2,0
+Heinrich-Hertz-Hörsaal,Ist Gebäude Heinrich-Hertz-Hörsaal grade geöffnet?,Is das Gebäude mit dem Heinrich-Hertz-Hörsaal grade geöffnet?,-1,1,1
+Heinrich-Hertz-Hörsaal,Wie komme ich dahin?,Wie komme ich zum Heinrich-Hertz-Hörsaal?,-1,2,1
+Meteorologie und Klimaforschung - Atmosphärische Aerosolforschung (IMK-AAF) ,Ist Gebäude Meteorologie und Klimaforschung - Atmosphärische Aerosolforschung (IMK-AAF)  grade geöffnet?,Is das Gebäude Meteorologie und Klimaforschung - Atmosphärische Aerosolforschung (IMK-AAF) grade geöffnet?,1,1,0
+Meteorologie und Klimaforschung - Atmosphärische Aerosolforschung (IMK-AAF) ,Ist das auch rollstuhlgerecht?,Is das Gebäude Meteorologie und Klimaforschung - Atmosphärische Aerosolforschung (IMK-AAF) rollstuhlgerecht?,1,2,0
+Meteorologie und Klimaforschung - Atmosphärische Aerosolforschung (IMK-AAF) ,Wo ist das?,Wo befindet sich Meteorologie und Klimaforschung - Atmosphärische Aerosolforschung (IMK-AAF)?,1,3,0
+257,Was ist die Webseite von Gebäude 257?,Welche Webseite gehört zum Gebäude 257?,1,1,0
+257,Wie lange ist das noch offen?,Wie lange ist Gebäude 257 noch offen?,1,2,0
+257,Wie komme ich dahin?,Wie komme ich zu Gebäude 257?,1,3,0
+01.51,Wie komme ich zu Gebäude 01.51?,Wie komme ich zu Gebäude 01.51?,1,1,0
+01.51,Wo ist das?,Wo ist Gebäude 01.51?,1,2,0
+01.51,Wann öffnet es?,Wann öffnet das Gebäude 01.51?,1,3,0
+Mitfahrbank (Campus Nord): Südtor,Wo ist Gebäude Mitfahrbank (Campus Nord): Südtor?,Where ist Gebäude Mitfahrbank (Campus Nord),2,1,0
+Mitfahrbank (Campus Nord): Südtor,Und hat es gerade offen?,Hat Gebäude Mitfahrbank (Campus Nord): Südtor gerade offen?,1,2,0
+Mitfahrbank (Campus Nord): Südtor,Wie komme ich dahin?,Wie komme ich zum Gebäude Mitfahrbank (Campus Nord): Südtor?,1,3,0
+808,Ist Gebäude 808 grade geöffnet?,Ist Gebäude 808 grade geöffnet?,1,1,0
+808,Wie komme ich dahin?,Wo ist Gebäude 808?,1,2,0
+"Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON","Wie komme ich zu Gebäude Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON?",Wie komme ich zum Gebäude der Professur für Netzwerkökonomie am Institut für Volkswirtschaftslehre?,1,1,0
+"Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON",Gibt es eine Website davon?,"Welche Website gibt es für die Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON)?",1,2,0
+"Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON",Wo ist das?,"Wo ist die Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON)?",1,3,0
+"Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON",Ist das auch rollstuhlgerecht?,"Ist das Gebäude der Professur für Netzwerkökonomie, Institut für Volkswirtschaftslehre (ECON) rollstuhlgerecht?",1,4,0
+322,Was ist die Webseite von Gebäude 322?,Welche Webseite gibt es für Gebäude 322?,1,1,0
+322,Wie komme ich dahin?,Wie komme ich zum Gebäude 322?,1,2,0
+322,Ist das auch rollstuhlgerecht?,Ist Gebäude 322 rollstuhlgerecht?,1,3,0
+322,Wann öffnet es?,Wann öffnet Gebäude 322?,1,4,0
+"Festkörperphysik, Institut für","Ist Gebäude Festkörperphysik, Institut für rollstuhlgerecht?",Ist das Gebäude der Festkörperphysik rollstuhlgerecht?,-1,1,1
+"Festkörperphysik, Institut für",Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten von Gebäude Festkörperphysik?,1,2,0
+"Festkörperphysik, Institut für",Gibt es eine Website davon?,Welche Website gibt es für das Institut für Festkörperphysik?,1,3,0
+Archiv für Architektur und Ingenieurbau (saai),Ist Gebäude Archiv für Architektur und Ingenieurbau (saai) rollstuhlgerecht?,Ist das Gebäude Archiv für Architektur und Ingenieurbau rollstuhlgerecht?,1,1,0
+Archiv für Architektur und Ingenieurbau (saai),Wie komme ich dahin?,Wie komme ich zum Archiv für Architektur und Ingenieurbau (saai)?,1,2,0
+249,Wie komme ich zu Gebäude 249?,Welches Gebäude ist Gebäude 249?,1,1,0
+249,Ist das auch rollstuhlgerecht?,Ist Gebäude 249 rollstuhlgerecht?,1,2,0
+249,Und hat es gerade offen?,Ist Gebäude 249 gerade offen?,1,3,0
+"Experimentelle Teilchenphysik (ETP), Institut für","Ist Gebäude Experimentelle Teilchenphysik (ETP), Institut für rollstuhlgerecht?",Is das Gebäude Experimentelle Teilchenphysik (ETP) rollstuhlgerecht?,1,1,0
+"Experimentelle Teilchenphysik (ETP), Institut für",Gibt es eine Website davon?,Gibt es eine Website für das Physik-Hochhaus?,-1,2,1
+"Anorganische Chemie, Institut für","Wann öffnet Gebäude Anorganische Chemie, Institut für?",Wann öffnet das Gebäude Anorganische Chemie?,1,1,0
+"Anorganische Chemie, Institut für",Wie komme ich dahin?,Wie komme ich zum Chemie-Turm III?,2,2,0
+"Anorganische Chemie, Institut für",Gibt es eine Website davon?,"Wie kann ich die Website von Chemie-Turm III (Anorganische Chemie, Institut für) finden?",1,3,0
+Fritz-Haller-Hörsaal,Wie komme ich zu Gebäude Fritz-Haller-Hörsaal?,Wie komme ich zum Fritz-Haller-Hörsaal?,-1,1,1
+Fritz-Haller-Hörsaal,Gibt es eine Website davon?,Gibt es eine Website zu Gebäude Fritz-Haller-Hörsaal?,-1,2,1
+Fritz-Haller-Hörsaal,Ist das auch rollstuhlgerecht?,Ist der Fritz-Haller-Hörsaal rollstuhlgerecht?,-1,3,1
+Mitfahrbank (Campus Süd): Schranke zur Westeinfahrt,Wie komme ich zu Gebäude Mitfahrbank (Campus Süd): Schranke zur Westeinfahrt?,Wie komme ich zur Schranke zur Westeinfahrt am Gebäude Mitfahrbank auf dem Campus Süd?,1,1,0
+Mitfahrbank (Campus Süd): Schranke zur Westeinfahrt,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten von Scientific Computing Center (Mitfahrbank (Campus Süd): Schranke zur Westeinfahrt)?,1,2,0
+Mitfahrbank (Campus Süd): Schranke zur Westeinfahrt,Ist das auch rollstuhlgerecht?,Ist das Scientific Computing Center rollstuhlgerecht?,3,3,0
+Mitfahrbank (Campus Süd): Schranke zur Westeinfahrt,Wo ist das?,Wo ist das Scientific Computing Center (Mitfahrbank (Campus Süd): Schranke zur Westeinfahrt)?,1,4,0
+10.63,Wie komme ich zu Gebäude 10.63?,Welches Gebäude ist Gebäude 10.63?,1,1,0
+10.63,Ist das auch rollstuhlgerecht?,Ist die Windkanalhalle rollstuhlgerecht?,1,2,0
+10.63,Wo ist das?,Wo ist die Windkanalhalle?,1,3,0
+10.63,Wann öffnet es?,Wann öffnet die Windkanalhalle?,1,4,0
+"Kolbenmaschinen, Institut für","Ist Gebäude Kolbenmaschinen, Institut für rollstuhlgerecht?",Welche Einrichtungen sind im Gebäude Kolbenmaschinen?,1,1,0
+"Kolbenmaschinen, Institut für",Wie lange ist das noch offen?,Wie lange ist das Institut für Kolbenmaschinen noch offen?,1,2,0
+"Kolbenmaschinen, Institut für",Wo ist das?,Wo ist das Institut für Kolbenmaschinen?,1,3,0
+9644,Was ist die Webseite von Gebäude 9644?,Welche Webseite gehört zum Gebäude 9644?,1,1,0
+9644,Ist das auch rollstuhlgerecht?,Ist Gebäude 9644 rollstuhlgerecht?,1,2,0
+9644,Wann öffnet es?,Wann öffnet Gebäude 9644?,1,3,0
+Schwerbehindertenvertretung (SBV) Campus Süd,Was ist die Webseite von Gebäude Schwerbehindertenvertretung (SBV) Campus Süd?,What ist die Webseite der SBV am Campus Süd?,1,1,0
+Schwerbehindertenvertretung (SBV) Campus Süd,Wie komme ich dahin?,Wie komme ich zum Kollegiengebäude am Ehrenhof?,-1,2,1
+Schwerbehindertenvertretung (SBV) Campus Süd,Wie lange ist das noch offen?,Wie lange ist das Kollegiengebäude am Ehrenhof offen?,5,3,0
+Schwerbehindertenvertretung (SBV) Campus Süd,Ist das auch rollstuhlgerecht?,Ist das Gebäude Schwerbehindertenvertretung (SBV) Campus Süd rollstuhlgerecht?,1,4,0
+124,Ist Gebäude 124 grade geöffnet?,Ist Gebäude 124 grade geöffnet?,1,1,0
+124,Wo ist das?,Wo ist die Ambulanz?,2,2,0
+"Technikzukünfte - Philosophie, Institut für","Wie komme ich zu Gebäude Technikzukünfte - Philosophie, Institut für?",Wie komme ich zum Gebäude Technikzukünfte Philosophie Institut?,1,1,0
+"Technikzukünfte - Philosophie, Institut für",Wo ist das?,Wo ist das Institut für Technikzukünfte - Philosophie?,1,2,0
+Technik-Haus,Ist Gebäude Technik-Haus rollstuhlgerecht?,Is das Gebäude Technik-Haus rollstuhlgerecht?,1,1,0
+Technik-Haus,Was sind die Öffnungszeiten?,What sind die Öffnungszeiten von Technik-Haus?,1,2,0
+Technik-Haus,Wo ist das?,Wo ist das Technik-Haus?,1,3,0
+10.31,Wie lange ist Gebäude 10.31 noch geöffnet?,Wie lange ist Gebäude 10.31 noch geöffnet?,1,1,0
+10.31,Wie komme ich dahin?,Wie komme ich zum Gebäude 10.31?,1,2,0
+10.31,Ist das auch rollstuhlgerecht?,Ist das Gebäude 10.31 rollstuhlgerecht?,1,3,0
+10.31,Gibt es eine Website davon?,Gibt es eine Website für das Kollegiengebäude Maschinenbau II (10.31)?,1,4,0
+05.01,Was sind die Öffnungszeiten von Gebäude 05.01?,What sind die Öffnungszeiten von Gebäude 05.01?,1,1,0
+05.01,Ist das auch rollstuhlgerecht?,Ist Gebäude 05.01 rollstuhlgerecht?,1,2,0
+05.01,Wie komme ich dahin?,Wie komme ich zum Gebäude 05.01?,1,3,0
+05.01,Gibt es eine Website davon?,Gibt es eine Website für Schwarzer Kater (05.01)?,1,4,0
+Zentrale Studienberatung (ZSB),Wo ist Gebäude Zentrale Studienberatung (ZSB)?,Wo ist das Gebäude Zentrale Studienberatung (ZSB)?,1,1,0
+Zentrale Studienberatung (ZSB),Wie komme ich dahin?,Wie komme ich zum Adolf-Würth-Gebäude?,2,2,0
+Zentrale Studienberatung (ZSB),Gibt es eine Website davon?,Gibt es eine Website für die Zentrale Studienberatung (ZSB) im Adolf-Würth-Gebäude?,1,3,0
+Zentrale Studienberatung (ZSB),Wann öffnet es?,Wann öffnet das Adolf-Würth-Gebäude?,2,4,0
+"Angewandte Betriebswirtschaftslehre und Unternehmensführung (IBU), Institut für","Was ist die Webseite von Gebäude Angewandte Betriebswirtschaftslehre und Unternehmensführung (IBU), Institut für?",What ist die Webseite des Instituts für Angewandte Betriebswirtschaftslehre und Unternehmensführung (IBU)?,1,1,0
+"Angewandte Betriebswirtschaftslehre und Unternehmensführung (IBU), Institut für",Wo ist das?,Wo ist das Institut für Angewandte Betriebswirtschaftslehre und Unternehmensführung (IBU)?,1,2,0
+"Angewandte Betriebswirtschaftslehre und Unternehmensführung (IBU), Institut für",Ist das auch rollstuhlgerecht?,Ist die Parkgarage Kaiserstraße rollstuhlgerecht?,2,3,0
+10.50,Wie komme ich zu Gebäude 10.50?,Welches Gebäude ist Gebäude 10.50?,2,1,0
+10.50,Wie lange ist das noch offen?,Wie lange ist das Bauingenieurshochhaus (10.50) noch offen?,2,2,0
+11.10,Was sind die Öffnungszeiten von Gebäude 11.10?,Was sind die Öffnungszeiten von Gebäude 11.10?,3,1,0
+11.10,Wo ist das?,Wo ist das Elektrotechnische Institut?,-1,2,1
+Sicherheit und Umwelt (SUM),Was ist die Webseite von Gebäude Sicherheit und Umwelt (SUM)?,Welche Webseite hat das Gebäude Sicherheit und Umwelt (SUM)?,1,1,0
+Sicherheit und Umwelt (SUM),Ist das auch rollstuhlgerecht?,Ist das Gebäude von Sicherheit und Umwelt (SUM) rollstuhlgerecht?,1,2,0
+802,Wie komme ich zu Gebäude 802?,Welches Gebäude ist Gebäude 802?,1,1,0
+802,Ist das auch rollstuhlgerecht?,Ist Gebäude 802 rollstuhlgerecht?,1,2,0
+802,Gibt es eine Website davon?,Gibt es eine Website für Gebäude 802?,1,3,0
+802,Und hat es gerade offen?,Gibt es in Gebäude 802 gerade geöffnet?,1,4,0
+309,Wo ist Gebäude 309?,Welches Gebäude ist Gebäude 309?,1,1,0
+309,Wie komme ich dahin?,Wie komme ich zu Gebäude 309?,1,2,0
+309,Ist das auch rollstuhlgerecht?,Ist Gebäude 309 rollstuhlgerecht?,1,3,0
+429,Was ist die Webseite von Gebäude 429?,Welche Webseite gehört zum Gebäude 429?,1,1,0
+429,Wie komme ich dahin?,Wie komme ich zum Gebäude 429?,1,2,0
+Elektrotechnisches Institut (ETI),Was ist die Webseite von Gebäude Elektrotechnisches Institut (ETI)?,Welche Webseite des Gebäudes des Elektrotechnischen Instituts (ETI),1,1,0
+Elektrotechnisches Institut (ETI),Wie komme ich dahin?,Wie komme ich zum Elektrotechnischen Institut (ETI)?,1,2,0
+Elektrotechnisches Institut (ETI),Wo ist das?,Wo ist das Elektrotechnische Institut (ETI)?,1,3,0
+Chemie-Hörsaal I,Wie komme ich zu Gebäude Chemie-Hörsaal I?,Wie komme ich zum Gebäude Chemie-Hörsaal I?,-1,1,1
+Chemie-Hörsaal I,Gibt es eine Website davon?,Gibt es eine Website für Gebäude Chemie-Hörsaal I?,-1,2,1
+Chemie-Hörsaal I,Wie lange ist das noch offen?,Wie lange ist Gebäude Chemie-Hörsaal I noch offen?,-1,3,1
+Fachschaft WiWi,Wo ist Gebäude Fachschaft WiWi?,Wo ist die Fachschaft WiWi?,1,1,0
+Fachschaft WiWi,Ist das auch rollstuhlgerecht?,Is das Gebäude der Fachschaft WiWi rollstuhlgerecht?,1,2,0
+Fachschaft WiWi,Wie komme ich dahin?,Wie komme ich zum Gebäude der Fachschaft WiWi?,1,3,0
+Fachschaft WiWi,Und hat es gerade offen?,Is das Gebäude der Fachschaft WiWi gerade geöffnet?,1,4,0
+456,Wo ist Gebäude 456?,Wo befindet sich Gebäude 456?,1,1,0
+456,Ist das auch rollstuhlgerecht?,Ist die GODZILLA Test-Facility Beryllide-Production rollstuhlgerecht?,3,2,0
+456,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten von GODZILLA Test-Facility Beryllide-Production (456)?,1,3,0
+456,Wie komme ich dahin?,Wie komme ich zur GODZILLA Test-Facility Beryllide-Production (456)?,1,4,0
+Bauingenieure-Hörsaal,Was ist die Webseite von Gebäude Bauingenieure-Hörsaal?,Welche Webseite gibt es für das Gebäude Bauingenieure-Hörsaal?,-1,1,1
+Bauingenieure-Hörsaal,Wann öffnet es?,Wann öffnet der Bauingenieure-Hörsaal?,-1,2,1
+692,Wo ist Gebäude 692?,Welches Gebäude ist Gebäude 692?,1,1,0
+692,Gibt es eine Website davon?,Gibt es eine Website für Gebäude 692?,1,2,0
+692,Und hat es gerade offen?,Hat Gebäude 692 gerade geöffnet?,1,3,0
+692,Ist das auch rollstuhlgerecht?,Ist Gebäude 692 rollstuhlgerecht?,1,4,0
+516,Was ist die Webseite von Gebäude 516?,Welche Webseite gehört zum Gebäude 516?,1,1,0
+516,Wie komme ich dahin?,Wie komme ich zum Gebäude 516?,1,2,0
+417,Wann öffnet Gebäude 417?,Wann öffnet Gebäude 417?,1,1,0
+417,Wie komme ich dahin?,Wie komme ich zum Gebäude 417?,1,2,0
+417,Ist das auch rollstuhlgerecht?,Ist Gebäude 417 rollstuhlgerecht?,1,3,0
+01.96,Was sind die Öffnungszeiten von Gebäude 01.96?,Was sind die Öffnungszeiten von Gebäude 01.96?,1,1,0
+01.96,Wie komme ich dahin?,Wie komme ich zu Gebäude 01.96?,1,2,0
+01.96,Wo ist das?,Wo ist Gebäude 01.96?,1,3,0
+"Technikzukünfte - Philosophie, Institut für","Wo ist Gebäude Technikzukünfte - Philosophie, Institut für?",Wo sind Gebäude Technikzukünfte und Philosophie?,1,1,0
+"Technikzukünfte - Philosophie, Institut für",Wie komme ich dahin?,Wie komme ich zum Institut für Technikzukünfte - Philosophie?,1,2,0
+"Technikzukünfte - Philosophie, Institut für",Und hat es gerade offen?,Hat das Institut für Technikzukünfte - Philosophie gerade geöffnet?,1,3,0
+10.64,Was ist die Webseite von Gebäude 10.64?,Welche Webseite hat Gebäude 10.64?,1,1,0
+10.64,Wie komme ich dahin?,Wie komme ich zum Gebäude 10.64?,1,2,0
+10.64,Wo ist das?,Wo ist Gebäude 10.64?,1,3,0
+259,Wie komme ich zu Gebäude 259?,Welches Gebäude ist Gebäude 259?,1,1,0
+259,Ist das auch rollstuhlgerecht?,Is Gebäude 259 rollstuhlgerecht?,1,2,0
+259,Gibt es eine Website davon?,Gibt es eine Website für Gebäude 259?,1,3,0
+259,Wo ist das?,Wo ist Gebäude 259?,1,4,0
+522,Was ist die Webseite von Gebäude 522?,Welche Webseite hat Gebäude 522?,1,1,0
+522,Wann öffnet es?,Wann öffnet Gebäude 522?,1,2,0
+522,Wie komme ich dahin?,Wie komme ich zum Gebäude 522?,1,3,0
+B524,Wie komme ich zu Gebäude B524?,Welches Gebäude ist B524?,1,1,0
+B524,Wo ist das?,Wo ist Gebäude B524?,1,2,0
+B524,Ist das auch rollstuhlgerecht?,Ist Gebäude B524 rollstuhlgerecht?,1,3,0
+805,Wie komme ich zu Gebäude 805?,Welches Gebäude ist Gebäude 805?,1,1,0
+805,Wo ist das?,Wo ist Gebäude 805?,1,2,0
+805,Gibt es eine Website davon?,Welche Website gibt es zu Gebäude 805?,1,3,0
+70.16,Wo ist Gebäude 70.16?,Wo ist Gebäude 70.16?,1,1,0
+70.16,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten von Gebäude 70.16?,1,2,0
+70.16,Wie komme ich dahin?,Wie komme ich zu Gebäude 70.16?,1,3,0
+3300,Wo ist Gebäude 3300?,Wo befindet sich Gebäude 3300?,1,1,0
+3300,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten von Gebäude 3300?,1,2,0
+3300,Wie komme ich dahin?,Wie komme ich zum Gebäude 3300?,1,3,0
+"Prozessdatenverarbeitung und Elektronik (IPE), Institut für","Wie komme ich zu Gebäude Prozessdatenverarbeitung und Elektronik (IPE), Institut für?",Wo befindet sich das Institut für Prozessdatenverarbeitung und Elektronik (IPE)?,1,1,0
+"Prozessdatenverarbeitung und Elektronik (IPE), Institut für",Gibt es eine Website davon?,Welche Website gibt es für das Institut für Prozessdatenverarbeitung und Elektronik (IPE)?,1,2,0
+"Prozessdatenverarbeitung und Elektronik (IPE), Institut für",Und hat es gerade offen?,Hat das Institut für Prozessdatenverarbeitung und Elektronik (IPE) gerade geöffnet?,1,3,0
+B254,Wo ist Gebäude B254?,Welches Gebäude ist B254?,2,1,0
+B254,Gibt es eine Website davon?,Gibt es eine Website zu Gebäude B254?,2,2,0
+07.21,Was ist die Webseite von Gebäude 07.21?,Welche Webseite gehört zum Gebäude 07.21?,1,1,0
+07.21,Wie komme ich dahin?,Wie komme ich zum KIT-CDNC Chair of Dependable Nano Computing?,1,2,0
+07.21,Wo ist das?,Wo ist das KIT-CDNC Chair of Dependable Nano Computing?,1,3,0
+690,Wo ist Gebäude 690?,Wo befindet sich Gebäude 690?,1,1,0
+690,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten von Gebäude 690?,1,2,0
+690,Gibt es eine Website davon?,Welche Website zu Gebäude 690 gibt es?,1,3,0
+690,Ist das auch rollstuhlgerecht?,Ist Gebäude 690 rollstuhlgerecht?,1,4,0
+"Maschinenbau, KIT-Fakultät für","Wie komme ich zu Gebäude Maschinenbau, KIT-Fakultät für?",Wie komme ich zum Gebäude Maschinenbau?,1,1,0
+"Maschinenbau, KIT-Fakultät für",Wo ist das?,Wo ist das Alte Maschinenbaugebäude?,-1,2,1
+"Maschinenbau, KIT-Fakultät für",Ist das auch rollstuhlgerecht?,Ist das Alte Maschinenbaugebäude rollstuhlgerecht?,5,3,0
+"Maschinenbau, KIT-Fakultät für",Gibt es eine Website davon?,Gibt es eine Website für das Alte Maschinenbaugebäude der KIT-Fakultät für Maschinenbau?,1,4,0
+223/1,Ist Gebäude 223/1 rollstuhlgerecht?,Is Gebäude 223/1 rollstuhlgerecht?,2,1,0
+223/1,Gibt es eine Website davon?,Gibt es eine Website zu Gebäude 223/1?,2,2,0
+223/1,Wo ist das?,Wo ist Gebäude 223/1?,2,3,0
+223/1,Wie komme ich dahin?,Wo ist Gebäude 223/1?,2,4,0
+01.85,Wie komme ich zu Gebäude 01.85?,Welches Gebäude ist Gebäude 01.85?,1,1,0
+01.85,Wo ist das?,Wo ist Gebäude 01.85?,1,2,0
+01.85,Ist das auch rollstuhlgerecht?,Ist Gebäude 01.85 rollstuhlgerecht?,1,3,0
+01.85,Gibt es eine Website davon?,"""Was ist über Gebäude 01.85 auf der Website der Universität zu finden?""",1,4,0
+Fachschaft Sport,Wie lange ist Gebäude Fachschaft Sport noch geöffnet?,Wie lange ist das Gebäude der Fachschaft Sport noch geöffnet?,1,1,0
+Fachschaft Sport,Gibt es eine Website davon?,Gibt es eine Website für die Fachschaft Sport?,1,2,0
+Fachschaft Sport,Wo ist das?,Wo ist die Fachschaft Sport?,1,3,0
+Fachschaft Sport,Wie komme ich dahin?,Wo ist die Fachschaft Sport?,1,4,0
+406,Was ist die Webseite von Gebäude 406?,Welche Webseite gehört zum Gebäude 406?,1,1,0
+406,Wie komme ich dahin?,Wie komme ich zum Gebäude 406?,1,2,0
+30.36,Ist Gebäude 30.36 rollstuhlgerecht?,Is Gebäude 30.36 rollstuhlgerecht?,1,1,0
+30.36,Wie komme ich dahin?,Wie komme ich zum Gebäude 30.36?,1,2,0
+30.36,Und hat es gerade offen?,Hat Gebäude 30.36 gerade offen?,1,3,0
+30.36,Wo ist das?,Wo ist Gebäude 30.36?,1,4,0
+Internationales (INTL),Wie komme ich zu Gebäude Internationales (INTL)?,Wie komme ich zum Gebäude INTL?,4,1,0
+Internationales (INTL),Gibt es eine Website davon?,Gibt es eine Website für das Gebäude Internationales (INTL)?,2,2,0
+Internationales (INTL),Ist das auch rollstuhlgerecht?,Ist das Gebäude Internationales (INTL) rollstuhlgerecht?,3,3,0
+Internationales (INTL),Und hat es gerade offen?,Ist das Gebäude Internationales (INTL) gerade offen?,3,4,0
+"Entrepreneurship, Technologie-Management und Innovation (EnTechnon), Institut für","Was ist die Webseite von Gebäude Entrepreneurship, Technologie-Management und Innovation (EnTechnon), Institut für?","What ist die Webseite des Instituts für Entrepreneurship, Technologie-Management und Innovation (EnTechnon)?",1,1,0
+"Entrepreneurship, Technologie-Management und Innovation (EnTechnon), Institut für",Und hat es gerade offen?,Welche Öffnungszeiten hat das Zähringerhaus?,3,2,0
+"Entrepreneurship, Technologie-Management und Innovation (EnTechnon), Institut für",Wo ist das?,Wo ist das Zähringerhaus?,2,3,0
+"Entrepreneurship, Technologie-Management und Innovation (EnTechnon), Institut für",Wie komme ich dahin?,Wo ist das Zähringerhaus?,2,4,0
+9651,Wo ist Gebäude 9651?,Wo befindet sich Gebäude 9651?,1,1,0
+9651,Gibt es eine Website davon?,Gibt es eine Website für Gebäude 9651?,1,2,0
+9651,Wie komme ich dahin?,Wie komme ich zu Gebäude 9651?,1,3,0
+807,Ist Gebäude 807 grade geöffnet?,Is Gebäude 807 geöffnet?,1,1,0
+807,Ist das auch rollstuhlgerecht?,Ist Gebäude 807 rollstuhlgerecht?,1,2,0
+804,Wo ist Gebäude 804?,Welches Gebäude ist Gebäude 804?,1,1,0
+804,Wie komme ich dahin?,Wie komme ich zu Gebäude 804?,1,2,0
+804,Ist das auch rollstuhlgerecht?,Ist Gebäude 804 rollstuhlgerecht?,1,3,0
+10.86,Wo ist Gebäude 10.86?,Wo befindet sich Gebäude 10.86?,1,1,0
+10.86,Wie komme ich dahin?,Wie komme ich zu Gebäude 10.86?,1,2,0
+10.86,Gibt es eine Website davon?,Welche Informationen über Gebäude 10.86 gibt es?,1,3,0
+712,Wie komme ich zu Gebäude 712?,Welches Gebäude ist Gebäude 712?,1,1,0
+712,Ist das auch rollstuhlgerecht?,Is Gebäude 712 rollstuhlgerecht?,1,2,0
+712,Wo ist das?,Wo ist Gebäude 712?,1,3,0
+712,Gibt es eine Website davon?,Wo ist die Website von Gebäude 712?,1,4,0
+Meteorologie und Klimaforschung  - Troposphäre (IMK-TRO),Ist Gebäude Meteorologie und Klimaforschung  - Troposphäre (IMK-TRO) rollstuhlgerecht?,Is das Gebäude Meteorologie und Klimaforschung - Troposphäre (IMK-TRO) rollstuhlgerecht?,1,1,0
+Meteorologie und Klimaforschung  - Troposphäre (IMK-TRO),Wo ist das?,Wo ist das Physik-Hochhaus?,-1,2,1
+Meteorologie und Klimaforschung  - Troposphäre (IMK-TRO),Wie komme ich dahin?,Wie komme ich zum Physik-Hochhaus (Meteorologie und Klimaforschung - Troposphäre (IMK-TRO))?,1,3,0
+10.95,Was ist die Webseite von Gebäude 10.95?,Welche Webseite hat Gebäude 10.95?,1,1,0
+10.95,Wo ist das?,Wo ist Gebäude 10.95?,1,2,0
+10.95,Wie komme ich dahin?,Wo ist Gebäude 10.95?,1,3,0
+"Bereich II - Informatik, Wirtschaft und Gesellschaft (CN)","Wann öffnet Gebäude Bereich II - Informatik, Wirtschaft und Gesellschaft (CN)?","Wann öffnet Gebäude Bereich II - Informatik, Wirtschaft und Gesellschaft?",2,1,0
+"Bereich II - Informatik, Wirtschaft und Gesellschaft (CN)",Wie komme ich dahin?,"Wie komme ich zum Gebäude Bereich II - Informatik, Wirtschaft und Gesellschaft (CN)?",1,2,0
+"Bereich II - Informatik, Wirtschaft und Gesellschaft (CN)",Gibt es eine Website davon?,"Welche Website gibt es für den Bereich II - Informatik, Wirtschaft und Gesellschaft (CN)?",1,3,0
+"Bereich II - Informatik, Wirtschaft und Gesellschaft (CN)",Ist das auch rollstuhlgerecht?,"Ist das Gebäude Bereich II - Informatik, Wirtschaft und Gesellschaft (CN) rollstuhlgerecht?",1,4,0
+757,Was ist die Webseite von Gebäude 757?,Welche Webseite gibt es für Gebäude 757?,1,1,0
+757,Wie komme ich dahin?,Wie komme ich zum Gebäude 757?,1,2,0
+757,Wie lange ist das noch offen?,Wie lange ist Gebäude 757 noch geöffnet?,1,3,0
+240,Wie komme ich zu Gebäude 240?,Welches Gebäude ist Gebäude 240?,1,1,0
+240,Wo ist das?,Wo ist Gebäude 240?,1,2,0
+240,Wann öffnet es?,Wann öffnet Gebäude 240?,1,3,0
+240,Gibt es eine Website davon?,Welche Website gibt es zu Gebäude 240?,1,4,0
+640,Ist Gebäude 640 rollstuhlgerecht?,Is Gebäude 640 rollstuhlgerecht?,1,1,0
+640,Wo ist das?,Wo ist Gebäude 640?,1,2,0
+640,Wie komme ich dahin?,Wo ist Gebäude 640?,1,3,0
+246,Wo ist Gebäude 246?,Welches Gebäude ist Gebäude 246?,1,1,0
+246,Wie komme ich dahin?,Wie komme ich zum Gebäude 246?,1,2,0
+246,Wie lange ist das noch offen?,Wie lange ist Gebäude 246 noch offen?,1,3,0
+717,Was sind die Öffnungszeiten von Gebäude 717?,What sind die Öffnungszeiten von Gebäude 717?,1,1,0
+717,Wo ist das?,Wo ist Gebäude 717?,1,2,0
+717,Wie komme ich dahin?,Wo ist Gebäude 717?,1,3,0
+717,Ist das auch rollstuhlgerecht?,Ist Gebäude 717 rollstuhlgerecht?,1,4,0
+332,Wie komme ich zu Gebäude 332?,Welches Gebäude ist Gebäude 332?,1,1,0
+332,Wie lange ist das noch offen?,Wie lange ist Gebäude 332 noch offen?,1,2,0
+International Scholars & Welcome Office (Campus Nord),Ist Gebäude International Scholars & Welcome Office (Campus Nord) grade geöffnet?,What sind die Öffnungszeiten des Gebäudes International Scholars & Welcome Office (Campus Nord)?,1,1,0
+International Scholars & Welcome Office (Campus Nord),Wo ist das?,Wo ist das International Scholars & Welcome Office (Campus Nord)?,1,2,0
+International Scholars & Welcome Office (Campus Nord),Wie komme ich dahin?,Wo ist das International Scholars & Welcome Office (Campus Nord)?,1,3,0
+"Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  für","Wo ist Gebäude Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  für?",Welches Gebäude beherbergt das IAM-ET?,4,1,0
+"Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  für",Wann öffnet es?,"Wann öffnet das Forschungszentrum Umwelt (Angewandte Materialien - Elektrochemische Technologien (IAM-ET), Institut  für)?",1,2,0
+306,Ist Gebäude 306 rollstuhlgerecht?,Is Gebäude 306 rollstuhlgerecht?,1,1,0
+306,Wo ist das?,Wo ist Gebäude 306?,1,2,0
+803,Was sind die Öffnungszeiten von Gebäude 803?,What sind die Öffnungszeiten von Gebäude 803?,1,1,0
+803,Wo ist das?,Wo ist Gebäude 803?,1,2,0
+803,Ist das auch rollstuhlgerecht?,Ist Gebäude 803 rollstuhlgerecht?,1,3,0
+803,Wie komme ich dahin?,Wo ist Gebäude 803?,1,4,0
+"Berufspädagogik und Allgemeine Pädagogik (IBAP), Institut für","Wie komme ich zu Gebäude Berufspädagogik und Allgemeine Pädagogik (IBAP), Institut für?",Wie komme ich zum Institut für Berufspädagogik und Allgemeine Pädagogik (IBAP)?,1,1,0
+"Berufspädagogik und Allgemeine Pädagogik (IBAP), Institut für",Gibt es eine Website davon?,Welche Website gibt es für das Institut für Berufspädagogik und Allgemeine Pädagogik (IBAP)?,1,2,0
+"Berufspädagogik und Allgemeine Pädagogik (IBAP), Institut für",Wo ist das?,Wo ist das Institut für Berufspädagogik und Allgemeine Pädagogik (IBAP)?,1,3,0
+"Berufspädagogik und Allgemeine Pädagogik (IBAP), Institut für",Wie lange ist das noch offen?,Welche Öffnungszeiten hat das Institut für Berufspädagogik und Allgemeine Pädagogik (IBAP)?,1,4,0
+10.12,Ist Gebäude 10.12 grade geöffnet?,Ist Gebäude 10.12 geöffnet?,1,1,0
+10.12,Wo ist das?,Wo ist der Studierendenservice?,3,2,0
+518,Ist Gebäude 518 rollstuhlgerecht?,Is Gebäude 518 rollstuhlgerecht?,1,1,0
+518,Wie komme ich dahin?,Wie komme ich zum Gebäude 518?,1,2,0
+518,Wo ist das?,Wo ist Gebäude 518?,1,3,0
+10.83,Ist Gebäude 10.83 rollstuhlgerecht?,Is Gebäude 10.83 rollstuhlgerecht?,1,1,0
+10.83,Wie komme ich dahin?,Wie komme ich zum Institut für Wasser und Gewässerentwicklung - Bereich Wasserwirtschaft und Kulturtechnik?,1,2,0
+Geodätisches Institut (GIK),Was ist die Webseite von Gebäude Geodätisches Institut (GIK)?,Welche Webseite hat das Geodätische Institut (GIK)?,1,1,0
+Geodätisches Institut (GIK),Wie lange ist das noch offen?,Wie lange ist das Geodätische Institut (GIK) noch geöffnet?,1,2,0
+"Technikzukünfte - Geschichte, Institut für","Wann öffnet Gebäude Technikzukünfte - Geschichte, Institut für?","Wann öffnet das Gebäude Technikzukünfte - Geschichte, Institut für?",1,1,0
+"Technikzukünfte - Geschichte, Institut für",Wo ist das?,Wo ist das Institut für Technikzukünfte - Geschichte?,1,2,0
+"Technikzukünfte - Geschichte, Institut für",Ist das auch rollstuhlgerecht?,Ist das Institut für Technikzukünfte - Geschichte rollstuhlgerecht?,1,3,0
+Otto-Lehmann-Hörsaal,Wo ist Gebäude Otto-Lehmann-Hörsaal?,Wo ist der Otto-Lehmann-Hörsaal?,-1,1,1
+Otto-Lehmann-Hörsaal,Ist das auch rollstuhlgerecht?,Is das Gebäude Otto-Lehmann-Hörsaal rollstuhlgerecht?,-1,2,1
+686,Wie komme ich zu Gebäude 686?,Welche Gebäudeinformationen gibt es zu Gebäude 686?,1,1,0
+686,Wo ist das?,Wo ist Gebäude 686?,1,2,0
+326,Wo ist Gebäude 326?,Welches Gebäude ist Gebäude 326?,1,1,0
+326,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten von Gebäude 326?,1,2,0
+229,Ist Gebäude 229 rollstuhlgerecht?,Is Gebäude 229 rollstuhlgerecht?,1,1,0
+229,Wie komme ich dahin?,Wie komme ich zum Gebäude 229?,1,2,0
+229,Wo ist das?,Wo ist Gebäude 229?,1,3,0
+229,Gibt es eine Website davon?,Wo ist die Website von Gebäude 229?,1,4,0
+769,Was ist die Webseite von Gebäude 769?,Welche Webseite gehört zum Gebäude 769?,1,1,0
+769,Und hat es gerade offen?,Hat Gebäude 769 gerade geöffnet?,1,2,0
+769,Wo ist das?,Wo ist Gebäude 769?,1,3,0
+"Massivbau und Baustofftechnologie, Institut für","Wie komme ich zu Gebäude Massivbau und Baustofftechnologie, Institut für?",Wo befindet sich das Institut für Massivbau und Baustofftechnologie?,1,1,0
+"Massivbau und Baustofftechnologie, Institut für",Ist das auch rollstuhlgerecht?,Ist das Gebäude Massivbau und Baustofftechnologie rollstuhlgerecht?,1,2,0
+"Massivbau und Baustofftechnologie, Institut für",Wie lange ist das noch offen?,Wie lange ist das Kollegiengebäude Bauingenieurwesen III offen?,5,3,0
+"Massivbau und Baustofftechnologie, Institut für",Wo ist das?,Wo ist das Kollegiengebäude Bauingenieurwesen III?,5,4,0
+301,Wo ist Gebäude 301?,Welches Gebäude ist Gebäude 301?,1,1,0
+301,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten von Gebäude 301?,1,2,0
+301,Gibt es eine Website davon?,Welche Website gibt es zu Gebäude 301?,1,3,0
+464,Ist Gebäude 464 rollstuhlgerecht?,Is Gebäude 464 rollstuhlgerecht?,1,1,0
+464,Gibt es eine Website davon?,Gibt es eine Website für die GODZILLA Test-Facility Beryllide-Production (464)?,1,2,0
+464,Wo ist das?,Wo ist die GODZILLA Test-Facility Beryllide-Production?,3,3,0
+464,Und hat es gerade offen?,Ist Gebäude 464 gerade offen?,1,4,0
+739,Was ist die Webseite von Gebäude 739?,Welche Webseite hat Gebäude 739?,1,1,0
+739,Ist das auch rollstuhlgerecht?,Is Gebäude 739 rollstuhlgerecht?,1,2,0
+739,Wo ist das?,Wo ist Gebäude 739?,1,3,0
+Interfakultatives Institut für Anwendungen der Informatik,Ist Gebäude Interfakultatives Institut für Anwendungen der Informatik grade geöffnet?,Is das Interfakultative Institut für Anwendungen der Informatik geöffnet?,1,1,0
+Interfakultatives Institut für Anwendungen der Informatik,Ist das auch rollstuhlgerecht?,Is das Physik-Hochhaus rollstuhlgerecht?,-1,2,1
+Chemie-Hörsaal II,Was sind die Öffnungszeiten von Gebäude Chemie-Hörsaal II?,Was sind die Öffnungszeiten von Chemie-Hörsaal II?,-1,1,1
+Chemie-Hörsaal II,Gibt es eine Website davon?,Gibt es eine Website für die Öffnungszeiten von Gebäude Chemie-Hörsaal II?,-1,2,1
+573,Ist Gebäude 573 rollstuhlgerecht?,Is Gebäude 573 rollstuhlgerecht?,1,1,0
+573,Gibt es eine Website davon?,Gibt es eine Website zu Gebäude 573?,1,2,0
+573,Wie komme ich dahin?,Wie komme ich zum Gebäude 573?,1,3,0
+573,Wo ist das?,Wo ist Gebäude 573?,1,4,0
+"Elektroenergiesysteme und Hochspannungstechnik , Institut für","Was ist die Webseite von Gebäude Elektroenergiesysteme und Hochspannungstechnik , Institut für?",Welche Webseite hat das Institut für Gebäude Elektroenergiesysteme und Hochspannungstechnik?,1,1,0
+"Elektroenergiesysteme und Hochspannungstechnik , Institut für",Wie lange ist das noch offen?,Wie lange ist das Institut für Elektroenergiesysteme und Hochspannungstechnik noch offen?,1,2,0
+421,Ist Gebäude 421 rollstuhlgerecht?,What sind die Zugänglichkeitsmerkmale von Gebäude 421?,1,1,0
+421,Gibt es eine Website davon?,Gibt es eine Website für das Institut für Hochleistungsimpuls- und Mikrowellentechnik (421)?,1,2,0
+11.30,Wo ist Gebäude 11.30?,Wo befindet sich Gebäude 11.30?,1,1,0
+11.30,Wie komme ich dahin?,Wie komme ich zum Adolf-Würth-Gebäude?,1,2,0
+11.30,Ist das auch rollstuhlgerecht?,Ist das Adolf-Würth-Gebäude rollstuhlgerecht?,1,3,0
+11.30,Gibt es eine Website davon?,Welche Informationen gibt es über das Adolf-Würth-Gebäude (11.30)?,1,4,0
+Neuer Hörsaal Chemie,Wie komme ich zu Gebäude Neuer Hörsaal Chemie?,Wie komme ich zum Neuen Hörsaal der Chemie?,-1,1,1
+Neuer Hörsaal Chemie,Wo ist das?,Wo ist Gebäude Neuer Hörsaal Chemie?,-1,2,1
+06.45,Wo ist Gebäude 06.45?,Wo ist Gebäude 06.45?,1,1,0
+06.45,Gibt es eine Website davon?,Gibt es eine Website für Westhochschule (06.45)?,1,2,0
+752,Wo ist Gebäude 752?,Welches Gebäude ist Gebäude 752?,1,1,0
+752,Wie komme ich dahin?,Wie komme ich zu Gebäude 752?,1,2,0
+752,Wie lange ist das noch offen?,Wie lange ist Gebäude 752 noch offen?,1,3,0
+752,Gibt es eine Website davon?,Welche Informationen über Gebäude 752 gibt es?,1,4,0
+428,Was ist die Webseite von Gebäude 428?,Welche Webseite gehört zum Gebäude 428?,1,1,0
+428,Wann öffnet es?,Wann öffnet Gebäude 428?,1,2,0
+428,Wie komme ich dahin?,Wie komme ich zum Gebäude 428?,1,3,0
+Institut für Arbeitswissenschaft und Betriebsorganisation (ifab),Wo ist Gebäude Institut für Arbeitswissenschaft und Betriebsorganisation (ifab)?,Wo ist das Gebäude des Instituts für Arbeitswissenschaft und Betriebsorganisation (ifab)?,1,1,0
+Institut für Arbeitswissenschaft und Betriebsorganisation (ifab),Gibt es eine Website davon?,Gibt es eine Website für das Institut für Arbeitswissenschaft und Betriebsorganisation (ifab)?,1,2,0
+607,Wie komme ich zu Gebäude 607?,Welches Gebäude ist Gebäude 607?,1,1,0
+607,Gibt es eine Website davon?,Gibt es eine Website für Gebäude 607?,1,2,0
+607,Wie lange ist das noch offen?,Wie lange ist Gebäude 607 noch geöffnet?,1,3,0
+Fachbibliothek WIWI,Wo ist Gebäude Fachbibliothek WIWI?,Wo ist die Fachbibliothek WIWI?,1,1,0
+Fachbibliothek WIWI,Ist das auch rollstuhlgerecht?,Ist die Wirtschaftswissenschaftliche Fakultätsbibliothek (Fachbibliothek WIWI) rollstuhlgerecht?,1,2,0
+Fachbibliothek WIWI,Wie lange ist das noch offen?,Wie lange ist die Wirtschaftswissenschaftliche Fakultätsbibliothek (Fachbibliothek WIWI) noch offen?,1,3,0
+Fachbibliothek WIWI,Wie komme ich dahin?,Wie komme ich zur Wirtschaftswissenschaftlichen Fakultätsbibliothek (Fachbibliothek WIWI)?,1,4,0
+681,Ist Gebäude 681 rollstuhlgerecht?,Is Gebäude 681 rollstuhlgerecht?,1,1,0
+681,Gibt es eine Website davon?,Gibt es eine Website zu Gebäude 681?,1,2,0
+665,Ist Gebäude 665 rollstuhlgerecht?,Is Gebäude 665 rollstuhlgerecht?,1,1,0
+665,Wo ist das?,Wo ist Gebäude 665?,1,2,0
+665,Gibt es eine Website davon?,Welche Informationen zu Gebäude 665 gibt es?,1,3,0
+665,Und hat es gerade offen?,Hat Gebäude 665 gerade geöffnet?,1,4,0
+Medizinische Dienste (MED) CN,Wie komme ich zu Gebäude Medizinische Dienste (MED) CN?,Wie komme ich zu Gebäude MED?,-1,1,1
+Medizinische Dienste (MED) CN,Ist das auch rollstuhlgerecht?,Is das Gebäude Medizinische Dienste (MED) CN rollstuhlgerecht?,1,2,0
+70.11,Ist Gebäude 70.11 rollstuhlgerecht?,What sind die Zugänglichkeitsmerkmale von Gebäude 70.11?,1,1,0
+70.11,Und hat es gerade offen?,Hat Gebäude 70.11 gerade geöffnet?,1,2,0
+70.11,Wie komme ich dahin?,Wie komme ich zum Gebäude 70.11?,1,3,0
+70.11,Gibt es eine Website davon?,"""Findet man Informationen zu Gebäude 70.11 online?""",1,4,0
+"Customer Insights, Institute for ","Wie komme ich zu Gebäude Customer Insights, Institute for ?",Welche Gebäude beherbergen das Institute for Customer Insights?,1,1,0
+"Customer Insights, Institute for ",Wo ist das?,"Wo ist Gebäude Customer Insights, Institute for?",1,2,0
+"Customer Insights, Institute for ",Und hat es gerade offen?,"Welche Öffnungszeiten hat das Gebäude Customer Insights, Institute for?",1,3,0
+"Customer Insights, Institute for ",Ist das auch rollstuhlgerecht?,"Ist das Gebäude Customer Insights, Institute for rollstuhlgerecht?",1,4,0
+510,Was ist die Webseite von Gebäude 510?,Welche Webseite gehört zum Gebäude 510?,1,1,0
+510,Ist das auch rollstuhlgerecht?,Ist Gebäude 510 rollstuhlgerecht?,1,2,0
+510,Wann öffnet es?,Wann öffnet Gebäude 510?,1,3,0
+510,Wie komme ich dahin?,Wie komme ich zum Gebäude 510?,1,4,0
+50.21,Wie komme ich zu Gebäude 50.21?,Welches Gebäude ist Gebäude 50.21?,1,1,0
+50.21,Gibt es eine Website davon?,Gibt es eine Website zu Gebäude 50.21?,1,2,0
+50.34,Wie komme ich zu Gebäude 50.34?,Welches Gebäude ist Gebäude 50.34?,1,1,0
+50.34,Gibt es eine Website davon?,Gibt es eine Website für Gebäude 50.34?,1,2,0
+50.34,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten von Informatikbau 50.34?,1,3,0
+50.34,Ist das auch rollstuhlgerecht?,Ist der Informatikbau rollstuhlgerecht?,-1,4,1
+01.94,Wie komme ich zu Gebäude 01.94?,Welches Gebäude ist Gebäude 01.94?,1,1,0
+01.94,Ist das auch rollstuhlgerecht?,Is Gebäude 01.94 rollstuhlgerecht?,1,2,0
+451,Was sind die Öffnungszeiten von Gebäude 451?,What sind die Öffnungszeiten von Gebäude 451?,1,1,0
+451,Wie komme ich dahin?,Wie komme ich zu Gebäude 451?,1,2,0
+451,Wo ist das?,Wo ist Gebäude 451?,1,3,0
+451,Gibt es eine Website davon?,Wo ist die Website von Gebäude 451?,1,4,0
+303,Wo ist Gebäude 303?,Welches Gebäude ist Gebäude 303?,1,1,0
+303,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten der KIT-Bibliothek Nord?,4,2,0
+260/1,Was sind die Öffnungszeiten von Gebäude 260/1?,Welche Öffnungszeiten hat Gebäude 260/1?,2,1,0
+260/1,Ist das auch rollstuhlgerecht?,Ist Gebäude 260/1 rollstuhlgerecht?,2,2,0
+260/1,Wo ist das?,Wo ist Gebäude 260/1?,2,3,0
+10.11,Ist Gebäude 10.11 rollstuhlgerecht?,Is Gebäude 10.11 rollstuhlgerecht?,2,1,0
+10.11,Wo ist das?,Wo ist das Hauptgebäude?,1,2,0
+10.11,Wie komme ich dahin?,Wo ist das Hauptgebäude 10.11?,2,3,0
+724,Wann öffnet Gebäude 724?,Wann öffnet Gebäude 724?,1,1,0
+724,Ist das auch rollstuhlgerecht?,Is Gebäude 724 rollstuhlgerecht?,1,2,0
+414,Wann öffnet Gebäude 414?,Wann öffnet Gebäude 414?,1,1,0
+414,Wo ist das?,Wo ist Gebäude 414?,1,2,0
+414,Wie komme ich dahin?,Wo ist Gebäude 414?,1,3,0
+414,Ist das auch rollstuhlgerecht?,Ist Gebäude 414 rollstuhlgerecht?,1,4,0
+310,Wann öffnet Gebäude 310?,Wann öffnet Gebäude 310?,1,1,0
+310,Gibt es eine Website davon?,Welche Website gibt es für das Gebäude 310?,1,2,0
+310,Wie komme ich dahin?,Wie komme ich zur KIT-Bibliothek Nord?,2,3,0
+633,Ist Gebäude 633 rollstuhlgerecht?,Is Gebäude 633 rollstuhlgerecht?,1,1,0
+633,Wo ist das?,Wo ist Gebäude 633?,1,2,0
+40.02,Ist Gebäude 40.02 rollstuhlgerecht?,Is Gebäude 40.02 rollstuhlgerecht?,1,1,0
+40.02,Wann öffnet es?,Wann öffnet Gebäude 40.02?,1,2,0
+40.02,Gibt es eine Website davon?,Welche Website zu Gebäude 40.02 gibt es?,1,3,0
+"Finanzwirtschaft, Banken und Versicherungen (FBV), Institut für","Was ist die Webseite von Gebäude Finanzwirtschaft, Banken und Versicherungen (FBV), Institut für?","Welche Webseite des Instituts für Finanzwirtschaft, Banken und Versicherungen (FBV) gibt es?",1,1,0
+"Finanzwirtschaft, Banken und Versicherungen (FBV), Institut für",Wie lange ist das noch offen?,"Wie lange ist das Institut für Finanzwirtschaft, Banken und Versicherungen (FBV) noch offen?",1,2,0
+"Finanzwirtschaft, Banken und Versicherungen (FBV), Institut für",Wo ist das?,"Wo ist das Institut für Finanzwirtschaft, Banken und Versicherungen (FBV)?",1,3,0
+438,Wie lange ist Gebäude 438 noch geöffnet?,Wie lange ist Gebäude 438 noch geöffnet?,1,1,0
+438,Ist das auch rollstuhlgerecht?,Ist Gebäude 438 rollstuhlgerecht?,1,2,0
+"Informationsmanagement im Ingenieurwesen (IMI) , Institut für","Ist Gebäude Informationsmanagement im Ingenieurwesen (IMI) , Institut für rollstuhlgerecht?",Welches Gebäude beherbergt das Institut für rollstuhlgerechtes Informationsmanagement im Ingenieurwesen (IMI)?,1,1,0
+"Informationsmanagement im Ingenieurwesen (IMI) , Institut für",Gibt es eine Website davon?,Gibt es eine Website für das Kollegiengebäude am Zirkel?,3,2,0
+"Informationsmanagement im Ingenieurwesen (IMI) , Institut für",Was sind die Öffnungszeiten?,"Was sind die Öffnungszeiten von Kollegiengebäude am Zirkel (Informationsmanagement im Ingenieurwesen (IMI), Institut für)?",1,3,0
+"Informationsmanagement im Ingenieurwesen (IMI) , Institut für",Wie komme ich dahin?,Wie komme ich zum Kollegiengebäude am Zirkel?,2,4,0
+"Mikroverfahrenstechnik (IMVT) , Institut für","Was sind die Öffnungszeiten von Gebäude Mikroverfahrenstechnik (IMVT) , Institut für?",Was sind die Öffnungszeiten des Instituts für Mikroverfahrenstechnik?,1,1,0
+"Mikroverfahrenstechnik (IMVT) , Institut für",Ist das auch rollstuhlgerecht?,Is das Gebäude Mikroverfahrenstechnik (IMVT) rollstuhlgerecht?,1,2,0
+"Mikroverfahrenstechnik (IMVT) , Institut für",Wo ist das?,Wo ist das Institut für Mikroverfahrenstechnik (IMVT)?,1,3,0
+"Mikroverfahrenstechnik (IMVT) , Institut für",Gibt es eine Website davon?,Wo ist die Website des Instituts für Mikroverfahrenstechnik (IMVT)?,1,4,0
+07.08,Was ist die Webseite von Gebäude 07.08?,What ist die Webseite von Gebäude 07.08?,1,1,0
+07.08,Wie komme ich dahin?,Wie komme ich zum Gebäude 07.08?,1,2,0
+725,Ist Gebäude 725 rollstuhlgerecht?,Is Gebäude 725 rollstuhlgerecht?,1,1,0
+725,Wie komme ich dahin?,Wie komme ich zum Gebäude 725?,1,2,0
+725,Wie lange ist das noch offen?,Wie lange ist Gebäude 725 noch geöffnet?,1,3,0
+"Institut für Operations Research (IOR), Bereich Analytics and Statistics","Wie komme ich zu Gebäude Institut für Operations Research (IOR), Bereich Analytics and Statistics?",Wie komme ich zum Gebäude IOR?,-1,1,1
+"Institut für Operations Research (IOR), Bereich Analytics and Statistics",Wo ist das?,"Wo ist das Gebäude Institut für Operations Research (IOR), Bereich Analytics and Statistics?",2,2,0
+"Sport und Sportwissenschaft, Institut für","Wie komme ich zu Gebäude Sport und Sportwissenschaft, Institut für?",Wie komme ich zum Gebäude Sport und Sportwissenschaft?,1,1,0
+"Sport und Sportwissenschaft, Institut für",Und hat es gerade offen?,Hat das Gebäude Sport und Sportwissenschaft gerade offen?,1,2,0
+"Sport und Sportwissenschaft, Institut für",Ist das auch rollstuhlgerecht?,Is das Institut für Sport und Sportwissenschaft rollstuhlgerecht?,1,3,0
+"Sport und Sportwissenschaft, Institut für",Wo ist das?,Wo ist das Institut für Sport und Sportwissenschaft?,1,4,0
+40.50,Wie lange ist Gebäude 40.50 noch geöffnet?,Wie lange ist Gebäude 40.50 noch geöffnet?,1,1,0
+40.50,Gibt es eine Website davon?,Gibt es eine Website für das Gebäude 40.50?,1,2,0
+40.50,Wo ist das?,Wo ist das Engler-Bunte-Institut (EBI) / MINT-Kolleg KIT?,2,3,0
+"Wirtschaftswissenschaften, KIT-Fakultät für","Wo ist Gebäude Wirtschaftswissenschaften, KIT-Fakultät für?",Wo ist das Gebäude der KIT-Fakultät für Wirtschaftswissenschaften?,1,1,0
+"Wirtschaftswissenschaften, KIT-Fakultät für",Gibt es eine Website davon?,Welche Website gibt es für das Kollegiengebäude am Kronenplatz?,3,2,0
+"Wirtschaftswissenschaften, KIT-Fakultät für",Ist das auch rollstuhlgerecht?,Ist das Kollegiengebäude am Kronenplatz rollstuhlgerecht?,2,3,0
+"Wirtschaftswissenschaften, KIT-Fakultät für",Wie komme ich dahin?,Wie komme ich zum Kollegiengebäude am Kronenplatz?,1,4,0
+10.22 - LAZ,Ist Gebäude 10.22 - LAZ grade geöffnet?,Is Gebäude 10.22 grade geöffnet?,1,1,0
+10.22 - LAZ,Wie komme ich dahin?,Wie komme ich zum Kollegiengebäude Maschinenbau II?,5,2,0
+10.22 - LAZ,Gibt es eine Website davon?,Gibt es eine Website für das Kollegiengebäude Maschinenbau II (10.22 - LAZ)?,1,3,0
+541,Wo ist Gebäude 541?,Wo befindet sich Gebäude 541?,1,1,0
+541,Ist das auch rollstuhlgerecht?,Is Gebäude 541 rollstuhlgerecht?,1,2,0
+541,Wie komme ich dahin?,Wie komme ich zum Gebäude 541?,1,3,0
+541,Gibt es eine Website davon?,Welche Informationen zu Gebäude 541 gibt es?,1,4,0
+145,Wo ist Gebäude 145?,Welches Gebäude ist Gebäude 145?,1,1,0
+145,Ist das auch rollstuhlgerecht?,Is Gebäude 145 rollstuhlgerecht?,1,2,0
+Physikalisches Institut (PI),Ist Gebäude Physikalisches Institut (PI) rollstuhlgerecht?,Is das Gebäude des Physikalischen Instituts rollstuhlgerecht?,4,1,0
+Physikalisches Institut (PI),Wo ist das?,Wo ist das Physik-Hochhaus?,5,2,0
+Physikalisches Institut (PI),Wie komme ich dahin?,Wie komme ich zum Physik-Hochhaus?,2,3,0
+11.40,Ist Gebäude 11.40 rollstuhlgerecht?,Is Gebäude 11.40 rollstuhlgerecht?,2,1,0
+11.40,Wie komme ich dahin?,Wie komme ich zum Kollegiengebäude am Ehrenhof?,2,2,0
+40.29,Wie komme ich zu Gebäude 40.29?,Welches Gebäude ist Gebäude 40.29?,1,1,0
+40.29,Gibt es eine Website davon?,Gibt es eine Website für Gebäude 40.29?,1,2,0
+40.29,Ist das auch rollstuhlgerecht?,Ist Gebäude 40.29 rollstuhlgerecht?,1,3,0
+40.29,Und hat es gerade offen?,"""ist Gebäude 40.29 gerade geöffnet?""",1,4,0
+349,Was ist die Webseite von Gebäude 349?,Welche Webseite gehört zum Gebäude 349?,1,1,0
+349,Ist das auch rollstuhlgerecht?,Ist Gebäude 349 rollstuhlgerecht?,1,2,0
+248,Ist Gebäude 248 rollstuhlgerecht?,Is Gebäude 248 rollstuhlgerecht?,1,1,0
+248,Gibt es eine Website davon?,Gibt es eine Website zu Gebäude 248?,1,2,0
+248,Wie lange ist das noch offen?,Wie lange ist Gebäude 248 noch geöffnet?,1,3,0
+248,Wo ist das?,Wo befindet sich Gebäude 248?,1,4,0
+Joseph Gottlieb Kölreuter Institut für Pflanzenwissenschaften (JKIP),Was ist die Webseite von Gebäude Joseph Gottlieb Kölreuter Institut für Pflanzenwissenschaften (JKIP)?,Welche Webseite hat das Gebäude des Joseph Gottlieb Kölreuter Instituts für Pflanzenwissenschaften (JKIP)?,1,1,0
+Joseph Gottlieb Kölreuter Institut für Pflanzenwissenschaften (JKIP),Wie komme ich dahin?,Wie komme ich zum Chemie-Turm I?,1,2,0
+611,Was ist die Webseite von Gebäude 611?,Welche Webseite gehört zum Gebäude 611?,1,1,0
+611,Ist das auch rollstuhlgerecht?,Ist Gebäude 611 rollstuhlgerecht?,1,2,0
+907,Wo ist Gebäude 907?,Welches Gebäude ist Gebäude 907?,1,1,0
+907,Wann öffnet es?,Wann öffnet Gebäude 907?,1,2,0
+907,Ist das auch rollstuhlgerecht?,Ist Gebäude 907 rollstuhlgerecht?,1,3,0
+907,Gibt es eine Website davon?,Welche Informationen zu Gebäude 907 gibt es?,1,4,0
+402,Was ist die Webseite von Gebäude 402?,Welche Webseite gibt es für Gebäude 402?,1,1,0
+402,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten von Institut für Astroteilchenphysik (402)?,1,2,0
+402,Ist das auch rollstuhlgerecht?,Ist das Institut für Astroteilchenphysik (402) rollstuhlgerecht?,1,3,0
+402,Wie komme ich dahin?,Wie komme ich zum Institut für Astroteilchenphysik?,2,4,0
+01.95,Wie komme ich zu Gebäude 01.95?,Wie komme ich zu Gebäude 01.95?,1,1,0
+01.95,Ist das auch rollstuhlgerecht?,Is Gebäude 01.95 rollstuhlgerecht?,1,2,0
+"Analysis, Institut für","Was ist die Webseite von Gebäude Analysis, Institut für?",Welche Webseite hat das Institut für Gebäude Analysis?,1,1,0
+"Analysis, Institut für",Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten des Kollegiengebäudes Mathematik?,2,2,0
+"Analysis, Institut für",Ist das auch rollstuhlgerecht?,"Is das Kollegiengebäude Mathematik (Analysis, Institut für) rollstuhlgerecht?",1,3,0
+741,Ist Gebäude 741 grade geöffnet?,Ist Gebäude 741 grade geöffnet?,1,1,0
+741,Ist das auch rollstuhlgerecht?,Ist Gebäude 741 rollstuhlgerecht?,1,2,0
+741,Wo ist das?,Wo ist Gebäude 741?,1,3,0
+741,Wie komme ich dahin?,Wo ist Gebäude 741?,1,4,0
+"Bodenmechanik und Felsmechanik (IBF) , Institut für","Ist Gebäude Bodenmechanik und Felsmechanik (IBF) , Institut für rollstuhlgerecht?",What Einrichtungen sind im Gebäude IBF?,2,1,0
+"Bodenmechanik und Felsmechanik (IBF) , Institut für",Wie komme ich dahin?,Wie komme ich zum Institut für Bodenmechanik und Felsmechanik (IBF)?,1,2,0
+352,Wo ist Gebäude 352?,Welches Gebäude ist Gebäude 352?,1,1,0
+352,Wie komme ich dahin?,Wie komme ich zu Gebäude 352?,1,2,0
+352,Ist das auch rollstuhlgerecht?,Ist Gebäude 352 rollstuhlgerecht?,1,3,0
+352,Gibt es eine Website davon?,Welche Informationen zu Gebäude 352 gibt es?,1,4,0
+329,Wie komme ich zu Gebäude 329?,Welches Gebäude ist Gebäude 329?,1,1,0
+329,Gibt es eine Website davon?,Welche Website gibt es zu Gebäude 329?,1,2,0
+10.84,Wo ist Gebäude 10.84?,Wo ist Gebäude 10.84?,1,1,0
+10.84,Gibt es eine Website davon?,Welche Website gibt es für das Theodor-Rehbock-Flussbaulaboratorium?,2,2,0
+10.84,Ist das auch rollstuhlgerecht?,Is das Theodor-Rehbock-Flussbaulaboratorium rollstuhlgerecht?,1,3,0
+10.84,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten von Theodor-Rehbock-Flussbaulaboratorium?,1,4,0
+30.31,Was ist die Webseite von Gebäude 30.31?,Welche Webseite hat Gebäude 30.31?,1,1,0
+30.31,Wo ist das?,Wo ist der MTI-Hörsaal?,3,2,0
+30.31,Und hat es gerade offen?,Hat der MTI-Hörsaal (30.31) gerade geöffnet?,1,3,0
+30.31,Wie komme ich dahin?,Wie komme ich zum MTI-Hörsaal?,5,4,0
+KIT-Shuttle (Haltestelle Campus Ost),Wie komme ich zu Gebäude KIT-Shuttle (Haltestelle Campus Ost)?,Wie komme ich zum Gebäude KIT-Shuttle an der Haltestelle Campus Ost?,1,1,0
+KIT-Shuttle (Haltestelle Campus Ost),Wo ist das?,Wo ist die Haltestelle KIT-Shuttle am Campus Ost?,1,2,0
+70.26,Ist Gebäude 70.26 rollstuhlgerecht?,Is Gebäude 70.26 rollstuhlgerecht?,1,1,0
+70.26,Wie lange ist das noch offen?,Wie lange ist Gebäude 70.26 noch offen?,1,2,0
+70.26,Gibt es eine Website davon?,Welche Website zu Gebäude 70.26 gibt es?,1,3,0
+"Technische Chemie und Polymerchemie, Institut für","Ist Gebäude Technische Chemie und Polymerchemie, Institut für rollstuhlgerecht?",Is das Gebäude Technische Chemie und Polymerchemie rollstuhlgerecht?,1,1,0
+"Technische Chemie und Polymerchemie, Institut für",Wo ist das?,Wo ist das Institut für Technische Chemie und Polymerchemie?,1,2,0
+Fachschaft Geistes- und Sozialwissenschaften,Wie komme ich zu Gebäude Fachschaft Geistes- und Sozialwissenschaften?,Wo befindet sich die Gebäude Fachschaft Geistes- und Sozialwissenschaften?,1,1,0
+Fachschaft Geistes- und Sozialwissenschaften,Wann öffnet es?,Wann öffnet die Fachschaft Geistes- und Sozialwissenschaften?,1,2,0
+Fachschaft Geistes- und Sozialwissenschaften,Ist das auch rollstuhlgerecht?,Ist das Gebäude der Fachschaft Geistes- und Sozialwissenschaften rollstuhlgerecht?,1,3,0
+30.95,Wie komme ich zu Gebäude 30.95?,Welches Gebäude ist Gebäude 30.95?,2,1,0
+30.95,Ist das auch rollstuhlgerecht?,Ist das Hörsaalgebäude am Forum rollstuhlgerecht?,2,2,0
+30.95,Wo ist das?,Wo ist das Hörsaalgebäude am Forum - Audimax?,2,3,0
+30.95,Gibt es eine Website davon?,Wo ist die Website des Hörsaalgebäudes am Forum - Audimax (30.95)?,2,4,0
+30.10,Ist Gebäude 30.10 rollstuhlgerecht?,Is Gebäude 30.10 rollstuhlgerecht?,2,1,0
+30.10,Und hat es gerade offen?,Hat Gebäude 30.10 gerade offen?,2,2,0
+30.10,Wo ist das?,Wo ist Gebäude 30.10?,2,3,0
+30.10,Wie komme ich dahin?,Wo ist Gebäude 30.10?,2,4,0
+"Hochleistungsimpuls- und Mikrowellentechnik (IHM), Institut für","Wie lange ist Gebäude Hochleistungsimpuls- und Mikrowellentechnik (IHM), Institut für noch geöffnet?",Wie lange ist das Institut für Hochleistungsimpuls- und Mikrowellentechnik noch geöffnet?,1,1,0
+"Hochleistungsimpuls- und Mikrowellentechnik (IHM), Institut für",Wie komme ich dahin?,Wie komme ich zum Institut für Hochleistungsimpuls- und Mikrowellentechnik?,1,2,0
+10.85,Wo ist Gebäude 10.85?,Wo ist Gebäude 10.85?,1,1,0
+10.85,Ist das auch rollstuhlgerecht?,Ist Gebäude 10.85 rollstuhlgerecht?,1,2,0
+10.85,Gibt es eine Website davon?,Gibt es eine Website zu Gebäude 10.85?,1,3,0
+B404,Ist Gebäude B404 rollstuhlgerecht?,Welches Gebäude mit der Nummer B404 ist rollstuhlgerecht?,2,1,0
+B404,Gibt es eine Website davon?,Gibt es eine Website zu Gebäude B404?,2,2,0
+10.92,Ist Gebäude 10.92 rollstuhlgerecht?,Is Gebäude 10.92 rollstuhlgerecht?,1,1,0
+10.92,Und hat es gerade offen?,Hat Gebäude 10.92 gerade offen?,1,2,0
+10.92,Gibt es eine Website davon?,Gibt es eine Website zu Gebäude 10.92?,1,3,0
+"Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP), Institut für","Ist Gebäude Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP), Institut für rollstuhlgerecht?",Welche Einrichtungen sind im Gebäude Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP)?,4,1,0
+"Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP), Institut für",Wo ist das?,Wo befindet sich das Institut für Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP)?,3,2,0
+"Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP), Institut für",Wie komme ich dahin?,Wie komme ich zum Institut für Angewandte Materialien - Angewandte Werkstoffphysik (IAM-AWP)?,1,3,0
+Medizinische Dienste (MED) CS,Wo ist Gebäude Medizinische Dienste (MED) CS?,Where ist Gebäude Medizinische Dienste (MED) CS?,1,1,0
+Medizinische Dienste (MED) CS,Gibt es eine Website davon?,Welche Website gibt es zu Winkelwohnblock NZ1 (Medizinische Dienste (MED) CS)?,-1,2,1
+06.47,Wie komme ich zu Gebäude 06.47?,Welches Gebäude ist Gebäude 06.47?,1,1,0
+06.47,Wo ist das?,Wo ist Gebäude 06.47?,1,2,0
+30.43,Wo ist Gebäude 30.43?,Wo befindet sich Gebäude 30.43?,1,1,0
+30.43,Wie komme ich dahin?,Wie komme ich zum Chemie-Turm I?,3,2,0
+30.43,Ist das auch rollstuhlgerecht?,Is Chemie-Turm I rollstuhlgerecht?,1,3,0
+30.91,Ist Gebäude 30.91 rollstuhlgerecht?,Is Gebäude 30.91 rollstuhlgerecht?,1,1,0
+30.91,Gibt es eine Website davon?,Gibt es eine Website für das Franz-Schnabel-Haus?,2,2,0
+30.91,Wo ist das?,Wo ist das Franz-Schnabel-Haus?,1,3,0
+Fachschaft Bauingenieurwesen,Was ist die Webseite von Gebäude Fachschaft Bauingenieurwesen?,What ist die Webseite der Fachschaft Bauingenieurwesen?,1,1,0
+Fachschaft Bauingenieurwesen,Wo ist das?,Wo ist das Alte Bauingenieurgebäude?,4,2,0
+Fachschaft Bauingenieurwesen,Wie lange ist das noch offen?,Wie lange ist das Altes Bauingenieurgebäude noch offen?,-1,3,1
+103,Wie komme ich zu Gebäude 103?,Welches Gebäude ist Gebäude 103?,1,1,0
+103,Ist das auch rollstuhlgerecht?,Ist das Fortbildungszentrum für Technik und Umwelt rollstuhlgerecht?,-1,2,1
+103,Gibt es eine Website davon?,Gibt es eine Website für das Fortbildungszentrum für Technik und Umwelt?,3,3,0
+Zentrum für Angewandte Rechtswissenschaft (ZAR),Was ist die Webseite von Gebäude Zentrum für Angewandte Rechtswissenschaft (ZAR)?,What ist die Webseite des Zentrum für Angewandte Rechtswissenschaft (ZAR)?,1,1,0
+Zentrum für Angewandte Rechtswissenschaft (ZAR),Wie komme ich dahin?,Wo ist das Zentrum für Angewandte Rechtswissenschaft (ZAR)?,1,2,0
+404,Ist Gebäude 404 rollstuhlgerecht?,Is Gebäude 404 rollstuhlgerecht?,1,1,0
+404,Gibt es eine Website davon?,Gibt es eine Website zu Gebäude 404?,1,2,0
+559,Was ist die Webseite von Gebäude 559?,Welche Webseite gehört zum Gebäude 559?,1,1,0
+559,Wo ist das?,Wo ist Gebäude 559?,1,2,0
+512,Wo ist Gebäude 512?,Wo ist Gebäude 512?,1,1,0
+512,Ist das auch rollstuhlgerecht?,Is Gebäude 512 rollstuhlgerecht?,1,2,0
+512,Gibt es eine Website davon?,Gibt es eine Website zu Gebäude 512?,1,3,0
+512,Wie komme ich dahin?,Wie komme ich zu Gebäude 512?,1,4,0
+KIT-Archiv,Wie komme ich zu Gebäude KIT-Archiv?,Wo ist das Gebäude KIT-Archiv?,1,1,0
+KIT-Archiv,Was sind die Öffnungszeiten?,Was sind die Öffnungszeiten des KIT-Archivs?,2,2,0
+KIT-Archiv,Gibt es eine Website davon?,Welche Website des KIT-Archivs gibt es?,1,3,0
+KIT-Archiv,Wo ist das?,Wo ist das KIT-Archiv?,1,4,0
+Bibliothek (Campus Nord),Wo ist Gebäude Bibliothek (Campus Nord)?,Wo ist die Bibliothek auf dem Campus Nord?,1,1,0
+Bibliothek (Campus Nord),Wie komme ich dahin?,Wie komme ich zur KIT-Bibliothek Nord?,1,2,0
+Bibliothek (Campus Nord),Ist das auch rollstuhlgerecht?,Ist die KIT-Bibliothek Nord rollstuhlgerecht?,1,3,0
+"Funktionelle Grenzflächen (IFG), Institut für","Ist Gebäude Funktionelle Grenzflächen (IFG), Institut für rollstuhlgerecht?",What sind die Funktionen des Gebäudes IFG?,1,1,0
+"Funktionelle Grenzflächen (IFG), Institut für",Wie komme ich dahin?,Wie komme ich zum Institut für Funktionelle Grenzflächen (IFG)?,1,2,0
+10.70,Was ist die Webseite von Gebäude 10.70?,Welche Webseite hat Gebäude 10.70?,1,1,0
+10.70,Wo ist das?,Wo ist Gebäude 10.70?,1,2,0
+"Photogrammetrie und Fernerkundung (IPF), Institut für","Wie komme ich zu Gebäude Photogrammetrie und Fernerkundung (IPF), Institut für?",Wie komme ich zum Institut für Photogrammetrie und Fernerkundung (IPF)?,1,1,0
+"Photogrammetrie und Fernerkundung (IPF), Institut für",Gibt es eine Website davon?,Welche Website gibt es für das Institut für Photogrammetrie und Fernerkundung (IPF)?,1,2,0
+"Photogrammetrie und Fernerkundung (IPF), Institut für",Wie lange ist das noch offen?,Wie lange ist das Institut für Photogrammetrie und Fernerkundung (IPF) noch offen?,1,3,0
+308,Was ist die Webseite von Gebäude 308?,Welche Webseite gehört zum Gebäude 308?,1,1,0
+308,Wie komme ich dahin?,Wie komme ich zum Gebäude 308?,1,2,0
+308,Ist das auch rollstuhlgerecht?,Ist Gebäude 308 rollstuhlgerecht?,1,3,0
+308,Wo ist das?,Wo ist Gebäude 308?,1,4,0
+11.21,Ist Gebäude 11.21 grade geöffnet?,Ist Gebäude 11.21 geöffnet?,1,1,0
+11.21,Ist das auch rollstuhlgerecht?,Ist Gebäude 11.21 rollstuhlgerecht?,1,2,0
+11.21,Wie komme ich dahin?,Wie komme ich zum Institut für Technische Chemie und Polymerchemie?,3,3,0
+11.21,Wo ist das?,Wo ist das Institut für Technische Chemie und Polymerchemie?,3,4,0
+Rudolf-Criegee-Hörsaal,Wo ist Gebäude Rudolf-Criegee-Hörsaal?,Wo ist der Rudolf-Criegee-Hörsaal?,-1,1,1
+Rudolf-Criegee-Hörsaal,Wie komme ich dahin?,Wie komme ich zum Gebäude Rudolf-Criegee-Hörsaal?,-1,2,1
+Rudolf-Criegee-Hörsaal,Ist das auch rollstuhlgerecht?,Ist das Gebäude Rudolf-Criegee-Hörsaal rollstuhlgerecht?,-1,3,1

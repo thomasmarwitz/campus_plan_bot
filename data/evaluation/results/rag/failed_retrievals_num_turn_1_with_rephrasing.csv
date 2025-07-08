@@ -1,0 +1,14 @@
+id,query,rephrased_query,position,num_turn,failed
+"Physikalische Chemie, Institut für","Ist Gebäude Physikalische Chemie, Institut für rollstuhlgerecht?",Ist das Gebäude der Physikalischen Chemie rollstuhlgerecht?,-1,1,1
+Engler-Bunte-Hörsaal,Wo ist Gebäude Engler-Bunte-Hörsaal?,Wo ist der Engler-Bunte-Hörsaal?,-1,1,1
+Heinrich-Hertz-Hörsaal,Ist Gebäude Heinrich-Hertz-Hörsaal grade geöffnet?,Is das Gebäude mit dem Heinrich-Hertz-Hörsaal grade geöffnet?,-1,1,1
+"Festkörperphysik, Institut für","Ist Gebäude Festkörperphysik, Institut für rollstuhlgerecht?",Ist das Gebäude der Festkörperphysik rollstuhlgerecht?,-1,1,1
+Fritz-Haller-Hörsaal,Wie komme ich zu Gebäude Fritz-Haller-Hörsaal?,Wie komme ich zum Fritz-Haller-Hörsaal?,-1,1,1
+Chemie-Hörsaal I,Wie komme ich zu Gebäude Chemie-Hörsaal I?,Wie komme ich zum Gebäude Chemie-Hörsaal I?,-1,1,1
+Bauingenieure-Hörsaal,Was ist die Webseite von Gebäude Bauingenieure-Hörsaal?,Welche Webseite gibt es für das Gebäude Bauingenieure-Hörsaal?,-1,1,1
+Otto-Lehmann-Hörsaal,Wo ist Gebäude Otto-Lehmann-Hörsaal?,Wo ist der Otto-Lehmann-Hörsaal?,-1,1,1
+Chemie-Hörsaal II,Was sind die Öffnungszeiten von Gebäude Chemie-Hörsaal II?,Was sind die Öffnungszeiten von Chemie-Hörsaal II?,-1,1,1
+Neuer Hörsaal Chemie,Wie komme ich zu Gebäude Neuer Hörsaal Chemie?,Wie komme ich zum Neuen Hörsaal der Chemie?,-1,1,1
+Medizinische Dienste (MED) CN,Wie komme ich zu Gebäude Medizinische Dienste (MED) CN?,Wie komme ich zu Gebäude MED?,-1,1,1
+"Institut für Operations Research (IOR), Bereich Analytics and Statistics","Wie komme ich zu Gebäude Institut für Operations Research (IOR), Bereich Analytics and Statistics?",Wie komme ich zum Gebäude IOR?,-1,1,1
+Rudolf-Criegee-Hörsaal,Wo ist Gebäude Rudolf-Criegee-Hörsaal?,Wo ist der Rudolf-Criegee-Hörsaal?,-1,1,1

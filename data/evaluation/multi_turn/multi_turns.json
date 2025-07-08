@@ -369,7 +369,7 @@
                 "prompt": "Ist Geb\u00e4ude 459 grade ge\u00f6ffnet?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
                 "question_type": "open_now",
-                "reformulated_prompt": "Hat das Studentenwohnheim aktuell auf?"
+                "reformulated_prompt": "Hat 459 aktuell auf?"
             },
             {
                 "input_data": "459",
@@ -2302,7 +2302,7 @@
                 "prompt": "Ist Geb\u00e4ude 807 grade ge\u00f6ffnet?",
                 "response": "F\u00fcr dieses Geb\u00e4ude kenne ich leider keine \u00d6ffnungszeiten.",
                 "question_type": "open_now",
-                "reformulated_prompt": "Hat die Einrichtung momentan auf?"
+                "reformulated_prompt": "Hat die Einrichtung 807 momentan auf?"
             },
             {
                 "input_data": "807",
@@ -2745,7 +2745,7 @@
                 "prompt": "Ist Geb\u00e4ude 306 rollstuhlgerecht?",
                 "response": "Zu diesem Geb\u00e4ude habe ich leider keine Informationen zur Rollstuhgerechtigkeit.",
                 "question_type": "wheelchair_accessible",
-                "reformulated_prompt": "Hat der Arkadengang einen barrierefreien Zugang?"
+                "reformulated_prompt": "Hat 306 einen barrierefreien Zugang?"
             },
             {
                 "input_data": "306",

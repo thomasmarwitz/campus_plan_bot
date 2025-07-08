@@ -24,7 +24,6 @@ Before running, create the directory:
 
 ```bash
 export EVAL_NAME="my-evaluation"
-mkdir -p data/evaluation/results/$EVAL_NAME
 ```
 
 ### 1. Single-Turn Synthetic Datasets
@@ -32,8 +31,9 @@ mkdir -p data/evaluation/results/$EVAL_NAME
 To evaluate the single-turn synthetic datasets for each intent (e.g., `building_location`, `opening_hours`), run the `evaluate_single_synthetic` command. This command automatically finds all `*synthetic.json` files in the `data/evaluation/single_turn/` directory.
 
 ```bash
-python eval/evaluation.py evaluate-single-synthetic \
-    --output-dir data/evaluation/results/$EVAL_NAME
+pixi run python eval/evaluation.py evaluate-single-synthetic \
+    --output-dir data/evaluation/results/$EVAL_NAME \
+    --chunk-size 10
 ```
 
 This will generate CSV files for each synthetic test, including:
@@ -52,8 +52,9 @@ This will generate CSV files for each synthetic test, including:
 To evaluate the multi-turn conversation dataset, use the `evaluate-file` command. The default test path is already set to the multi-turn dataset.
 
 ```bash
-python eval/evaluation.py evaluate-file \
-    --output-dir data/evaluation/results/$EVAL_NAME
+pixi run python eval/evaluation.py evaluate-file \
+    --output-dir data/evaluation/results/$EVAL_NAME \
+    --chunk-size 10
 ```
 
 This will generate `multi_turns.csv` in your output directory.
@@ -104,15 +105,10 @@ You must provide the paths to each results directory using the `-i` or `--input-
 
 #### Example
 
-To compare the results from a `phase2` baseline against a `component-chosen-fields` run, you can execute the following command:
+To compare the results from a `phase2` baseline against a `component-chosen-fields` run, you can execute the following command:pixi run python eval/create_plots.py compare -i data/evaluation/results/phase2 -i data/evaluation/results/component-chosen-fields -i data/evaluation/results/better-rag -n baseline -n "#1-chosen-fields" -n "#2-better-rag" --output-dir docs/phase3/report/comparison --phrases-file eval/phrases.txtpixi run python eval/create_plots.py compare \
 
 ```bash
-pixi run python eval/create_plots.py compare \
-    -i data/evaluation/results/phase2 \
-    -i data/evaluation/results/component-chosen-fields \
-    -n "baseline" \
-    -n "#1-chosen-fields" \
-    -o docs/phase3/report/comparison/
+pixi run python eval/create_plots.py compare -i data/evaluation/results/phase2 -i data/evaluation/results/component-chosen-fields -i data/evaluation/results/better-rag -n baseline -n "#1-chosen-fields" -n "#2-better-rag" --output-dir docs/phase3/report/comparison --phrases-file eval/phrases.txt
 ```
 
 This command will create a new directory (by default `docs/phase2/plots_comparison`) containing:

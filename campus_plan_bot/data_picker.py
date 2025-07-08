@@ -32,13 +32,13 @@ class DataPicker:
             )
         )
 
-    def choose_fields(self, query: str, docs: list[RetrievedDocument]):
+    async def choose_fields(self, query: str, docs: list[RetrievedDocument]):
         """Let model choose from available fields and reduce retrieved
         documents accordingly."""
         original_docs = deepcopy(docs)
 
         fields = self.get_field_options(docs)
-        response = self.query_model(query, fields)
+        response = await self.query_model(query, fields)
 
         # return unmodified documents if the model response is not as expected
         try:
@@ -63,7 +63,7 @@ class DataPicker:
                     non_empty_keys.append(key)
         return set(non_empty_keys)
 
-    def query_model(self, query: str, fields: set) -> str:
+    async def query_model(self, query: str, fields: set) -> str:
         """Query the model to let it select fields."""
 
         # new conversation for each query since no history is needed
@@ -79,7 +79,7 @@ class DataPicker:
         conversation_history.add_message(field_query)
 
         prompt = self.prompt_builder.from_conversation_history(conversation_history)
-        response = self.llm_client.query(prompt)
+        response = await self.llm_client.query_async(prompt)
 
         return response
 
