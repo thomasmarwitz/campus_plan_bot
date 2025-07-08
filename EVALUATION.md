@@ -32,7 +32,8 @@ To evaluate the single-turn synthetic datasets for each intent (e.g., `building_
 
 ```bash
 pixi run python eval/evaluation.py evaluate-single-synthetic \
-    --output-dir data/evaluation/results/$EVAL_NAME
+    --output-dir data/evaluation/results/$EVAL_NAME \
+    --chunk-size 10
 ```
 
 This will generate CSV files for each synthetic test, including:
@@ -51,8 +52,9 @@ This will generate CSV files for each synthetic test, including:
 To evaluate the multi-turn conversation dataset, use the `evaluate-file` command. The default test path is already set to the multi-turn dataset.
 
 ```bash
-python eval/evaluation.py evaluate-file \
-    --output-dir data/evaluation/results/$EVAL_NAME
+pixi run python eval/evaluation.py evaluate-file \
+    --output-dir data/evaluation/results/$EVAL_NAME \
+    --chunk-size 10
 ```
 
 This will generate `multi_turns.csv` in your output directory.

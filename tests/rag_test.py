@@ -5,10 +5,10 @@ import pytest
 from campus_plan_bot.rag import RAG
 
 # This path is relative to the project root, where pytest is usually run.
-DATA_FILE_PATH = Path("data/campusplan_enriched.csv")
+DATA_FILE_PATH = Path("data/campusplan_evaluation.csv")
 
 
-@pytest.mark.skipif(not DATA_FILE_PATH.exists(), reason="Data file 'campusplan_enriched.csv' not found")
+@pytest.mark.skipif(not DATA_FILE_PATH.exists(), reason="Data file 'campusplan_evaluation.csv' not found")
 def test_rag_retrieval():
     """
     A simple test to check if the RAG component can be executed and works.

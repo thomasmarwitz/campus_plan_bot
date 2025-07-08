@@ -87,7 +87,7 @@ class SimpleTextBot(TextBot):
         )
         self.prompt_builder = prompt_builder or LLama3PromptBuilder()
 
-    def query(self, query: str, docs: list[RetrievedDocument]) -> str:
+    async def query(self, query: str, docs: list[RetrievedDocument]) -> str:
         user_query = Message.from_content(query, Role.USER)
 
         rag_message = Message.from_content(
@@ -100,7 +100,7 @@ class SimpleTextBot(TextBot):
         prompt = self.prompt_builder.from_conversation_history(
             self.conversation_history
         )
-        response = self.llm_client.query(prompt)
+        response = await self.llm_client.query_async(prompt)
         self.conversation_history.add_message(
             Message.from_content(response, Role.ASSISTANT)
         )

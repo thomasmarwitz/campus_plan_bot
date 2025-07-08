@@ -75,11 +75,12 @@ class RAG(RAGComponent):
         return cls(index, df, id_column_name)
 
     def _retrieve_by_building_number(
-        self, query: str
+        self, query: str, 
+        limit: int = 5
     ) -> list[RetrievedDocument]:
         """Retrieve documents by direct building number match."""
 
-        pattern = r"(\d{1,2}\.\d{1,2}|\d+)"
+        pattern = r"(\d{1,2}\.\d{1,2}|\d{3,4})"
         building_number_match = re.search(pattern, query)
         if not building_number_match:
             return []
@@ -104,7 +105,7 @@ class RAG(RAGComponent):
         logger.debug(
             f"Found {len(documents)} documents matching the building number '{building_number}' directly."
         )
-        return documents
+        return documents[:limit]
     
     def _retrieve_by_similarity(self, query: str, existing_document_ids: set[str], limit: int = 5, rerank_multiplier: int = 3) -> list[RetrievedDocument]:
         """Retrieve documents by cosine similarity and reranking."""

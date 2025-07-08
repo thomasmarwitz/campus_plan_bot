@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+import asyncio
 
 import click
 from loguru import logger
@@ -10,7 +11,6 @@ from campus_plan_bot.input.local_asr import LocalASR
 from campus_plan_bot.input.remote_asr import RemoteASR
 from campus_plan_bot.input.text_input import TextInput
 from campus_plan_bot.interfaces.interfaces import InputMethods, UserInputSource
-from campus_plan_bot.interfaces.persistence_types import Message, Role
 from campus_plan_bot.rag import RAG
 from campus_plan_bot.query_rewriter import QuestionRephraser
 from campus_plan_bot.settings.settings import Settings
@@ -68,24 +68,27 @@ def chat(log_level: str, input: str, token: str, file: str):
 
     input_method = get_input_method(input, file)
 
-    while True:
-        user_input: str = input_method.get_input()
-        if user_input.strip().lower() in {"exit", "quit"}:
+    async def run_conversation():
+        while True:
+            user_input: str = input_method.get_input()
+            if user_input.strip().lower() in {"exit", "quit"}:
+                click.secho(f"{bot.name}: ", fg="cyan", nl=False)
+                click.echo("Goodbye!")
+                break
+
+            rephrased_query = await rephraser.rephrase(bot.conversation_history, query=user_input)
+            logger.info(f"Rephrased query: '{rephrased_query}'")
+
+            documents = rag.retrieve_context(rephrased_query, limit=5)
+
+            documents = await data_picker.choose_fields(user_input, documents)
+
+            response = await bot.query(user_input, documents)
+
             click.secho(f"{bot.name}: ", fg="cyan", nl=False)
-            click.echo("Goodbye!")
-            break
+            click.echo(f"{response}")
 
-        rephrased_query = rephraser.rephrase(bot.conversation_history, query=user_input)
-        logger.info(f"Rephrased query: '{rephrased_query}'")
-
-        documents = rag.retrieve_context(rephrased_query, limit=5)
-
-        documents = data_picker.choose_fields(user_input, documents)
-
-        response = bot.query(user_input, documents)
-
-        click.secho(f"{bot.name}: ", fg="cyan", nl=False)
-        click.echo(f"{response}")
+    asyncio.run(run_conversation())
 
 
 def get_input_method(input_choice: str, file: str) -> UserInputSource:

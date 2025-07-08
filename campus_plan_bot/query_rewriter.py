@@ -48,13 +48,17 @@ Rephrased Query:"""
             )
         )
 
-    def rephrase(self, conversation: Conversation, query: str) -> str:
+    async def rephrase(self, conversation: Conversation, query: str) -> str:
         """Rephrases the user query based on conversation history."""
         history_messages = [
             msg
             for msg in conversation.messages
             if msg.role in (Role.USER, Role.ASSISTANT)
         ]
+
+        if not history_messages:
+            # No rephrasing, avoiding rephrasings like: 'I don't have any conversation history to rephrase from.'
+            return query
 
 
         formatted_history = []
@@ -71,5 +75,5 @@ Rephrased Query:"""
         prompt_builder = LLama3PromptBuilder(system_prompt=self.SYSTEM_PROMPT)
         prompt = prompt_builder.get_prompt(user_message)
 
-        rephrased_query = self.llm_client.query(prompt)
-        return rephrased_query.strip() 
+        rephrased_query = await self.llm_client.query_async(prompt)
+        return rephrased_query

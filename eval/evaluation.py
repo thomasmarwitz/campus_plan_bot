@@ -235,6 +235,11 @@ def evaluate_single_synthetic(
         logger.info(
             f"Processing {file.name} ({file_idx+1} / {len(synthetic_files)}) ..."
         )
+
+        if (output_path / file.name.replace(".json", ".csv")).exists():
+            logger.warning(f"Skipping {file.name} because it already exists.")
+            continue
+
         process_file(file, rag, output_path, limit, chunk_size)
 
 
@@ -302,12 +307,12 @@ def process_file(
             bots[test_case_input.case_id] = SimpleTextBot()
 
         bot = bots[test_case_input.case_id]
-        rephrased_query = QuestionRephraser().rephrase(bot.conversation_history)
+        rephrased_query = await QuestionRephraser().rephrase(bot.conversation_history, query=test_case_input.input)
         docs = rag.retrieve_context(rephrased_query, limit=5)
         data_picker = DataPicker()
-        docs = data_picker.choose_fields(test_case_input.input, docs)
+        docs = await data_picker.choose_fields(test_case_input.input, docs)
 
-        answer = bot.query(test_case_input.input, docs)
+        answer = await bot.query(test_case_input.input, docs)
 
         # delete bot reference if last turn
         if test_case_input.turn_idx == test_case_input.num_turns - 1:
