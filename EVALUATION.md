@@ -105,15 +105,10 @@ You must provide the paths to each results directory using the `-i` or `--input-
 
 #### Example
 
-To compare the results from a `phase2` baseline against a `component-chosen-fields` run, you can execute the following command:
+To compare the results from a `phase2` baseline against a `component-chosen-fields` run, you can execute the following command:pixi run python eval/create_plots.py compare -i data/evaluation/results/phase2 -i data/evaluation/results/component-chosen-fields -i data/evaluation/results/better-rag -n baseline -n "#1-chosen-fields" -n "#2-better-rag" --output-dir docs/phase3/report/comparison --phrases-file eval/phrases.txtpixi run python eval/create_plots.py compare \
 
 ```bash
-pixi run python eval/create_plots.py compare \
-    -i data/evaluation/results/phase2 \
-    -i data/evaluation/results/component-chosen-fields \
-    -n "baseline" \
-    -n "#1-chosen-fields" \
-    -o docs/phase3/report/comparison/
+pixi run python eval/create_plots.py compare -i data/evaluation/results/phase2 -i data/evaluation/results/component-chosen-fields -i data/evaluation/results/better-rag -n baseline -n "#1-chosen-fields" -n "#2-better-rag" --output-dir docs/phase3/report/comparison --phrases-file eval/phrases.txt
 ```
 
 This command will create a new directory (by default `docs/phase2/plots_comparison`) containing:
