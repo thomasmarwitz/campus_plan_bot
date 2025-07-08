@@ -1,3 +1,4 @@
+import re
 from huggingface_hub import AsyncInferenceClient, InferenceClient
 from loguru import logger
 
@@ -9,10 +10,11 @@ INSTITUTE_URL = "http://hiaisc.isl.iar.kit.edu/llm_generate"
 class InstituteClient(LLMClient):
     """A client for the Institute API."""
 
-    def __init__(self, default_request_config: LLMRequestConfig | None = None):
+    def __init__(self, default_request_config: LLMRequestConfig | None = None, remove_special_tokens: bool = True):
         self.client = InferenceClient(
             model=INSTITUTE_URL,
         )
+        self.remove_special_tokens = remove_special_tokens
         self.async_client = AsyncInferenceClient(
             model=INSTITUTE_URL,
         )
@@ -28,8 +30,14 @@ class InstituteClient(LLMClient):
         )
 
     def _process_response(self, response: str) -> str:
-        # TODO: remove all between < and >
-        return response.strip().removeprefix("assistant").strip()
+        if not self.remove_special_tokens:
+            return response.strip()
+
+        response = re.sub(r"<.*?>", "", response)
+        response = response.strip()
+        response = response.removeprefix("assistant")
+        response = response.strip(":><")
+        return response.strip()
 
     def query(self, prompt: str) -> str:
         answer = self.generate(prompt, self.request_config)
