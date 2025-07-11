@@ -1,3 +1,4 @@
+import json
 from difflib import SequenceMatcher
 
 from loguru import logger
@@ -27,7 +28,8 @@ class AsrProcessor:
         )
 
     def fix_asr(self, input):
-
+        """Prompt the model to create a list of ASR errors and their
+        corrections."""
         # new conversation for each query since no history is needed
         conversation_history = Conversation.new()
 
@@ -39,11 +41,38 @@ class AsrProcessor:
         prompt = self.prompt_builder.from_conversation_history(conversation_history)
         response = self.llm_client.query(prompt)
 
-        similarity = SequenceMatcher(None, input, response).ratio()
-        logger.info(
+        self.fixed_input = input
+
+        self.apply_replacements(response)
+
+        similarity = SequenceMatcher(None, input, self.fixed_input).ratio()
+        logger.debug(
             f"Fixed ASR input. Similarity between input and correction is: {similarity}."
         )
 
-        print(response)
+        return self.fixed_input
 
-        return response
+    def apply_replacements(self, replacements):
+        """Apply all fixes to the input that the model identified."""
+
+        # if something is not as expected return the partially fixed input
+        try:
+            replacements_list = json.loads(replacements)
+            self.fixed_input = replacements_list[Constants.REPLACEMENT_KEY_ORIGINAL]
+
+            for incorrect, correct in replacements_list[
+                Constants.REPLACEMENT_KEY_CORRECTION
+            ].items():
+                self.fixed_input = self.fixed_input.replace(incorrect, correct)
+
+            return self.fixed_input
+
+        except Exception as e:
+            self.abort_processing(e)
+
+    def abort_processing(self, exception: Exception):
+        """Something went wrong so return the partially fixed input and
+        continue with the next processing step."""
+        logger.error(f"Fixing ASR errors failed with error: {exception}.")
+        logger.error("Aborting ASR error fixing and continuing with next step.")
+        return self.fixed_input
