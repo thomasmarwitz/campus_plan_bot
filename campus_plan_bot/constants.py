@@ -50,26 +50,74 @@ class Constants:
         """
 
     SYSTEM_PROMPT_ASR_FIX = """
-        Deine Aufgabe ist es, Transkribierungsfehler in Benutzereingaben zu beheben, die mit automatischer Spracherkennung transkribiert wurden.
-        Behebe alle Fehler in der Spracheingabe, die aus der automatischen Spracherkennung stammen könnten. Hier sind einige Beispiele von typischen Fehlern aus der Spracherkennung:
+        Deine Aufgabe ist es, Transkriptionsfehler in Benutzereingaben zu identifizieren, die mit automatischer Spracherkennung (ASR) transkribiert wurden, und diese in einer JSON-formatierten Syntax zurückzugeben.
 
-        Beispiel 1:
-        Spracheingabe: Wie finde ich Gebäude 0412?
-        Wie finde ich Gebäude 04.12?
+        Beispiele typischer Fehler aus der Spracherkennung:
 
-        Beispiel 2:
-        Spracheingabe: Welche Adresse hat Gebäude einhundert und zwei?
-        Welche Adresse hat Gebäude 102?
+        - Beispiel 1:
+            - Spracheingabe: "Wie finde ich Gebäude 0412?"
+            - JSON-Ausgabe:
+                ```json
+                {
+                "original": "Wie finde ich Gebäude 0412?",
+                "korrekturen": {
+                    "0412": "04.12"
+                }
+                }
+                ```
 
-        Beispiel 3:
-        Spracheingabe: Wo ist Gebäude fünfzig Punkt vierunddreißig?
-        Wo ist Gebäude 50.34?
+        - Beispiel 2:
+            - Spracheingabe: "Was ist die Adresse von Gebäude 20.21?"
+            - JSON-Ausgabe:
+                ```json
+                {
+                "original": "Was ist die Adresse von Gebäude 20.21?",
+                "korrekturen": {}
+                }
+                ```
 
-        Korrigiere auch ähnliche Fehler oder Fehler anderer Art, die aus der automatischen Spracherkennung stammen könnten. Ersetze hierzu in der Spracheingabe fehlerhafte Begriffe durch korrigierte Begriffe.
-        Antworte nicht auf die Fragen in der Spracheingabe, verarbeite lediglich den gegebenen Text. Es ist nicht deine Aufgabe, auf den Inhalt der Spracheingabe zu reagieren.
-        Antworte in jedem Fall ausschließlich mit einer korrigierten und vollständigen Version der ursprünglichen Spracheingabe. Verändere die Spracheingabe nur, um Fehler zu beheben, die aus der automatischen Spracherkennung stammen könnten. Füge der Spracheingabe keine Wöter hinzu und lasse keine Wörter weg.
+        - Beispiel 3:
+            - Spracheingabe: "Welche Adresse hat Gebäude einhundert und zwei?"
+            - JSON-Ausgabe:
+                ```json
+                {
+                "original": "Welche Adresse hat Gebäude einhundert und zwei?",
+                "korrekturen": {
+                    "einhundert und zwei": "102"
+                }
+                }
+                ```
+
+        - Beispiel 4:
+            - Spracheingabe: "Wo ist Gebäude fünfzig Punkt vierunddreißig?"
+            - JSON-Ausgabe:
+                ```json
+                {
+                "original": "Wo ist Gebäude fünfzig Punkt vierunddreißig?",
+                "korrekturen": {
+                    "fünfzig Punkt vierunddreißig": "50.34"
+                }
+                }
+                ```
+
+        Korrigiere auch ähnliche Fehler oder andere Arten von Fehlern, die aus der automatischen Spracherkennung stammen könnten.
+        Antworte nicht auf die Fragen in der Spracheingabe, sondern verarbeite lediglich den gegebenen Text. Es ist nicht deine Aufgabe, auf den Inhalt der Spracheingabe zu reagieren.
+        Antworte ausschließlich mit einer JSON-formatierten Ausgabe, die die folgende Struktur hat:
+            ```json
+            {
+            "original": "<originale Spracheingabe>",
+            "korrekturen": {
+                "<fehlerhafter Begriff>": "<korrigierter Begriff>"
+            }
+            }
+            ```
+
+        Wenn keine Korrekturen erforderlich sind, gib die originale Spracheingabe in der JSON-Struktur zurück, ohne Korrekturen.
         """
 
     USER_QUERY_PRE_FIELDS = "Das ist die Frage des Benutzers:"
     AVAILABLE_FIELDS_PRE = "Diese Informationstypen sind verfügbar:"
     USER_QUERY_PRE_ASR = "Spracheingabe:"
+
+    REPLACEMENT_KEY_ORIGINAL = "original"
+    REPLACEMENT_KEY_CORRECTION = "korrekturen"
