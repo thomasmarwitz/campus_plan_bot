@@ -67,12 +67,13 @@ Assuming the ASR test files are located at `data/evaluation/local_asr_suite/`:
 
 ```bash
 # Evaluate whisper_base ASR data
-python eval/evaluation.py evaluate_file \
-    --test-path data/evaluation/local_asr_suite/local_asr_suite_whisper_base.json \
-    --output-dir data/evaluation/results/$EVAL_NAME
+pixi run python eval/evaluation.py evaluate-file \
+    --test-path data/evaluation/audio/local_asr_suite_whisper_base.json \
+    --output-dir data/evaluation/results/$EVAL_NAME \
+    --chunk-size 10
 
 # Evaluate whisper_small ASR data
-python eval/evaluation.py evaluate_file \
+pixi run python eval/evaluation.py evaluate-file \
     --test-path data/evaluation/local_asr_suite/local_asr_suite_whisper_small.json \
     --output-dir data/evaluation/results/$EVAL_NAME
 ```

@@ -1,5 +1,4 @@
-import json
-from difflib import SequenceMatcher
+from pathlib import Path
 
 from loguru import logger
 
@@ -8,6 +7,7 @@ from campus_plan_bot.constants import Constants
 from campus_plan_bot.interfaces.interfaces import LLMClient, LLMRequestConfig, Role
 from campus_plan_bot.interfaces.persistence_types import Conversation, Message
 from campus_plan_bot.llm_client import InstituteClient
+from campus_plan_bot.prompts.util import get_prompt
 
 
 class AsrProcessor:
@@ -18,7 +18,7 @@ class AsrProcessor:
         llm_client: LLMClient | None = None,
     ):
         self.prompt_builder = prompt_builder or LLama3PromptBuilder(
-            Constants.SYSTEM_PROMPT_ASR_FIX
+            get_prompt("asr_fixing")
         )
         self.llm_client = llm_client or InstituteClient(
             default_request_config=LLMRequestConfig(
@@ -41,38 +41,18 @@ class AsrProcessor:
         prompt = self.prompt_builder.from_conversation_history(conversation_history)
         response = await self.llm_client.query_async(prompt)
 
-        self.fixed_input = input
+        return self.parse_response(response)
 
-        self.apply_replacements(response)
-
-        similarity = SequenceMatcher(None, input, self.fixed_input).ratio()
-        logger.debug(
-            f"Fixed ASR input. Similarity between input and correction is: {similarity}."
-        )
-
-        return self.fixed_input
-
-    def apply_replacements(self, replacements):
+    def parse_response(self, response: str  ):
         """Apply all fixes to the input that the model identified."""
 
         # if something is not as expected return the partially fixed input
         try:
-            replacements_list = json.loads(replacements)
-            self.fixed_input = replacements_list[Constants.REPLACEMENT_KEY_ORIGINAL]
 
-            for incorrect, correct in replacements_list[
-                Constants.REPLACEMENT_KEY_CORRECTION
-            ].items():
-                self.fixed_input = self.fixed_input.replace(incorrect, correct)
+            response = response.replace("**", "").replace("Your Output", "").replace(":", "").replace("`", "").strip()
+            return " ".join(response.split(","))
 
-            return self.fixed_input
-
-        except Exception as e:
-            self.abort_processing(e)
-
-    def abort_processing(self, exception: Exception):
-        """Something went wrong so return the partially fixed input and
-        continue with the next processing step."""
-        logger.error(f"Fixing ASR errors failed with error: {exception}.")
-        logger.error("Aborting ASR error fixing and continuing with next step.")
-        return self.fixed_input
+        except Exception as e:    
+            logger.warning(f"Fixing ASR errors failed with error: {e} for response: '{response}'")
+            logger.warning("Aborting ASR error fixing and continuing with next step.")
+        return ""

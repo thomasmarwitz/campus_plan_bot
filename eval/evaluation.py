@@ -13,6 +13,7 @@ from pydantic_evals.evaluators import (
     EvaluatorContext,
     LLMJudge,
 )
+from campus_plan_bot.asr_processing import AsrProcessor
 from reporting import report_to_df
 
 from campus_plan_bot.bot import SimpleTextBot
@@ -307,13 +308,25 @@ def process_file(
             bots[test_case_input.case_id] = SimpleTextBot()
 
         bot = bots[test_case_input.case_id]
+
+        # ASR processing
+        fixed_input = ""
+        if "asr" in file.name.lower():
+            fixed_input = await AsrProcessor().fix_asr(test_case_input.input) + " "
+
+        # Query rewriting
         rephrased_query = await QuestionRephraser().rephrase(
             bot.conversation_history, query=test_case_input.input
         )
-        docs = rag.retrieve_context(rephrased_query, limit=5)
+
+        # RAG retrieval
+        docs = rag.retrieve_context(rephrased_query + " " + fixed_input, limit=5)
+
+        # Data picker
         data_picker = DataPicker()
         docs = await data_picker.choose_fields(test_case_input.input, docs)
-
+        
+        # Answer generation
         answer = await bot.query(test_case_input.input, docs)
 
         # delete bot reference if last turn
@@ -353,7 +366,7 @@ def process_file(
                 evaluators=[FScore(), Precision(), Recall(), SINGLE_TURN_LLM_JUDGE],
             )
 
-            report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=4)
+            report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=5)
             df = report_to_df(report)
             df.to_csv(output_filename, index=False)
             logger.info(

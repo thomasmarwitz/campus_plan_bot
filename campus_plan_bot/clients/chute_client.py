@@ -137,6 +137,7 @@ class ChuteModel(Model):
         model: str = "Qwen/Qwen3-32B",
         api_token: str | None = None,
         timeout: int = 120,
+        no_think: bool = False,
         strip_think: bool = True,
         max_retries: int = 3,
         backoff_factor: float = 0.5,
@@ -146,6 +147,7 @@ class ChuteModel(Model):
         assert tok, "CHUTES_KEY is not set"
         self.api_token = tok
         self.timeout = timeout
+        self.no_think = no_think
         self.strip_think = strip_think
         self.max_retries = max_retries
         self.backoff_factor = backoff_factor
@@ -337,6 +339,33 @@ class ChuteModel(Model):
             raise last_exception
 
 
+    async def query_async(self, prompt: str) -> str:
+        """Query the Chute API with a single string, omitting the pydantic format."""
+        prompt += " /no_think" if self.no_think else ""
+        
+        client = cached_async_http_client(provider=self.system)
+        body = {
+            "model": self.model_name,
+            "messages": [{"role": "user", "content": prompt}],
+            "stream": False,
+        }
+        response = await client.post(
+            CHUTE_API_URL,
+            headers=self._build_headers(),
+            json=body,
+            timeout=self.timeout,
+        )
+        response.raise_for_status()
+        data = response.json()
+        choice = data.get("choices", [{}])[0]
+        message = choice.get("message", {})
+        content: str = message.get("content")
+
+        if self.strip_think:
+            content = content.replace("<think>", "").replace("</think>", "").strip()
+
+        return content
+
 async def main():
     """Simple test case for the ChuteModel."""
     print("--- Testing ChuteModel with run ---")
@@ -360,8 +389,14 @@ async def main():
     except Exception as e:
         print(f"Error during stream test: {e}")
 
+async def test():
+    model = ChuteModel()
+    result = await model.query_async("Tell me a 10-word story about a dragon. /no_think")
+    print(result)
 
 if __name__ == "__main__":
     # Ensure you have set the CHUTES_KEY environment variable
     # e.g., export CHUTES_KEY='your-api-key'
-    asyncio.run(main())
+    #asyncio.run(main())
+
+    asyncio.run(test())

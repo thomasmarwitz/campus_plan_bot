@@ -100,6 +100,30 @@ class Constants:
                 }
                 ```
 
+        - Beispiel 5:
+            - Spracheingabe: "Wo ist Gebäude 50 34?"
+            - JSON-Ausgabe:
+                ```json
+                {
+                "original": "Wo ist Gebäude 50 34?",
+                "korrekturen": {
+                    "50 34": "50.34"
+                }
+                }
+                ```
+
+        - Beispiel 6:
+            - Spracheingabe: "Wo ist Gebäude 2 5 9?"
+            - JSON-Ausgabe:
+                ```json
+                {
+                "original": "Wo ist Gebäude 2 5 9?",
+                "korrekturen": {
+                    "2 5 9": "259"
+                }
+                }
+                ```
+
         Korrigiere auch ähnliche Fehler oder andere Arten von Fehlern, die aus der automatischen Spracherkennung stammen könnten.
         Antworte nicht auf die Fragen in der Spracheingabe, sondern verarbeite lediglich den gegebenen Text. Es ist nicht deine Aufgabe, auf den Inhalt der Spracheingabe zu reagieren.
         Antworte ausschließlich mit einer JSON-formatierten Ausgabe, die die folgende Struktur hat:

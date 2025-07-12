@@ -55,7 +55,7 @@ def evaluate_rag_multi_turn():
             # Add a mock assistant response for the next turn's context
             if not failed:
                 try:
-                    retrieved_row = df[df["old_identifikator"] == expected_id].iloc[0]
+                    retrieved_row = df[df["old_identifikator"].str.contains(expected_id)].iloc[0]
                     building_name = retrieved_row.get("name", expected_id)
                     assistant_response = (
                         f"Informationen zu {building_name} ({expected_id}) gefunden."

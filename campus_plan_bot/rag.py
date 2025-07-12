@@ -76,23 +76,28 @@ class RAG(RAGComponent):
         return cls(index, df, id_column_name)
 
     def _retrieve_by_building_number(
-        self, query: str, limit: int = 5
+        self, query: str, limit: int = 5, asr_fixed_query: str = ""
     ) -> list[RetrievedDocument]:
         """Retrieve documents by direct building number match."""
 
+        query = query + " " + asr_fixed_query
         pattern = r"(\d{1,2}\.\d{1,2}|\d{3,4})"
-        building_number_match = re.search(pattern, query)
-        if not building_number_match:
+        building_numbers = list(set(re.findall(pattern, query)))
+        if not building_numbers:
             return []
 
-        building_number = building_number_match.group(0)
-        logger.debug(f"Building number found: {building_number}")
+        logger.debug(f"Building numbers found: {building_numbers}")
 
         matched_rows = self.database[
-            self.database[self.id_column_name].str.contains(
-                building_number, na=False, regex=False
+            self.database[self.id_column_name].apply(
+                lambda x: any(
+                    building_number in str(x) for building_number in building_numbers
+                )
             )
         ]
+
+        # reverse sort matched rows, to prioritize longer numbers
+        matched_rows = matched_rows.sort_values(by=self.id_column_name, key=lambda x: x.str.len(), ascending=False)
 
         documents = []
         for _, row in matched_rows.iterrows():
@@ -104,7 +109,7 @@ class RAG(RAGComponent):
                 )
             )
         logger.debug(
-            f"Found {len(documents)} documents matching the building number '{building_number}' directly."
+            f"Found {len(documents)} documents matching the building number '{building_numbers}' directly."
         )
         return documents[:limit]
 
@@ -158,12 +163,12 @@ class RAG(RAGComponent):
         )
         return documents[:limit]
 
-    def retrieve_context(self, query: str, limit: int = 5) -> list[RetrievedDocument]:
+    def retrieve_context(self, query: str, limit: int = 5, asr_fixed_query: str = "") -> list[RetrievedDocument]:
         """Retrieve relevant context based on a query string."""
         documents: list[RetrievedDocument] = []
 
         # 1. check whether building number of type 50.34 (1-2 numbers).(1-2 numbers) do exactly match
-        documents.extend(self._retrieve_by_building_number(query))
+        documents.extend(self._retrieve_by_building_number(query, limit, asr_fixed_query=asr_fixed_query))
 
         existing_document_ids = set(doc.id for doc in documents)
         # 2. if not, use cosine similarity to find the most relevant documents

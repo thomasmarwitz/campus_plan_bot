@@ -1,0 +1,13 @@
+original_query,fixed_query,retrieved_docs,expected_id,passed,time_taken
+ Kannst du mit den Weg zu Gebäude 0.1.85 zeigen.,01.85,"Nachrichtentechnik-Hörsaal (30.10),Heinrich-Hertz-Hörsaal (10.11),50.19 - InformatiKOM I,40.19,40.11",1.85,False,2.3549320697784424
+ Können Sie mir den Weg zu Gebäude 309 ansech zeigen?,309  319,"309,407,10.22 - LAZ,10.23,10.91",329.0,False,1.9680840969085691
+" Wann ist Gebäude 6,88 wieder zugänglich?",6.88,"10.91,11.22,Mittlerer Hörsaal Maschinenbau (10.91),Franz-Grashof-Hörsaal (10.91),20.52",688.0,False,1.8543250560760496
+ Wiegt Beschreibung zu Gebäude 230.,230,"230,234,30.24,30.23,11.22",239.0,False,1.2808709144592283
+" Die Route zu Gebäude 30, 60 ist gesucht.",30  60,"30.91,Rudolf-Plank-Hörsaal (40.32),315,11.22,Lernzentrum am Fasanenschlösschen (Geb. 30.28)",30.6,False,1.825324773788452
+ Wegbeschreibung zu Gebäude 9.600 und 7 mehr wünscht.,9.600  9600  7  07,"11.22,20.52,30.42,Chemie-Hörsaal III (30.41),Werkfeuerwehr",9607.0,False,3.4518280029296875
+ Ist 220° offen?,220,"220,10.84,Angewandte Thermofluidik (IATF), Institut für,Evaluationsstelle (STS-QM),KIT-Zentrum für Klima und Umwelt",223.0,False,1.623939037322998
+ Gebt mir den Weblink von Gebäude 9.651.,9.651,"01.90,06.36,20.40,11.22,30.42",9651.0,False,7.098339796066284
+" Zeig mir die Wettpräsenz von Gebäude 39,49.",39.49,"214,Chemie-Hörsaal III (30.41),Chemie-Hörsaal II (30.41),Forschungsförderung (FOR) CS,Messtechnik-Hörsaal (30.33)",30.49,False,2.047886848449707
+ Wann hat Gebäude 653 auf?,653,"9653,11.22,Chemie-Hörsaal III (30.41),50.31,Angewandte Thermofluidik (IATF), Institut für",663.0,False,1.5395410060882568
+ Zu welchen Zeiten ist Gebäude 14 zugänglich.,14,"20.14,20.21,20.20,11.22,01.80",410.0,False,1.4381608963012695
+" Ist das Gebäude 30, 28 barrierefrei zugänglich?",3028,"Lernzentrum am Fasanenschlösschen (Geb. 30.28),30.23,20.40,30.91,Rudolf-Criegee-Hörsaal (30.41)",30.28,False,1.384619951248169
