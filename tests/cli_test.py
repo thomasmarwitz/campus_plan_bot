@@ -26,7 +26,9 @@ def parse_response(output: str) -> list[dict[str, str]]:
 @pytest.mark.e2e
 def test_cli_chat():
     runner = CliRunner()
-    result = runner.invoke(chat, input="Wie komme ich zur Mensa?\nexit\n")
+    result = runner.invoke(
+        chat, ["-i", "text"], input="Wie komme ich zur Mensa?\nexit\n"
+    )
 
     assert result.exit_code == 0, f"The CLI should exit with code 0\n\n{result.output}"
 
