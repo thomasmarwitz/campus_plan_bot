@@ -26,8 +26,13 @@ def parse_response(output: str) -> list[dict[str, str]]:
 @pytest.mark.e2e
 def test_cli_chat():
     runner = CliRunner()
-    result = runner.invoke(chat, input="Hi\nexit\n")
+    result = runner.invoke(chat, input="Wie komme ich zur Mensa?\nexit\n")
 
-    assert result.exit_code == 0
-    assert "Welcome to the chat with CampusGuide" in result.output
-    assert "Bot:" in result.output
+    assert result.exit_code == 0, f"The CLI should exit with code 0\n\n{result.output}"
+
+    assert (
+        "Bot:" in result.output
+    ), f"There is something serious wrong with the output\n\n{result.output}"
+    assert (
+        "Adenauerring 7" in result.output
+    ), f"The answer is not correct\n\n{result.output}"
