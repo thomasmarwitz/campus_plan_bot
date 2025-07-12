@@ -27,7 +27,7 @@ class AsrProcessor:
             )
         )
 
-    def fix_asr(self, input):
+    async def fix_asr(self, input):
         """Prompt the model to create a list of ASR errors and their
         corrections."""
         # new conversation for each query since no history is needed
@@ -39,7 +39,7 @@ class AsrProcessor:
         conversation_history.add_message(user_query)
 
         prompt = self.prompt_builder.from_conversation_history(conversation_history)
-        response = self.llm_client.query(prompt)
+        response = await self.llm_client.query_async(prompt)
 
         self.fixed_input = input
 

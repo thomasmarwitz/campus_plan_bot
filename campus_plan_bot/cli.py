@@ -87,11 +87,14 @@ def chat(log_level: str, input: str, token: str, file: str):
                 break
 
                 # Step 2: fix ASR errors
+            fixed_input = ""
             if input == InputMethods.ASR.value or input == InputMethods.LOCAL_ASR.value:
-                fixed_input = asr_processor.fix_asr(user_input)
+                fixed_input = await asr_processor.fix_asr(user_input)
 
             # Step 3: rephraser the question
-            rephrased_input = rephraser.rephrase(user_input)
+            rephrased_input = await rephraser.rephrase(
+                conversation=bot.conversation_history, query=user_input
+            )
 
             # Step 4: retrieve relevant documents
             documents = rag.retrieve_context(
@@ -99,10 +102,10 @@ def chat(log_level: str, input: str, token: str, file: str):
             )
 
             # Step 5: select useful data fields
-            documents = data_picker.choose_fields(user_input, documents)
+            documents = await data_picker.choose_fields(user_input, documents)
 
             # Step 6: generate an answer to the query
-            response = bot.query(user_input, documents)
+            response = await bot.query(user_input, documents)
 
             # Step 7: output the result
             click.secho(f"{bot.name}: ", fg="cyan", nl=False)
