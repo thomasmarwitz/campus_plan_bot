@@ -8,10 +8,13 @@ from campus_plan_bot.rag import RAG
 DATA_FILE_PATH = Path("data/campusplan_evaluation.csv")
 
 
-@pytest.mark.skipif(not DATA_FILE_PATH.exists(), reason="Data file 'campusplan_evaluation.csv' not found")
+@pytest.mark.skipif(
+    not DATA_FILE_PATH.exists(),
+    reason="Data file 'campusplan_evaluation.csv' not found",
+)
 def test_rag_retrieval():
-    """
-    A simple test to check if the RAG component can be executed and works.
+    """A simple test to check if the RAG component can be executed and works.
+
     This test performs a simple retrieval and prints the results.
     """
     print("Initializing RAG component from:", DATA_FILE_PATH)
@@ -25,7 +28,9 @@ def test_rag_retrieval():
     print("\n--- Retrieval Results ---")
     if documents:
         for doc in documents:
-            print(f"  ID: {doc.id}, Score: {doc.relevance_score}, Name: {doc.data.get('name')}")
+            print(
+                f"  ID: {doc.id}, Score: {doc.relevance_score}, Name: {doc.data.get('name')}"
+            )
     else:
         print("  No documents found.")
     print("-------------------------\n")
@@ -33,9 +38,7 @@ def test_rag_retrieval():
 
 
 def test_rag_retrieval_with_history():
-    """
-    Tests the RAG component's ability to handle conversational history.
-    """
+    """Tests the RAG component's ability to handle conversational history."""
     print("Initializing RAG component from:", DATA_FILE_PATH)
     rag = RAG.from_file(DATA_FILE_PATH)
 
@@ -58,7 +61,9 @@ def test_rag_retrieval_with_history():
     print("\n--- Retrieval Results ---")
     if documents:
         for doc in documents:
-            print(f"  ID: {doc.id}, Score: {doc.relevance_score}, Name: {doc.data.get('name')}")
+            print(
+                f"  ID: {doc.id}, Score: {doc.relevance_score}, Name: {doc.data.get('name')}"
+            )
     else:
         print("  No documents found.")
     print("-------------------------\n")
@@ -71,4 +76,4 @@ if __name__ == "__main__":
         print(f"Skipping test: Data file not found at {DATA_FILE_PATH}")
     else:
         test_rag_retrieval()
-        test_rag_retrieval_with_history() 
+        test_rag_retrieval_with_history()

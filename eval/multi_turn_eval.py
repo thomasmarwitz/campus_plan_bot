@@ -1,23 +1,22 @@
-import sys
-from pathlib import Path
 import json
+from pathlib import Path
+
 import pandas as pd
 from rich import print
 from tqdm import tqdm
 
-#sys.path.append(str(Path(__file__).resolve().parents[1]))
-
-from campus_plan_bot.rag import RAG
-from campus_plan_bot.query_rewriter import QuestionRephraser
 from campus_plan_bot.interfaces.persistence_types import Conversation, Message, Role
+from campus_plan_bot.query_rewriter import QuestionRephraser
+
+# sys.path.append(str(Path(__file__).resolve().parents[1]))
+from campus_plan_bot.rag import RAG
 
 
 def evaluate_rag_multi_turn():
-    """
-    Evaluates the RAG system on multi-turn conversations using query rephrasing.
-    """
+    """Evaluates the RAG system on multi-turn conversations using query
+    rephrasing."""
     multi_turn_eval_path = Path("data/evaluation/multi_turn/multi_turns.json")
-    with open(multi_turn_eval_path, "r") as f:
+    with open(multi_turn_eval_path) as f:
         evaluation_data = json.load(f)
 
     data_file_path = Path("data/campusplan_evaluation.csv")
@@ -32,7 +31,8 @@ def evaluate_rag_multi_turn():
 
     results = []
     for interaction in tqdm(
-        evaluation_data, desc="Evaluating RAG with rephrasing on multi-turn conversations"
+        evaluation_data,
+        desc="Evaluating RAG with rephrasing on multi-turn conversations",
     ):
         conversation = Conversation.new()
         for i, turn in enumerate(interaction["prompts"]):
@@ -57,13 +57,21 @@ def evaluate_rag_multi_turn():
                 try:
                     retrieved_row = df[df["old_identifikator"] == expected_id].iloc[0]
                     building_name = retrieved_row.get("name", expected_id)
-                    assistant_response = f"Informationen zu {building_name} ({expected_id}) gefunden."
+                    assistant_response = (
+                        f"Informationen zu {building_name} ({expected_id}) gefunden."
+                    )
                 except IndexError:
                     assistant_response = "Informationen gefunden."
-                conversation.add_message(Message.from_content(assistant_response, Role.ASSISTANT))
+                conversation.add_message(
+                    Message.from_content(assistant_response, Role.ASSISTANT)
+                )
             else:
-                assistant_response = "Ich konnte dazu leider keine Informationen finden."
-                conversation.add_message(Message.from_content(assistant_response, Role.ASSISTANT))
+                assistant_response = (
+                    "Ich konnte dazu leider keine Informationen finden."
+                )
+                conversation.add_message(
+                    Message.from_content(assistant_response, Role.ASSISTANT)
+                )
 
             results.append(
                 {
@@ -116,4 +124,4 @@ def evaluate_rag_multi_turn():
 
 
 if __name__ == "__main__":
-    evaluate_rag_multi_turn() 
+    evaluate_rag_multi_turn()

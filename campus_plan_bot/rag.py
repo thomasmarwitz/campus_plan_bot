@@ -1,18 +1,18 @@
-from copy import copy
 import re
+from copy import copy
 from pathlib import Path
 
 import pandas as pd
+from llama_index.core import Document, Settings, VectorStoreIndex
+from llama_index.core.retrievers import VectorIndexRetriever
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from loguru import logger
+from sentence_transformers import CrossEncoder
 
 from campus_plan_bot.interfaces.interfaces import (
     RAGComponent,
     RetrievedDocument,
 )
-from llama_index.core import Document, Settings, VectorStoreIndex
-from llama_index.core.retrievers import VectorIndexRetriever
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from sentence_transformers import CrossEncoder
 
 
 class RAG(RAGComponent):
@@ -35,7 +35,6 @@ class RAG(RAGComponent):
     def _normalize_text(cls, text: str) -> str:
         """Normalize text by replacing special characters with spaces."""
         return re.sub(r"[-_]", " ", text)
-
 
     @classmethod
     def from_file(cls, file_path: Path, id_column_name: str = "identifikator") -> "RAG":
@@ -68,15 +67,16 @@ class RAG(RAGComponent):
             )
             documents.append(doc)
 
-        Settings.embed_model = HuggingFaceEmbedding(model_name=cls.MODEL, trust_remote_code=True)
+        Settings.embed_model = HuggingFaceEmbedding(
+            model_name=cls.MODEL, trust_remote_code=True
+        )
         index = VectorStoreIndex.from_documents(
             documents,
         )
         return cls(index, df, id_column_name)
 
     def _retrieve_by_building_number(
-        self, query: str, 
-        limit: int = 5
+        self, query: str, limit: int = 5
     ) -> list[RetrievedDocument]:
         """Retrieve documents by direct building number match."""
 
@@ -84,13 +84,14 @@ class RAG(RAGComponent):
         building_number_match = re.search(pattern, query)
         if not building_number_match:
             return []
-        
+
         building_number = building_number_match.group(0)
         logger.debug(f"Building number found: {building_number}")
 
         matched_rows = self.database[
-            self.database[self.id_column_name]
-            .str.contains(building_number, na=False, regex=False)
+            self.database[self.id_column_name].str.contains(
+                building_number, na=False, regex=False
+            )
         ]
 
         documents = []
@@ -106,25 +107,32 @@ class RAG(RAGComponent):
             f"Found {len(documents)} documents matching the building number '{building_number}' directly."
         )
         return documents[:limit]
-    
-    def _retrieve_by_similarity(self, query: str, existing_document_ids: set[str], limit: int = 5, rerank_multiplier: int = 3) -> list[RetrievedDocument]:
+
+    def _retrieve_by_similarity(
+        self,
+        query: str,
+        existing_document_ids: set[str],
+        limit: int = 5,
+        rerank_multiplier: int = 3,
+    ) -> list[RetrievedDocument]:
         """Retrieve documents by cosine similarity and reranking."""
         existing_document_ids = copy(existing_document_ids)
-        
+
         if len(existing_document_ids) >= limit:
             return []
-    
+
         normalized_query = self._normalize_text(query)
         retriever = VectorIndexRetriever(
             index=self.index,
-            similarity_top_k=limit * rerank_multiplier,  # retrieve more documents for reranking
+            similarity_top_k=limit
+            * rerank_multiplier,  # retrieve more documents for reranking
         )
         nodes = retriever.retrieve(normalized_query)
 
         # Rerank the retrieved documents
         if not nodes:
             return []
-    
+
         pairs = [(normalized_query, node.get_content()) for node in nodes]
         scores = self.reranker.predict(pairs)
 
@@ -145,10 +153,10 @@ class RAG(RAGComponent):
             )
             existing_document_ids.add(doc_id)
 
-        logger.debug(f"Found {len(documents)} documents using cosine similarity and reranking.")
+        logger.debug(
+            f"Found {len(documents)} documents using cosine similarity and reranking."
+        )
         return documents[:limit]
-    
-
 
     def retrieve_context(self, query: str, limit: int = 5) -> list[RetrievedDocument]:
         """Retrieve relevant context based on a query string."""
@@ -159,11 +167,17 @@ class RAG(RAGComponent):
 
         existing_document_ids = set(doc.id for doc in documents)
         # 2. if not, use cosine similarity to find the most relevant documents
-        documents.extend(self._retrieve_by_similarity(query, existing_document_ids, limit=limit - len(documents), rerank_multiplier=3))
+        documents.extend(
+            self._retrieve_by_similarity(
+                query,
+                existing_document_ids,
+                limit=limit - len(documents),
+                rerank_multiplier=3,
+            )
+        )
 
         logger.debug(
             "Retrieved "
             + ", ".join(f"({doc.relevance_score}) {doc.id}" for doc in documents)
         )
         return documents
-

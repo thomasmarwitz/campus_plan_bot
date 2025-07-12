@@ -1,4 +1,5 @@
 import re
+
 from huggingface_hub import AsyncInferenceClient, InferenceClient
 from loguru import logger
 
@@ -10,7 +11,11 @@ INSTITUTE_URL = "http://hiaisc.isl.iar.kit.edu/llm_generate"
 class InstituteClient(LLMClient):
     """A client for the Institute API."""
 
-    def __init__(self, default_request_config: LLMRequestConfig | None = None, remove_special_tokens: bool = True):
+    def __init__(
+        self,
+        default_request_config: LLMRequestConfig | None = None,
+        remove_special_tokens: bool = True,
+    ):
         self.client = InferenceClient(
             model=INSTITUTE_URL,
         )

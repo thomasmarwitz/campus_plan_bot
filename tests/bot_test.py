@@ -11,7 +11,8 @@ def bot(database_path: Path) -> SimpleTextBot:
 
 
 @pytest.mark.e2e
-def test_simple_multi_turn(bot: SimpleTextBot):
+@pytest.mark.asyncio
+async def test_simple_multi_turn(bot: SimpleTextBot):
     """Context is preserved across multiple turns."""
     assert isinstance(bot.query("Hey, my name is Günther.", []), str)  # to fill context
-    assert "Günther" in bot.query("What is my name?", [])
+    assert "Günther" in await bot.query("What is my name?", [])

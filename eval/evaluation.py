@@ -13,12 +13,12 @@ from pydantic_evals.evaluators import (
     EvaluatorContext,
     LLMJudge,
 )
-from campus_plan_bot.query_rewriter import QuestionRephraser
 from reporting import report_to_df
 
 from campus_plan_bot.bot import SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
 from campus_plan_bot.data_picker import DataPicker
+from campus_plan_bot.query_rewriter import QuestionRephraser
 from campus_plan_bot.rag import RAG
 
 # Load BertScore model once
@@ -307,7 +307,9 @@ def process_file(
             bots[test_case_input.case_id] = SimpleTextBot()
 
         bot = bots[test_case_input.case_id]
-        rephrased_query = await QuestionRephraser().rephrase(bot.conversation_history, query=test_case_input.input)
+        rephrased_query = await QuestionRephraser().rephrase(
+            bot.conversation_history, query=test_case_input.input
+        )
         docs = rag.retrieve_context(rephrased_query, limit=5)
         data_picker = DataPicker()
         docs = await data_picker.choose_fields(test_case_input.input, docs)

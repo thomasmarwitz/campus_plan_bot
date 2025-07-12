@@ -66,6 +66,9 @@ testpaths = [
 files.extend-exclude = [
   "data/",
   "docs/",
-  "constants.py"
+  "constants.py",
+  "campus_plan_bot/query_rewriter.py",
+  "eval/verify_query_rewriting.py",
+  "tests/rag_test.py",
 ]
 default.extend-ignore-re = ["controll", "ein"]
