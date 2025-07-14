@@ -1,4 +1,4 @@
-from pathlib import Path
+import asyncio
 
 from loguru import logger
 
@@ -43,16 +43,33 @@ class AsrProcessor:
 
         return self.parse_response(response)
 
-    def parse_response(self, response: str  ):
+    def parse_response(self, response: str):
         """Apply all fixes to the input that the model identified."""
 
         # if something is not as expected return the partially fixed input
         try:
 
-            response = response.replace("**", "").replace("Your Output", "").replace(":", "").replace("`", "").strip()
+            response = (
+                response.replace("**", "")
+                .replace("Your Output", "")
+                .replace(":", "")
+                .replace("`", "")
+                .strip()
+            )
             return " ".join(response.split(","))
 
-        except Exception as e:    
-            logger.warning(f"Fixing ASR errors failed with error: {e} for response: '{response}'")
+        except Exception as e:
+            logger.warning(
+                f"Fixing ASR errors failed with error: {e} for response: '{response}'"
+            )
             logger.warning("Aborting ASR error fixing and continuing with next step.")
         return ""
+
+
+if __name__ == "__main__":
+    processor = AsrProcessor()
+
+    async def run():
+        print(await processor.fix_asr("Wo ist Gebäude fünfzig Punkt vierunddreißig"))
+
+    asyncio.run(run())

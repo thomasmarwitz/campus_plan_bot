@@ -69,6 +69,30 @@ Your task is to correct transcription errors in user inputs that were transcribe
 
 ---
 
+**Case 8: Spelled-out integer**
+
+* **User Input**: "Welche Adresse hat Gebäude einhundert und zwei?"
+* **Reasoning**: Spelled-out numbers that represent an integer should be converted to their digit form (e.g., `XXX`).
+* **Your Output**: `102`
+
+---
+
+**Case 9: Another spelled-out number example**
+
+* **User Input**: "Wo ist Gebäude fünfzig Punkt vierunddreißig?"
+* **Reasoning**: Convert the spelled-out number to the `XX.XX` format. This handles numbers containing "Punkt".
+* **Your Output**: `50.34`
+
+---
+
+**Case 10: Spaced-out digits**
+
+* **User Input**: "Wo ist Gebäude 2 5 9?"
+* **Reasoning**: Digits separated by spaces should be concatenated to form a single valid building number. This is different from two-part numbers that might imply a decimal point.
+* **Your Output**: `259`
+
+---
+
 Now, process the following user input:
 `{asr_input}`
 

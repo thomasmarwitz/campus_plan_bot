@@ -62,3 +62,110 @@ open_now_synthetic-31,Ist die Ambulanz momentan zugänglich?,single,,31.45559501
 open_now_synthetic-33,Ist das Gebäude dreihundertzehn derzeit offen?,single,,31.21965718269348
 open_now_synthetic-36,Hat man gerade in Gebäude fünf Punkt zwanzig Reihen?,single,,30.796839952468872
 open_now_synthetic-39,Ist die Versuchsanstalt des Köhlreuther Instituts derzeit geöffnet?,single,,30.708581924438477
+open_now_synthetic-40,Kann man jetzt ins Gebäude fünfzig Punkt vierunddreißig?,single,,29.546960830688477
+open_now_synthetic-42,Hat die KITBibliothek gerade auf?,single,,29.284025192260742
+open_now_synthetic-52,Ist Gebäude 413 momentan zugänglich?,single,,29.337612867355347
+open_now_synthetic-53,Kann man aktuell ins Institut für Neutronenphysik und Reaktortechnik?,single,,34.292454957962036
+open_now_synthetic-54,Hat Gebäude vierhundert und sechzehn zurzeit auf?,single,,29.711679220199585
+open_now_synthetic-55,"Ist das Institut für Wasser und Gewässerentwicklung, Wasserwirtschaft und Kulturtechnik momentan zugänglich?",single,,35.78397226333618
+open_now_synthetic-58,Kann man gerade ins Gebäude 40.19?,single,,30.76924204826355
+open_now_synthetic-63,Hat das Lernzentrum am Fasanenschlösschen derzeit geöffnet?,single,,29.719649076461792
+open_now_synthetic-64,Ist 223 gerade offen?,single,,28.346688985824585
+open_now_synthetic-67,Hat vierzig Punkt neunundzwanzig gerade auf?,single,,26.97999119758606
+open_now_synthetic-71,Hat das Kollegiengebäude am Zirkel gerade geöffnet?,single,,29.81213068962097
+open_now_synthetic-73,Kann man aktuell in Gebäude 404 rein?,single,,29.871902227401733
+open_now_synthetic-88,Kann man momentan ins IESLInstitut?,single,,28.775548934936523
+open_until_synthetic-04,Bis zu welcher Uhrzeit ist Gebäude Null Eins Punkt Neun Null zugänglich?,single,,29.033485889434814
+open_until_synthetic-06,Zu welcher Zeit schließt das IPRGebäude?,single,,30.13108491897583
+open_until_synthetic-08,Man schließt die Physikbibliothek.,single,,30.07323694229126
+open_until_synthetic-11,Wann schließt das Informatikum eins?,single,,27.60189390182495
+open_until_synthetic-14,Wie spät schließt der Informatikbau?,single,,28.821133136749268
+open_until_synthetic-22,Bis wann ist das Institut für angewandte Geowissenschaften heute geöffnet?,single,,30.095346927642822
+open_until_synthetic-24,Zu welcher Zeit schließt der Bereich vier des Instituts für Bio und Lebensmitteltechnik?,single,,30.12185287475586
+open_until_synthetic-33,Wie spät macht die Physikbibliothek zu?,single,,30.006757020950317
+open_until_synthetic-36,Bis wann hat das Studium Generale Forum heute geöffnet?,single,,29.9082190990448
+open_until_synthetic-38,Zu welcher Uhrzeit schließt der Informatikbau?,single,,29.727113008499146
+open_until_synthetic-50,"Bis wann hat Gebäude vier, null, drei heute auf?",single,,29.678030014038086
+open_until_synthetic-54,Zu welcher Uhrzeit ist das Kollegiengebäude Maschinenbau zwei zugänglich?,single,,30.06877589225769
+open_until_synthetic-75,Es wandert Gebäude 152 heute auf.,single,,30.070857048034668
+open_until_synthetic-80,"Bis zu welchem Zeitpunkt ist die Versuchsanstalt für Stahl, Holz und Steine zugänglich?",single,,30.156766891479492
+open_until_synthetic-90,"Man es die Schließzeit des College nennt, des Kollegiengebäudes am Ehrenhof.",single,,30.693980932235718
+open_until_synthetic-92,Bis zu welcher Uhrzeit ist das alte Maschinenbaugebäude offen?,single,,28.905824899673462
+open_until_synthetic-95,Zu welchem Zeitpunkt schließt das Zähringer Haus?,single,,28.657989740371704
+open_until_synthetic-98,Wann endet die Öffnungszeit von Gebäude 30.50?,single,,29.729608058929443
+open_until_synthetic-99,Bis zu welcher Zeit ist das Zoologische Institut geöffnet?,single,,29.684114933013916
+open_website_synthetic-04,Gibt mir die InternetAdresse des Instituts für Technik der Informationsverarbeitung.,single,,37.3084774017334
+open_website_synthetic-05,Er zeigt die WebAdresse des Instituts für Sport und Sportwissenschaften.,single,,29.88186001777649
+open_website_synthetic-08,Navigier zur Website des Instituts für Technische Physik.,single,,29.668314218521118
+open_website_synthetic-11,Zeig mir mal den WebAuftritt des Ites.,single,,30.071352005004883
+open_website_synthetic-13,Internetadresse des Forschungszentrums Umwelt gesucht.,single,,30.13423204421997
+open_website_synthetic-17,Webadresse des Studierenden Services gesucht.,single,,30.096722841262817
+open_website_synthetic-27,Wie lautet die URL des Instituts für Elektroenergiesysteme und Hochspannungstechnik?,single,,29.747332096099854
+open_website_synthetic-43,Navigiere zum Studium Generale Forum.,single,,30.242367029190063
+open_website_synthetic-46,Wie erreiche ich das Sprachenzentrum online?,single,,29.8768892288208
+open_website_synthetic-50,Zeig mir die Homepage des Gebäudes zweihundertsechzig Strich eins.,single,,29.791208267211914
+open_website_synthetic-54,Gib mir den Weblink von Gebäude neuntausendsechshunderteinundfünfzig.,single,,30.196029901504517
+open_website_synthetic-64,Welche Website gehört zu Gebäude 693?,single,,33.57643222808838
+open_website_synthetic-68,Navigiere zur Internetseite von Gebäude achthundert und sechs.,single,,30.097599983215332
+open_website_synthetic-76,Ruf die Website von Gebäude 913 auf.,single,,29.989927053451538
+open_website_synthetic-79,Wie lautet die URL des Engler Bunte Instituts und MINTKollegs?,single,,29.17235493659973
+open_website_synthetic-80,Navigiert zur Homepage von Gebäude 131.,single,,30.406386852264404
+open_website_synthetic-93,"Zeig mir die Webpräsenz von Gebäude dreißig, neunundvierzig.",single,,30.405665159225464
+open_website_synthetic-98,Ruf die Homepage von Gebäude 412 auf.,single,,30.305691957473755
+opening_hours_synthetic-05,Wie sind die Öffnungszeiten des Forschungszentrums Umwelt?,single,,29.987689971923828
+opening_hours_synthetic-13,Wann hat Gebäude Null Eins Punkt Zwölf geöffnet?,single,,29.793538093566895
+opening_hours_synthetic-14,Zu welchen Zeiten ist Gebäude 1.90 zugänglich?,single,,29.972646951675415
+opening_hours_synthetic-19,"Wann ist das Institut für angewandte Materialien, elektrochemische Technologien geöffnet?",single,,30.32009196281433
+opening_hours_synthetic-30,Zu welchen Uhrzeiten ist das WienInstitut geöffnet?,single,,31.120738744735718
+opening_hours_synthetic-41,Dies sind die Zugangszeiten zum Institut für Angewandte Geowissenschaften.,single,,29.866836071014404
+opening_hours_synthetic-44,Wann hat der schwarze Kater auf?,single,,30.1026930809021
+opening_hours_synthetic-46,Wann kann man in der Informatik bauen?,single,,29.786617040634155
+opening_hours_synthetic-50,Wann ist Godzilla Test Facility Beryllid Production geöffnet?,single,,37.08664512634277
+opening_hours_synthetic-53,Wann kann man Gebäude 40.24 betreten?,single,,30.381493091583252
+opening_hours_synthetic-55,Wann hat das Institut für funktionelle Grenzflächen geöffnet?,single,,30.04075813293457
+opening_hours_synthetic-58,Wann hat Gebäude 663 auf?,single,,29.66378092765808
+opening_hours_synthetic-59,Welche Öffnungszeiten hat das Architekturgebäude?,single,,30.37809419631958
+opening_hours_synthetic-69,Zu welchen Zeiten ist der WinkelWohnblock NZ1 zugänglich?,single,,29.892709970474243
+opening_hours_synthetic-76,Zu welchen Zeiten ist Gebäude vierzehn zugänglich?,single,,29.997609853744507
+opening_hours_synthetic-77,Wann kann man Gebäude 7016 betreten?,single,,29.78899621963501
+opening_hours_synthetic-80,Zu zu welchen Uhrzeiten ist Gebäude 227 geöffnet?,single,,29.076117038726807
+opening_hours_synthetic-87,Mann ist Gebäude 512 zugänglich.,single,,29.787004947662354
+opening_hours_synthetic-99,Zu welchen Zeiten ist Gebäude 70.12 geöffnet?,single,,30.19889998435974
+wheelchair_accessible_synthetic-00,Gibt's Rollstuhlzugang im Gebäude 210?,single,,30.23713994026184
+wheelchair_accessible_synthetic-04,Ist das Hochschulsportgebäude barrierefrei zugänglich?,single,,29.706060886383057
+wheelchair_accessible_synthetic-06,Bietet das Institut für Regionalwissenschaft Barrierefreiheit?,single,,33.79665780067444
+wheelchair_accessible_synthetic-08,Ist das Physikhochhaus mit Rollstuhl erreichbar?,single,,30.013097047805786
+wheelchair_accessible_synthetic-10,Gibt es barrierefreie Zugänge zum Elektrotechnischen Institut?,single,,357.27952909469604
+wheelchair_accessible_synthetic-12,Verfügt das Physikhochhaus über Barrierefreiheit?,single,,29.788516759872437
+wheelchair_accessible_synthetic-22,Verfügt Gebäude 10.94 über Barrierefreiheit?,single,,29.848252058029175
+wheelchair_accessible_synthetic-23,Hat Gebäude zehn Punkt einunddreißig einen Rollstuhlzugang?,single,,29.94011688232422
+wheelchair_accessible_synthetic-26,Hat das Kollegiengebäude Maschinenbau II Rollstuhlzugang?,single,,30.605363845825195
+wheelchair_accessible_synthetic-28,Verfügt das Institut für Technische Informatik über Rollstuhlzugänglichkeit?,single,,30.16650390625
+wheelchair_accessible_synthetic-34,Kann man Gebäude 101 mit Rollstuhl betreten?,single,,30.004727125167847
+wheelchair_accessible_synthetic-46,Hat das Institut für Technische Thermodynamik einen Rollstuhlzugang?,single,,29.73949384689331
+wheelchair_accessible_synthetic-51,Hat das Informatikum eins Gebäude einen Rollstuhlzugang?,single,,30.230881929397583
+wheelchair_accessible_synthetic-54,Verfügt Gebäude 211 über Rollstuhlzugänglichkeit?,single,,30.164873838424683
+wheelchair_accessible_synthetic-57,"Hat der Bereich I der Biologie, Chemie und Verfahrenstechnik am Campus Nord barrierefreie Zugänge?",single,,29.98552107810974
+wheelchair_accessible_synthetic-68,Ist der Chemieturm II für Rollstuhlfahrer zugänglich?,single,,30.70895004272461
+wheelchair_accessible_synthetic-77,"Ist das Gebäude dreißig, achtundzwanzig barrierefrei zugänglich?",single,,30.400261163711548
+wheelchair_accessible_synthetic-91,Ist das ISMKInstitut barrierefrei?,single,,30.203397035598755
+wheelchair_accessible_synthetic-98,Verfügt Gebäude 06.47 über Barrierefreiheit?,single,,30.59941792488098
+wheelchair_accessible_synthetic-99,Ist das Gebäude 10.86 für Rollstuhlfahrer zugänglich?,single,,29.851019144058228
+121-0,Was ist der schnellste Weg zum Gebäude 607?,multi,,29.720659017562866
+121-1,Kann ich eine Webpräsenz finden?,multi,,29.27237820625305
+121-2,Bis wann kann ich heute dort noch rein?,multi,,28.86818504333496
+126-0,Ist der Zugang zu Gebäude siebzigelf barrierefrei?,multi,,28.14932680130005
+126-1,Sind die Türen aktuell geöffnet?,multi,,29.586393117904663
+126-2,Können Sie mir den Weg zu diesem Gebäude zeigen?,multi,,29.79207992553711
+126-3,Existiert für diese Einrichtung ein OnlineAuftritt?,multi,,29.891955852508545
+139-0,Verfügt der der Haupteingang des Gebäudes 633 über eine barrierefreie Zugangsmöglichkeit?,multi,,37.76506519317627
+139-1,An welcher Adresse befindet sich der gesuchte Standort?,multi,,29.997413873672485
+140-0,Ist das Gebäude 40.02 barrierefrei zugänglich?,multi,,29.782902002334595
+140-1,Welche Öffnungszeiten sind dort festgelegt?,multi,,29.70857810974121
+140-2,Wo finde ich die zugehörige WebPräsenz?,multi,,30.47306513786316
+144-0,"Können Sie mir sagen, was das Institut für Mikroverfahrenstechnik geöffnet hat?",multi,,30.132637977600098
+144-1,Ist die Einrichtung barrierefrei zugänglich?,multi,,29.73835301399231
+144-2,An welcher Adresse befindet sich dieses Institut?,multi,,30.349158763885498
+144-3,Existiert eine Homepage?,multi,,30.178775787353516
+148-0,Kannst du mir den Weg zum Institut für Sport und Sportwissenschaften zeigen?,multi,,30.092997074127197
+148-1,Ist die Einrichtung der Z geöffnet?,multi,,29.688860177993774

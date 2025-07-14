@@ -291,14 +291,16 @@ class RemoteASR(AutomaticSpeechRecognition):
             audio_source,
         )
 
-    def transcribe(self, audio_path: str) -> str:
+    def transcribe(self, audio_path: str, token: str | None = None) -> str:
         """Create transcript for specified audio file."""
 
         print("Transcribing ...")
 
+        token_to_use = token if token is not None else Settings().load_settings("token")
+
         args = argparse.Namespace(
             url="https://lt2srv-backup.iar.kit.edu",
-            token=Settings().load_settings("token"),
+            token=token_to_use,
             input="ffmpeg",
             print=-1,
             output_file=None,

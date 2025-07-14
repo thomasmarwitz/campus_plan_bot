@@ -71,4 +71,4 @@ files.extend-exclude = [
   "eval/verify_query_rewriting.py",
   "tests/rag_test.py",
 ]
-default.extend-ignore-re = ["controll", "ein"]
+default.extend-ignore-re = ["controll", "ein", "ist"]

@@ -305,7 +305,7 @@ def process_file(
     async def bot_runner(test_case_input: TestCaseInput) -> list[str]:
         if test_case_input.case_id not in bots:
             logger.debug(f"Creating bot for case {test_case_input.case_id}")
-            bots[test_case_input.case_id] = SimpleTextBot()
+            bots[test_case_input.case_id] = SimpleTextBot(llm_client=ChuteModel(model="Qwen/Qwen3-32B", no_think=True, strip_think=True))
 
         bot = bots[test_case_input.case_id]
 
@@ -366,7 +366,7 @@ def process_file(
                 evaluators=[FScore(), Precision(), Recall(), SINGLE_TURN_LLM_JUDGE],
             )
 
-            report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=5)
+            report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=2)
             df = report_to_df(report)
             df.to_csv(output_filename, index=False)
             logger.info(
