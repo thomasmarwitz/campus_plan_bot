@@ -4,6 +4,7 @@ import glob
 import json
 import os
 import subprocess
+import sys
 import time
 from pathlib import Path
 
@@ -13,7 +14,12 @@ from loguru import logger
 
 from campus_plan_bot.input.local_asr import LocalASR
 from campus_plan_bot.input.remote_asr import RemoteASR
-from eval.evaluation import TestCase
+
+# Add project root to Python path
+project_root = Path(__file__).resolve().parents[1]
+sys.path.append(str(project_root))
+
+from eval.evaluation import TestCase  # noqa: E402
 
 
 def convert_to_wav(input_file: str, output_file: str):
@@ -71,13 +77,21 @@ def cli():
     is_flag=True,
     help="Skip M4A to WAV conversion and use existing WAV files.",
 )
-def transcribe(asr_type: str, output_path: str, skip_conversion: bool):
+@click.option(
+    "--token",
+    type=str,
+    default=None,
+    help="Authentication token for remote ASR.",
+)
+def transcribe(
+    asr_type: str, output_path: str, skip_conversion: bool, token: str | None
+):
     """Transcribes all single-turn and multi-turn audio files using the
     specified ASR, and saves the results to a CSV file."""
     logger.remove()
     logger.add(lambda msg: click.echo(msg, err=True), level="INFO")
     logger.add("file_{time}.log", level="DEBUG")  # For detailed logs
-    run_transcription(asr_type, output_path, skip_conversion)
+    run_transcription(asr_type, output_path, skip_conversion, token)
 
 
 @cli.command()
@@ -191,7 +205,9 @@ def port(
     )
 
 
-def run_transcription(asr_type: str, output_path: str, skip_conversion: bool):
+def run_transcription(
+    asr_type: str, output_path: str, skip_conversion: bool, token: str | None
+):
     """Transcribe audio files using the specified ASR and save results."""
 
     # --- 1. File Discovery ---
@@ -258,14 +274,17 @@ def run_transcription(asr_type: str, output_path: str, skip_conversion: bool):
         error_message = None
 
         try:
-            transcript = asr.transcribe(wav_file)
+            if asr_type == "remote":
+                transcript = asr.transcribe(wav_file, token=token)  # type: ignore[call-arg]
+            else:
+                transcript = asr.transcribe(wav_file)
         except Exception as e:
             error_message = str(e)
             logger.error(f"Initial transcription failed for {wav_file}: {e}")
             if asr_type == "remote":
                 logger.info(f"Retrying remote ASR for {wav_file}...")
                 try:
-                    transcript = asr.transcribe(wav_file)
+                    transcript = asr.transcribe(wav_file, token=token)  # type: ignore[call-arg]
                     error_message = None  # Succeeded on retry
                 except Exception as e2:
                     error_message = str(e2)

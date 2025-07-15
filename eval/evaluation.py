@@ -13,12 +13,13 @@ from pydantic_evals.evaluators import (
     EvaluatorContext,
     LLMJudge,
 )
-from campus_plan_bot.query_rewriter import QuestionRephraser
 from reporting import report_to_df
 
+from campus_plan_bot.asr_processing import AsrProcessor
 from campus_plan_bot.bot import SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
 from campus_plan_bot.data_picker import DataPicker
+from campus_plan_bot.query_rewriter import QuestionRephraser
 from campus_plan_bot.rag import RAG
 
 # Load BertScore model once
@@ -304,14 +305,32 @@ def process_file(
     async def bot_runner(test_case_input: TestCaseInput) -> list[str]:
         if test_case_input.case_id not in bots:
             logger.debug(f"Creating bot for case {test_case_input.case_id}")
-            bots[test_case_input.case_id] = SimpleTextBot()
+            bots[test_case_input.case_id] = SimpleTextBot(
+                # llm_client=ChuteModel(
+                #    model="Qwen/Qwen3-32B", no_think=True, strip_think=True
+                # )
+            )
 
         bot = bots[test_case_input.case_id]
-        rephrased_query = await QuestionRephraser().rephrase(bot.conversation_history, query=test_case_input.input)
-        docs = rag.retrieve_context(rephrased_query, limit=5)
+
+        # ASR processing
+        fixed_input = ""
+        if "asr" in file.name.lower():
+            fixed_input = await AsrProcessor().fix_asr(test_case_input.input) + " "
+
+        # Query rewriting
+        rephrased_query = await QuestionRephraser().rephrase(
+            bot.conversation_history, query=test_case_input.input
+        )
+
+        # RAG retrieval
+        docs = rag.retrieve_context(rephrased_query + " " + fixed_input, limit=5)
+
+        # Data picker
         data_picker = DataPicker()
         docs = await data_picker.choose_fields(test_case_input.input, docs)
 
+        # Answer generation
         answer = await bot.query(test_case_input.input, docs)
 
         # delete bot reference if last turn
@@ -351,7 +370,7 @@ def process_file(
                 evaluators=[FScore(), Precision(), Recall(), SINGLE_TURN_LLM_JUDGE],
             )
 
-            report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=4)
+            report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=2)
             df = report_to_df(report)
             df.to_csv(output_filename, index=False)
             logger.info(

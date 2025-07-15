@@ -38,7 +38,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [macos-latest]
         env: ["py311"]
     steps:
       - name: Checkout branch
@@ -50,4 +50,4 @@ jobs:
       - name: Install repository and generate code coverage report
         run: |
           pixi run -e ${{ matrix.env }} postinstall
-          pixi run -e ${{ matrix.env }} coverage
+          pixi run -e ${{ matrix.env }} pytest

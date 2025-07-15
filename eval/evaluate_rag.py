@@ -1,14 +1,15 @@
 import sys
 from pathlib import Path
+
 import pandas as pd
 from loguru import logger
 
 # Add project root to path to allow imports
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from campus_plan_bot.rag import RAG
-from campus_plan_bot.query_rewriter import QuestionRephraser
 from campus_plan_bot.interfaces.persistence_types import Conversation, Message, Role
+from campus_plan_bot.query_rewriter import QuestionRephraser
+from campus_plan_bot.rag import RAG
 
 # Constants for file paths
 EVAL_DATA_PATH = Path("data/campusplan_evaluation.csv")
@@ -16,9 +17,8 @@ RAG_EVAL_DATASET_PATH = Path("data/rag_evaluation_dataset.csv")
 
 
 def evaluate_rag():
-    """
-    Evaluates the RAG component using a predefined dataset, including query rephrasing.
-    """
+    """Evaluates the RAG component using a predefined dataset, including query
+    rephrasing."""
     logger.info("Starting RAG evaluation with query rephrasing...")
 
     # 1. Initialize components
@@ -83,4 +83,4 @@ def evaluate_rag():
 
 
 if __name__ == "__main__":
-    evaluate_rag() 
+    evaluate_rag()

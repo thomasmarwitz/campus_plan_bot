@@ -1,6 +1,6 @@
 from campus_plan_bot.bot import LLama3PromptBuilder
 from campus_plan_bot.interfaces.interfaces import LLMRequestConfig
-from campus_plan_bot.interfaces.persistence_types import Conversation, Message, Role
+from campus_plan_bot.interfaces.persistence_types import Conversation, Role
 from campus_plan_bot.llm_client import InstituteClient, LLMClient
 
 
@@ -59,7 +59,6 @@ Rephrased Query:"""
         if not history_messages:
             # No rephrasing, avoiding rephrasings like: 'I don't have any conversation history to rephrase from.'
             return query
-
 
         formatted_history = []
         for message in history_messages:

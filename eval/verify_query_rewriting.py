@@ -4,11 +4,12 @@ from pathlib import Path
 # Add project root to path to allow imports
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from campus_plan_bot.query_rewriter import QuestionRephraser
+from campus_plan_bot.interfaces.interfaces import MessageProtocol
 from campus_plan_bot.interfaces.persistence_types import Conversation, Message, Role
+from campus_plan_bot.query_rewriter import QuestionRephraser
 
 
-def run_test_case(name: str, messages: list[Message]):
+def run_test_case(name: str, messages: list[MessageProtocol]):
     """Runs a single test case for query rephrasing."""
     print(f"--- Running Test Case: {name} ---")
 
@@ -17,11 +18,13 @@ def run_test_case(name: str, messages: list[Message]):
         conversation.add_message(msg)
 
     print("Original Conversation:")
-    for msg in conversation.messages:
+    for msg in conversation.messages[:-1]:
         print(f"  {msg.role.value}: {msg.content}")
 
     rephraser = QuestionRephraser()
-    rephrased_query = rephraser.rephrase(conversation)
+    rephrased_query = rephraser.rephrase(
+        conversation, query=conversation.messages[-1].content
+    )
 
     print(f"\nRephrased Query:\n{rephrased_query}\n")
 
@@ -55,4 +58,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main() 
+    main()

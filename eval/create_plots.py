@@ -45,7 +45,8 @@ def plot_overall_performance_comparison(results_map: dict[str, Path], output_dir
         for file_path in asr_files:
             if "small" in file_path.name:
                 continue
-            category_name = (
+            category_name = "Institute ASR"
+            (
                 file_path.stem.replace("local_asr_suite_", "ASR ")
                 .replace("_", " ")
                 .title()
@@ -126,6 +127,12 @@ def plot_single_turn_performance_comparison(
         x="Category",
         y="LLM_Judge",
         color="Run Name",
+        color_discrete_sequence=[
+            "#636EFA",
+            "#EF553B",
+            "#00CC96",
+            "#FFA15A",
+        ],  # , '#AB63FA'
         barmode="group",
         title="Single-Turn Chatbot Performance Comparison (LLM Judge)",
         text_auto=".2f",
