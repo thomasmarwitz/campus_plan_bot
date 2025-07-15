@@ -1,4 +1,5 @@
 from pathlib import Path
+
 import pandas as pd
 
 p = Path("data/evaluation/results/asr-fixing")
@@ -9,6 +10,6 @@ for path in p.glob("*.csv"):
         continue
 
     # only keep rows where df["original_query"] contains a number
-    #df = df[df["original_query"].str.contains(r"\d\d")]
+    # df = df[df["original_query"].str.contains(r"\d\d")]
 
     print(f"{path.stem}: {round(df['time_taken'].mean(), 2)}")

@@ -338,11 +338,11 @@ class ChuteModel(Model):
         if last_exception:
             raise last_exception
 
-
     async def query_async(self, prompt: str) -> str:
-        """Query the Chute API with a single string, omitting the pydantic format."""
+        """Query the Chute API with a single string, omitting the pydantic
+        format."""
         prompt += " /no_think" if self.no_think else ""
-        
+
         client = cached_async_http_client(provider=self.system)
         body = {
             "model": self.model_name,
@@ -365,6 +365,7 @@ class ChuteModel(Model):
             content = content.replace("<think>", "").replace("</think>", "").strip()
 
         return content
+
 
 async def main():
     """Simple test case for the ChuteModel."""
@@ -389,14 +390,18 @@ async def main():
     except Exception as e:
         print(f"Error during stream test: {e}")
 
+
 async def test():
     model = ChuteModel()
-    result = await model.query_async("Tell me a 10-word story about a dragon. /no_think")
+    result = await model.query_async(
+        "Tell me a 10-word story about a dragon. /no_think"
+    )
     print(result)
+
 
 if __name__ == "__main__":
     # Ensure you have set the CHUTES_KEY environment variable
     # e.g., export CHUTES_KEY='your-api-key'
-    #asyncio.run(main())
+    # asyncio.run(main())
 
     asyncio.run(test())

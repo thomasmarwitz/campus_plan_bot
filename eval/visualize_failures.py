@@ -21,7 +21,7 @@ def visualize(input_path: str, output_path: str):
 
     # Apply filters based on settings
     if ONLY_SHOW_FAILED:
-        df = df[df["passed"] == False]
+        df = df[~df["passed"]]
 
     if ONLY_SHOW_DIFFERENT_QUERIES:
         df = df[df["original_query"] != df["fixed_query"]]
@@ -96,14 +96,14 @@ def visualize(input_path: str, output_path: str):
             html_content += f'<div class="case"><h2>Case {i}</h2>'
             for col_name, value in row_dict.items():
                 label = col_name.replace("_", " ").title()
-                
+
                 # Highlight the 'passed' status in red if it's False
-                is_failure = col_name == 'passed' and not value
-                style = 'style="border-left-color: #dc3545;"' if is_failure else ''
+                is_failure = col_name == "passed" and not value
+                style = 'style="border-left-color: #dc3545;"' if is_failure else ""
 
                 html_content += f'<p class="label">{label}:</p>'
                 html_content += f'<div class="query" {style}>{value}</div>'
-            html_content += '</div>'
+            html_content += "</div>"
 
     # Close the HTML content
     html_content += """
@@ -120,4 +120,4 @@ def visualize(input_path: str, output_path: str):
 
 
 if __name__ == "__main__":
-    visualize() 
+    visualize()

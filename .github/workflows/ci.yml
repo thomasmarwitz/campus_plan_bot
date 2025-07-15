@@ -50,4 +50,4 @@ jobs:
       - name: Install repository and generate code coverage report
         run: |
           pixi run -e ${{ matrix.env }} postinstall
-          pixi run -e ${{ matrix.env }} pytest -m e2e
+          pixi run -e ${{ matrix.env }} pytest

@@ -1,14 +1,13 @@
 import asyncio
 import json
-from pathlib import Path
 import time
+from pathlib import Path
 
 import pandas as pd
 from rich import print
 from tqdm import tqdm
 
 from campus_plan_bot.asr_processing import AsrProcessor
-from campus_plan_bot.clients.chute_client import ChuteModel
 from campus_plan_bot.rag import RAG
 
 
@@ -44,10 +43,12 @@ async def evaluate_asr_fixing():
         start_time = time.time()
         fixed_query = await asr_processor.fix_asr(original_query)
         end_time = time.time()
-        #fixed_query = ""
+        # fixed_query = ""
 
         # Step 2: retrieve relevant documents
-        retrieved_docs = rag.retrieve_context(original_query, limit=5, asr_fixed_query=fixed_query)
+        retrieved_docs = rag.retrieve_context(
+            original_query, limit=5, asr_fixed_query=fixed_query
+        )
         retrieved_ids = [str(doc.id) for doc in retrieved_docs]
 
         # Step 3: check if the expected document was retrieved
@@ -75,9 +76,7 @@ async def evaluate_asr_fixing():
     # Calculate and print metrics
     total_prompts = len(results_df)
     successful_retrievals = results_df["passed"].sum()
-    success_ratio = (
-        successful_retrievals / total_prompts if total_prompts > 0 else 0
-    )
+    success_ratio = successful_retrievals / total_prompts if total_prompts > 0 else 0
 
     print(
         f"Overall success ratio: {success_ratio:.2f} ({successful_retrievals}/{total_prompts})"

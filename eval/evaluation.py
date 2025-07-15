@@ -13,9 +13,9 @@ from pydantic_evals.evaluators import (
     EvaluatorContext,
     LLMJudge,
 )
-from campus_plan_bot.asr_processing import AsrProcessor
 from reporting import report_to_df
 
+from campus_plan_bot.asr_processing import AsrProcessor
 from campus_plan_bot.bot import SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
 from campus_plan_bot.data_picker import DataPicker
@@ -305,7 +305,11 @@ def process_file(
     async def bot_runner(test_case_input: TestCaseInput) -> list[str]:
         if test_case_input.case_id not in bots:
             logger.debug(f"Creating bot for case {test_case_input.case_id}")
-            bots[test_case_input.case_id] = SimpleTextBot(llm_client=ChuteModel(model="Qwen/Qwen3-32B", no_think=True, strip_think=True))
+            bots[test_case_input.case_id] = SimpleTextBot(
+                # llm_client=ChuteModel(
+                #    model="Qwen/Qwen3-32B", no_think=True, strip_think=True
+                # )
+            )
 
         bot = bots[test_case_input.case_id]
 
@@ -325,7 +329,7 @@ def process_file(
         # Data picker
         data_picker = DataPicker()
         docs = await data_picker.choose_fields(test_case_input.input, docs)
-        
+
         # Answer generation
         answer = await bot.query(test_case_input.input, docs)
 

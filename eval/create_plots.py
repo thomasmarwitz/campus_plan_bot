@@ -127,7 +127,12 @@ def plot_single_turn_performance_comparison(
         x="Category",
         y="LLM_Judge",
         color="Run Name",
-        color_discrete_sequence=['#636EFA', '#EF553B', '#00CC96', '#FFA15A'], #, '#AB63FA'
+        color_discrete_sequence=[
+            "#636EFA",
+            "#EF553B",
+            "#00CC96",
+            "#FFA15A",
+        ],  # , '#AB63FA'
         barmode="group",
         title="Single-Turn Chatbot Performance Comparison (LLM Judge)",
         text_auto=".2f",

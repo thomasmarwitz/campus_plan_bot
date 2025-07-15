@@ -97,7 +97,9 @@ class RAG(RAGComponent):
         ]
 
         # reverse sort matched rows, to prioritize longer numbers
-        matched_rows = matched_rows.sort_values(by=self.id_column_name, key=lambda x: x.str.len(), ascending=False)
+        matched_rows = matched_rows.sort_values(
+            by=self.id_column_name, key=lambda x: x.str.len(), ascending=False
+        )
 
         documents = []
         for _, row in matched_rows.iterrows():
@@ -163,12 +165,18 @@ class RAG(RAGComponent):
         )
         return documents[:limit]
 
-    def retrieve_context(self, query: str, limit: int = 5, asr_fixed_query: str = "") -> list[RetrievedDocument]:
+    def retrieve_context(
+        self, query: str, limit: int = 5, asr_fixed_query: str = ""
+    ) -> list[RetrievedDocument]:
         """Retrieve relevant context based on a query string."""
         documents: list[RetrievedDocument] = []
 
         # 1. check whether building number of type 50.34 (1-2 numbers).(1-2 numbers) do exactly match
-        documents.extend(self._retrieve_by_building_number(query, limit, asr_fixed_query=asr_fixed_query))
+        documents.extend(
+            self._retrieve_by_building_number(
+                query, limit, asr_fixed_query=asr_fixed_query
+            )
+        )
 
         existing_document_ids = set(doc.id for doc in documents)
         # 2. if not, use cosine similarity to find the most relevant documents

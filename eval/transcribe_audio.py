@@ -8,17 +8,18 @@ import sys
 import time
 from pathlib import Path
 
-# Add project root to Python path
-project_root = Path(__file__).resolve().parents[1]
-sys.path.append(str(project_root))
-
 import click
 import pandas as pd
 from loguru import logger
 
 from campus_plan_bot.input.local_asr import LocalASR
 from campus_plan_bot.input.remote_asr import RemoteASR
-from eval.evaluation import TestCase
+
+# Add project root to Python path
+project_root = Path(__file__).resolve().parents[1]
+sys.path.append(str(project_root))
+
+from eval.evaluation import TestCase  # noqa: E402
 
 
 def convert_to_wav(input_file: str, output_file: str):
@@ -274,7 +275,7 @@ def run_transcription(
 
         try:
             if asr_type == "remote":
-                transcript = asr.transcribe(wav_file, token=token)
+                transcript = asr.transcribe(wav_file, token=token)  # type: ignore[call-arg]
             else:
                 transcript = asr.transcribe(wav_file)
         except Exception as e:
@@ -283,7 +284,7 @@ def run_transcription(
             if asr_type == "remote":
                 logger.info(f"Retrying remote ASR for {wav_file}...")
                 try:
-                    transcript = asr.transcribe(wav_file, token=token)
+                    transcript = asr.transcribe(wav_file, token=token)  # type: ignore[call-arg]
                     error_message = None  # Succeeded on retry
                 except Exception as e2:
                     error_message = str(e2)
