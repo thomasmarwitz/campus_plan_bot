@@ -124,11 +124,90 @@
                 transform: translateY(-5px);
             }
         }
+        
+        #settings-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #settings-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            width: 90%;
+            max-width: 400px;
+        }
+        
+        #settings-form h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        #settings-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        #settings-form select,
+        #settings-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        #settings-form button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #settings-form button:hover {
+            background-color: #0056b3;
+        }
+
     </style>
 </head>
 <body>
+    <div id="settings-modal">
+        <div id="settings-form">
+            <h2>Chat Settings</h2>
+            <form id="start-form">
+                <label for="model-select">Choose a model:</label>
+                <select id="model-select" name="model_name">
+                    <option value="Llama3.1-8B">Llama3.1-8B</option>
+                    <option value="Qwen3-32B">Qwen3-32B</option>
+                </select>
 
-    <div id="chat-container">
+                <label for="temperature-input">Temperature:</label>
+                <input type="number" id="temperature-input" name="temperature" value="0.3" min="0" max="2" step="0.1">
+
+                <label for="max-tokens-input">Max Tokens:</label>
+                <input type="number" id="max-tokens-input" name="max_new_tokens" value="1024" min="1">
+
+                <button type="submit">Start Chat</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="chat-container" style="display: none;">
         <div id="chat-window">
             <div class="message bot">
                 <div class="message-content">
@@ -149,19 +228,41 @@
         const messageInput = document.getElementById('message-input');
         const sendButton = document.getElementById('send-button');
         const recordIndicator = document.getElementById('record-indicator');
+        const settingsModal = document.getElementById('settings-modal');
+        const startForm = document.getElementById('start-form');
+        const chatContainer = document.getElementById('chat-container');
 
         let sessionId = null;
         let mediaRecorder;
         let audioChunks = [];
         let isRecording = false;
 
-        async function startSession() {
+        startForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(startForm);
+            const settings = Object.fromEntries(formData.entries());
+            
+            settings.temperature = parseFloat(settings.temperature);
+            settings.max_new_tokens = parseInt(settings.max_new_tokens, 10);
+
+            await startSession(settings);
+        });
+
+        async function startSession(settings) {
             try {
-                const response = await fetch('/start', { method: 'POST' });
+                const response = await fetch('/start', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(settings),
+                });
                 if (!response.ok) throw new Error('Failed to start session');
                 const data = await response.json();
                 sessionId = data.session_id;
                 console.log('Session started:', sessionId);
+
+                settingsModal.style.display = 'none';
+                chatContainer.style.display = 'flex';
+
                 messageInput.disabled = false;
                 sendButton.disabled = false;
                 messageInput.placeholder = 'Type a message...';
@@ -372,8 +473,8 @@
             }
         });
 
-        // Start a session when the page loads
-        document.addEventListener('DOMContentLoaded', startSession);
+        // Start a session when the page loads - now handled by the form
+        // document.addEventListener('DOMContentLoaded', startSession);
 
         // End the session when the user leaves the page
         window.addEventListener('beforeunload', endSession);

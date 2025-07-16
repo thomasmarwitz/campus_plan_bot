@@ -3,6 +3,7 @@ from pathlib import Path
 from campus_plan_bot.asr_processing import AsrProcessor
 from campus_plan_bot.bot import SimpleTextBot
 from campus_plan_bot.data_picker import DataPicker
+from campus_plan_bot.interfaces.interfaces import LLMClient
 from campus_plan_bot.interfaces.persistence_types import PipelineResult
 from campus_plan_bot.link_extractor import (
     extract_google_maps_link,
@@ -31,10 +32,10 @@ class Pipeline:
         self.rephraser = rephraser or QuestionRephraser()
 
     @classmethod
-    def from_system_prompt(cls, **kwargs):
+    def from_system_prompt(cls, llm_client: LLMClient | None = None, **kwargs):
         system_prompt = load_and_format_prompt("system_prompt")
         prompt_builder = LLama3PromptBuilder(system_prompt=system_prompt)
-        bot = SimpleTextBot(prompt_builder=prompt_builder)
+        bot = SimpleTextBot(prompt_builder=prompt_builder, llm_client=llm_client)
         return cls(bot=bot, **kwargs)
 
     @classmethod

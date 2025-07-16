@@ -19,6 +19,10 @@ from campus_plan_bot.rag import RAG
 from campus_plan_bot.pipeline import Pipeline
 from campus_plan_bot.input.local_asr import LocalASR
 from campus_plan_bot.input.remote_asr import RemoteASR
+from campus_plan_bot.llm_client import InstituteClient
+from campus_plan_bot.clients.chute_client import ChuteModel
+from campus_plan_bot.interfaces.interfaces import LLMClient, LLMRequestConfig
+
 
 app = FastAPI(
     title="Campus Plan Bot API",
@@ -77,6 +81,11 @@ rag_component = RAG.from_file(database_path, persist_dir=embeddings_path)
 pipeline_sessions: Dict[str, Pipeline] = {}
 
 
+class StartRequest(BaseModel):
+    model_name: str = "Llama3.1-8B"
+    temperature: float = 0.3
+    max_new_tokens: int = 1024
+
 class StartResponse(BaseModel):
     session_id: str = Field(..., description="The unique ID for the new session.")
 
@@ -92,12 +101,28 @@ class ChatResponse(BaseModel):
 
 
 @app.post("/start", response_model=StartResponse)
-def start_session():
+def start_session(request: StartRequest):
     """
     Starts a new chat session and returns a unique session ID.
     """
     session_id = str(uuid.uuid4())
-    pipeline_sessions[session_id] = Pipeline.from_system_prompt(rag=rag_component)
+    
+    llm_config = LLMRequestConfig(
+        temperature=request.temperature,
+        max_new_tokens=request.max_new_tokens,
+    )
+
+    llm_client: LLMClient
+    if request.model_name == "Llama3.1-8B":
+        llm_client = InstituteClient(default_request_config=llm_config)
+    elif request.model_name == "Qwen3-32B":
+        llm_client = ChuteModel(default_request_config=llm_config)
+    else:
+        raise HTTPException(status_code=400, detail="Invalid model name.")
+
+    pipeline_sessions[session_id] = Pipeline.from_system_prompt(
+        rag=rag_component, llm_client=llm_client
+    )
     return StartResponse(session_id=session_id)
 
 
