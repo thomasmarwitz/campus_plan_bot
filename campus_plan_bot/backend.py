@@ -114,18 +114,13 @@ async def chat(request: ChatRequest):
     return ChatResponse(response=response.answer, link=response.link)
 
 
-async def audio_chat_generator(pipeline: Pipeline, asr_method: ASRMethod, file: UploadFile) -> AsyncGenerator[str, None]:
-    fd_in, tmp_in_path = tempfile.mkstemp()
-    os.close(fd_in)
-
+async def audio_chat_generator(pipeline: Pipeline, asr_method: ASRMethod, input_path: str) -> AsyncGenerator[str, None]:
+    """Generator that handles audio processing and yields SSE events."""
     fd_out, tmp_out_path = tempfile.mkstemp(suffix=".wav")
     os.close(fd_out)
 
     try:
-        with open(tmp_in_path, "wb") as f:
-            shutil.copyfileobj(file.file, f)
-
-        _convert_to_wav(tmp_in_path, tmp_out_path)
+        _convert_to_wav(input_path, tmp_out_path)
 
         if asr_method == ASRMethod.LOCAL:
             asr = LocalASR(None)
@@ -145,9 +140,7 @@ async def audio_chat_generator(pipeline: Pipeline, asr_method: ASRMethod, file: 
         })
 
     finally:
-        os.remove(tmp_in_path)
         os.remove(tmp_out_path)
-        await file.close()
 
 
 @app.post("/chat_audio")
@@ -164,12 +157,27 @@ async def chat_audio(
     if not pipeline:
         raise HTTPException(status_code=404, detail="Session not found.")
 
+    # The UploadFile must be read here, before the function returns
+    # and the file handle is closed by FastAPI.
+    fd_in, tmp_in_path = tempfile.mkstemp()
+    os.close(fd_in)
+    try:
+        with open(tmp_in_path, "wb") as f:
+            content = await file.read()
+            f.write(content)
+    finally:
+        await file.close()
+
     async def sse_generator():
-        async for data in audio_chat_generator(pipeline, asr_method, file):
-            if await request.is_disconnected():
-                logger.warning("Client disconnected.")
-                break
-            yield f"data: {data}\n\n"
+        # The generator must clean up the temporary file when it's done.
+        try:
+            async for data in audio_chat_generator(pipeline, asr_method, tmp_in_path):
+                if await request.is_disconnected():
+                    logger.warning("Client disconnected.")
+                    break
+                yield f"data: {data}\n\n"
+        finally:
+            os.remove(tmp_in_path)
 
     return StreamingResponse(sse_generator(), media_type="text/event-stream")
 
