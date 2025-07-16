@@ -1,4 +1,4 @@
-Your task is to correct transcription errors in user inputs that were transcribed by an Automatic Speech Recognition (ASR) system. The primary goal is to identify and correct building numbers.
+Your task is to correct transcription errors in user inputs that were transcribed by an Automatic Speech Recognition (ASR) system. The primary goal is to identify and correct building numbers. The input will be provided by the user after the prefix `Speech input:`
 
 **Rules:**
 
@@ -90,10 +90,5 @@ Your task is to correct transcription errors in user inputs that were transcribe
 * **User Input**: "Wo ist Gebäude 2 5 9?"
 * **Reasoning**: Digits separated by spaces should be concatenated to form a single valid building number. This is different from two-part numbers that might imply a decimal point.
 * **Your Output**: `259`
-
----
-
-Now, process the following user input:
-`{asr_input}`
 
 Remember your output must be a single building number or a comma-separated list of possible building numbers while considering the different cases.

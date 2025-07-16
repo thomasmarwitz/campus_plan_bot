@@ -6,12 +6,14 @@ import click
 from loguru import logger
 
 from campus_plan_bot.asr_processing import AsrProcessor
-from campus_plan_bot.bot import SimpleTextBot
+from campus_plan_bot.bot import LLama3PromptBuilder, SimpleTextBot
 from campus_plan_bot.data_picker import DataPicker
 from campus_plan_bot.input.local_asr import LocalASR
 from campus_plan_bot.input.remote_asr import RemoteASR
 from campus_plan_bot.input.text_input import TextInput
 from campus_plan_bot.interfaces.interfaces import InputMethods, UserInputSource
+from campus_plan_bot.link_extractor import extract_link
+from campus_plan_bot.prompts.util import load_and_format_prompt
 from campus_plan_bot.query_rewriter import QuestionRephraser
 from campus_plan_bot.rag import RAG
 from campus_plan_bot.settings.settings import Settings
@@ -70,7 +72,10 @@ def chat(log_level: str, input: str, token: str, file: str):
     rag = RAG.from_file(database_path)
     data_picker = DataPicker()
     rephraser = QuestionRephraser()
-    bot = SimpleTextBot()
+
+    system_prompt = load_and_format_prompt("system_prompt")
+    prompt_builder = LLama3PromptBuilder(system_prompt=system_prompt)
+    bot = SimpleTextBot(prompt_builder=prompt_builder)
 
     async def run_conversation():
 
@@ -107,7 +112,15 @@ def chat(log_level: str, input: str, token: str, file: str):
             # Step 6: generate an answer to the query
             response = await bot.query(user_input, documents)
 
-            # Step 7: output the result
+            # Step 7: check for links in the response
+            link_extraction_result = extract_link(response)
+            if link_extraction_result:
+                click.secho(f"{bot.name}: ", fg="cyan", nl=False)
+                click.echo(link_extraction_result.answer)
+                click.launch(link_extraction_result.link)
+                continue
+
+            # Step 8: output the result
             click.secho(f"{bot.name}: ", fg="cyan", nl=False)
             click.echo(f"{response}")
 

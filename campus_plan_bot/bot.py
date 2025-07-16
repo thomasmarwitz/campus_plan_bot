@@ -1,6 +1,3 @@
-from datetime import datetime
-
-from campus_plan_bot.constants import Constants
 from campus_plan_bot.interfaces.interfaces import (
     LLMRequestConfig,
     MessageProtocol,
@@ -10,21 +7,14 @@ from campus_plan_bot.interfaces.interfaces import (
 from campus_plan_bot.interfaces.persistence_types import Conversation, Message, Role
 from campus_plan_bot.llm_client import InstituteClient, LLMClient
 
-# Other instructions that are currently not implemented:
-# -	Generating navigation links to buildings using external apps (Google Maps, Apple Maps, OSM).
-# -	Providing website URLs of buildings or institutes.
-
 
 class LLama3PromptBuilder:
 
-    def __init__(self, system_prompt: str | None = None):
-        self.system_prompt = system_prompt or Constants.SYSTEM_PROMPT_FALLBACK
+    def __init__(self, system_prompt: str):
+        self.system_prompt = system_prompt
 
     def format_system_message(self, system_message: str) -> str:
-        system_information = (
-            f"Today Date and Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-        )
-        return f"<|start_header_id|>system<|end_header_id|>{system_information}\n{system_message}<|eot_id|>"
+        return f"<|start_header_id|>system<|end_header_id|>{system_message}<|eot_id|>"
 
     def format_user_message(self, user_message: str) -> str:
         return f"<|start_header_id|>user<|end_header_id|>{user_message}<|eot_id|>"
@@ -74,7 +64,7 @@ class SimpleTextBot(TextBot):
 
     def __init__(
         self,
-        prompt_builder: LLama3PromptBuilder | None = None,
+        prompt_builder: LLama3PromptBuilder,
         llm_client: LLMClient | None = None,
     ):
         self.name = "Bot"
@@ -85,7 +75,7 @@ class SimpleTextBot(TextBot):
                 temperature=0.3,
             )
         )
-        self.prompt_builder = prompt_builder or LLama3PromptBuilder()
+        self.prompt_builder = prompt_builder
 
     async def query(self, query: str, docs: list[RetrievedDocument]):
         user_query = Message.from_content(query, Role.USER)

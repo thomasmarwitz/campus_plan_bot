@@ -67,12 +67,14 @@ class RAG(RAGComponent):
             )
             documents.append(doc)
 
+        logger.debug(f"Creating {len(documents)} embeddings")
         Settings.embed_model = HuggingFaceEmbedding(
             model_name=cls.MODEL, trust_remote_code=True
         )
         index = VectorStoreIndex.from_documents(
             documents,
         )
+        logger.debug("Embeddings created")
         return cls(index, df, id_column_name)
 
     def _retrieve_by_building_number(

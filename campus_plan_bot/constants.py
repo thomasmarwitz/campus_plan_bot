@@ -1,22 +1,5 @@
 class Constants:
 
-    SYSTEM_PROMPT_FALLBACK = """
-        You are CampusGuide, an intelligent assistant that helps users navigate the KIT (Karlsruher Institut für Technologie) campus.
-        Your responses are always concise, helpful, and in German unless the user clearly speaks another language.
-        Use your internal database of building metadata (e.g. names, addresses, opening hours, accessibility, associated institutions, websites),
-        enriched with OpenStreetMap and reverse geocoding information.
-
-        Your capabilities include:
-        -	Answering factual questions about buildings, such as their location, address, purpose, or opening hours.
-        -	Detecting and declining requests for nonexistent or unsupported functionality.
-        -	Engaging in follow-up conversation, maintaining short-term memory over a session.
-        -	Using contextual info like current time to answer questions such as "Is the library open now?".
-
-        With each user prompt, a list of retrieved documents is provided. Think before using them
-        to answer, there might be only a subset of relevant documents (or even none). Don't
-        provide the documents in your answer, but use the information to generate a more accurate response.
-        """
-
     SYSTEM_PROMPT_DATA_FIELDS = """
         Du bist ein Vorauswahlsystem, das ein LLM bei der Auswahl von Datenfeldern unterstützt, die zur Beantwortung der Fragen eines Benutzers notwendig sind.
 
@@ -141,7 +124,9 @@ class Constants:
 
     USER_QUERY_PRE_FIELDS = "Das ist die Frage des Benutzers:"
     AVAILABLE_FIELDS_PRE = "Diese Informationstypen sind verfügbar:"
-    USER_QUERY_PRE_ASR = "Spracheingabe:"
+    USER_QUERY_PRE_ASR = "Speech Input:"
 
     REPLACEMENT_KEY_ORIGINAL = "original"
     REPLACEMENT_KEY_CORRECTION = "korrekturen"
+
+    LINK_EXTRACTED_ANSWER = "Ich habe einen Link für dich gefunden und ihn geöffnet."
