@@ -64,6 +64,7 @@
         #chat-form {
             display: flex;
             padding: 10px;
+            position: relative;
         }
         #message-input {
             flex-grow: 1;
@@ -84,6 +85,18 @@
         }
         #send-button:hover {
             background-color: #0056b3;
+        }
+        #record-indicator {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background-color: rgba(255, 0, 0, 0.7);
+            color: white;
+            border-radius: 20px;
+            display: none;
+            font-size: 16px;
         }
         .typing-dot {
             display: inline-block;
@@ -119,13 +132,14 @@
         <div id="chat-window">
             <div class="message bot">
                 <div class="message-content">
-                    Hallo! Ich bin CampusGuide. Wie kann ich dir heute helfen?
+                    Hallo! Ich bin CampusGuide. Wie kann ich dir heute helfen? You can also hold Space to record audio.
                 </div>
             </div>
         </div>
         <form id="chat-form">
             <input type="text" id="message-input" placeholder="Verbinde..." autocomplete="off" disabled>
             <button id="send-button" type="submit" disabled>Send</button>
+            <div id="record-indicator">Recording...</div>
         </form>
     </div>
 
@@ -134,8 +148,12 @@
         const chatForm = document.getElementById('chat-form');
         const messageInput = document.getElementById('message-input');
         const sendButton = document.getElementById('send-button');
+        const recordIndicator = document.getElementById('record-indicator');
 
         let sessionId = null;
+        let mediaRecorder;
+        let audioChunks = [];
+        let isRecording = false;
 
         async function startSession() {
             try {
@@ -213,6 +231,10 @@
             addMessage(query, 'user');
             messageInput.value = '';
 
+            await sendMessage(query);
+        });
+
+        async function sendMessage(query, isAudio = false) {
             messageInput.disabled = true;
             sendButton.disabled = true;
 
@@ -221,11 +243,27 @@
             chatWindow.scrollTop = chatWindow.scrollHeight;
 
             try {
-                const response = await fetch('/chat', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ session_id: sessionId, query: query }),
-                });
+                let response;
+                if (isAudio) {
+                    const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                    const formData = new FormData();
+                    formData.append('session_id', sessionId);
+                    formData.append('file', audioBlob, 'recording.wav');
+                    formData.append('asr_method', 'local'); 
+
+                    addMessage('[Audio Recording]', 'user');
+
+                    response = await fetch('/chat_audio', {
+                        method: 'POST',
+                        body: formData,
+                    });
+                } else {
+                    response = await fetch('/chat', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ session_id: sessionId, query: query }),
+                    });
+                }
 
                 if (!response.ok) {
                     const errorData = await response.json();
@@ -247,6 +285,54 @@
                 messageInput.disabled = false;
                 sendButton.disabled = false;
                 messageInput.focus();
+                audioChunks = [];
+            }
+        }
+
+        async function startRecording() {
+            if (isRecording) return;
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                mediaRecorder = new MediaRecorder(stream);
+                mediaRecorder.ondataavailable = event => {
+                    audioChunks.push(event.data);
+                };
+                mediaRecorder.onstart = () => {
+                    isRecording = true;
+                    recordIndicator.style.display = 'block';
+                };
+                mediaRecorder.onstop = async () => {
+                    isRecording = false;
+                    recordIndicator.style.display = 'none';
+                    if (audioChunks.length > 0) {
+                       await sendMessage(null, true);
+                    }
+                };
+                audioChunks = [];
+                mediaRecorder.start();
+            } catch (error) {
+                console.error('Error starting recording:', error);
+                addMessage('Could not start recording. Please allow microphone access.', 'bot');
+            }
+        }
+
+        function stopRecording() {
+            if (mediaRecorder && isRecording) {
+                mediaRecorder.stop();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Space' && document.activeElement !== messageInput) {
+                e.preventDefault();
+                startRecording();
+            }
+        });
+
+        document.addEventListener('keyup', (e) => {
+            if (e.code === 'Space' && document.activeElement !== messageInput) {
+                e.preventDefault();
+                stopRecording();
             }
         });
 
