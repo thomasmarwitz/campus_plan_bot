@@ -383,7 +383,7 @@ def process_file(
             evaluators=[FScore(), Precision(), Recall(), SINGLE_TURN_LLM_JUDGE],
         )
 
-        report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=2)
+        report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=4)
         df = report_to_df(report)
         df.to_csv(output_filename, index=False)
         logger.info(f"Saved evaluation report to {output_filename}")
