@@ -27,6 +27,8 @@ logger.debug("Loading Bertscore model")
 score(["Ich bin ein Test"], ["Ich bin ein Test"], lang="de")
 logger.debug("Bertscore model loaded successfully")
 
+embeddings_dir = Path("data") / "embeddings"
+
 SINGLE_TURN_LLM_JUDGE = LLMJudge(
     rubric="Output should match expected output in meaning, however, phrasing or wording can differ if the same information is conveyed. It is mandatory the information is conveyed instead of listing excuses. The chatbot has access to the underlying data if the expected output also contains information. When evaluating addresses, it is okay if the response only includes the relevant address (street and house number) as we expect all users to be based in Karlsruhe, Germany. Reasoning should be concise and to the point. Format your output as valid JSON object with valid quotation marks. /no_think",
     model=ChuteModel(
@@ -229,7 +231,7 @@ def evaluate_single_synthetic(
 ) -> None:
     """Run evaluation for single-turn synthetic test sets."""
     output_path.mkdir(parents=True, exist_ok=True)
-    rag = RAG.from_file(data_path)
+    rag = RAG.from_file(data_path, persist_dir=embeddings_dir)
     synthetic_files = list(test_data_path.glob("*synthetic.json"))
     logger.info(f"Found {len(synthetic_files)} synthetic test files to evaluate.")
     for file_idx, file in enumerate(synthetic_files):
@@ -286,7 +288,7 @@ def evaluate_file(
     chunk_size: int | None,
 ) -> None:
     output_path.mkdir(parents=True, exist_ok=True)
-    rag = RAG.from_file(data_path)
+    rag = RAG.from_file(data_path, persist_dir=embeddings_dir)
     process_file(test_path, rag, output_path, limit, chunk_size)
 
 

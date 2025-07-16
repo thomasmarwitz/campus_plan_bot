@@ -19,6 +19,7 @@ from campus_plan_bot.rag import RAG
 from campus_plan_bot.settings.settings import Settings
 
 database_path = Path("data") / "campusplan_evaluation.csv"
+embeddings_dir = Path("data") / "embeddings"
 
 
 @click.command()
@@ -69,7 +70,7 @@ def chat(log_level: str, input: str, token: str, file: str):
     # prepare system components
     input_method = get_input_method(input, file)
     asr_processor = AsrProcessor()
-    rag = RAG.from_file(database_path)
+    rag = RAG.from_file(database_path, persist_dir=embeddings_dir)
     data_picker = DataPicker()
     rephraser = QuestionRephraser()
 
