@@ -873,7 +873,7 @@ def generate_single_run_reports(results_dir: Path, output_dir: Path):
     type=click.Path(exists=True, file_okay=False, path_type=Path),
     multiple=True,
     required=True,
-    help="Path to a results directory. Can be specified multiple times.",
+    help="Path to a results directory. Can be specified multiple times. If one directory is provided, it will be globbed for subdirectories.",
 )
 @click.option(
     "--name",
@@ -881,8 +881,8 @@ def generate_single_run_reports(results_dir: Path, output_dir: Path):
     "names",
     type=str,
     multiple=True,
-    required=True,
-    help="A name for each results directory, used for labeling. Can be specified multiple times.",
+    required=False,
+    help="A name for each results directory, used for labeling. Can be specified multiple times. If not provided, will be inferred from directory names.",
 )
 @click.option(
     "--output-dir",
@@ -904,24 +904,29 @@ def compare_results(
     output_dir: Path,
     phrases_file: Path | None,
 ):
-    """Generates comparison plots and a CSV summary for multiple evaluation
+    """Generates comparison plots and summaries for multiple evaluation
     runs."""
-    if len(results_dirs) != len(names):
-        raise click.UsageError(
-            "The number of --input-dir and --name arguments must be the same."
-        )
+    if len(results_dirs) == 1 and not names:
+        base_dir = results_dirs[0]
+        results_dirs = tuple(sorted([d for d in base_dir.iterdir() if d.is_dir()]))
+        names = tuple([d.name for d in results_dirs])
 
-    if not results_dirs:
-        print("No input directories provided. Exiting.")
+    if len(results_dirs) != len(names):
+        print(
+            "Error: The number of --input-dir paths must match the number of --name labels."
+        )
         return
 
-    output_dir.mkdir(parents=True, exist_ok=True)
     results_map = dict(zip(names, results_dirs))
+    print("Comparing the following runs:")
+    for name, path in results_map.items():
+        print(f"- {name}: {path}")
+
+    output_dir.mkdir(exist_ok=True, parents=True)
 
     plot_overall_performance_comparison(results_map, output_dir)
     plot_single_turn_performance_comparison(results_map, output_dir)
     generate_summary_csv(results_map, output_dir)
-
     if phrases_file:
         analyze_failure_reasons(results_map, phrases_file, output_dir)
 
