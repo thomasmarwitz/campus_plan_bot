@@ -239,6 +239,11 @@
             messageInput.disabled = true;
             sendButton.disabled = true;
 
+            let userMessageElement;
+            if (isAudio) {
+                userMessageElement = addMessage('[Audio Recording...]', 'user');
+            }
+
             const typingIndicator = createTypingIndicator();
             chatWindow.appendChild(typingIndicator);
             chatWindow.scrollTop = chatWindow.scrollHeight;
@@ -250,8 +255,6 @@
                     formData.append('session_id', sessionId);
                     formData.append('file', audioBlob, 'recording.wav');
                     formData.append('asr_method', 'local');
-
-                    const userMessageElement = addMessage('[Audio Recording...]', 'user');
 
                     // Can't use EventSource with POST and FormData directly.
                     // So we make a POST request and handle the streaming response.
