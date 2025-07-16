@@ -35,4 +35,4 @@
   * [ ] Inlcude an examples section (can be empty for now, we'll fill that later)
 * [ ] Build a link extractor component that is invoked after a response of the chatbot is generated. This component should prog. check whether a google maps link is contained. If so, the component returns a named tuple with an answer (that is popoulated using a constant value "Ich habe die Website für dich geöffnet") and the link itself. if there is no link contained, nothing happens. the answer stays as it is
 
-  * [ ] Use the if name is main syntax to add some manual test cases for the component in the same file. you can iterate by executing the component until you see that it works.
+  *  Use the if name is main syntax to add some manual test cases for the component in the same file. you can iterate by executing the component until you see that it works.
