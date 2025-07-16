@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Plan Bot</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f8;
+        }
+        #chat-container {
+            width: 100%;
+            max-width: 600px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background-color: #fff;
+            overflow: hidden;
+        }
+        #chat-window {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .message {
+            margin-bottom: 15px;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+        }
+        .message.user {
+            align-items: flex-end;
+        }
+        .message.bot {
+            align-items: flex-start;
+        }
+        .message-content {
+            padding: 10px 15px;
+            border-radius: 18px;
+            max-width: 75%;
+        }
+        .message.user .message-content {
+            background-color: #007bff;
+            color: white;
+        }
+        .message.bot .message-content {
+            background-color: #e9e9eb;
+            color: black;
+        }
+        #chat-form {
+            display: flex;
+            padding: 10px;
+        }
+        #message-input {
+            flex-grow: 1;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        #send-button {
+            border: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #send-button:hover {
+            background-color: #0056b3;
+        }
+        .typing-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #8e8e93;
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+            margin: 0 1px;
+        }
+        .typing-dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        @keyframes typing {
+            0%, 60%, 100% {
+                transform: translateY(0);
+            }
+            30% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="chat-container">
+        <div id="chat-window">
+            <div class="message bot">
+                <div class="message-content">
+                    Hallo! Ich bin CampusGuide. Wie kann ich dir heute helfen?
+                </div>
+            </div>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="message-input" placeholder="Verbinde..." autocomplete="off" disabled>
+            <button id="send-button" type="submit" disabled>Send</button>
+        </form>
+    </div>
+
+    <script>
+        const chatWindow = document.getElementById('chat-window');
+        const chatForm = document.getElementById('chat-form');
+        const messageInput = document.getElementById('message-input');
+        const sendButton = document.getElementById('send-button');
+
+        let sessionId = null;
+
+        async function startSession() {
+            try {
+                const response = await fetch('/start', { method: 'POST' });
+                if (!response.ok) throw new Error('Failed to start session');
+                const data = await response.json();
+                sessionId = data.session_id;
+                console.log('Session started:', sessionId);
+                messageInput.disabled = false;
+                sendButton.disabled = false;
+                messageInput.placeholder = 'Type a message...';
+                messageInput.focus();
+            } catch (error) {
+                console.error('Error starting session:', error);
+                addMessage('Failed to connect to the bot.', 'bot');
+                messageInput.placeholder = 'Connection failed.';
+            }
+        }
+
+        function createTypingIndicator() {
+            const typingElement = document.createElement('div');
+            typingElement.classList.add('message', 'bot');
+            typingElement.id = 'typing-indicator';
+
+            const contentElement = document.createElement('div');
+            contentElement.classList.add('message-content');
+            contentElement.innerHTML = '<span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>';
+
+            typingElement.appendChild(contentElement);
+            return typingElement;
+        }
+
+        async function endSession() {
+            if (sessionId) {
+                try {
+                    // Using navigator.sendBeacon is more reliable for unload events
+                    const data = new URLSearchParams();
+                    data.append('session_id', sessionId);
+                    navigator.sendBeacon('/end?' + data.toString());
+                    console.log('Ending session:', sessionId);
+                } catch (error) {
+                    console.error('Error ending session:', error);
+                }
+            }
+        }
+
+        function addMessage(text, sender) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', sender);
+
+            const contentElement = document.createElement('div');
+            contentElement.classList.add('message-content');
+            contentElement.textContent = text;
+
+            messageElement.appendChild(contentElement);
+            chatWindow.appendChild(messageElement);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+        }
+
+        chatForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const query = messageInput.value.trim();
+            if (!query) return;
+
+            if (!sessionId) {
+                addMessage('Please wait, connecting to the bot...', 'bot');
+                return;
+            }
+
+            addMessage(query, 'user');
+            messageInput.value = '';
+
+            messageInput.disabled = true;
+            sendButton.disabled = true;
+
+            const typingIndicator = createTypingIndicator();
+            chatWindow.appendChild(typingIndicator);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ session_id: sessionId, query: query }),
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.detail || 'Failed to get response from bot');
+                }
+
+                const data = await response.json();
+                addMessage(data.response, 'bot');
+
+            } catch (error) {
+                console.error('Error during chat:', error);
+                addMessage('Sorry, something went wrong. Please try again.', 'bot');
+            } finally {
+                typingIndicator.remove();
+                messageInput.disabled = false;
+                sendButton.disabled = false;
+                messageInput.focus();
+            }
+        });
+
+        // Start a session when the page loads
+        document.addEventListener('DOMContentLoaded', startSession);
+
+        // End the session when the user leaves the page
+        window.addEventListener('beforeunload', endSession);
+    </script>
+</body>
+</html>

@@ -8,6 +8,12 @@ This installs `campus_plan_bot` as an editable Python project to enable imports 
 pixi run postinstall
 ```
 
+## Serving Frontend / Backend
+
+```pixi
+pixi run uvicorn campus_plan_bot.backend:app --reload
+```
+
 ## Testing
 
 ### `e2e` tests
@@ -63,7 +69,6 @@ Using hooks is a good way to ensure that your code is always in a good state, e.
 ```bash
 pixi run test # this will execute our pytest suite
 ```
-
 
 ## Disable Tokenizers Parallelism
 
