@@ -2,11 +2,11 @@ import asyncio
 
 from loguru import logger
 
-from campus_plan_bot.bot import LLama3PromptBuilder
 from campus_plan_bot.constants import Constants
 from campus_plan_bot.interfaces.interfaces import LLMClient, LLMRequestConfig, Role
 from campus_plan_bot.interfaces.persistence_types import Conversation, Message
 from campus_plan_bot.llm_client import InstituteClient
+from campus_plan_bot.prompts.prompt_builder import LLama3PromptBuilder
 from campus_plan_bot.prompts.util import load_and_format_prompt
 
 
@@ -38,7 +38,9 @@ class AsrProcessor:
         )
         conversation_history.add_message(user_query)
 
-        prompt = self.prompt_builder.from_conversation_history(conversation_history)
+        prompt = self.prompt_builder.from_conversation_history_with_system_prompt(
+            conversation_history
+        )
         response = await self.llm_client.query_async(prompt)
 
         return self.parse_response(response)

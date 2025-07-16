@@ -1,0 +1,75 @@
+from pathlib import Path
+
+from campus_plan_bot.asr_processing import AsrProcessor
+from campus_plan_bot.bot import SimpleTextBot
+from campus_plan_bot.data_picker import DataPicker
+from campus_plan_bot.interfaces.persistence_types import PipelineResult
+from campus_plan_bot.link_extractor import (
+    extract_google_maps_link,
+    extract_website_link,
+)
+from campus_plan_bot.prompts.prompt_builder import LLama3PromptBuilder
+from campus_plan_bot.prompts.util import load_and_format_prompt
+from campus_plan_bot.query_rewriter import QuestionRephraser
+from campus_plan_bot.rag import RAG
+
+
+class Pipeline:
+    def __init__(
+        self,
+        rag: RAG,
+        bot: SimpleTextBot,
+        asr_processor: AsrProcessor | None = None,
+        data_picker: DataPicker | None = None,
+        rephraser: QuestionRephraser | None = None,
+    ):
+        self.rag = rag
+        self.bot = bot
+
+        self.asr_processor = asr_processor or AsrProcessor()
+        self.data_picker = data_picker or DataPicker()
+        self.rephraser = rephraser or QuestionRephraser()
+
+    @classmethod
+    def from_system_prompt(cls, **kwargs):
+        system_prompt = load_and_format_prompt("system_prompt")
+        prompt_builder = LLama3PromptBuilder(system_prompt=system_prompt)
+        bot = SimpleTextBot(prompt_builder=prompt_builder)
+        return cls(bot=bot, **kwargs)
+
+    @classmethod
+    def from_database(cls, database_path: Path, embeddings_dir: Path, **kwargs):
+        rag = RAG.from_file(database_path, persist_dir=embeddings_dir)
+        return cls.from_system_prompt(rag=rag, **kwargs)
+
+    async def run(self, user_input: str, fix_asr: bool = False) -> PipelineResult:
+        # Step 1: fix ASR errors
+        fixed_input = await self.asr_processor.fix_asr(user_input) if fix_asr else ""
+
+        # Step 2: rephraser the question
+        rephrased_input = await self.rephraser.rephrase(
+            conversation=self.bot.conversation_history, query=user_input
+        )
+
+        # Step 3: retrieve relevant documents
+        documents = self.rag.retrieve_context(
+            rephrased_input + " " + fixed_input, limit=5
+        )
+
+        # Step 5: select useful data fields
+        documents = await self.data_picker.choose_fields(user_input, documents)
+
+        # Step 6: generate an answer to the query
+        response = await self.bot.query(user_input, documents)
+
+        # Step 7: check for links in the response
+        link_extraction_result = extract_google_maps_link(response)
+        if link_extraction_result:
+            return link_extraction_result
+
+        # Step 8: check for other links in the response
+        other_link_extraction_result = extract_website_link(response)
+        if other_link_extraction_result:
+            return other_link_extraction_result
+
+        return PipelineResult(answer=response, link=None)

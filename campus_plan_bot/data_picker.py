@@ -3,7 +3,6 @@ from copy import deepcopy
 
 from loguru import logger
 
-from campus_plan_bot.bot import LLama3PromptBuilder
 from campus_plan_bot.constants import Constants
 from campus_plan_bot.interfaces.interfaces import (
     LLMClient,
@@ -13,6 +12,7 @@ from campus_plan_bot.interfaces.interfaces import (
 )
 from campus_plan_bot.interfaces.persistence_types import Conversation, Message
 from campus_plan_bot.llm_client import InstituteClient
+from campus_plan_bot.prompts.prompt_builder import LLama3PromptBuilder
 
 
 class DataPicker:
@@ -78,7 +78,9 @@ class DataPicker:
         field_query = Message.from_content(fields_str, Role.USER)
         conversation_history.add_message(field_query)
 
-        prompt = self.prompt_builder.from_conversation_history(conversation_history)
+        prompt = self.prompt_builder.from_conversation_history_with_system_prompt(
+            conversation_history
+        )
         response = await self.llm_client.query_async(prompt)
 
         return response

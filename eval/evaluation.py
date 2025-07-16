@@ -15,11 +15,8 @@ from pydantic_evals.evaluators import (
 )
 from reporting import report_to_df
 
-from campus_plan_bot.asr_processing import AsrProcessor
-from campus_plan_bot.bot import SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
-from campus_plan_bot.data_picker import DataPicker
-from campus_plan_bot.query_rewriter import QuestionRephraser
+from campus_plan_bot.pipeline import Pipeline
 from campus_plan_bot.rag import RAG
 
 # Load BertScore model once
@@ -302,45 +299,24 @@ def process_file(
         logger.warning(f"No test cases found in {file.name}, skipping.")
         return
 
-    bots: dict[int, SimpleTextBot] = {}  # for each case, store the bot if num_turns > 1
+    pipelines: dict[int, Pipeline] = {}  # for each case, store the bot if num_turns > 1
 
     async def bot_runner(test_case_input: TestCaseInput) -> list[str]:
-        if test_case_input.case_id not in bots:
-            logger.debug(f"Creating bot for case {test_case_input.case_id}")
-            bots[test_case_input.case_id] = SimpleTextBot(
-                # llm_client=ChuteModel(
-                #    model="Qwen/Qwen3-32B", no_think=True, strip_think=True
-                # )
-            )
+        if test_case_input.case_id not in pipelines:
+            logger.debug(f"Creating pipeline for case {test_case_input.case_id}")
+            pipelines[test_case_input.case_id] = Pipeline.from_system_prompt(rag=rag)
 
-        bot = bots[test_case_input.case_id]
+        pipeline = pipelines[test_case_input.case_id]
 
-        # ASR processing
-        fixed_input = ""
-        if "asr" in file.name.lower():
-            fixed_input = await AsrProcessor().fix_asr(test_case_input.input) + " "
-
-        # Query rewriting
-        rephrased_query = await QuestionRephraser().rephrase(
-            bot.conversation_history, query=test_case_input.input
-        )
-
-        # RAG retrieval
-        docs = rag.retrieve_context(rephrased_query + " " + fixed_input, limit=5)
-
-        # Data picker
-        data_picker = DataPicker()
-        docs = await data_picker.choose_fields(test_case_input.input, docs)
-
-        # Answer generation
-        answer = await bot.query(test_case_input.input, docs)
+        apply_asr = "asr" in file.name.lower()
+        pipeline_result = await pipeline.run(test_case_input.input, fix_asr=apply_asr)
 
         # delete bot reference if last turn
         if test_case_input.turn_idx == test_case_input.num_turns - 1:
-            logger.debug(f"Deleting bot for case {test_case_input.case_id}")
-            del bots[test_case_input.case_id]
+            logger.debug(f"Deleting pipeline for case {test_case_input.case_id}")
+            del pipelines[test_case_input.case_id]
 
-        return [answer]
+        return [pipeline_result.answer]
 
     if chunk_size and chunk_size > 0:
         num_cases = len(cases)

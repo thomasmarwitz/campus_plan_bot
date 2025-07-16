@@ -129,4 +129,9 @@ class Constants:
     REPLACEMENT_KEY_ORIGINAL = "original"
     REPLACEMENT_KEY_CORRECTION = "korrekturen"
 
-    LINK_EXTRACTED_ANSWER = "Mit diesem Link kannst du dich zum Gebäude führen lassen: "
+    GOOGLE_MAPS_LINK_EXTRACTED_ANSWER = (
+        "Mit diesem Link kannst du dich zum Gebäude führen lassen: "
+    )
+    WEBSITE_LINK_EXTRACTED_ANSWER = (
+        "Ich habe die Website für dich in deinem Browser geöffnet."
+    )
