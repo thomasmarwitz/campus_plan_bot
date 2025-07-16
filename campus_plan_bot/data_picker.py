@@ -13,6 +13,7 @@ from campus_plan_bot.interfaces.interfaces import (
 from campus_plan_bot.interfaces.persistence_types import Conversation, Message
 from campus_plan_bot.llm_client import InstituteClient
 from campus_plan_bot.prompts.prompt_builder import LLama3PromptBuilder
+from campus_plan_bot.prompts.util import load_and_format_prompt
 
 
 class DataPicker:
@@ -23,7 +24,7 @@ class DataPicker:
         llm_client: LLMClient | None = None,
     ):
         self.prompt_builder = prompt_builder or LLama3PromptBuilder(
-            Constants.SYSTEM_PROMPT_DATA_FIELDS
+            load_and_format_prompt("data_picker_prompt")
         )
         self.llm_client = llm_client or InstituteClient(
             default_request_config=LLMRequestConfig(
