@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Dict, AsyncGenerator
+from typing import Dict
 import uuid
 import tempfile
 import shutil
@@ -22,47 +22,13 @@ from campus_plan_bot.input.remote_asr import RemoteASR
 from campus_plan_bot.llm_client import InstituteClient
 from campus_plan_bot.clients.chute_client import ChuteModel
 from campus_plan_bot.interfaces.interfaces import LLMClient, LLMRequestConfig
+from backend.utils import ASRMethod, audio_chat_generator
 
 
 app = FastAPI(
     title="Campus Plan Bot API",
     description="A stateful API for conversing with the Campus Plan Bot.",
 )
-
-
-def _convert_to_wav(input_path: str, output_path: str):
-    """Converts an audio file to WAV format using ffmpeg."""
-    command = [
-        "ffmpeg",
-        "-i",
-        input_path,
-        "-acodec",
-        "pcm_s16le",
-        "-ar",
-        "16000",
-        "-ac",
-        "1",
-        "-y",  # Overwrite output file if it exists
-        output_path,
-    ]
-    try:
-        subprocess.run(
-            command,
-            check=True,
-            capture_output=True,
-            text=True,
-        )
-    except FileNotFoundError:
-        logger.error("ffmpeg not found. Make sure it is installed and in your PATH.")
-        raise
-    except subprocess.CalledProcessError as e:
-        logger.error(f"Error converting audio file with ffmpeg: {e.stderr}")
-        raise
-
-
-class ASRMethod(str, Enum):
-    LOCAL = "local"
-    REMOTE = "remote"
 
 # Serve the frontend
 @app.get("/")
@@ -137,35 +103,6 @@ async def chat(request: ChatRequest):
 
     response = await pipeline.run(request.query)
     return ChatResponse(response=response.answer, link=response.link)
-
-
-async def audio_chat_generator(pipeline: Pipeline, asr_method: ASRMethod, input_path: str) -> AsyncGenerator[str, None]:
-    """Generator that handles audio processing and yields SSE events."""
-    fd_out, tmp_out_path = tempfile.mkstemp(suffix=".wav")
-    os.close(fd_out)
-
-    try:
-        _convert_to_wav(input_path, tmp_out_path)
-
-        if asr_method == ASRMethod.LOCAL:
-            asr = LocalASR(None)
-        else:
-            asr = RemoteASR(None)
-
-        loop = asyncio.get_event_loop()
-        transcript = await loop.run_in_executor(None, asr.transcribe, tmp_out_path)
-
-        yield json.dumps({"type": "transcript", "data": transcript})
-
-        response = await pipeline.run(transcript, fix_asr=True)
-        
-        yield json.dumps({
-            "type": "final_response",
-            "data": {"response": response.answer, "link": response.link}
-        })
-
-    finally:
-        os.remove(tmp_out_path)
 
 
 @app.post("/chat_audio")

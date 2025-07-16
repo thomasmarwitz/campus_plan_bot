@@ -11,7 +11,7 @@ pixi run postinstall
 ## Serving Frontend / Backend
 
 ```pixi
-pixi run uvicorn campus_plan_bot.backend:app --reload
+pixi run uvicorn backend.app:app --reload
 ```
 
 ## Testing
