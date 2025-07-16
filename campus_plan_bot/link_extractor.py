@@ -25,7 +25,9 @@ def extract_link(text: str) -> LinkExtractionResult | None:
 
     if match:
         link = match.group(1)
-        return LinkExtractionResult(answer=Constants.LINK_EXTRACTED_ANSWER, link=link)
+        return LinkExtractionResult(
+            answer=Constants.LINK_EXTRACTED_ANSWER + link, link=link
+        )
 
     return None
 

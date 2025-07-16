@@ -129,4 +129,4 @@ class Constants:
     REPLACEMENT_KEY_ORIGINAL = "original"
     REPLACEMENT_KEY_CORRECTION = "korrekturen"
 
-    LINK_EXTRACTED_ANSWER = "Ich habe einen Link für dich gefunden und ihn geöffnet."
+    LINK_EXTRACTED_ANSWER = "Mit diesem Link kannst du dich zum Gebäude führen lassen: "
