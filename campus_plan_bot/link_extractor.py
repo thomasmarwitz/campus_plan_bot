@@ -6,7 +6,7 @@ from campus_plan_bot.interfaces.persistence_types import PipelineResult
 
 def extract_website_link(text: str) -> PipelineResult | None:
     """Extracts a link from the given text, like any link."""
-    match = re.search(r"(https?://[^ ]+)", text)
+    match = re.search(r"(https?://[^\s\]\)\}]+)", text)
     if match:
         link = match.group(1)
         return PipelineResult(answer=Constants.WEBSITE_LINK_EXTRACTED_ANSWER, link=link)
@@ -22,7 +22,7 @@ def extract_google_maps_link(text: str) -> PipelineResult | None:
     """
     # Regex to find a Google Maps URL
     match = re.search(
-        r"(https://www\.google\.com/maps/dir/\?api=1&destination=[^ ]+)", text
+        r"(https://www\.google\.com/maps/dir/\?api=1&destination=[^\s\]\)\}]+)", text
     )
 
     if match:
