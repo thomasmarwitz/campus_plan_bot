@@ -216,6 +216,7 @@
             messageElement.appendChild(contentElement);
             chatWindow.appendChild(messageElement);
             chatWindow.scrollTop = chatWindow.scrollHeight;
+            return messageElement;
         }
 
         chatForm.addEventListener('submit', async (e) => {
@@ -243,38 +244,70 @@
             chatWindow.scrollTop = chatWindow.scrollHeight;
 
             try {
-                let response;
                 if (isAudio) {
                     const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
                     const formData = new FormData();
                     formData.append('session_id', sessionId);
                     formData.append('file', audioBlob, 'recording.wav');
-                    formData.append('asr_method', 'local'); 
+                    formData.append('asr_method', 'local');
 
-                    addMessage('[Audio Recording]', 'user');
+                    const userMessageElement = addMessage('[Audio Recording...]', 'user');
 
-                    response = await fetch('/chat_audio', {
+                    // Can't use EventSource with POST and FormData directly.
+                    // So we make a POST request and handle the streaming response.
+                    const response = await fetch('/chat_audio', {
                         method: 'POST',
                         body: formData,
                     });
+
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.detail || 'Failed to get response from bot');
+                    }
+                    
+                    const reader = response.body.getReader();
+                    const decoder = new TextDecoder();
+
+                    while (true) {
+                        const { value, done } = await reader.read();
+                        if (done) break;
+                        
+                        const chunk = decoder.decode(value, { stream: true });
+                        const lines = chunk.split('\n\n');
+                        
+                        for (const line of lines) {
+                            if (line.startsWith('data:')) {
+                                const data = JSON.parse(line.substring(5));
+                                if (data.type === 'transcript') {
+                                    userMessageElement.querySelector('.message-content').textContent = data.data;
+                                } else if (data.type === 'final_response') {
+                                    addMessage(data.data.response, 'bot');
+                                    if (data.data.link) {
+                                        window.open(data.data.link, '_blank');
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                 } else {
-                    response = await fetch('/chat', {
+                    const response = await fetch('/chat', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ session_id: sessionId, query: query }),
                     });
-                }
 
-                if (!response.ok) {
-                    const errorData = await response.json();
-                    throw new Error(errorData.detail || 'Failed to get response from bot');
-                }
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.detail || 'Failed to get response from bot');
+                    }
 
-                const data = await response.json();
-                addMessage(data.response, 'bot');
+                    const data = await response.json();
+                    addMessage(data.response, 'bot');
 
-                if (data.link) {
-                    window.open(data.link, '_blank');
+                    if (data.link) {
+                        window.open(data.link, '_blank');
+                    }
                 }
 
             } catch (error) {

@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Dict
+from typing import Dict, AsyncGenerator
 import uuid
 import tempfile
 import shutil
@@ -8,10 +8,11 @@ import asyncio
 from enum import Enum
 import subprocess
 from loguru import logger
+import json
 
-from fastapi import FastAPI, HTTPException, UploadFile, File, Form
+from fastapi import FastAPI, HTTPException, UploadFile, File, Form, Request
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, StreamingResponse
 from pydantic import BaseModel, Field
 
 from campus_plan_bot.rag import RAG
@@ -113,19 +114,7 @@ async def chat(request: ChatRequest):
     return ChatResponse(response=response.answer, link=response.link)
 
 
-@app.post("/chat_audio", response_model=ChatResponse)
-async def chat_audio(
-    session_id: str = Form(...),
-    asr_method: ASRMethod = Form(ASRMethod.LOCAL),
-    file: UploadFile = File(...),
-):
-    """
-    Chat with the bot using an audio recording.
-    """
-    pipeline = pipeline_sessions.get(session_id)
-    if not pipeline:
-        raise HTTPException(status_code=404, detail="Session not found.")
-
+async def audio_chat_generator(pipeline: Pipeline, asr_method: ASRMethod, file: UploadFile) -> AsyncGenerator[str, None]:
     fd_in, tmp_in_path = tempfile.mkstemp()
     os.close(fd_in)
 
@@ -146,12 +135,43 @@ async def chat_audio(
         loop = asyncio.get_event_loop()
         transcript = await loop.run_in_executor(None, asr.transcribe, tmp_out_path)
 
+        yield json.dumps({"type": "transcript", "data": transcript})
+
         response = await pipeline.run(transcript, fix_asr=True)
-        return ChatResponse(response=response.answer, link=response.link)
+        
+        yield json.dumps({
+            "type": "final_response",
+            "data": {"response": response.answer, "link": response.link}
+        })
+
     finally:
         os.remove(tmp_in_path)
         os.remove(tmp_out_path)
         await file.close()
+
+
+@app.post("/chat_audio")
+async def chat_audio(
+    request: Request,
+    session_id: str = Form(...),
+    asr_method: ASRMethod = Form(ASRMethod.LOCAL),
+    file: UploadFile = File(...),
+):
+    """
+    Chat with the bot using an audio recording, streaming transcript and final response.
+    """
+    pipeline = pipeline_sessions.get(session_id)
+    if not pipeline:
+        raise HTTPException(status_code=404, detail="Session not found.")
+
+    async def sse_generator():
+        async for data in audio_chat_generator(pipeline, asr_method, file):
+            if await request.is_disconnected():
+                logger.warning("Client disconnected.")
+                break
+            yield f"data: {data}\n\n"
+
+    return StreamingResponse(sse_generator(), media_type="text/event-stream")
 
 
 @app.post("/end")
