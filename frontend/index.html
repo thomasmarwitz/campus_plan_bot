@@ -226,6 +226,10 @@
                 const data = await response.json();
                 addMessage(data.response, 'bot');
 
+                if (data.link) {
+                    window.open(data.link, '_blank');
+                }
+
             } catch (error) {
                 console.error('Error during chat:', error);
                 addMessage('Sorry, something went wrong. Please try again.', 'bot');

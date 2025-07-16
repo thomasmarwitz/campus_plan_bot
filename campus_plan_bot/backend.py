@@ -43,6 +43,7 @@ class ChatRequest(BaseModel):
 
 class ChatResponse(BaseModel):
     response: str = Field(..., description="The bot's response.")
+    link: str | None = Field(None, description="A link relevant to the response, if any.")
 
 
 @app.post("/start", response_model=StartResponse)
@@ -65,7 +66,7 @@ async def chat(request: ChatRequest):
         raise HTTPException(status_code=404, detail="Session not found.")
 
     response = await pipeline.run(request.query)
-    return ChatResponse(response=response.answer)
+    return ChatResponse(response=response.answer, link=response.link)
 
 
 @app.post("/end")
