@@ -1,39 +1,32 @@
-from pathlib import Path
-from typing import Dict
-import uuid
-import tempfile
-import shutil
 import os
-import asyncio
-from enum import Enum
-import subprocess
-from loguru import logger
-import json
+import tempfile
+import uuid
+from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, UploadFile, File, Form, Request
-from fastapi.staticfiles import StaticFiles
+from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.responses import FileResponse, StreamingResponse
+from fastapi.staticfiles import StaticFiles
+from loguru import logger
 from pydantic import BaseModel, Field
 
-from campus_plan_bot.rag import RAG
-from campus_plan_bot.pipeline import Pipeline
-from campus_plan_bot.input.local_asr import LocalASR
-from campus_plan_bot.input.remote_asr import RemoteASR
-from campus_plan_bot.llm_client import InstituteClient
+from backend.utils import ASRMethod, audio_chat_generator
 from campus_plan_bot.clients.chute_client import ChuteModel
 from campus_plan_bot.interfaces.interfaces import LLMClient, LLMRequestConfig
-from backend.utils import ASRMethod, audio_chat_generator
-
+from campus_plan_bot.llm_client import InstituteClient
+from campus_plan_bot.pipeline import Pipeline
+from campus_plan_bot.rag import RAG
 
 app = FastAPI(
     title="Campus Plan Bot API",
     description="A stateful API for conversing with the Campus Plan Bot.",
 )
 
+
 # Serve the frontend
 @app.get("/")
 async def read_index():
-    return FileResponse('frontend/index.html')
+    return FileResponse("frontend/index.html")
+
 
 app.mount("/frontend", StaticFiles(directory="frontend"), name="frontend")
 
@@ -44,13 +37,14 @@ embeddings_path = Path("data") / "embeddings"
 rag_component = RAG.from_file(database_path, persist_dir=embeddings_path)
 
 # In-memory storage for bot sessions
-pipeline_sessions: Dict[str, Pipeline] = {}
+pipeline_sessions: dict[str, Pipeline] = {}
 
 
 class StartRequest(BaseModel):
     model_name: str = "Llama3.1-8B"
     temperature: float = 0.3
     max_new_tokens: int = 1024
+
 
 class StartResponse(BaseModel):
     session_id: str = Field(..., description="The unique ID for the new session.")
@@ -63,16 +57,16 @@ class ChatRequest(BaseModel):
 
 class ChatResponse(BaseModel):
     response: str = Field(..., description="The bot's response.")
-    link: str | None = Field(None, description="A link relevant to the response, if any.")
+    link: str | None = Field(
+        None, description="A link relevant to the response, if any."
+    )
 
 
 @app.post("/start", response_model=StartResponse)
 def start_session(request: StartRequest):
-    """
-    Starts a new chat session and returns a unique session ID.
-    """
+    """Starts a new chat session and returns a unique session ID."""
     session_id = str(uuid.uuid4())
-    
+
     llm_config = LLMRequestConfig(
         temperature=request.temperature,
         max_new_tokens=request.max_new_tokens,
@@ -82,7 +76,7 @@ def start_session(request: StartRequest):
     if request.model_name == "Llama3.1-8B":
         llm_client = InstituteClient(default_request_config=llm_config)
     elif request.model_name == "Qwen3-32B":
-        llm_client = ChuteModel(default_request_config=llm_config)
+        llm_client = ChuteModel(default_request_config=llm_config)  # type: ignore[assignment]
     else:
         raise HTTPException(status_code=400, detail="Invalid model name.")
 
@@ -94,9 +88,7 @@ def start_session(request: StartRequest):
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest):
-    """
-    Chat with the bot using a session ID.
-    """
+    """Chat with the bot using a session ID."""
     pipeline = pipeline_sessions.get(request.session_id)
     if not pipeline:
         raise HTTPException(status_code=404, detail="Session not found.")
@@ -112,9 +104,8 @@ async def chat_audio(
     asr_method: ASRMethod = Form(ASRMethod.LOCAL),
     file: UploadFile = File(...),
 ):
-    """
-    Chat with the bot using an audio recording, streaming transcript and final response.
-    """
+    """Chat with the bot using an audio recording, streaming transcript and
+    final response."""
     pipeline = pipeline_sessions.get(session_id)
     if not pipeline:
         raise HTTPException(status_code=404, detail="Session not found.")
@@ -146,11 +137,9 @@ async def chat_audio(
 
 @app.post("/end")
 def end_session(session_id: str):
-    """
-    Ends a chat session and cleans up resources.
-    """
+    """Ends a chat session and cleans up resources."""
     if session_id in pipeline_sessions:
         del pipeline_sessions[session_id]
         return {"message": f"Session {session_id} ended."}
     else:
-        raise HTTPException(status_code=404, detail="Session not found.") 
+        raise HTTPException(status_code=404, detail="Session not found.")

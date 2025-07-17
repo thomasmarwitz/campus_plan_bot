@@ -124,7 +124,7 @@
                 transform: translateY(-5px);
             }
         }
-        
+
         #settings-modal {
             position: fixed;
             top: 0;
@@ -146,7 +146,7 @@
             width: 90%;
             max-width: 400px;
         }
-        
+
         #settings-form h2 {
             margin-top: 0;
             margin-bottom: 20px;
@@ -241,7 +241,7 @@
             e.preventDefault();
             const formData = new FormData(startForm);
             const settings = Object.fromEntries(formData.entries());
-            
+
             settings.temperature = parseFloat(settings.temperature);
             settings.max_new_tokens = parseInt(settings.max_new_tokens, 10);
 
@@ -368,17 +368,17 @@
                         const errorData = await response.json();
                         throw new Error(errorData.detail || 'Failed to get response from bot');
                     }
-                    
+
                     const reader = response.body.getReader();
                     const decoder = new TextDecoder();
 
                     while (true) {
                         const { value, done } = await reader.read();
                         if (done) break;
-                        
+
                         const chunk = decoder.decode(value, { stream: true });
                         const lines = chunk.split('\n\n');
-                        
+
                         for (const line of lines) {
                             if (line.startsWith('data:')) {
                                 const data = JSON.parse(line.substring(5));

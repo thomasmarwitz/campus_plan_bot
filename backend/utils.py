@@ -3,13 +3,14 @@ import json
 import os
 import subprocess
 import tempfile
+from collections.abc import AsyncGenerator
 from enum import Enum
-from typing import AsyncGenerator
 
 from loguru import logger
 
 from campus_plan_bot.input.local_asr import LocalASR
 from campus_plan_bot.input.remote_asr import RemoteASR
+from campus_plan_bot.interfaces.interfaces import AutomaticSpeechRecognition
 from campus_plan_bot.pipeline import Pipeline
 
 
@@ -58,10 +59,9 @@ async def audio_chat_generator(
     try:
         _convert_to_wav(input_path, tmp_out_path)
 
-        if asr_method == ASRMethod.LOCAL:
-            asr = LocalASR(None)
-        else:
-            asr = RemoteASR(None)
+        asr: AutomaticSpeechRecognition = (
+            LocalASR(None) if asr_method == ASRMethod.LOCAL else RemoteASR(None)
+        )
 
         loop = asyncio.get_event_loop()
         transcript = await loop.run_in_executor(None, asr.transcribe, tmp_out_path)
@@ -78,4 +78,4 @@ async def audio_chat_generator(
         )
 
     finally:
-        os.remove(tmp_out_path) 
+        os.remove(tmp_out_path)

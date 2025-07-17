@@ -152,12 +152,9 @@ class ChuteModel(Model):
         self.strip_think = strip_think
         self.max_retries = max_retries
         self.backoff_factor = backoff_factor
-        self.request_config = (
-            default_request_config
-            or LLMRequestConfig(
-                max_new_tokens=1024,
-                temperature=0.3,
-            )
+        self.request_config = default_request_config or LLMRequestConfig(
+            max_new_tokens=1024,
+            temperature=0.3,
         )
 
     @property
