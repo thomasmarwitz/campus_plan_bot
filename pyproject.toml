@@ -22,6 +22,10 @@ classifiers = [
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
+    "llama-index",
+    "openai",
+    "llama-index-llms-ollama",
+    "llama-index-experimental"
 ]
 
 [project.urls]
@@ -73,4 +77,4 @@ files.extend-exclude = [
   "campus_plan_bot/prompts/",
   "TASKS.md",
 ]
-default.extend-ignore-re = ["controll", "ein", "ist"]
+default.extend-ignore-re = ["controll", "ein", "ist", "alle"]
