@@ -15,6 +15,7 @@ from campus_plan_bot.interfaces.interfaces import LLMClient, LLMRequestConfig
 from campus_plan_bot.llm_client import InstituteClient
 from campus_plan_bot.pipeline import Pipeline
 from campus_plan_bot.rag import RAG
+from campus_plan_bot.translator import Translator
 
 app = FastAPI(
     title="Campus Plan Bot API",
@@ -64,6 +65,19 @@ class ChatResponse(BaseModel):
     )
 
 
+class TranslationRequest(BaseModel):
+    text: str
+    target_language: str
+
+
+class TranslationResponse(BaseModel):
+    translated_text: str
+
+
+# Instantiate the translator once to be reused across requests
+translator = Translator()
+
+
 @app.post("/start", response_model=StartResponse)
 def start_session(request: StartRequest):
     """Starts a new chat session and returns a unique session ID."""
@@ -100,6 +114,19 @@ async def chat(request: ChatRequest):
 
     response = await pipeline.run(request.query)
     return ChatResponse(response=response.answer, link=response.link)
+
+
+@app.post("/translate", response_model=TranslationResponse)
+async def translate_text(request: TranslationRequest):
+    """Translates text to a specified language."""
+    try:
+        translated_text = await translator.translate(
+            text=request.text, target_language=request.target_language
+        )
+        return TranslationResponse(translated_text=translated_text)
+    except Exception as e:
+        logger.error(f"Translation failed: {e}")
+        raise HTTPException(status_code=500, detail="Translation service failed.")
 
 
 @app.post("/chat_audio")

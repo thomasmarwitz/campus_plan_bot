@@ -182,6 +182,26 @@
             background-color: #0056b3;
         }
 
+        .message-actions {
+            margin-top: 8px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .translate-button {
+            background: none;
+            border: 1px solid #007bff;
+            color: #007bff;
+            padding: 3px 8px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .translate-button:hover {
+            background-color: #e9f5ff;
+        }
+
         #suggestion-panels {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -256,6 +276,17 @@
                 <select id="complex-mode-select" name="allow_complex_mode">
                     <option value="yes" selected>Yes</option>
                     <option value="no">No</option>
+                </select>
+
+                <label for="translation-language-select">Translate responses to:</label>
+                <select id="translation-language-select" name="translation_language">
+                    <option value="none" selected>None (Default)</option>
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Hindi">Hindi</option>
                 </select>
 
                 <button type="submit">Start Chat</button>
@@ -335,6 +366,7 @@
             ]
         };
 
+        let targetLanguage = 'none';
         let sessionId = null;
         let mediaRecorder;
         let audioChunks = [];
@@ -358,6 +390,7 @@
             settings.temperature = parseFloat(settings.temperature);
             settings.max_new_tokens = parseInt(settings.max_new_tokens, 10);
             settings.allow_complex_mode = settings.allow_complex_mode === 'yes';
+            targetLanguage = settings.translation_language;
 
             if (settings.use_location === 'yes') {
                 const urlParams = new URLSearchParams(window.location.search);
@@ -385,6 +418,7 @@
                 }
             }
             delete settings.use_location;
+            delete settings.translation_language;
 
 
             await startSession(settings);
@@ -446,6 +480,7 @@
         function addMessage(text, sender) {
             const messageElement = document.createElement('div');
             messageElement.classList.add('message', sender);
+            messageElement.dataset.originalText = text;
 
             const contentElement = document.createElement('div');
             contentElement.classList.add('message-content');
@@ -457,6 +492,20 @@
             }
 
             messageElement.appendChild(contentElement);
+
+            if (sender === 'bot' && targetLanguage !== 'none') {
+                const actionsContainer = document.createElement('div');
+                actionsContainer.className = 'message-actions';
+
+                const translateButton = document.createElement('button');
+                translateButton.className = 'translate-button';
+                translateButton.textContent = 'Translate';
+                translateButton.dataset.state = 'original';
+
+                actionsContainer.appendChild(translateButton);
+                messageElement.appendChild(actionsContainer);
+            }
+
             chatWindow.appendChild(messageElement);
             chatWindow.scrollTop = chatWindow.scrollHeight;
             return messageElement;
@@ -662,6 +711,58 @@
             }
             if (messageInput.value === '') {
                 restoreInitialPanels();
+            }
+        });
+
+        chatWindow.addEventListener('click', async e => {
+            if (e.target.classList.contains('translate-button')) {
+                const button = e.target;
+                const messageElement = button.closest('.message');
+                const contentElement = messageElement.querySelector('.message-content');
+
+                button.disabled = true;
+                const originalText = messageElement.dataset.originalText;
+                const cacheKey = `translation-${targetLanguage}-${originalText}`;
+
+                if (button.dataset.state === 'original') {
+                    const cachedTranslation = sessionStorage.getItem(cacheKey);
+                    if (cachedTranslation) {
+                        contentElement.innerHTML = marked.parse(cachedTranslation);
+                        button.textContent = 'Show Original';
+                        button.dataset.state = 'translated';
+                        button.disabled = false;
+                        return;
+                    }
+
+                    button.textContent = 'Translating...';
+                    try {
+                        const response = await fetch('/translate', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ text: originalText, target_language: targetLanguage }),
+                        });
+                        if (!response.ok) throw new Error('Translation failed');
+                        const data = await response.json();
+
+                        const translatedText = data.translated_text;
+                        contentElement.innerHTML = marked.parse(translatedText);
+                        sessionStorage.setItem(cacheKey, translatedText);
+
+                        button.textContent = 'Show Original';
+                        button.dataset.state = 'translated';
+
+                    } catch (error) {
+                        console.error('Translation error:', error);
+                        button.textContent = 'Translate';
+                    } finally {
+                        button.disabled = false;
+                    }
+                } else {
+                    contentElement.innerHTML = marked.parse(originalText);
+                    button.textContent = 'Translate';
+                    button.dataset.state = 'original';
+                    button.disabled = false;
+                }
             }
         });
 
