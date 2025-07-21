@@ -222,6 +222,11 @@
             font-weight: 500;
             color: #212529;
         }
+
+        #suggestion-panels.follow-up-mode {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 8px;
+        }
     </style>
 </head>
 <body>
@@ -305,6 +310,30 @@
         const startForm = document.getElementById('start-form');
         const chatContainer = document.getElementById('chat-container');
         const suggestionPanelsContainer = document.getElementById('suggestion-panels');
+        const initialPanelsHTML = suggestionPanelsContainer.innerHTML;
+
+        const suggestionData = {
+            'Wo befindet sich': [
+                'der Hörsaal am Fasanengarten',
+                'der Infobau',
+                'der Wolfgang Gaede Hörsaal'
+            ],
+            'Was sind die Öffnungszeiten': [
+                'der Bibliothek am Campus Süd',
+                'der Fachschaft Informatik',
+                'der Cafeteria',
+            ],
+            'Navigiere mich': [
+                'zu Gebäude 420',
+                'zur Mensa',
+                'zum Fritz Haller Hörsaal',
+            ],
+            'Wie ist die Rollstuhlgerechtigkeit': [
+                'für für den Audimax',
+                'für den Egon Eiermann Hörsaal',
+                'für die Mensa',
+            ]
+        };
 
         let sessionId = null;
         let mediaRecorder;
@@ -431,6 +460,36 @@
             chatWindow.appendChild(messageElement);
             chatWindow.scrollTop = chatWindow.scrollHeight;
             return messageElement;
+        }
+
+        function restoreInitialPanels() {
+            suggestionPanelsContainer.innerHTML = initialPanelsHTML;
+            suggestionPanelsContainer.classList.remove('follow-up-mode');
+            suggestionPanelsContainer.style.display = 'grid';
+        }
+
+        function renderFollowUpSuggestions(key) {
+            const suggestions = suggestionData[key];
+            if (!suggestions) {
+                suggestionPanelsContainer.style.display = 'none';
+                return;
+            }
+
+            suggestionPanelsContainer.innerHTML = '';
+            suggestionPanelsContainer.classList.add('follow-up-mode');
+
+            suggestions.forEach(suggestionText => {
+                const panel = document.createElement('div');
+                panel.classList.add('suggestion-panel');
+                panel.dataset.type = 'follow-up';
+
+                const span = document.createElement('span');
+                span.classList.add('prompt-line1');
+                span.textContent = suggestionText;
+                panel.appendChild(span);
+
+                suggestionPanelsContainer.appendChild(panel);
+            });
         }
 
         chatForm.addEventListener('submit', async (e) => {
@@ -596,10 +655,39 @@
             }
         });
 
-        suggestionPanelsContainer.querySelectorAll('.suggestion-panel').forEach(panel => {
-            panel.addEventListener('click', () => {
-                const line1 = panel.querySelector('.prompt-line1').textContent;
-                const line2 = panel.querySelector('.prompt-line2').textContent;
+        messageInput.addEventListener('input', () => {
+            const hasFollowUps = suggestionPanelsContainer.querySelector('[data-type="follow-up"]');
+            if (hasFollowUps) {
+                suggestionPanelsContainer.style.display = 'none';
+            }
+            if (messageInput.value === '') {
+                restoreInitialPanels();
+            }
+        });
+
+        suggestionPanelsContainer.addEventListener('click', e => {
+            const panel = e.target.closest('.suggestion-panel');
+            if (!panel) return;
+
+            if (panel.dataset.type === 'follow-up') {
+                messageInput.value += panel.textContent.trim();
+                const query = messageInput.value.trim();
+
+                if (!query) return;
+
+                if (!sessionId) {
+                    addMessage('Please wait, connecting to the bot...', 'bot');
+                    return;
+                }
+
+                addMessage(query, 'user');
+                messageInput.value = '';
+                suggestionPanelsContainer.style.display = 'none';
+
+                sendMessage(query);
+            } else {
+                const line1 = panel.querySelector('.prompt-line1').textContent.trim();
+                const line2 = panel.querySelector('.prompt-line2').textContent.trim();
 
                 if (isShiftDown) {
                     const query = `${line1} ${line2}`;
@@ -609,8 +697,9 @@
                 } else {
                     messageInput.value = `${line1} `;
                     messageInput.focus();
+                    renderFollowUpSuggestions(line1);
                 }
-            });
+            }
         });
 
         // Start a session when the page loads - now handled by the form
