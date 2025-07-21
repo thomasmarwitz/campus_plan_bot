@@ -201,6 +201,18 @@
                 <label for="max-tokens-input">Max Tokens:</label>
                 <input type="number" id="max-tokens-input" name="max_new_tokens" value="1024" min="1">
 
+                <label for="use-location-select">Use current location:</label>
+                <select id="use-location-select" name="use_location">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+
+                <label for="complex-mode-select">Allow complex queries:</label>
+                <select id="complex-mode-select" name="allow_complex_mode">
+                    <option value="yes" selected>Yes</option>
+                    <option value="no">No</option>
+                </select>
+
                 <button type="submit">Start Chat</button>
             </form>
         </div>
@@ -240,6 +252,15 @@
         let audioChunks = [];
         let isRecording = false;
 
+        async function getCurrentPositionPromise() {
+            return new Promise((resolve, reject) => {
+                if (!navigator.geolocation) {
+                    return reject(new Error("Geolocation is not supported by your browser."));
+                }
+                navigator.geolocation.getCurrentPosition(resolve, reject);
+            });
+        }
+
         startForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             const formData = new FormData(startForm);
@@ -247,6 +268,35 @@
 
             settings.temperature = parseFloat(settings.temperature);
             settings.max_new_tokens = parseInt(settings.max_new_tokens, 10);
+            settings.allow_complex_mode = settings.allow_complex_mode === 'yes';
+
+            if (settings.use_location === 'yes') {
+                const urlParams = new URLSearchParams(window.location.search);
+                const lat = urlParams.get('lat');
+                const lon = urlParams.get('lon');
+
+                if (lat && lon) {
+                    try {
+                        const coords = [parseFloat(lat), parseFloat(lon)];
+                        settings.user_coords_str = JSON.stringify(coords);
+                        console.log('Using mock coordinates from URL:', settings.user_coords_str);
+                    } catch (error) {
+                        console.error('Error parsing coordinates from URL', error);
+                        addMessage('Could not parse coordinates from URL.', 'bot');
+                    }
+                } else {
+                    try {
+                        const position = await getCurrentPositionPromise();
+                        const coords = [position.coords.latitude, position.coords.longitude];
+                        settings.user_coords_str = JSON.stringify(coords);
+                    } catch (error) {
+                        console.error('Error getting location:', error);
+                        addMessage('Could not retrieve your location.', 'bot');
+                    }
+                }
+            }
+            delete settings.use_location;
+
 
             await startSession(settings);
         });
