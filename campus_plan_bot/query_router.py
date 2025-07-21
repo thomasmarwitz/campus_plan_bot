@@ -27,8 +27,13 @@ class QueryRouter:
         )
         self.llm_client = llm_client or ChuteModel(no_think=True, strip_think=True)
 
-    async def classify_query(self, query: str) -> QueryType:
+    async def classify_query(self, query: str, original_query: str) -> QueryType:
         """Classify the user query as normal or complex."""
+
+        if "/complex" in original_query:
+            return QueryType.COMPLEX
+        if "/normal" in original_query:
+            return QueryType.NORMAL
 
         conversation = Conversation.new()
         conversation.add_message_from_content(query, Role.USER)
@@ -38,6 +43,7 @@ class QueryRouter:
         )
 
         response = await self.llm_client.query_async(prompt)
+        response = response.strip().replace("```json", "").replace("`", "").strip()
         try:
             result = json.loads(response)
             query_type = result.get("query_type")
