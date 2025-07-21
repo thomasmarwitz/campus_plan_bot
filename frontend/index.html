@@ -215,6 +215,12 @@
         .prompt-line2 {
             margin-top: 3px;
             color: #6c757d;
+            transition: font-weight 0.1s, color 0.1s;
+        }
+
+        #suggestion-panels.shift-active .prompt-line2 {
+            font-weight: 500;
+            color: #212529;
         }
     </style>
 </head>
@@ -304,6 +310,7 @@
         let mediaRecorder;
         let audioChunks = [];
         let isRecording = false;
+        let isShiftDown = false;
 
         async function getCurrentPositionPromise() {
             return new Promise((resolve, reject) => {
@@ -573,6 +580,9 @@
             if (e.code === 'Space' && document.activeElement !== messageInput) {
                 e.preventDefault();
                 startRecording();
+            } else if (e.key === 'Shift' && !isShiftDown) {
+                isShiftDown = true;
+                suggestionPanelsContainer.classList.add('shift-active');
             }
         });
 
@@ -580,6 +590,9 @@
             if (e.code === 'Space' && document.activeElement !== messageInput) {
                 e.preventDefault();
                 stopRecording();
+            } else if (e.key === 'Shift') {
+                isShiftDown = false;
+                suggestionPanelsContainer.classList.remove('shift-active');
             }
         });
 
@@ -587,12 +600,16 @@
             panel.addEventListener('click', () => {
                 const line1 = panel.querySelector('.prompt-line1').textContent;
                 const line2 = panel.querySelector('.prompt-line2').textContent;
-                const query = `${line1} ${line2}`;
 
-                addMessage(query, 'user');
-                sendMessage(query);
-
-                suggestionPanelsContainer.style.display = 'none';
+                if (isShiftDown) {
+                    const query = `${line1} ${line2}`;
+                    addMessage(query, 'user');
+                    sendMessage(query);
+                    suggestionPanelsContainer.style.display = 'none';
+                } else {
+                    messageInput.value = `${line1} `;
+                    messageInput.focus();
+                }
             });
         });
 
