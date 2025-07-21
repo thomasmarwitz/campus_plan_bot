@@ -78,7 +78,7 @@ def start_session(request: StartRequest):
     if request.model_name == "Llama3.1-8B":
         llm_client = InstituteClient(default_request_config=llm_config)
     elif request.model_name == "Qwen3-32B":
-        llm_client = ChuteModel(default_request_config=llm_config)  # type: ignore[assignment]
+        llm_client = ChuteModel(default_request_config=llm_config, no_think=True, strip_think=True)  # type: ignore[assignment]
     else:
         raise HTTPException(status_code=400, detail="Invalid model name.")
 
