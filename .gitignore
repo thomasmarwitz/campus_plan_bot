@@ -1,5 +1,8 @@
 ***.DS_Store
 
+# embedding store
+data/embeddings/
+
 # pixi environments
 .pixi
 *.egg-info

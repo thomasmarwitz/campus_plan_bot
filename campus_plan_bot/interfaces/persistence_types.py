@@ -1,12 +1,20 @@
 import uuid
 from dataclasses import dataclass
 from datetime import datetime
+from typing import NamedTuple
 
 from campus_plan_bot.interfaces.interfaces import (
     ConversationProtocol,
     MessageProtocol,
     Role,
 )
+
+
+class PipelineResult(NamedTuple):
+    """Data class for pipeline results."""
+
+    answer: str
+    link: str | None = None
 
 
 @dataclass

@@ -1,7 +1,7 @@
-from campus_plan_bot.bot import LLama3PromptBuilder
 from campus_plan_bot.interfaces.interfaces import LLMRequestConfig
 from campus_plan_bot.interfaces.persistence_types import Conversation, Role
 from campus_plan_bot.llm_client import InstituteClient, LLMClient
+from campus_plan_bot.prompts.prompt_builder import LLama3PromptBuilder
 
 
 class QuestionRephraser:

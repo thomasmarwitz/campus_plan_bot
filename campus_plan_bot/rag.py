@@ -3,7 +3,13 @@ from copy import copy
 from pathlib import Path
 
 import pandas as pd
-from llama_index.core import Document, Settings, VectorStoreIndex
+from llama_index.core import (
+    Document,
+    Settings,
+    StorageContext,
+    VectorStoreIndex,
+    load_index_from_storage,
+)
 from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from loguru import logger
@@ -37,14 +43,27 @@ class RAG(RAGComponent):
         return re.sub(r"[-_]", " ", text)
 
     @classmethod
-    def from_file(cls, file_path: Path, id_column_name: str = "identifikator") -> "RAG":
+    def from_file(
+        cls,
+        file_path: Path,
+        id_column_name: str = "identifikator",
+        persist_dir: Path | None = None,
+    ) -> "RAG":
         """Create a RAG instance from a file."""
         df = pd.read_csv(file_path)
-        return cls.from_df(df, id_column_name)
+        return cls.from_df(df, id_column_name, persist_dir=persist_dir)
 
     @classmethod
-    def from_df(cls, df: pd.DataFrame, id_column_name: str = "identifikator") -> "RAG":
+    def from_df(
+        cls,
+        df: pd.DataFrame,
+        id_column_name: str = "identifikator",
+        persist_dir: Path | None = None,
+    ) -> "RAG":
         """Create a RAG instance from a DataFrame."""
+        if persist_dir and persist_dir.exists():
+            return cls.from_persisted(df, persist_dir, id_column_name)
+
         documents = []
         # Ensure 'name' column exists and fill NaN with empty strings
         if "name" not in df.columns:
@@ -67,13 +86,33 @@ class RAG(RAGComponent):
             )
             documents.append(doc)
 
+        logger.debug(f"Creating {len(documents)} embeddings")
         Settings.embed_model = HuggingFaceEmbedding(
             model_name=cls.MODEL, trust_remote_code=True
         )
         index = VectorStoreIndex.from_documents(
             documents,
         )
+        logger.debug("Embeddings created")
+        if persist_dir:
+            logger.debug(f"Persisting index to {persist_dir}")
+            persist_dir.mkdir(parents=True, exist_ok=True)
+            index.storage_context.persist(persist_dir=str(persist_dir))
         return cls(index, df, id_column_name)
+
+    @classmethod
+    def from_persisted(
+        cls, df: pd.DataFrame, persist_dir: Path, id_column_name: str = "identifikator"
+    ) -> "RAG":
+        """Load a RAG instance from a persisted index."""
+        logger.debug(f"Loading index from {persist_dir}")
+        Settings.embed_model = HuggingFaceEmbedding(
+            model_name=cls.MODEL, trust_remote_code=True
+        )
+        storage_context = StorageContext.from_defaults(persist_dir=str(persist_dir))
+        index = load_index_from_storage(storage_context)
+        logger.debug("Index loaded.")
+        return cls(index, df, id_column_name)  # type: ignore[arg-type]
 
     def _retrieve_by_building_number(
         self, query: str, limit: int = 5, asr_fixed_query: str = ""

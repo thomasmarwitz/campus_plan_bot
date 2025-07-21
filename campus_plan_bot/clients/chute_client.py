@@ -29,9 +29,9 @@ from pydantic_ai.models import (
     cached_async_http_client,
 )
 
-from campus_plan_bot.bot import LLama3PromptBuilder
 from campus_plan_bot.interfaces.interfaces import Role
 from campus_plan_bot.interfaces.persistence_types import Conversation
+from campus_plan_bot.prompts.prompt_builder import LLama3PromptBuilder
 
 CHUTE_API_URL = "https://llm.chutes.ai/v1/chat/completions"
 
@@ -168,7 +168,6 @@ class ChuteModel(Model):
 
     def _messages_to_prompt(self, messages: list[ModelMessage]) -> str:
         """Convert a list of ModelMessage objects to a single prompt string."""
-        prompt_builder = LLama3PromptBuilder()
 
         conv = Conversation.new()
         system_prompt: str | None = None
@@ -192,7 +191,9 @@ class ChuteModel(Model):
                                     str(part.content), Role.ASSISTANT
                                 )
 
-        return prompt_builder.from_conversation_history(conv, system_prompt)
+        assert system_prompt is not None, "System prompt is required"
+
+        return LLama3PromptBuilder.from_conversation_history(conv, system_prompt)
 
     async def request(
         self,

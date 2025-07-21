@@ -15,17 +15,16 @@ from pydantic_evals.evaluators import (
 )
 from reporting import report_to_df
 
-from campus_plan_bot.asr_processing import AsrProcessor
-from campus_plan_bot.bot import SimpleTextBot
 from campus_plan_bot.clients.chute_client import ChuteModel
-from campus_plan_bot.data_picker import DataPicker
-from campus_plan_bot.query_rewriter import QuestionRephraser
+from campus_plan_bot.pipeline import Pipeline
 from campus_plan_bot.rag import RAG
 
 # Load BertScore model once
 logger.debug("Loading Bertscore model")
 score(["Ich bin ein Test"], ["Ich bin ein Test"], lang="de")
 logger.debug("Bertscore model loaded successfully")
+
+embeddings_dir = Path("data") / "embeddings"
 
 SINGLE_TURN_LLM_JUDGE = LLMJudge(
     rubric="Output should match expected output in meaning, however, phrasing or wording can differ if the same information is conveyed. It is mandatory the information is conveyed instead of listing excuses. The chatbot has access to the underlying data if the expected output also contains information. When evaluating addresses, it is okay if the response only includes the relevant address (street and house number) as we expect all users to be based in Karlsruhe, Germany. Reasoning should be concise and to the point. Format your output as valid JSON object with valid quotation marks. /no_think",
@@ -229,7 +228,7 @@ def evaluate_single_synthetic(
 ) -> None:
     """Run evaluation for single-turn synthetic test sets."""
     output_path.mkdir(parents=True, exist_ok=True)
-    rag = RAG.from_file(data_path)
+    rag = RAG.from_file(data_path, persist_dir=embeddings_dir)
     synthetic_files = list(test_data_path.glob("*synthetic.json"))
     logger.info(f"Found {len(synthetic_files)} synthetic test files to evaluate.")
     for file_idx, file in enumerate(synthetic_files):
@@ -286,7 +285,7 @@ def evaluate_file(
     chunk_size: int | None,
 ) -> None:
     output_path.mkdir(parents=True, exist_ok=True)
-    rag = RAG.from_file(data_path)
+    rag = RAG.from_file(data_path, persist_dir=embeddings_dir)
     process_file(test_path, rag, output_path, limit, chunk_size)
 
 
@@ -300,45 +299,24 @@ def process_file(
         logger.warning(f"No test cases found in {file.name}, skipping.")
         return
 
-    bots: dict[int, SimpleTextBot] = {}  # for each case, store the bot if num_turns > 1
+    pipelines: dict[int, Pipeline] = {}  # for each case, store the bot if num_turns > 1
 
     async def bot_runner(test_case_input: TestCaseInput) -> list[str]:
-        if test_case_input.case_id not in bots:
-            logger.debug(f"Creating bot for case {test_case_input.case_id}")
-            bots[test_case_input.case_id] = SimpleTextBot(
-                # llm_client=ChuteModel(
-                #    model="Qwen/Qwen3-32B", no_think=True, strip_think=True
-                # )
-            )
+        if test_case_input.case_id not in pipelines:
+            logger.debug(f"Creating pipeline for case {test_case_input.case_id}")
+            pipelines[test_case_input.case_id] = Pipeline.from_system_prompt(rag=rag)
 
-        bot = bots[test_case_input.case_id]
+        pipeline = pipelines[test_case_input.case_id]
 
-        # ASR processing
-        fixed_input = ""
-        if "asr" in file.name.lower():
-            fixed_input = await AsrProcessor().fix_asr(test_case_input.input) + " "
-
-        # Query rewriting
-        rephrased_query = await QuestionRephraser().rephrase(
-            bot.conversation_history, query=test_case_input.input
-        )
-
-        # RAG retrieval
-        docs = rag.retrieve_context(rephrased_query + " " + fixed_input, limit=5)
-
-        # Data picker
-        data_picker = DataPicker()
-        docs = await data_picker.choose_fields(test_case_input.input, docs)
-
-        # Answer generation
-        answer = await bot.query(test_case_input.input, docs)
+        apply_asr = "asr" in file.name.lower()
+        pipeline_result = await pipeline.run(test_case_input.input, fix_asr=apply_asr)
 
         # delete bot reference if last turn
         if test_case_input.turn_idx == test_case_input.num_turns - 1:
-            logger.debug(f"Deleting bot for case {test_case_input.case_id}")
-            del bots[test_case_input.case_id]
+            logger.debug(f"Deleting pipeline for case {test_case_input.case_id}")
+            del pipelines[test_case_input.case_id]
 
-        return [answer]
+        return [pipeline_result.answer]
 
     if chunk_size and chunk_size > 0:
         num_cases = len(cases)
@@ -405,7 +383,7 @@ def process_file(
             evaluators=[FScore(), Precision(), Recall(), SINGLE_TURN_LLM_JUDGE],
         )
 
-        report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=2)
+        report = pydantic_dataset.evaluate_sync(bot_runner, max_concurrency=4)
         df = report_to_df(report)
         df.to_csv(output_filename, index=False)
         logger.info(f"Saved evaluation report to {output_filename}")
