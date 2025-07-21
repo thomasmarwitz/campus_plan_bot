@@ -44,6 +44,8 @@ class StartRequest(BaseModel):
     model_name: str = "Llama3.1-8B"
     temperature: float = 0.05
     max_new_tokens: int = 1024
+    user_coords_str: str | None = None
+    allow_complex_mode: bool = True
 
 
 class StartResponse(BaseModel):
@@ -81,7 +83,10 @@ def start_session(request: StartRequest):
         raise HTTPException(status_code=400, detail="Invalid model name.")
 
     pipeline_sessions[session_id] = Pipeline.from_system_prompt(
-        rag=rag_component, llm_client=llm_client
+        rag=rag_component,
+        llm_client=llm_client,
+        user_coords_str=request.user_coords_str,
+        allow_complex_mode=request.allow_complex_mode,
     )
     return StartResponse(session_id=session_id)
 

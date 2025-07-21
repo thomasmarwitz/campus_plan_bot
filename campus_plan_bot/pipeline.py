@@ -1,5 +1,7 @@
 from pathlib import Path
 
+from loguru import logger
+
 from campus_plan_bot.asr_processing import AsrProcessor
 from campus_plan_bot.bot import SimpleTextBot
 from campus_plan_bot.data_picker import DataPicker
@@ -27,6 +29,8 @@ class Pipeline:
         rephraser: QuestionRephraser | None = None,
         query_router: QueryRouter | None = None,
         pandas_query_engine: PandasQueryEngine | None = None,
+        user_coords_str: str | None = None,
+        allow_complex_mode: bool = True,
     ):
         self.rag = rag
         self.bot = bot
@@ -34,8 +38,12 @@ class Pipeline:
         self.asr_processor = asr_processor or AsrProcessor()
         self.data_picker = data_picker or DataPicker()
         self.rephraser = rephraser or QuestionRephraser()
-        self.query_router = query_router or QueryRouter()
-        self.pandas_query_engine = pandas_query_engine or PandasQueryEngine()
+        self.query_router = query_router or QueryRouter(
+            allow_complex_mode=allow_complex_mode
+        )
+        self.pandas_query_engine = pandas_query_engine or PandasQueryEngine(
+            user_coords_str=user_coords_str
+        )
 
     @classmethod
     def from_system_prompt(cls, llm_client: LLMClient | None = None, **kwargs):
@@ -57,6 +65,7 @@ class Pipeline:
         rephrased_input = await self.rephraser.rephrase(
             conversation=self.bot.conversation_history, query=user_input
         )
+        logger.info(f"Rephrased input: {rephrased_input}")
 
         # Step 3: Classify the query
         query_type = await self.query_router.classify_query(rephrased_input, user_input)

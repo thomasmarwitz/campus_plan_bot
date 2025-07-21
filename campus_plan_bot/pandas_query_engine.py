@@ -1,6 +1,7 @@
 import ast
 import asyncio
 import os
+from pathlib import Path
 
 import pandas as pd
 from geopy.distance import geodesic
@@ -44,6 +45,7 @@ class PandasQueryEngine:
             self.df = pd.DataFrame()
 
         prompt = self._create_dynamic_prompt(self.df)
+        Path("data/prompt.txt").write_text(prompt.template)
 
         self.query_engine = LlamaPandasQueryEngine(
             df=self.df, verbose=True, pandas_prompt=prompt
@@ -76,6 +78,10 @@ This is the result of `print(df.head())`:
 {{df_str}}
 
 If the users requests some specific information, you can query the "fakten" column using the .str.contains("...", case=False) method. You might want to put in the most promising keyword.
+
+If the users asks about buildings near them, you can sort the dataframe by distance to the user using the "distance_meters" column (if it exists). You should also keep the distance_meters column in the final DataFrame.
+
+If the questions translates to a complex query, avoid merging (joins) at all cost. Try to realizes this using combined boolean operators, e.g. df[df["funktion"] == "Hörsaal"] & df[df["rollstuhlgerechtigkeit"] == True].sort_values(by="distance_meters").
 
 When you return a final DataFrame, it MUST be a subset of the original DataFrame.
 The subset must only contain the columns 'identifikator' and 'name', plus any other columns that are directly relevant to answering the user's query.
@@ -124,7 +130,7 @@ Expression: """
             def calculate_distance(row):
                 try:
                     building_coords = map(float, ast.literal_eval(row["koordinaten"]))
-                    return geodesic(user_coords, building_coords).meters
+                    return round(geodesic(user_coords, building_coords).meters)
                 except AssertionError as e:
                     logger.error(f"Failed to calculate distance: {e}")
                     return None
@@ -178,7 +184,10 @@ Expression: """
                     id=str(
                         row["identifikator"]
                     ),  # Use index as ID since 'id' column is gone
-                    data=row.to_dict(),
+                    data={
+                        k if k != "identifikator" else "gebäude_id": v
+                        for k, v in row.to_dict().items()
+                    },  # replace the identifikator with gebäude_id
                     relevance_score=1.0,
                 )
                 documents.append(doc)

@@ -14,6 +14,8 @@ pixi run postinstall
 pixi run uvicorn backend.app:app --reload
 ```
 
+The website can then be reached under [http://127.0.0.1:8000/?lat=49.01025&amp;lon=8.41890](http://127.0.0.1:8000/?lat=49.01025&lon=8.41890)
+
 ## Testing
 
 ### `e2e` tests

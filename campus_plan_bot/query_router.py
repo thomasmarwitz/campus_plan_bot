@@ -21,14 +21,18 @@ class QueryRouter:
         self,
         prompt_builder: LLama3PromptBuilder | None = None,
         llm_client: LLMClient | None = None,
+        allow_complex_mode: bool = True,
     ):
         self.prompt_builder = prompt_builder or LLama3PromptBuilder(
             system_prompt=load_and_format_prompt("query_router_prompt", do_format=False)
         )
         self.llm_client = llm_client or ChuteModel(no_think=True, strip_think=True)
+        self.allow_complex_mode = allow_complex_mode
 
     async def classify_query(self, query: str, original_query: str) -> QueryType:
         """Classify the user query as normal or complex."""
+        if not self.allow_complex_mode:
+            return QueryType.NORMAL
 
         if "/complex" in original_query:
             return QueryType.COMPLEX

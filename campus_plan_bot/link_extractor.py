@@ -1,5 +1,7 @@
 import re
 
+from loguru import logger
+
 from campus_plan_bot.constants import Constants
 from campus_plan_bot.interfaces.persistence_types import PipelineResult
 
@@ -8,8 +10,9 @@ def extract_website_link(text: str) -> PipelineResult | None:
     """Extracts a link from the given text, like any link."""
     match = re.search(r"(https?://[^\s\]\)\}]+)", text)
     if match:
+        logger.debug(f"Found link in answer {text}")
         link = match.group(1)
-        return PipelineResult(answer=Constants.WEBSITE_LINK_EXTRACTED_ANSWER, link=link)
+        return PipelineResult(answer=text, link=link)
     return None
 
 
@@ -26,10 +29,9 @@ def extract_google_maps_link(text: str) -> PipelineResult | None:
     )
 
     if match:
+        logger.debug(f"Found link in answer {text}")
         link = match.group(1)
-        return PipelineResult(
-            answer=Constants.GOOGLE_MAPS_LINK_EXTRACTED_ANSWER + link, link=link
-        )
+        return PipelineResult(answer=text, link=link)
 
     return None
 
