@@ -672,7 +672,7 @@ id,identifikator,kategorie,koordinaten,webseite,funktion,name,adresse,postleitza
 705,Personalservice (PSE) CN,Einrichtung,"['49.09304', '8.42786']",https://www.pse.kit.edu,Service,,Bruchsaler Straße,76344.0,Leopoldshafen,,,,Personalservice (PSE) CN,
 707,"Einkauf, Verkauf und Materialwirtschaft (EVM)",Einrichtung,"['49.09347', '8.42796']",https://www.evm.kit.edu,Parkplatz,,Eggensteiner Straße,76344.0,Leopoldshafen,,,,"Einkauf, Verkauf und Materialwirtschaft (EVM)",
 711,Personalservice (PSE) CS,Einrichtung,"['49.00943', '8.41154']",https://www.pse.kit.edu,,Verwaltungsgebäude,Kaiserstraße 12,76131.0,Innenstadt-Ost,,,,Personalservice (PSE) CS,
-712,Bibliothek (Campus Süd),Einrichtung,"['49.01101', '8.41642']",https://www.bibliothek.kit.edu/cms/,Toiletten,,Engesserstraße,76131.0,Innenstadt-Ost,,no,,Bibliothek (Campus Süd),
+712,Bibliothek (Campus Süd),Einrichtung,"['49.01101', '8.41642']",https://www.bibliothek.kit.edu/cms/,Toiletten,,Engesserstraße,76131.0,Innenstadt-Ost,Mo-So 0:00-24:00,no,,Bibliothek (Campus Süd),
 715,House of Competence (HOC),Einrichtung,"['49.00636', '8.41065']",https://www.hoc.kit.edu/,Verein,VDE Bezirksverein Mittelbaden e.V.,Fritz-Erler-Straße 25,76133.0,Innenstadt-Ost,,,,House of Competence (HOC),
 716,Studierendenwerk,Einrichtung,"['49.01188', '8.41756']",,,Mensa am Adenauerring,Adenauerring 7,76131.0,Innenstadt-Ost,,,,Studierendenwerk,
 717,"Scientific Computing Center (SCC), CS",Einrichtung,"['49.01253', '8.40793']",https://www.scc.kit.edu,,Kollegiengebäude am Zirkel,Zirkel 2,76131.0,Innenstadt-Ost,,,,"Scientific Computing Center (SCC), CS",
