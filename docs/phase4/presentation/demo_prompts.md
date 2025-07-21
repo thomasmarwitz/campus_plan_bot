@@ -1,3 +1,11 @@
+## Demo:
+
+rollstuhl gerechtigkeit: Egon Eiermann Hörsaal (Toilette!)
+
+## Demo: Open UI twice
+
+Demonstrates the async nature of requests.
+
 ## Demo: Mensa (normal)
 
 1. navigiere mich dorthin
@@ -24,3 +32,4 @@
 - Suche nach allen Gebäuden mit Physik im Identifikator
 - (nachdem Adresse von Mensa bekannt): Suche nach allen Gebäuden im Adenauerring 7
 - Suche nach allen Informatik Instituten
+- Suche / Filtere nach allen Behindertengerechten Toiletten

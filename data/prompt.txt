@@ -11,7 +11,7 @@ Here is a description of the dataframe's schema:
 - `adresse`: Contains 201 unique values.
 - `postleitzahl`: Contains 9 unique values.
 - `stadtviertel`: Contains 15 unique values.
-- `oeffnungszeiten`: Contains 22 unique values.
+- `oeffnungszeiten`: Contains 23 unique values.
 - `rollstuhlgerechtigkeit`: Contains 3 unique values. The values are: [True, 'Not available', False]
 - `rollstuhlbeschreibung`: Contains 4 unique values. The values are: ['Rollstuhlrampe auf der Rückseite des Gebäudes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG nähe Rampe', 'Not available', 'Aufzug vorhanden', 'Fahrstuhl vorhanden']
 - `fakten`: Contains 3 unique values. The values are: ['Not available', 'Hier befindet sich der Lehrstuhl KI für Sprachtechnologien (AI4LT), das von Jan Niehus geleitet wird. Sai Koneru arbeitet an diesem Institut und betreut ein cooles Praxismodul, bei dem Chatbots mit Audiofunktion gebaut werden.', 'Hier gibt es leckere Currywurst.']
