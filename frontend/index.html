@@ -474,7 +474,9 @@
                 typingIndicator.remove();
                 messageInput.disabled = false;
                 sendButton.disabled = false;
-                messageInput.focus();
+                if (!isAudio) {
+                    messageInput.focus();
+                }
                 audioChunks = [];
             }
         }
