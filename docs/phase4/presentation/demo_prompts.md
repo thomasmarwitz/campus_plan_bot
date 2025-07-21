@@ -1,6 +1,6 @@
 ## Demo:
 
-rollstuhl gerechtigkeit: Egon Eiermann Hörsaal (Toilette!)
+Demo each functionality once with suggestions
 
 ## Demo: Open UI twice
 
@@ -8,10 +8,11 @@ Demonstrates the async nature of requests.
 
 ## Demo: Mensa (normal)
 
-1. navigiere mich dorthin
-2. komme ich dort mit meinem Rollstuhl rein?
-3. Hat sie gerade offen?
-4. öffne ihre website
+1. (wo kann ich currywurst essen?)
+2. navigiere mich dorthin
+3. komme ich dort mit meinem Rollstuhl rein?
+4. Hat sie gerade offen?
+5. öffne ihre website
 
 ## Demo: Infobau (complex)
 
