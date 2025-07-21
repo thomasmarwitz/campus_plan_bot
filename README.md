@@ -10,7 +10,7 @@ pixi run postinstall
 
 ## Serving Frontend / Backend
 
-```pixi
+```bash
 pixi run uvicorn backend.app:app --reload
 ```
 

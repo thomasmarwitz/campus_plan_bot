@@ -42,7 +42,7 @@ pipeline_sessions: dict[str, Pipeline] = {}
 
 class StartRequest(BaseModel):
     model_name: str = "Llama3.1-8B"
-    temperature: float = 0.3
+    temperature: float = 0.05
     max_new_tokens: int = 1024
 
 
