@@ -77,4 +77,4 @@ files.extend-exclude = [
   "campus_plan_bot/prompts/",
   "TASKS.md",
 ]
-default.extend-ignore-re = ["controll", "ein", "ist", "alle"]
+default.extend-ignore-re = ["controll", "ein", "ist", "alle", "funktion"]

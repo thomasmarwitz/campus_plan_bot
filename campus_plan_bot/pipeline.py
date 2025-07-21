@@ -59,7 +59,7 @@ class Pipeline:
         )
 
         # Step 3: Classify the query
-        query_type = await self.query_router.classify_query(rephrased_input)
+        query_type = await self.query_router.classify_query(rephrased_input, user_input)
 
         # Step 4: Retrieve context based on query type
         if query_type == QueryType.COMPLEX:

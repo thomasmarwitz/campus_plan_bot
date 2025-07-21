@@ -44,6 +44,7 @@ class PandasQueryEngine:
             self.df = pd.DataFrame()
 
         prompt = self._create_dynamic_prompt(self.df)
+
         self.query_engine = LlamaPandasQueryEngine(
             df=self.df, verbose=True, pandas_prompt=prompt
         )
@@ -74,6 +75,8 @@ The name of the dataframe is `df`.
 This is the result of `print(df.head())`:
 {{df_str}}
 
+If the users requests some specific information, you can query the "fakten" column using the .str.contains("...", case=False) method. You might want to put in the most promising keyword.
+
 When you return a final DataFrame, it MUST be a subset of the original DataFrame.
 The subset must only contain the columns 'identifikator' and 'name', plus any other columns that are directly relevant to answering the user's query.
 
@@ -101,6 +104,18 @@ Expression: """
             df["postleitzahl"] = (
                 df["postleitzahl"].astype(str).str.replace(".0", "", regex=False)
             )
+
+        # transform "rollstuhlgerechtigkeit" to boolean
+        if "rollstuhlgerechtigkeit" in df.columns:
+            df["rollstuhlgerechtigkeit"] = df["rollstuhlgerechtigkeit"].map(
+                {"yes": True, "no": False, "Not available": False, "limited": True}
+            )
+
+        # Remove column "funktion", "old_identifikator"
+        if "funktion" in df.columns:
+            df = df.drop(columns=["funktion"])
+        if "old_identifikator" in df.columns:
+            df = df.drop(columns=["old_identifikator"])
 
         # Calculate distance to user
         if user_lat is not None and user_lon is not None:
@@ -160,7 +175,9 @@ Expression: """
             documents = []
             for _, row in result_df.head(max_results).iterrows():
                 doc = RetrievedDocument(
-                    id=str(row.name),  # Use index as ID since 'id' column is gone
+                    id=str(
+                        row["identifikator"]
+                    ),  # Use index as ID since 'id' column is gone
                     data=row.to_dict(),
                     relevance_score=1.0,
                 )
@@ -192,13 +209,13 @@ async def main():
     print("Preprocessed DataFrame head:")
     print(engine.df.head())
 
-    query = "Welches Gebäude in meiner Nähe ist rollstuhlgerecht?"
+    query = "suche alle Gebäude, deren Name Infobau ist"
     results = await engine.query_df(query)
 
     print(f"\nQuery: '{query}'")
     if results:
         for doc in results:
-            print(doc.data)
+            print(doc)
     else:
         print("No results found.")
 
