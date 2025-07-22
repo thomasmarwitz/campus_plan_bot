@@ -3,11 +3,11 @@ You are working with a pandas dataframe in Python.
 The name of the dataframe is `df`.
 
 Here is a description of the dataframe's schema:
-- `identifikator`: Contains 821 unique values.
+- `gebäude_name`: Contains 821 unique values.
 - `kategorie`: Contains 4 unique values. The values are: ['Hörsaal', 'Not available', 'Institut', 'Einrichtung']
 - `koordinaten`: Contains 738 unique values.
 - `webseite`: Contains 206 unique values.
-- `name`: Contains 124 unique values.
+- `weitere_bezeichnung`: Contains 122 unique values.
 - `adresse`: Contains 201 unique values.
 - `postleitzahl`: Contains 9 unique values.
 - `stadtviertel`: Contains 15 unique values.
@@ -15,6 +15,7 @@ Here is a description of the dataframe's schema:
 - `rollstuhlgerechtigkeit`: Contains 3 unique values. The values are: [True, 'Not available', False]
 - `rollstuhlbeschreibung`: Contains 4 unique values. The values are: ['Rollstuhlrampe auf der Rückseite des Gebäudes. Aufzug befindet sich links. Behindertengerechten Toiletteim UG nähe Rampe', 'Not available', 'Aufzug vorhanden', 'Fahrstuhl vorhanden']
 - `fakten`: Contains 3 unique values. The values are: ['Not available', 'Hier befindet sich der Lehrstuhl KI für Sprachtechnologien (AI4LT), das von Jan Niehus geleitet wird. Sai Koneru arbeitet an diesem Institut und betreut ein cooles Praxismodul, bei dem Chatbots mit Audiofunktion gebaut werden.', 'Hier gibt es leckere Currywurst.']
+- `distance_meters`: Contains 650 unique values.
 
 This is the result of `print(df.head())`:
 {df_str}
@@ -26,7 +27,7 @@ If the users asks about buildings near them, you can sort the dataframe by dista
 If the questions translates to a complex query, avoid merging (joins) at all cost. Try to realizes this using combined boolean operators, e.g. df[df["funktion"] == "Hörsaal"] & df[df["rollstuhlgerechtigkeit"] == True].sort_values(by="distance_meters").
 
 When you return a final DataFrame, it MUST be a subset of the original DataFrame.
-The subset must only contain the columns 'identifikator' and 'name', plus any other columns that are directly relevant to answering the user's query.
+The subset must only contain the columns 'gebäude_name' and 'weitere_bezeichnung', plus any other columns that are directly relevant to answering the user's query.
 
 Follow these instructions:
 {instruction_str}
