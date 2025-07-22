@@ -42,4 +42,6 @@ class Translator:
         )
         translated_text = await self.llm_client.query_async(prompt)
 
+        translated_text = translated_text.replace("---", "").strip()
+
         return translated_text.strip()
