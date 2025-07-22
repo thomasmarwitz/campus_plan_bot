@@ -84,7 +84,7 @@ If the users asks about buildings near them, you can sort the dataframe by dista
 If the questions translates to a complex query, avoid merging (joins) at all cost. Try to realizes this using combined boolean operators, e.g. df[df["funktion"] == "Hörsaal"] & df[df["rollstuhlgerechtigkeit"] == True].sort_values(by="distance_meters").
 
 When you return a final DataFrame, it MUST be a subset of the original DataFrame.
-The subset must only contain the columns 'identifikator' and 'name', plus any other columns that are directly relevant to answering the user's query.
+The subset must only contain the columns 'gebäude_name' and 'weitere_bezeichnung', plus any other columns that are directly relevant to answering the user's query.
 
 Follow these instructions:
 {{instruction_str}}
@@ -116,6 +116,12 @@ Expression: """
             df["rollstuhlgerechtigkeit"] = df["rollstuhlgerechtigkeit"].map(
                 {"yes": True, "no": False, "Not available": False, "limited": True}
             )
+
+        # rename column "identifikator" to "gebäude_name"
+        # rename column "name" to "weitere_bezeichnung"
+        df = df.rename(
+            columns={"identifikator": "gebäude_name", "name": "weitere_bezeichnung"}
+        )
 
         # Remove column "funktion", "old_identifikator"
         if "funktion" in df.columns:
@@ -181,13 +187,8 @@ Expression: """
             documents = []
             for _, row in result_df.head(max_results).iterrows():
                 doc = RetrievedDocument(
-                    id=str(
-                        row["identifikator"]
-                    ),  # Use index as ID since 'id' column is gone
-                    data={
-                        k if k != "identifikator" else "gebäude_id": v
-                        for k, v in row.to_dict().items()
-                    },  # replace the identifikator with gebäude_id
+                    id=str(row["gebäude_name"]),
+                    data=row.to_dict(),
                     relevance_score=1.0,
                 )
                 documents.append(doc)
