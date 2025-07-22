@@ -4,6 +4,7 @@ from loguru import logger
 
 from campus_plan_bot.asr_processing import AsrProcessor
 from campus_plan_bot.bot import SimpleTextBot
+from campus_plan_bot.clients.chute_client import ChuteModel
 from campus_plan_bot.data_picker import DataPicker
 from campus_plan_bot.interfaces.interfaces import LLMClient
 from campus_plan_bot.interfaces.persistence_types import PipelineResult
@@ -37,7 +38,9 @@ class Pipeline:
 
         self.asr_processor = asr_processor or AsrProcessor()
         self.data_picker = data_picker or DataPicker()
-        self.rephraser = rephraser or QuestionRephraser()
+        self.rephraser = rephraser or QuestionRephraser(
+            ChuteModel(no_think=True, strip_think=True)  # type: ignore[arg-type]
+        )
         self.query_router = query_router or QueryRouter(
             allow_complex_mode=allow_complex_mode
         )
