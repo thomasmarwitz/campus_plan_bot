@@ -1,7 +1,6 @@
 import ast
 import asyncio
 import os
-from pathlib import Path
 
 import pandas as pd
 from geopy.distance import geodesic
@@ -45,7 +44,6 @@ class PandasQueryEngine:
             self.df = pd.DataFrame()
 
         prompt = self._create_dynamic_prompt(self.df)
-        Path("data/prompt.txt").write_text(prompt.template)
 
         self.query_engine = LlamaPandasQueryEngine(
             df=self.df, verbose=True, pandas_prompt=prompt
