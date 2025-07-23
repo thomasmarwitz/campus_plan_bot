@@ -43,7 +43,7 @@ Rephrased Query:"""
     def __init__(self, llm_client: LLMClient | None = None):
         self.llm_client = llm_client or InstituteClient(
             default_request_config=LLMRequestConfig(
-                max_new_tokens=128,
+                max_new_tokens=1024,
                 temperature=0.1,
             )
         )

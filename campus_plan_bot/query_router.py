@@ -4,9 +4,9 @@ from enum import Enum
 
 from loguru import logger
 
-from campus_plan_bot.clients.chute_client import ChuteModel
-from campus_plan_bot.interfaces.interfaces import LLMClient
+from campus_plan_bot.interfaces.interfaces import LLMClient, LLMRequestConfig
 from campus_plan_bot.interfaces.persistence_types import Conversation, Role
+from campus_plan_bot.llm_client import InstituteClient
 from campus_plan_bot.prompts.prompt_builder import LLama3PromptBuilder
 from campus_plan_bot.prompts.util import load_and_format_prompt
 
@@ -26,7 +26,12 @@ class QueryRouter:
         self.prompt_builder = prompt_builder or LLama3PromptBuilder(
             system_prompt=load_and_format_prompt("query_router_prompt", do_format=False)
         )
-        self.llm_client = llm_client or ChuteModel(no_think=True, strip_think=True)
+        self.llm_client = llm_client or InstituteClient(
+            default_request_config=LLMRequestConfig(
+                max_new_tokens=64,
+                temperature=0.1,
+            )
+        )
         self.allow_complex_mode = allow_complex_mode
 
     async def classify_query(self, query: str, original_query: str) -> QueryType:
