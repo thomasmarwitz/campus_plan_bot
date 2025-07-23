@@ -65,6 +65,7 @@
             padding: 10px;
             position: relative;
             border-top: 1px solid #ddd;
+            align-items: center;
         }
         #message-input {
             flex-grow: 1;
@@ -72,18 +73,23 @@
             border-radius: 20px;
             padding: 10px 15px;
             font-size: 16px;
-            margin-right: 10px;
         }
-        #send-button {
+        .chat-button {
             border: none;
             background-color: #007bff;
             color: white;
-            padding: 10px 20px;
-            border-radius: 20px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
             cursor: pointer;
-            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            flex-shrink: 0;
+            transition: background-color 0.2s;
         }
-        #send-button:hover {
+        .chat-button:hover {
             background-color: #0056b3;
         }
         #record-indicator {
@@ -247,6 +253,43 @@
             grid-template-columns: repeat(1, 1fr);
             gap: 8px;
         }
+
+        .chat-button:disabled {
+            background-color: #a0cfffe6;
+            cursor: not-allowed;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                display: block;
+            }
+            #chat-container {
+                height: 100vh;
+                height: 100dvh;
+                width: 100%;
+                max-width: 100%;
+                border-radius: 0;
+                border: none;
+                box-shadow: none;
+            }
+            #chat-window {
+                padding: 10px;
+            }
+            #chat-form {
+                padding: 8px;
+            }
+            #suggestion-panels {
+                grid-template-columns: 1fr;
+                padding: 0 10px 10px;
+            }
+            .suggestion-panel {
+                font-size: 14px;
+                padding: 10px 12px;
+            }
+            #settings-form {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -333,7 +376,12 @@
         </div>
         <form id="chat-form">
             <input type="text" id="message-input" placeholder="Verbinde..." autocomplete="off" disabled>
-            <button id="send-button" type="submit" disabled>Send</button>
+            <button id="record-button" type="button" class="chat-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+            </button>
+            <button id="send-button" type="submit" class="chat-button" disabled>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+            </button>
             <div id="record-indicator">Recording...</div>
         </form>
     </div>
@@ -343,6 +391,7 @@
         const chatForm = document.getElementById('chat-form');
         const messageInput = document.getElementById('message-input');
         const sendButton = document.getElementById('send-button');
+        const recordButton = document.getElementById('record-button');
         const recordIndicator = document.getElementById('record-indicator');
         const settingsModal = document.getElementById('settings-modal');
         const startForm = document.getElementById('start-form');
@@ -447,9 +496,10 @@
                 chatContainer.style.display = 'flex';
 
                 messageInput.disabled = false;
-                sendButton.disabled = false;
-                messageInput.placeholder = 'Type a message...';
+                recordButton.disabled = false;
+                messageInput.placeholder = 'Schreibe eine Nachricht oder halte zum Aufnehmen';
                 messageInput.focus();
+
             } catch (error) {
                 console.error('Error starting session:', error);
                 addMessage('Failed to connect to the bot.', 'bot');
@@ -567,6 +617,7 @@
 
         async function sendMessage(query, isAudio = false) {
             messageInput.disabled = true;
+            recordButton.disabled = true;
             sendButton.disabled = true;
 
             let userMessageElement;
@@ -649,7 +700,9 @@
             } finally {
                 typingIndicator.remove();
                 messageInput.disabled = false;
-                sendButton.disabled = false;
+                recordButton.disabled = false;
+                sendButton.disabled = messageInput.value.trim() === '';
+
                 if (!isAudio) {
                     messageInput.focus();
                 }
@@ -712,6 +765,8 @@
         });
 
         messageInput.addEventListener('input', () => {
+            sendButton.disabled = messageInput.value.trim() === '';
+
             const hasFollowUps = suggestionPanelsContainer.querySelector('[data-type="follow-up"]');
             if (hasFollowUps) {
                 suggestionPanelsContainer.style.display = 'none';
@@ -771,6 +826,18 @@
                     button.disabled = false;
                 }
             }
+        });
+
+        // Add listeners for the new record button
+        recordButton.addEventListener('mousedown', startRecording);
+        recordButton.addEventListener('mouseup', stopRecording);
+        recordButton.addEventListener('touchstart', e => {
+            e.preventDefault();
+            startRecording();
+        });
+        recordButton.addEventListener('touchend', e => {
+            e.preventDefault();
+            stopRecording();
         });
 
         suggestionPanelsContainer.addEventListener('click', e => {

@@ -76,5 +76,6 @@ files.extend-exclude = [
   "tests/rag_test.py",
   "campus_plan_bot/prompts/",
   "TASKS.md",
+  "frontend/",
 ]
 default.extend-ignore-re = ["controll", "ein", "ist", "alle", "funktion"]
