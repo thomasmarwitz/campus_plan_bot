@@ -257,7 +257,10 @@
                 <label for="model-select">Choose a model:</label>
                 <select id="model-select" name="model_name">
                     <option value="Llama3.1-8B">Llama3.1-8B</option>
+                    <!--
+                    Add more models if the institute provides them.
                     <option value="Qwen3-32B">Qwen3-32B</option>
+                    -->
                 </select>
 
                 <label for="temperature-input">Temperature:</label>
@@ -272,11 +275,15 @@
                     <option value="yes">Yes</option>
                 </select>
 
+                <!--
+                Disabled because this is an experimental feature.
+
                 <label for="complex-mode-select">Allow complex queries:</label>
                 <select id="complex-mode-select" name="allow_complex_mode">
-                    <option value="yes" selected>Yes</option>
-                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                    <option value="no" selected>No</option>
                 </select>
+                -->
 
                 <label for="translation-language-select">Translate responses to:</label>
                 <select id="translation-language-select" name="translation_language">

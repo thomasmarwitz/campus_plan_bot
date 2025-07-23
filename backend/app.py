@@ -10,7 +10,6 @@ from loguru import logger
 from pydantic import BaseModel, Field
 
 from backend.utils import ASRMethod, audio_chat_generator
-from campus_plan_bot.clients.chute_client import ChuteModel
 from campus_plan_bot.interfaces.interfaces import LLMClient, LLMRequestConfig
 from campus_plan_bot.llm_client import InstituteClient
 from campus_plan_bot.pipeline import Pipeline
@@ -40,13 +39,17 @@ rag_component = RAG.from_file(database_path, persist_dir=embeddings_path)
 # In-memory storage for bot sessions
 pipeline_sessions: dict[str, Pipeline] = {}
 
+GLOBAL_ALLOW_COMPLEX_MODE = bool(os.getenv("OPENAI_API_KEY"))
+if not GLOBAL_ALLOW_COMPLEX_MODE:
+    logger.info("OPENAI_API_KEY not found, complex queries are disabled.")
+
 
 class StartRequest(BaseModel):
     model_name: str = "Llama3.1-8B"
     temperature: float = 0.05
     max_new_tokens: int = 1024
     user_coords_str: str | None = None
-    allow_complex_mode: bool = True
+    allow_complex_mode: bool = GLOBAL_ALLOW_COMPLEX_MODE
 
 
 class StartResponse(BaseModel):
@@ -91,8 +94,8 @@ def start_session(request: StartRequest):
     llm_client: LLMClient
     if request.model_name == "Llama3.1-8B":
         llm_client = InstituteClient(default_request_config=llm_config)
-    elif request.model_name == "Qwen3-32B":
-        llm_client = ChuteModel(default_request_config=llm_config, no_think=True, strip_think=True)  # type: ignore[assignment]
+    # elif request.model_name == "Qwen3-32B":
+    #    llm_client = ChuteModel(default_request_config=llm_config, no_think=True, strip_think=True)  # type: ignore[assignment]
     else:
         raise HTTPException(status_code=400, detail="Invalid model name.")
 
@@ -100,7 +103,9 @@ def start_session(request: StartRequest):
         rag=rag_component,
         llm_client=llm_client,
         user_coords_str=request.user_coords_str,
-        allow_complex_mode=request.allow_complex_mode,
+        allow_complex_mode=(
+            request.allow_complex_mode if GLOBAL_ALLOW_COMPLEX_MODE else False
+        ),
     )
     return StartResponse(session_id=session_id)
 
