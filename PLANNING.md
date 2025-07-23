@@ -12,51 +12,8 @@ Development follows an iterative, phased approach. Each phase focuses on impleme
 
 The system is architected as a sequential pipeline that processes user input through several stages to generate a final answer. Components added or updated in Phase 3 are highlighted in the architecture diagram.
 
-```mermaid
-graph TD
-    subgraph "Input Layer"
-        direction LR
-        UserInput("User Utterance<br/>(Text or Speech)")
-    end
-
-    subgraph "Processing Pipeline"
-        direction TB
-        asr_fixing["1. ASR Fixing<br/>(New Component)"]
-        style asr_fixing fill:#cfe2f3,stroke:#333,stroke-width:2px
-
-        query_rephrasing["2. Query Rephrasing<br/>(New Component, for turn ≥ 2)"]
-        style query_rephrasing fill:#cfe2f3,stroke:#333,stroke-width:2px
-
-        query_router["3. Query Router<br/>(New Component)"]
-        style query_router fill:#cfe2f3,stroke:#333,stroke-width:2px
-
-        subgraph "Query Engines"
-            direction LR
-            rag["RAG<br/>(Updated Component)"]
-            style rag fill:#d9ead3,stroke:#333,stroke-width:2px
-
-            pandas_query_engine["Pandas Query Engine<br/>(Optional, New Component)"]
-            style pandas_query_engine fill:#fce5cd,stroke:#333,stroke-width:2px
-        end
-
-        data_selection["4. Data Field Selection<br/>(New Component)"]
-        style data_selection fill:#cfe2f3,stroke:#333,stroke-width:2px
-
-        answer_generation["5. Answer Generation"]
-
-        SystemResponse("System Response")
-    end
-
-    UserInput --> asr_fixing
-    asr_fixing --> query_rephrasing
-    query_rephrasing --> query_router
-    query_router -- "Simple Query" --> rag
-    query_router -- "Complex Query" --> pandas_query_engine
-    rag -- "Retrieved Documents" --> data_selection
-    pandas_query_engine -- "Retrieved Documents" --> data_selection
-    data_selection -- "Filtered Documents" --> answer_generation
-    answer_generation --> SystemResponse
-```
+![Dataflow / System Architecture](docs/phase3/report/data_flow.png)
+[View PDF](docs/phase3/report/data_flow_phase_3.pdf)
 
 ### Key Components:
 
