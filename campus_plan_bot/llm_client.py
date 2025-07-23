@@ -1,3 +1,4 @@
+import os
 import re
 
 from huggingface_hub import AsyncInferenceClient, InferenceClient
@@ -5,7 +6,9 @@ from loguru import logger
 
 from campus_plan_bot.interfaces.interfaces import LLMClient, LLMRequestConfig
 
-INSTITUTE_URL = "http://hiaisc.isl.iar.kit.edu/llm_generate"
+INSTITUTE_URL = (
+    os.getenv("INSTITUTE_URL") or "http://hiaisc.isl.iar.kit.edu/llm_generate"
+)
 
 
 class InstituteClient(LLMClient):

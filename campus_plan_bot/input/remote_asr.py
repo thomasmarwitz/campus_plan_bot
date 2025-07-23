@@ -10,7 +10,6 @@ import requests
 from loguru import logger
 from sseclient import SSEClient
 
-from campus_plan_bot.input.audio_recorder import AudioRecorder
 from campus_plan_bot.interfaces.interfaces import AutomaticSpeechRecognition
 from campus_plan_bot.settings.settings import Settings
 
@@ -353,5 +352,10 @@ class RemoteASR(AutomaticSpeechRecognition):
 
 
 if __name__ == "__main__":
-    asr = RemoteASR()
-    asr.get_input()
+    # Create an instance of the class
+    filename = "campus_plan_bot/input/out.wav"
+    asr = RemoteASR(filename)
+
+    # Record audio and get the transcription
+    result = asr.transcribe_audio()
+    print(f"Transcription: {result}")

@@ -3,7 +3,6 @@ import torch
 import torchaudio
 from transformers import WhisperForConditionalGeneration, WhisperProcessor
 
-from campus_plan_bot.input.audio_recorder import AudioRecorder
 from campus_plan_bot.interfaces.interfaces import AutomaticSpeechRecognition
 
 
@@ -101,14 +100,7 @@ class LocalASR(AutomaticSpeechRecognition):
             transcript = self.transcribe(self.file_path)
             self.file_path = None
         else:
-            filename = "campus_plan_bot/input/out.wav"
-            recorder = AudioRecorder(filename)
-
-            interrupt = recorder.record_audio()
-            if interrupt:
-                return "exit"
-            else:
-                transcript = self.transcribe(filename).lstrip()
+            transcript = self.transcribe(self.file_path).lstrip()
 
         print("\033[A                                                  \033[A")
         click.secho("You: ", fg="blue", nl=False)
@@ -117,5 +109,10 @@ class LocalASR(AutomaticSpeechRecognition):
 
 
 if __name__ == "__main__":
-    asr = LocalASR(None)
-    text = asr.get_input()
+    # Create an instance of the class
+    filename = "campus_plan_bot/input/out.wav"
+    asr = LocalASR(filename)
+
+    # get the transcription
+    whisper_transcript = asr.transcribe_audio()
+    print(whisper_transcript)
