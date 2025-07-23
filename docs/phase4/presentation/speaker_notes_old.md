@@ -1,0 +1,263 @@
+(these notes are for the nushortened original presentation with no time restriction)
+#### Cover Slide (00:16)
+- Introduction
+	- Something like "Now we are introducing our system which enhances the existing KIT campus plan..."
+#### Table of Contents (01:04)
+- First: Current campus plan
+	- Why it needs improvement
+	- How integrating an LLM can improve it / Why it is a sensible approach
+- Then: evaluation methods used to evaluate system
+	- Test dataset we created
+	- Two evaluation approaches
+		- BERT Score and LLM-as-a-Judge
+- Briefly: introduce first prototype
+	- Core system components and basic data flow
+- Afterward: improvements we implemented
+	- Analysis of problems with initial system
+	- Solutions we came up with
+	- How we implemented them
+	- Final evaluation: how much the system improved
+- Finally: live demo of the system
+#### Old Campus Plan (00:48)
+- Starting with campus plan in current state
+- If you used it: might have noticed some problems
+- Can find buildings by ID
+	- Only shows them on a static map
+- Lacks modern digital mapping features
+	- No addresses for buildings
+	- Map view is static (not good for mobile)
+	- Cannot give concrete directions (hard to utilize given location)
+	- No additional information about buildings
+		- Might be useful like opening hours
+#### LLM Integration (01:52)
+- So campus plan needs and upgrade
+- Why good idea to use an LLM?
+- Most important: natural language interface
+	- Speech or text
+	- Not strictly necessary but convenient
+- Using RAG can give more info than just locations
+	- We used geo-coordinates from existing campus plan
+	- Performed reverse geocoding
+		- Means getting address for coordinates
+	- We scraped additional info from OpenStreetMap
+		- opening hours, wheelchair accessibility, alternative building names
+	- Build expanded database with one entry per building
+- System can support navigation
+	- Use external services like Google Maps
+	- Generate a link with specific format from geo-coordinates
+- System can use contextual info in dialogue
+	- Currently implemented: use of current time
+		- Makes e.g. opening hours more natural
+		- "Closes in 30 minutes" instead of "Building is open from 8 to 5"
+	- Current position could be supported in the future
+		- e.g. "I am next to the library"
+#### Evaluation Data (02:04)
+- Now that we know what we want to build: need way to evaluate system
+- We build a test data set
+- First: gather additional building info (as already described)
+	- Needed some cleanup
+		- renaming data fields (so LLM can understand them)
+		- removing unnecessary information (e.g. city and country from addresses)
+- Then: designed task templates
+	- Based on identified use cases and abilities
+	- Blank spaces for building information
+	- Both single-turn and multi-turn
+- Next: automatically fill in slots with gathered data
+	- But: all templates have same sentence structure
+	- And: Grammar often not correct
+- Therefor: Rephrase the filled templates
+	- Change up the formulations
+		- For more diverse data
+	- Fix grammatical issues
+	- We used an LLM to do this
+		- Prompt included not changing or adding information
+- System included ASR speech input
+	- So we needed some audio samples
+	- Just spoke in several examples each
+- Example on the right (go through explanation)
+- In total: over 1000 test scenarios (and almost 300 audio samples)
+- Next: strategy to use data to score the system
+#### BERT Score (01:27)
+- First attempt: use BERT Score
+- Based on precision and recall
+	- So can calculate F-measure for system score
+- Idea: use dense embeddings
+	- Determine semantic similarity between expected and actual system response
+	- Robust against e.g. use of synonyms
+- Problem: not precise enough in our case
+	- High scores for very incorrect responses
+	- Too hard to distinguish good and bad system behavior
+- Example of bad BERT Score
+	- User input: "Is building 210 wheelchair accessible?"
+	- Correct answer: "Yes it is"
+	- System answered: "No it is not" (so exact opposite)
+	- But: BERT score is high
+		- Both precision and recall (so also the F-measure)
+#### LLM-as-a-Judge (02:51)
+- Ended up using LLM-as-a-Judge
+	- Instead of BERT
+- Use LLM to compare expected and actual response
+	- Allows more flexible and insightful scoring
+- We use two different scores
+- First: pass/fail score
+	- Very basic insight
+	- Very clear how good system works overall
+	- Easy to measure system improvements
+- Additionally: we use an LLM score
+	- Continuous scale from 0 to 1
+	- Reflects changes not affecting pass/fail score
+		- e.g. better grammar or no unnecessary info
+	- System gives explanation for deducted points
+		- Allows for analysis of failure reasons
+			- See example word cloud image
+		- Identify common problems
+			- e.g. via word cloud
+- LLM judge nor perfect
+	- Tried to use Llama 8B model
+		- Not powerful enough
+		- Needed to use bigger model
+	- Some alignment issues
+		- Judge needs to understand two tasks
+			- Its own task of system evaluation
+			- The task given to the campus plan
+				- So it knows what a "good" response is
+		- More specific problem
+			- Judge accepted "excuses" made by system model
+#### A First Prototype (02:05)
+- After what to build and how to evaluate: first prototype
+	- Minimal viable product
+	- We divided system into components
+		- Interfacing via protocols
+		- Makes it easy to change/improve individual parts
+	- MVP: one basic version of every core component
+- Core components the system needs to have:
+	- Input
+		- User can choose between text or local and remote/institute ASR
+	- Some form of document retrieval
+		- Prototype uses cosine similarity of embeddings
+		- Additionally: RegEx for numerical building IDs (like 50.20)
+	- Assemble prompt
+		- Fuse all necessary information
+		- System prompt
+		- User query + conversation history
+		- Retrieved documents
+		- Contextual information (in our case current time)
+	- Send it to the model and get a response
+	- Output and potentially evaluate
+#### Basic Data Flow (00:32)
+- This shows data flow through system components
+- Very basic and linear
+- Only one model usage in actual system (plus one for evaluation)
+#### Identified Problems (02:04)
+- Prototype showed that system CAN work
+	- Surprisingly usable in some cases
+- But: many problems evident
+- Analyzed system to identify most impactful ones
+- ASR transcription errors
+	- Especially numerical building IDs
+		- Spelled with words instead of numbers
+	- No correct building ID means no successful retrieval
+		- Very high impact on system performance
+- Missing context in multi-turn scenario
+	- Consecutive prompts rely on context from conversation history
+		- e.g. "And what are the opening hours"
+		- Assumes building is already identified
+	- Also no successful retrieval possible
+	- System relied on retrieval from context
+		- But that is not optimal
+- Retrieval too inaccurate overall
+	- Embeddings not good for numbers
+	- But most key identifiers are numbers
+- System talked too much
+	- Tended to use all information available for a building
+	- e.g. question for address answered with opening hours and wheelchair accessibility
+- Last: suboptimal system prompt
+	- Instruction language not matching input language
+	- Order of instructions turned out to be very important
+	- Not well-structured
+#### Implemented Solutions (02:45)
+- We developed solutions for the identified problems
+- Updated data flow highlights changes
+- Point out changes to updated components
+- First: ASR errors in input get fixed
+	- Call to model with task to identify and fix common errors
+	- Input with fixed building IDs used for better retrieval
+- Second: deal with missing context in multi-turn scenarios
+	- Another model usage
+	- Tasked to find context in conversation history and add it to input
+	- Again used for better retrieval
+	- Only for consecutive prompts (not in the first turn)
+- Overall problems with RAG
+	- Switched to LlamaIndex
+	- Better quality than own implementation of cosine similarity
+- As mentioned: model talked too much
+	- Solution: filter the retrieved information
+	- Give available fields and user question to the model
+	- Decide which fields are needed
+		- e.g. only address for "Where is?" question
+	- Only give selected information for answer generation
+	- Model is now incapable of responding with unnecessary information
+- Improved answer generation
+	- Better system prompt
+	- Most important instruction at the end
+	- Same language for prompt and input (both German)
+	- More structure
+		- e.g. use of JSON and Markdown syntax
+- Finally: link extraction
+	- system can open links instead of just sending them as text
+#### LLM Judge Score 1 (01:33)
+- Now: final evaluation of improved system
+- Graph shows LLM scores (scale 0 to 1)
+	- Left bar is baseline prototype
+	- Right bars are CONSECUTIVE improvements
+		- So right most bar is current system
+- Two takeaways from graph
+- First: system did measurably improve over baseline
+	- Every update lead to a higher score
+	- Overall from average of about 0.3x to about 0.7x
+- Second conclusion: system is not perfect yet
+	- Overall score is much improved but not great
+	- Improvements are felt during usage
+	- But some scenarios do not work well
+#### LLM Judge Score 2 (00:41)
+- Evaluation by use cases
+- Some question types work very well
+	- e.g. opening hours and wheelchair accessibility
+- Some use cases need more work
+	- Focusing on specific use cases makes improvements easier
+	- e.g. opening hours referring to contextual information
+
+#### LLM Judge Score 3
+- Analysis of failure reasons
+- Qualitative explanations to quantitative analysis
+	- Group judge explanations into categories
+- All failure reasons decreased through improvements
+	- e.g. additional information reduced by data filtering
+	- Some almost eliminated
+		- e.g. extra/additional information
+#### LLM Judge Score 4 (01:40)
+- Some more specific metrics: ASR error fixing
+- First: retrieval accuracy
+	- Improved over baseline with error fixing
+	- Problem: two versions of user input
+		- Version with fixed ASR errors
+		- Version with enriched context
+		- Both need to be merged for good retrieval
+		- Can be seen in third bar
+- Secondly: extra model use introduces latency
+	- Over 1.5 seconds extra with initial ASR fixing
+	- Solution: only return fixes not the whole fixed input
+		- Fewer tokens to generate so lower latency
+	- Reduces additional latency to under half a second
+#### Pass/Fail Score (00:39)
+- Finally: pass/fail score of system
+- Easiest overview of system performance
+- First column: number of test cases per use case
+- Second column: number passed by baseline prototype
+- Third column: number passed by improved system
+- Conclusion is mostly the same
+	- System well improved but still not perfect
+		- e.g. building location: number of passed cases doubled
+		- But is still only about half marked as passed
+#### Demo Time (00:18)
+- Now that we presented system structure and development: time for a live demo

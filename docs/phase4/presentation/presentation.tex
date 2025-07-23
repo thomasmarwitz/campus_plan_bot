@@ -13,6 +13,8 @@
 
 \usepackage{lipsum}
 \usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{multicol}
 
 \begin{document}
 
@@ -22,9 +24,9 @@
 \end{frame}
 
 %Inhaltsverzeichnis
-\begin{frame}[tableofcontents=green]{}
-    \tableofcontents
-\end{frame}
+% \begin{frame}[tableofcontents=green]{}
+%     \tableofcontents
+% \end{frame}
 
 
 \section{The Campus Plan}
@@ -39,7 +41,7 @@
 \end{frame}
 
 \subsection{LLM Integration}
-\begin{frame}{LLM Integration}
+\begin{frame}[picture vertical=57,picture=images/ui_screenshot,kitlogo=black]{New Campusplan}
     \begin{itemize}
         \item System interaction with natural language
             \begin{itemize}
@@ -57,7 +59,7 @@
         \item Use of contextual information
             \begin{itemize}
                 \item Current time
-                \item (Current relative position)
+                \item Current location
             \end{itemize}
     \end{itemize}
 \end{frame}
@@ -65,48 +67,60 @@
 \section{System Evaluation}
 \subsection{Evaluation Data}
 \begin{frame}{Evaluation Data}
-    \begin{enumerate}
-        \item Collect additional data
-        \item Data cleanup
-        \item Design prompt templates
-            \begin{itemize}
-                \item Single-turn
-                \item Multi-turn
-            \end{itemize}
-        \item Slot filling
-        \item LLM-assisted rephrasing
-        \item Record audio samples
-        \item System evaluation strategy
-    \end{enumerate}
-\end{frame}
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item Collect additional data
+            \item Data cleanup
+            \item Design prompt templates
+                \begin{itemize}
+                    \item Single-turn
+                    \item Multi-turn
+                \end{itemize}
+            \item Slot filling
+            \item LLM-assisted rephrasing
+            \item Record audio samples
+            \item System evaluation strategy
+        \end{enumerate}
 
-\subsection{BERT Score}
-\begin{frame}{BERT Score}
-    \begin{itemize}
-        \item Precision and recall based on dense embeddings
-        \item Meant to measure semantic similarity
-        \item Not precise enough for our system
-            \begin{itemize}
-                \item Focused too much on word similarity
-                \item Assigns high scores to counterfactual responses
-                \item Too hard to distinguish good from bad responses
-            \end{itemize}
-    \end{itemize}
-    \vspace{1cm}
-    \setlength\unitlength{1cm}
-    \begin{minipage}{0.55\linewidth}
-        \begin{greenblock}{An Example}
-    	\textbf{Input:} Ist Gebäude 210 rollstuhlgerecht?\\
-            \textbf{Expected Output:} Ja, das Gebäude ist rollstuhlgerecht.\\
-            \textbf{Actual Output:} Das Gebäude 210 ist nicht rollstuhlgerecht.\\
-            \vspace{0.1cm}\\
-            \textbf{BERT Score:} FScore: 0.87 (precision: 0.87; recall: 0.86)
+    \columnbreak
+    \begin{minipage}{0.9\linewidth}
+	\begin{greenblock}{Slot Filling Example}
+            \textbf{Data:} Heinrich-Hertz-Hörsaal, Kaiserstraße 12\\
+		\textbf{Template:} Wo ist Gebäude \texttt{[slot]}?\\
+            \textbf{Filled:} Wo ist Gebäude Heinrich-Hertz-Hörsaal?\\
+            \textbf{Rephrased:} Wo ist der Heinrich-Hertz-Hörsaal?\\
         \end{greenblock}
     \end{minipage}
+    \end{multicols}
 \end{frame}
 
+% \subsection{BERT Score}
+% \begin{frame}{BERT Score}
+%     \begin{itemize}
+%         \item Precision and recall based on dense embeddings
+%         \item Meant to measure semantic similarity
+%         \item Not precise enough for our system
+%             \begin{itemize}
+%                 \item Focused too much on word similarity
+%                 \item Assigns high scores to counterfactual responses
+%                 \item Too hard to distinguish good from bad responses
+%             \end{itemize}
+%     \end{itemize}
+%     \vspace{1cm}
+%     \setlength\unitlength{1cm}
+%     \begin{minipage}{0.55\linewidth}
+%         \begin{greenblock}{An Example}
+%     	\textbf{Input:} Ist Gebäude 210 rollstuhlgerecht?\\
+%             \textbf{Expected Output:} Ja, das Gebäude ist rollstuhlgerecht.\\
+%             \textbf{Actual Output:} Das Gebäude 210 ist nicht rollstuhlgerecht.\\
+%             \vspace{0.1cm}\\
+%             \textbf{BERT Score:} FScore: 0.87 (precision: 0.87; recall: 0.86)
+%         \end{greenblock}
+%     \end{minipage}
+% \end{frame}
+
 \subsection{LLM-as-a-Judge}
-\begin{frame}{LLM-as-a-Judge}
+\begin{frame}[picture 50 vertical,picture=images/failure_reason_wordcloud,kitlogo=black]{LLM-as-a-Judge}
     \vspace{-1.5cm}
     \begin{itemize}
         \item Use LLM to compare expected and actual response
@@ -131,27 +145,27 @@
     \textbf{Challenges:}
     \begin{itemize}
         \item LLM judge capabilities
-            \begin{itemize}
-                \item Small models are not powerful enough
-            \end{itemize}
+            % \begin{itemize}
+            %     \item Small models are not powerful enough
+            % \end{itemize}
         \item Alignment
-            \begin{itemize}
-                \item Identifying task intention
-                \item Subtracting points for "bad style"
-                \item Ignore excuses made by system
-            \end{itemize}
+            % \begin{itemize}
+            %     \item Identifying task intention
+            %     \item Subtracting points for "bad style"
+            %     \item Ignore excuses made by system
+            % \end{itemize}
     \end{itemize}
 \end{frame}
 
 \section{A First Prototype}
-\begin{frame}{A First Prototype}
+\begin{frame}[picture vertical=57,picture=images/old_ui_screenshot,kitlogo=white]{A First Prototype}
     \vspace{-1.0cm}
     \begin{itemize}
         \item Minimum Viable Product (MVP)
-            \begin{itemize}
-                \item One (basic) version of every core component
-                \item Command line interface
-            \end{itemize}
+            % \begin{itemize}
+            %     \item One (basic) version of every core component
+            %     \item Command line interface
+            % \end{itemize}
         \item Componentization with Python protocols
             \begin{itemize}
                 \item Easy to iterate on individual components
@@ -191,40 +205,40 @@
 \end{frame}
 
 \section{Data Flow Improvements}
-\subsection{Identified Problems}
-\begin{frame}{Identified Problems}
-    \begin{itemize}
-        \item ASR errors
-            \begin{itemize}
-                \item High impact on retrieval
-                \item Especially building IDs (e.g. "Gebäude fünfzig Punkt zwanzig")
-            \end{itemize}
-        \item Missing multi-turn context
-            \begin{itemize}
-                \item Some queries rely on context
-                \item No successful retrieval possible
-                \item Model has to attend to conversation history
-            \end{itemize}
-        \item Inaccurate retrieval
-            \begin{itemize}
-                \item Embeddings unfit for matching numerical IDs
-            \end{itemize}
-        \item Too much returned information
-            \begin{itemize}
-                \item Model tends to use all provided data
-                \item Unnecessary information in response
-            \end{itemize}
-        \item Suboptimal system prompt
-            \begin{itemize}
-                \item Language mismatch
-                \item Low structure
-                \item Instruction order
-            \end{itemize}
-    \end{itemize}
-\end{frame}
+% \subsection{Identified Problems}
+% \begin{frame}{Identified Problems}
+%     \begin{itemize}
+%         \item ASR errors
+%             \begin{itemize}
+%                 \item High impact on retrieval
+%                 \item Especially building IDs (e.g. "Gebäude fünfzig Punkt zwanzig")
+%             \end{itemize}
+%         \item Missing multi-turn context
+%             \begin{itemize}
+%                 \item Some queries rely on context
+%                 \item No successful retrieval possible
+%                 \item Model has to attend to conversation history
+%             \end{itemize}
+%         \item Inaccurate retrieval
+%             \begin{itemize}
+%                 \item Embeddings unfit for matching numerical IDs
+%             \end{itemize}
+%         \item Too much returned information
+%             \begin{itemize}
+%                 \item Model tends to use all provided data
+%                 \item Unnecessary information in response
+%             \end{itemize}
+%         \item Suboptimal system prompt
+%             \begin{itemize}
+%                 \item Language mismatch
+%                 \item Low structure
+%                 \item Instruction order
+%             \end{itemize}
+%     \end{itemize}
+% \end{frame}
 
 \subsection{Implemented Solutions}
-\begin{frame}[t]{Implemented Solutions}
+\begin{frame}[t]{Improved Data Flow}
     \vspace{-0.5cm}
 	\begin{figure}
 	    \centering
@@ -249,24 +263,12 @@
 	\end{figure}
 \end{frame}
 
-\begin{frame}[t]{Pass/Fail Score}
-\begin{table}[H]
-    \centering
-        \begin{tabular}{|l|c|c|c|c|}
-        \hline
-        \textbf{Category} & \textbf{\# Test Cases} & \textbf{Baseline} & \textbf{Improvements} \\
-        \hline
-        Building Location     & 85  & 19  & 40 \\
-        Closed Until          & 100 & 24  & 31 \\
-        Navigation Link       & 50  & 0   & 0  \\
-        Open Now              & 100 & 20  & 45 \\
-        Open Until            & 100 & 21  & 33 \\
-        Open Website          & 100 & 17  & 34 \\
-        Opening Hours         & 100 & 53  & 81 \\
-        Wheelchair Accessible & 100 & 49  & 68 \\
-        \hline
-    \end{tabular}
-\end{table}
+\begin{frame}[t]
+\begin{figure}
+	    \centering
+    \vspace{-0.5cm}
+    \includegraphics[width=0.80\linewidth]{images/failure_reason_plot.png}
+	\end{figure}
 \end{frame}
 
 \section{Demo}
@@ -274,6 +276,85 @@
     \vspace{1.5cm}
     \centering
     \fontsize{100pt}{55pt}\selectfont \textcolor{kit-green100}{\textbf{Demo Time}}
+\end{frame}
+
+\appendix
+\beginbackup
+
+\section{Backup Slides}
+\begin{frame}{}
+    \vspace{1.5cm}
+    \centering
+    \fontsize{60pt}{55pt}\selectfont {\textbf{Backup Slides}}
+\end{frame}
+
+\begin{frame}[t]{Pass/Fail Score}
+\begin{table}[H]
+    \centering
+        \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        \textbf{Category} & \textbf{\# Test Cases} & \textbf{Baseline} & \textbf{Improvements} \\
+        \hline
+        Building Location     & 85  & 19  & 49 \\
+        Closed Until          & 100 & 24  & 58 \\
+        Navigation Link       & 50  & 0   & 37 \\
+        Open Now              & 100 & 20  & 61 \\
+        Open Until            & 100 & 21  & 53 \\
+        Open Website          & 100 & 17  & 83 \\
+        Opening Hours         & 100 & 53  & 85 \\
+        Wheelchair Accessible & 100 & 49  & 83 \\
+        ASR Testset           & 248 & 79  & 186 \\
+        \hline
+    \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}[t]
+    \vspace{-1cm}
+	\begin{figure}
+	    \centering
+	    \includegraphics[width=0.65\linewidth]{images/pareto_frontier_improvements.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \vspace{1.5cm}
+    \centering
+    \textbf{Example: Partial Success (Judge Score = 0.50)}
+    \begin{longtable}{p{0.2\textwidth} p{0.8\textwidth}}
+    \textbf{Input} & Wann schließt die Bibliothek am Campus Nord? \\
+    \textbf{Expected Output} & Das Gebäude schließt in 0 Stunden und 54 Minuten. \\
+    \textbf{Actual Output} & Die Bibliothek am Campus Nord schließt am heutigen Tag um 15:00 Uhr. \\
+    \textbf{Judge Reason} & The output provides a specific closing time (15:00 Uhr) but does not match the expected phrasing or convey the same meaning as 'Das Gebäude schließt in 0 Stunden und 54 Minuten.' \\
+    \textbf{Scores} & FScore: 0.78, Precision: 0.77, Recall: 0.79 \\
+    \end{longtable}
+\end{frame}
+
+\begin{frame}{}
+    \vspace{1.5cm}
+    \centering
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\linewidth]{images/llm_judge_gullible.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \vspace{1.5cm}
+    \centering
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\linewidth]{images/llm_judge_add_info.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \vspace{1.5cm}
+    \centering
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\linewidth]{images/llm_judge_reason.png}
+    \end{figure}
 \end{frame}
 
 
@@ -474,9 +555,6 @@
 % \begin{frame}[t]{Beispielinhalt}
 %     Bei Frames mit Option \texttt{[t]} werden die Inhalte nicht vertikal zentriert, sondern an der Oberkante begonnen.
 % \end{frame}
-
-% \appendix
-% \beginbackup
 
 % \section{Farben}
 % %% ----------------------------------------
