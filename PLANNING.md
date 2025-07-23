@@ -78,9 +78,3 @@ The project operates under several technical and practical constraints that have
 - **Component Interdependence:** A key lesson was that improving one component can inadvertently harm another (e.g., ASR fixing initially degraded RAG performance). This discovery emphasized the need for both component-specific unit tests and end-to-end evaluation to track overall system health.
 - **Evaluation Strategy:** The project relies on an "LLM-as-a-Judge" and a comprehensive, but synthetic, test set. While this allows for systematic and repeatable evaluation, the results may not perfectly mirror real-world user experience. The lack of real user data is a known limitation.
 - **Time Constraints:** The project timeline does not permit for a full user beta test or the implementation of all identified future improvements.
-
-## 5. General goals
-
-* Vibe Check Test Suite (executed 3 times), idea is to have a few high quality interactions and to see how the system behaves across them.
-* Web UI
-*
