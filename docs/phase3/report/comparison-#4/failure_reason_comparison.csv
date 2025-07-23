@@ -2,5 +2,4 @@ Run Name,additional information,unnecessary detail,unrelated information,extra i
 baseline,131,80,30,42,79,14,13,0,204,60
 #1-chosen-fields,60,40,7,10,65,16,12,1,126,35
 #2-better-rag,58,60,6,15,80,12,12,0,118,40
-#3-asr-fixing,20,11,2,4,18,5,3,0,32,8
 #4-system-prompt,14,29,3,1,41,7,4,0,130,16

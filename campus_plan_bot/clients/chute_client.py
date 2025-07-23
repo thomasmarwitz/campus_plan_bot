@@ -29,7 +29,7 @@ from pydantic_ai.models import (
     cached_async_http_client,
 )
 
-from campus_plan_bot.interfaces.interfaces import Role
+from campus_plan_bot.interfaces.interfaces import LLMRequestConfig, Role
 from campus_plan_bot.interfaces.persistence_types import Conversation
 from campus_plan_bot.prompts.prompt_builder import LLama3PromptBuilder
 
@@ -141,6 +141,7 @@ class ChuteModel(Model):
         strip_think: bool = True,
         max_retries: int = 3,
         backoff_factor: float = 0.5,
+        default_request_config: LLMRequestConfig | None = None,
     ):
         self._model = model
         tok = api_token or os.getenv("CHUTES_KEY")
@@ -151,6 +152,10 @@ class ChuteModel(Model):
         self.strip_think = strip_think
         self.max_retries = max_retries
         self.backoff_factor = backoff_factor
+        self.request_config = default_request_config or LLMRequestConfig(
+            max_new_tokens=1024,
+            temperature=0.3,
+        )
 
     @property
     def model_name(self) -> str:
@@ -349,6 +354,8 @@ class ChuteModel(Model):
             "model": self.model_name,
             "messages": [{"role": "user", "content": prompt}],
             "stream": False,
+            "temperature": self.request_config["temperature"],
+            "max_tokens": self.request_config["max_new_tokens"],
         }
         response = await client.post(
             CHUTE_API_URL,

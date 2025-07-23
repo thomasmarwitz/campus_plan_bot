@@ -1,4 +1,5 @@
 import asyncio
+import os
 import sys
 from pathlib import Path
 
@@ -63,7 +64,14 @@ def chat(log_level: str, input: str, token: str, file: str):
 
     # prepare system components
     input_method = get_input_method(input, file)
-    pipeline = Pipeline.from_database(database_path, embeddings_dir)
+
+    allow_complex_mode = bool(os.getenv("OPENAI_API_KEY"))
+    if not allow_complex_mode:
+        logger.info("OPENAI_API_KEY not found, complex queries are disabled.")
+
+    pipeline = Pipeline.from_database(
+        database_path, embeddings_dir, allow_complex_mode=allow_complex_mode
+    )
 
     async def run_conversation():
 

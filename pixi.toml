@@ -11,7 +11,7 @@ evaluate = "sh scripts/run_evaluation.sh"
 
 
 [dependencies]
-python = ">=3.9"
+python = ">=3.11"
 torchaudio = ">=2.5.1,<3"
 pynput = ">=1.8.1,<2"
 transformers = ">=4.51.3,<5"
@@ -40,6 +40,8 @@ llama-index = ">=0.12.25,<0.13"
 rich = ">=14.0.0,<15"
 einops = ">=0.8.1,<0.9"
 pytest-asyncio = ">=1.0.0,<2"
+fastapi = ">=0.116.1,<0.117"
+uvicorn = ">=0.35.0,<0.36"
 
 [host-dependencies]
 pip = "*"
@@ -77,15 +79,12 @@ python-build = "*"
 [feature.build.tasks]
 build = "python -m build"
 
-[feature.py39.dependencies]
-python = "3.9.*"
 [feature.py311.dependencies]
 python = "3.11.*"
 
 [environments]
 default = ["dev"]
 py311 = ["py311", "dev"]
-py39 = ["py39", "dev"]
 
 lint = { features = ["lint"], no-default-feature = true }
 
@@ -95,3 +94,4 @@ build = ["build"]
 pyaudio = ">=0.2.14, <0.3"
 soundfile = ">=0.13.1, <0.14"
 llama-index-embeddings-huggingface = ">=0.5.0,<0.6"
+llama-index-experimental = ">=0.5.5, <0.6"

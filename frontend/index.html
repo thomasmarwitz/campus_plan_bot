@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Plan Bot</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f8;
+        }
+        #chat-container {
+            width: 100%;
+            max-width: 600px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background-color: #fff;
+            overflow: hidden;
+        }
+        #chat-window {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .message {
+            margin-bottom: 15px;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+        }
+        .message.user {
+            align-items: flex-end;
+        }
+        .message.bot {
+            align-items: flex-start;
+        }
+        .message-content {
+            padding: 10px 15px;
+            border-radius: 18px;
+            max-width: 75%;
+        }
+        .message.user .message-content {
+            background-color: #007bff;
+            color: white;
+        }
+        .message.bot .message-content {
+            background-color: #e9e9eb;
+            color: black;
+        }
+        .message.bot .message-content a {
+            color: #007bff;
+        }
+        #chat-form {
+            display: flex;
+            padding: 10px;
+            position: relative;
+            border-top: 1px solid #ddd;
+        }
+        #message-input {
+            flex-grow: 1;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        #send-button {
+            border: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #send-button:hover {
+            background-color: #0056b3;
+        }
+        #record-indicator {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background-color: rgba(255, 0, 0, 0.7);
+            color: white;
+            border-radius: 20px;
+            display: none;
+            font-size: 16px;
+        }
+        .typing-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #8e8e93;
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+            margin: 0 1px;
+        }
+        .typing-dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        @keyframes typing {
+            0%, 60%, 100% {
+                transform: translateY(0);
+            }
+            30% {
+                transform: translateY(-5px);
+            }
+        }
+
+        #settings-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #settings-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        #settings-form h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        #settings-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        #settings-form select,
+        #settings-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        #settings-form button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #settings-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .message-actions {
+            margin-top: 8px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .translate-button {
+            background: none;
+            border: 1px solid #007bff;
+            color: #007bff;
+            padding: 3px 8px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .translate-button:hover {
+            background-color: #e9f5ff;
+        }
+
+        #suggestion-panels {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 0 20px 15px;
+        }
+
+        .suggestion-panel {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 12px 15px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+
+        .suggestion-panel:hover {
+            background-color: #e9ecef;
+        }
+
+        .suggestion-panel span {
+            display: block;
+        }
+
+        .prompt-line1 {
+            font-weight: 500;
+            color: #212529;
+        }
+
+        .prompt-line2 {
+            margin-top: 3px;
+            color: #6c757d;
+            transition: font-weight 0.1s, color 0.1s;
+        }
+
+        #suggestion-panels.shift-active .prompt-line2 {
+            font-weight: 500;
+            color: #212529;
+        }
+
+        #suggestion-panels.follow-up-mode {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="settings-modal">
+        <div id="settings-form">
+            <h2>Chat Settings</h2>
+            <form id="start-form">
+                <label for="model-select">Choose a model:</label>
+                <select id="model-select" name="model_name">
+                    <option value="Llama3.1-8B">Llama3.1-8B</option>
+                    <!--
+                    Add more models if the institute provides them.
+                    <option value="Qwen3-32B">Qwen3-32B</option>
+                    -->
+                </select>
+
+                <label for="temperature-input">Temperature:</label>
+                <input type="number" id="temperature-input" name="temperature" value="0.05" min="0" max="2" step="0.01">
+
+                <label for="max-tokens-input">Max Tokens:</label>
+                <input type="number" id="max-tokens-input" name="max_new_tokens" value="1024" min="1">
+
+                <label for="use-location-select">Use current location:</label>
+                <select id="use-location-select" name="use_location">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+
+                <!--
+                Disabled because this is an experimental feature.
+
+                <label for="complex-mode-select">Allow complex queries:</label>
+                <select id="complex-mode-select" name="allow_complex_mode">
+                    <option value="yes">Yes</option>
+                    <option value="no" selected>No</option>
+                </select>
+                -->
+
+                <label for="translation-language-select">Translate responses to:</label>
+                <select id="translation-language-select" name="translation_language">
+                    <option value="none">None</option>
+                    <option value="English" selected>English</option>
+                    <option value="French">French</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+
+                <button type="submit">Start Chat</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="chat-container" style="display: none;">
+        <div id="chat-window">
+            <div class="message bot">
+                <div class="message-content">
+                    Hallo! Ich bin CampusGuide. Wie kann ich dir heute helfen?
+                    <br>
+                    <br>
+                    Du kannst die Leertaste drücken, um zu sprechen.
+                </div>
+            </div>
+        </div>
+        <div id="suggestion-panels">
+            <div class="suggestion-panel">
+                <span class="prompt-line1">Wo befindet sich</span>
+                <span class="prompt-line2">der Hörsaal am Fasanengarten</span>
+            </div>
+            <div class="suggestion-panel">
+                <span class="prompt-line1">Was sind die Öffnungszeiten</span>
+                <span class="prompt-line2">der Bibliothek am Campus Süd?</span>
+            </div>
+            <div class="suggestion-panel">
+                <span class="prompt-line1">Navigiere mich</span>
+                <span class="prompt-line2">zu Gebäude 420</span>
+            </div>
+            <div class="suggestion-panel">
+                <span class="prompt-line1">Wie ist die Rollstuhlgerechtigkeit</span>
+                <span class="prompt-line2">für den Audimax</span>
+            </div>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="message-input" placeholder="Verbinde..." autocomplete="off" disabled>
+            <button id="send-button" type="submit" disabled>Send</button>
+            <div id="record-indicator">Recording...</div>
+        </form>
+    </div>
+
+    <script>
+        const chatWindow = document.getElementById('chat-window');
+        const chatForm = document.getElementById('chat-form');
+        const messageInput = document.getElementById('message-input');
+        const sendButton = document.getElementById('send-button');
+        const recordIndicator = document.getElementById('record-indicator');
+        const settingsModal = document.getElementById('settings-modal');
+        const startForm = document.getElementById('start-form');
+        const chatContainer = document.getElementById('chat-container');
+        const suggestionPanelsContainer = document.getElementById('suggestion-panels');
+        const initialPanelsHTML = suggestionPanelsContainer.innerHTML;
+
+        const suggestionData = {
+            'Wo befindet sich': [
+                'der Hörsaal am Fasanengarten',
+                'der Infobau',
+                'der Wolfgang Gaede Hörsaal'
+            ],
+            'Was sind die Öffnungszeiten': [
+                'der Bibliothek am Campus Süd',
+                'der Fachschaft Informatik',
+                'der Cafeteria',
+            ],
+            'Navigiere mich': [
+                'zu Gebäude 420',
+                'zur Mensa',
+                'zum Fritz Haller Hörsaal',
+            ],
+            'Wie ist die Rollstuhlgerechtigkeit': [
+                'für für den Audimax',
+                'für den Egon Eiermann Hörsaal',
+                'für die Mensa',
+            ]
+        };
+
+        let targetLanguage = 'none';
+        let sessionId = null;
+        let mediaRecorder;
+        let audioChunks = [];
+        let isRecording = false;
+        let isShiftDown = false;
+
+        async function getCurrentPositionPromise() {
+            return new Promise((resolve, reject) => {
+                if (!navigator.geolocation) {
+                    return reject(new Error("Geolocation is not supported by your browser."));
+                }
+                navigator.geolocation.getCurrentPosition(resolve, reject);
+            });
+        }
+
+        startForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(startForm);
+            const settings = Object.fromEntries(formData.entries());
+
+            settings.temperature = parseFloat(settings.temperature);
+            settings.max_new_tokens = parseInt(settings.max_new_tokens, 10);
+            settings.allow_complex_mode = settings.allow_complex_mode === 'yes';
+            targetLanguage = settings.translation_language;
+
+            if (settings.use_location === 'yes') {
+                const urlParams = new URLSearchParams(window.location.search);
+                const lat = urlParams.get('lat');
+                const lon = urlParams.get('lon');
+
+                if (lat && lon) {
+                    try {
+                        const coords = [parseFloat(lat), parseFloat(lon)];
+                        settings.user_coords_str = JSON.stringify(coords);
+                        console.log('Using mock coordinates from URL:', settings.user_coords_str);
+                    } catch (error) {
+                        console.error('Error parsing coordinates from URL', error);
+                        addMessage('Could not parse coordinates from URL.', 'bot');
+                    }
+                } else {
+                    try {
+                        const position = await getCurrentPositionPromise();
+                        const coords = [position.coords.latitude, position.coords.longitude];
+                        settings.user_coords_str = JSON.stringify(coords);
+                    } catch (error) {
+                        console.error('Error getting location:', error);
+                        addMessage('Could not retrieve your location.', 'bot');
+                    }
+                }
+            }
+            delete settings.use_location;
+            delete settings.translation_language;
+
+
+            await startSession(settings);
+        });
+
+        async function startSession(settings) {
+            try {
+                const response = await fetch('/start', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(settings),
+                });
+                if (!response.ok) throw new Error('Failed to start session');
+                const data = await response.json();
+                sessionId = data.session_id;
+                console.log('Session started:', sessionId);
+
+                settingsModal.style.display = 'none';
+                chatContainer.style.display = 'flex';
+
+                messageInput.disabled = false;
+                sendButton.disabled = false;
+                messageInput.placeholder = 'Type a message...';
+                messageInput.focus();
+            } catch (error) {
+                console.error('Error starting session:', error);
+                addMessage('Failed to connect to the bot.', 'bot');
+                messageInput.placeholder = 'Connection failed.';
+            }
+        }
+
+        function createTypingIndicator() {
+            const typingElement = document.createElement('div');
+            typingElement.classList.add('message', 'bot');
+            typingElement.id = 'typing-indicator';
+
+            const contentElement = document.createElement('div');
+            contentElement.classList.add('message-content');
+            contentElement.innerHTML = '<span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>';
+
+            typingElement.appendChild(contentElement);
+            return typingElement;
+        }
+
+        async function endSession() {
+            if (sessionId) {
+                try {
+                    // Using navigator.sendBeacon is more reliable for unload events
+                    const data = new URLSearchParams();
+                    data.append('session_id', sessionId);
+                    navigator.sendBeacon('/end?' + data.toString());
+                    console.log('Ending session:', sessionId);
+                } catch (error) {
+                    console.error('Error ending session:', error);
+                }
+            }
+        }
+
+        function addMessage(text, sender) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', sender);
+            messageElement.dataset.originalText = text;
+
+            const contentElement = document.createElement('div');
+            contentElement.classList.add('message-content');
+
+            if (sender === 'bot') {
+                contentElement.innerHTML = marked.parse(text);
+            } else {
+                contentElement.textContent = text;
+            }
+
+            messageElement.appendChild(contentElement);
+
+            if (sender === 'bot' && targetLanguage !== 'none') {
+                const actionsContainer = document.createElement('div');
+                actionsContainer.className = 'message-actions';
+
+                const translateButton = document.createElement('button');
+                translateButton.className = 'translate-button';
+                translateButton.textContent = 'Translate';
+                translateButton.dataset.state = 'original';
+
+                actionsContainer.appendChild(translateButton);
+                messageElement.appendChild(actionsContainer);
+            }
+
+            chatWindow.appendChild(messageElement);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+            return messageElement;
+        }
+
+        function restoreInitialPanels() {
+            suggestionPanelsContainer.innerHTML = initialPanelsHTML;
+            suggestionPanelsContainer.classList.remove('follow-up-mode');
+            suggestionPanelsContainer.style.display = 'grid';
+        }
+
+        function renderFollowUpSuggestions(key) {
+            const suggestions = suggestionData[key];
+            if (!suggestions) {
+                suggestionPanelsContainer.style.display = 'none';
+                return;
+            }
+
+            suggestionPanelsContainer.innerHTML = '';
+            suggestionPanelsContainer.classList.add('follow-up-mode');
+
+            suggestions.forEach(suggestionText => {
+                const panel = document.createElement('div');
+                panel.classList.add('suggestion-panel');
+                panel.dataset.type = 'follow-up';
+
+                const span = document.createElement('span');
+                span.classList.add('prompt-line1');
+                span.textContent = suggestionText;
+                panel.appendChild(span);
+
+                suggestionPanelsContainer.appendChild(panel);
+            });
+        }
+
+        chatForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const query = messageInput.value.trim();
+            if (!query) return;
+
+            if (!sessionId) {
+                addMessage('Please wait, connecting to the bot...', 'bot');
+                return;
+            }
+
+            addMessage(query, 'user');
+            messageInput.value = '';
+            suggestionPanelsContainer.style.display = 'none';
+
+            await sendMessage(query);
+        });
+
+        async function sendMessage(query, isAudio = false) {
+            messageInput.disabled = true;
+            sendButton.disabled = true;
+
+            let userMessageElement;
+            if (isAudio) {
+                userMessageElement = addMessage('[Audio Recording...]', 'user');
+            }
+
+            const typingIndicator = createTypingIndicator();
+            chatWindow.appendChild(typingIndicator);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+
+            try {
+                if (isAudio) {
+                    const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                    const formData = new FormData();
+                    formData.append('session_id', sessionId);
+                    formData.append('file', audioBlob, 'recording.wav');
+                    formData.append('asr_method', 'local');
+
+                    // Can't use EventSource with POST and FormData directly.
+                    // So we make a POST request and handle the streaming response.
+                    const response = await fetch('/chat_audio', {
+                        method: 'POST',
+                        body: formData,
+                    });
+
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.detail || 'Failed to get response from bot');
+                    }
+
+                    const reader = response.body.getReader();
+                    const decoder = new TextDecoder();
+
+                    while (true) {
+                        const { value, done } = await reader.read();
+                        if (done) break;
+
+                        const chunk = decoder.decode(value, { stream: true });
+                        const lines = chunk.split('\n\n');
+
+                        for (const line of lines) {
+                            if (line.startsWith('data:')) {
+                                const data = JSON.parse(line.substring(5));
+                                if (data.type === 'transcript') {
+                                    userMessageElement.querySelector('.message-content').textContent = data.data;
+                                } else if (data.type === 'final_response') {
+                                    addMessage(data.data.response, 'bot');
+                                    if (data.data.link) {
+                                        window.open(data.data.link, '_blank');
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                } else {
+                    const response = await fetch('/chat', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ session_id: sessionId, query: query }),
+                    });
+
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.detail || 'Failed to get response from bot');
+                    }
+
+                    const data = await response.json();
+                    addMessage(data.response, 'bot');
+
+                    if (data.link) {
+                        window.open(data.link, '_blank');
+                    }
+                }
+
+            } catch (error) {
+                console.error('Error during chat:', error);
+                addMessage('Entschuldige, es ist ein Fehler aufgetreten. Bitte versuche es erneut. Falls es weiterhin nicht funktioniert, lade bitte die Seite neu.', 'bot');
+            } finally {
+                typingIndicator.remove();
+                messageInput.disabled = false;
+                sendButton.disabled = false;
+                if (!isAudio) {
+                    messageInput.focus();
+                }
+                audioChunks = [];
+            }
+        }
+
+        async function startRecording() {
+            if (isRecording) return;
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                mediaRecorder = new MediaRecorder(stream);
+                mediaRecorder.ondataavailable = event => {
+                    audioChunks.push(event.data);
+                };
+                mediaRecorder.onstart = () => {
+                    isRecording = true;
+                    recordIndicator.style.display = 'block';
+                };
+                mediaRecorder.onstop = async () => {
+                    isRecording = false;
+                    recordIndicator.style.display = 'none';
+                    if (audioChunks.length > 0) {
+                        suggestionPanelsContainer.style.display = 'none';
+                       await sendMessage(null, true);
+                    }
+                };
+                audioChunks = [];
+                mediaRecorder.start();
+            } catch (error) {
+                console.error('Error starting recording:', error);
+                addMessage('Could not start recording. Please allow microphone access.', 'bot');
+            }
+        }
+
+        function stopRecording() {
+            if (mediaRecorder && isRecording) {
+                mediaRecorder.stop();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Space' && document.activeElement !== messageInput) {
+                e.preventDefault();
+                startRecording();
+            } else if (e.key === 'Shift' && !isShiftDown) {
+                isShiftDown = true;
+                suggestionPanelsContainer.classList.add('shift-active');
+            }
+        });
+
+        document.addEventListener('keyup', (e) => {
+            if (e.code === 'Space' && document.activeElement !== messageInput) {
+                e.preventDefault();
+                stopRecording();
+            } else if (e.key === 'Shift') {
+                isShiftDown = false;
+                suggestionPanelsContainer.classList.remove('shift-active');
+            }
+        });
+
+        messageInput.addEventListener('input', () => {
+            const hasFollowUps = suggestionPanelsContainer.querySelector('[data-type="follow-up"]');
+            if (hasFollowUps) {
+                suggestionPanelsContainer.style.display = 'none';
+            }
+            if (messageInput.value === '') {
+                restoreInitialPanels();
+            }
+        });
+
+        chatWindow.addEventListener('click', async e => {
+            if (e.target.classList.contains('translate-button')) {
+                const button = e.target;
+                const messageElement = button.closest('.message');
+                const contentElement = messageElement.querySelector('.message-content');
+
+                button.disabled = true;
+                const originalText = messageElement.dataset.originalText;
+                const cacheKey = `translation-${targetLanguage}-${originalText}`;
+
+                if (button.dataset.state === 'original') {
+                    const cachedTranslation = sessionStorage.getItem(cacheKey);
+                    if (cachedTranslation) {
+                        contentElement.innerHTML = marked.parse(cachedTranslation);
+                        button.textContent = 'Show Original';
+                        button.dataset.state = 'translated';
+                        button.disabled = false;
+                        return;
+                    }
+
+                    button.textContent = 'Translating...';
+                    try {
+                        const response = await fetch('/translate', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ text: originalText, target_language: targetLanguage }),
+                        });
+                        if (!response.ok) throw new Error('Translation failed');
+                        const data = await response.json();
+
+                        const translatedText = data.translated_text;
+                        contentElement.innerHTML = marked.parse(translatedText);
+                        sessionStorage.setItem(cacheKey, translatedText);
+
+                        button.textContent = 'Show Original';
+                        button.dataset.state = 'translated';
+
+                    } catch (error) {
+                        console.error('Translation error:', error);
+                        button.textContent = 'Translate';
+                    } finally {
+                        button.disabled = false;
+                    }
+                } else {
+                    contentElement.innerHTML = marked.parse(originalText);
+                    button.textContent = 'Translate';
+                    button.dataset.state = 'original';
+                    button.disabled = false;
+                }
+            }
+        });
+
+        suggestionPanelsContainer.addEventListener('click', e => {
+            const panel = e.target.closest('.suggestion-panel');
+            if (!panel) return;
+
+            if (panel.dataset.type === 'follow-up') {
+                messageInput.value += panel.textContent.trim();
+                const query = messageInput.value.trim();
+
+                if (!query) return;
+
+                if (!sessionId) {
+                    addMessage('Please wait, connecting to the bot...', 'bot');
+                    return;
+                }
+
+                addMessage(query, 'user');
+                messageInput.value = '';
+                suggestionPanelsContainer.style.display = 'none';
+
+                sendMessage(query);
+            } else {
+                const line1 = panel.querySelector('.prompt-line1').textContent.trim();
+                const line2 = panel.querySelector('.prompt-line2').textContent.trim();
+
+                if (isShiftDown) {
+                    const query = `${line1} ${line2}`;
+                    addMessage(query, 'user');
+                    sendMessage(query);
+                    suggestionPanelsContainer.style.display = 'none';
+                } else {
+                    messageInput.value = `${line1} `;
+                    messageInput.focus();
+                    renderFollowUpSuggestions(line1);
+                }
+            }
+        });
+
+        // Start a session when the page loads - now handled by the form
+        // document.addEventListener('DOMContentLoaded', startSession);
+
+        // End the session when the user leaves the page
+        window.addEventListener('beforeunload', endSession);
+    </script>
+</body>
+</html>

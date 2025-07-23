@@ -2,7 +2,7 @@ from datetime import datetime
 from pathlib import Path
 
 
-def load_and_format_prompt(prompt_name: str, **kwargs) -> str:
+def load_and_format_prompt(prompt_name: str, do_format: bool = True, **kwargs) -> str:
     """Loads a prompt from the 'prompts' directory and formats it with the
     given arguments.
 
@@ -16,4 +16,4 @@ def load_and_format_prompt(prompt_name: str, **kwargs) -> str:
         **kwargs,
     }
 
-    return prompt_template.format(**format_args)
+    return prompt_template.format(**format_args) if do_format else prompt_template

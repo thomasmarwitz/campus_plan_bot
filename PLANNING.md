@@ -27,8 +27,17 @@ graph TD
         query_rephrasing["2. Query Rephrasing<br/>(New Component, for turn ≥ 2)"]
         style query_rephrasing fill:#cfe2f3,stroke:#333,stroke-width:2px
 
-        rag["3. RAG<br/>(Updated Component)"]
-        style rag fill:#d9ead3,stroke:#333,stroke-width:2px
+        query_router["3. Query Router<br/>(New Component)"]
+        style query_router fill:#cfe2f3,stroke:#333,stroke-width:2px
+
+        subgraph "Query Engines"
+            direction LR
+            rag["RAG<br/>(Updated Component)"]
+            style rag fill:#d9ead3,stroke:#333,stroke-width:2px
+
+            pandas_query_engine["Pandas Query Engine<br/>(Optional, New Component)"]
+            style pandas_query_engine fill:#fce5cd,stroke:#333,stroke-width:2px
+        end
 
         data_selection["4. Data Field Selection<br/>(New Component)"]
         style data_selection fill:#cfe2f3,stroke:#333,stroke-width:2px
@@ -40,19 +49,24 @@ graph TD
 
     UserInput --> asr_fixing
     asr_fixing --> query_rephrasing
-    query_rephrasing --> rag
+    query_rephrasing --> query_router
+    query_router -- "Simple Query" --> rag
+    query_router -- "Complex Query" --> pandas_query_engine
     rag -- "Retrieved Documents" --> data_selection
+    pandas_query_engine -- "Retrieved Documents" --> data_selection
     data_selection -- "Filtered Documents" --> answer_generation
     answer_generation --> SystemResponse
 ```
 
 ### Key Components:
 
-1. **ASR Fixing:** Identifies and corrects errors in ASR-transcribed input, focusing on numerical building identifiers (e.g., "fifty point thirty-four" -> "50.34"). It uses a dedicated LLM call with few-shot examples to identify errors and their corrections.
-2. **Query Rephrasing:** Enriches user queries in multi-turn conversations with relevant context from the dialogue history. This component is crucial for maintaining context after the `Data Field Selection` step was introduced and is only active for the second turn onwards.
-3. **RAG (Retrieval-Augmented Generation):** The core retrieval component was significantly improved. It now leverages `LlamaIndex`, enriches the search data with a `name` column, and uses a Cross-Encoder for re-ranking to improve retrieval accuracy.
-4. **Data Field Selection:** Filters the documents retrieved by RAG to include only the fields necessary to answer the user's specific question. This reduces noise and helps the model generate more concise and relevant answers.
-5. **Answer Generation:** The final LLM call that synthesizes the filtered, retrieved information into a coherent, human-readable response.
+1.  **ASR Fixing:** Identifies and corrects errors in ASR-transcribed input, focusing on numerical building identifiers (e.g., "fifty point thirty-four" -> "50.34"). It uses a dedicated LLM call with few-shot examples to identify errors and their corrections.
+2.  **Query Rephrasing:** Enriches user queries in multi-turn conversations with relevant context from the dialogue history. This component is crucial for maintaining context after the `Data Field Selection` step was introduced and is only active for the second turn onwards.
+3.  **Query Router:** A new component that classifies user queries as either "simple" or "complex." Simple queries are routed to the RAG, while complex, multi-faceted queries are directed to the Pandas Query Engine.
+4.  **RAG (Retrieval-Augmented Generation):** The core retrieval component was significantly improved. It now leverages `LlamaIndex`, enriches the search data with a `name` column, and uses a Cross-Encoder for re-ranking to improve retrieval accuracy.
+5.  **Pandas Query Engine (Optional):** This component handles complex queries that require data manipulation and filtering beyond the capabilities of the RAG. It uses an LLM to dynamically generate and execute Pandas code. **Note:** This component currently requires an OpenAI API token to function.
+6.  **Data Field Selection:** Filters the documents retrieved by the RAG or Pandas Query Engine to include only the fields necessary to answer the user's specific question. This reduces noise and helps the model generate more concise and relevant answers.
+7.  **Answer Generation:** The final LLM call that synthesizes the filtered, retrieved information into a coherent, human-readable response.
 
 ## 3. Tech Stack & Tools
 
@@ -78,9 +92,3 @@ The project operates under several technical and practical constraints that have
 - **Component Interdependence:** A key lesson was that improving one component can inadvertently harm another (e.g., ASR fixing initially degraded RAG performance). This discovery emphasized the need for both component-specific unit tests and end-to-end evaluation to track overall system health.
 - **Evaluation Strategy:** The project relies on an "LLM-as-a-Judge" and a comprehensive, but synthetic, test set. While this allows for systematic and repeatable evaluation, the results may not perfectly mirror real-world user experience. The lack of real user data is a known limitation.
 - **Time Constraints:** The project timeline does not permit for a full user beta test or the implementation of all identified future improvements.
-
-## 5. General goals
-
-* Vibe Check Test Suite (executed 3 times), idea is to have a few high quality interactions and to see how the system behaves across them.
-* Web UI
-*
