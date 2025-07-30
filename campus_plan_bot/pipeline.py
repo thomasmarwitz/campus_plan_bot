@@ -4,7 +4,6 @@ from loguru import logger
 
 from campus_plan_bot.asr_processing import AsrProcessor
 from campus_plan_bot.bot import SimpleTextBot
-from campus_plan_bot.clients.chute_client import ChuteModel
 from campus_plan_bot.data_picker import DataPicker
 from campus_plan_bot.interfaces.interfaces import LLMClient
 from campus_plan_bot.interfaces.persistence_types import PipelineResult
@@ -38,15 +37,18 @@ class Pipeline:
 
         self.asr_processor = asr_processor or AsrProcessor()
         self.data_picker = data_picker or DataPicker()
-        self.rephraser = rephraser or QuestionRephraser(
-            ChuteModel(no_think=True, strip_think=True)  # type: ignore[arg-type]
-        )
+        self.rephraser = rephraser or QuestionRephraser()
         self.query_router = query_router or QueryRouter(
             allow_complex_mode=allow_complex_mode
         )
-        self.pandas_query_engine = pandas_query_engine or PandasQueryEngine(
-            user_coords_str=user_coords_str
-        )
+
+        try:
+            self.pandas_query_engine = pandas_query_engine or PandasQueryEngine(
+                user_coords_str=user_coords_str
+            )
+        except ValueError as e:
+            logger.error(f"Error initializing PandasQueryEngine: {e}")
+            self.pandas_query_engine = None  # type: ignore[assignment]
 
     @classmethod
     def from_system_prompt(cls, llm_client: LLMClient | None = None, **kwargs):
@@ -74,7 +76,7 @@ class Pipeline:
         query_type = await self.query_router.classify_query(rephrased_input, user_input)
 
         # Step 4: Retrieve context based on query type
-        if query_type == QueryType.COMPLEX:
+        if self.pandas_query_engine and query_type == QueryType.COMPLEX:
             # Use Pandas Query Engine for complex queries
             documents = await self.pandas_query_engine.query_df(rephrased_input)
         else:

@@ -3,7 +3,6 @@ import torch
 import torchaudio
 from transformers import WhisperForConditionalGeneration, WhisperProcessor
 
-from campus_plan_bot.input.audio_recorder import AudioRecorder
 from campus_plan_bot.interfaces.interfaces import AutomaticSpeechRecognition
 
 
@@ -81,6 +80,8 @@ class LocalASR(AutomaticSpeechRecognition):
     def transcribe(self, audio_path: str) -> str:
         """Create transcript for specified audio file."""
 
+        raise NotImplementedError("Local ASR is not implemented")
+
         print("Transcribing ...")
 
         audio = self.load_audio(audio_path)
@@ -97,18 +98,11 @@ class LocalASR(AutomaticSpeechRecognition):
     def get_input(self) -> str:
         """Get audio input from the user and return the transcript."""
 
-        if self.file_path is not None:
-            transcript = self.transcribe(self.file_path)
-            self.file_path = None
-        else:
-            filename = "campus_plan_bot/input/out.wav"
-            recorder = AudioRecorder(filename)
+        if not self.file_path:
+            raise ValueError("No file path provided")
 
-            interrupt = recorder.record_audio()
-            if interrupt:
-                return "exit"
-            else:
-                transcript = self.transcribe(filename).lstrip()
+        transcript = self.transcribe(self.file_path)
+        self.file_path = None
 
         print("\033[A                                                  \033[A")
         click.secho("You: ", fg="blue", nl=False)
@@ -117,5 +111,10 @@ class LocalASR(AutomaticSpeechRecognition):
 
 
 if __name__ == "__main__":
-    asr = LocalASR(None)
-    text = asr.get_input()
+    # Create an instance of the class
+    filename = "campus_plan_bot/input/out.wav"
+    asr = LocalASR(filename)
+
+    # get the transcription
+    whisper_transcript = asr.transcribe(filename)
+    print(whisper_transcript)

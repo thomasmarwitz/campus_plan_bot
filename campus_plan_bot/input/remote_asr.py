@@ -10,7 +10,6 @@ import requests
 from loguru import logger
 from sseclient import SSEClient
 
-from campus_plan_bot.input.audio_recorder import AudioRecorder
 from campus_plan_bot.interfaces.interfaces import AutomaticSpeechRecognition
 from campus_plan_bot.settings.settings import Settings
 
@@ -294,7 +293,7 @@ class RemoteASR(AutomaticSpeechRecognition):
     def transcribe(self, audio_path: str, token: str | None = None) -> str:
         """Create transcript for specified audio file."""
 
-        print("Transcribing ...")
+        logger.info(f"Transcribing {audio_path}...")
 
         token_to_use = token if token is not None else Settings().load_settings("token")
 
@@ -332,19 +331,11 @@ class RemoteASR(AutomaticSpeechRecognition):
     def get_input(self) -> str:
         """Get audio input from the user and return the transcript."""
 
-        if self.file_path is not None:
-            self.transcribe(self.file_path)
-            self.file_path = None
-        else:
-            filename = "campus_plan_bot/input/out.wav"
-            recorder = AudioRecorder(filename)
+        if not self.file_path:
+            raise ValueError("No file path provided")
 
-            interrupt = recorder.record_audio()
-
-            if interrupt:
-                return "exit"
-            else:
-                self.transcribe(filename)
+        self.transcribe(self.file_path)
+        self.file_path = None
 
         print("\033[A                                                  \033[A")
         click.secho("You: ", fg="blue", nl=False)
@@ -353,5 +344,13 @@ class RemoteASR(AutomaticSpeechRecognition):
 
 
 if __name__ == "__main__":
+    # Create an instance of the class
+    filename = "campus_plan_bot/input/out.wav"
     asr = RemoteASR()
-    asr.get_input()
+
+    # Record audio and get the transcription
+    result = asr.transcribe(
+        filename,
+        token="...",
+    )
+    print(f"Transcription: {result}")

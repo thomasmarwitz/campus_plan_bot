@@ -1,0 +1,65 @@
+
+# Git
+.git
+.gitignore
+.github
+
+# Pixi
+.pixi
+.ruff_cache
+.pytest_cache
+.coverage
+.coverage.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv
+venv/
+env/
+.env
+
+# Cache
+.cache
+.pytest_cache
+.mypy_cache
+.ruff_cache
+
+# Documentation and data (except for the data that powers the system and the embedding store)
+docs/
+data/*
+!data/embeddings/
+!data/campusplan_evaluation.csv
+
+# OS-specific
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Other
+*.drawio
+*.pdf
+*.afdesign
+*.tex
+*.jpeg
+*.png
+*.jpg
+
+*.ipynb
+*.md
+PLANNING.md
+TESTING.md
+EVALUATION.md
+eval/
+tests/
+scripts/
+notebooks/
+.github/
+dist/
+build/
+*.egg-info/

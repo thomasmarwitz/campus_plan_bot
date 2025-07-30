@@ -1,4 +1,5 @@
 import logging
+import os
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 from datetime import datetime
@@ -22,7 +23,9 @@ from campus_plan_bot.prompts.prompt_builder import LLama3PromptBuilder
 logger = logging.getLogger(__name__)
 
 # Assuming these are defined elsewhere in your codebase
-INSTITUTE_URL = "http://hiaisc.isl.iar.kit.edu/llm_generate"
+INSTITUTE_URL = (
+    os.getenv("INSTITUTE_URL") or "http://hiaisc.isl.iar.kit.edu/llm_generate"
+)
 
 
 class InstituteModel(Model):
