@@ -1,6 +1,10 @@
+import asyncio
 import os
 import tempfile
 import uuid
+from contextlib import asynccontextmanager
+from dataclasses import dataclass, field
+from datetime import datetime, timedelta
 from pathlib import Path
 
 from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
@@ -16,9 +20,18 @@ from campus_plan_bot.pipeline import Pipeline
 from campus_plan_bot.rag import RAG
 from campus_plan_bot.translator import Translator
 
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Start background janitor task
+    asyncio.create_task(launch_session_janitor())
+    yield
+
+
 app = FastAPI(
     title="Campus Plan Bot API",
     description="A stateful API for conversing with the Campus Plan Bot.",
+    lifespan=lifespan,
 )
 
 
@@ -37,7 +50,47 @@ embeddings_path = Path("data") / "embeddings"
 rag_component = RAG.from_file(database_path, persist_dir=embeddings_path)
 
 # In-memory storage for bot sessions
-pipeline_sessions: dict[str, Pipeline] = {}
+
+
+@dataclass
+class SessionData:
+    pipeline: Pipeline
+    last_used: datetime = field(default_factory=datetime.utcnow)
+
+
+# Maximum idle time before a session is cleaned up
+SESSION_TTL = timedelta(hours=1)
+# How often the janitor checks for stale sessions (in seconds)
+SWEEP_PERIOD_SECONDS = 10 * 60
+
+pipeline_sessions: dict[str, SessionData] = {}
+
+
+def _touch(session_id: str) -> None:
+    """Refresh last-use timestamp for the given session, if it exists."""
+    session = pipeline_sessions.get(session_id)
+    if session:
+        session.last_used = datetime.utcnow()
+
+
+async def launch_session_janitor() -> None:
+    """Background task that removes stale sessions periodically."""
+
+    async def janitor() -> None:
+        while True:
+            await asyncio.sleep(SWEEP_PERIOD_SECONDS)
+            now = datetime.utcnow()
+            expired = [
+                sid
+                for sid, sess in list(pipeline_sessions.items())
+                if now - sess.last_used > SESSION_TTL
+            ]
+            for sid in expired:
+                logger.info(f"Session {sid} expired (idle > {SESSION_TTL}). Removing.")
+                del pipeline_sessions[sid]
+
+    asyncio.create_task(janitor())
+
 
 GLOBAL_ALLOW_COMPLEX_MODE = bool(os.getenv("OPENAI_API_KEY"))
 if not GLOBAL_ALLOW_COMPLEX_MODE:
@@ -99,13 +152,15 @@ def start_session(request: StartRequest):
     else:
         raise HTTPException(status_code=400, detail="Invalid model name.")
 
-    pipeline_sessions[session_id] = Pipeline.from_system_prompt(
-        rag=rag_component,
-        llm_client=llm_client,
-        user_coords_str=request.user_coords_str,
-        allow_complex_mode=(
-            request.allow_complex_mode if GLOBAL_ALLOW_COMPLEX_MODE else False
-        ),
+    pipeline_sessions[session_id] = SessionData(
+        pipeline=Pipeline.from_system_prompt(
+            rag=rag_component,
+            llm_client=llm_client,
+            user_coords_str=request.user_coords_str,
+            allow_complex_mode=(
+                request.allow_complex_mode if GLOBAL_ALLOW_COMPLEX_MODE else False
+            ),
+        )
     )
     return StartResponse(session_id=session_id)
 
@@ -113,11 +168,12 @@ def start_session(request: StartRequest):
 @app.post("/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest):
     """Chat with the bot using a session ID."""
-    pipeline = pipeline_sessions.get(request.session_id)
-    if not pipeline:
+    session = pipeline_sessions.get(request.session_id)
+    if not session:
         raise HTTPException(status_code=404, detail="Session not found.")
+    _touch(request.session_id)
 
-    response = await pipeline.run(request.query)
+    response = await session.pipeline.run(request.query)
     return ChatResponse(response=response.answer, link=response.link)
 
 
@@ -138,14 +194,14 @@ async def translate_text(request: TranslationRequest):
 async def chat_audio(
     request: Request,
     session_id: str = Form(...),
-    asr_method: ASRMethod = Form(ASRMethod.LOCAL),
     file: UploadFile = File(...),
 ):
     """Chat with the bot using an audio recording, streaming transcript and
     final response."""
-    pipeline = pipeline_sessions.get(session_id)
-    if not pipeline:
+    session = pipeline_sessions.get(session_id)
+    if not session:
         raise HTTPException(status_code=404, detail="Session not found.")
+    _touch(session_id)
 
     # The UploadFile must be read here, before the function returns
     # and the file handle is closed by FastAPI.
@@ -161,7 +217,9 @@ async def chat_audio(
     async def sse_generator():
         # The generator must clean up the temporary file when it's done.
         try:
-            async for data in audio_chat_generator(pipeline, asr_method, tmp_in_path):
+            async for data in audio_chat_generator(
+                session.pipeline, ASRMethod.REMOTE, tmp_in_path
+            ):
                 if await request.is_disconnected():
                     logger.warning("Client disconnected.")
                     break

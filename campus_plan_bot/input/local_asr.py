@@ -80,6 +80,8 @@ class LocalASR(AutomaticSpeechRecognition):
     def transcribe(self, audio_path: str) -> str:
         """Create transcript for specified audio file."""
 
+        raise NotImplementedError("Local ASR is not implemented")
+
         print("Transcribing ...")
 
         audio = self.load_audio(audio_path)
@@ -96,11 +98,11 @@ class LocalASR(AutomaticSpeechRecognition):
     def get_input(self) -> str:
         """Get audio input from the user and return the transcript."""
 
-        if self.file_path is not None:
-            transcript = self.transcribe(self.file_path)
-            self.file_path = None
-        else:
-            transcript = self.transcribe(self.file_path).lstrip()
+        if not self.file_path:
+            raise ValueError("No file path provided")
+
+        transcript = self.transcribe(self.file_path)
+        self.file_path = None
 
         print("\033[A                                                  \033[A")
         click.secho("You: ", fg="blue", nl=False)
@@ -114,5 +116,5 @@ if __name__ == "__main__":
     asr = LocalASR(filename)
 
     # get the transcription
-    whisper_transcript = asr.transcribe_audio()
+    whisper_transcript = asr.transcribe(filename)
     print(whisper_transcript)
