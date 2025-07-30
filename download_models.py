@@ -1,6 +1,4 @@
-
 from sentence_transformers import CrossEncoder, SentenceTransformer
-from transformers import WhisperForConditionalGeneration, WhisperProcessor
 
 # Embedding and Reranker models
 print("Downloading embedding and reranker models...")
@@ -12,4 +10,4 @@ print("Embedding and reranker models downloaded.")
 # print("Downloading ASR model...")
 # WhisperProcessor.from_pretrained("openai/whisper-base")
 # WhisperForConditionalGeneration.from_pretrained("openai/whisper-base")
-# print("ASR model downloaded.") 
+# print("ASR model downloaded.")
