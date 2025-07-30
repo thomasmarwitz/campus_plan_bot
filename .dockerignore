@@ -28,9 +28,11 @@ env/
 .mypy_cache
 .ruff_cache
 
-# Documentation and data
+# Documentation and data (except for the data that powers the system and the embedding store)
 docs/
-data/
+data/*
+!data/embeddings/
+!data/campusplan_evaluation.csv
 
 # OS-specific
 .DS_Store
@@ -57,8 +59,7 @@ eval/
 tests/
 scripts/
 notebooks/
-frontend/
 .github/
 dist/
 build/
-*.egg-info/ 
+*.egg-info/

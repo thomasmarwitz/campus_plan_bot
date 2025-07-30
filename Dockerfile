@@ -35,5 +35,9 @@ RUN echo "token = ${TOKEN}" >> campus_plan_bot/settings/settings.ini
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
 
+ENV OMP_NUM_THREADS=1
+ENV MKL_NUM_THREADS=1
+ENV OPENBLAS_NUM_THREADS=1
+
 # Run the app
-CMD ["pixi", "run", "uvicorn", "backend.app:app", "--host", "0.0.0.0", "--port", "8000"] 
+CMD ["pixi", "run", "uvicorn", "backend.app:app", "--host", "0.0.0.0", "--port", "8000"]
